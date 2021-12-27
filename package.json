@@ -1,0 +1,17 @@
+{
+  "name": "farsgamer",
+  "version": "1.0.0",
+	"description": "The front-end project of the farsgamer.com website.",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "package": "svelte-kit package",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-vercel": "next",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.44.0"
+  },
+  "type": "module"
+}

@@ -1,0 +1,36 @@
+@import "fonts.css";
+
+@layer base {
+  * {
+    outline: none !important;
+		list-style: none
+    /* user-select: none; */
+    /* -webkit-user-drag: none; */
+  }
+  
+  html, body {
+    font-family: isans, montserrat !important;
+  }
+  
+  html {
+    font-size: 16px;
+		scroll-behavior: smooth;
+  }
+  
+  body {
+    font-weight: 400;
+  }
+  
+  main {
+    @apply min-h-screen overflow-hidden;
+  }
+  
+  i {
+    color: inherit;
+    font-size: 1rem;
+  }
+  
+  .container-base {
+    @apply px-4 mx-auto w-full;
+  }
+}
