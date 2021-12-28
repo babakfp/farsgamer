@@ -7,8 +7,8 @@
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
-		"fonts": "sass static/scss/fonts.scss:static/css/base/fonts.css --no-source-map",
-		"modal": "sass static/library/bootstrap-5.0.1/custom/modal.scss:static/css/components/modal.css --no-source-map",
+    "fonts": "sass static/scss/fonts.scss:static/css/base/fonts.css --no-source-map",
+    "modal": "sass static/library/bootstrap-5.0.1/custom/modal.scss:static/css/components/modal.css --no-source-map",
     "postcss": "postcss build static/css/index.css -o static/css/dist.css"
   },
   "devDependencies": {
@@ -21,6 +21,7 @@
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
     "svelte": "^3.44.0",
+    "svelte-outclick": "^2.6.5",
     "svelte-preprocess": "^4.10.1",
     "tailwindcss": "^3.0.7"
   },

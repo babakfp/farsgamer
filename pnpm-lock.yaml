@@ -10,12 +10,13 @@ specifiers:
   postcss-import: ^14.0.2
   postcss-nested: ^5.0.6
   svelte: ^3.44.0
+  svelte-outclick: ^2.6.5
   svelte-preprocess: ^4.10.1
   tailwindcss: ^3.0.7
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.32
-  '@sveltejs/kit': 1.0.0-next.203_svelte@3.44.3
+  '@sveltejs/kit': 1.0.0-next.204_svelte@3.44.3
   '@tailwindcss/line-clamp': 0.3.0_tailwindcss@3.0.7
   '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.7
   autoprefixer: 10.4.0_postcss@8.4.5
@@ -23,6 +24,7 @@ devDependencies:
   postcss-import: 14.0.2_postcss@8.4.5
   postcss-nested: 5.0.6_postcss@8.4.5
   svelte: 3.44.3
+  svelte-outclick: 2.6.5
   svelte-preprocess: 4.10.1_postcss@8.4.5+svelte@3.44.3
   tailwindcss: 3.0.7_16a290f6d0e3717bf6d2667234aebd30
 
@@ -84,8 +86,8 @@ packages:
       esbuild: 0.13.15
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.203_svelte@3.44.3:
-    resolution: {integrity: sha512-+bhfmkzquWMSCCFIJoh36U9D6IKC0p/NrIr4CBHMAdRpqzL9lMP0AYQm1fUDH20F/6b2tWvGxmEg+gAmHikRfA==}
+  /@sveltejs/kit/1.0.0-next.204_svelte@3.44.3:
+    resolution: {integrity: sha512-Jl9pyMc94YxO/hq/pCc4d+Syo354N9QH46QzZYfnu2QS+MPDL/JkHE56Cqr8qg+ewiVEDqCJ6Ljo7GxPTksspw==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -1109,6 +1111,10 @@ packages:
       svelte: '>=3.19.0'
     dependencies:
       svelte: 3.44.3
+    dev: true
+
+  /svelte-outclick/2.6.5:
+    resolution: {integrity: sha512-yOPcgzoXBH/cVpg8eV2IfkircdYpzDEN3m05qca6AgMTxQjqf8JMv0tgjfIncNgTzXwnl3FrnzYPaOzIg7uxGQ==}
     dev: true
 
   /svelte-preprocess/4.10.1_postcss@8.4.5+svelte@3.44.3:

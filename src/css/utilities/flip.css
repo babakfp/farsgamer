@@ -1,10 +1,10 @@
 @layer utilities {
-	.flip-x {
+	/* .flip-x {
 		transform: scaleX(-1)
 	}
 	.flip-y {
 		transform: scaleY(-1)
-	}
+	} */
 	.flip-rotate-x {
 		transform: rotate(180deg)
 	}

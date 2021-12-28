@@ -1,4 +1,7 @@
 const colors = require('tailwindcss/colors')
+const plugin = require('tailwindcss/plugin')
+const plugin_flip = require('./tailwind-plugins/flip.cjs')
+const plugin_dir = require('./tailwind-plugins/dir.cjs')
 
 const config = {
   content: ['./src/**/*.{html,svelte}'],
@@ -13,9 +16,11 @@ const config = {
 				17.5: '4.375rem',
 				18: '4.5rem',
 				19: '4.75rem',
+				22: '5.5rem',
 				38: '9.5rem',
 				50: '12.5rem',
 				54: '13.5rem',
+				66: '16.5rem',
 				68: '17rem',
 				76: '19rem',
 				82: '20.5rem',
@@ -114,7 +119,38 @@ const config = {
 			none: 'none',
 		},
   },
-  plugins: [],
+  plugins: [
+		plugin_flip,
+		plugin_dir,
+		// plugin(({ addBase, addComponents, addUtilities, theme }) => {
+    //   // addBase({
+    //   //   'h1': {
+    //   //     fontSize: theme('fontSize.2xl'),
+    //   //   },
+    //   //   'h2': {
+    //   //     fontSize: theme('fontSize.xl'),
+    //   //   },
+    //   // })
+    //   // addComponents({
+    //   //   '.card': {
+    //   //     backgroundColor: theme('colors.white'),
+    //   //     borderRadius: theme('borderRadius.lg'),
+    //   //     padding: theme('spacing.6'),
+    //   //     boxShadow: theme('boxShadow.xl'),
+    //   //   }
+    //   // })
+    //   addUtilities({
+    //     '.flip-x': {
+		// 			'--tw-scale-x': '-1',
+		// 			'transform': 'var(--tw-transform)',
+    //     },
+		// 		'.flip-y': {
+		// 			'--tw-scale-y': '-1',
+		// 			'transform': 'var(--tw-transform)',
+    //     },
+    //   })
+    // })
+	],
 }
 
 module.exports = config

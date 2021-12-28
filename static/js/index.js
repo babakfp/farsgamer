@@ -522,24 +522,6 @@ window.addEventListener('load', _=> {
 	}
 })()
 
-// Header announcements menu
-;(_=> {
-	const toggleBtn = document.querySelector('.announcements__toggle-btn')
-	const closeBtn = document.querySelector('.announcements__close-btn')
-	const menu = document.querySelector('.announcements__menu')
-	if (!toggleBtn || !closeBtn || !menu) return
-	easyTab(menu)
-
-	toggleBtn.addEventListener('click', _=> menu.classList.toggle('hidden'))
-	closeBtn.addEventListener('click', _=> menu.classList.add('hidden'))
-
-	window.addEventListener('click', event => {
-		if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
-			menu.classList.add('hidden')
-		}
-	})
-})()
-
 // whyus video player
 ;(_=> {
 	new Plyr('#whyus')
