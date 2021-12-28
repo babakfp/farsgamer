@@ -4,14 +4,8 @@
 	const sidebar = document.querySelector('#sidebar')
 	const sidebar__content = document.querySelector('#sidebar__content')
 	if (berger && sidebar) {
-		berger.addEventListener('click', _=> {
-			document.body.classList.toggle('overflow-hidden')
-			document.body.classList.toggle('menu-is-open')
-		})
 		sidebar.addEventListener('click', e => {
 			if (!sidebar__content.contains(e.target)) {
-				document.body.classList.remove('overflow-hidden')
-				document.body.classList.remove('menu-is-open')
 			}
 		})
 	}

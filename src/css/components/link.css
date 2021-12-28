@@ -1,4 +1,5 @@
 @layer components {
+
   a.link-transition,
   button.link-transition {
     @apply transition-colors duration-150 ease-in-out;
@@ -6,10 +7,11 @@
 
   a.link,
   button.link {
-    @apply text-primary hover:text-primary-deep link-transition;
+    @apply text-brand hover:text-brand-deep link-transition;
   }
 
   .content-link a {
-    @apply text-primary hover:text-primary-deep link-transition;
+    @apply text-brand hover:text-brand-deep link-transition;
   }
+
 }

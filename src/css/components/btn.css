@@ -1,0 +1,45 @@
+@layer components {
+
+	.btn {
+		@apply inline-flex gap-3 items-center justify-center py-2 px-7 leading-5 border border-solid border-transparent transition-all duration-150 ease-in-out rounded-2xl select-none whitespace-nowrap
+	}
+
+	.btn-brand {
+		@apply text-white bg-brand hover:bg-brand-deep focus:bg-brand-deeper;
+	}
+
+	.btn-outline.btn-brand {
+		@apply bg-transparent text-brand border-brand hover:bg-brand-deep hover:text-white focus:text-white focus:bg-brand-deeper;
+	}
+
+	.btn-2xl {
+		min-height: 50px !important;
+		min-width: 220px !important;
+		@apply font-semibold text-lg !important;
+	}
+
+	.btn-xl {
+		@apply px-8 leading-7 w-56 font-semibold;
+	}
+
+	.btn-lg {
+		@apply px-7 leading-6;
+	}
+
+	.btn-sm {
+		@apply px-7 leading-4 text-xs;
+	}
+
+	.btn-xs {
+		@apply px-6 leading-4 text-xs;
+	}
+
+	.form-submit {
+		@apply h-12.5;
+	}
+
+	.btn-disabled {
+		@apply text-gray-500 hover:bg-gray-200 focus:bg-gray-200;
+	}
+
+}

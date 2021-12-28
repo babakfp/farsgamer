@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "./css/base/_index.css";
+
+@import "tailwindcss/components";
+@import "./css/components/_index.css";
+
+@import "tailwindcss/utilities";
+@import "./css/utilities/_index.css";
+
+@import "./css/partials/_index.css";
+
+i {
+	@apply flex items-center justify-center !leading-none;
+}

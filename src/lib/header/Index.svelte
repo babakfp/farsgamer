@@ -5,9 +5,9 @@
 
 <header id="header">
 
-  <div class="container-base flex items-center justify-between gap-4">
+  <div class="container-base flex items-center justify-between gap-4 h-full">
     
-    <div class="flex items-center gap-4 lg:gap-8">
+    <div class="flex items-center lg:gap-8">
       
       <Burger />
 
@@ -20,14 +20,25 @@
 
     </div>
 
-    <div class="flex items-center gap-4">
+    <div class="flex h-full -ml-2">
 
-      <!-- Announcements -->
+			<!-- Phone support numbers -->
+			<div class="hidden xss:grid xs:flex xs:gap-2 h-full justify-items-end text-left text-sm tracking-wider pl-4 ml-4 border-l border-gray-100">
+				<!-- main call line -->
+				<a class="h-full flex items-end duration-100 hover:text-brand xs:items-center" href="tel:05891010109" title="تماس تلفنی مستقیم">05891010109</a>
+				<i class="fi fi-rr-minus opacity-50"></i>
+				<a class="h-full flex items-top duration-100 hover:text-brand xs:items-center" href="tel:05891011832" title="تماس تلفنی مستقیم">05891011832</a>
+			</div>
+
+			<!-- Announcements -->
       <div class="announcements">
-        <a class="header-widget announcements__toggle-btn" title="مشاهده سبد خرید">
-          <i class="icon-bell header-widget__icon"></i>
-          <div class="header-widget__bobble">2</div>
-        </a>
+				<button class="announcements__toggle-btn h-full flex items-center px-2.5 duration-100 hover:text-brand focus:-translate-y-1" href="/cart" title="مشاهده اعلانات">
+					<div class="relative">
+						<i class="fi-rr-bell text-xl"></i>
+						<div class="absolute flex items-center justify-center -right-1 -top-1 bg-red-400 text-white leading-0 w-3.5 h-3.5 rounded-full text-2xs">2</div>
+					</div>
+				</button>
+
         <div easytab class="announcements__menu hidden">
           <div class="announcements__menu-head">
             <ul class="flex">
@@ -35,7 +46,7 @@
               <li easytab-tab>اطلاعیه شما</li>
             </ul>
             <button class="announcements__close-btn">
-              <i class="icon-cancel"></i>
+              <i class="fi-rr-cross-circle"></i>
             </button>
           </div>
           <div class="py-2">
@@ -45,12 +56,12 @@
               -->
               <ul>
                 <li>
-                  <a class="group flex items-start gap-2 py-3 px-2 border-r-3 border-transparent bg-white transition duration-200 ease-in-out hover:bg-gray2-50 focus:bg-gray2-50 hover:border-primary focus:border-primary" href="#">
+                  <a class="group flex items-start gap-2 py-3 px-2 border-r-3 border-transparent bg-white transition duration-200 ease-in-out hover:bg-gray2-50 focus:bg-gray2-50 hover:border-brand focus:border-brand" href="#">
                     <div class="min-w-9 min-h-9 max-w-9 max-h-9 flex items-center justify-center rounded-full bg-gray2-50 group-hover:bg-white group-focus:bg-white">
                       <img class="w-5 -mr-0.5" src="/svg/logo-ninja.svg" alt="لوگو نینجا">
                     </div>
                     <div>
-                      <p class="font-semibold text-primary text-sm">پشتیبانی</p>
+                      <p class="font-semibold text-brand text-sm">پشتیبانی</p>
                       <p class="mt-1 text-xs">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است.</p>
                       <p class="text-gray-700 mt-3 text-xs">3 هفته قبل</p>
                     </div>
@@ -65,21 +76,18 @@
         </div>
       </div>
 
-      <!-- Cart -->
-      <a class="w-7.5 h-7.5 flex items-center justify-center relative  transition duration-200 hover:text-primary focus:text-primary" href="/cart" title="مشاهده سبد خرید">
-        <i class="icon-basket text-xl"></i>
-        <div class="absolute -right-0.5 -top-0.5 bg-red text-white leading-0 text-center w-4 h-4 rounded-full text-xs flex items-center justify-center">2</div>
+      <!-- Go to cart page -->
+      <a class="h-full flex items-center px-2.5 duration-100 hover:text-brand focus:-translate-y-1" href="/cart" title="مشاهده سبد خرید">
+        <div class="relative">
+					<i class="fi-rr-shopping-cart text-xl"></i>
+					<div class="absolute flex items-center justify-center -right-1 -top-1 bg-red-400 text-white leading-0 w-3.5 h-3.5 rounded-full text-2xs">2</div>
+				</div>
       </a>
 
-      <!-- User -->
-      <a class="h-7.5 flex items-center justify-center relative gap-2 text-sm transition duration-200 hover:text-primary focus:text-primary" href="/dashboard">
-        <i class="icon-user text-xl"></i>
+      <!-- Go to dashboard page -->
+      <a class="h-full flex items-center px-2.5 duration-100 hover:text-brand focus:-translate-y-1" href="/dashboard" title="مشاهده حساب کاربری">
+        <i class="fi-rr-user text-xl"></i>
       </a>
-
-      <!-- Site Support Number -->
-      <span class="hidden sm:flex pr-4 border-r border-gray2-500 text-sm">
-        <a href="tel:+989145555555" title="برای تماس کلیک کنید">9145555555</a>
-      </span>
 
     </div>
 

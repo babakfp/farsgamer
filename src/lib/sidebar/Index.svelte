@@ -21,31 +21,31 @@
       <nav class="py-4">
         <ul>
           <li><a class="nav-menu-item nav-menu-item--active" href="/">
-            <i class="nav-menu-item__icon icon-home"></i>
+            <i class="nav-menu-item__icon fi-rr-home"></i>
             <span class="nav-menu-item__title">خانه</span>
           </a></li>
           <li><a class="nav-menu-item" href="/shop">
-            <i class="nav-menu-item__icon icon-controler"></i>
+            <i class="nav-menu-item__icon fi-rr-shop"></i>
             <span class="nav-menu-item__title">فروشگاه</span>
           </a></li>
           <li><a class="nav-menu-item" href="/faq">
-            <i class="nav-menu-item__icon icon-question-answer"></i>
+            <i class="nav-menu-item__icon fi-rr-interrogation"></i>
             <span class="nav-menu-item__title">سوالات متداول</span>
           </a></li>
           <li><a class="nav-menu-item" href="/terms">
-            <i class="nav-menu-item__icon icon-law"></i>
+            <i class="nav-menu-item__icon fi-rr-bank"></i>
             <span class="nav-menu-item__title">قوانین</span>
           </a></li>
           <li><a class="nav-menu-item" href="/contact">
-            <i class="nav-menu-item__icon icon-mail"></i>
+            <i class="nav-menu-item__icon fi-rr-headset"></i>
             <span class="nav-menu-item__title">ارتباط با ما</span>
           </a></li>
           <li><a class="nav-menu-item" href="/why-farsgamer">
-            <i class="nav-menu-item__icon icon-fortnite"></i>
+            <i class="nav-menu-item__icon fi-rr-diploma"></i>
             <span class="nav-menu-item__title">چرا فارس گیمر</span>
           </a></li>
           <li><a class="nav-menu-item" href="/posts">
-            <i class="nav-menu-item__icon icon-articles"></i>
+            <i class="nav-menu-item__icon fi-rr-document"></i>
             <span class="nav-menu-item__title">مقالات</span>
           </a></li>
         </ul>

@@ -8,8 +8,8 @@
 </script>
 
 {#if delayedPreloading}
-	<div class="loading-bar bg-primary bg-opacity-40">
-		<div class="loading-bar__train bg-primary" />
+	<div class="loading-bar bg-brand bg-opacity-40">
+		<div class="loading-bar__train bg-brand" />
 	</div>
 {/if}
 

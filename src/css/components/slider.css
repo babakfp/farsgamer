@@ -1,0 +1,8 @@
+@layer components {
+
+	.swiper-slide {
+		max-width: unset;;
+		@apply w-full;
+	}
+
+}
