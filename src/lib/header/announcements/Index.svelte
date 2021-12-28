@@ -16,7 +16,7 @@
 	<!-- Header btn -->
 	<button
 		on:click={_=> isOpen = !isOpen}
-		class="announcements-toggle-btn h-full flex items-center px-2.5 duration-100 hover:text-brand" href="/cart" title="مشاهده اعلانات"
+		class="js-announcements-toggle-btn h-full flex items-center px-2.5 duration-100 hover:text-brand" href="/cart" title="مشاهده اعلانات"
 	>
 		<div class="relative">
 			<i class="fi-rr-bell text-xl"></i>
@@ -26,8 +26,8 @@
 		</div>
 	</button>
 
-	<OutClick on:outclick={_=> isOpen = false} exclude={['.announcements-toggle-btn']}>
-		<div easytab class:hidden={!isOpen} class="announcements__menu absolute left-0 top-[calc(100% + 6px)] w-82 z-40 rounded overflow-hidden bg-white sm:w-100">
+	<OutClick on:outclick={_=> isOpen = false} exclude={['.js-announcements-toggle-btn']}>
+		<div easytab class:hidden={!isOpen} class="announcements__menu absolute left-0 top-full mt-4 w-82 z-40 rounded overflow-hidden bg-white border border-gray-100 sm:w-100">
 
 			<ul class="flex justify-center border-b border-gray-100">
 				<li easytab-tab>عمومی</li>
@@ -39,7 +39,7 @@
 					{#if $publicAnnouncements.length > 0}
 						<ul class="max-h-66 overflow-y-auto">
 							{#each $publicAnnouncements as item}
-								<li class="border-b border-gray-100 last:border-0"><Item {...item} /></li>
+								<Item {...item} />
 							{/each}
 						</ul>
 					{:else}
@@ -51,7 +51,7 @@
 					{#if $userAnnouncements.length > 0}
 						<ul class="max-h-66 overflow-y-auto">
 							{#each $userAnnouncements as item}
-								<li class="border-b border-gray-100 last:border-0"><Item {...item} /></li>
+								<Item {...item} />
 							{/each}
 						</ul>
 					{:else}
