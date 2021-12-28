@@ -3,17 +3,18 @@
 	const berger = document.querySelector('#burger')
 	const sidebar = document.querySelector('#sidebar')
 	const sidebar__content = document.querySelector('#sidebar__content')
-	if (!berger && !sidebar) return
-	berger.addEventListener('click', () => {
-		document.body.classList.toggle('overflow-hidden')
-		document.body.classList.toggle('menu-is-open')
-	})
-	sidebar.addEventListener('click', e => {
-		if (!sidebar__content.contains(e.target)) {
-			document.body.classList.remove('overflow-hidden')
-			document.body.classList.remove('menu-is-open')
-		}
-	})
+	if (berger && sidebar) {
+		berger.addEventListener('click', _=> {
+			document.body.classList.toggle('overflow-hidden')
+			document.body.classList.toggle('menu-is-open')
+		})
+		sidebar.addEventListener('click', e => {
+			if (!sidebar__content.contains(e.target)) {
+				document.body.classList.remove('overflow-hidden')
+				document.body.classList.remove('menu-is-open')
+			}
+		})
+	}
 })()
 
 // ---
@@ -49,8 +50,8 @@ const sliderNavigationConfig = {
 }
 
 // Basic image slider
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const sliders = document.querySelectorAll('.basic-image-slider')
 		if (!sliders) return
 
@@ -65,8 +66,8 @@ const sliderNavigationConfig = {
 })()
 
 // Basic product slider
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const sliders = document.querySelectorAll('.basic-product-slider')
 		if (!sliders) return
 
@@ -88,8 +89,8 @@ const sliderNavigationConfig = {
 })()
 
 // Giftcard Product slider
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const sliders = document.querySelectorAll('.giftcard-product-slider')
 		if (!sliders) return
 
@@ -112,8 +113,8 @@ const sliderNavigationConfig = {
 })()
 
 // Review slider
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const sliders = document.querySelectorAll('.review-slider')
 		if (!sliders) return
 
@@ -133,8 +134,8 @@ const sliderNavigationConfig = {
 })()
 
 // Post slider
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const sliders = document.querySelectorAll('.post-slider')
 		if (!sliders) return
 
@@ -157,8 +158,8 @@ const sliderNavigationConfig = {
 // Stop slider autoplay if:
 // - slides < 2
 // - slides < 2
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const sliders = document.querySelectorAll('.swiper-container')
 		if (sliders) {
 			sliders.forEach(slider => {
@@ -296,12 +297,12 @@ const sliderNavigationConfig = {
 // ---
 
 // radio button handler.
-;(() => {
+;(_=> {
 	const radioboxList = document.querySelectorAll('.radiobox')
 	if (!radioboxList) return
 	radioboxList.forEach(box => {
 		const input = box.querySelector("input[type='radio']")
-		input.addEventListener('click', () => {
+		input.addEventListener('click', _=> {
 			radioboxList.forEach(_box => _box.classList.remove('radiobox--active'))
 			if (input.checked) box.classList.add('radiobox--active')
 		})
@@ -311,7 +312,7 @@ const sliderNavigationConfig = {
 // ---
 
 // single product page - account category section handler.
-;(() => {
+;(_=> {
 	const form = document.querySelector('#spp-purchase-form')
 	if (!form) return
 	const fieldsWrapper = document.querySelector(
@@ -319,14 +320,14 @@ const sliderNavigationConfig = {
 	)
 	const fields = document.querySelectorAll('.account-category-btn__field')
 	fields.forEach(field => {
-		field.addEventListener('click', () => {
+		field.addEventListener('click', _=> {
 			fieldsWrapper.classList.remove('hidden')
 		})
 	})
 })()
 
 // ---
-;(() => {
+;(_=> {
 	const posttypeContent = document.querySelector('.posttype-content')
 	if (posttypeContent) easyTab(posttypeContent)
 })()
@@ -334,7 +335,7 @@ const sliderNavigationConfig = {
 // ---
 
 // comments reply button and form handler.
-;(() => {
+;(_=> {
 	const commentBoxArray = document.querySelectorAll('.comment--reply')
 	if (!commentBoxArray) return
 	commentBoxArray.forEach(commentBox => {
@@ -346,7 +347,7 @@ const sliderNavigationConfig = {
 		)
 		if (addReplyBtn && commentForm) {
 			commentForm.classList.add('hidden')
-			addReplyBtn.addEventListener('click', () => {
+			addReplyBtn.addEventListener('click', _=> {
 				commentForm.classList.toggle('hidden')
 			})
 		}
@@ -354,7 +355,7 @@ const sliderNavigationConfig = {
 })()
 
 // ---
-;(() => {
+;(_=> {
 	const items = document.querySelectorAll('.order-details__item')
 	if (!items) return
 	items.forEach(item => {
@@ -365,7 +366,7 @@ const sliderNavigationConfig = {
 		)
 		toggleIcon.classList.add('leading-0')
 		extraContent.classList.add('hidden')
-		toggle.addEventListener('click', () => {
+		toggle.addEventListener('click', _=> {
 			extraContent.classList.toggle('hidden')
 			toggleIcon.classList.toggle('flip-rotate-y')
 		})
@@ -373,7 +374,7 @@ const sliderNavigationConfig = {
 })()
 
 // ---
-;(() => {
+;(_=> {
 	const dashboardComments = document.querySelector('.dashboard-comments')
 	if (dashboardComments) easyTab(dashboardComments)
 })()
@@ -391,7 +392,7 @@ $('#dashboard-comments-rate-product').barrating('show', {
 // ---
 
 // product grid box. // add (...) if title length is more that x.
-;(() => {
+;(_=> {
 	const titleArray = document.querySelectorAll('.js-truncate-product-title')
 	if (!titleArray) return
 	const truncate = (source, size) => {
@@ -450,7 +451,7 @@ const swiperImageGallery = (
 	})
 }
 
-window.addEventListener('load', () => {
+window.addEventListener('load', _=> {
 	swiperImageGallery(
 		'.single-product-image-gallery .single-product-image-gallery__big-image',
 		'.single-product-image-gallery .single-product-image-gallery__thumb-images'
@@ -461,8 +462,8 @@ window.addEventListener('load', () => {
 
 // TP Alert
 // resizing the elements based on the taken height by alert.
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const alert = document.querySelector('.tp-alert')
 		const header = document.querySelector('#header')
 		const sidebar = document.querySelector('#sidebar')
@@ -481,7 +482,7 @@ window.addEventListener('load', () => {
 		sidebar.style.top = `calc(${sidebar_style_top} + ${alert_style_height})`
 		sidebar.style.height = `calc(${sidebar_style_height} - ${alert_style_height})`
 
-		alert__close.addEventListener('click', () => {
+		alert__close.addEventListener('click', _=> {
 			header.removeAttribute('style')
 			sidebar.removeAttribute('style')
 			main.removeAttribute('style')
@@ -493,8 +494,8 @@ window.addEventListener('load', () => {
 
 // customer review
 // all comments height get equal based on the higher height.
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const swiperContainer = document.querySelector('.review-slider')
 		if (!swiperContainer) return
 		const commentArray = swiperContainer.querySelectorAll('.comment')
@@ -510,16 +511,16 @@ window.addEventListener('load', () => {
 })()
 
 // ---
-;(() => {
+;(_=> {
 	const field = document.querySelector('.purchase-form-quantity__field')
 	const plus = document.querySelector('.purchase-form-quantity__plus')
 	const negative = document.querySelector('.purchase-form-quantity__negative')
 
 	if (field && plus && negative) {
-		plus.addEventListener('click', () => {
+		plus.addEventListener('click', _=> {
 			field.value = parseInt(field.value) + 1
 		})
-		negative.addEventListener('click', () => {
+		negative.addEventListener('click', _=> {
 			if (parseInt(field.value) > 1) {
 				field.value = parseInt(field.value) - 1
 			}
@@ -528,15 +529,15 @@ window.addEventListener('load', () => {
 })()
 
 // Header announcements menu
-;(() => {
+;(_=> {
 	const toggleBtn = document.querySelector('.announcements__toggle-btn')
 	const closeBtn = document.querySelector('.announcements__close-btn')
 	const menu = document.querySelector('.announcements__menu')
 	if (!toggleBtn || !closeBtn || !menu) return
 	easyTab(menu)
 
-	toggleBtn.addEventListener('click', () => menu.classList.toggle('hidden'))
-	closeBtn.addEventListener('click', () => menu.classList.add('hidden'))
+	toggleBtn.addEventListener('click', _=> menu.classList.toggle('hidden'))
+	closeBtn.addEventListener('click', _=> menu.classList.add('hidden'))
 
 	window.addEventListener('click', event => {
 		if (!menu.contains(event.target) && !toggleBtn.contains(event.target)) {
@@ -546,13 +547,13 @@ window.addEventListener('load', () => {
 })()
 
 // whyus video player
-;(() => {
+;(_=> {
 	new Plyr('#whyus')
 })()
 
 // Dashboard orders table
-;(() => {
-	window.addEventListener('load', () => {
+;(_=> {
+	window.addEventListener('load', _=> {
 		const headCodeCell = document.querySelector('.do__item-cell__code')
 		const headDateCell = document.querySelector('.do__item-cell__date')
 		const headPriceCell = document.querySelector('.do__item-cell__price')

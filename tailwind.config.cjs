@@ -1,15 +1,7 @@
-const colors = require('tailwindcss/colors');
+const colors = require('tailwindcss/colors')
 
-module.exports = {
-	purge: {
-	  enabled: true,
-	  content: [
-			'./views/**/*.ejs',
-			'./resources/views/**/*.blade.php',
-		],
-	},
-	darkMode: false, // or "media" or "class"
-	important: true,
+const config = {
+  content: ['./src/**/*.{html,svelte}'],
 	theme: {
 		extend: {
 			spacing: {
@@ -33,12 +25,10 @@ module.exports = {
 				100: '25rem',
 			},
 			colors: {
-				'body-bg': colors.coolGray['100'],
-				'body-text': colors.coolGray['700'],
-				gray: {
-					...colors.coolGray
-				},
-				primary: {
+				'body-bg': colors.gray['100'],
+				'body-text': colors.gray['700'],
+				gray: colors.gray,
+				brand: {
 					DEFAULT: '#3D42DF',
 					deep: '#1F24C3',
 					deeper: '#10159D',
@@ -92,11 +82,11 @@ module.exports = {
 			borderWidth: { 3: '3px' },
 			cursor: { grab: 'grab' },
 			outline: {
-				gray: ['2px dotted ' + colors.coolGray['500'], '2px'],
-				dark: ['2px dotted ' + colors.coolGray['400'], '2px'],
+				gray: ['2px dotted ' + colors.gray['500'], '2px'],
+				dark: ['2px dotted ' + colors.gray['400'], '2px'],
 			},
 		},
-		screens: {
+				screens: {
 			'xss': '480px',
 			xs: '576px',
 			sm: '640px',
@@ -123,15 +113,8 @@ module.exports = {
 			lg: '0 0 20px 0 rgba(0, 0, 0, 5%)',
 			none: 'none',
 		},
-	},
-	variants: {
-		extend: {
-			padding: ['last'],
-			margin: ['last'],
-			borderWidth: ['last'],
-			backgroundColor: ['group-focus', 'odd'],
-			textColor: ['group-focus'],
-		},
-	},
-	plugins: [],
-};
+  },
+  plugins: [],
+}
+
+module.exports = config
