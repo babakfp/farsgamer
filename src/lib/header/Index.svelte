@@ -74,7 +74,6 @@
       <!-- User -->
       <a class="h-7.5 flex items-center justify-center relative gap-2 text-sm transition duration-200 hover:text-primary focus:text-primary" href="/dashboard">
         <i class="icon-user text-xl"></i>
-        <p>ورود</p>
       </a>
 
       <!-- Site Support Number -->
