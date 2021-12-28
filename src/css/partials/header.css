@@ -22,10 +22,6 @@
 		@apply lg:bg-transparent;
 	}
 
-	#sidebar__content {
-		@apply max-w-64 bg-white w-full h-full;
-	}
-
 	body.header-and-sidebar-fixed #sidebar__logo {
 		@apply lg:flex !important;
 	}

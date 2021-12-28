@@ -91,7 +91,7 @@ const config = {
 				dark: ['2px dotted ' + colors.gray['400'], '2px'],
 			},
 		},
-				screens: {
+		screens: {
 			'xss': '480px',
 			xs: '576px',
 			sm: '640px',

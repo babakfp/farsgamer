@@ -1,5 +1,5 @@
 <script>
-	import { isOpen } from '$store/mobile-menu.js'
+	import { isOpen, close } from '$store/mobile-menu.js'
 	import OutClick from 'svelte-outclick'
 	import Logo from './Logo.svelte'
 	import Search from './Search.svelte'
@@ -7,9 +7,9 @@
 	import StreamCard from './StreamCard.svelte'
 </script>
 
-<OutClick on:outclick={_=> $isOpen = false} exclude={['.js-burger-toggle-btn']}>
-	<sidebar class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-50 inset-0 top-16 bg-gray-900 bg-opacity-60 lg:top-20" id="sidebar">
-		<div id="sidebar__content">
+<OutClick on:outclick={close} exclude={['.js-burger-toggle-btn']}>
+	<sidebar on:click|self={close} class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-50 inset-0 top-16 bg-gray-900 bg-opacity-60 lg:top-20 lg:translate-x-0" id="sidebar">
+		<div class="translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out lg:translate-x-0" id="sidebar__content">
 			<Logo />
 
 			<div id="sidebar__scrollable-content" class="overflow-y-auto max-h-full px-4 pb-6">
@@ -55,5 +55,8 @@
 		#sidebar {
 			height: calc(100vh - 5rem);
 		}
+	}
+	#sidebar__content {
+		@apply max-w-64 bg-white w-full h-full;
 	}
 </style>

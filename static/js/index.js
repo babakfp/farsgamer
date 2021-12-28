@@ -1,15 +1,15 @@
-// Toggling side menu in mobile screen
-;(_ => {
-	const berger = document.querySelector('#burger')
-	const sidebar = document.querySelector('#sidebar')
-	const sidebar__content = document.querySelector('#sidebar__content')
-	if (berger && sidebar) {
-		sidebar.addEventListener('click', e => {
-			if (!sidebar__content.contains(e.target)) {
-			}
-		})
-	}
-})()
+// // Toggling side menu in mobile screen
+// ;(_ => {
+// 	const berger = document.querySelector('#burger')
+// 	const sidebar = document.querySelector('#sidebar')
+// 	const sidebar__content = document.querySelector('#sidebar__content')
+// 	if (berger && sidebar) {
+// 		sidebar.addEventListener('click', e => {
+// 			if (!sidebar__content.contains(e.target)) {
+// 			}
+// 		})
+// 	}
+// })()
 
 // ---
 
