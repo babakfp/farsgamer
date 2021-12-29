@@ -12,7 +12,7 @@
 		<div class="translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out lg:translate-x-0" id="sidebar__content">
 			<Logo />
 
-			<div id="sidebar__scrollable-content" class="overflow-y-auto max-h-full px-4 pb-6">
+			<div id="sidebar__scrollable-content" class="overflow-y-auto max-h-full pb-6">
 				<Search />
 				
 				<nav class="py-4">
@@ -27,11 +27,11 @@
 					</ul>
 				</nav>
 
-				<hr class="border-gray-200 mb-4">
+				<hr class="border-gray-100 mb-4">
 
 				<!-- Streams ... -->
-				<div>
-					<a class="mb-2 block font-semibold link" href="/streams">استریم ها</a>
+				<div class="p-4">
+					<a class="block mb-4 font-bold" href="/streams">استریم ها</a>
 					<ul class="grid gap-2">
 						<StreamCard />
 						<StreamCard />
@@ -58,5 +58,18 @@
 	}
 	#sidebar__content {
 		@apply max-w-64 bg-white w-full h-full;
+	}
+	#sidebar__scrollable-content::-webkit-scrollbar {
+		width: 3px;
+	}
+	#sidebar__scrollable-content::-webkit-scrollbar-track,
+	#sidebar__scrollable-content::-webkit-scrollbar-thumb {
+		background: transparent;
+	}
+	#sidebar__scrollable-content:hover::-webkit-scrollbar-track {
+		background: rgb(229 231 235);
+	}
+	#sidebar__scrollable-content:hover::-webkit-scrollbar-thumb {
+		background: rgb(156 163 175);
 	}
 </style>

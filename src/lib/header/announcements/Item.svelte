@@ -1,7 +1,7 @@
 <script>
 	export let title
 	export let description
-	export let link = ':javascript'
+	export let link = 'javascript:'
 </script>
 
 <li class="border-b border-gray-100 last:border-0">

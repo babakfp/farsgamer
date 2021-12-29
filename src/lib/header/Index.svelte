@@ -6,7 +6,7 @@
 	import Announcements from './announcements/Index.svelte'
 </script>
 
-<header id="header">
+<header class="z-40 h-16 flex items-center justify-between bg-white border-b border-gray-100 lg:h-20 lg:px-4" id="header">
   <div class="container-base flex items-center justify-between gap-4 h-full lg:gap-0">
     
     <div class="flex items-center lg:w-full lg:h-full">

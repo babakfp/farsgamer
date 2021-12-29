@@ -7,26 +7,15 @@
 </script>
 
 <li>
-	<a class:nav-menu-item--active={$page.path === link} class="nav-menu-item" href={link}>
-		<i class="nav-menu-item__icon {icon}"></i>
-		<span class="nav-menu-item__title">{title}</span>
+	<a class:nav-menu-item--active={$page.path === link} class="relative flex items-center gap-3 py-3 pl-6 pr-5 overflow-hidden hover:text-brand" href={link}>
+		<i class="{icon} w-8 h-8 flex justify-center items-center text-lg"></i>
+		<span class="font-medium">{title}</span>
 	</a>
 </li>
 
 <style lang="postcss">
-	.nav-menu-item {
-		@apply flex items-center gap-3 py-3 pl-6 pr-4 rounded-xl overflow-hidden hover:text-brand;
-	}
-
-	.nav-menu-item--active {
-		@apply bg-brand text-white hover:text-white;
-	}
-
-	.nav-menu-item__icon {
-		@apply w-8 h-8 flex justify-center items-center text-lg;
-	}
-
-	.nav-menu-item__title {
-		@apply font-medium;
+	.nav-menu-item--active::before {
+		content: "";
+		@apply w-1 bg-brand absolute right-0 top-2 bottom-2 rounded-l;
 	}
 </style>
