@@ -1,0 +1,8 @@
+@layer base {
+	
+	[dir=rtl] .fi-rr-search,
+	[dir=rtl] .fi-rr-shopping-cart {
+		@apply flip-x;
+	}
+
+}

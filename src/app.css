@@ -8,16 +8,3 @@
 @import "./css/utilities/_index.css";
 
 @import "./css/partials/_index.css";
-
-i {
-	@apply flex items-center justify-center !leading-none;
-}
-
-.fi-rr-search,
-.fi-rr-shopping-cart {
-	@apply flip-x;
-}
-
-* {
-	@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
-}

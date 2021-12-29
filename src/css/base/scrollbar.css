@@ -1,0 +1,20 @@
+@layer base {
+
+	::-webkit-scrollbar {
+		width: 4px;
+		height: 4px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: rgb(209 213 219);
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: rgb(156 163 175);
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background: rgb(107 114 128);
+	}
+
+}

@@ -1,24 +1,14 @@
+@import './scrollbar.css';
+@import './icon-rtl.css';
+
 @layer base {
 	
-	::-webkit-scrollbar {
-		width: 4px;
-		height: 4px;
-	}
-	::-webkit-scrollbar-track {
-		background: rgb(209 213 219);
-	}
-	::-webkit-scrollbar-thumb {
-		background: rgb(156 163 175);
-	}
-	::-webkit-scrollbar-thumb:hover {
-		background: rgb(107 114 128);;
-	}
-
   * {
     outline: none !important;
-		list-style: none
+		list-style: none;
     /* user-select: none; */
     /* -webkit-user-drag: none; */
+		@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
   }
   
   html, body {
@@ -46,4 +36,9 @@
   .container-base {
     @apply px-4 mx-auto w-full;
   }
+
+	i {
+		@apply flex items-center justify-center !leading-none;
+	}
+
 }
