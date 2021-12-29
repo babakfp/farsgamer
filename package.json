@@ -24,6 +24,7 @@
     "svelte": "^3.44.0",
     "svelte-outclick": "^2.6.5",
     "svelte-preprocess": "^4.10.1",
+    "swiper": "^7.4.1",
     "tailwindcss": "^3.0.7"
   },
   "type": "module"

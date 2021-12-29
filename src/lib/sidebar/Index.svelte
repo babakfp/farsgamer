@@ -12,6 +12,7 @@
 			<Logo />
 
 			<div id="sidebar__scrollable-content" class="overflow-y-auto max-h-full pb-6">
+				
 				<nav class="py-4">
 					<ul>
 						<NavItem title="خانه" link="/" icon="fi-rr-home" />
@@ -26,7 +27,6 @@
 
 				<hr class="border-gray-100 mb-4">
 
-				<!-- Streams ... -->
 				<div class="p-4">
 					<span class="block mb-4 font-bold">استریم ها</span>
 					<ul class="grid gap-2">
@@ -37,7 +37,6 @@
 						<StreamCard />
 					</ul>
 				</div>
-				<!-- ... Streams -->
 
 			</div>
 		</div>
@@ -64,18 +63,6 @@
 		background: rgb(229 231 235);
 	}
 	#sidebar__scrollable-content::-webkit-scrollbar-thumb {
-		background: rgb(156 163 175);
+		background: rgb(209 213 219);
 	}
-
-	/* hidden. visible on container hover */	
-	/* #sidebar__scrollable-content::-webkit-scrollbar-track,
-	#sidebar__scrollable-content::-webkit-scrollbar-thumb {
-		background: transparent;
-	}
-	#sidebar__scrollable-content:hover::-webkit-scrollbar-track {
-		background: rgb(229 231 235);
-	}
-	#sidebar__scrollable-content:hover::-webkit-scrollbar-thumb {
-		background: rgb(156 163 175);
-	} */
 </style>

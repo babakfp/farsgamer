@@ -90,6 +90,9 @@ const config = {
 				gray: ['2px dotted ' + colors.gray['500'], '2px'],
 				dark: ['2px dotted ' + colors.gray['400'], '2px'],
 			},
+			borderRadius: {
+				DEFAULT: '1rem',
+			},
 		},
 		screens: {
 			'xss': '480px',
@@ -122,34 +125,6 @@ const config = {
   plugins: [
 		plugin_flip,
 		plugin_dir,
-		// plugin(({ addBase, addComponents, addUtilities, theme }) => {
-    //   // addBase({
-    //   //   'h1': {
-    //   //     fontSize: theme('fontSize.2xl'),
-    //   //   },
-    //   //   'h2': {
-    //   //     fontSize: theme('fontSize.xl'),
-    //   //   },
-    //   // })
-    //   // addComponents({
-    //   //   '.card': {
-    //   //     backgroundColor: theme('colors.white'),
-    //   //     borderRadius: theme('borderRadius.lg'),
-    //   //     padding: theme('spacing.6'),
-    //   //     boxShadow: theme('boxShadow.xl'),
-    //   //   }
-    //   // })
-    //   addUtilities({
-    //     '.flip-x': {
-		// 			'--tw-scale-x': '-1',
-		// 			'transform': 'var(--tw-transform)',
-    //     },
-		// 		'.flip-y': {
-		// 			'--tw-scale-y': '-1',
-		// 			'transform': 'var(--tw-transform)',
-    //     },
-    //   })
-    // })
 	],
 }
 

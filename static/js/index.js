@@ -1,24 +1,9 @@
-// // Toggling side menu in mobile screen
-// ;(_ => {
-// 	const berger = document.querySelector('#burger')
-// 	const sidebar = document.querySelector('#sidebar')
-// 	const sidebar__content = document.querySelector('#sidebar__content')
-// 	if (berger && sidebar) {
-// 		sidebar.addEventListener('click', e => {
-// 			if (!sidebar__content.contains(e.target)) {
-// 			}
-// 		})
-// 	}
-// })()
-
-// ---
-
 // ## Sliders
 
 const sliderBaseConfig = {
-	speed: 1000,
-	loop: true,
 	spaceBetween: 16,
+	loop: true,
+	speed: 1000,
 	grabCursor: true,
 }
 
@@ -33,6 +18,7 @@ const sliderPaginationConfig = {
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
+		dynamicBullets: true,
 	},
 }
 
@@ -54,6 +40,23 @@ const sliderNavigationConfig = {
 				...sliderBaseConfig,
 				...sliderAutoplayConfig,
 				...sliderPaginationConfig,
+			})
+		})
+	})
+})()
+
+// Vertical image slider
+;(_=> {
+	window.addEventListener('load', _=> {
+		const sliders = document.querySelectorAll('.vertical-image-slider')
+		if ( ! sliders ) return
+
+		sliders.forEach(slider => {
+			new Swiper('.vertical-image-slider', {
+				...sliderBaseConfig,
+				...sliderAutoplayConfig,
+				...sliderPaginationConfig,
+				direction: 'vertical',
 			})
 		})
 	})
