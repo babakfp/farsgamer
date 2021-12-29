@@ -4,6 +4,7 @@
 	import Search from './Search.svelte'
 	import PhoneNumbers from './PhoneNumbers.svelte'
 	import Announcements from './announcements/Index.svelte'
+	import { toggle as searchToggle } from '$store/header-search.js'
 </script>
 
 <header class="z-40 h-16 flex items-center justify-between bg-white border-b border-gray-100 lg:h-20 lg:px-4" id="header">
@@ -17,19 +18,28 @@
 
     <div class="flex h-full -ml-2">
 			<PhoneNumbers />
+
+			<!-- Open search bar -->
+      <button
+				on:click={searchToggle}
+				class="js-header-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="/dashboard" title="مشاهده حساب کاربری"
+			>
+        <i class="fi-rr-search sm:text-xl"></i>
+      </button>
+
 			<Announcements />
 
       <!-- Go to cart page -->
-      <a class="h-full flex items-center px-2.5 duration-100 hover:text-brand focus:-translate-y-1" href="/cart" title="مشاهده سبد خرید">
+      <a class="h-full flex items-center px-2 duration-100 hover:text-brand focus:-translate-y-1 sm:px-2.5" href="/cart" title="مشاهده سبد خرید">
         <div class="relative">
-					<i class="fi-rr-shopping-cart text-xl"></i>
+					<i class="fi-rr-shopping-cart sm:text-xl"></i>
 					<div class="absolute flex items-center justify-center -right-1 -top-1 bg-red-400 text-white leading-0 w-3.5 h-3.5 rounded-full text-2xs">2</div>
 				</div>
       </a>
 
       <!-- Go to dashboard page -->
-      <a class="h-full flex items-center px-2.5 duration-100 hover:text-brand focus:-translate-y-1" href="/dashboard" title="مشاهده حساب کاربری">
-        <i class="fi-rr-user text-xl"></i>
+      <a class="h-full flex items-center px-2 duration-100 hover:text-brand focus:-translate-y-1 sm:px-2.5" href="/dashboard" title="مشاهده حساب کاربری">
+        <i class="fi-rr-user sm:text-xl"></i>
       </a>
     </div>
 

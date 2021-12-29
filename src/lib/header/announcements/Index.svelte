@@ -16,10 +16,10 @@
 	<!-- Header btn -->
 	<button
 		on:click={_=> isOpen = !isOpen}
-		class="js-announcements-toggle-btn h-full flex items-center px-2.5 duration-100 hover:text-brand" href="/cart" title="مشاهده اعلانات"
+		class="js-announcements-toggle-btn h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="/cart" title="مشاهده اعلانات"
 	>
 		<div class="relative">
-			<i class="fi-rr-bell text-xl"></i>
+			<i class="fi-rr-bell sm:text-xl"></i>
 			{#if $publicAnnouncements.length > 0 || $userAnnouncements.length > 0}
 				<div class="absolute flex items-center justify-center -right-1 -top-1 bg-red-400 text-white leading-0 w-3.5 h-3.5 rounded-full text-2xs">2</div>
 			{/if}

@@ -12,3 +12,8 @@
 i {
 	@apply flex items-center justify-center !leading-none;
 }
+
+.fi-rr-search,
+.fi-rr-shopping-cart {
+	@apply flip-x;
+}

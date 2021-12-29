@@ -2,7 +2,6 @@
 	import { isOpen, close } from '$store/mobile-menu.js'
 	import OutClick from 'svelte-outclick'
 	import Logo from './Logo.svelte'
-	import Search from './Search.svelte'
 	import NavItem from './NavItem.svelte'
 	import StreamCard from './StreamCard.svelte'
 </script>
@@ -13,8 +12,6 @@
 			<Logo />
 
 			<div id="sidebar__scrollable-content" class="overflow-y-auto max-h-full pb-6">
-				<Search />
-				
 				<nav class="py-4">
 					<ul>
 						<NavItem title="خانه" link="/" icon="fi-rr-home" />
