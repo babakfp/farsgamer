@@ -14,16 +14,14 @@
 </li>
 
 <style lang="postcss">
-	.nav-menu-item:hover,
-	.nav-menu-item:focus-visible {
+	.nav-menu-item:hover {
 		@apply text-brand bg-brand bg-opacity-5;
 	}
 	.nav-menu-item::before {
 		content: "";
 		@apply w-1 bg-gray-200 absolute right-0 top-2 bottom-2 rounded-l duration-100 ease-in-out;
 	}
-	.nav-menu-item:hover::before,
-	.nav-menu-item:focus-visible::before {
+	.nav-menu-item:hover::before {
 		@apply bg-brand;
 	}
 	.nav-menu-item--active {
