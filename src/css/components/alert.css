@@ -29,7 +29,7 @@
 	}
 
 	.tp-alert__action {
-		@apply btn w-full max-w-40 leading-5 px-6 border-white rounded-full hover:bg-white hover:text-red focus:bg-white focus:text-red lg:col-start-11 lg:col-end-13 lg:justify-self-end lg:self-center;
+		@apply btn w-full max-w-40 leading-5 px-6 border-white rounded-full hover:bg-white hover:text-red lg:col-start-11 lg:col-end-13 lg:justify-self-end lg:self-center;
 	}
 
 }

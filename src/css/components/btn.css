@@ -5,11 +5,11 @@
 	}
 
 	.btn-brand {
-		@apply text-white bg-brand hover:bg-brand-deep focus:bg-brand-deeper;
+		@apply text-white bg-brand hover:bg-brand-deep;
 	}
 
 	.btn-outline.btn-brand {
-		@apply bg-transparent text-brand border-brand hover:bg-brand-deep hover:text-white focus:text-white focus:bg-brand-deeper;
+		@apply bg-transparent text-brand border-brand hover:bg-brand-deep hover:text-white;
 	}
 
 	.btn-2xl {
@@ -39,7 +39,7 @@
 	}
 
 	.btn-disabled {
-		@apply text-gray-500 hover:bg-gray-200 focus:bg-gray-200;
+		@apply text-gray-500 hover:bg-gray-200;
 	}
 
 }

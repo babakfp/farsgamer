@@ -1,7 +1,7 @@
 @layer components {
 
 	.text-field {
-		@apply bg-gray2-100 border border-gray2-100 placeholder-gray2-700 hover:border-gray2-500 focus:border-brand;
+		@apply bg-gray2-100 border border-gray2-100 placeholder-gray2-700 hover:border-gray2-500;
 		@apply h-12.5 w-full rounded-2xl py-2 px-4 leading-7 transition-all duration-100 ease-in;
 	}
 
