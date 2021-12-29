@@ -16,7 +16,7 @@
 	<!-- Header btn -->
 	<button
 		on:click={_=> isOpen = !isOpen}
-		class="js-announcements-toggle-btn h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="/cart" title="مشاهده اعلانات"
+		class="js-announcements-toggle-btn h-full flex items-center px-2 duration-100 hover:text-brand focus-visible:-translate-y-1 sm:px-2.5" href="/cart" title="مشاهده اعلانات"
 	>
 		<div class="relative">
 			<i class="fi-rr-bell sm:text-xl"></i>

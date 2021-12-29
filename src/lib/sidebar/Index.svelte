@@ -28,7 +28,7 @@
 
 				<!-- Streams ... -->
 				<div class="p-4">
-					<a class="block mb-4 font-bold" href="/streams">استریم ها</a>
+					<span class="block mb-4 font-bold">استریم ها</span>
 					<ul class="grid gap-2">
 						<StreamCard />
 						<StreamCard />
