@@ -22,7 +22,7 @@
 			<!-- Open search bar -->
       <button
 				on:click={searchToggle}
-				class="js-header-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="/dashboard" title="مشاهده حساب کاربری"
+				class="js-header-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="/dashboard" title="مشاهده حساب کاربری"
 			>
         <i class="fi-rr-search sm:text-xl"></i>
       </button>

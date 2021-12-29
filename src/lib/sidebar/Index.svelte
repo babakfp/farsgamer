@@ -56,10 +56,19 @@
 	#sidebar__content {
 		@apply max-w-64 bg-white w-full h-full;
 	}
+
 	#sidebar__scrollable-content::-webkit-scrollbar {
-		width: 3px;
+		width: 2px;
 	}
-	#sidebar__scrollable-content::-webkit-scrollbar-track,
+	#sidebar__scrollable-content::-webkit-scrollbar-track {
+		background: rgb(229 231 235);
+	}
+	#sidebar__scrollable-content::-webkit-scrollbar-thumb {
+		background: rgb(156 163 175);
+	}
+
+	/* hidden. visible on container hover */	
+	/* #sidebar__scrollable-content::-webkit-scrollbar-track,
 	#sidebar__scrollable-content::-webkit-scrollbar-thumb {
 		background: transparent;
 	}
@@ -68,5 +77,5 @@
 	}
 	#sidebar__scrollable-content:hover::-webkit-scrollbar-thumb {
 		background: rgb(156 163 175);
-	}
+	} */
 </style>

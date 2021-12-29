@@ -15,7 +15,7 @@
 	}
 
 	body.header-and-sidebar-fixed #sidebar {
-		@apply lg:border-l lg:border-gray-100 lg:w-56 lg:ml-auto lg:translate-x-0 2xl:w-64 lg:bg-transparent;
+		@apply lg:w-56 lg:ml-auto lg:translate-x-0 2xl:w-64 lg:bg-transparent;
 	}
 
 	body.header-and-sidebar-fixed #sidebar__logo {
