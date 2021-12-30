@@ -131,7 +131,7 @@
 	}
 
 	.comment__reply-btn {
-		@apply btn btn-sm btn-brand flex mr-auto ml-0 mt-2;
+		@apply btn btn-sm btn--brand flex mr-auto ml-0 mt-2;
 	}
 
 	.comment__form {
@@ -151,7 +151,7 @@
 	}
 
 	.comment__form-submit {
-		@apply btn btn-xl form-submit btn-brand mt-4 w-64;
+		@apply btn btn-xl form-submit btn--brand mt-4 w-64;
 	}
 
 	.comment .comment__form {

@@ -91,7 +91,7 @@ const config = {
 				dark: ['2px dotted ' + colors.gray['400'], '2px'],
 			},
 			borderRadius: {
-				DEFAULT: '1rem',
+				DEFAULT: '.75rem',
 			},
 		},
 		screens: {

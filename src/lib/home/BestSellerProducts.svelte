@@ -6,14 +6,14 @@
 </script>
 
 <section>
-  <div class="flex items-center justify-between mb-4 mt-8 lg:mb-6 lg:mt-10">
+  <div class="flex items-center justify-between mb-4 mt-8 lg:mt-10">
     <div class="flex gap-2 items-center">
       <img class="w-6 h-6" src="/svg/fire.svg" alt="آتش">
       <h2 class="font-bold text-lg">پرفروشـترین محصولاتــــــ</h2>
     </div>
-    <a class="flex gap-2 items-center" href="javascript:">
-      <span class="text-sm lg:text-base">مشاهده همه</span>
-      <i class="icon-angle-left text-xl"></i>
+    <a class="btn btn--sm btn--outline btn--brand" href="javascript:">
+      <span>مشاهده همه</span>
+      <i class="icon-angle-left"></i>
     </a>
   </div>
 
@@ -21,7 +21,7 @@
 		modules={[ Pagination, Autoplay ]}
 		speed={600}
 		grabCursor={true}
-		pagination={{ clickable: true, dynamicBullets: true }}
+		pagination={{ clickable: true }}
 		autoplay={{ delay: 4000, disableOnInteraction: false }}
 		slidesPerView={2}
 		breakpoints={{
@@ -46,8 +46,15 @@
 		padding-bottom: calc(16px + 12px);
 		overflow: unset;
 	}
-	section :global(.swiper-pagination) {
+
+	section :global(.swiper-pagination-bullets.swiper-pagination-horizontal),
+	section :global(.swiper-pagination-bullets-dynamic.swiper-pagination-horizontal) {
 		bottom: 0;
+
+		/* for normal bullets */
+		text-align: left;
+
+		/* for dynamic bullets */
 		left: 0 !important;
     transform: unset !important;
     right: unset !important;
