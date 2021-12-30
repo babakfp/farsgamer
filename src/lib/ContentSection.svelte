@@ -5,7 +5,7 @@
 </script>
 
 <section>
-  <div class="flex items-center justify-between mb-4 mt-8 lg:mt-10">
+  <div class="flex items-center justify-between mb-4">
 		<h2 class="font-bold text-lg">{ title }</h2>
 		{#if link}
 			<a class="btn btn--sm btn--outline btn--brand" href={ link }>

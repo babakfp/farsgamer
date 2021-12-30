@@ -1,4 +1,4 @@
-<a class="grid justify-center text-center p-2 rounded bg-white" href="javascript:">
+<a class="grid justify-center text-center p-2 rounded bg-white duration-200 ease-in-out hover:drop-shadow-md hover:scale-105" href="javascript:">
   
 	<!-- If in stock -->
 	<img class="w-full rounded" src="/images/product-1.jpg" alt="گیف کارد 20 دلاری استیم">
