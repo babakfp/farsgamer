@@ -21,3 +21,23 @@
 .swiper-pagination-bullet-active:hover {
 	@apply bg-brand-deep;
 }
+
+/*  */
+
+.product-carousel.swiper {
+	padding-bottom: calc(16px + 12px);
+	overflow: unset;
+}
+
+.product-carousel .swiper-pagination-bullets.swiper-pagination-horizontal,
+.product-carousel .swiper-pagination-bullets-dynamic.swiper-pagination-horizontal {
+	bottom: 0;
+
+	/* for normal bullets */
+	text-align: left;
+
+	/* for dynamic bullets */
+	left: 0 !important;
+	transform: unset !important;
+	right: unset !important;
+}

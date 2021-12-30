@@ -99,6 +99,7 @@ const config = {
 			xs: '576px',
 			sm: '640px',
 			md: '768px',
+			'2md2': '840px',
 			'2md': '894px',
 			lg: '1024px',
 			xl: '1280px',

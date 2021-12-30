@@ -1,6 +1,7 @@
 <script>
 	import Posters from '$lib/home/Posters.svelte'
 	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
+	import GiftCards from '$lib/home/GiftCards.svelte'
 </script>
 
 <svelte:head>
@@ -8,10 +9,10 @@
 </svelte:head>
 
 <Posters />
-<BestSellerProducts />
-
 <!-- <%- include(components + "home/triple-posters.ejs") %> -->
-<!-- <%- include(components + "home/giftcards.ejs") %> -->
+<BestSellerProducts />
+<GiftCards />
+
 <!-- <%- include(components + "home/customers-review.ejs") %> -->
 <!-- <%- include(components + "home/physical-products.ejs") %> -->
 <!-- <%- include(components + "home/social.ejs") %> -->
