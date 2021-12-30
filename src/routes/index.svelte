@@ -17,7 +17,6 @@
 	<UserComments />
 </div>
 
-<!-- <%- include(components + "home/customers-review.ejs") %> -->
 <!-- <%- include(components + "home/physical-products.ejs") %> -->
 <!-- <%- include(components + "home/social.ejs") %> -->
 <!-- <%- include(components + "home/images.ejs") %> -->

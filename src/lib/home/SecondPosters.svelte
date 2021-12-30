@@ -1,6 +1,6 @@
 <script>
-	import { Swiper, SwiperSlide } from 'swiper/svelte'
-	import { Pagination, Autoplay } from 'swiper'
+	// import { Swiper, SwiperSlide } from 'swiper/svelte'
+	// import { Pagination, Autoplay } from 'swiper'
 
 	const posters = [
 		{ imgSrc: '/images/home/home-second-poster (1).png' },
@@ -10,7 +10,22 @@
 	]
 </script>
 
-<Swiper
+<div class="grid gap-4 snap-y snap-mandatory" style="max-height: 404px; overflow-y: auto;">
+	{#each posters as poster}
+		<a class="snap-start" href={poster.link || 'javascript:'}>
+			<img class="rounded" src={poster.imgSrc} alt />
+		</a>
+	{/each}
+</div>
+
+<style lang="postcss">
+	.grid::-webkit-scrollbar {
+		@apply w-0;
+	}
+</style>
+
+<!-- TODO: Replace this with Scroll Snap -->
+<!-- <Swiper
 	modules={[ Pagination, Autoplay ]}
 	loop={true}
 	speed={600}
@@ -27,4 +42,4 @@
 			</a>
 		</SwiperSlide>
 	{/each}
-</Swiper>
+</Swiper> -->

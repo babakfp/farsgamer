@@ -1,14 +1,16 @@
-<div class="rating-stars dir-ltr">
-  <i class="rating-stars__empty-star icon-star-outline"></i>
-  <i class="rating-stars__empty-star icon-star-outline"></i>
-  <i class="rating-stars__empty-star icon-star-outline"></i>
-  <i class="rating-stars__empty-star icon-star-outline"></i>
-  <i class="rating-stars__empty-star icon-star-outline"></i>
-  <div class="flex items-center absolute top-0 overflow-hidden" style="width:90%">
-    <i class="rating-stars__filled-star icon-star-filled"></i>
-    <i class="rating-stars__filled-star icon-star-filled"></i>
-    <i class="rating-stars__filled-star icon-star-filled"></i>
-    <i class="rating-stars__filled-star icon-star-filled"></i>
-    <i class="rating-stars__filled-star icon-star-filled"></i>
+<script>
+	export let rating = 5
+</script>
+
+<div class="relative flex items-center gap-0.5 text-gray-400 dir-ltr">
+  <i class="fi-rr-star text-2xs"></i>
+  <i class="fi-rr-star text-2xs"></i>
+  <i class="fi-rr-star text-2xs"></i>
+  <i class="fi-rr-star text-2xs"></i>
+  <i class="fi-rr-star text-2xs"></i>
+  <div class="absolute flex items-center gap-0.5 text-yellow">
+    {#each [...Array(rating).keys()] as _}
+			<i class="fi-sr-star text-2xs"></i>
+		{/each}
   </div>
 </div>
