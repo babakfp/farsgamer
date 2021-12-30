@@ -123,6 +123,7 @@ const config = {
 		},
   },
   plugins: [
+		require('@tailwindcss/line-clamp'),
 		plugin_flip,
 		plugin_dir,
 	],

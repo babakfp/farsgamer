@@ -7,7 +7,7 @@
 </script>
 
 <OutClick on:outclick={close} exclude={['.js-burger-toggle-btn']}>
-	<sidebar on:click|self={close} class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-50 inset-0 top-16 bg-gray-900 bg-opacity-60 lg:top-20 lg:translate-x-0" id="sidebar">
+	<sidebar on:click|self={close} class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-50 inset-0 top-16 bg-gray-900 bg-opacity-60 backdrop-blur-sm lg:top-20 lg:translate-x-0" id="sidebar">
 		<div class="translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out lg:translate-x-0" id="sidebar__content">
 			<Logo />
 
@@ -57,7 +57,7 @@
 	}
 
 	#sidebar__scrollable-content::-webkit-scrollbar {
-		width: 2px;
+		@apply w-0 lg:w-1;
 	}
 	#sidebar__scrollable-content::-webkit-scrollbar-track {
 		background: rgb(229 231 235);

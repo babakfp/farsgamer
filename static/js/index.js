@@ -388,23 +388,6 @@ $('#dashboard-comments-rate-product').barrating('show', {
 
 // ---
 
-// product grid box. // add (...) if title length is more that x.
-;(_=> {
-	const titleArray = document.querySelectorAll('.js-truncate-product-title')
-	if (!titleArray) return
-	const truncate = (source, size) => {
-		return source.length > size
-			? source.slice(0, size - 1) +
-					"<span class='text-gray-400 font-light'>…</span>"
-			: source
-	}
-	titleArray.forEach(title => {
-		title.innerHTML = truncate(title.textContent, 45)
-	})
-})()
-
-// ---
-
 const swiperImageGallery = (
 	big_thumb_container_class,
 	small_thumbs_container_class

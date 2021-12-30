@@ -1,38 +1,34 @@
-<script>
-	import ProductPrice from './ProductPrice.svelte'
-</script>
-
-<div class="rounded-xl overflow-hidden bg-white grid justify-center items-end">
+<a class="grid justify-center text-center p-2 rounded bg-white" href="javascript:">
   
-  <a href="/single-product">
-    <!-- If in stock -->
-    <img class="w-full" src="/images/product-1.jpg" alt="گیف کارد 20 دلاری استیم">
-    
-    <!-- If not in stock -->
-    <!-- <div class="relative overflow-hidden">
-      <img class="w-full" src="/images/product-grid.png"> -->
-      <!-- Over Layer -->
-      <!-- <div class="bg-gray-700 bg-opacity-70 absolute inset-0 flex items-center justify-center">
-        <p class="text-white font-medium">موجود نیست</p>
-      </div>
-    </div> -->
-  </a>
+	<!-- If in stock -->
+	<img class="w-full rounded" src="/images/product-1.jpg" alt="گیف کارد 20 دلاری استیم">
+	
+	<!-- If not in stock -->
+	<!-- <div class="relative overflow-hidden">
+		<img class="w-full" src="/images/product-grid.png"> -->
+		<!-- Over Layer -->
+		<!-- <div class="bg-gray-700 bg-opacity-70 absolute inset-0 flex items-center justify-center">
+			<p class="text-white font-medium">موجود نیست</p>
+		</div>
+	</div> -->
 		
-	<div class="text-center">
-		<a href="/single-product">
-			<h3 class="js-truncate-product-title text-center overflow-hidden text-gray-700 pt-3 px-4 font-semibold h-16 leading-5">گیف کارد 20 دلاری استیم</h3>
-		</a>
-	
-		<p class="text-center text-gray2-700 text-sm mb-0.5 max-h-5 overflow-hidden px-4">Fortnite</p>
-	
-		<!-- Price -->
-		<ProductPrice />
-	
-		<div class="flex justify-center border-t border-gray-200 py-3 mt-2">
-			<a class="btn btn-brand inline-flex items-center justify-center gap-2 p-2 px-4 bg-new-blue text-white rounded-full" href="#">
-				<i class="icon-basket"></i>
-				<span class="text-sm">جزئیات محصول</span>
-			</a>
+	<div class="p-2 space-y-2 text-center mt-2">
+		<h3 class="font-bold text-sm line-clamp-1">گیف کارد 20 دلاری استیم</h3>
+		<p class="text-gray-400 text-xs line-clamp-1">Fortnite</p>
+	</div>
+
+	<hr class="pt-4 -mx-2 border-dashed border-gray-200">
+
+	<div class="flex gap-1.5 justify-center pb-2">
+		<div class="font-semibold leading-4 grid">
+			<p>۵۰۰,۰۰۰</p>
+			<p class="line-through text-gray2-700 flex items-center justify-end">۳۰۰,۰۰۰</p>
+		</div>
+
+		<div class="grid gap-1">
+			<p class="text-sm">تومان</p>
+			<div class="bg-red text-white rounded-full py-0.5 px-2 text-xs">٪۲۰</div>
 		</div>
 	</div>
-</div>
+	
+</a>
