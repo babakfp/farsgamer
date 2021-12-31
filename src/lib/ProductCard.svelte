@@ -23,7 +23,7 @@
 	<div class="-mb-2 h-14 flex items-center justify-center gap-1">
 		<span class="font-montserrat font-semibold line-through opacity-50">500</span>
 		<span class="font-montserrat font-semibold">300</span>
-		<span>تومانــ</span>
+		<span>تومانـ</span>
 		<!-- <span>بدونـ قیمتـــ</span> -->
 		<!-- <span>قیمتـــ متغیـر</span> -->
 	
