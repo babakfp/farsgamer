@@ -43,10 +43,6 @@
 		</a>
 	</div>
 
-	<a class="flex" href="javascript:">
-		<img class="rounded" src="/images/home/poster-full-width (2).png" alt>
-	</a>
-
 	<NewPosts />
 
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -63,5 +59,9 @@
 			<img class="w-full rounded" src="/images/home/poster-1-4-width (4).png" alt>
 		</a>
 	</section>
+
+	<a class="flex" href="javascript:">
+		<img class="rounded" src="/images/home/poster-full-width (2).png" alt>
+	</a>
 
 </div>
