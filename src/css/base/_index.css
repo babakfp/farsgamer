@@ -1,5 +1,6 @@
 @import './scrollbar.css';
 @import './icon-rtl.css';
+@import './fonts.css';
 
 @layer base {
 	
@@ -12,7 +13,7 @@
   }
   
   html, body {
-    font-family: "IranYekanWebFn", montserrat !important;
+    font-family: "DanaFN", "IranYekanWebFn", "Poppins", "Montserrat" !important;
   }
   
   html {

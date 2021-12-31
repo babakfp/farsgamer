@@ -6,7 +6,7 @@
 	import ProductCard from '$lib/ProductCard.svelte'
 </script>
 
-<ContentSection title="پرفروشـترین های هـفته" link="javascript:">
+<ContentSection title="تخفیفـــ های ویــژه" link="javascript:">
 	<Swiper
 		class="product-carousel"
 		modules={[ Pagination, Autoplay ]}
@@ -25,12 +25,12 @@
 			1600: { slidesPerView: 6 },
 		}}
 	>
-		<SwiperSlide><ProductCard /></SwiperSlide>
-		<SwiperSlide><ProductCard /></SwiperSlide>
-		<SwiperSlide><ProductCard /></SwiperSlide>
-		<SwiperSlide><ProductCard /></SwiperSlide>
-		<SwiperSlide><ProductCard /></SwiperSlide>
-		<SwiperSlide><ProductCard /></SwiperSlide>
-		<SwiperSlide><ProductCard /></SwiperSlide>
+		<SwiperSlide><ProductCard specialDiscount={true} /></SwiperSlide>
+		<SwiperSlide><ProductCard specialDiscount={true} /></SwiperSlide>
+		<SwiperSlide><ProductCard specialDiscount={true} /></SwiperSlide>
+		<SwiperSlide><ProductCard specialDiscount={true} /></SwiperSlide>
+		<SwiperSlide><ProductCard specialDiscount={true} /></SwiperSlide>
+		<SwiperSlide><ProductCard specialDiscount={true} /></SwiperSlide>
+		<SwiperSlide><ProductCard specialDiscount={true} /></SwiperSlide>
 	</Swiper>
 </ContentSection>

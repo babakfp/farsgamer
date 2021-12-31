@@ -20,7 +20,7 @@ const config = {
   preprocess: [
 		sveltePreprocess(
 			{
-				postcss: true
+				postcss: true,
 			}
 		)
 	],

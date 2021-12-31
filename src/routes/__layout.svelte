@@ -11,7 +11,7 @@
 	const layouts = {
 		'/': HeaderMmenu,
 	}
-	$: layout = layouts[$page.path] ?? Default
+	$: layout = layouts[$page.url.pathname] ?? Default
 </script>
 
 <LoadingBar />

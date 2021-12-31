@@ -1,34 +1,52 @@
-<a class="grid justify-center text-center p-2 rounded bg-white duration-200 ease-in-out hover:drop-shadow-md hover:scale-105" href="javascript:">
-  
-	<!-- If in stock -->
-	<img class="w-full rounded" src="/images/product-1.jpg" alt="گیف کارد 20 دلاری استیم">
+<script>
+	export let specialDiscount = false
+</script>
+
+<a class="group relative grid justify-center text-center p-2 rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:shadow-gray-200 hover:scale-105" href="javascript:">
+
+	<div class="relative rounded overflow-hidden">
+		<img src="/images/product-1.jpg" alt>
+		<!-- <div class="absolute inset-0 flex items-center justify-center bg-gray-900 backdrop-blur-sm bg-opacity-40">
+			<p class="text-white font-bold drop-shadow-xl">نـامـوجـود</p>
+		</div> -->
+	</div>
+
+	<div class="absolute top-0 left-0 py-1 pl-3 pr-4 bg-red-400 text-white rounded rounded-bl-none text-xs">٪۲۰</div>
 	
-	<!-- If not in stock -->
-	<!-- <div class="relative overflow-hidden">
-		<img class="w-full" src="/images/product-grid.png"> -->
-		<!-- Over Layer -->
-		<!-- <div class="bg-gray-700 bg-opacity-70 absolute inset-0 flex items-center justify-center">
-			<p class="text-white font-medium">موجود نیست</p>
-		</div>
-	</div> -->
-		
 	<div class="p-2 space-y-2 text-center mt-2">
 		<h3 class="font-bold text-sm line-clamp-1">گیف کارد 20 دلاری استیم</h3>
 		<p class="text-gray-400 text-xs line-clamp-1">Fortnite</p>
 	</div>
 
-	<hr class="pt-4 -mx-2 border-dashed border-gray-200">
+	<hr class="-mx-2 border-gray-100">
 
-	<div class="flex gap-1.5 justify-center pb-2">
-		<div class="font-semibold leading-4 grid">
-			<p>۵۰۰,۰۰۰</p>
-			<p class="line-through text-gray2-700 flex items-center justify-end">۳۰۰,۰۰۰</p>
-		</div>
-
-		<div class="grid gap-1">
-			<p class="text-sm">تومان</p>
-			<div class="bg-red text-white rounded-full py-0.5 px-2 text-xs">٪۲۰</div>
-		</div>
+	<div class="-mb-2 h-14 flex items-center justify-center gap-1">
+		<span class="font-montserrat font-semibold line-through opacity-50">500</span>
+		<span class="font-montserrat font-semibold">300</span>
+		<span>تومانــ</span>
+		<!-- <span>بدونـ قیمتـــ</span> -->
+		<!-- <span>قیمتـــ متغیـر</span> -->
+	
+		{#if specialDiscount}
+			<ul class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-60 backdrop-blur-sm rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
+				<li>
+					<div>روز</div>
+					<div class="font-bold">2</div>
+				</li>
+				<li>
+					<div>ساعت</div>
+					<div class="font-bold">23</div>
+				</li>
+				<li>
+					<div>دقیقه</div>
+					<div class="font-bold">48</div>
+				</li>
+				<li>
+					<div>ثانیه</div>
+					<div class="font-bold">02</div>
+				</li>
+			</ul>
+		{/if}
 	</div>
 	
 </a>

@@ -7,7 +7,7 @@
 </script>
 
 <li>
-	<a class:nav-menu-item--active={$page.path === link} class="nav-menu-item relative flex items-center gap-3 py-3 pl-6 pr-5 overflow-hidden" href={link}>
+	<a class:nav-menu-item--active={$page.url.pathname === link} class="nav-menu-item relative flex items-center gap-3 py-3 pl-6 pr-5 overflow-hidden" href={link}>
 		<i class="{icon} w-8 h-8 flex justify-center items-center text-lg"></i>
 		<span class="font-medium">{title}</span>
 	</a>

@@ -13,7 +13,7 @@
 	]
 </script>
 
-<ContentSection title="گـیفتــکارتـــ ها">
+<ContentSection title="گـیفتــکارد ها">
 	<Swiper
 		class="product-carousel"
 		modules={[ Pagination, Autoplay ]}

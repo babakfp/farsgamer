@@ -112,9 +112,7 @@ const config = {
 			padding: '1rem',
 		},
 		fontFamily: {
-			isans: ['isans', 'montserrat'],
-			'isans-ed': ['isans-ed', 'montserrat'],
-			montserrat: ['isans-ed', 'isans'],
+			montserrat: ['Montserrat'],
 		},
 		boxShadow: {
 			sm: '0 0 10px 0 rgba(0, 0, 0, 2%)',

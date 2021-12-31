@@ -3,6 +3,7 @@
 	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
 	import GiftCards from '$lib/home/GiftCards.svelte'
 	import UserComments from '$lib/home/UserComments.svelte'
+	import SpecialDiscounts from '$lib/home/SpecialDiscounts.svelte'
 </script>
 
 <svelte:head>
@@ -15,6 +16,13 @@
 	<BestSellerProducts />
 	<GiftCards />
 	<UserComments />
+	<SpecialDiscounts />
+	<a class="flex" href="javascript:">
+		<img class="rounded" src="/images/home/poster-full-width (1).png" alt>
+	</a>
+	<a class="flex" href="javascript:">
+		<img class="rounded" src="/images/home/poster-full-width (2).png" alt>
+	</a>
 </div>
 
 <!-- <%- include(components + "home/physical-products.ejs") %> -->

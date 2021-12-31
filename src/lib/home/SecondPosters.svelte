@@ -10,7 +10,7 @@
 	]
 </script>
 
-<div class="grid gap-4 snap-y snap-mandatory" style="max-height: 404px; overflow-y: auto;">
+<div class="grid grid-cols-2 gap-4 snap-y snap-mandatory overflow-x-auto md:grid-cols-1">
 	{#each posters as poster}
 		<a class="snap-start" href={poster.link || 'javascript:'}>
 			<img class="rounded" src={poster.imgSrc} alt />
