@@ -4,6 +4,8 @@
 	import GiftCards from '$lib/home/GiftCards.svelte'
 	import UserComments from '$lib/home/UserComments.svelte'
 	import SpecialDiscounts from '$lib/home/SpecialDiscounts.svelte'
+	import ContentSection from '$lib/ContentSection.svelte'
+	import NewPosts from '$lib/home/NewPosts.svelte'
 </script>
 
 <svelte:head>
@@ -16,16 +18,54 @@
 	<BestSellerProducts />
 	<GiftCards />
 	<UserComments />
+	
+	<section class="grid gap-4 sm:grid-cols-2">
+		<a class="flex" href="javascript:">
+			<img class="w-full rounded" src="/images/home/poster-half-width (1).png" alt>
+		</a>
+		<a class="flex" href="javascript:">
+			<img class="w-full rounded" src="/images/home/poster-half-width (2).png" alt>
+		</a>
+	</section>
+
 	<SpecialDiscounts />
+
 	<a class="flex" href="javascript:">
 		<img class="rounded" src="/images/home/poster-full-width (1).png" alt>
 	</a>
+
+	<div class="flex justify-center gap-4">
+		<a class="group flex" href="javascript:">
+			<img class="max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-telegram.png" alt="فارسگیمر در تلگرام">
+		</a>
+		<a class="group flex" href="javascript:">
+			<img class="max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام">
+		</a>
+	</div>
+
 	<a class="flex" href="javascript:">
 		<img class="rounded" src="/images/home/poster-full-width (2).png" alt>
 	</a>
+
+	<NewPosts />
+
+	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+		<a class="flex" href="javascript:">
+			<img class="w-full rounded" src="/images/home/poster-1-4-width (1).png" alt>
+		</a>
+		<a class="flex" href="javascript:">
+			<img class="w-full rounded" src="/images/home/poster-1-4-width (2).png" alt>
+		</a>
+		<a class="flex" href="javascript:">
+			<img class="w-full rounded" src="/images/home/poster-1-4-width (3).png" alt>
+		</a>
+		<a class="flex" href="javascript:">
+			<img class="w-full rounded" src="/images/home/poster-1-4-width (4).png" alt>
+		</a>
+	</section>
+
 </div>
 
-<!-- <%- include(components + "home/physical-products.ejs") %> -->
 <!-- <%- include(components + "home/social.ejs") %> -->
 <!-- <%- include(components + "home/images.ejs") %> -->
 <!-- <%- include(components + "home/posts-slider.ejs") %> -->

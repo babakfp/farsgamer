@@ -2,7 +2,7 @@
 	export let specialDiscount = false
 </script>
 
-<a class="group relative grid justify-center text-center p-2 rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:shadow-gray-200 hover:scale-105" href="javascript:">
+<a class="group relative grid justify-items-center p-2 rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:shadow-gray-200 hover:scale-105" href="javascript:">
 
 	<div class="relative rounded overflow-hidden">
 		<img src="/images/product-1.jpg" alt>
