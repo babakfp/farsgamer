@@ -1,7 +1,7 @@
 @layer components {
 
 	.posttype-content {
-		@apply mt-8 rounded-2xl overflow-hidden;
+		@apply mt-8 rounded overflow-hidden;
 	}
 
 	/* Tabs */
@@ -93,7 +93,7 @@
 	}
 
 	.posttype-content__description img {
-		@apply rounded-2xl;
+		@apply rounded;
 	}
 
 	.posttype-content__description img + h2,

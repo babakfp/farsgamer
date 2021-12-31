@@ -96,6 +96,7 @@ const config = {
 		},
 		screens: {
 			'xss': '480px',
+			'2xs': '400px',
 			xs: '576px',
 			sm: '640px',
 			md: '768px',

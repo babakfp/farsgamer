@@ -36,10 +36,10 @@
 
 	<div class="flex justify-center gap-4">
 		<a class="group flex" href="javascript:">
-			<img class="max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-telegram.png" alt="فارسگیمر در تلگرام">
+			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-telegram.png" alt="فارسگیمر در تلگرام">
 		</a>
 		<a class="group flex" href="javascript:">
-			<img class="max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام">
+			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام">
 		</a>
 	</div>
 
@@ -65,8 +65,3 @@
 	</section>
 
 </div>
-
-<!-- <%- include(components + "home/social.ejs") %> -->
-<!-- <%- include(components + "home/images.ejs") %> -->
-<!-- <%- include(components + "home/posts-slider.ejs") %> -->
-<!-- <%- include(components + "footer.ejs") %> -->

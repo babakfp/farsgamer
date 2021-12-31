@@ -1,7 +1,7 @@
 @layer components {
 
 	.comment {
-		@apply p-4 rounded-2xl bg-gray-50;
+		@apply p-4 rounded bg-gray-50;
 	}
 
 	.comment__head {
@@ -135,7 +135,7 @@
 	}
 
 	.comment__form {
-		@apply border border-gray-200 rounded-2xl mt-4 bg-white;
+		@apply border border-gray-200 rounded mt-4 bg-white;
 	}
 
 	.comment__form-head {
@@ -195,7 +195,7 @@
 	*/
 
 	.date-box {
-		@apply w-12 h-12 inline-grid text-center items-center justify-center p-2 text-white rounded-2xl bg-gradient-to-bl from-brand to-yellow;
+		@apply w-12 h-12 inline-grid text-center items-center justify-center p-2 text-white rounded bg-gradient-to-bl from-brand to-yellow;
 	}
 
 	.date-box__day {

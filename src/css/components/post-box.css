@@ -1,10 +1,10 @@
 @layer components {
 
 	.post-box {
-		@apply block w-full bg-gray-100 p-2 rounded-2xl;
+		@apply block w-full bg-gray-100 p-2 rounded;
 	}
 	.post-box__image {
-		@apply w-full rounded-2xl;
+		@apply w-full rounded;
 	}
 	.post-box__content {
 		@apply p-2 text-center mt-2;

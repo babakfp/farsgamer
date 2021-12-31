@@ -31,7 +31,7 @@
 	}
 
 	.do__item {
-		@apply bg-gray-50 py-4 px-6 rounded-2xl text-sm;
+		@apply bg-gray-50 py-4 px-6 rounded text-sm;
 	}
 
 	.do__head,
