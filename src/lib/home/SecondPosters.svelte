@@ -26,7 +26,7 @@
 		<SwiperSlide>
 			<div class="grid grid-cols-2 gap-4 md:grid-cols-1">
 				{#each posters as poster}
-					<a class="flex" href={poster.link || 'javascript:'}>
+					<a class="flex" href={poster.href || 'javascript:'}>
 						<img class="w-full rounded" src={poster.imgSrc} alt />
 					</a>
 				{/each}

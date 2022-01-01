@@ -6,7 +6,7 @@
 	import ProductCard from '$lib/ProductCard.svelte'
 </script>
 
-<ContentSection title="تخفیفـــ های ویــژه" link="javascript:">
+<ContentSection title="تخفیفـــ های ویــژه" href="javascript:">
 	<Swiper
 		class="product-carousel"
 		modules={[ Pagination, Autoplay ]}

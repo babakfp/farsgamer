@@ -1,15 +1,15 @@
 <script>
 	export let title
-	export let link
-	export let linkTitle
+	export let href
+	export let hrefTitle
 </script>
 
 <section>
   <div class="flex items-center justify-between mb-4">
-		<h2 class="font-bold text-lg">{ title }</h2>
-		{#if link}
-			<a class="btn btn--sm btn--outline btn--brand" href={ link }>
-				<span>{ linkTitle || 'مشاهده همه' }</span>
+		<h2 class="font-bold text-lg">{title}</h2>
+		{#if href}
+			<a class="btn btn--sm btn--outline btn--brand" {href}>
+				<span>{hrefTitle || 'مشاهده همه'}</span>
 				<i class="icon-angle-left"></i>
 			</a>
 		{/if}

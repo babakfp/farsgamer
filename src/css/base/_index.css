@@ -28,6 +28,10 @@
   main {
     @apply min-h-screen overflow-hidden;
   }
+
+	[type=search] {
+		@apply w-full;
+	}
   
   i {
     color: inherit;

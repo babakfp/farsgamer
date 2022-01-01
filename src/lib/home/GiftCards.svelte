@@ -34,8 +34,8 @@
 	>
 		{#each images as img}
 			<SwiperSlide>
-				<a class="group relative block duration-200 ease-in-out hover:scale-105" href={img.link || 'javascript:'}>
-					<img class="absolute -bottom-0 px-8 blur-md duration-200 ease-in-out opacity-0 group-hover:opacity-80 group-hover:-bottom-2" src={img.src} alt />
+				<a class="group relative block duration-200 ease-in-out hover:scale-105" href={img.href || 'javascript:'}>
+					<img class="absolute bottom-0 px-8 blur-md duration-200 ease-in-out opacity-0 group-hover:opacity-80 group-hover:-bottom-2" src={img.src} alt />
 					<img class="relative" src={img.src} alt />
 				</a>
 			</SwiperSlide>

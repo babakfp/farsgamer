@@ -1,5 +1,5 @@
 // ## Sliders
-
+/*
 const sliderBaseConfig = {
 	spaceBetween: 16,
 	loop: true,
@@ -152,6 +152,8 @@ const sliderNavigationConfig = {
 	})
 })()
 
+*/
+
 // Stop slider autoplay if:
 // - slides < 2
 // - slides < 2
@@ -174,6 +176,7 @@ const sliderNavigationConfig = {
 })()
 
 // ## END Sliders
+/*
 
 // It's not possible to stlye the select field <select>. This functions will create a custom select box with basic tags (like div ul li) to make it possible to style it.
 ;(_ => {
@@ -261,7 +264,7 @@ const sliderNavigationConfig = {
 		window.addEventListener('scroll', event => closeSelectbox(event))
 	})
 })()
-
+*/
 // ---
 
 /*
@@ -292,6 +295,7 @@ const sliderNavigationConfig = {
 // })();
 
 // ---
+/*
 
 // radio button handler.
 ;(_=> {
@@ -305,8 +309,9 @@ const sliderNavigationConfig = {
 		})
 	})
 })()
-
+*/
 // ---
+/*
 
 // single product page - account category section handler.
 ;(_=> {
@@ -577,3 +582,4 @@ window.addEventListener('load', _=> {
 		getAndSetLargestWidth(itemButtonsCells, headButtonsCell)
 	})
 })()
+*/

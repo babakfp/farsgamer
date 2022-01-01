@@ -20,7 +20,7 @@
 >
 	{#each posters as poster}
 		<SwiperSlide>
-			<a href={poster.link || 'javascript:'}>
+			<a href={poster.href || 'javascript:'}>
 				<img src={poster.imgSrc} alt />
 			</a>
 		</SwiperSlide>

@@ -6,7 +6,7 @@
 	import PostCard from '$lib/PostCard.svelte'
 </script>
 
-<ContentSection title="جدیدترین پست ها" link="javascript:">
+<ContentSection title="جدیدترین پست ها" href="javascript:">
 	<Swiper
 		class="product-carousel"
 		modules={[ Pagination, Autoplay ]}

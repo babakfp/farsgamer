@@ -15,13 +15,13 @@
 				
 				<nav class="py-4">
 					<ul>
-						<NavItem title="خانه" link="/" icon="fi-rr-home" />
-						<NavItem title="فروشگاه" link="/shop" icon="fi-rr-shop" />
-						<NavItem title="سوالات متداول" link="/faq" icon="fi-rr-interrogation" />
-						<NavItem title="قوانین" link="/terms" icon="fi-rr-bank" />
-						<NavItem title="ارتباط با ما" link="/contact" icon="fi-rr-headset" />
-						<NavItem title="چرا فارس گیمر" link="/why-farsgamer" icon="fi-rr-diploma" />
-						<NavItem title="مقالات" link="/posts" icon="fi-rr-document" />
+						<NavItem title="خانه" href="/" icon="fi-rr-home" />
+						<NavItem title="فروشگاه" href="/shop" icon="fi-rr-shop" />
+						<NavItem title="سوالات متداول" href="/faq" icon="fi-rr-interrogation" />
+						<NavItem title="قوانین" href="/terms" icon="fi-rr-bank" />
+						<NavItem title="ارتباط با ما" href="/contact" icon="fi-rr-headset" />
+						<NavItem title="چرا فارس گیمر" href="/why-farsgamer" icon="fi-rr-diploma" />
+						<NavItem title="مقالات" href="/posts" icon="fi-rr-document" />
 					</ul>
 				</nav>
 

@@ -22,7 +22,7 @@
 			<!-- Open search bar -->
       <button
 				on:click={searchToggle}
-				class="js-header-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="/dashboard" title="مشاهده حساب کاربری"
+				class="js-header-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری"
 			>
         <i class="fi-rr-search sm:text-xl"></i>
       </button>
@@ -30,7 +30,7 @@
 			<Announcements />
 
       <!-- Go to cart page -->
-      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="/cart" title="مشاهده سبد خرید">
+      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="javascript:" title="مشاهده سبد خرید">
         <div class="relative">
 					<i class="fi-rr-shopping-cart sm:text-xl"></i>
 					<div class="absolute flex items-center justify-center -right-1 -top-1 bg-red-400 text-white leading-0 w-3.5 h-3.5 rounded-full text-2xs">2</div>
@@ -38,7 +38,7 @@
       </a>
 
       <!-- Go to dashboard page -->
-      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="/dashboard" title="مشاهده حساب کاربری">
+      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href="javascript:" title="مشاهده حساب کاربری">
         <i class="fi-rr-user sm:text-xl"></i>
       </a>
     </div>
