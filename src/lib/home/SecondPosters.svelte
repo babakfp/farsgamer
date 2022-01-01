@@ -1,6 +1,6 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
-	import { Pagination, Autoplay } from 'swiper'
+	import { Autoplay } from 'swiper'
 
 	const postersPack = [
 		[
@@ -16,11 +16,9 @@
 
 <Swiper
 	class="home-second-posters mt-4 md:w-4/12 md:mt-0"
-	modules={[ Pagination, Autoplay ]}
 	loop={true}
 	speed={600}
 	grabCursor={true}
-	pagination={{ clickable: true }}
 	autoplay={{ delay: 4000, disableOnInteraction: false }}
 	spaceBetween={16}
 >
@@ -36,16 +34,3 @@
 		</SwiperSlide>
 	{/each}
 </Swiper>
-
-<style lang="postcss">
-	:global(.home-second-posters .swiper-pagination) {
-		bottom: unset;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%) rotate(90deg);
-		z-index: 0;
-	}
-	:global(.home-second-posters .swiper-wrapper) {
-		z-index: 1;
-	}
-</style>
