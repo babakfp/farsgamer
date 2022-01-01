@@ -23,7 +23,7 @@
 	}
 
 	body.header-and-sidebar-fixed #main {
-		@apply container-base mt-20 mb-8 lg:mt-28 lg:pl-8 lg:pr-64 z-30 2xl:pr-72;
+		@apply container-base mt-20 lg:mt-28 lg:pl-8 lg:pr-64 z-30 2xl:pr-72;
 	}
 
 	#main.main--dashboard {
