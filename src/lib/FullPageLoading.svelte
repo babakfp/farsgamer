@@ -1,11 +1,9 @@
 <script>
-	import { onMount } from 'svelte'
-
 	let show = true
 	let delay = 250
-
-	onMount(_=> setTimeout(_=> (show = false), delay))
 </script>
+
+<svelte:window on:load={_=> setTimeout(_=> (show = false), delay)}>
 
 {#if show}
 	<div id="page-preloader">
