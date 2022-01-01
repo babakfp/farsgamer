@@ -3,9 +3,9 @@
 		"baseUrl": ".",
 		"paths": {
 			"$lib": ["src/lib"],
-			"$layout": ["src/layout"],
+			"$layouts": ["src/layouts"],
 			"$store": ["src/store"],
-			"$util": ["src/util"]
+			"$utils": ["src/utils"]
 		}
 	},
 	"include": ["src/**/*.js", "src/**/*.svelte"]

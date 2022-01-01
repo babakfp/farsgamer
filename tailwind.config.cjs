@@ -1,7 +1,7 @@
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
-const plugin_flip = require('./src/util/tailwind-plugins/flip.cjs')
-const plugin_dir = require('./src/util/tailwind-plugins/dir.cjs')
+const plugin_flip = require('./src/utils/tailwind-plugins/flip.cjs')
+const plugin_dir = require('./src/utils/tailwind-plugins/dir.cjs')
 
 const config = {
   content: ['./src/**/*.{html,svelte}'],

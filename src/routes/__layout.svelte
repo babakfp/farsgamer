@@ -5,8 +5,8 @@
 	import LoadingBar from '$lib/LoadingBar.svelte'
 
 	// Layouts
-	import Default from '$layout/Default.svelte'
-	import HeaderMmenu from '$layout/HeaderMmenu.svelte'
+	import Default from '$layouts/Default.svelte'
+	import HeaderMmenu from '$layouts/HeaderMmenu.svelte'
 	
 	const layouts = {
 		'/': HeaderMmenu,

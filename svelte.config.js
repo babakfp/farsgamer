@@ -10,9 +10,9 @@ const config = {
       resolve: {
         alias: {
           '$lib': path.resolve('./src/lib'),
-          '$layout': path.resolve('./src/layout'),
+          '$layouts': path.resolve('./src/layouts'),
           '$store': path.resolve('./src/store'),
-          '$util': path.resolve('./src/util'),
+          '$utils': path.resolve('./src/utils'),
         },
       },
     },
