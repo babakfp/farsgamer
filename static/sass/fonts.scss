@@ -5,7 +5,7 @@
 	@include font-face((
 		font-family: "DanaFN",
 		font-style: normal,
-		weight: ( Regular 400, Bold 600, ),
+		weight: ( regular 400, bold 600, ),
 		url: "/fonts/DanaFN/dana-fanum-WEIGHT.SUFFIX",
 		suffix: woff2,
 	));
@@ -19,24 +19,10 @@
 	));
 
 	@include font-face((
-		font-family: 'Iran Yekan FD',
-		suffix: ttf woff svg,
-		weight: 100 300 400 500 600 700 800 900,
-		url: '/fonts/iranyekan/fd/WEIGHT.SUFFIX',
-	));
-
-	@include font-face((
-		font-family: 'Iran Yekan ED',
-		suffix: ttf woff woff2 svg,
-		weight: 100 300 400 500 600 700 800 900,
-		url: '/fonts/iranyekan/ed/WEIGHT.SUFFIX',
-	));
-
-	@include font-face((
 		font-family: "Montserrat",
 		font-style: normal,
-		weight: 100 200 300 400 500 600 700 800 900,
-		url: "/fonts/Montserrat/WEIGHT.SUFFIX",
+		weight: ( Thin 100, ExtraLight 200, Light 300, Regular 400, Medium 500, SemiBold 600, Bold 700, ExtraBold 800, "Black" 900, ),
+		url: "/fonts/Montserrat/Montserrat-WEIGHT.SUFFIX",
 		suffix: ttf,
   ));
 
