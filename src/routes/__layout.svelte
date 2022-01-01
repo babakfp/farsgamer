@@ -3,7 +3,6 @@
 	import '../app.css'
 
 	import LoadingBar from '$lib/LoadingBar.svelte'
-	import FullPageLoading from '$lib/FullPageLoading.svelte'
 	
 	// Layouts
 	import Default from '$layouts/Default.svelte'
@@ -16,7 +15,6 @@
 </script>
 
 <LoadingBar />
-<FullPageLoading />
 
 <svelte:component this={layout}>
 	<slot />
