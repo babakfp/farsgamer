@@ -1,11 +1,11 @@
 <script>
 	const images = [
-		{ src: 'static/images/trust-symbols/enamad.ir.png' },
-		{ src: 'static/images/trust-symbols/samandehi.ir.png' },
-		{ src: 'static/images/trust-symbols/ircg.ir.png' },
-		{ src: 'static/images/trust-symbols/ecunion.ir.png' },
-		{ src: 'static/images/trust-symbols/zarinpal.com.png' },
-		{ src: 'static/images/trust-symbols/pay.ir.png' },
+		{ src: '/images/trust-symbols/enamad.ir.png' },
+		{ src: '/images/trust-symbols/samandehi.ir.png' },
+		{ src: '/images/trust-symbols/ircg.ir.png' },
+		{ src: '/images/trust-symbols/ecunion.ir.png' },
+		{ src: '/images/trust-symbols/zarinpal.com.png' },
+		{ src: '/images/trust-symbols/pay.ir.png' },
 	]
 </script>
 
