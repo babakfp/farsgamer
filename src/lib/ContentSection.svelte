@@ -1,7 +1,6 @@
 <script>
 	export let title
-	export let href
-	export let hrefTitle
+	export let href = null
 </script>
 
 <section>
@@ -9,7 +8,7 @@
 		<h2 class="font-bold text-lg">{title}</h2>
 		{#if href}
 			<a class="btn btn--sm btn--outline btn--brand" {href}>
-				<span>{hrefTitle || 'مشاهده همه'}</span>
+				<span>مشاهده همه</span>
 				<i class="icon-angle-left"></i>
 			</a>
 		{/if}
