@@ -6,7 +6,7 @@
 <a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:shadow-gray-200 hover:scale-105" href="javascript:">
 
 	<div class="relative rounded overflow-hidden">
-		<img src="/images/product-1.jpg" alt>
+		<img src="/images/product-thumb.png" alt>
 		{#if inStock === false}
 			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 backdrop-blur-sm bg-opacity-40">
 				<p class="text-white font-bold drop-shadow-xl">نـامـوجـود</p>

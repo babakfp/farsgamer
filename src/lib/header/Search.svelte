@@ -3,7 +3,7 @@
 	import { isOpen, close } from '$store/header-search.js'
 </script>
 
-<OutClick on:outclick={close} exclude={['.js-header-search-toggle']}>
+<OutClick on:outclick={close} excludeByQuerySelector={['.js-header-search-toggle']}>
 	<form class="hidden {$isOpen && '!block'} absolute h-16 top-full right-0 left-0 bg-white border-t border-b border-gray-100 lg:block lg:w-full lg:h-full lg:border-l lg:border-t-0 lg:border-b-0 lg:static lg:top-auto lg:right-auto lg:left-auto lg:bg-transparent lg:!shadow-none">
 		<label class="relative flex items-center gap-4 h-full m-0 cursor-text">
 			<i class="fi-rr-search text-xl text-gray-400 absolute top-1/2 w-16 -translate-y-1/2 lg:right-8 lg:w-auto"></i>
@@ -14,6 +14,6 @@
 
 <style>
 	form {
-		box-shadow: 0 32px 32px rgb(0 0 0 / 5%);
+		box-shadow: 0 3rem 3rem rgba(0, 0, 0, .5);
 	}
 </style>

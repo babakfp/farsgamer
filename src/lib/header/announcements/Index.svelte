@@ -5,6 +5,7 @@
 	import { publicAnnouncements, userAnnouncements } from '$store/announcements.js'
 
 	let isOpen = false
+	let toggle
 
 	onMount(_=> {
 		const menu = document.querySelector('.announcements__menu')
@@ -12,11 +13,12 @@
 	})
 </script>
 
-<div class="relative">
+<div class="2xs:relative">
 	<!-- Header btn -->
 	<button
+		bind:this={toggle}
 		on:click={_=> isOpen = !isOpen}
-		class="js-announcements-toggle-btn h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" title="مشاهده اعلانات"
+		class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" title="مشاهده اعلانات"
 	>
 		<div class="relative">
 			<i class="fi-rr-bell sm:text-xl"></i>
@@ -26,8 +28,8 @@
 		</div>
 	</button>
 
-	<OutClick on:outclick={_=> isOpen = false} exclude={['.js-announcements-toggle-btn']}>
-		<div easytab class:hidden={!isOpen} class="announcements__menu absolute left-0 top-full mt-4 w-82 z-40 rounded overflow-hidden bg-white border border-gray-100 sm:w-100">
+	<OutClick on:outclick={_=> isOpen = false} excludeByDOMNode={[toggle]}>
+		<div easytab class:hidden={!isOpen} class="announcements__menu absolute left-0 top-full w-full z-40 overflow-hidden bg-white border border-gray-100 rounded-b 2xs:w-80 xs:w-88">
 
 			<ul class="flex justify-center border-b border-gray-100">
 				<li easytab-tab>عمومی</li>
@@ -65,7 +67,7 @@
 
 <style lang="postcss" global>
 	.announcements__menu {
-		box-shadow: 0 32px 32px rgba(0, 0, 0, .05);
+		box-shadow: 0 3rem 3rem rgba(0, 0, 0, .5);
 	}
 	.announcements__menu li[easytab-tab] {
 		@apply block w-full border-b -mb-px border-transparent py-3 text-sm text-gray-400 text-center;
