@@ -21,8 +21,8 @@
 </svelte:component>
 
 <style lang="postcss">
-	:global(#svelte .loading-bar__train:before),
-	:global(#svelte .loading-bar__train:after) {
+	:global(.loading-bar__train::before),
+	:global(.loading-bar__train::after) {
 		@apply bg-brand;
 	}
 	:global(.loading-bar) {
