@@ -4,8 +4,8 @@ import adapter from '@sveltejs/adapter-vercel'
 
 const config = {
   kit: {
-    target: '#svelte',
     adapter: adapter(),
+    target: '#svelte',
     vite: {
       resolve: {
         alias: {
@@ -18,11 +18,9 @@ const config = {
     },
   },
   preprocess: [
-		sveltePreprocess(
-			{
-				postcss: true,
-			}
-		)
+		sveltePreprocess({
+			postcss: true,
+		})
 	],
 }
 
