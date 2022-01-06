@@ -14,6 +14,6 @@
 
 <style>
 	form {
-		box-shadow: 0 3rem 3rem rgba(0, 0, 0, .5);
+		box-shadow: 0 3rem 3rem rgba(0 0 0 / 40%);
 	}
 </style>
