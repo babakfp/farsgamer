@@ -5,11 +5,8 @@
 @layer base {
 	
   * {
-    outline: none !important;
-		list-style: none;
-    /* user-select: none; */
-    /* -webkit-user-drag: none; */
-		@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
+		@apply select-none !outline-none list-none focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
+    -webkit-user-drag: none;
   }
   
   html, body {
@@ -17,33 +14,27 @@
   }
   
   html {
-    font-size: 16px;
-		scroll-behavior: smooth;
+		@apply text-base scroll-smooth; 
   }
   
   body {
-    font-weight: 400;
+		@apply bg-white font-normal;
   }
   
   main {
     @apply min-h-screen overflow-hidden;
   }
-
-	[type=search] {
-		@apply w-full;
-	}
-  
-  i {
-    color: inherit;
-    font-size: 1rem;
-  }
   
   .container-base {
     @apply px-4 mx-auto w-full;
   }
+  
+  i {
+		@apply flex items-center justify-center text-inherit text-base leading-0;
+  }
 
-	i {
-		@apply flex items-center justify-center !leading-none;
+	[type=search] {
+		@apply w-full;
 	}
 
 }

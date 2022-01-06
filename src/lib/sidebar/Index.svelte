@@ -55,14 +55,4 @@
 	#sidebar__content {
 		@apply max-w-64 bg-white w-full h-full;
 	}
-
-	#sidebar__scrollable-content::-webkit-scrollbar {
-		@apply w-0 lg:w-1;
-	}
-	#sidebar__scrollable-content::-webkit-scrollbar-track {
-		background: rgb(229 231 235);
-	}
-	#sidebar__scrollable-content::-webkit-scrollbar-thumb {
-		background: rgb(209 213 219);
-	}
 </style>

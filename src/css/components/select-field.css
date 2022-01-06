@@ -26,23 +26,6 @@
 		@apply overflow-y-auto max-h-72;
 	}
 
-	.select-box__options::-webkit-scrollbar {
-		width: 3px;
-		height: 3px;
-		border-radius: 99px;
-	}
-	.select-box__options::-webkit-scrollbar-track {
-		background: #F1F1F1;
-		border-radius: 99px;
-	}
-	.select-box__options::-webkit-scrollbar-thumb {
-		background: #BDBDC7;
-		border-radius: 99px;
-	}
-	.select-box__options::-webkit-scrollbar-thumb {
-		background: #808191;
-	}
-
 	.select-box__option {
 		@apply border-gray-50;
 	}
