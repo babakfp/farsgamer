@@ -13,7 +13,7 @@
 
 			<div id="sidebar__scrollable-content" class="overflow-y-auto max-h-full pb-6">
 				
-				<nav class="py-4">
+				<nav class="mt-4">
 					<ul>
 						<NavItem title="خانه" href="/" icon="fi-rr-home" />
 						<NavItem title="فروشگاه" href="/shop" icon="fi-rr-shop" />
@@ -25,7 +25,7 @@
 					</ul>
 				</nav>
 
-				<hr class="border-gray-100 mb-4">
+				<hr class="border-gray-100 my-4">
 
 				<div class="p-4">
 					<span class="block mb-4 font-bold">استریم ها</span>
