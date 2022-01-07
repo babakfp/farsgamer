@@ -9,9 +9,9 @@
 	import HeaderMmenu from '$layouts/HeaderMmenu.svelte'
 	
 	const layouts = {
-		'/': HeaderMmenu,
+		// '<route>': <Layout Component>,
 	}
-	$: layout = layouts[$page.url.pathname] ?? Default
+	$: layout = layouts[$page.url.pathname] ?? HeaderMmenu
 </script>
 
 <LoadingBar />
