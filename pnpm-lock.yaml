@@ -12,12 +12,13 @@ specifiers:
   svelte: ^3.44.0
   svelte-outclick: ^3.0.0
   svelte-preprocess: ^4.10.1
+  svelte-select: ^4.4.7
   swiper: ^7.4.1
   tailwindcss: ^3.0.7
 
 devDependencies:
   '@sveltejs/adapter-vercel': 1.0.0-next.35
-  '@sveltejs/kit': 1.0.0-next.216_svelte@3.44.3
+  '@sveltejs/kit': 1.0.0-next.217_svelte@3.44.3
   '@tailwindcss/line-clamp': 0.3.0_tailwindcss@3.0.7
   '@tailwindcss/typography': 0.5.0_tailwindcss@3.0.7
   autoprefixer: 10.4.0_postcss@8.4.5
@@ -27,6 +28,7 @@ devDependencies:
   svelte: 3.44.3
   svelte-outclick: 3.0.0
   svelte-preprocess: 4.10.1_postcss@8.4.5+svelte@3.44.3
+  svelte-select: 4.4.7
   swiper: 7.4.1
   tailwindcss: 3.0.7_16a290f6d0e3717bf6d2667234aebd30
 
@@ -88,8 +90,8 @@ packages:
       esbuild: 0.13.15
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.216_svelte@3.44.3:
-    resolution: {integrity: sha512-FKg7PPlymsZ2aU8DteY1BH217M2dIAgfWzm8OVqazQn2uLbw25WbVqSJ5KdgW83mLYoxSWUNPrJX3TJNEG6jVg==}
+  /@sveltejs/kit/1.0.0-next.217_svelte@3.44.3:
+    resolution: {integrity: sha512-fWBFRstHIgrY+GYe3YRe3anXZn8TlaQpowEI0W7lijZI/4HTN8pdyIIMdip55yU1AEKTRIPbg3wwaUsUKxjpmQ==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -1191,6 +1193,10 @@ packages:
       sorcery: 0.10.0
       strip-indent: 3.0.0
       svelte: 3.44.3
+    dev: true
+
+  /svelte-select/4.4.7:
+    resolution: {integrity: sha512-fIf9Z8rPI6F8naHZ9wjXT0Pv5gLyhdHAFkHFJnCfVVfELE8e82uOoF0xEVQP6Kir+b4Q5yOvNAzZ61WbSU6A0A==}
     dev: true
 
   /svelte/3.44.3:

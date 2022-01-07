@@ -5,10 +5,11 @@
 @layer base {
 	
   * {
-		@apply select-none !outline-none list-none focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
-    -webkit-user-drag: none;
+		@apply select-none list-none;
+    @apply !outline-none focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
+		-webkit-user-drag: none;
   }
-  
+
   html, body {
     font-family: "DanaFN", "Poppins", "Montserrat" !important;
   }
@@ -35,6 +36,14 @@
 
 	[type=search] {
 		@apply w-full;
+	}
+
+	input[type=text] {
+		@apply !outline-none;
+	}
+
+	svg {
+		@apply w-4 h-4 inline-block;
 	}
 
 }

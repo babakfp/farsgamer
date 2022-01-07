@@ -92,6 +92,7 @@ const config = {
 			},
 			borderRadius: {
 				DEFAULT: '.75rem',
+				sm: '8px',
 			},
 		},
 		screens: {

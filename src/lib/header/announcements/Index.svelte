@@ -29,7 +29,7 @@
 	</button>
 
 	<OutClick on:outclick={_=> isOpen = false} excludeByDOMNode={[toggle]}>
-		<div easytab class:hidden={!isOpen} class="announcements__menu absolute left-0 top-full w-full z-40 overflow-hidden bg-white border border-gray-100 rounded-b 2xs:w-80 xs:w-88">
+		<div easytab class:hidden={!isOpen} class="announcements__menu absolute left-0 top-full w-full z-40 overflow-hidden bg-white border border-gray-100 rounded-b-sm 2xs:w-80 xs:w-88">
 
 			<ul class="flex justify-center border-b border-gray-100">
 				<li easytab-tab>عمومی</li>
