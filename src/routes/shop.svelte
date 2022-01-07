@@ -28,7 +28,7 @@
 
 <div class="relative">
 	<Select
-		items={complexItems} {groupBy} isMulti={true}
+		items={complexItems} {groupBy}
 		placeholder="دسته‌بندی محصولات" noOptionsMessage="گذینه‌ای موجود نیست"
 	/>
 	<svg class="absolute top-1/2 -translate-y-1/2 left-4 fill-gray-300"><use xlink:href="#svg-caret-down"></use></svg>
