@@ -11,7 +11,7 @@
 		<div class="translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out lg:translate-x-0" id="sidebar__content">
 			<Logo />
 
-			<div id="sidebar__scrollable-content" class="overflow-y-auto max-h-full pb-6 lg:border-l lg:border-gray-100">
+			<div id="sidebar__scrollable-content" class="scrollbar max-h-full pb-6 lg:border-l lg:border-gray-100">
 				
 				<nav class="mt-4">
 					<ul>
