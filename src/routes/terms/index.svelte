@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>قوانین و مقررات</title>
+</svelte:head>
+
 <div class="content -mb-4">
 
 	<div class="flex items-center justify-between">
