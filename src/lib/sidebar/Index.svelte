@@ -21,7 +21,7 @@
 						<NavItem title="قوانین و مقررات" href="/terms" icon="fi-rr-bank" />
 						<NavItem title="ارتباط با ما" href="/contact" icon="fi-rr-headset" />
 						<NavItem title="چرا فارس گیمر" href="/why-farsgamer" icon="fi-rr-diploma" />
-						<NavItem title="مقالات" href="/posts" icon="fi-rr-document" />
+						<NavItem title="بلاگ" href="/blog" icon="fi-rr-document" />
 					</ul>
 				</nav>
 
