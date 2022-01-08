@@ -6,9 +6,22 @@
 	
   * {
 		@apply select-none list-none;
-    @apply !outline-none focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
+    @apply !outline-none;
 		-webkit-user-drag: none;
   }
+
+	a, button, input {
+		@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
+	}
+
+	[disabled],
+	[class*=disable],
+	[class*=disabled],
+	.pointer-events-none,
+	.outline-none, .outline-none *,
+	.selectContainer * {
+    @apply !outline-none focus-visible:!outline-none;
+	}
 
   html, body {
     font-family: "Dana", "Poppins", "Montserrat" !important;
@@ -36,10 +49,6 @@
 
 	[type=search] {
 		@apply w-full;
-	}
-
-	input[type=text] {
-		@apply !outline-none;
 	}
 
 	svg {
