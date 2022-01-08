@@ -21,8 +21,8 @@
 			840: 	{ slidesPerView: 4 },
 			1024: { slidesPerView: 3 },
 			1140: { slidesPerView: 4 },
-			1400: { slidesPerView: 5 },
-			1600: { slidesPerView: 6 },
+			1280: { slidesPerView: 5 },
+			1800: { slidesPerView: 6 },
 		}}
 	>
 		<SwiperSlide><PostCard /></SwiperSlide>

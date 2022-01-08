@@ -7,6 +7,6 @@
         <p class="text-xs">فورتنایت</p>
       </div>
     </div>
-		<div class="bg-red-400 w-1 h-1 2xl:w-2 2xl:h-2 rounded-full"></div>
+		<div class="bg-red-400 animate-pulse w-2 h-2 rounded-full"></div>
   </a>
 </li>

@@ -28,8 +28,8 @@
 			840: 	{ slidesPerView: 5 },
 			1024: { slidesPerView: 4 },
 			1140: { slidesPerView: 5 },
-			1400: { slidesPerView: 6 },
-			1600: { slidesPerView: 7 },
+			1280: { slidesPerView: 6 },
+			1800: { slidesPerView: 7 },
 		}}
 	>
 		{#each images as img}
