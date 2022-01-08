@@ -1,5 +1,9 @@
 @layer base {
 
+	::-webkit-scrollbar {
+		@apply w-1.5 h-1.5;
+	}
+
 	/* If browser supports the property and it's value */
 	/* Scrollbar over content */
 	@supports (overflow: overlay) {
@@ -11,11 +15,11 @@
 		}
 	}
 
-	::-webkit-scrollbar {
+	.scrollbar::-webkit-scrollbar {
 		width: 0;
 		height: 0;
 	}
-	:hover::-webkit-scrollbar {
+	.scrollbar:hover::-webkit-scrollbar {
 		@apply w-1.5 h-1.5;
 	}
 
@@ -23,19 +27,29 @@
 		@apply rounded-full bg-gray-300 border-2 border-solid border-transparent bg-clip-padding;
 		border: 2px solid transparent;
 	}
-	::-webkit-scrollbar-thumb:hover {
-		@apply bg-brand bg-opacity-80;
-	}
 
 	body::-webkit-scrollbar {
 		@apply !w-2 !h-2;
 	}
 	body::-webkit-scrollbar-thumb {
-		@apply bg-gray-400;
+		@apply bg-gray-400 hover:bg-brand hover:bg-opacity-80;
 	}
 
+	.scrollbar--y::-webkit-scrollbar-thumb {
+		@apply border-t-12 border-b-12;
+	}
+
+	.scrollbar--y-sm::-webkit-scrollbar-thumb,
 	.selectContainer .listContainer::-webkit-scrollbar-thumb {
 		@apply border-t-8 border-b-8;
+	}
+
+	.scrollbar--x::-webkit-scrollbar-thumb {
+		@apply border-r-12 border-l-12;
+	}
+
+	.scrollbar--x-sm::-webkit-scrollbar-thumb {
+		@apply border-r-8 border-l-8;
 	}
 
 }
