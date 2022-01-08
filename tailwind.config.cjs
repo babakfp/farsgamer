@@ -84,7 +84,10 @@ const config = {
 			fontSize: {
 				'2xs': ['0.625rem', { lineHeight: '1' }],
 			},
-			borderWidth: { 3: '3px' },
+			borderWidth: {
+				3: '3px',
+				12: '12px',
+			},
 			cursor: { grab: 'grab' },
 			outline: {
 				gray: ['2px dotted ' + colors.gray['500'], '2px'],
