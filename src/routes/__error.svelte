@@ -22,7 +22,7 @@
 	<h2 class="text-center">{error.message}</h2>
 
 	{#if dev}
-		<code class="scrollbar scrollbar--x block mt-8 p-4 bg-gray-800 text-white rounded dir-ltr lg:p-8">
+		<code class="scrollbar scrollbar--x block mt-8 p-4 bg-gray-200 rounded dir-ltr lg:p-8">
 			<pre>
 				{error.stack}
 			</pre>
