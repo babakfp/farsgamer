@@ -67,7 +67,10 @@
 
 	:global(.selectContainer input),
 	:global(.selectContainer .item) {
-		@apply !cursor-pointer pr-10;
+		@apply !cursor-pointer;
+	}
+	:global(.selectContainer .groupItem) {
+		@apply pr-10;
 	}
 	:global(.selectContainer .clearSelect) {
 		@apply flex items-center justify-center !right-auto !text-gray-300 cursor-pointer duration-100 ease-in-out hover:!text-brand hover:text-opacity-80;
