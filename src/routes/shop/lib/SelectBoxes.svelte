@@ -19,6 +19,8 @@
 	const sortItems = [
 		{ label: 'محبوب ترین ها', value: 'most-popular' },
 		{ label: 'پرفروش ترین ها', value: 'best-seller' },
+		{ label: 'ارزان ترین ها', value: 'best-seller' },
+		{ label: 'گران ترین ها', value: 'best-seller' },
 	]
 	
 	const groupBy = (item) => item.group
