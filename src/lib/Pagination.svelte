@@ -1,8 +1,9 @@
 <ul class="flex items-center justify-center gap-2 mt-12">
-	<li>
+	<li class="flex items-center gap-2">
 		<button class="pg-btn pg-btn--prev-next">
 			<i class="fi-rr-angle-double-small-right"></i>
 		</button>
+		<hr class="h-8 border-t-0 border-r-2 border-gray-200">
 	</li>
 	<li>
 		<ul class="flex gap-2">
@@ -20,7 +21,8 @@
 			</li>
 		</ul>
 	</li>
-	<li>
+	<li class="flex items-center gap-2">
+		<hr class="h-8 border-t-0 border-r-2 border-gray-200">
 		<button class="pg-btn pg-btn--prev-next">
 			<i class="fi-rr-angle-double-small-left"></i>
 		</button>
@@ -29,15 +31,15 @@
 
 <style lang="postcss">
 	.pg-btn {
-		@apply flex items-center justify-center w-10 h-10 text-gray-500 rounded-sm duration-200 ease-in-out;
+		@apply flex items-center justify-center w-10 h-10 text-gray-500 rounded-sm duration-300 ease-in-out;
 	}
 
 	.pg-btn--prev-next,
 	.pg-btn--num {
-		@apply bg-gray-200 hover:bg-brand hover:text-white;
+		@apply hover:bg-gray-200;
 	}
 
 	.pg-btn--num-active {
-		@apply bg-brand text-white pointer-events-none;
+		@apply text-brand font-bold pointer-events-none;
 	}
 </style>
