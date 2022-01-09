@@ -30,4 +30,9 @@
 			<a class="duration-100 hover:text-brand focus:text-brand" href="tel:{$phoneNumbers[1]}" title="تماس تلفنی مستقیم">{$phoneNumbers[1]}</a>
 		</span>
 	</div>
+	
+	<div>
+		<span class="font-bold">آدرس ایمیل:</span>
+		<a class="duration-100 hover:text-brand focus:text-brand" href="mail:info@farsgamer.com" title="ارسال ایمیل">Info@FarsGamer.com</a>
+	</div>
 </section>

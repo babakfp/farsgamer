@@ -5,7 +5,7 @@
 @layer base {
 	
   * {
-		@apply select-none list-none;
+		@apply select-none;
     @apply !outline-none;
 		-webkit-user-drag: none;
   }

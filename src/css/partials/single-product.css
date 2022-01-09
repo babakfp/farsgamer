@@ -1,8 +1,6 @@
 @layer components {
 
-	.single-product-poster-overlayer {
-		background: linear-gradient(0deg, rgba(255, 255, 255, 1) 1%, rgba(255,255,255,0.4) 100%);
-	}
+	
 
 	/*
 	Account Cetegory Radio Buttons

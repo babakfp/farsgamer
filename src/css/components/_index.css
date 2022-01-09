@@ -1,17 +1,17 @@
 @import "./btn.css";
 @import "./form.css";
-/* @import "./checkbox.css"; */
-/* @import "./link.css"; */
-/* @import "./alert.css"; */
-/* @import "./comment.css"; */
-/* @import "./pagination.css"; */
-/* @import "./select-field.css"; */
-/* @import "./table.css"; */
-/* @import "./breadcrumb.css"; */
-/* @import "./single-product-image-gallery.css"; */
-/* @import "./post-type-content.css"; */
-/* @import "./accordion.css"; */
+@import "./checkbox.css";
+@import "./link.css";
+@import "./alert.css";
+@import "./comment.css";
+@import "./pagination.css";
+@import "./select-field.css";
+@import "./table.css";
+@import "./breadcrumb.css";
+@import "./single-product-image-gallery.css";
+@import "./post-type-content.css";
+@import "./accordion.css";
 @import "./slider.css";
-/* @import "./modal.css"; */
-/* @import "./plyr.css"; */
-/* @import "./fontawesome-stars.css"; */
+@import "./modal.css";
+@import "./plyr.css";
+@import "./fontawesome-stars.css";

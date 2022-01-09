@@ -12,9 +12,8 @@
 <Sidebar />
 <TPAlert />
 
-<main id="main">
+<main class="relative overflow-x-hidden" id="main">
 	<slot />
 
 	<Footer />
 </main>
-

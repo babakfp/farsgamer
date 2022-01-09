@@ -1,0 +1,13 @@
+<%- include(views + "head.ejs") %>
+<%- include(components + "header.ejs") %>
+<%- include(components + "sidebar.ejs") %>
+
+<main id="main">
+	<div class="relative min-h-screen p-4 bg-white rounded-2xl overflow-hidden">
+		<div class="container px-0 max-w-5xl">
+			<%- body %>
+		</div>
+	</div>
+</main>
+
+<%- include(views + "foot.ejs") %>

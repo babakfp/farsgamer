@@ -1,5 +1,5 @@
 // ## Sliders
-/*
+
 const sliderBaseConfig = {
 	spaceBetween: 16,
 	loop: true,
@@ -151,8 +151,6 @@ const sliderNavigationConfig = {
 		})
 	})
 })()
-
-*/
 
 // Stop slider autoplay if:
 // - slides < 2
