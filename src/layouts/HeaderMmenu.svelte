@@ -15,7 +15,7 @@
 <main class="mt-16 lg:mt-20 lg:pr-56 2xl:pr-64">
 	<div class="page-content relative p-4 overflow-x-hidden lg:p-8">
 		<slot />
-
-		<Footer />
 	</div>
+
+	<Footer />
 </main>
