@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>قوانین و مقررات</title>
+	<title>سوالات متداول</title>
 </svelte:head>
 
 <div class="content">

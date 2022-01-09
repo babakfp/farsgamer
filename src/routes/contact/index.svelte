@@ -10,7 +10,11 @@
 	]
 </script>
 
-<div class="max-w-3xl mx-auto p-2 bg-white rounded">
+<svelte:head>
+	<title>تماس با ما</title>
+</svelte:head>
+
+<div class="max-w-3xl mx-auto mt-4 p-2 bg-white rounded">
 	<Swiper
 		class="max-w-3xl"
 		modules={[ Pagination, Autoplay ]}

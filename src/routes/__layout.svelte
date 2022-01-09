@@ -7,11 +7,9 @@
 	// Layouts
 	import Default from '$layouts/Default.svelte'
 	import HeaderMmenu from '$layouts/HeaderMmenu.svelte'
-	import Auth from '$layouts/Auth.svelte'
 	
 	const layouts = {
 		// '<route>': <Layout Component>,
-		'/signin': Auth,
 	}
 	$: layout = layouts[$page.url.pathname] ?? HeaderMmenu
 </script>

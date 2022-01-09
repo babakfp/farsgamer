@@ -7,6 +7,10 @@
 	// import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
 </script>
 
+<svelte:head>
+	<title>عنوان محصول</title>
+</svelte:head>
+
 <div class="relative -mx-4 overflow-hidden">
 	<img class="w-full" src="/images/single-product-poster.png" alt>
 	<div class="poster-overlayer absolute inset-0"></div>

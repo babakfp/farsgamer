@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>چرا فارسگیمر</title>
+</svelte:head>
+
 <div class="content">
 
 	<h1 class="text-2xl font-bold">چرا فارسگیمر</h1>
