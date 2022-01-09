@@ -22,11 +22,7 @@
 		@apply lg:flex !important;
 	}
 
-	body.header-and-sidebar-fixed #main {
-		@apply container-base mt-20 lg:mt-28 lg:pl-8 lg:pr-64 z-30 2xl:pr-72;
-	}
-
-	#main.main--dashboard {
+	/* #main.main--dashboard {
 		min-height: calc(100vh - 4rem);
 	}
 
@@ -34,6 +30,6 @@
 		#main.main--dashboard {
 			min-height: calc(100vh - 5rem);
 		}
-	}
+	} */
 
 }
