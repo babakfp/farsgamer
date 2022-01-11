@@ -28,6 +28,8 @@ const config = {
 				88: '22rem',
 				92: '23rem',
 				100: '25rem',
+				// 
+				input: '3rem'
 			},
 			colors: {
 				'body-bg': colors.gray['100'],
@@ -96,6 +98,12 @@ const config = {
 			borderRadius: {
 				DEFAULT: '.75rem',
 				sm: '8px',
+			},
+			letterSpacing: {
+				1: '.25em',
+				2: '.5em',
+				3: '.75em',
+				4: '1em',
 			},
 		},
 		screens: {

@@ -2,7 +2,7 @@
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
 	import ContentSection from '$lib/ContentSection.svelte'
-	import Comment from '$lib/home/Comment.svelte'
+	import Comment from './Comment.svelte'
 </script>
 
 <ContentSection title="نظــراتـــ اخیر کــاربــران">

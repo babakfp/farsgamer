@@ -1,22 +1,7 @@
-<form class="comment__form mt-8">
-        
-  <!-- Head -->
-  <div class="comment__form-head">
-    <h6 class="comment__form-title">نظرات</h6>
-  </div>
+<!-- <p class="bg-pink px-4 py-2 text-center rounded-2xl mt-4 font-medium">تنها خریداران این محصول میتوانند نظر بدهند</p> -->
+<!-- <p class="bg-light-green px-4 py-2 text-center rounded-2xl mt-4 font-medium">نظر شما با موفقیت ارسال شد</p> -->
 
-  <!-- Content -->
-  <div class="comment__form-content">
-    <p>شما به عنوان <span class="text-brand font-semibold">power asghar</span> نظر خود را می‌نویسید.</p>
-    
-    <!-- <p class="bg-pink px-4 py-2 text-center rounded-2xl mt-4 font-medium">تنها خریداران این محصول میتوانند نظر بدهند</p> -->
-    <!-- <p class="bg-light-green px-4 py-2 text-center rounded-2xl mt-4 font-medium">نظر شما با موفقیت ارسال شد</p> -->
-    <!-- <p class="bg-light-green px-4 py-2 text-center rounded-2xl mt-4 font-medium">پرسش شما با موفقیت ارسال شد</p> -->
-
-    <textarea class="text-field w-full mt-4 h-auto resize-y" rows="4" placeholder="نظر خود را بنوسید"></textarea>
-    
-    <!-- Submit Button -->
-    <button class="comment__form-submit" type="submit">ارسال نظر</button>
-  </div>
-
+<form>
+	<textarea class="input resize-y p-4 bg-white rounded border-2 border-gray-200" rows="4" placeholder="نظر خود را بنوسید" />
+	<button class="btn btn--submit btn--brand w-64 mt-2">ارسال نظر</button>
 </form>

@@ -42,6 +42,10 @@
 		height: auto !important;
 	}
 
+	.posttype-content__description p {
+		@apply indent-8;
+	}
+
 	.posttype-content__description,
 	.posttype-content__comments,
 	.posttype-content__question-and-answer {
@@ -77,16 +81,16 @@
 	}
 
 	.posttype-content__description h6 {
-		@apply text-base;
+		@apply text-xs;
 	}
 	.posttype-content__description h5 {
-		@apply text-lg;
+		@apply text-xs;
 	}
 	.posttype-content__description h4 {
-		@apply text-lg;
+		@apply text-base;
 	}
 	.posttype-content__description h3 {
-		@apply text-xl;
+		@apply text-lg;
 	}
 	.posttype-content__description h2 {
 		@apply text-xl;
