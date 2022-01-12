@@ -10,7 +10,7 @@
 
 
 	.single-product-image-gallery .swiper-container {
-		@apply rounded-xl overflow-hidden;
+		@apply rounded overflow-hidden;
 	}
 
 	.single-product-image-gallery .swiper-slide {
@@ -18,7 +18,7 @@
 	}
 
 	.single-product-image-gallery img {
-		@apply rounded-xl;
+		@apply rounded;
 	}
 
 

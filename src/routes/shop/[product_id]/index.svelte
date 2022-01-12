@@ -23,7 +23,7 @@
 <!-- <Breadcrumb /> -->
 
 <!-- START Hero -->
-<section class="overflow-hidden rounded-2xl bg-white pb-4 lg:pb-12">
+<section class="overflow-hidden rounded bg-white pb-4 lg:pb-12">
   
 	<!-- Poster -->
   

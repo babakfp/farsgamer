@@ -1,4 +1,4 @@
-<form id="spp-purchase-form" class="text-center lg:text-right rounded-2xl border border-gray-200 p-6 mt-4">
+<form id="spp-purchase-form" class="text-center lg:text-right rounded border border-gray-200 p-6 mt-4">
 
   <div>
     <label class="mb-2">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
@@ -24,7 +24,7 @@
           name="account-email"
           id="account-email"
           placeholder="آدرس ایمیل"
-          class="text-field"
+          class="input"
           autocomplete="email"
         >
       </div>
@@ -37,7 +37,7 @@
           name="account-password"
           id="account-password"
           placeholder="رمز"
-          class="text-field"
+          class="input"
           autocomplete="current-password"
         >
       </div>
@@ -50,7 +50,7 @@
           name="account-email"
           id="account-email"
           placeholder="آدرس ایمیل"
-          class="text-field"
+          class="input"
           autocomplete="email"
         >
       </div>
@@ -64,7 +64,7 @@
           name="account-password"
           id="account-password"
           placeholder="رمز"
-          class="text-field"
+          class="input"
           autocomplete="current-password"
         >
         <i class="password-field__toggle"></i>
@@ -107,7 +107,7 @@
     <div class="flex items-center gap-2">
       <label for="quantity">تعداد</label>
       <div class="relative">
-				<input class="purchase-form-quantity__field text-field w-20" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+				<input class="purchase-form-quantity__field input w-20" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
 				<button class="purchase-form-quantity__plus w-8 absolute left-0 top-0 pt-1" type="button">+</button>
 				<button class="purchase-form-quantity__negative w-8 absolute left-0 bottom-0 pb-0.5" type="button">-</button>
 			</div>
@@ -161,7 +161,7 @@
     </div>
 
     <!-- Submit Button -->
-    <button class="btn btn-2xl w-full sm:max-w-60 form-submit btn-brand font-medium text-base" type="submit">افزودن به سبد خرید</button>
+    <button class="btn btn--lg w-full sm:max-w-60 form-submit btn--brand font-medium text-base" type="submit">افزودن به سبد خرید</button>
 
   </div>
 

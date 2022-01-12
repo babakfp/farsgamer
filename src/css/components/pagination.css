@@ -5,7 +5,7 @@
 	}
 
 	.pagination__btn {
-		@apply w-8 h-8 rounded-xl flex items-center justify-center hover:bg-brand-deep hover:text-white transition-colors duration-200 ease-in-out;
+		@apply w-8 h-8 rounded flex items-center justify-center hover:bg-brand-deep hover:text-white transition-colors duration-200 ease-in-out;
 	}
 
 	.pagination__btn--active {

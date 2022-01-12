@@ -32,7 +32,7 @@
 
 				<!-- 1 - Product Image -->
 				<td class="bg-gray-50 rounded-r-2xl w-28 h-28 py-4">
-					<img class="rounded-xl min-w-28 min-h-28" src="/images/product-grid.png">
+					<img class="rounded min-w-28 min-h-28" src="/images/product-grid.png">
 				</td>
 
 				<!-- 2 - Product Info -->
@@ -72,7 +72,7 @@
 
 				<!-- 4 - Quantity -->
 				<td class="bg-gray-50 py-4">
-					<input class="text-field w-16 h-10 bg-white" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+					<input class="input w-16 h-10 bg-white" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
 				</td>
 
 				<!-- 5 - Product Total Price -->

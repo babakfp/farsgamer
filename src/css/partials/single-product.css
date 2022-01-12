@@ -7,7 +7,7 @@
 	*/
 
 	.account-category-btn {
-		@apply btn btn-sm bg-gray2-100 relative overflow-hidden hover:bg-gray2-500 border-0 duration-200 ease-in-out;
+		@apply btn btn--sm bg-gray2-100 relative overflow-hidden hover:bg-gray2-500 border-0 duration-200 ease-in-out;
 		transition-property: background-color;
 	}
 
@@ -37,7 +37,7 @@
 	}
 
 
-	.spp-purchase-form__field-wrapper .text-field::placeholder {
+	.spp-purchase-form__field-wrapper .input::placeholder {
 		font-size: 14px;
 	}
 

@@ -6,7 +6,7 @@
 
 	/* ITEM */
 	.accordion-item {
-		@apply rounded-xl bg-white overflow-hidden;
+		@apply rounded bg-white overflow-hidden;
 	}
 
 	/* ITEM LAST CHILD BUTTON COLLAPSED */
@@ -21,7 +21,7 @@
 
 	/* BUTTON */
 	.accordion-button {
-		@apply rounded-xl bg-gray2-50 bg-transparent border border-gray-200 font-semibold relative flex items-center w-full py-4 pr-5 pl-16 text-right text-base;
+		@apply rounded bg-gray2-50 bg-transparent border border-gray-200 font-semibold relative flex items-center w-full py-4 pr-5 pl-16 text-right text-base;
 		overflow-anchor: none;
 		transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 	}

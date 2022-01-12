@@ -10,24 +10,25 @@
     <div easytab-content>
       <div class="grid gap-4">
         <!-- START Item -->
-          <div class="dashboard-comment-awaiting-approval bg-gray-50 rounded-2xl p-3">
+          <div class="dashboard-comment-awaiting-approval bg-gray-50 rounded p-3">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-4">
-                <img class="w-20 h-20 rounded-xl" src="/images/product-grid.png">
+                <img class="w-20 h-20 rounded" src="/images/product-grid.png">
                 <h3 class="font-semibold leading-4">گیف کارد steam</h3>
               </div>
 
-              <button class="btn btn-brand btn-xs" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
+							<!-- TOOD  btn--xs-->
+              <button class="btn btn--brand btn--xs" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
                 <i class="icon-plus text-sm hidden leading-0"></i>
                 <span>ثبت نظر</span>
               </button>
             
             </div>
             <div id="collapseExample" class="mt-4 collapse">
-              <form class="bg-white rounded-2xl p-4 md:p-6" action="">
+              <form class="bg-white rounded p-4 md:p-6" action="">
                 <h4 class="font-semibold">ثبت نظر</h4>
                 <p class="text-sm">اگر در سفارش شما تاخیر یا مشکلی پیش اومده باشه, لطفا با پشتیبانی تماس بگیرید. همکاران ما ۲۴ ساعته آماده کمک به شما هستند.</p>
-                <textarea class="text-field w-full mt-4 h-auto resize-y" rows="4" placeholder="نظر خود را وارد نمایید"></textarea>
+                <textarea class="input w-full mt-4 h-auto resize-y" rows="4" placeholder="نظر خود را وارد نمایید"></textarea>
                 
                 <div class="flex flex-wrap items-center justify-between mt-4 gap-2">
 
@@ -46,7 +47,8 @@
                   </div>
 
                   <!-- Submit the review -->
-                  <button type="submit" class="btn btn-brand btn-xs">ثبت نظر</button>
+							<!-- TOOD  btn--xs-->
+                  <button type="submit" class="btn btn--brand btn--xs">ثبت نظر</button>
 
                 </div>
 

@@ -7,7 +7,7 @@
 
 	.select-box__head {
 		@apply z-1 cursor-pointer flex items-center;
-		@apply text-field bg-white transition-none h-12 text-gray-600;
+		@apply input bg-white transition-none h-12 text-gray-600;
 	}
 
 	.select-box__head-wrapper {

@@ -17,7 +17,7 @@
 	}
 
 	.comment__date {
-		@apply min-w-12 min-h-12 max-w-12 max-h-12 w-12 h-12 inline-grid text-center items-center justify-center p-2 text-white rounded-xl bg-gradient-to-bl from-brand to-yellow;
+		@apply min-w-12 min-h-12 max-w-12 max-h-12 w-12 h-12 inline-grid text-center items-center justify-center p-2 text-white rounded bg-gradient-to-bl from-brand to-yellow;
 	}
 
 	.comment__date-day {
@@ -131,7 +131,7 @@
 	}
 
 	.comment__reply-btn {
-		@apply btn btn-sm btn--brand flex mr-auto ml-0 mt-2;
+		@apply btn btn--sm btn--brand flex mr-auto ml-0 mt-2;
 	}
 
 	.comment .comment__form {

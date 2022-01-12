@@ -1,10 +1,10 @@
-<div class="p-4 bg-gray-50 rounded-2xl">
+<div class="p-4 bg-gray-50 rounded">
 
 
   <div class="grid grid-cols-2 gap-4 border-b border-gray-200 pb-4 mb-4 xl:flex xl:justify-between xl:items-center xl:border-0">
 
     <div class="flex items-center gap-2">
-      <i class="icon-wallet text-xl text-gray-900 w-10 h-10 flex items-center justify-center rounded-xl bg-yellow"></i>
+      <i class="icon-wallet text-xl text-gray-900 w-10 h-10 flex items-center justify-center rounded bg-yellow"></i>
       <h1>موجودی کیف پول:</h1>
     </div>
 
@@ -15,8 +15,8 @@
 
 		<form class="col-span-full w-full xl:max-w-88">
 			<div class="relative">
-				<input class="text-field text-sm w-full" type="number" placeholder="مبلغ مورد نظر خود را وارد کنید">
-				<button class="btn btn-brand absolute top-0 bottom-0 left-0" type="submit">شارژ کیف پول</button>
+				<input class="input text-sm w-full" type="number" placeholder="مبلغ مورد نظر خود را وارد کنید">
+				<button class="btn btn--brand absolute top-0 bottom-0 left-0" type="submit">شارژ کیف پول</button>
 			</div>
 			<!-- Error -->
 			<!-- <small class="text-red-400">مبلغ نمی‌تواند کمتر از <b class="tracking-tighter">۱۰,۰۰۰</b> تومان باشد.</small> -->
@@ -51,7 +51,7 @@
           <td class="whitespace-nowrap">تکمیل شده</td>
           <td class="min-w-32">اعتبار کیف پول از طریق خرید #FFA-982530</td>
           <td class="min-w-32">
-            <a class="btn btn-sm btn-brand btn-outline rounded-full" href="javascript:">پرداخت</a>
+            <a class="btn btn--sm btn--brand btn-outline rounded-full" href="javascript:">پرداخت</a>
           </td>
         </tr>
       </tbody>

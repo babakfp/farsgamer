@@ -49,6 +49,10 @@
 		@apply text-sm h-8 px-2;
 	}
 
+	.btn--lg {
+		@apply h-12;
+	}
+
 	.btn--submit {
 		@apply h-input;
 	}
@@ -60,31 +64,5 @@
 	.btn i {
 		@apply opacity-80;
 	}
-
-	.btn-2xl {
-		min-height: 50px !important;
-		min-width: 220px !important;
-		@apply font-semibold text-lg !important;
-	}
-
-	.btn-xl {
-		@apply px-8 leading-7 w-56 font-semibold;
-	}
-
-	.btn-lg {
-		@apply px-7 leading-6;
-	}
-
-	.btn-sm {
-		@apply px-7 leading-4 text-xs;
-	}
-
-	.btn-xs {
-		@apply px-6 leading-4 text-xs;
-	}
-
-	/* .form-submit {
-		@apply h-12.5;
-	} */
 
 }

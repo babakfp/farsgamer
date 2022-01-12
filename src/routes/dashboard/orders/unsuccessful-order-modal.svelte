@@ -11,7 +11,7 @@
 				لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ
 			</div>
 			<div class="modal-footer border-t-0">
-				<button type="button" class="btn btn-brand" data-bs-dismiss="modal">متوجه شدم</button>
+				<button type="button" class="btn btn--brand" data-bs-dismiss="modal">متوجه شدم</button>
 			</div>
 		</div>
 	</div>

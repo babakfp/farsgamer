@@ -13,7 +13,7 @@
 	<hr class="border-gray-100 -mx-4 mt-3 pt-3 ">
 	<div class="flex items-center justify-between">
 		<span>علیرضا خانی</span>
-		<StarRating {rating} />
+		<StarRating />
 	</div>
 </div>
 
