@@ -51,7 +51,7 @@
           <td class="whitespace-nowrap">تکمیل شده</td>
           <td class="min-w-32">اعتبار کیف پول از طریق خرید #FFA-982530</td>
           <td class="min-w-32">
-            <a class="btn btn--sm btn--brand btn-outline rounded-full" href="javascript:">پرداخت</a>
+            <a class="btn btn--sm btn--brand btn--outline rounded-full" href="javascript:">پرداخت</a>
           </td>
         </tr>
       </tbody>

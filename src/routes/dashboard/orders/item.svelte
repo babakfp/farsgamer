@@ -37,7 +37,7 @@
     <!-- <div class="do__item-cell do__item-cell__delivered"> -->
       <!-- Button trigger modal -->
 							<!-- TOOD  btn--xs-->
-      <!-- <button class="btn px-8 btn--brand btn--xs btn-outline" data-bs-toggle="modal" data-bs-target="#orderNotCompleted">
+      <!-- <button class="btn px-8 btn--brand btn--xs btn--outline" data-bs-toggle="modal" data-bs-target="#orderNotCompleted">
         سفارش انجام نشده؟
       </button>
       <%# include('./unsuccessful-order-modal.ejs') %>
@@ -47,9 +47,9 @@
     <div class="do__item-cell do__item-cell__buttons">
       <div class="grid gap-1">
 							<!-- TOOD  btn--xs-->
-        <a href="#" class="btn px-8 btn--brand btn--xs btn-outline w-full">نمایش</a>
+        <a href="#" class="btn px-8 btn--brand btn--xs btn--outline w-full">نمایش</a>
 							<!-- TOOD  btn--xs-->
-        <button class="btn px-8 btn--brand btn-outline btn--xs w-full" data-bs-toggle="collapse" data-bs-target="#collapseDoItem1" aria-expanded="false" aria-controls="collapseExample">
+        <button class="btn px-8 btn--brand btn--outline btn--xs w-full" data-bs-toggle="collapse" data-bs-target="#collapseDoItem1" aria-expanded="false" aria-controls="collapseExample">
           <i class="icon-plus text-sm hidden leading-0"></i>
           <span>پیگیری <span class="text-2xs">(2 پیام جدید)</span></span>
         </button>

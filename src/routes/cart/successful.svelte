@@ -3,28 +3,22 @@
 </script>
 
 <Layout>
+	<svelte:fragment slot="before-main">
+		<div class="bg-light-green font-medium flex items-center justify-center gap-2 p-2 rounded mb-4">
+			<i class="icon-check-square"></i>
+			<p class="text-sm">پرداخت با موفقیت انجام شد با تشکر از خرید شما</p>
+		</div>
+
+		<!-- <div class="bg-pink font-medium flex flex-wrap items-center justify-center gap-y-2 gap-x-8 p-2 rounded mb-4">
+			<div class="flex items-center gap-2">
+				<i class="icon-exclamation-square"></i>
+				<p class="text-sm">پرداخت شما ناموفق بود</p>
+			</div>
+			<a class="btn btn--brand btn--outline btn--xs" href="javascript:">دوباره تلاش کنید</a>
+		</div> -->
+	</svelte:fragment>
+		
 	<svelte:fragment slot="main">
-		<h1 class="font-semibold text-lg mb-4">جزئیات سفارش</h1>
-
-		<!-- Success Message -->
-		<!--
-			<div class="bg-light-green font-medium flex items-center justify-center gap-2 p-2 rounded mb-4">
-				<i class="icon-check-square"></i>
-				<p class="text-sm">پرداخت با موفقیت انجام شد با تشکر از خرید شما</p>
-			</div>
-		-->
-
-		<!-- Error Message -->
-		<!--
-			<div class="bg-pink font-medium flex flex-wrap items-center justify-center gap-y-2 gap-x-8 p-2 rounded mb-4">
-				<div class="flex items-center gap-2">
-					<i class="icon-exclamation-square"></i>
-					<p class="text-sm">پرداخت شما ناموفق بود</p>
-				</div>
-				<a href="" class="btn btn--brand btn-outline btn--xs">دوباره تلاش کنید</a>
-			</div>
-		-->
-
 		<div class="table-wrapper">
 			<table>
 				<thead class="mb-4 text-sm">
@@ -102,7 +96,7 @@
 			</table>
 		</div>
 
-		<hr class="border-gray-200 my-4">
+		<hr class="border-gray-100 my-4">
 
 		<ul class="space-y-2 text-sm">
 			<li class="flex items-center justify-between">
@@ -151,24 +145,20 @@
 	</svelte:fragment>
 	
 	<svelte:fragment slot="sidebar">
-		<div class="bg-gray-50 text-brand border border-brand rounded text-center">
-			<p class="px-3 py-2">زمان تحویل</p>
-			<p class="px-3 py-2 font-medium border-t border-brand text-2xl">10:23:59:59</p>
-		</div>
-
-		<!-- Order Info -->
-		<ul class="mt-4 space-y-2 text-base">
-			<li class="flex items-center justify-between">
-				<p class="text-gray-500 font-semibold">شماره سفارش</p>
-				<p class="dir-ltr font-semibold"><span class="text-gray2-700">#</span><span class="font-isans-ed select-all">FFA-980317</span></p>
+		<ul class="space-y-2 text-sm">
+			<li class="flex justify-between">
+				<span>شماره سفارش</span>
+				<span>980317</span>
 			</li>
-			<li class="flex items-center justify-between">
-				<p class="text-gray-500 font-semibold">تاریخ</p>
-				<p class="font-semibold">1399, 25 دی</p>
+			<hr class="border-gray-100">
+			<li class="flex justify-between">
+				<span>تاریخ سفارش</span>
+				<span>1400-02-29</span>
 			</li>
-			<li class="flex flex-wrap items-center justify-between">
-				<p class="text-gray-500 font-semibold">ایمیل</p>
-				<p class="font-semibold break-words">mostafa.021fa@gmail</p>
+			<hr class="border-gray-100">
+			<li class="flex justify-between">
+				<span>زمان تحویل</span>
+				<span>تا ۴ ساعت بعد</span>
 			</li>
 		</ul>
 	</svelte:fragment>
