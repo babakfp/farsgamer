@@ -1,35 +1,28 @@
 @layer components {
 
-	body.header-and-sidebar-fixed #burger,
-	body.header-and-sidebar-fixed #header__logo {
+	body.main-header #burger,
+	body.main-header #main-logo {
 		@apply lg:hidden !important;
 	}
 
-	/* TODO */
-	/* body:not(.header-and-sidebar-fixed) #header .container-base {
+	body:not(.main-header) #header .container-base {
 		@apply 2xl:container;
-	} */
+	}
 
-	body.header-and-sidebar-fixed #header {
+	body.main-header #header {
 		@apply fixed z-40 top-0 right-0 left-0 lg:mr-56 2xl:mr-64;
 	}
 
-	body.header-and-sidebar-fixed #sidebar {
+	body.main-header #sidebar {
 		@apply lg:w-56 lg:ml-auto lg:translate-x-0 2xl:w-64 lg:bg-transparent;
 	}
 
-	body.header-and-sidebar-fixed #sidebar__logo {
+	body.main-header #sidebar__logo {
 		@apply lg:flex !important;
 	}
 
-	/* #main.main--dashboard {
-		min-height: calc(100vh - 4rem);
+	body.dashboard-header #header > .container-base > div:first-child {
+		@apply lg:!mr-0;
 	}
-
-	@media only screen and (min-width: 1024px) {
-		#main.main--dashboard {
-			min-height: calc(100vh - 5rem);
-		}
-	} */
 
 }

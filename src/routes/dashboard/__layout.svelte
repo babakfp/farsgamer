@@ -1,19 +1,21 @@
-<%- include(views + "head.ejs") %>
-<%- include(components + "header.ejs") %>
-<%- include(components + "sidebar.ejs") %>
+<script>
+	import { browser } from '$app/env'
+	import NavItem from '$lib/dashboard/NavItem.svelte'
+
+	if (browser) document.body.classList.remove('main-header')
+	if (browser) document.body.classList.add('dashboard-header')
+</script>
+
+<!-- <%- include(components + "header.ejs") %> -->
+<!-- <%- include(components + "sidebar.ejs") %> -->
 
 <main id="main" class="main--dashboard">
-  <div class="container py-10 2md:grid 2md:grid-cols-12 2md:gap-4 2md:items-start xl:gap-8 2xl:gap-12">
+  <div class="container py-10 md2:grid md2:grid-cols-12 md2:gap-4 md2:items-start xl:gap-8 2xl:gap-12">
 
     <!-- Dashbaord Menu -->
-    <div class="2md:col-start-1 2md:col-end-5 xl:col-end-4">
-      
-      <a href="/" class="bg-white p-4 mb-4 rounded flex items-center justify-center gap-2 link-transition hover:text-brand-deep">
-        <i class="icon-arrow-right-square"></i>
-        <p>بازگشت به خانه</p>
-      </a>
-    
-      <div class="bg-white p-4 mb-8 rounded 2md:mb-0">
+    <div class="md2:col-start-1 md2:col-end-5 xl:col-end-4">
+     
+      <div class="bg-white p-4 mb-8 rounded md2:mb-0">
         <div class="bg-gray-50 pt-4 p-2 rounded">
     
           <div class="flex items-center gap-4">
@@ -82,11 +84,9 @@
     </div>
     
     <!-- Dashbaord Main Col -->
-    <div class="p-4 rounded bg-white 2md:col-start-5 2md:col-end-13 xl:col-start-4 h-full">
-      <%- body %>
+    <div class="p-4 rounded bg-white md2:col-start-5 md2:col-end-13 xl:col-start-4 h-full">
+      <slot />
     </div>
 
   </div>
 </main>
-
-<%- include(views + "foot.ejs") %>

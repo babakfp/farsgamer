@@ -1,3 +1,7 @@
+<script>
+	import Item from './lib/Item.svelte'
+</script>
+
 <div class="do">
   <div class="do__head">
     <div class="do__head-cell do__item-cell__code">کد سفارش</div>
@@ -9,6 +13,6 @@
   </div>
   
   <div class="do__item-list">
-    <%- include('./orders/item.ejs') %>
+    <Item />
   </div>
 </div>

@@ -1,3 +1,7 @@
+<script>
+	import TrackContent from './TrackContent.svelte'
+</script>
+
 <div class="do__item">
 
   <div class="do__item-cell-list">
@@ -47,7 +51,7 @@
     <div class="do__item-cell do__item-cell__buttons">
       <div class="grid gap-1">
 							<!-- TOOD  btn--xs-->
-        <a href="#" class="btn px-8 btn--brand btn--xs btn--outline w-full">نمایش</a>
+        <a href="javascript:" class="btn px-8 btn--brand btn--xs btn--outline w-full">نمایش</a>
 							<!-- TOOD  btn--xs-->
         <button class="btn px-8 btn--brand btn--outline btn--xs w-full" data-bs-toggle="collapse" data-bs-target="#collapseDoItem1" aria-expanded="false" aria-controls="collapseExample">
           <i class="icon-plus text-sm hidden leading-0"></i>
@@ -57,6 +61,5 @@
     </div>
   </div>
   
-
-  <%- include('./track-content.ejs') %>
+	<TrackContent />
 </div>

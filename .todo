@@ -1,7 +1,6 @@
-[ ] Convert `rounded-2xl` to rounded
-[ ] Convert btn-brand and ... to btn--brand
-[ ] btn-disabled (Don't remember what to do with this)
 [ ] Change `.product-carousel` class name
-[ ] Convert home second slider to Swiper or fix the responsive of Scroll Snap
 [ ] Fix customers review same height && ProductCard too
 [ ] Remove montserrat
+[ ] Nested comments
+[ ] Dashboard no comments submited
+[ ] Dashboard no orders

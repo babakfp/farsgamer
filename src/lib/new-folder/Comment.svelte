@@ -1,3 +1,7 @@
+<script>
+	import StarRating from '$lib/StarRating.svelte'
+</script>
+
 <div class="comment comment--ligth">
   <div class="comment__head">
     <div class="comment__info">
@@ -12,8 +16,7 @@
         <!-- user f and l name -->
         <span class="comment__user-name">حسن کچل</span>
 
-        <!-- what user rated -->
-        <%- include(components + "rating-stars.ejs") %>
+        <StarRating />
       </div>
       
     </div>

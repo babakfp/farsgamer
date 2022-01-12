@@ -7,9 +7,11 @@
 	// Layouts
 	import Default from '$layouts/Default.svelte'
 	import HeaderMmenu from '$layouts/HeaderMmenu.svelte'
+	// import Dashboard from '$layouts/Dashboard.svelte'
 	
 	const layouts = {
 		// '<route>': <Layout Component>,
+		// '/dashboard': Dashboard,
 	}
 	$: layout = layouts[$page.url.pathname] ?? HeaderMmenu
 </script>

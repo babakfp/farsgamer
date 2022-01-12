@@ -22,9 +22,9 @@
 			</div>
 			<div class="comment__body">
 				<div class="comment__content">
-					<p class="comment__message">
+					<div class="comment__message">
 						<p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-					</p>
+					</div>
 				</div>
 				<!-- comment item depth 2 -->
 				<div class="comment comment--ligth gap-y-2 gap-x-4 grid xs:flex">

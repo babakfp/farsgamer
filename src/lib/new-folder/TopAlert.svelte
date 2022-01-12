@@ -2,4 +2,3 @@
   <p class="tp-alert__message">پشتیبانی 24 ساعته از طریق چت آنلاین در خدمت شما عزیزان. جهت اطلاع از آخرین اخبار به <a href="javascript:">اینستاگرام ما</a> بپیوندید</p>
   <button class="tp-alert__action" data-bs-dismiss="alert" aria-label="Close">بستن اعلان</button>
 </div>
-<!-- TODO -->

@@ -373,21 +373,9 @@ const sliderNavigationConfig = {
 	})
 })()
 
-// ---
-;(_=> {
-	const dashboardComments = document.querySelector('.dashboard-comments')
-	if (dashboardComments) easyTab(dashboardComments)
-})()
-
-// ---
 
 // dashboard rating
-$('#dashboard-comments-rate-product').barrating('show', {
-	theme: 'fontawesome-stars',
-	reverse: true,
-	fastClicks: true,
-	hoverState: false,
-})
+
 
 // ---
 

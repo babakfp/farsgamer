@@ -7,7 +7,7 @@
 </script>
 
 <OutClick on:outclick={close} excludeByQuerySelector={['.js-burger-toggle-btn']}>
-	<sidebar on:click|self={close} class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-50 inset-0 top-16 bg-gray-900 bg-opacity-60 backdrop-blur-sm lg:top-20 lg:translate-x-0" id="sidebar">
+	<sidebar on:click|self={close} class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-50 inset-0 top-16 bg-gray-900 bg-opacity-60 backdrop-blur-sm lg:top-20" id="sidebar">
 		<div class="translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out lg:translate-x-0" id="sidebar__content">
 			<Logo />
 
@@ -44,6 +44,9 @@
 </OutClick>
 
 <style lang="postcss">
+	body.main-header #header {
+		@apply lg:translate-x-0;
+	}
 	#sidebar {
 		height: calc(100vh - 4rem);
 	}

@@ -1,3 +1,21 @@
+<script>
+	import CommentWithReply from '$lib/new-folder/CommentWithReply.svelte'
+	import { onMount } from 'svelte'
+
+	onMount(_=> {
+		easyTab(document.querySelector('.dashboard-comments'))
+		
+		document.querySelector('#dashboard-comments-rate-product').barrating(
+			'show', {
+				theme: 'fontawesome-stars',
+				reverse: true,
+				fastClicks: true,
+				hoverState: false,
+			}
+		)
+	})
+</script>
+
 <section class="dashboard-comments">
 
   <ul class="dashboard-comments__tabs">
@@ -66,8 +84,8 @@
 
     <div easytab-content>
       <div class="grid gap-4">
-        <%- include(components + "comment-with-reply.ejs") %> 
-        <%# include("../../components/posttype/comment.ejs") %>
+				<CommentWithReply />
+        <!-- <%# include("../../components/posttype/comment.ejs") %> -->
       </div>
     </div>
 
