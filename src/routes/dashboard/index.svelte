@@ -1,5 +1,6 @@
 <script>
 	import BtnInInput from '$lib/BtnInInput.svelte'
+	let wallet = true
 </script>
 
 <div class="grid grid-cols-2 gap-4 p-4 rounded bg-white xl:flex xl:justify-between xl:items-center xl:border-0">
@@ -21,34 +22,56 @@
 
 </div>
 
-<div class="table-wrapper mt-4 p-4 rounded bg-white">
-	<table>
-		<thead class="text-sm text-gray-500">
-			<tr>
-				<th>تاریخ</th>
-				<th>شناسه</th>
-				<th>افزایش مبلغ</th>
-				<th>وضعیت پرداخت</th>
-				<th>جزئیات</th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody class="text-black">
-			<tr>
-				<td>
-					<div class="comment__date">
-						<span class="comment__date-day">29</span>
-						<span class="comment__date-month">اسفند</span>
-					</div>
-				</td>
-				<td>30250</td>
-				<td class="whitespace-nowrap"><span class="flex items-center gap-1"><span class="font-semibold">۱۰۰,۰۰۰</span><span class="text-sm">تومان</span></span></td>
-				<td class="whitespace-nowrap">تکمیل شده</td>
-				<td class="min-w-32">اعتبار کیف پول از طریق خرید #FFA-982530</td>
-				<td class="min-w-32">
-					<a class="btn btn--sm btn--brand btn--outline rounded-full" href="javascript:">پرداخت</a>
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+{#if wallet}
+	<div class="table-wrapper mt-8 text-sm">
+		<table>
+			
+			<thead class="text-gray-500">
+				<tr>
+					<th>تاریخ</th>
+					<th>شناسه</th>
+					<th>افزایش مبلغ</th>
+					<th>وضعیت پرداخت</th>
+					<th>جزئیات</th>
+					<th></th>
+				</tr>
+			</thead>
+
+			<tbody class="p-4">
+				{#each [...Array(3).keys()] as _}
+
+					<!-- Just a divider -->
+					<tr class="h-px bg-gray-100 first:h-0"></tr>
+					
+					<tr>
+						<td>1400-02-29</td>
+						<td>30250</td>
+						<td class="whitespace-nowrap"><span class="flex items-center gap-1"><span class="font-semibold">۱۰۰,۰۰۰</span><span class="text-sm">تومان</span></span></td>
+						<td class="whitespace-nowrap">تکمیل شده</td>
+						<td class="min-w-32">اعتبار کیف پول از طریق خرید #FFA-982530</td>
+						<td class="min-w-32">
+							<a class="btn btn--xs btn--light rounded-full" href="javascript:">پرداخت</a>
+						</td>
+					</tr>
+				{/each}
+			</tbody>
+
+		</table>
+	</div>
+{/if}
+
+<style lang="postcss">
+	th {
+		@apply font-normal;
+	}
+	/* Not using :first-of-type because of tr divider element */
+	tbody tr:nth-of-type(2) td {
+		@apply first:rounded-tr last:rounded-tl
+	}
+	tbody tr:last-of-type td {
+		@apply first:rounded-br last:rounded-bl
+	}
+	tbody td {
+		@apply p-4 bg-white;
+	}
+</style>

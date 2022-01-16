@@ -46,7 +46,7 @@
 	}
 
 	.btn--xs {
-		@apply text-sm h-8 px-2;
+		@apply text-xs h-8 px-2;
 	}
 
 	.btn--lg {

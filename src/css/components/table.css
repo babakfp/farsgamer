@@ -8,10 +8,6 @@
 		@apply w-full;
 	}
 
-	thead {
-		@apply border-b-2 border-gray-100;
-	}
-
 	th {
 		@apply p-2 pb-4 mb-4 whitespace-nowrap;
 	}

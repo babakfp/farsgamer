@@ -35,11 +35,9 @@
 
 	<div class="grid gap-2">
 		<Comment bind:showResponseForm>
-			{#if !showResponseForm}
-				<button class="btn btn--light btn--xs" on:click={_=> showResponseForm = true}>ارسال نظر</button>
-			{:else}
-				<button class="btn btn--light btn--outline btn--xs" on:click={_=> showResponseForm = false}>صرف نظر</button>
-			{/if}
+			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
+				{showResponseForm ? 'صرف' : 'ارسال'} نظر
+			</button>
 		</Comment>
 		<Comment />
 	</div>

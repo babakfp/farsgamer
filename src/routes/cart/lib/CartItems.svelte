@@ -2,24 +2,26 @@
 	export let cartable = true
 </script>
 
-<div class="table-wrapper rounded">
+<div class="table-wrapper">
 	<table>
-		<thead class="text-sm border-0">
-			<tr class="text-gray-500">
+
+		<thead class="text-sm text-gray-500">
+			<tr>
 				<th>محصول</th>
 				<th></th>
-				<th class="min-w-20">قیمت</th>
+				<th>قیمت</th>
 				<th>تعداد</th>
 				{#if cartable}
 					<th class="delete">حذف از سبد خرید</th>
 				{/if}
 			</tr>
 		</thead>
+		
 		<tbody class="p-4">
 			{#each [...Array(3).keys()] as _}
 
 				<!-- Just a divider -->
-				<tr class="border-gray-100 first:border-0"><hr></tr>
+				<tr class="h-px bg-gray-100 first:h-0"></tr>
 				
 				<tr class="border-0">
 					<td class="w-28 h-28 py-4">
@@ -77,6 +79,7 @@
 				</tr>
 			{/each}
 		</tbody>
+		
 	</table>
 </div>
 
