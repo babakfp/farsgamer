@@ -1,7 +1,8 @@
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
-const plugin_flip = require('./src/utils/tailwind-plugins/flip.cjs')
-const plugin_dir = require('./src/utils/tailwind-plugins/dir.cjs')
+const flipPlugin = require('./src/utils/tailwind-plugins/flip.cjs')
+const dirPlugin = require('./src/utils/tailwind-plugins/dir.cjs')
+const overflowPlugin = require('./src/utils/tailwind-plugins/overflow.cjs')
 
 const config = {
   content: ['./src/**/*.{html,svelte}'],
@@ -134,8 +135,9 @@ const config = {
   },
   plugins: [
 		require('@tailwindcss/line-clamp'),
-		plugin_flip,
-		plugin_dir,
+		flipPlugin,
+		dirPlugin,
+		overflowPlugin,
 	],
 }
 

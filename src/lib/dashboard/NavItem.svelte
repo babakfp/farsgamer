@@ -6,7 +6,7 @@
 
 <li>
 	<a class="nav-menu-item nav-menu-item--active" { href }>
-		<i class="nav-menu-item__icon {icon}"></i>
+		<i class="nav-menu-item__icon { icon }"></i>
 		<span class="nav-menu-item__title">{ title }</span>
 	</a>
 </li>

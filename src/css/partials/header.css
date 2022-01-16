@@ -21,8 +21,8 @@
 		@apply lg:flex !important;
 	}
 
-	body.dashboard-header #header > .container-base > div:first-child {
+	/* body.dashboard-header #header > .container-base > div:first-child {
 		@apply lg:!mr-0;
-	}
+	} */
 
 }
