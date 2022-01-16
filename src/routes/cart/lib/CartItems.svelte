@@ -1,102 +1,101 @@
-<div class="table-wrapper">
+<script>
+	export let cartable = true
+</script>
+
+<div class="table-wrapper rounded">
 	<table>
-		<thead class="mb-4 text-sm">
+		<thead class="text-sm border-0">
 			<tr class="text-gray-500">
-				<!-- 1 -->
 				<th>محصول</th>
-				<!-- 2 -->
 				<th></th>
-				<!-- 3 -->
 				<th class="min-w-20">قیمت</th>
-				<!-- 4 -->
 				<th>تعداد</th>
-				<!-- 5 -->
-				<th>جمع جزء</th>
-				<!-- 6 -->
-				<th>حذف</th>
+				{#if cartable}
+					<th class="delete">حذف از سبد خرید</th>
+				{/if}
 			</tr>
 		</thead>
-		<tbody>
+		<tbody class="p-4">
+			{#each [...Array(3).keys()] as _}
 
-			<!--
-				START LOOP
-				Hi back-end developer.
-				You need to start the loop from hire
-			-->
+				<!-- Just a divider -->
+				<tr class="border-gray-100 first:border-0"><hr></tr>
+				
+				<tr class="border-0">
+					<td class="w-28 h-28 py-4">
+						<a href="javascript:">
+							<img class="rounded min-w-28 min-h-28" src="/images/product-grid.png" alt>
+						</a>
+					</td>
 
-			<!-- this is just a spacer. don't remove it -->
-			<tr class="h-2 last:h-0"></tr>
-			
-			<!-- the table main content - cart content - products in the cart -->
-			<tr class="border-0">
+					<td>
+						<a href="javascript:">
+							<h3 class="text-sm font-bold line-clamp-1">بتل پس چپتر 2 سیزن 5</h3>
+						</a>
+						<ul class="mt-2 space-y-1 text-gray-500 text-xs">
+							<li class="flex gap-1 line-clamp-1">
+								<span>نوع اکانت:</span>
+								<span class="font-medium">اپیک گیمز</span>
+							</li>
+							<li class="flex gap-1 line-clamp-1">
+								<span>ایمیل:</span>
+								<span class="font-medium">mostafa.021g@gmail.com</span>
+							</li>
+							<li class="flex gap-1 line-clamp-1">
+								<span>رمز:</span>
+								<span class="font-medium">583258</span>
+							</li>
+							<li class="flex gap-1 line-clamp-1">
+								<span>مایل به دریافت سریع تر:</span>
+								<span class="font-medium">بلی</span>
+							</li>
+						</ul>
+					</td>
 
-				<!-- 1 - Product Image -->
-				<td class="bg-gray-50 rounded-r-2xl w-28 h-28 py-4">
-					<img class="rounded min-w-28 min-h-28" src="/images/product-grid.png">
-				</td>
+					<td>
+						<div class="flex items-center gap-1 whitespace-nowrap">
+							<p class="text-lg font-semibold">100,000</p>
+							<p class="text-sm">تومان</p>
+						</div>
+					</td>
 
-				<!-- 2 - Product Info -->
-				<td class="bg-gray-50 py-4">
+					<td>
+						{#if cartable}
+							<input class="input input-no-arrows w-10 !h-10 px-2 text-center" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+						{:else}
+							<span>1</span>
+						{/if}
+					</td>
 
-					<!-- Title -->
-					<h3 class="font-semibold mb-2 text-sm">بتل پس چپتر 2 سیزن 5</h3>
-					
-					<ul class="text-sm whitespace-nowrap">
-						<li class="flex gap-1">
-							<span>نوع اکانت:</span>
-							<span class="font-medium">اپیک گیمز</span>
-						</li>
-						<li class="flex gap-1">
-							<span>ایمیل:</span>
-							<span class="font-medium">mostafa.021g@gmail.com</span>
-						</li>
-						<li class="flex gap-1">
-							<span>رمز:</span>
-							<span class="font-medium">1234</span>
-						</li>
-						<li class="flex gap-1">
-							<span>مایل به دریافت سریع تر:</span>
-							<span class="font-medium">بلی</span>
-						</li>
-					</ul>
-
-				</td>
-
-				<!-- 3 - Product Price -->
-				<td class="bg-gray-50 py-4">
-					<div class="flex items-center gap-1 whitespace-nowrap">
-						<p class="text-lg font-semibold">100,000</p>
-						<p class="text-sm">تومان</p>
-					</div>
-				</td>
-
-				<!-- 4 - Quantity -->
-				<td class="bg-gray-50 py-4">
-					<input class="input w-16 h-10 bg-white" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
-				</td>
-
-				<!-- 5 - Product Total Price -->
-				<td class="bg-gray-50 py-4">
-					<div class="flex items-center gap-1 whitespace-nowrap">
-						<p class="text-lg font-semibold">100,000</p>
-						<p class="text-sm">تومان</p>
-					</div>
-				</td>
-
-				<!-- 6 - Remove the product from the cart -->
-				<td class="bg-gray-50 rounded-l-2xl py-4">
-					<a href="" class="text-red hover:text-opacity-70 focus:text-opacity-70 transition-colors duration-200">
-						<i class="icon-cancel"></i>
-					</a>
-				</td>
-
-			</tr>
-
-			<!--
-				START LOOP
-				and end it here :)
-			-->
-
+					{#if cartable}
+						<td class="delete">
+							<button class="btn btn--light w-10 duration-200">
+								<i class="fi-rr-cross-circle"></i>
+							</button>
+						</td>
+					{/if}
+				</tr>
+			{/each}
 		</tbody>
 	</table>
 </div>
+
+<style lang="postcss">
+	th {
+		@apply font-normal;
+	}
+	/* Not using :first-of-type because of tr divider element */
+	tbody tr:nth-of-type(2) td {
+		@apply first:rounded-tr last:rounded-tl
+	}
+	tbody tr:last-of-type td {
+		@apply first:rounded-br last:rounded-bl
+	}
+	tbody td {
+		@apply p-4 bg-white;
+	}
+	thead th.delete,
+	tbody td.delete {
+		@apply pl-8 text-left;
+	}
+</style>

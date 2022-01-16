@@ -38,7 +38,6 @@ const config = {
 				brand: {
 					DEFAULT: '#3D42DF',
 					deep: '#1F24C3',
-					deeper: '#10159D',
 				},
 				red: {
 					DEFAULT: '#FF3838',

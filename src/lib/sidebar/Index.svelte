@@ -1,9 +1,14 @@
 <script>
+	import { navigating } from "$app/stores"
 	import { isOpen, close } from '$store/mobile-menu.js'
 	import OutClick from 'svelte-outclick'
 	import Logo from './Logo.svelte'
 	import NavItem from './NavItem.svelte'
 	import StreamCard from './StreamCard.svelte'
+
+	$: {
+		$navigating && close()
+	}
 </script>
 
 <OutClick on:outclick={close} excludeByQuerySelector={['.js-burger-toggle-btn']}>

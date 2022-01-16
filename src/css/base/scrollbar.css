@@ -35,21 +35,21 @@
 		@apply bg-gray-400 hover:bg-brand hover:bg-opacity-80;
 	}
 
-	.scrollbar--y::-webkit-scrollbar-thumb {
-		@apply border-t-12 border-b-12;
-	}
-
 	.scrollbar--y-sm::-webkit-scrollbar-thumb,
 	.selectContainer .listContainer::-webkit-scrollbar-thumb {
 		@apply border-t-8 border-b-8;
 	}
 
-	.scrollbar--x::-webkit-scrollbar-thumb {
-		@apply border-r-12 border-l-12;
+	.scrollbar--y-lg::-webkit-scrollbar-thumb {
+		@apply border-t-12 border-b-12;
 	}
 
 	.scrollbar--x-sm::-webkit-scrollbar-thumb {
 		@apply border-r-8 border-l-8;
+	}
+
+	.scrollbar--x-lg::-webkit-scrollbar-thumb {
+		@apply border-r-12 border-l-12;
 	}
 
 }

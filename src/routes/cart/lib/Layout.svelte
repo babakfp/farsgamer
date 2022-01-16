@@ -2,9 +2,7 @@
 
 	<div class="xl:col-start-1 xl:col-end-9 2xl:col-end-10 xl:row-span-full overflow-hidden">
 		<slot name="before-main" />
-		<div class="p-4 bg-white rounded">
-			<slot name="main" />
-		</div>
+		<slot name="main" />
 	</div>
 
 	<div class="grid gap-4 xl:col-start-9 xl:col-end-13 2xl:col-start-10 xl:row-span-full">

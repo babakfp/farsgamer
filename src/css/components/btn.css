@@ -17,7 +17,7 @@
 
 	/* Gray */
 	/* .btn--gray {
-		@apply text-gray-700 hover:bg-gray-100 focus:bg-gray-100;
+		@apply text-gray-700 hover:!bg-gray-100 focus:!bg-gray-100;
 	}
 	.btn--light:not(.btn--outline) {
 		@apply bg-gray-200;
@@ -27,14 +27,14 @@
 	} */
 
 	/* Brand */
-	.btn--brand {
-		@apply hover:bg-brand-deep focus:bg-brand-deeper;
+	.btn--brand:not([disabled]) {
+		@apply hover:!bg-brand-deep focus:!bg-brand-deep;
 	}
-	.btn--brand:not(.btn--outline) {
+	.btn--brand:not(.btn--outline):not([disabled]) {
 		@apply bg-brand text-white;
 	}
-	.btn--brand.btn--outline {
-		@apply text-brand border-brand hover:text-white focus:text-white focus:border-brand-deeper;
+	.btn--brand.btn--outline:not([disabled]) {
+		@apply text-brand border-brand hover:text-white focus:text-white focus:border-brand-deep;
 	}
 
 	.btn--sm {
@@ -58,7 +58,7 @@
 	}
 
 	.btn[disabled] {
-		@apply opacity-50 pointer-events-none;
+		@apply bg-gray-100 text-gray-500 cursor-not-allowed;
 	}
 
 	.btn i {
