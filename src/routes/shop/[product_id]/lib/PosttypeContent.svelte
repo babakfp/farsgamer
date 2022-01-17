@@ -4,8 +4,8 @@
 	import Comment from '$lib/posttype/Comment.svelte'
 	import CommentForm from '$lib/posttype/CommentForm.svelte'
 
-	import { CommentWithReply as QAACommentWithReply } from './question-and-answer/CommentWithReply.svelte'
-	import { CommentForm as QAACommentForm } from './question-and-answer/CommentForm.svelte'
+	import * as QAACommentWithReply from './question-and-answer/CommentWithReply.svelte'
+	import * as QAACommentForm from './question-and-answer/CommentForm.svelte'
 </script>
 
 <section class="posttype-content">
