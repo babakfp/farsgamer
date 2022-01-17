@@ -1,5 +1,6 @@
 <script>
 	import TrackContent from './TrackContent.svelte'
+	import UnsuccessfulOrderModal from './UnsuccessfulOrderModal.svelte'
 </script>
 
 <div class="do__item">
@@ -33,19 +34,18 @@
     </div>
 
     <!-- status -->
-    <!-- <div class="do__item-cell do__item-cell__status">
+    <div class="do__item-cell do__item-cell__status">
       <span class="font-semibold">پرداخت شده</span>
-    </div> -->
+    </div>
 
     <!-- delivered -->
-    <!-- <div class="do__item-cell do__item-cell__delivered"> -->
+    <div class="do__item-cell do__item-cell__delivered">
       <!-- Button trigger modal -->
-							<!-- TOOD  btn--xs-->
-      <!-- <button class="btn px-8 btn--brand btn--xs btn--outline" data-bs-toggle="modal" data-bs-target="#orderNotCompleted">
+      <button class="btn px-8 btn--brand btn--xs btn--outline" data-bs-toggle="modal" data-bs-target="#orderNotCompleted">
         سفارش انجام نشده؟
       </button>
-      <%# include('./unsuccessful-order-modal.ejs') %>
-    </div> -->
+      <UnsuccessfulOrderModal />
+    </div>
 
     <!-- buttons -->
     <div class="do__item-cell do__item-cell__buttons">

@@ -85,7 +85,6 @@
     <div easytab-content>
       <div class="grid gap-4">
 				<CommentWithReply />
-        <!-- <%# include("../../components/posttype/comment.ejs") %> -->
       </div>
     </div>
 

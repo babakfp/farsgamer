@@ -14,7 +14,6 @@
 
 <div class="space-y-8 lg:space-y-12">
 	<Posters />
-	<!-- <%- include(components + "home/triple-posters.ejs") %> -->
 	<BestSellerProducts />
 	<GiftCards />
 	<UserComments />
