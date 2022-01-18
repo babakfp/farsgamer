@@ -4,7 +4,7 @@
 	export let title
 	export let icon
 	export let href
-	export let useInDashboard
+	export let useInDashboard = false
 </script>
 
 <li>
