@@ -13,14 +13,4 @@
 		@apply border-brand;
 	}
 
-	/* Ratinh Stars */
-	.dashboard-comments-rate .br-widget a {
-		margin: 0 !important;
-	}
-
-	.dashboard-comments-rate .br-widget {
-		display: flex;
-		gap: 2px;
-	}
-
 }

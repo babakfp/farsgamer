@@ -21,7 +21,7 @@
 	}
 
 	label {
-		@apply block mb-2 text-right;
+		@apply block mb-2 text-right cursor-pointer;
 	}
 
 	.field-description {

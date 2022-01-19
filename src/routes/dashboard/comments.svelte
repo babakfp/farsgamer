@@ -1,18 +1,10 @@
 <script>
+	import Rating from '$lib/Rating.svelte'
 	import CommentWithReply from '$lib/new-folder/CommentWithReply.svelte'
 	import { onMount } from 'svelte'
 
 	onMount(_=> {
 		easyTab(document.querySelector('.dashboard-comments'))
-		
-		document.querySelector('#dashboard-comments-rate-product').barrating(
-			'show', {
-				theme: 'fontawesome-stars',
-				reverse: true,
-				fastClicks: true,
-				hoverState: false,
-			}
-		)
 	})
 </script>
 
@@ -46,22 +38,14 @@
               <form class="bg-white rounded p-4 md:p-6" action="">
                 <h4 class="font-semibold">ثبت نظر</h4>
                 <p class="text-sm">اگر در سفارش شما تاخیر یا مشکلی پیش اومده باشه, لطفا با پشتیبانی تماس بگیرید. همکاران ما ۲۴ ساعته آماده کمک به شما هستند.</p>
-                <textarea class="input w-full mt-4 h-auto resize-y" rows="4" placeholder="نظر خود را وارد نمایید"></textarea>
+                <textarea class="input mt-4" rows="4" placeholder="نظر خود را وارد نمایید"></textarea>
                 
                 <div class="flex flex-wrap items-center justify-between mt-4 gap-2">
 
                   <!-- Rating -->
                   <div class="flex items-center gap-4">
                     <p class="text-sm">میزان رضایت شما از این سفارش چه مقدار است؟</p>
-                    <div class="stars dashboard-comments-rate">
-                      <select id="dashboard-comments-rate-product" name="?" autocomplete="off">
-                        <option value="1" data-html="مزخرف">1</option>
-                        <option value="2" data-html="بد">2</option>
-                        <option value="3" data-html="قابل قبول">3</option>
-                        <option value="4" data-html="خوب">4</option>
-                        <option value="5" data-html="عالی">5</option>
-                      </select>
-                    </div>
+										<Rating />
                   </div>
 
                   <!-- Submit the review -->

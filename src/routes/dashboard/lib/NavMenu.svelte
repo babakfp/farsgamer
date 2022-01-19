@@ -12,20 +12,20 @@
 				<span class="font-bold">بابک فرخوپاک</span>
 				<div class="flex items-center justify-between text-xs">
 					<span>امتیاز: ۳۲۰</span>
-					<a class="btn btn--xs btn--light text-xs" href="javascript:">تبدیل به پول</a>
+					<a class="btn btn--gray btn--outline btn--xs text-xs" href="javascript:">تبدیل به پول</a>
 				</div>
 			</div>
 		</div>
 	
 		<nav class="mt-2">
 			<ul>
-				<NavItem useInDashboard={true} title="داشبورد" href="/dashboard" icon="icon-dashboard" />
-				<NavItem useInDashboard={true} title="سفارشات من" href="/dashboard/orders" icon="icon-controler" />
-				<NavItem useInDashboard={true} title="پروفایل" href="/dashboard/profile" icon="icon-user" />
-				<NavItem useInDashboard={true} title="نظرات من" href="/dashboard/comments" icon="icon-comment" />
-				<NavItem useInDashboard={true} title="اعلانات" href="/dashboard/announcements" icon="icon-bell" />
+				<NavItem useInDashboard={true} title="داشبورد" href="/dashboard" icon="fi-rr-cube" />
+				<NavItem useInDashboard={true} title="سفارشات من" href="/dashboard/orders" icon="fi-rr-gamepad" />
+				<NavItem useInDashboard={true} title="نظرات من" href="/dashboard/comments" icon="fi-rr-comment" />
+				<NavItem useInDashboard={true} title="اعلانات" href="/dashboard/announcements" icon="fi-rr-bell" />
+				<NavItem useInDashboard={true} title="تنظیمات حساب" href="/dashboard/settings" icon="fi-rr-settings" />
 				<hr class="border-gray-100">
-				<NavItem useInDashboard={true} title="خروج از حساب" href="/dashboard/logout" icon="icon-exit" />
+				<NavItem useInDashboard={true} title="خروج از حساب" href="/dashboard/logout" icon="fi-rr-power" />
 			</ul>
 		</nav>
 		
