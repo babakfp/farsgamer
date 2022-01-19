@@ -6,35 +6,33 @@
 
 	/* Light */
 	.btn--light {
-		@apply text-gray-600 hover:!bg-gray-200 focus:!bg-gray-200;
+		@apply text-gray-600;
 	}
 	.btn--light:not(.btn--outline) {
-		@apply bg-gray-100;
+		@apply bg-gray-100 hover:bg-gray-200 focus:bg-gray-200;
 	}
 	.btn--light.btn--outline {
-		@apply border-gray-100;
+		@apply border-gray-100 hover:bg-gray-100 focus:bg-gray-100;
 	}
 
 	/* Gray */
 	.btn--gray {
-		@apply text-gray-600 hover:!bg-gray-300 focus:!bg-gray-300 hover:!text-gray-700 focus:!text-gray-700;
+		@apply text-gray-600;
 	}
 	.btn--gray:not(.btn--outline) {
-		@apply bg-gray-200;
+		@apply bg-gray-200 hover:bg-gray-300 focus:bg-gray-300 hover:text-gray-700 focus:text-gray-700;
 	}
 	.btn--gray.btn--outline {
-		@apply border-gray-200 hover:!border-gray-300 focus:!border-gray-300;
+		@apply border-gray-200 hover:bg-gray-200 focus:bg-gray-200;
 	}
 
 	/* Brand */
-	.btn--brand:not([disabled]) {
-		@apply hover:!bg-brand-deep focus:!bg-brand-deep;
-	}
+	.btn--brand:not([disabled]) {}
 	.btn--brand:not(.btn--outline):not([disabled]) {
-		@apply bg-brand text-white;
+		@apply bg-brand text-white hover:bg-brand-deep focus:bg-brand-deep;
 	}
 	.btn--brand.btn--outline:not([disabled]) {
-		@apply text-brand border-brand hover:text-white focus:text-white focus:border-brand-deep;
+		@apply text-brand border-brand hover:text-white hover:bg-brand focus:text-white focus:bg-brand;
 	}
 
 	.btn--sm {
