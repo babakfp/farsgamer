@@ -4,7 +4,7 @@
 	export let href = 'javascript:'
 </script>
 
-<li class="border-b border-gray-200 last:border-0">
+<li class="border-b border-gray-100 last:border-0">
 	<a class="grid p-4 duration-100 ease-in-out hover:bg-gray-100" {href}>
 		
 		<div class="flex items-center justify-between">

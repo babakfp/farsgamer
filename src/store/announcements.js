@@ -1,6 +1,6 @@
 import { readable } from 'svelte/store'
 
-export let publicAnnouncements = readable([
+export let announcements = readable([
 	{
 		title: '۲۰٪ تخفیف',
 		description: 'به مناسبت عید نوروز, ۲۰٪ تخفیف روی همه محصولات در سبد خرید اعمال خواهد شد.',
@@ -10,5 +10,3 @@ export let publicAnnouncements = readable([
 		description: 'پشتیبانی آنلاین فارسگیمر به صورت 24 ساعته در خدمت شما عزیزان می باشد.',
 	}
 ])
-
-export let userAnnouncements = readable([])
