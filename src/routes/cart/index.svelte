@@ -59,7 +59,7 @@
 				<label for="rememberme" class="checkbox__label text-sm">استفاده از کیف پول</label>
 			</div>
 
-			<ol class="xs:grid xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">
+			<ol class="grid gap-2 xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">
 				<li class="block w-full choose-payment-gateway">
 					<input class="hidden" type="radio" id="zarinpal" name="payment-gateway" value="zarinpal" checked>
 					<label class="flex items-center gap-2 mb-0 p-2 border-2 border-gray-200 rounded duration-200 ease-in-out cursor-pointer hover:border-brand" for="zarinpal">
