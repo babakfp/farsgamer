@@ -18,7 +18,7 @@
 			<Search />
     </div>
 
-    <div class="flex h-full -ml-2 2xs:relative">
+    <div class="flex h-full -ml-2">
 			<PhoneNumbers />
 
 			<!-- Open search bar -->

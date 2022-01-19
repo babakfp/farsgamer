@@ -7,7 +7,7 @@
 	let toggle
 </script>
 
-<div>
+<div class="2xs:relative">
 	<!-- Header btn -->
 	<button
 		bind:this={toggle}
@@ -23,7 +23,7 @@
 	</button>
 
 	<OutClick on:outclick={_=> isOpen = false} excludeByDOMNode={[toggle]}>
-		<div easytab class:hidden={!isOpen} class="announcements__menu absolute left-0 top-full w-full z-40 overflow-hidden bg-white border border-gray-100 rounded-sm 2xs:w-80 xs:w-88">
+		<div easytab class:hidden={!isOpen} class="z-40 absolute inset-x-4 top-full -mt-2 overflow-hidden bg-white border border-gray-100 rounded-sm 2xs:left-0 2xs:right-auto 2xs:w-80 xs:w-88" style="box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%)">
 
 			<div class="flex items-center justify-between p-3 border-b border-gray-100 text-sm">
 				<span>اعلانات</span>
@@ -44,9 +44,3 @@
 		</div>
 	</OutClick>
 </div>
-
-<style lang="postcss" global>
-	.announcements__menu {
-		box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%);
-	}
-</style>
