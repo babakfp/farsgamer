@@ -44,7 +44,9 @@ const config = {
 					DEFAULT: '#FF3838',
 				},
 				pink: '#FCBCBC',
-				yellow: '#FFBC00',
+				yellow: {
+					DEFAULT: '#FFBC00'
+				},
 				'light-green': '#8EFAAB',
 				gray2: {
 					DEFAULT: 'gray',
