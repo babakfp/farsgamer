@@ -39,7 +39,11 @@
 				{showResponseForm ? 'صرف' : 'ارسال'} نظر
 			</button>
 		</Comment>
-		<Comment />
+		<Comment bind:showResponseForm>
+			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
+				{showResponseForm ? 'صرف' : 'ارسال'} نظر
+			</button>
+		</Comment>
 	</div>
 
 </div>
