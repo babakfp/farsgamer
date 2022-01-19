@@ -18,7 +18,6 @@
 	[class*=disable],
 	[class*=disabled],
 	.pointer-events-none,
-	.outline-none, .outline-none *,
 	.selectContainer * {
     @apply !outline-none focus-visible:!outline-none;
 	}
