@@ -7,7 +7,7 @@
 	// if (browser) document.body.classList.add('dashboard-header')
 </script>
 
-<div class="md2:flex md2:items-start md2:gap-4 xl:gap-8">
+<div class="2md:flex 2md:items-start 2md:gap-4 xl:gap-8">
 	<NavMenu />
 	<div class="w-full">
 		<slot />

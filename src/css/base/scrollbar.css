@@ -16,8 +16,7 @@
 	}
 
 	.scrollbar::-webkit-scrollbar {
-		width: 0;
-		height: 0;
+		@apply w-0 h-0;
 	}
 	.scrollbar:hover::-webkit-scrollbar {
 		@apply w-1.5 h-1.5;

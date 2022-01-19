@@ -100,7 +100,7 @@
 	}
 
 	.comment .comment .comment__content-icon i {
-		@apply flip-y;
+		@apply scale-y-flip;
 	}
 
 	.comment--ligth,

@@ -1,6 +1,5 @@
 const colors = require('tailwindcss/colors')
 const plugin = require('tailwindcss/plugin')
-const flipPlugin = require('./src/utils/tailwind-plugins/flip.cjs')
 const dirPlugin = require('./src/utils/tailwind-plugins/dir.cjs')
 const overflowPlugin = require('./src/utils/tailwind-plugins/overflow.cjs')
 
@@ -107,14 +106,17 @@ const config = {
 				3: '.75em',
 				4: '1em',
 			},
+			scale: {
+				flip: '-1',
+			},
 		},
 		screens: {
 			'2xs': '400px',
-			'xss': '480px',
+			xss: '480px',
 			xs: '576px',
 			sm: '640px',
 			md: '768px',
-			'md2': '840px',
+			'2md': '840px',
 			lg: '1024px',
 			'2lg': '1140px',
 			xl: '1280px',
@@ -137,7 +139,6 @@ const config = {
   },
   plugins: [
 		require('@tailwindcss/line-clamp'),
-		flipPlugin,
 		dirPlugin,
 		overflowPlugin,
 	],

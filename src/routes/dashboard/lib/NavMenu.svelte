@@ -3,8 +3,8 @@
 	let show = false
 </script>
 
-<div class="{show ? 'h-auto mb-4' : 'h-0 overflow-hidden' } duration-300 ease-in-out md2:h-auto md2:overflow-unset md2:mb-0">
-	<div class=" bg-white rounded md2:min-w-80">
+<div class="{show ? 'h-auto mb-4' : 'h-0 overflow-hidden' } duration-300 ease-in-out 2md:h-auto 2md:overflow-unset 2md:mb-0">
+	<div class=" bg-white rounded 2md:min-w-80">
 
 		<div class="flex items-center gap-4 p-4 rounded bg-gray-50 text-sm">
 			<div class="bg-gray-200 rounded-full min-w-18 w-18 h-18"></div>
@@ -32,6 +32,6 @@
 	</div>
 </div>
 
-<button class="z-20 btn btn--gray fixed bottom-8 text-sm md2:hidden" on:click={_=> show = !show}>
+<button class="z-20 btn btn--gray fixed bottom-8 text-sm 2md:hidden" on:click={_=> show = !show}>
 	{ show ? 'بستن' : 'مشاهده' } منوی حساب
 </button>
