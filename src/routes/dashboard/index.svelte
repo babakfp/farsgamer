@@ -12,12 +12,12 @@
 
 	<div class="flex items-center gap-1 justify-end">
 		<span class="font-bold tracking-tighter">500,000</span>
-		<span class="text-xs">تومان</span>
+		<span class="text-xs">تمن</span>
 	</div>
 
 	<form class="col-span-full w-full xl:max-w-88">
 		<BtnInInput btnText="شارژ کیف پول" placeholder="مبلغ مورد نظر خود را وارد کنید" />
-		<!-- <small class="block mt-2 text-red-500 text-xs">مبلغ نمی‌تواند کمتر از <b class="tracking-tighter">۱۰,۰۰۰</b> تومان باشد.</small> -->
+		<!-- <small class="block mt-2 text-red-500 text-xs">مبلغ نمی‌تواند کمتر از <b class="tracking-tighter">۱۰,۰۰۰</b> تمن باشد.</small> -->
 	</form>
 
 </div>
@@ -46,7 +46,7 @@
 					<tr>
 						<td>1400-02-29</td>
 						<td>30250</td>
-						<td class="whitespace-nowrap"><span class="flex items-center gap-1"><span class="font-semibold">۱۰۰,۰۰۰</span><span class="text-sm">تومان</span></span></td>
+						<td class="whitespace-nowrap"><span class="flex items-center gap-1"><span class="font-semibold">۱۰۰,۰۰۰</span><span class="text-sm">تمن</span></span></td>
 						<td class="whitespace-nowrap">تکمیل شده</td>
 						<td class="min-w-32">اعتبار کیف پول از طریق خرید #FFA-982530</td>
 						<td class="min-w-32">

@@ -1,10 +1,17 @@
+<script>
+	export let username
+	export let avatar
+	export let game
+	export let liveStreamLink
+</script>
+
 <li>
-  <a class="flex items-center justify-between gap-2 py-3 px-4 bg-gray-50 duration-200 ease-in-out rounded hover:scale-105" href="javascript:" target="_blank">
+  <a class="group flex items-center justify-between gap-2 py-3 px-4 bg-gray-50 duration-200 ease-in-out rounded hover:scale-105" href={ liveStreamLink } target="_blank">
     <div class="flex items-center gap-2">
-      <img class="rounded-full w-10" src="/images/avatar.png" alt="آواتار">
+      <img class="rounded-full w-10 border-2 border-white drop-shadow-lg duration-200 ease-in-out group-hover:scale-110" src={ avatar } alt>
       <div>
-        <h6 class="font-semibold text-sm">دکتر رحیم</h6>
-        <p class="text-xs">فورتنایت</p>
+        <h6 class="font-semibold text-sm">{ username }</h6>
+        <p class="text-xs">{ game }</p>
       </div>
     </div>
 		<div class="bg-red-400 animate-pulse w-2 h-2 rounded-full"></div>

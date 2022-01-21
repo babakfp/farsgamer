@@ -5,7 +5,7 @@
 	import TrustSymbols from './TrustSymbols.svelte'
 </script>
 
-<footer class="grid gap-8 p-8 text-sm bg-white border-t border-gray-100 md:text-base">
+<footer class="grid gap-8 p-8 pb-20 text-sm bg-white border-t border-gray-100 md:text-base">
 
   <p class="sm:leading-6 md:leading-7">تیم فارس گیمر از اوایل ماه مهر سال ۱۳۹۷ شروع به کار کرد و اولین فروشگاه در ایران هست که فقط محصولات بازی پر طرف دار فورتنایت را عرضه میکند . با توجه به وجود وب سایت های مشابه زیاد فارس گیمر سعی بر این داشته تا با کار و تلاش و قیمت های عالی رضایت شما عزیزان را جلب نماید و در این راه تقریبا موفق بوده است.</p>
 

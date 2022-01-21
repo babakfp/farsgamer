@@ -1,6 +1,7 @@
 <script>
 	import { navigating } from "$app/stores"
 	import { isOpen, close } from '$store/mobile-menu.js'
+	import streams from '$store/streams.js'
 	import OutClick from 'svelte-outclick'
 	import Logo from './Logo.svelte'
 	import NavItem from './NavItem.svelte'
@@ -35,11 +36,9 @@
 				<div class="p-4">
 					<span class="block mb-4 font-bold">استریم ها</span>
 					<ul class="grid gap-2">
-						<StreamCard />
-						<StreamCard />
-						<StreamCard />
-						<StreamCard />
-						<StreamCard />
+						{#each $streams as stream}
+							<StreamCard {...stream} />
+						{/each}
 					</ul>
 				</div>
 

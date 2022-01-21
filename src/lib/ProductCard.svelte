@@ -1,12 +1,32 @@
 <script>
 	export let inStock = true
 	export let specialDiscount = false
+
+	const countDownDate = new Date('Jan 28, 2022 15:37:0').getTime()
+	
+	// Today's date and time
+	let now = new Date().getTime()
+
+	// Find the distance between now and the count down date
+	$: distance = countDownDate - now
+
+	// Time calculations for days, hours, minutes and seconds
+	$: days = Math.floor(distance / (1000 * 60 * 60 * 24))
+	$: hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+	$: minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
+	$: seconds = Math.floor((distance % (1000 * 60)) / 1000)
+
+	setInterval(_=> {
+		if ( distance > 0 ) {
+			distance -= 1000
+		}
+	}, 1000)
 </script>
 
-<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:shadow-gray-200 hover:scale-105" href="javascript:">
+<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:shadow-gray-200 hover:scale-105" href="/shop/1">
 
 	<div class="relative rounded overflow-hidden">
-		<img src="/images/product-thumb.png" alt>
+		<img src="/img/products/product-thumb (1).png" alt>
 		{#if inStock === false}
 			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 backdrop-blur-sm bg-opacity-40">
 				<p class="text-white font-bold drop-shadow-xl">نـامـوجـود</p>
@@ -29,29 +49,29 @@
 		{:else}
 			<span class="font-montserrat font-semibold line-through opacity-50">500</span>
 			<span class="font-montserrat font-semibold">300</span>
-			<span>تومانـ</span>
+			<span>تمن</span>
 			<!-- <span>قیمتـــ متغیـر</span> -->
 		{/if}
 	
 		{#if specialDiscount && inStock}
-			<ul class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-60 backdrop-blur-sm rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
+			<ol class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-60 backdrop-blur-sm rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
 				<li>
 					<div>روز</div>
-					<div class="font-bold">2</div>
+					<div class="font-bold">{ distance > 0 ? days : 0 }</div>
 				</li>
 				<li>
 					<div>ساعت</div>
-					<div class="font-bold">23</div>
+					<div class="font-bold">{ distance > 0 ? hours : 0 }</div>
 				</li>
 				<li>
 					<div>دقیقه</div>
-					<div class="font-bold">48</div>
+					<div class="font-bold">{ distance > 0 ? minutes : 0 }</div>
 				</li>
 				<li>
 					<div>ثانیه</div>
-					<div class="font-bold">02</div>
+					<div class="font-bold">{ distance > 0 ? seconds : 0 }</div>
 				</li>
-			</ul>
+			</ol>
 		{/if}
 	</div>
 	
