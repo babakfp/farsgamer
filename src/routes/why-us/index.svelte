@@ -22,7 +22,7 @@
 
 <style lang="postcss">
 	.content {
-		@apply max-w-3xl mt-4 mx-auto space-y-4;
+		@apply max-w-3xl mt-4 mx-auto space-y-4 pb-8;
 	}
 	.content p {
 		@apply leading-7;

@@ -26,7 +26,7 @@
 				<tr class="border-0">
 					<td class="w-28 h-28 py-4">
 						<a href="javascript:">
-							<img class="rounded min-w-28 min-h-28" src="/images/product-grid.png" alt>
+							<img class="rounded min-w-28 min-h-28" src="/img/products/product-thumb (1).png" alt>
 						</a>
 					</td>
 
@@ -56,8 +56,8 @@
 
 					<td>
 						<div class="flex items-center gap-1 whitespace-nowrap">
-							<p class="text-lg font-semibold">100,000</p>
-							<p class="text-sm">تمن</p>
+							<p class="text-lg font-bold">100,000</p>
+							<p class="text-sm">تــمــنـــ</p>
 						</div>
 					</td>
 

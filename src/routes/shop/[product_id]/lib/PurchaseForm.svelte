@@ -18,7 +18,7 @@
 
         <!-- Account Email -->
       <div>
-        <label class="font-semibold" for="account-email">آدرس ایمیل اکانت</label>
+        <label class="font-bold" for="account-email">آدرس ایمیل اکانت</label>
         <input
           type="email"
           name="account-email"
@@ -31,7 +31,7 @@
 
       <!-- Account Password -->
       <div>
-        <label class="font-semibold" for="account-password">رمز اکانت</label>
+        <label class="font-bold" for="account-password">رمز اکانت</label>
         <input
           type="password"
           name="account-password"
@@ -44,7 +44,7 @@
 
       <!-- Account Email -->
       <div class="col-span-2">
-        <label class="font-semibold" for="account-email">ایمیل</label>
+        <label class="font-bold" for="account-email">ایمیل</label>
         <input
           type="email"
           name="account-email"
@@ -57,7 +57,7 @@
 
     <!--
     <div>
-      <label class="font-semibold" for="account-password">رمز اکانت</label>
+      <label class="font-bold" for="account-password">رمز اکانت</label>
       <div class="password-field">
         <input
           type="password"
@@ -117,11 +117,11 @@
       <!-- No discount -->
       <!-- <div class="flex items-center gap-1">
         <span class="font-bold text-2xl tracking-tighter">۱۵۰,000</span>
-        <span>تمن</span>
+        <span>تــمــنـــ</span>
       </div> -->
       <!-- With discount -->
       <div class="flex gap-1.5 justify-center">
-        <div class="font-semibold leading-4 grid">
+        <div class="font-bold leading-4 grid">
           <!-- Price before discount -->
           <p class="font-bold text-2xl tracking-tighter">۵۰۰,۰۰۰</p>
           <!-- Price after discount -->
@@ -130,7 +130,7 @@
     
         <div class="grid gap-1">
           <!-- Price currency -->
-          <p class="text-sm">تمن</p>
+          <p class="text-sm">تــمــنـــ</p>
           <!-- Discount precedence -->
           <div class="bg-red text-white rounded-full py-0.5 px-2 text-xs flex items-center">۲۰%</div>
         </div>

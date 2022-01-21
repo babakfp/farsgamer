@@ -22,7 +22,7 @@
 					<span>جمع جزء</span>
 					<div class="flex items-center gap-1">
 						<span class="font-bold">200,000</span>
-						<span class="text-2xs">تمن</span>
+						<span class="mt-0.5 text-2xs text-gray-500">تــمــنـــ</span>
 					</div>
 				</li>
 				<hr class="border-gray-100">
@@ -30,7 +30,7 @@
 					<span>تخفیف</span>
 					<div class="flex items-center gap-1">
 						<span class="font-bold">200,000</span>
-						<span class="text-2xs">تمن</span>
+						<span class="mt-0.5 text-2xs text-gray-500">تــمــنـــ</span>
 					</div>
 				</li>
 				<hr class="border-gray-100">
@@ -38,7 +38,7 @@
 					<span>جمع کل</span>
 					<div class="flex items-center gap-1">
 						<span class="font-bold">200,000</span>
-						<span class="text-2xs">تمن</span>
+						<span class="mt-0.5 text-2xs text-gray-500">تــمــنـــ</span>
 					</div>
 				</li>
 			</ul>

@@ -8,7 +8,7 @@
   <div class="do__item-cell-list">
     <!-- code -->
     <div class="do__item-cell do__item-cell__code">
-      <div class="font-semibold text-sm flex">
+      <div class="font-bold text-sm flex">
         <p class="font-isans-ed select-all">FFA-980317</p>
         <p class="text-gray2-700">#</p>
       </div>
@@ -26,8 +26,8 @@
     <div class="do__item-cell do__item-cell__price">
       <div class="grid gap-1">
         <div class="flex items-center gap-1 whitespace-nowrap">
-          <p class="font-semibold">100,000</p>
-          <p class="text-sm">تمن</p>
+          <p class="font-bold">100,000</p>
+          <p class="text-sm">تــمــنـــ</p>
         </div>
         <p class="text-2xs">(برای ۲ عدد)</p>
       </div>
@@ -35,7 +35,7 @@
 
     <!-- status -->
     <div class="do__item-cell do__item-cell__status">
-      <span class="font-semibold">پرداخت شده</span>
+      <span class="font-bold">پرداخت شده</span>
     </div>
 
     <!-- delivered -->

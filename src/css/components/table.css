@@ -9,11 +9,11 @@
 	}
 
 	th {
-		@apply p-2 pb-4 mb-4 whitespace-nowrap;
+		@apply p-2 mb-4 whitespace-nowrap;
 	}
 
 	th {
-		@apply font-semibold;
+		@apply font-bold;
 	}
 
 	td {

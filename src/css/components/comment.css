@@ -9,7 +9,7 @@
 	}
 
 	.comment__user-name {
-		@apply font-semibold;
+		@apply font-bold;
 	}
 
 	.comment__info {
@@ -42,7 +42,7 @@
 	}
 
 	.comment__author-name {
-		@apply font-semibold;
+		@apply font-bold;
 	}
 
 	.rating-stars {

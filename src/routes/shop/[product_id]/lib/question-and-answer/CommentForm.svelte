@@ -7,7 +7,7 @@
 
   <!-- Content -->
   <div class="comment__form-content">
-    <p>شما به عنوان <span class="text-brand font-semibold">power asghar</span> سوال خود را می‌پرسید.</p>
+    <p>شما به عنوان <span class="text-brand font-bold">power asghar</span> سوال خود را می‌پرسید.</p>
     
     <!-- <p class="bg-pink px-4 py-2 text-center rounded mt-4 font-medium">تنها خریداران این محصول میتوانند نظر بدهند</p> -->
     <!-- <p class="bg-light-green px-4 py-2 text-center rounded mt-4 font-medium">نظر شما با موفقیت ارسال شد</p> -->

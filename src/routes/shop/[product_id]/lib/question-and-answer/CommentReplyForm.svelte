@@ -6,7 +6,7 @@
         
   <!-- Head -->
   <div class="comment__form-head">
-    <h6 class="comment__form-title">شما به عنوان <span class="text-brand font-semibold">power asghar</span> به این سوال پاسخ میدهید.</h6>
+    <h6 class="comment__form-title">شما به عنوان <span class="text-brand font-bold">power asghar</span> به این سوال پاسخ میدهید.</h6>
   </div>
 
   <!-- Content -->

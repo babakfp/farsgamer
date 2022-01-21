@@ -49,7 +49,7 @@
 		{:else}
 			<span class="font-montserrat font-semibold line-through opacity-50">500</span>
 			<span class="font-montserrat font-semibold">300</span>
-			<span>تمن</span>
+			<span class="text-xs mt-1 text-gray-500">تــمــنـــ</span>
 			<!-- <span>قیمتـــ متغیـر</span> -->
 		{/if}
 	
