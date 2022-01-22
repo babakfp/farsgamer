@@ -9,7 +9,7 @@
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "fonts": "sass static/sass/fonts.scss:src/css/base/fonts.css --no-source-map",
-    "modal": "sass static/library/bootstrap-5.0.1/custom/modal.scss:static/css/components/modal.css --no-source-map",
+    "modal": "sass static/lib/bootstrap-5.0.1/custom/modal.scss:static/css/components/modal.css --no-source-map",
     "postcss": "postcss build static/css/index.css -o static/css/dist.css"
   },
   "devDependencies": {

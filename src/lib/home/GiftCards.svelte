@@ -4,12 +4,12 @@
 	import ContentSection from '$lib/ContentSection.svelte'
 
 	const images = [
-		{ src: '/images/gift-card/play-station.png' },
-		{ src: '/images/gift-card/apple.png' },
-		{ src: '/images/gift-card/steam.png' },
-		{ src: '/images/gift-card/amazon.png' },
-		{ src: '/images/gift-card/xbox.png' },
-		{ src: '/images/gift-card/google-play.png' },
+		{ src: '/img/gift-card/play-station.png' },
+		{ src: '/img/gift-card/apple.png' },
+		{ src: '/img/gift-card/steam.png' },
+		{ src: '/img/gift-card/amazon.png' },
+		{ src: '/img/gift-card/xbox.png' },
+		{ src: '/img/gift-card/google-play.png' },
 	]
 </script>
 

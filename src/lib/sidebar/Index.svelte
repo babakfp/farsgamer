@@ -51,11 +51,11 @@
 	body.main-header #header {
 		@apply lg:translate-x-0;
 	}
-	#sidebar {
+	sidebar {
 		height: calc(100vh - 4rem);
 	}
 	@media only screen and (min-width: 1024px) {
-		#sidebar {
+		sidebar {
 			height: calc(100vh - 5rem);
 		}
 	}

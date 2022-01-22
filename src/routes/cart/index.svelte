@@ -62,21 +62,21 @@
 			<ol class="grid gap-2 xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">
 				<li class="block w-full choose-payment-gateway">
 					<input class="hidden" type="radio" id="zarinpal" name="payment-gateway" value="zarinpal" checked>
-					<label class="flex items-center gap-2 mb-0 p-2 border-2 border-gray-200 rounded duration-200 ease-in-out cursor-pointer hover:border-brand" for="zarinpal">
-						<img class="rounded w-12" src="/images/zarinpal-sm.png" alt>
+					<label class="flex items-center gap-2 mb-0 p-2 border-2 border-gray-200 rounded duration-100 ease-in-out cursor-pointer hover:border-brand hover:border-opacity-80" for="zarinpal">
+						<img class="rounded w-12" src="/img/payments/ZarinPal.png" alt>
 						<div class="text-sm text-gray-600">
-							<h6 class="font-bold">پرداخت امن زرین‌پال</h6>
-							<p class="mt-1 leading-3 text-2xs text-gray-500">پرداخت به وسیله کلیه کارت های عضو شبکه شتاب</p>
+							<h6 class="font-bold">ZarinPal</h6>
+							<p class="mt-1 leading-3 text-2xs text-gray-500">پرداخت به وسیله کلیه کارت‌های عضو شبکه شتاب</p>
 						</div>
 					</label>
 				</li>
 				<li class="block w-full choose-payment-gateway">
 					<input class="hidden" type="radio" id="payir" name="payment-gateway" value="payir">
-					<label class="flex items-center gap-2 mb-0 p-2 border-2 border-gray-200 rounded duration-200 ease-in-out cursor-pointer hover:border-brand" for="payir">
-						<img class="rounded w-12" src="/images/payir.png" alt>
+					<label class="flex items-center gap-2 mb-0 p-2 border-2 border-gray-200 rounded duration-100 ease-in-out cursor-pointer hover:border-brand hover:border-opacity-80" for="payir">
+						<img class="rounded w-12" src="/img/payments/PayIR.png" alt>
 						<div class="text-sm text-gray-600">
-							<h6 class="font-bold">پرداخت امن زرین‌پال</h6>
-							<p class="mt-1 leading-3 text-2xs text-gray-500">پرداخت به وسیله کلیه کارت های عضو شبکه شتاب</p>
+							<h6 class="font-bold">PayIR</h6>
+							<p class="mt-1 leading-3 text-2xs text-gray-500">پرداخت به وسیله کلیه کارت‌های عضو شبکه شتاب</p>
 						</div>
 					</label>
 				</li>
@@ -94,7 +94,7 @@
 
 <style lang="postcss">
 	.choose-payment-gateway input:checked + label {
-		@apply border-brand;
+		@apply border-brand border-opacity-80;
 	}
 	.choose-payment-gateway input:checked + label h6,
 	.choose-payment-gateway input:checked + label p {

@@ -1,7 +1,12 @@
 @layer base {
 	
 	html[dir=rtl] .fi-rr-search,
-	html[dir=rtl] .fi-rr-shopping-cart {
+	html[dir=rtl] .fi-rr-shopping-cart,
+	html[dir=rtl] .fi-rr-interrogation,
+	html[dir=rtl] .fi-rr-headset,
+	html[dir=rtl] .fi-rr-diploma,
+	html[dir=rtl] .fi-rr-document
+	{
 		@apply scale-x-flip;
 	}
 

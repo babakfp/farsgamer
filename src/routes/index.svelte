@@ -20,25 +20,25 @@
 	
 	<section class="grid gap-4 sm:grid-cols-2">
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/images/home/poster-half-width (1).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-half-width (1).png" alt>
 		</a>
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/images/home/poster-half-width (2).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-half-width (2).png" alt>
 		</a>
 	</section>
 
 	<SpecialDiscounts />
 
 	<a class="flex" href="javascript:">
-		<img class="rounded" src="/images/home/poster-full-width (1).png" alt>
+		<img class="rounded" src="/img/home/poster-full-width (1).png" alt>
 	</a>
 
 	<div class="flex justify-center gap-4">
 		<a class="group flex" href="javascript:">
-			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-telegram.png" alt="فارسگیمر در تلگرام">
+			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/img/home/social-media-telegram.png" alt="فارسگیمر در تلگرام">
 		</a>
 		<a class="group flex" href="javascript:">
-			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/images/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام">
+			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/img/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام">
 		</a>
 	</div>
 
@@ -46,21 +46,21 @@
 
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/images/home/poster-1-4-width (1).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-1-4-width (1).png" alt>
 		</a>
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/images/home/poster-1-4-width (2).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-1-4-width (2).png" alt>
 		</a>
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/images/home/poster-1-4-width (3).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-1-4-width (3).png" alt>
 		</a>
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/images/home/poster-1-4-width (4).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-1-4-width (4).png" alt>
 		</a>
 	</section>
 
 	<a class="flex" href="javascript:">
-		<img class="rounded" src="/images/home/poster-full-width (2).png" alt>
+		<img class="rounded" src="/img/home/poster-full-width (2).png" alt>
 	</a>
 
 </div>

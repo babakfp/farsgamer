@@ -4,9 +4,9 @@
 	import ContactInfo from '$lib/footer/ContactInfo.svelte'
 
 	const posters = [
-		{ imgSrc: '/images/team/1.jpg ' },
-		{ imgSrc: '/images/team/2.jpg ' },
-		{ imgSrc: '/images/team/3.jpg ' },
+		{ imgSrc: '/img/team/1.jpg ' },
+		{ imgSrc: '/img/team/2.jpg ' },
+		{ imgSrc: '/img/team/3.jpg ' },
 	]
 </script>
 

@@ -4,12 +4,12 @@
 
 	const postersPack = [
 		[
-			{ imgSrc: '/images/home/home-second-poster (1).png' },
-			{ imgSrc: '/images/home/home-second-poster (2).png' },
+			{ imgSrc: '/img/home/home-second-poster (1).png' },
+			{ imgSrc: '/img/home/home-second-poster (2).png' },
 		],
 		[
-			{ imgSrc: '/images/home/home-second-poster (3).png' },
-			{ imgSrc: '/images/home/home-second-poster (4).png' },
+			{ imgSrc: '/img/home/home-second-poster (3).png' },
+			{ imgSrc: '/img/home/home-second-poster (4).png' },
 		],
 	]
 </script>

@@ -5,9 +5,9 @@
 		@apply lg:hidden !important;
 	}
 
-	body:not(.main-header) #header .container-base {
+	/* body:not(.main-header) #header .container-base {
 		@apply 2xl:container;
-	}
+	} */
 
 	body.main-header #header {
 		@apply fixed z-40 top-0 right-0 left-0 lg:mr-56 2xl:mr-64;

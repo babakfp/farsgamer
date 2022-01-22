@@ -3,10 +3,10 @@
 	import { Pagination, Autoplay } from 'swiper'
 
 	const posters = [
-		{ imgSrc: '/images/home/home-main-poster (1).png' },
-		{ imgSrc: '/images/home/home-main-poster (2).png' },
-		{ imgSrc: '/images/home/home-main-poster (3).png' },
-		{ imgSrc: '/images/home/home-main-poster (4).png' },
+		{ imgSrc: '/img/home/home-main-poster (1).png' },
+		{ imgSrc: '/img/home/home-main-poster (2).png' },
+		{ imgSrc: '/img/home/home-main-poster (3).png' },
+		{ imgSrc: '/img/home/home-main-poster (4).png' },
 	]
 </script>
 
