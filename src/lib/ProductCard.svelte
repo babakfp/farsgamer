@@ -36,9 +36,8 @@
 
 	<div class="absolute top-0 left-0 py-1 pl-3 pr-4 bg-red-400 text-white rounded rounded-bl-none text-xs">٪۲۰</div>
 	
-	<div class="p-2 mt-2 space-y-2">
+	<div class="py-4 px-2">
 		<h3 class="text-sm font-bold line-clamp-1">گیف کارد 20 دلاری استیم</h3>
-		<p class="text-gray-400 text-xs line-clamp-1">Fortnite</p>
 	</div>
 
 	<hr class="-mx-2 border-gray-100">
