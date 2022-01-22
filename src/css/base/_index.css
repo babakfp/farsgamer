@@ -37,11 +37,7 @@
   main {
     @apply min-h-screen overflow-hidden;
   }
-  
-  .container-base {
-    @apply px-4 mx-auto w-full;
-  }
-  
+	
   i {
 		@apply flex items-center justify-center text-inherit text-base leading-0;
   }

@@ -124,10 +124,6 @@ const config = {
 			'2xl': '1536px',
 			'3xl': '1800px',
 		},
-		container: {
-			center: true,
-			padding: '1rem',
-		},
 		fontFamily: {
 			montserrat: ['Montserrat'],
 		},

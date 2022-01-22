@@ -9,8 +9,20 @@ export const toggle =_=> {
 	}
 }
 
+export const dashboardToggle =_=> {
+	if (browser) {
+		isOpen.update(isOpen => !isOpen)
+	}
+}
+
 export const close =_=> {
 	if (browser && window.innerWidth <= 1024) {
+		isOpen.set(false)
+	}
+}
+
+export const dashboardClose =_=> {
+	if (browser) {
 		isOpen.set(false)
 	}
 }

@@ -1,4 +1,4 @@
-<div class="container py-8 grid gap-4">
+<div class="py-8 grid gap-4">
   <button class="btn btn--brand h-12">
     <i class="icon-circle-dashed animate-spin"></i>
     <span>در حال بارگذاری</span>
