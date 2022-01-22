@@ -18,7 +18,7 @@
 </svelte:head>
 
 <div class="py-32 -mb-4">
-	<h1 class="text-center font-bold text-2xl">{status}</h1>
+	<h1 class="text-center font-bold text-4xl">{status}</h1>
 	<h2 class="text-center">{error.message}</h2>
 
 	{#if dev && error.stack}
