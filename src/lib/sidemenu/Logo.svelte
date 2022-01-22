@@ -3,3 +3,9 @@
 		<img class="lg:w-34" src="/img/logo.png" alt="لوگو">
 	</div>
 </a>
+
+<style lang="postcss">
+	:global(body.main-header) #sidebar__logo {
+		@apply lg:flex !important;
+	}
+</style>

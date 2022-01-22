@@ -1,28 +1,7 @@
 @layer components {
 
-	body.main-header #burger,
-	body.main-header #main-logo {
-		@apply lg:hidden !important;
-	}
-
 	/* body:not(.main-header) #header .container-base {
 		@apply 2xl:container;
-	} */
-
-	body.main-header #header {
-		@apply fixed z-40 top-0 right-0 left-0 lg:mr-56 2xl:mr-64;
-	}
-
-	body.main-header #sidebar {
-		@apply lg:w-56 lg:ml-auto lg:translate-x-0 2xl:w-64 lg:bg-transparent;
-	}
-
-	body.main-header #sidebar__logo {
-		@apply lg:flex !important;
-	}
-
-	/* body.dashboard-header #header > .container-base > div:first-child {
-		@apply lg:!mr-0;
 	} */
 
 }

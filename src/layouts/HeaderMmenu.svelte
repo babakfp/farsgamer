@@ -1,7 +1,7 @@
 <script>
 	import { browser } from '$app/env'
 	import Header from '$lib/header/Index.svelte'
-	import Sidebar from '$lib/sidebar/Index.svelte'
+	import SideMenu from '$lib/sidemenu/Index.svelte'
 	import TPAlert from '$lib/TPAlert.svelte'
 	import Footer from '$lib/footer/Index.svelte'
 
@@ -9,13 +9,19 @@
 </script>
 
 <Header />
-<Sidebar />
+<SideMenu />
 <TPAlert />
 
-<main class="mt-16 lg:mt-20 lg:pr-56 2xl:pr-64">
+<main id="main">
 	<div class="page-content relative p-4 overflow-x-hidden lg:p-8 lg:pb-12">
 		<slot />
 	</div>
 
 	<Footer />
 </main>
+
+<style lang="postcss">
+	:global(body.main-header) #main {
+		@apply mt-16 lg:mt-20 lg:pr-56 2xl:pr-64;
+	}
+</style>

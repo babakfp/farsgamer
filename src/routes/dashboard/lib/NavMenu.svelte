@@ -1,5 +1,5 @@
 <script>
-	import NavItem from '$lib/sidebar/NavItem.svelte'
+	import NavItem from '$lib/sidemenu/NavItem.svelte'
 	let show = false
 </script>
 
