@@ -1,3 +1,7 @@
+<script>
+	import Checkbox from '$lib/Checkbox.svelte'
+</script>
+
 <form id="spp-purchase-form" class="text-center lg:text-right rounded border border-gray-200 p-6 mt-4">
 
   <div>
@@ -74,16 +78,7 @@
 
     </div>
 
-    <!-- Fast Delivery Checkbox -->
-    <!-- <div class="checkbox checkbox--brand">
-      <input
-        type="checkbox"
-        name="fast-delivery"
-        id="fast-delivery"
-        class="checkbox__field"
-      >
-      <label for="fast-delivery" class="checkbox__label text-sm">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</label>
-    </div> -->
+		<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</Checkbox>
 
     <!-- This is the new UI for the component abov -->
     <div class="flex items-center gap-4 flex-wrap">

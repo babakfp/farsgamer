@@ -1,3 +1,7 @@
+<script>
+	import Checkbox from '$lib/Checkbox.svelte'
+</script>
+
 <svelte:head>
 	<title>ورود به حساب</title>
 </svelte:head>
@@ -12,13 +16,9 @@
 			<input class="input dir-ltr" type="tel" name="phone" autocomplete="tel" placeholder="09..." />
 		</div>
 
-		<div class="checkbox checkbox--brand">
-			<input class="checkbox__field" type="checkbox" name="rememberme" id="rememberme">
-			<label for="rememberme" class="checkbox__label text-sm">مرا به خاطر داشته باش</label>
-		</div>
+		<Checkbox name="rememberme">مرا به خاطر داشته باش</Checkbox>
 
 		<button class="btn btn--submit btn--brand w-full">ورود به حساب</button>
-
 	</form>
 
 	<!--  -->
@@ -27,7 +27,7 @@
 
 		<div>
 			<label for="code">کد تایید</label>
-			<input class="input text-center tracking-3" type="number" name="code" minlength="5" maxlength="5" placeholder="_ _ _ _ _">
+			<input class="input text-center tracking-3 input-no-arrows" type="number" name="code" minlength="5" maxlength="5" placeholder="_ _ _ _ _">
 			<!-- <small class="form-field__description">کد تایید ارسال شده به تلفن همراه خود را وارد کنید.</small> -->
 			<!-- <small class="form-field__error">کد تایید وارد شده, نادرست می‌باشد.</small> -->
 		</div>

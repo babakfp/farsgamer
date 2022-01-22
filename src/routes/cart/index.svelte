@@ -53,11 +53,7 @@
 				<p class="text-sm">کد تخفیف اشتباه هست یا قبلا استفاده شده</p>
 			</div> -->
 
-			<!-- Show this element if user was logged in -->
-			<div class="checkbox checkbox--brand">
-				<input class="checkbox__field" type="checkbox" name="rememberme" id="rememberme" />
-				<label for="rememberme" class="checkbox__label text-sm">استفاده از کیف پول</label>
-			</div>
+		<Checkbox name="use-wallet">استفاده از کیف پول</Checkbox>
 
 			<ol class="grid gap-2 xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">
 				<li class="block w-full choose-payment-gateway">
