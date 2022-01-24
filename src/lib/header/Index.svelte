@@ -1,12 +1,11 @@
 <script>
+	import { browser } from '$app/env'
 	import Burger from './Burger.svelte'
 	import Logo from './Logo.svelte'
 	import Search from './Search.svelte'
 	import PhoneNumbers from './PhoneNumbers.svelte'
 	import Announcements from './announcements/Index.svelte'
 	import { toggle as searchToggle } from '$store/header-search.js'
-
-	const authed = false
 </script>
 
 <header class="z-40 h-16 flex items-center justify-between bg-white border-b border-gray-100 lg:h-20 lg:px-4" id="header">
@@ -40,7 +39,7 @@
       </a>
 
       <!-- Go to dashboard page -->
-      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href={authed ? '/dashboard' : '/login'} title="مشاهده حساب کاربری">
+      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href={browser && localStorage.getItem('isLoggedIn') === 'true' ? '/dashboard' : '/login'} title="مشاهده حساب کاربری">
         <i class="fi-rr-user sm:text-xl"></i>
       </a>
     </div>

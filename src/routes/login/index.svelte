@@ -1,6 +1,13 @@
 <script>
+	import { goto } from '$app/navigation'
+
 	import Input from '$lib/Input.svelte'
 	import Checkbox from '$lib/Checkbox.svelte'
+
+	const login =_=> {
+		localStorage.setItem('isLoggedIn', 'true')
+		goto('/dashboard')
+	}
 </script>
 
 <svelte:head>
@@ -19,7 +26,7 @@
 
 		<Checkbox name="rememberme">مرا به خاطر داشته باش</Checkbox>
 
-		<button class="btn btn--submit btn--brand w-full">ورود به حساب</button>
+		<button class="btn btn--submit btn--brand w-full">ادامه فرایند ثبت‌نام</button>
 	</form>
 
 	<!--  -->
@@ -40,5 +47,7 @@
 		</div>
 
 	</form>
-	
+
+	<button class="btn btn--submit btn--brand w-full mt-4" on:click={login}>ورود مستقیم</button>
+
 </div>
