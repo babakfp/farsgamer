@@ -1,4 +1,5 @@
 <script>
+	import Input from '$lib/Input.svelte'
 	import Checkbox from '$lib/Checkbox.svelte'
 </script>
 
@@ -6,15 +7,15 @@
 	<title>ورود به حساب</title>
 </svelte:head>
 
-<div class="max-w-xl mx-auto">
+<div class="max-w-sm mx-auto">
 	<h2 class="text-lg font-bold">ورود به حساب</h2>
 
 	<form class="space-y-6 mt-4 p-6 bg-white rounded">
 		
-		<div>
-			<label for="phone">شماره موبایل</label>
-			<input class="input dir-ltr" type="tel" name="phone" autocomplete="tel" placeholder="09..." />
-		</div>
+		<Input
+			label="شماره موبایل"
+			class="dir-ltr" type="tel" name="phone" autocomplete="tel" placeholder="09..."
+		/>
 
 		<Checkbox name="rememberme">مرا به خاطر داشته باش</Checkbox>
 
