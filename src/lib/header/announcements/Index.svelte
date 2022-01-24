@@ -1,10 +1,13 @@
 <script>
+	import { browser } from '$app/env'
 	import OutClick from 'svelte-outclick'
 	import Item from './Item.svelte'
 	import { announcements } from '$store/announcements.js'
 
 	let isOpen = false
 	let toggle
+
+	$: browser && isOpen && window.addEventListener('scroll', _=> isOpen = false)
 </script>
 
 <div class="2xs:relative">
