@@ -12,7 +12,7 @@
 </script>
 
 <Swiper
-	class="w-18 min-w-18 h-62"
+	class="w-18 min-w-18 h-62 ml-auto mr-0"
 	modules={[ Pagination, Autoplay ]}
 	speed={600}
 	grabCursor={true}
