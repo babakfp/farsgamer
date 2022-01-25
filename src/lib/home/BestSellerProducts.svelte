@@ -8,7 +8,7 @@
 
 <ContentSection title="پرفروشـترین های هـفته" href="javascript:">
 	<Swiper
-		class="product-carousel"
+		class="box-carousel"
 		modules={[ Pagination, Autoplay ]}
 		speed={600}
 		grabCursor={true}

@@ -15,7 +15,7 @@
 
 <ContentSection title="گـیفتــکارد ها">
 	<Swiper
-		class="product-carousel"
+		class="box-carousel"
 		modules={[ Pagination, Autoplay ]}
 		speed={600}
 		grabCursor={true}

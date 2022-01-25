@@ -24,13 +24,13 @@
 
 /*  */
 
-.product-carousel.swiper {
+.box-carousel.swiper {
 	padding-bottom: calc(16px + 24px - 8px);
 	overflow: unset;
 }
 
-.product-carousel .swiper-pagination-bullets.swiper-pagination-horizontal,
-.product-carousel .swiper-pagination-bullets-dynamic.swiper-pagination-horizontal {
+.box-carousel .swiper-pagination-bullets.swiper-pagination-horizontal,
+.box-carousel .swiper-pagination-bullets-dynamic.swiper-pagination-horizontal {
 	bottom: 0;
 
 	/* for normal bullets */
