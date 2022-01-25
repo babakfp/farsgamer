@@ -13,7 +13,7 @@
 <TPAlert />
 
 <main id="main">
-	<div class="page-content relative p-4 overflow-x-hidden lg:p-8 lg:pb-12">
+	<div class="page-content relative p-4 overflow-x-hidden xl:p-8 xl:pb-12">
 		<slot />
 	</div>
 

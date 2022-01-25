@@ -2,21 +2,19 @@
 	import Checkbox from '$lib/Checkbox.svelte'
 </script>
 
-<form id="spp-purchase-form" class="text-center lg:text-right rounded border border-gray-200 p-6 mt-4">
+<form class="mt-4 p-6 bg-white rounded text-sm xl:mt-8">
 
   <div>
     <label class="mb-2">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
-    <div class="flex flex-wrap justify-center gap-2 lg:flex lg:justify-start">
+    <div class="flex flex-wrap gap-2 lg:flex lg:justify-start">
       <label class="radiobox account-category-btn" for="playstation">Playstation<input class="account-category-btn__field" type="radio" name="account-category" value="playstation"></label>
       <label class="radiobox account-category-btn" for="epicgames">Epic Games<input class="account-category-btn__field" type="radio" name="account-category" value="epicgames"></label>
       <label class="radiobox account-category-btn" for="xbox">XBox<input class="account-category-btn__field" type="radio" name="account-category" value="xbox"></label>
       <label class="radiobox account-category-btn" for="nitendo">Nitendo<input class="account-category-btn__field" type="radio" name="account-category" value="nitendo"></label>
-      <label class="radiobox account-category-btn" for="facebook">Facebook<input class="account-category-btn__field" type="radio" name="account-category" value="facebook"></label>
     </div>
   </div>
 
-
-  <div id="spp-purchase-form__field-wrapper" class="hidden grid gap-4 mt-8">
+  <div id="spp-purchase-form__field-wrapper" class="grid gap-4 mt-8">
 
     <div class="grid gap-4 lg:grid-cols-2">
 
@@ -59,23 +57,6 @@
         >
       </div>
 
-    <!--
-    <div>
-      <label class="font-bold" for="account-password">رمز اکانت</label>
-      <div class="password-field">
-        <input
-          type="password"
-          name="account-password"
-          id="account-password"
-          placeholder="رمز"
-          class="input"
-          autocomplete="current-password"
-        >
-        <i class="password-field__toggle"></i>
-      </div>
-    </div>
-    -->
-
     </div>
 
 		<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</Checkbox>
@@ -99,14 +80,12 @@
 
   <!-- Price -->
   <div class="mt-8 mb-2 flex items-center justify-between">
-    <div class="flex items-center gap-2">
+    
+		<div class="flex items-center gap-2">
       <label for="quantity">تعداد</label>
-      <div class="relative">
-				<input class="purchase-form-quantity__field input w-20" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
-				<button class="purchase-form-quantity__plus w-8 absolute left-0 top-0 pt-1" type="button">+</button>
-				<button class="purchase-form-quantity__negative w-8 absolute left-0 bottom-0 pb-0.5" type="button">-</button>
-			</div>
+			<input class="input" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
     </div>
+
     <div class="grid justify-end text-left">
       <span class="text-xs mb-1">مبلغ پرداختی</span>
       <!-- No discount -->
@@ -131,33 +110,9 @@
         </div>
       </div>
     </div>
+		
   </div>
 
-  <div class="lg:flex lg:items-end lg:justify-between">
-
-    <!-- :| Some unnesesery Boxes -->
-    <div class="grid my-4 lg:my-0 grid-cols-2 xss:grid-cols-4 gap-2 justify-center font-light text-xs leading-4 lg:mb-1">
-      <div class="text-brand text-center">
-        <i class="icon-lock w-12 h-8 flex items-center justify-center mx-auto text-lg"></i>
-        <p>حفظ اطلاعات</p>
-      </div>
-      <div class="text-brand text-center">
-        <i class="icon-support w-12 h-8 flex items-center justify-center mx-auto text-lg"></i>
-        <p>پشتی بانی 24 ساعته</p>
-      </div>
-      <div class="text-brand text-center">
-        <i class="icon-ticket w-12 h-8 flex items-center justify-center mx-auto text-lg"></i>
-        <p>ضمانت پرداخت</p>
-      </div>
-      <div class="text-brand text-center">
-        <i class="icon-bigclock w-12 h-8 flex items-center justify-center mx-auto text-lg"></i>
-        <p>ثبت سفارش فوری</p>
-      </div>
-    </div>
-
-    <!-- Submit Button -->
-    <button class="btn btn--lg w-full sm:max-w-60 form-submit btn--brand font-medium text-base" type="submit">افزودن به سبد خرید</button>
-
-  </div>
+	<button class="btn btn--lg w-full sm:max-w-60 form-submit btn--brand font-medium text-base" type="submit">افزودن به سبد خرید</button>
 
 </form>

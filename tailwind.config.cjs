@@ -109,7 +109,10 @@ const config = {
 			},
 			scale: {
 				flip: '-1',
-			},
+			},blur: {
+      xs: '2px',
+      sm: '4px',
+    },
 		},
 		screens: {
 			'2xs': '400px',
@@ -125,7 +128,9 @@ const config = {
 			'3xl': '1800px',
 		},
 		fontFamily: {
-			montserrat: ['Montserrat'],
+			dana: 'Dana',
+			danafn: 'DanaFN',
+			montserrat: 'Montserrat',
 		},
 		boxShadow: {
 			sm: '0 0 10px 0 rgba(0, 0, 0, 2%)',

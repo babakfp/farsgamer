@@ -309,23 +309,23 @@ const sliderNavigationConfig = {
 })()
 */
 // ---
-/*
+
 
 // single product page - account category section handler.
-;(_=> {
-	const form = document.querySelector('#spp-purchase-form')
-	if (!form) return
-	const fieldsWrapper = document.querySelector(
-		'#spp-purchase-form__field-wrapper'
-	)
-	const fields = document.querySelectorAll('.account-category-btn__field')
-	fields.forEach(field => {
-		field.addEventListener('click', _=> {
-			fieldsWrapper.classList.remove('hidden')
-		})
-	})
-})()
-
+// ;(_=> {
+// 	const form = document.querySelector('#spp-purchase-form')
+// 	if (!form) return
+// 	const fieldsWrapper = document.querySelector(
+// 		'#spp-purchase-form__field-wrapper'
+// 	)
+// 	const fields = document.querySelectorAll('.account-category-btn__field')
+// 	fields.forEach(field => {
+// 		field.addEventListener('click', _=> {
+// 			fieldsWrapper.classList.remove('hidden')
+// 		})
+// 	})
+// })()
+/*
 // ---
 ;(_=> {
 	const posttypeContent = document.querySelector('.posttype-content')
