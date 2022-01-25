@@ -79,7 +79,13 @@
 				</li>
 			</ol>
 			
-			<button class="btn btn--brand btn--submit btn--lg w-full -mt-4" disabled={!$isLoggedIn} type="submit">ادامه تسویه حساب</button>
+			<div>
+				<button class="btn btn--brand btn--submit btn--lg w-full" disabled={!$isLoggedIn} type="submit">ادامه تسویه حساب</button>
+				{#if !$isLoggedIn}
+					<p class="text-xs mt-2 text-red-400">برای ادامه فراید خرید باید ابتدا یک حساب کاربری ایجاد کنید.</p>
+				{/if}
+			</div>
+
 		</svelte:fragment>
 	</Layout>
 
