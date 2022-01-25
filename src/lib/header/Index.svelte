@@ -1,5 +1,5 @@
 <script>
-	import { browser } from '$app/env'
+	import { isLoggedIn } from '$store/auth.js'
 	import Burger from './Burger.svelte'
 	import Logo from './Logo.svelte'
 	import Search from './Search.svelte'
@@ -11,7 +11,7 @@
 <header class="z-40 h-16 flex items-center justify-between bg-white border-b border-gray-100 lg:h-20 lg:px-4" id="header">
   <div class="px-4 mx-auto w-full flex items-center justify-between gap-4 h-full lg:gap-0">
     
-    <div id="header__right-side" class="flex items-center lg:w-full lg:h-full">
+		<div id="header__right-side" class="flex items-center lg:w-full lg:h-full">
       <Burger />
       <Logo />
 			<Search />
@@ -39,7 +39,7 @@
       </a>
 
       <!-- Go to dashboard page -->
-      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href={browser && localStorage.getItem('isLoggedIn') === 'true' ? '/dashboard' : '/login'} title="مشاهده حساب کاربری">
+      <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href={$isLoggedIn ? '/dashboard' : '/login'} title="مشاهده حساب کاربری">
         <i class="fi-rr-user sm:text-xl"></i>
       </a>
     </div>

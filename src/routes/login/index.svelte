@@ -1,13 +1,8 @@
 <script>
-	import { goto } from '$app/navigation'
+	import { login } from '$store/auth.js'
 
 	import Input from '$lib/Input.svelte'
 	import Checkbox from '$lib/Checkbox.svelte'
-
-	const login =_=> {
-		localStorage.setItem('isLoggedIn', 'true')
-		goto('/dashboard')
-	}
 </script>
 
 <svelte:head>

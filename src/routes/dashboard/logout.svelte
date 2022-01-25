@@ -1,6 +1,4 @@
 <script>
-	import { browser } from '$app/env'
-	import { goto } from '$app/navigation'
-	browser && localStorage.removeItem('isLoggedIn')
-	goto('/')
+	import { logout } from '$store/auth.js'
+	logout()
 </script>
