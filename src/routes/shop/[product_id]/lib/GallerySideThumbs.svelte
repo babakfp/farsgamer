@@ -28,7 +28,7 @@
 		on:swiper={setThumbsSwiper}
 		speed={600}
 		grabCursor={true}
-		autoplay={{ delay: 4000, disableOnInteraction: false }}
+		autoplay={{ delay: 4000, disableOnInteraction: true }}
 		direction="vertical"
 		spaceBetween={16}
 		slidesPerView={3}

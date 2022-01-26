@@ -20,7 +20,7 @@
 	speed={600}
 	grabCursor={true}
 	pagination={{ clickable: true, dynamicBullets: true }}
-	autoplay={{ delay: 4000, disableOnInteraction: false }}
+	autoplay={{ delay: 4000, disableOnInteraction: true }}
 	spaceBetween={16}
 >
 	{#each posters as poster}
