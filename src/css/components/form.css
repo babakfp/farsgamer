@@ -28,30 +28,9 @@
 		@apply text-xs mt-1 leading-5;
 	}
 
-	/* .password-field, */
-	.search-field {
-		@apply relative;
-	}
-
-	/* .password-field .password-field__toggle {
-		top: 50%;
-		transform: translateY(-50%);
-		@apply absolute left-0 px-4 h-full items-center cursor-pointer;
-	} */
-
-	.search-field__remove-value {
-		@apply text-xl text-gray-600 absolute inset-y-center left-0 h-10 flex items-center px-4 bg-white cursor-pointer;
-	}
-
 	.radiobox input {
 		cursor: pointer;
 	}
-
-	/* 
-	.radiobox:checked ~ label {
-		background: red;
-	}
-	*/
 
 	/* Chrome, Safari, Edge, Opera */
 	input[type=number].input-no-arrows::-webkit-outer-spin-button,
@@ -63,10 +42,6 @@
 	/* Firefox */
 	input[type=number].input-no-arrows {
 		-moz-appearance: textfield;
-	}
-
-	textarea {
-
 	}
 
 }
