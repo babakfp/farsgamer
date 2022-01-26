@@ -4,8 +4,6 @@
 	import SideMenu from '$lib/sidemenu/Index.svelte'
 	import TPAlert from '$lib/TPAlert.svelte'
 	import Footer from '$lib/footer/Index.svelte'
-
-	if (browser) document.body.classList.add('main-header')
 </script>
 
 <Header />
