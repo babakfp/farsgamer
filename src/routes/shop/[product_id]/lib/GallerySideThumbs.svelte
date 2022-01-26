@@ -20,23 +20,25 @@
 	]
 </script>
 
-<Swiper
-	class="w-18 min-w-18 h-62 ml-auto mr-0"
-	modules={[ Pagination, Autoplay, Thumbs ]}
-	watchSlidesProgress
-	on:swiper={setThumbsSwiper}
-	speed={600}
-	grabCursor={true}
-	autoplay={{ delay: 4000, disableOnInteraction: false }}
-	direction="vertical"
-	spaceBetween={16}
-	slidesPerView={3}
->
-	{#each posters as poster}
-		<SwiperSlide>
-			<a href={poster.href || 'javascript:'}>
-				<img class="rounded" src={poster.imgSrc} alt />
-			</a>
-		</SwiperSlide>
-	{/each}
-</Swiper>
+{#if posters.length > 1}
+	<Swiper
+		class="w-18 min-w-18 h-62 ml-auto mr-0"
+		modules={[ Pagination, Autoplay, Thumbs ]}
+		watchSlidesProgress
+		on:swiper={setThumbsSwiper}
+		speed={600}
+		grabCursor={true}
+		autoplay={{ delay: 4000, disableOnInteraction: false }}
+		direction="vertical"
+		spaceBetween={16}
+		slidesPerView={3}
+	>
+		{#each posters as poster}
+			<SwiperSlide>
+				<a href={poster.href || 'javascript:'}>
+					<img class="rounded" src={poster.imgSrc} alt />
+				</a>
+			</SwiperSlide>
+		{/each}
+	</Swiper>
+{/if}
