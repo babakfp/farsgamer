@@ -1,5 +1,6 @@
 <script>
 	import { browser } from '$app/env'
+	import { navigating } from '$app/stores'
 	import OutClick from 'svelte-outclick'
 	import Item from './Item.svelte'
 	import { announcements } from '$store/announcements.js'
@@ -8,6 +9,7 @@
 	let toggle
 
 	$: browser && isOpen && window.addEventListener('scroll', _=> isOpen = false)
+	$: $navigating && (isOpen = false)
 </script>
 
 <div class="2xs:relative">
