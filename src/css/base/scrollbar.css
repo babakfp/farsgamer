@@ -10,6 +10,12 @@
 		.scrollbar {
 			overflow: overlay;
 		}
+		.scrollbar-x {
+			overflow-x: overlay;
+		}
+		.scrollbar-y {
+			overflow-y: overlay;
+		}
 		.selectContainer .listContainer {
 			overflow: overlay !important;
 		}

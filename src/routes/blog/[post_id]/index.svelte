@@ -25,7 +25,9 @@
 	</div>
 </div>
 
-<Description />
+<div class="rounded-b border-t-2 border-dashed border-gray-300">
+	<Description />
+</div>
 
 <h2 class="mt-12 font-bold text-lg">نظرات کاربران</h2>
 <div class="grid gap-4 mt-4">

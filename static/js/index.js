@@ -327,10 +327,7 @@ const sliderNavigationConfig = {
 // })()
 /*
 // ---
-;(_=> {
-	const posttypeContent = document.querySelector('.posttype-content')
-	if (posttypeContent) easyTab(posttypeContent)
-})()
+
 
 // ---
 

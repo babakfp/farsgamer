@@ -1,20 +1,11 @@
 <ul class="posttype-content__tabs">
   <li easytab-tab class="posttype-content__tab">
-    <a class="posttype-content__tab-link">
-      <i class="posttype-content__tab-icon icon-filter"></i>
-      <span>توضیحات</span>
-    </a>
+    <button class="posttype-content__tab-link">توضیحات</button>
   </li>
   <li easytab-tab class="posttype-content__tab">
-    <a class="posttype-content__tab-link">
-      <i class="posttype-content__tab-icon icon-comment"></i>
-      <span>نظرات <span class="text-sm">(۹۸)</span></span>
-    </a>
+    <button class="posttype-content__tab-link">نظرات <span class="text-sm">(۹۸)</span></button>
   </li>
   <li easytab-tab class="posttype-content__tab">
-    <a class="posttype-content__tab-link">
-      <i class="posttype-content__tab-icon icon-question-answer"></i>
-      <span>پرسش و پاسخ</span>
-    </a>
+    <button class="posttype-content__tab-link">پرسش و پاسخ</button>
   </li>
 </ul>
