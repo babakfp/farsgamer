@@ -79,49 +79,6 @@
 // 	})
 // })()
 
-
-// dashboard rating
-
-
-// ---
-
-const swiperImageGallery = (
-	big_thumb_container_class,
-	small_thumbs_container_class
-) => {
-	if (
-		!document.querySelector(big_thumb_container_class) &&
-		!document.querySelector(small_thumbs_container_class)
-	)
-		return
-	new Swiper(big_thumb_container_class, {
-		slidesPerView: 1,
-		spaceBetween: 0,
-		loopedSlides: 3,
-		thumbs: {
-			swiper: new Swiper(small_thumbs_container_class, {
-				spaceBetween: 16,
-				slidesPerView: 3,
-				direction: 'vertical',
-
-				// freeMode: true,
-				// watchSlidesVisibility: true,
-				// watchSlidesProgress: true,
-				},
-			}),
-		},
-	})
-}
-
-window.addEventListener('load', _=> {
-	swiperImageGallery(
-		'.single-product-image-gallery .single-product-image-gallery__big-image',
-		'.single-product-image-gallery .single-product-image-gallery__thumb-images'
-	)
-})
-
-// ---
-
 // TP Alert
 // resizing the elements based on the taken height by alert.
 ;(_=> {
