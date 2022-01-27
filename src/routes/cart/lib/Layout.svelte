@@ -6,10 +6,10 @@
 	</div>
 
 	<div class="grid gap-4 xl:col-start-9 xl:col-end-13 2xl:col-start-10 xl:row-span-full">
+		<slot name="get-a-gift" />
 		<div class="grid gap-8 p-4 bg-white rounded">
 			<slot name="sidebar" />
 		</div>
-		<slot name="after-sidebar" />
 	</div>
 
 </div>

@@ -20,6 +20,10 @@
 	<svelte:fragment slot="main">
 		<CartItems cartable={false} />
 	</svelte:fragment>
+
+	<svelte:fragment slot="get-a-gift">
+		<button class="btn btn--brand btn--lg">هدیه بگیرید؟</button>
+	</svelte:fragment>
 	
 	<svelte:fragment slot="sidebar">
 		<ul class="space-y-2 text-sm">
@@ -78,9 +82,5 @@
 				</li>
 			</ul>
 		</div>
-	</svelte:fragment>
-
-	<svelte:fragment slot="after-sidebar">
-		<button class="btn btn--brand btn--lg">هدیه بگیرید؟</button>
 	</svelte:fragment>
 </Layout>
