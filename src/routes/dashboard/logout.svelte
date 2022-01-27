@@ -1,4 +1,4 @@
 <script>
-	import { logout } from '$store/auth.js'
-	logout()
+	import { goto } from '$app/navigation'
+	goto('/')
 </script>
