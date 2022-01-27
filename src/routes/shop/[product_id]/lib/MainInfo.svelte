@@ -2,7 +2,7 @@
 	import StarRating from '$lib/StarRating.svelte'
 </script>
 
-<div class="w-full mt-4 p-6 bg-white rounded lg:order-1 lg:mt-0">
+<div class="w-full mt-4 sm:mt-6 p-6 bg-white rounded md:order-1 md:mt-0">
 
 	<h1 class="font-bold">پک فورست لجند | Forst Legends pack</h1>
 

@@ -16,9 +16,9 @@
 
 <Poster />
 
-<section class="lg:flex lg:items-center">
-	<div class="mx-auto lg:order-2 lg:p-8 2xl:p-12 3xl:w-full">
-		<div class="flex gap-4 lg:-ml-4 xl:-ml-8">
+<section class="md:flex md:items-center">
+	<div class="mx-auto md:order-2 md:p-6 2xl:p-8 3xl:w-full">
+		<div class="flex gap-4 md:-ml-6 2xl:-ml-8">
 			<GalleryMainThumbs bind:thumbsSwiper={thumbsSwiper} />
 			<GallerySideThumbs bind:thumbsSwiper={thumbsSwiper} />
 		</div>
