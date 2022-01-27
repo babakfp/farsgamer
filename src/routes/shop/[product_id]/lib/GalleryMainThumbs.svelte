@@ -14,7 +14,7 @@
 </script>
 
 <Swiper
-	class="w-62 h-62 mr-auto ml-0"
+	class="w-56 h-56 mr-auto ml-0 4xs:w-62 4xs:h-62"
 	modules={[ Pagination, Autoplay, Thumbs ]}
 	thumbs={{ swiper: thumbsSwiper }}
 	speed={600}

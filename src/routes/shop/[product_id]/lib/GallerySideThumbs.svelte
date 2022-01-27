@@ -22,7 +22,7 @@
 
 {#if posters.length > 1}
 	<Swiper
-		class="w-18 min-w-18 h-62 ml-auto mr-0"
+		class="w-16 min-w-16 h-56 ml-auto mr-0 4xs:w-18 4xs:min-w-18 4xs:h-62"
 		modules={[ Pagination, Autoplay, Thumbs ]}
 		watchSlidesProgress
 		on:swiper={setThumbsSwiper}
