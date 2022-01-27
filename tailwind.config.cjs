@@ -115,8 +115,9 @@ const config = {
     },
 		},
 		screens: {
-			'2xs': '400px',
-			xss: '480px',
+			'4xs': '375px',
+			'3xs': '400px',
+			'2xs': '480px',
 			xs: '576px',
 			sm: '640px',
 			md: '768px',

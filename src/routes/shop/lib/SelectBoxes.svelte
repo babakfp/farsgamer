@@ -26,7 +26,7 @@
 	const groupBy = (item) => item.group
 </script>
 
-<div class="grid gap-4 2xs:flex">
+<div class="grid gap-4 3xs:flex">
 	<div class="relative w-full">
 		<Select
 			items={categoryItems} {groupBy}
