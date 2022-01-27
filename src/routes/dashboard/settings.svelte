@@ -30,6 +30,6 @@
   </div>
   
   <div>
-    <button class="btn form-submit btn--brand btn--lg" type="submit">ثبت اطلاعات</button>
+    <button class="btn btn--brand btn--submit" type="submit">ثبت اطلاعات</button>
   </div>
 </form>

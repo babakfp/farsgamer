@@ -47,11 +47,8 @@
 		@apply text-xs h-8 px-2;
 	}
 
+	.btn--submit,
 	.btn--lg {
-		@apply h-12;
-	}
-
-	.btn--submit {
 		@apply h-input;
 	}
 

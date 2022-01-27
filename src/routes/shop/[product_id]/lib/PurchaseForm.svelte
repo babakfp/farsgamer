@@ -113,6 +113,6 @@
 		
   </div>
 
-	<button class="btn btn--lg w-full sm:max-w-60 form-submit btn--brand font-medium text-base" type="submit">افزودن به سبد خرید</button>
+	<button class="btn btn--submit w-full sm:max-w-60 btn--brand font-medium text-base" type="submit">افزودن به سبد خرید</button>
 
 </form>

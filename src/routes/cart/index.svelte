@@ -15,7 +15,7 @@
 		
 		<svelte:fragment slot="sidebar">
 			{#if !$isLoggedIn}
-				<a class="btn btn--brand btn--lg w-full" href="/login">ورود به حساب</a>
+				<a class="btn btn--brand btn--submit w-full" href="/login">ورود به حساب</a>
 			{/if}
 		
 			<ul class="space-y-2 text-sm">
@@ -80,7 +80,7 @@
 			</ol>
 			
 			<div>
-				<button class="btn btn--brand btn--submit btn--lg w-full" disabled={!$isLoggedIn} type="submit">ادامه تسویه حساب</button>
+				<button class="btn btn--brand btn--submit w-full" disabled={!$isLoggedIn} type="submit">ادامه تسویه حساب</button>
 				{#if !$isLoggedIn}
 					<p class="text-xs mt-2 text-red-400">برای ادامه فراید خرید باید ابتدا یک حساب کاربری ایجاد کنید.</p>
 				{/if}
