@@ -18,9 +18,7 @@
 
 	<div class="rounded overflow-hidden">
 		<div easytab-content>
-			<div class="posttype-content__description">
-				<Description />
-			</div>
+			<Description />
 		</div>
 
 		<div easytab-content>
