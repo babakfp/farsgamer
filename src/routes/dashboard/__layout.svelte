@@ -12,7 +12,7 @@
 </div>
 
 <style lang="postcss">
-	:global(#page-content) {
+	:global(body.dashboard-header #page-content) {
 		@apply 2xl:p-8 2xl:pb-12;
 	}
 </style>
