@@ -10,3 +10,9 @@
 		<slot />
 	</div>
 </div>
+
+<style lang="postcss">
+	:global(#page-content) {
+		@apply 2xl:p-8 2xl:pb-12;
+	}
+</style>

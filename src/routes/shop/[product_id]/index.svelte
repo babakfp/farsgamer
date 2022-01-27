@@ -34,9 +34,3 @@
 <div class="mt-8 xl:mt-12">
 	<BestSellerProducts />
 </div>
-
-<style lang="postcss">
-	/* :global(.page-content) {
-		@apply !pt-0 !px-0;
-	} */
-</style>
