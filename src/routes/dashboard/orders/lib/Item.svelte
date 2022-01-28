@@ -1,6 +1,8 @@
 <script>
+	import Modal from '$lib/Modal.svelte'
 	import TrackContent from './TrackContent.svelte'
-	import UnsuccessfulOrderModal from './UnsuccessfulOrderModal.svelte'
+
+	let showModal = false
 </script>
 
 <div class="do__item">
@@ -40,11 +42,15 @@
 
     <!-- delivered -->
     <div class="do__item-cell do__item-cell__delivered">
-      <!-- Button trigger modal -->
-      <button class="btn px-8 btn--brand btn--xs btn--outline" data-bs-toggle="modal" data-bs-target="#orderNotCompleted">
+      <button class="btn px-8 btn--brand btn--xs btn--outline js-modal__open" on:click={_=> showModal = true}>
         سفارش انجام نشده؟
       </button>
-      <UnsuccessfulOrderModal />
+			
+			{#if showModal}
+				<Modal bind:visible={showModal} class="whitespace-normal">
+					<p class="text-sm">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
+				</Modal>
+			{/if}
     </div>
 
     <!-- buttons -->
