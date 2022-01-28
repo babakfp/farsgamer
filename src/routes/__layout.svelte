@@ -45,16 +45,3 @@
 <svelte:component this={layout}>
 	<slot />
 </svelte:component>
-
-<style lang="postcss">
-	:global(.loading-bar__train::before),
-	:global(.loading-bar__train::after) {
-		@apply bg-brand;
-	}
-	:global(.loading-bar) {
-		@apply h-1 lg:h-0.5;
-	}
-	:global(.goup--hidden) {
-		@apply translate-y-20;
-	}
-</style>

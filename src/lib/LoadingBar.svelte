@@ -13,11 +13,11 @@
 	</div>
 {/if}
 
-<style>
+<style lang="postcss">
 	.loading-bar {
 		position: fixed;
 		top: 0;
-		height: 4px;
+		height: 3px;
 		width: 100%;
 		background-clip: padding-box;
 		overflow: hidden;
@@ -27,11 +27,11 @@
 	.loading-bar .loading-bar__train:after {
 		content: "";
 		position: absolute;
-		background: blueviolet;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		will-change: left, right;
+		@apply bg-brand bg-opacity-80;
 	}
 	.loading-bar .loading-bar__train:before {
 		animation: loading-bar__train 2100ms cubic-bezier(0.65, 0.815, 0.735, 0.395)
