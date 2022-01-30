@@ -110,10 +110,11 @@ const config = {
 			},
 			scale: {
 				flip: '-1',
-			},blur: {
-      xs: '2px',
-      sm: '4px',
-    },
+			},
+			blur: {
+				xs: '2px',
+				sm: '4px',
+			},
 		},
 		screens: {
 			'4xs': '375px',
