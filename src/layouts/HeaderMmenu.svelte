@@ -20,6 +20,6 @@
 
 <style lang="postcss">
 	:global(body.main-header) #main {
-		@apply mt-16 lg:mt-20 lg:pr-56 2xl:pr-64;
+		@apply lg:pr-56 2xl:pr-64;
 	}
 </style>
