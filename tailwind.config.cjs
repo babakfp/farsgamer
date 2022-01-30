@@ -35,13 +35,6 @@ const config = {
 			},
 			maxWidth: theme => ({
 				...theme('spacing'),
-				'70/100': '70%',
-				'75/100': '75%',
-				'80/100': '80%',
-				'85/100': '85%',
-				'90/100': '90%',
-				'6xl': '72rem',
-				'7xl': '80rem',
 			}),
 			minWidth: theme => theme('spacing'),
 			minHeight: theme => theme('spacing'),
