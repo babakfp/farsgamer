@@ -6,7 +6,7 @@
 
 	.do__head {
 		@apply border-b-2 border-gray-100;
-		@apply text-sm text-gray2-700 font-bold;
+		@apply text-sm text-gray-400 font-bold;
 		@apply mb-4 pb-2 pt-1 px-6;
 	}
 

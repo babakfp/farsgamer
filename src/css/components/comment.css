@@ -55,7 +55,7 @@
 	}
 
 	.rating-stars__empty-star {
-		@apply text-gray2-500;
+		@apply text-gray-400;
 	}
 
 	.rating-stars__filled-star {

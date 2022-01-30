@@ -10,10 +10,10 @@
 						<span class="comment__date-month">اسفند</span>
 					</div>
 					<!-- Some Order Info -->
-					<div class="flex items-center gap-1 flex-wrap text-sm text-gray2-700">
+					<div class="flex items-center gap-1 flex-wrap text-sm text-gray-400">
 						<span>ق.ظ 00:12</span>
 						<span>سفارش</span>
-						<span class="text-red font-bold dir-ltr"><span class="text-gray2-700">#</span><span class="font-isans-ed select-all">FFA-980317</span></span>
+						<span class="text-red font-bold dir-ltr"><span class="text-gray-400">#</span><span class="font-isans-ed select-all">FFA-980317</span></span>
 						<span>در حال حاضر در وضعیت</span>
 						<span class="text-red font-bold">تکمیل شده</span>
 						<span>می‌باشد.</span>

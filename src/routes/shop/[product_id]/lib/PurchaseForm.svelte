@@ -99,7 +99,7 @@
           <!-- Price before discount -->
           <p class="font-bold text-2xl tracking-tighter">۵۰۰,۰۰۰</p>
           <!-- Price after discount -->
-          <p class="line-through text-gray2-700 flex items-center justify-end">۳۰۰,۰۰۰</p>
+          <p class="line-through text-gray-400 flex items-center justify-end">۳۰۰,۰۰۰</p>
         </div>
     
         <div class="grid gap-1">

@@ -12,7 +12,7 @@
     <div class="do__item-cell do__item-cell__code">
       <div class="font-bold text-sm flex">
         <p class="font-isans-ed select-all">FFA-980317</p>
-        <p class="text-gray2-700">#</p>
+        <p class="text-gray-400">#</p>
       </div>
     </div>
 

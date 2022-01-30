@@ -27,7 +27,7 @@
 	<MainInfo />
 </section>
 
-<!-- <PurchaseForm /> -->
+<PurchaseForm />
 
 <PosttypeContent />
 

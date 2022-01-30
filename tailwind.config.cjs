@@ -49,13 +49,6 @@ const config = {
 					DEFAULT: '#FFBC00'
 				},
 				'light-green': '#8EFAAB',
-				gray2: {
-					DEFAULT: 'gray',
-					50: '#F8F9FB',
-					100: '#F1F1F1',
-					500: '#BDBDC7',
-					700: '#808191',
-				},
 			},
 			maxWidth: theme => ({
 				...theme('spacing'),
