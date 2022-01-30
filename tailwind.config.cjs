@@ -69,7 +69,6 @@ const config = {
 				3: '.75em',
 				4: '1em',
 			},
-			scale: { '-1': -1 },
 			scale: {
 				flip: '-1',
 			},
