@@ -47,7 +47,6 @@ const config = {
 				5: '5',
 				21: '21',
 			},
-			scale: { '-1': -1 },
 			fontSize: {
 				'2xs': ['0.625rem', { lineHeight: '1' }],
 			},
@@ -70,6 +69,7 @@ const config = {
 				3: '.75em',
 				4: '1em',
 			},
+			scale: { '-1': -1 },
 			scale: {
 				flip: '-1',
 			},
