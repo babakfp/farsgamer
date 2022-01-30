@@ -48,7 +48,6 @@ const config = {
 				yellow: {
 					DEFAULT: '#FFBC00'
 				},
-				'light-green': '#8EFAAB',
 			},
 			maxWidth: theme => ({
 				...theme('spacing'),
