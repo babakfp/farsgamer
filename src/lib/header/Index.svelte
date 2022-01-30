@@ -49,7 +49,7 @@
 
 <style lang="postcss">
 	:global(body.main-header) #header {
-		@apply fixed z-40 top-0 right-0 left-0 lg:mr-56 2xl:mr-64;
+		@apply fixed top-0 right-0 left-0 lg:mr-56 2xl:mr-64;
 	}
 	:global(body.main-header) #header__right-side {
 		@apply lg:-mr-8;
