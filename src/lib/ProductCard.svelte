@@ -2,7 +2,7 @@
 	export let inStock = true
 	export let specialDiscount = false
 
-	const countDownDate = new Date('Jan 28, 2022 15:37:0').getTime()
+	const countDownDate = new Date('Jun 28, 2022 15:37:0').getTime()
 	
 	// Today's date and time
 	let now = new Date().getTime()
