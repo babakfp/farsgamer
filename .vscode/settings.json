@@ -3,5 +3,8 @@
 		"pnpm-lock.yaml": true,
 		"static/fonts/uicons-regular-rounded": true,
 		"static/fonts/uicons-solid-rounded": true,
+		
+		"tailwind.config.cjs": true,
+		"tailwind.config.full.cjs": true,
 	}
 }
