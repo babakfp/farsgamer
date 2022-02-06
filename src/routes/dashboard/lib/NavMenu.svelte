@@ -1,6 +1,11 @@
 <script>
+	import { navigating } from "$app/stores"
 	import NavItem from '$lib/sidemenu/NavItem.svelte'
 	let show = false
+
+	$: {
+		$navigating && (show = false)
+	}
 </script>
 
 <div class="{show ? 'h-auto mb-4' : 'h-0 overflow-hidden' } duration-300 ease-in-out 2md:h-auto 2md:overflow-unset 2md:mb-0">
