@@ -11,7 +11,7 @@
 }
 
 .swiper-pagination {
-	@apply !bottom-2;
+	@apply !bottom-2 lg:!mb-4;
 }
 
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
