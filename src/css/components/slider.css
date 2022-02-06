@@ -1,13 +1,25 @@
+:root {
+	--swiper-navigation-size: 1rem;
+}
+
 .swiper {
-	@apply rounded ;
+	@apply rounded;
+}
+
+.swiper-wrapper {
+	@apply box-border;
 }
 
 .swiper-pagination {
-	@apply bottom-4;
+	@apply !bottom-2;
 }
 
-.swiper-pagination-bullet {
-	@apply w-2 h-2 bg-gray-300 opacity-100;
+.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
+	@apply w-2 h-2 bg-white bg-opacity-90 opacity-60 transition-colors duration-100 ease-in hover:bg-brand;
+}
+
+.swiper-pagination.swiper-pagination-bullets-dynamic {
+	@apply h-3;
 }
 
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
@@ -20,6 +32,11 @@
 
 .swiper-pagination-bullet-active:hover {
 	@apply bg-brand-deep;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	@apply w-12 h-12 overflow-hidden bg-white rounded-full text-gray-600 border border-gray-100;
 }
 
 /*  */
