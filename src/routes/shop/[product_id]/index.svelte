@@ -1,11 +1,11 @@
 <script>
-	import Poster from './lib/Poster.svelte'
-	import GalleryMainThumbs from './lib/GalleryMainThumbs.svelte'
-	import GallerySideThumbs from './lib/GallerySideThumbs.svelte'
-	import MainInfo from './lib/MainInfo.svelte'
-	import PurchaseForm from './lib/PurchaseForm.svelte'
-	import PosttypeContent from './lib/PosttypeContent.svelte'
-	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
+	import Poster from './_lib/Poster.svelte'
+	import GalleryMainThumbs from './_lib/GalleryMainThumbs.svelte'
+	import GallerySideThumbs from './_lib/GallerySideThumbs.svelte'
+	import MainInfo from './_lib/MainInfo.svelte'
+	import PurchaseForm from './_lib/PurchaseForm.svelte'
+	import PosttypeContent from './_lib/PosttypeContent.svelte'
+	import BestSellerProducts from '$_lib/home/BestSellerProducts.svelte'
 
 	let thumbsSwiper
 </script>

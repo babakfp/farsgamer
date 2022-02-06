@@ -1,7 +1,7 @@
 <script>
 	import { browser } from '$app/env'
 	import NavItem from '$lib/sidemenu/NavItem.svelte'
-	import NavMenu from './lib/NavMenu.svelte'
+	import NavMenu from './_lib/NavMenu.svelte'
 </script>
 
 <div class="2md:flex 2md:items-start 2md:gap-4 xl:gap-8">

@@ -1,5 +1,5 @@
 <script>
-	import SelectBoxes from './lib/SelectBoxes.svelte'
+	import SelectBoxes from './_lib/SelectBoxes.svelte'
 	import ProductCard from '$lib/ProductCard.svelte'
 	import Pagination from '$lib/Pagination.svelte'
 </script>

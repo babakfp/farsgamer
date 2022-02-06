@@ -1,5 +1,5 @@
 <script>
-	import Item from './lib/Item.svelte'
+	import Item from './_lib/Item.svelte'
 </script>
 
 <svelte:head>

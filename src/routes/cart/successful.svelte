@@ -1,7 +1,7 @@
 <script>
-	import Layout from './lib/Layout.svelte'
+	import Layout from './_lib/Layout.svelte'
 	import Alert from '$lib/Alert.svelte'
-	import CartItems from './lib/CartItems.svelte'
+	import CartItems from './_lib/CartItems.svelte'
 </script>
 
 <Layout>

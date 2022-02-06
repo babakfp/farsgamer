@@ -2,8 +2,8 @@
 	import { isLoggedIn, isCartEmpty } from '$store/auth.js'
 	import Checkbox from '$lib/Checkbox.svelte'
 	import DiscountInput from '$lib/DiscountInput.svelte'
-	import CartItems from './lib/CartItems.svelte'
-	import Layout from './lib/Layout.svelte'
+	import CartItems from './_lib/CartItems.svelte'
+	import Layout from './_lib/Layout.svelte'
 </script>
 
 {#if !$isCartEmpty}

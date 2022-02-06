@@ -1,7 +1,7 @@
 <script>
 	import Breadcrumb from '$lib/Breadcrumb.svelte'
 	import Description from '$lib/posttype/Description.svelte'
-	import Comment from './lib/Comment.svelte'
+	import Comment from './_lib/Comment.svelte'
 	import CommentForm from '$lib/posttype/CommentForm.svelte'
 	export let showResponseForm = false
 </script>
