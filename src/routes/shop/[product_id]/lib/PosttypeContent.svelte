@@ -25,10 +25,6 @@
 			<div class="posttype-content__comments">
 
 				<!-- No comments. -->
-				<!-- <div class="grid gap-2 justify-center justify-items-center py-4">
-					<img class="w-60" src="/svg/no-comments.svg" alt="No comments">
-					<p class="font-bold md:text-md lg:text-2xl text-red">هیچکس نظرشو نگفته</p>
-				</div> -->
 
 				<Comment />
 				<CommentForm />
@@ -39,10 +35,6 @@
 			<div class="posttype-content__question-and-answer">
 
 				<!-- No questions. -->
-				<!-- <div class="grid gap-2 justify-center justify-items-center py-4">
-					<img class="w-60" src="/svg/no-questions.svg" alt="No questions">
-					<p class="font-bold md:text-md lg:text-2xl text-red">هیچکس سوالی نداشته</p>
-				</div> -->
 
 				<QAACommentWithReply />
 				<QAACommentForm />
