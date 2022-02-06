@@ -22,8 +22,8 @@ const config = {
 				'body-text': colors.gray['700'],
 				gray: colors.gray,
 				brand: {
-					DEFAULT: '#3D42DF',
-					deep: '#1F24C3',
+					DEFAULT: '#7666FF',
+					deep: '#614FFF',
 				},
 				red: {
 					DEFAULT: '#FF3838',
