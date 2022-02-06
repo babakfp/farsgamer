@@ -15,7 +15,7 @@
 }
 
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-	@apply w-2 h-2 bg-white opacity-50 transition-colors duration-100 ease-in hover:bg-brand;
+	@apply w-2 h-2 bg-white opacity-50 transition-colors duration-100 ease-in hover:bg-brand hover:opacity-100;
 }
 
 .swiper-pagination-bullets-dynamic {
@@ -28,10 +28,6 @@
 
 .swiper-pagination-bullet-active {
 	@apply bg-brand;
-}
-
-.swiper-pagination-bullet-active:hover {
-	@apply bg-brand-deep;
 }
 
 .swiper-button-next,
@@ -58,5 +54,5 @@
 }
 
 .box-carousel .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-	@apply bg-gray-300 opacity-100;
+	@apply bg-gray-300 opacity-100 hover:bg-brand;
 }
