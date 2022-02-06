@@ -55,11 +55,6 @@
                 </div>
 
               </form>
-							<!-- Error -->
-              <!-- <div class="flex items-center gap-2 text-sm text-red p-2 mt-2">
-                <i class="icon-exclamation-square"></i>
-                <p>میزان رضایت خود را وارد نمایید</p>
-              </div> -->
             </div>
           </div>
         <!-- END Item -->
