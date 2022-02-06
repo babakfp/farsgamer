@@ -1,5 +1,5 @@
 <script>
-	export let value
+	export let value = 5
 </script>
 
 <ol class="flex gap-1">
