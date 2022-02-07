@@ -5,7 +5,7 @@
 	import MainInfo from './_lib/MainInfo.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 	import PosttypeContent from './_lib/PosttypeContent.svelte'
-	import BestSellerProducts from '$_lib/home/BestSellerProducts.svelte'
+	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
 
 	let thumbsSwiper
 </script>
