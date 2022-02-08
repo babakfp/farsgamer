@@ -1,12 +1,13 @@
 <script>
 	import { onMount } from 'svelte'
-	onMount(_=> {
-		new Plyr('#why-us-player')
-	})
+	onMount(_=> new Plyr('#why-us-player'))
 </script>
 
 <svelte:head>
 	<title>چرا فارسگیمر</title>
+
+	<link rel="stylesheet" href="/lib/plyr/plyr.css" />
+  <script src="/lib/plyr/plyr.polyfilled.js"></script>
 </svelte:head>
 
 <div class="content">
