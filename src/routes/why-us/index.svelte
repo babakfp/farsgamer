@@ -1,6 +1,8 @@
 <script>
-	// https://farsgamer.com/site/videos/why-us-poster.png
-	// https://farsgamer.com/site/videos/why-us-video.mp4
+	import { onMount } from 'svelte'
+	onMount(_=> {
+		new Plyr('#why-us-player')
+	})
 </script>
 
 <svelte:head>
@@ -12,6 +14,12 @@
 	<h1 class="text-2xl font-bold">چرا فارسگیمر</h1>
 
 	<div class="py-4"><hr></div>
+
+	<div class="mt-4 pb-4">
+		<video id="why-us-player" playsinline controls data-poster="https://farsgamer.com/site/videos/why-us-poster.png">
+			<source src="https://farsgamer.com/site/videos/why-us-video.mp4" type="video/mp4" />
+		</video>
+	</div>
 	
   <h3>چگونه اعتماد کنیم؟</h3>
   <p>فروشگاه فارس گیمر در وب‌سایت نماد اعتماد الکترونیک به آدرس enamad.ir، ساماندهی به آدرس samandehi.ir، زرین پال به آدرس zarinpal.com و پی Pay.ir ثبت شده است. ثبت وبسایت در این سامانه ها و وب سایت ها به این معنی است که هویت صاحب وب‌سایت احراز، و ثبت شده می‌باشد. شما کاربران محترم میتوانید با کلیک بر روی لوگوی ساماندهی و نماد اعتماد در قسمت فوتر ( انتهای وب سایت ) از صحت این موضوع اطمینان حاصل و با خیالی آسوده خرید خود را انجام دهید.</p>
