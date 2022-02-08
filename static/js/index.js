@@ -1,26 +1,23 @@
 // Stop slider autoplay and hide pagination if (slides < 2)
 ;(_=> {
-	window.addEventListener('load', _=> {
+	window.addEventListener('load', _=>
+	{
 		const sliders = document.querySelectorAll('.swiper-container')
-		if (sliders) {
-			sliders.forEach(slider => {
-				const pagination = slider.querySelector('.swiper-pagination')
-				const paginationBullets = slider.querySelectorAll(
-					'.swiper-pagination-bullet'
-				)
-				if (paginationBullets.length < 2 && slider?.swiper?.autoplay) {
-					slider.swiper.autoplay.stop()
-					pagination.classList.add('hidden')
-				}
-			})
-		}
+		if (!sliders) return
+		
+		sliders.forEach(slider => {
+			const pagination = slider.querySelector('.swiper-pagination')
+			const paginationBullets = slider.querySelectorAll(
+				'.swiper-pagination-bullet'
+			)
+			if (paginationBullets.length < 2 && slider?.swiper?.autoplay) {
+				slider.swiper.autoplay.stop()
+				pagination.classList.add('hidden')
+			}
+		})
 	})
 })()
 
-// ## END Sliders
-/*
-
-/*
 
 // radio button handler.
 ;(_=> {
@@ -34,11 +31,6 @@
 		})
 	})
 })()
-*/
-// ---
-
-
-// ---
 
 // comments reply button and form handler.
 ;(_=> {
@@ -59,57 +51,6 @@
 		}
 	})
 })()
-
-// ---
-// ;(_=> {
-// 	const items = document.querySelectorAll('.order-details__item')
-// 	if (!items) return
-// 	items.forEach(item => {
-// 		const toggle = item.querySelector('.order-details__item__toggle-content')
-// 		const toggleIcon = item.querySelector('i')
-// 		const extraContent = item.querySelector(
-// 			'.order-details__item__extra-content'
-// 		)
-// 		toggleIcon.classList.add('leading-0')
-// 		extraContent.classList.add('hidden')
-// 		toggle.addEventListener('click', _=> {
-// 			extraContent.classList.toggle('hidden')
-// 			toggleIcon.classList.toggle('flip-rotate-y')
-// 		})
-// 	})
-// })()
-
-// TP Alert
-// resizing the elements based on the taken height by alert.
-;(_=> {
-	window.addEventListener('load', _=> {
-		const alert = document.querySelector('.tp-alert')
-		const header = document.querySelector('#header')
-		const sidebar = document.querySelector('#sidebar')
-		const main = document.querySelector('#main')
-
-		if (!alert || !header || !sidebar || !main) return
-
-		const alert__close = alert.querySelector('.tp-alert__action')
-		const alert_style_height = alert.clientHeight + 'px'
-		const main_style_paddingTop = getComputedStyle(main).paddingTop
-		const sidebar_style_top = getComputedStyle(sidebar).top
-		const sidebar_style_height = getComputedStyle(sidebar).height
-
-		header.style.top = alert_style_height
-		main.style.paddingTop = `calc(${main_style_paddingTop} + ${alert_style_height})`
-		sidebar.style.top = `calc(${sidebar_style_top} + ${alert_style_height})`
-		sidebar.style.height = `calc(${sidebar_style_height} - ${alert_style_height})`
-
-		alert__close.addEventListener('click', _=> {
-			header.removeAttribute('style')
-			sidebar.removeAttribute('style')
-			main.removeAttribute('style')
-		})
-	})
-})()
-
-// ---
 
 // Dashboard orders table
 ;(_=> {

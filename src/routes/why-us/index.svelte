@@ -1,3 +1,8 @@
+<script>
+	// https://farsgamer.com/site/videos/why-us-poster.png
+	// https://farsgamer.com/site/videos/why-us-video.mp4
+</script>
+
 <svelte:head>
 	<title>چرا فارسگیمر</title>
 </svelte:head>
