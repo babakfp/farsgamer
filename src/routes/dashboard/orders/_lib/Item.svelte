@@ -59,9 +59,8 @@
 							<!-- TOOD  btn--xs-->
         <a href="javascript:" class="btn px-8 btn--brand btn--xs btn--outline w-full">نمایش</a>
 							<!-- TOOD  btn--xs-->
-        <button class="btn px-8 btn--brand btn--outline btn--xs w-full" data-bs-toggle="collapse" data-bs-target="#collapseDoItem1" aria-expanded="false" aria-controls="collapseExample">
-          <i class="icon-plus text-sm hidden leading-0"></i>
-          <span>پیگیری <span class="text-2xs">(2 پیام جدید)</span></span>
+        <button class="btn btn--brand btn--outline btn--xs w-full px-8 gap-1" data-bs-toggle="collapse" data-bs-target="#collapseDoItem1" aria-expanded="false" aria-controls="collapseExample">
+          پیگیری <span class="text-2xs">(2 پیام جدید)</span>
         </button>
       </div>
     </div>

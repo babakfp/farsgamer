@@ -45,14 +45,6 @@
 			</ul>
 	
 			<DiscountInput wrapperClass="-mt-4" />
-			<!-- <div class="bg-green-100 font-medium flex items-center justify-center gap-2 p-2 rounded mb-2">
-				<i class="icon-check-square"></i>
-				<p class="text-sm">کد تخفیف با موفقیت اعمال شد</p>
-			</div> -->
-			<!-- <div class="bg-pink font-medium flex items-center justify-center gap-2 p-2 rounded mb-2">
-				<i class="icon-exclamation-square"></i>
-				<p class="text-sm">کد تخفیف اشتباه هست یا قبلا استفاده شده</p>
-			</div> -->
 
 		<Checkbox name="use-wallet">استفاده از کیف پول</Checkbox>
 

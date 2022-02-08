@@ -7,14 +7,6 @@
 <Layout>
 	<svelte:fragment slot="before-main">
 		<Alert class="mb-4" type="success" content="پرداخت شما با موفقیت انجام شد🎉." />
-		
-		<!-- <div class="bg-pink font-medium flex flex-wrap items-center justify-center gap-y-2 gap-x-8 p-2 rounded mb-4">
-			<div class="flex items-center gap-2">
-				<i class="icon-exclamation-square"></i>
-				<p class="text-sm">پرداخت شما ناموفق بود</p>
-			</div>
-			<a class="btn btn--brand btn--outline btn--xs" href="javascript:">دوباره تلاش کنید</a>
-		</div> -->
 	</svelte:fragment>
 		
 	<svelte:fragment slot="main">

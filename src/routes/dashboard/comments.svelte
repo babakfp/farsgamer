@@ -28,8 +28,9 @@
               </div>
 
 							<!-- TOOD  btn--xs-->
-              <button class="btn btn--brand btn--xs" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
-                <i class="icon-plus text-sm hidden leading-0"></i>
+							<!-- TODO icon + or - -->
+              <button class="btn btn--brand btn--xs gap-1" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
+                <i class="fi-rr-plus-small text-sm leading-0"></i>
                 <span>ثبت نظر</span>
               </button>
             
