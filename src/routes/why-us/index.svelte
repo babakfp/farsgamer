@@ -1,6 +1,8 @@
 <script>
 	import { onMount } from 'svelte'
-	onMount(_=> window.addEventListener('load', _=> new Plyr('#why-us-player')))
+	onMount(_=> window.addEventListener('load', _=> new Plyr('#why-us-player', {
+		controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'airplay', 'fullscreen'],
+	})))
 </script>
 
 <svelte:head>
