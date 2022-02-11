@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte'
-	onMount(_=> new Plyr('#why-us-player'))
+	onMount(_=> window.addEventListener('load', _=> new Plyr('#why-us-player')))
 </script>
 
 <svelte:head>
@@ -17,7 +17,7 @@
 	<div class="py-4"><hr></div>
 
 	<div class="mt-4 pb-4">
-		<video id="why-us-player" playsinline controls data-poster="https://farsgamer.com/site/videos/why-us-poster.png">
+		<video class="w-full" id="why-us-player" playsinline controls data-poster="https://farsgamer.com/site/videos/why-us-poster.png">
 			<source src="https://farsgamer.com/site/videos/why-us-video.mp4" type="video/mp4" />
 		</video>
 	</div>
