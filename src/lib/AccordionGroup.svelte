@@ -4,29 +4,27 @@
 	import { onMount } from 'svelte'
 	export let title
 
+	let AccordionGroup
+
 	onMount(_=> {
-		const AccordionGroups = document.querySelectorAll('.AccordionGroup')
-		
-		AccordionGroups.forEach(AccordionGroup => {
-			const Accordions = AccordionGroup.querySelectorAll('.Accordion')
+		const Accordions = AccordionGroup.querySelectorAll('.Accordion')
 
-			Accordions.forEach(Accordion => {
-				Accordion.querySelector('.Accordion-Toggle').addEventListener('click', e => {
-					Accordion.classList.toggle('Accordion--Active')
+		Accordions.forEach(Accordion => {
+			Accordion.querySelector('.Accordion-Toggle').addEventListener('click', e => {
+				Accordion.classList.toggle('Accordion--Active')
 
-					// Remove the active class from the previous active Accordion
-					Accordions.forEach(AccordionScoped => {
-						if (e.currentTarget !== AccordionScoped.querySelector('.Accordion-Toggle') && AccordionScoped.className.includes('Accordion--Active')) {
-							AccordionScoped.classList.remove('Accordion--Active')
-						}
-					})
+				// Remove the active class from the previous active Accordion
+				Accordions.forEach(AccordionScoped => {
+					if (e.currentTarget !== AccordionScoped.querySelector('.Accordion-Toggle') && AccordionScoped.className.includes('Accordion--Active')) {
+						AccordionScoped.classList.remove('Accordion--Active')
+					}
 				})
 			})
 		})
 	})
 </script>
 
-<li class="AccordionGroup grid gap-2 sm:flex sm:gap-4">
+<li bind:this={AccordionGroup} class="AccordionGroup grid gap-2 sm:flex sm:gap-4">
 			
 	<!-- Title -->
 	<div class="sm:relative sm:w-6 sm:min-w-6 sm:max-w-6">
