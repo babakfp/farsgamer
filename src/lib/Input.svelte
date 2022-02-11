@@ -6,6 +6,7 @@
 	export let autocomplete = null
 	export let placeholder = null
 	export let label = ''
+	export let labelClass = ''
 	
 	export let type = 'text'
 
@@ -30,8 +31,8 @@
 	}
 </script>
 
-<div class:err>
-	<label for={name}>{label}</label>
+<div class:err class="w-full">
+	<label class={labelClass} for={name}>{label}</label>
 	<input
 		class="input {className}"
 		{value} {type} {name} id={name} {autocomplete} {placeholder}
