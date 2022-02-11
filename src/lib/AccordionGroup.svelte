@@ -1,5 +1,3 @@
-<!-- https://discord.com/channels/457912077277855764/941716615920230430 -->
-
 <script>
 	import { onMount } from 'svelte'
 	export let title
