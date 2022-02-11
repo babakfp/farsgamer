@@ -5,7 +5,9 @@
 			"$lib": ["src/lib"],
 			"$layouts": ["src/layouts"],
 			"$store": ["src/store"],
-			"$utils": ["src/utils"]
+			"$utils": ["src/utils"],
+			"accordion": ["src/lib/accordion/index.js"],
+			"accordion/*": ["src/lib/accordion/*"]
 		}
 	},
 	"include": ["src/**/*.js", "src/**/*.svelte"]

@@ -1,6 +1,5 @@
 <script>
-	import Accordion from '$lib/Accordion.svelte'
-	import AccordionGroup from '$lib/AccordionGroup.svelte'
+	import {Accordion, AccordionGroup} from 'accordion'
 </script>
 
 <svelte:head>
