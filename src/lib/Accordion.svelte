@@ -3,10 +3,10 @@
 	let open = false
 </script>
 
-<div class="grid">
+<li class="grid">
 	
 	<!-- Toggle -->
-	<button class="flex items-center justify-between w-full p-4 bg-white border-2 border-gray-200 rounded hover:text-brand" on:click={_=> open = !open}>
+	<button class="flex items-center justify-between w-full p-4 bg-white border-2 border-gray-200 rounded duration-150 hover:text-brand" on:click={_=> open = !open}>
 		<span class="line-clamp-1 text-sm lg:text-base">{ title }</span>
 		<svg class="fill-gray-400"><use xlink:href="#svg-caret-down"></use></svg>
 	</button>
@@ -18,5 +18,5 @@
 		</div>
 	</div>
 
-</div>
+</li>
 
