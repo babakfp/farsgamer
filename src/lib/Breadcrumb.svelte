@@ -6,7 +6,7 @@
 	{#each items as item, i}
 		<li class="inline-flex items-center">
 			{#if item.href}
-				<a class="link-transition hover:text-brand" href={ item.href }>{ item.title }</a>
+				<a class="link-transition hover:text-brand" href={item.href}>{item.title}</a>
 			{:else}
 				<span>{ item.title }</span>
 			{/if}

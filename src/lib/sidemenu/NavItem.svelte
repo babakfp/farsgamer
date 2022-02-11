@@ -14,7 +14,7 @@
 		{ useInDashboard && ( $page.url.pathname === href ) && 'text-brand' }
 		{ ( $page.url.pathname === href ) && 'cursor-default' }
 		"
-		href={ href }
+		{href}
 	>
 		<i class="{icon} w-8 h-8 flex justify-center items-center text-lg"></i>
 		<span class="font-medium">{ title }</span>
