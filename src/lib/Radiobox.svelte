@@ -6,7 +6,6 @@
 	export let title
 	export let value = convertToSlug(title)
 
-	console.log($$slots)
 	function convertToSlug(text) {
 		return text.toLowerCase()
 			.replace(/ /g, '-')
