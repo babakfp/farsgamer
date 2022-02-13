@@ -32,7 +32,7 @@
 			items={categoryItems} {groupBy}
 			placeholder="دسته‌بندی محصولات" noOptionsMessage="گذینه‌ای موجود نیست"
 		/>
-		<svg class="absolute top-1/2 -translate-y-1/2 left-4 fill-gray-300"><use xlink:href="#svg-caret-down"></use></svg>
+		<svg class="absolute top-1/2 -translate-y-1/2 left-4 text-gray-300"><use xlink:href="#svg-caret-down"></use></svg>
 	</div>
 	
 	<div class="relative w-full">
@@ -40,7 +40,7 @@
 			items={sortItems} {groupBy}
 			placeholder="مرتب سازی" noOptionsMessage="گذینه‌ای موجود نیست"
 		/>
-		<svg class="absolute top-1/2 -translate-y-1/2 left-4 fill-gray-300"><use xlink:href="#svg-caret-down"></use></svg>
+		<svg class="absolute top-1/2 -translate-y-1/2 left-4 text-gray-300"><use xlink:href="#svg-caret-down"></use></svg>
 	</div>
 </div>
 
