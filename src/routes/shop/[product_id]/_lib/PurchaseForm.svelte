@@ -1,85 +1,38 @@
 <script>
+	import Input from '$lib/Input.svelte'
 	import Checkbox from '$lib/Checkbox.svelte'
+	import Radiobox from '$lib/Radiobox.svelte'
 </script>
 
-<form class="mt-4 p-6 bg-white rounded text-sm xl:mt-8">
+<form class="grid gap-8 mt-4 p-6 bg-white rounded text-sm xl:mt-8">
 
   <div>
-    <label class="mb-2">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
-    <div class="flex flex-wrap gap-2 lg:flex lg:justify-start">
-      <label class="radiobox account-category-btn" for="playstation">Playstation<input class="account-category-btn__field" type="radio" name="account-category" value="playstation"></label>
-      <label class="radiobox account-category-btn" for="epicgames">Epic Games<input class="account-category-btn__field" type="radio" name="account-category" value="epicgames"></label>
-      <label class="radiobox account-category-btn" for="xbox">XBox<input class="account-category-btn__field" type="radio" name="account-category" value="xbox"></label>
-      <label class="radiobox account-category-btn" for="nitendo">Nitendo<input class="account-category-btn__field" type="radio" name="account-category" value="nitendo"></label>
+    <label class="font-bold mb-4">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
+    <div class="flex flex-wrap gap-4 lg:flex lg:justify-start">
+			<Radiobox name="category" title="Playstation" />
+			<Radiobox name="category" title="EpicGames" />
+			<Radiobox name="category" title="XBox" />
+			<Radiobox name="category" title="Nitendo" />
     </div>
   </div>
 
-  <div id="spp-purchase-form__field-wrapper" class="grid gap-4 mt-8">
+	<div class="grid gap-4 sm:flex">
+		<Input
+			label="ایمیل اکانت"
+			labelClass="font-bold"
+			class="dir-ltr" type="email" name="email" autocomplete="email"
+		/>
+		<Input
+			label="رمز اکانت"
+			labelClass="font-bold"
+			class="dir-ltr" type="password" name="password" autocomplete="password"
+		/>
+	</div>
 
-    <div class="grid gap-4 lg:grid-cols-2">
-
-        <!-- Account Email -->
-      <div>
-        <label class="font-bold" for="account-email">آدرس ایمیل اکانت</label>
-        <input
-          type="email"
-          name="account-email"
-          id="account-email"
-          placeholder="آدرس ایمیل"
-          class="input"
-          autocomplete="email"
-        >
-      </div>
-
-      <!-- Account Password -->
-      <div>
-        <label class="font-bold" for="account-password">رمز اکانت</label>
-        <input
-          type="password"
-          name="account-password"
-          id="account-password"
-          placeholder="رمز"
-          class="input"
-          autocomplete="current-password"
-        >
-      </div>
-
-      <!-- Account Email -->
-      <div class="col-span-2">
-        <label class="font-bold" for="account-email">ایمیل</label>
-        <input
-          type="email"
-          name="account-email"
-          id="account-email"
-          placeholder="آدرس ایمیل"
-          class="input"
-          autocomplete="email"
-        >
-      </div>
-
-    </div>
-
-		<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</Checkbox>
-
-    <!-- This is the new UI for the component abov -->
-    <div class="flex items-center gap-4 flex-wrap">
-      <p>آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</p>
-      <div class="flex items-center gap-4">
-        <label for="fast-delivery-true" class="flex items-center gap-1 cursor-pointer mb-0">
-          <input type="radio" name="fast-delivery" value="true" id="fast-delivery-true">
-          <p>بلی</p>
-        </label>
-        <label for="fast-delivery-false" class="flex items-center gap-1 cursor-pointer mb-0">
-          <input type="radio" name="fast-delivery" value="false" id="fast-delivery-false" checked>
-          <p>خیر</p>
-        </label>
-      </div>
-    </div>
-
-  </div>
+	<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</Checkbox>
 
   <!-- Price -->
-  <div class="mt-8 mb-2 flex items-center justify-between">
+  <div class="mb-2 flex items-center justify-between">
     
 		<div class="flex items-center gap-2">
       <label for="quantity">تعداد</label>
