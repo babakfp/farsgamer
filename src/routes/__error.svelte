@@ -21,7 +21,7 @@
 	<h1 class="text-center font-bold text-4xl">{status}</h1>
 	<h2 class="text-center">{error.message}</h2>
 
-	{#if dev && error.stack}
+	{#if error.stack && dev}
 		<code class="scrollbar scrollbar--x-lg block mt-8 p-4 bg-gray-200 rounded dir-ltr lg:p-8">
 			<pre>
 				{error.stack}
