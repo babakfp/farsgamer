@@ -15,7 +15,7 @@ const config = {
 				62: '15.5rem',
 				66: '16.5rem',
 				88: '22rem',
-				input: '3rem'
+				input: '3rem',
 			},
 			colors: {
 				'body-bg': colors.gray['100'],
@@ -38,7 +38,7 @@ const config = {
 			}),
 			minWidth: theme => theme('spacing'),
 			minHeight: theme => theme('spacing'),
-			lineHeight: { 0: '0' },
+			lineHeight: { 0: 0 },
 			zIndex: {
 				1: '1',
 				2: '2',
