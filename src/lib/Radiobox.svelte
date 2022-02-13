@@ -30,7 +30,7 @@
 		font-family: uicons-regular-rounded;
 	}
 	input:checked {
-		@apply bg-brand text-white border-brand ring-4 ring-brand ring-opacity-25;
+		@apply bg-brand text-white border-brand ring-3 ring-brand ring-opacity-25;
 	}
 	input:checked::before {
 		opacity: 1;

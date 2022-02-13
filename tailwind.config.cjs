@@ -76,6 +76,9 @@ const config = {
 				xs: '2px',
 				sm: '4px',
 			},
+			ringWidth: {
+        3: '3px',
+      }
 		},
 		screens: {
 			'4xs': '375px',
