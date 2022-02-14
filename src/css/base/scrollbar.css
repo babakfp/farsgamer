@@ -4,8 +4,6 @@
 		@apply w-1.5 h-1.5;
 	}
 
-	/* If browser supports the property and it's value */
-	/* Scrollbar over content */
 	@supports (overflow: overlay) {
 		.scrollbar {
 			overflow: overlay;
