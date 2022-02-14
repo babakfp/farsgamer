@@ -1,17 +1,10 @@
-const tailwindCss = require('tailwindcss')
-const autoPrefixer = require('autoprefixer')
-const postcssImport = require('postcss-import')
-const postcssNested = require('postcss-nested')
-
 const dev = process.env.NODE_ENV === 'development'
 
-const config = {
+module.exports = {
   plugins: [
-		postcssImport(),
-		postcssNested(),
-    tailwindCss(),
-    !dev && autoPrefixer(),
+		require('postcss-import'),
+		require('tailwindcss/nesting'),
+    require('tailwindcss'),
+    !dev && require('autoprefixer'),
   ],
 }
-
-module.exports = config
