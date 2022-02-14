@@ -20,7 +20,7 @@
 
 			<div id="sidemenu__scrollable-content" class="scrollbar max-h-full pb-6">
 				
-				<nav class="mt-4">
+				<nav class="pt-4">
 					<ul>
 						<NavItem title="خانه" href="/" icon="fi-rr-home" />
 						<NavItem title="فروشگاه" href="/shop" icon="fi-rr-shop" />
