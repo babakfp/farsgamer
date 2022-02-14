@@ -4,6 +4,19 @@
 		@apply w-1.5 h-1.5;
 	}
 
+	.scrollbar {
+		overflow: auto;
+	}
+	.scrollbar-x {
+		overflow-x: auto;
+	}
+	.scrollbar-y {
+		overflow-y: auto;
+	}
+	.selectContainer .listContainer {
+		overflow: auto !important;
+	}
+
 	@supports (overflow: overlay) {
 		.scrollbar {
 			overflow: overlay;
