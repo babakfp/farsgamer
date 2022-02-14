@@ -18,7 +18,6 @@
     "autoprefixer": "^10.4.2",
     "postcss": "^8.4.6",
     "postcss-import": "^14.0.2",
-    "postcss-nested": "^5.0.6",
     "svelte": "^3.46.4",
     "svelte-outclick": "^3.0.0",
     "svelte-preprocess": "^4.10.3",
