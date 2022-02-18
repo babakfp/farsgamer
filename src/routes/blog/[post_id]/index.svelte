@@ -3,7 +3,6 @@
 	import Description from '$lib/posttype/Description.svelte'
 	import Comment from './_lib/Comment.svelte'
 	import CommentForm from '$lib/posttype/CommentForm.svelte'
-	export let showResponseForm = false
 </script>
 
 <Breadcrumb items={[
@@ -31,21 +30,11 @@
 
 <h2 class="mt-12 font-bold text-lg">نظرات کاربران</h2>
 <div class="grid gap-4 mt-4">
-
 	<CommentForm />
 	<div class="py-4"><hr></div>
 
 	<div class="grid gap-2">
-		<Comment bind:showResponseForm>
-			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
-				{showResponseForm ? 'صرف' : 'ارسال'} نظر
-			</button>
-		</Comment>
-		<Comment bind:showResponseForm>
-			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
-				{showResponseForm ? 'صرف' : 'ارسال'} نظر
-			</button>
-		</Comment>
+		<Comment />
+		<Comment />
 	</div>
-
 </div>
