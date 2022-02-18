@@ -33,9 +33,7 @@ const config = {
 					DEFAULT: '#FFBC00'
 				},
 			},
-			maxWidth: theme => ({
-				...theme('spacing'),
-			}),
+			maxWidth: theme => theme('spacing'),
 			minWidth: theme => theme('spacing'),
 			minHeight: theme => theme('spacing'),
 			lineHeight: { 0: 0 },
