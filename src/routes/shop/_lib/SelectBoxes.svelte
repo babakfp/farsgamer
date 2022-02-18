@@ -17,13 +17,13 @@
 	]
 
 	const sortItems = [
-		{ label: 'محبوب ترین ها', value: 'most-popular' },
-		{ label: 'پرفروش ترین ها', value: 'best-seller' },
-		{ label: 'ارزان ترین ها', value: 'best-seller' },
-		{ label: 'گران ترین ها', value: 'best-seller' },
+		{ label: 'مـحـبـوب تـریـن', value: 'most-popular' },
+		{ label: 'پـرفـروش تـریـن', value: 'best-seller' },
+		{ label: 'ارزان تـریـن', 		value: 'cheapest' },
+		{ label: 'گـران تـریـن', 		value: 'most-expensive' },
 	]
-	
-	const groupBy = (item) => item.group
+
+	const groupBy = item => item.group
 </script>
 
 <div class="grid gap-4 3xs:flex">
