@@ -5,7 +5,9 @@
 </script>
 
 <div class="relative p-4 pb-3 bg-white rounded text-sm">
-	<p class="p-4 line-clamp-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.<p>
+	<div class="p-2 leading-6">
+		لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+	</div>
 	
 	{#if showResponseForm}
 		<div class="mt-2">
@@ -13,7 +15,7 @@
 		</div>
 	{/if}
 
-	<hr class="border-gray-100 -mx-4 mt-4 pt-3 ">
+	<hr class="border-gray-100 border-dashed -mx-4 mt-2 pt-3">
 
 	<div class="flex items-center justify-between">
 		<span>علیرضا خانی</span>
