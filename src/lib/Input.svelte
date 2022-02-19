@@ -1,6 +1,6 @@
 <script>
 	let className = ''
-	export {className as class}
+	export { className as class }
 
 	export let name = null
 	export let autocomplete = null
@@ -12,7 +12,7 @@
 
 	export let value = ''
 
-	let isValid = true
+	let isError = false
 	let errorText = ''
 
 	const handleInput = e => {
@@ -21,17 +21,17 @@
 		if ( e.target.type === 'number' || e.target.type === 'tel' ) {
 			if ( value.match(/\D/g) ) {
 				value = e.target.value.replace(/\D/g, '')
-				isValid = false
+				isError = true
 				errorText = 'فقط عدد مجاز است'
 			} else {
-				isValid = true
+				isError = false
 				errorText = ''
 			}
 		}
 	}
 </script>
 
-<div class:is-error={!isValid} class="w-full">
+<div class:is-error={isError} class="w-full">
 	<label class={labelClass} for={name}>{label}</label>
 	<input
 		class="input {className}"
@@ -39,7 +39,7 @@
 		on:input={handleInput} on:change={handleInput}
 	/>
 
-	{#if !isValid}
+	{#if isError}
 		<p class="mt-1 text-xs duration-300 ease-in-out">{errorText}</p>
 	{/if}
 </div>
