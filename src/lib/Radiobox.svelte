@@ -1,16 +1,12 @@
 <script>
+	import {convertToSlug} from '$utils/convert-to-slug.js'
+	
 	let className = ''
 	export { className as class }
 	
 	export let name
 	export let title
 	export let value = convertToSlug(title)
-
-	function convertToSlug(text) {
-		return text.toLowerCase()
-			.replace(/ /g, '-')
-			.replace(/[^\w-]+/g, '');
-	}
 </script>
 
 <div class="flex {className}">
