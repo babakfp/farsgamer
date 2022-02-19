@@ -12,7 +12,7 @@
 <div class="flex {className}">
 	<label class="inline-flex items-center justify-start gap-2 mb-0">
 		<input
-			class="relative inline-block w-5 min-w-5 h-5 min-h-5 border-2 border-gray-200 rounded-full duration-200 ease-in-out cursor-pointer appearance-none"
+			class="relative inline-block w-5 min-w-5 h-5 min-h-5 border-2 border-gray-200 rounded-full duration-200 ease-in-out cursor-pointer appearance-none hover:border-gray-300"
 			type="radio" {name} {value}
 		/>
 		<span class="text-sm">{title}</span>

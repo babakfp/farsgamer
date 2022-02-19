@@ -8,7 +8,7 @@
 <div class="flex {className}">
 	<label class="inline-flex items-center justify-start gap-2 mb-0">
 		<input
-			class="relative inline-block w-6 h-6 border-2 border-gray-200 rounded-sm duration-200 ease-in-out cursor-pointer appearance-none"
+			class="relative inline-block w-6 h-6 border-2 border-gray-200 rounded-sm duration-200 ease-in-out cursor-pointer appearance-none hover:border-gray-300"
 			type="checkbox" bind:checked {name}
 		/>
 		<span class="text-sm"><slot /></span>

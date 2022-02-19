@@ -7,7 +7,7 @@
 <form class="grid gap-8 mt-4 p-6 bg-white rounded text-sm xl:mt-8">
 
   <div>
-    <label class="font-bold mb-4">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
+    <label class="font-bold mb-4" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
     <div class="flex flex-wrap gap-4 lg:flex lg:justify-start">
 			<Radiobox name="category" title="Playstation" />
 			<Radiobox name="category" title="EpicGames" />
