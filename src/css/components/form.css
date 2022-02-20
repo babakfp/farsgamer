@@ -1,7 +1,7 @@
 @layer components {
 
 	input {
-		font-family: "Dana", "Montserrat";
+		@apply font-dana;
 	}
 
 	.input {
@@ -24,7 +24,7 @@
 		@apply block mb-2 text-right cursor-pointer;
 	}
 
-	.field-description {
+	.input-description {
 		@apply text-xs mt-1 leading-5;
 	}
 

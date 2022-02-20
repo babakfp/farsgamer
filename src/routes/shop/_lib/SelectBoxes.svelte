@@ -61,7 +61,7 @@
 
 		--multiItemBG: theme('colors.gray.100');
 		--multiItemActiveBG: theme('colors.gray.100');
-		--multiItemActiveColor: theme('colors.body-text');
+		--multiItemActiveColor: theme('colors.gray.700');
 
 		--multiItemMargin: 5px 0 0 5px;
 		--multiSelectPadding: 0 .5rem 0 2rem; */

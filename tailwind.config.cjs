@@ -1,12 +1,28 @@
 const colors = require('tailwindcss/colors')
-const plugin = require('tailwindcss/plugin')
-const dirPlugin = require('./src/utils/tailwind-plugins/dir.cjs')
-const overflowPlugin = require('./src/utils/tailwind-plugins/overflow.cjs')
+const dirUtilities = require('./src/utils/tailwind-utilities/dir.cjs')
+const overflowUtilities = require('./src/utils/tailwind-utilities/overflow.cjs')
 
-const config = {
+module.exports = {
   content: ['./src/**/*.{html,svelte}'],
 	theme: {
 		extend: {
+			maxWidth: theme => theme('spacing'),
+			minWidth: theme => theme('spacing'),
+			minHeight: theme => theme('spacing'),
+			maxHeight: theme => theme('spacing'),
+			colors: {
+				gray: colors.gray,
+				brand: {
+					DEFAULT: '#7666FF',
+					deep: '#614FFF',
+				},
+				red: {
+					DEFAULT: '#FF3838',
+				},
+				yellow: {
+					DEFAULT: '#FFBC00'
+				},
+			},
 			spacing: {
 				16: '4rem',
 				18: '4.5rem',
@@ -17,55 +33,16 @@ const config = {
 				88: '22rem',
 				input: '3rem',
 			},
-			colors: {
-				'body-bg': colors.gray['100'],
-				'body-text': colors.gray['700'],
-				gray: colors.gray,
-				brand: {
-					DEFAULT: '#7666FF',
-					deep: '#614FFF',
-				},
-				red: {
-					DEFAULT: '#FF3838',
-				},
-				pink: '#FCBCBC',
-				yellow: {
-					DEFAULT: '#FFBC00'
-				},
-			},
-			maxWidth: theme => theme('spacing'),
-			minWidth: theme => theme('spacing'),
-			minHeight: theme => theme('spacing'),
-			lineHeight: { 0: 0 },
-			zIndex: {
+			zIndex: { 
 				1: '1',
 				2: '2',
 				3: '3',
 				4: '4',
 				5: '5',
-				21: '21',
-			},
-			fontSize: {
-				'2xs': ['0.625rem', { lineHeight: '1' }],
-			},
-			borderWidth: {
-				3: '3px',
-				12: '12px',
-			},
-			cursor: { grab: 'grab' },
-			outline: {
-				gray: ['2px dotted ' + colors.gray['500'], '2px'],
-				dark: ['2px dotted ' + colors.gray['400'], '2px'],
-			},
-			borderRadius: {
-				DEFAULT: '.75rem',
-				sm: '8px',
-			},
-			letterSpacing: {
-				1: '.25em',
-				2: '.5em',
-				3: '.75em',
-				4: '1em',
+				6: '6',
+				7: '7',
+				8: '8',
+				9: '9',
 			},
 			scale: {
 				flip: '-1',
@@ -76,7 +53,34 @@ const config = {
 			},
 			ringWidth: {
         3: '3px',
-      }
+      },
+			borderRadius: {
+				DEFAULT: '12px',
+				sm: '8px',
+			},
+			borderWidth: {
+				3: '3px',
+				12: '12px',
+			},
+			outline: {
+				gray: ['2px dotted ' + colors.gray['500'], '2px'],
+				dark: ['2px dotted ' + colors.gray['400'], '2px'],
+			},
+			fontSize: {
+				'2xs': ['0.625rem', { lineHeight: '1' }],
+			},
+			lineHeight: {
+				0: '0',
+			},
+			letterSpacing: {
+				1: '.25em',
+				2: '.5em',
+				3: '.75em',
+				4: '1em',
+			},
+			cursor: {
+				grab: 'grab',
+			},
 		},
 		screens: {
 			'4xs': '375px',
@@ -106,9 +110,7 @@ const config = {
   },
   plugins: [
 		require('@tailwindcss/line-clamp'),
-		dirPlugin,
-		overflowPlugin,
+		dirUtilities,
+		overflowUtilities,
 	],
 }
-
-module.exports = config

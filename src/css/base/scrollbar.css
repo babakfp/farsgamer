@@ -6,30 +6,15 @@
 
 	.scrollbar {
 		overflow: auto;
+		overflow: overlay;
 	}
 	.scrollbar-x {
-		overflow-x: auto;
+		overflow-x:auto;
+		overflow-x: overlay;
 	}
 	.scrollbar-y {
-		overflow-y: auto;
-	}
-	.selectContainer .listContainer {
-		overflow: auto !important;
-	}
-
-	@supports (overflow: overlay) {
-		.scrollbar {
-			overflow: overlay;
-		}
-		.scrollbar-x {
-			overflow-x: overlay;
-		}
-		.scrollbar-y {
-			overflow-y: overlay;
-		}
-		.selectContainer .listContainer {
-			overflow: overlay !important;
-		}
+		overflow-y:auto;
+		overflow-y: overlay;
 	}
 
 	.scrollbar::-webkit-scrollbar {
@@ -40,7 +25,7 @@
 	}
 
 	::-webkit-scrollbar-thumb {
-		@apply rounded-full bg-gray-300 border-2 border-solid border-transparent bg-clip-padding;
+		@apply rounded-full bg-gray-300 bg-clip-padding;
 		border: 2px solid transparent;
 	}
 
@@ -51,21 +36,18 @@
 		@apply bg-gray-400 hover:bg-brand;
 	}
 
-	.scrollbar--y-sm::-webkit-scrollbar-thumb,
-	.selectContainer .listContainer::-webkit-scrollbar-thumb {
-		@apply border-t-8 border-b-8;
-	}
-
-	.scrollbar--y-lg::-webkit-scrollbar-thumb {
-		@apply border-t-12 border-b-12;
-	}
-
 	.scrollbar--x-sm::-webkit-scrollbar-thumb {
 		@apply border-r-8 border-l-8;
+	}
+	.scrollbar--y-sm::-webkit-scrollbar-thumb {
+		@apply border-t-8 border-b-8;
 	}
 
 	.scrollbar--x-lg::-webkit-scrollbar-thumb {
 		@apply border-r-12 border-l-12;
+	}
+	.scrollbar--y-lg::-webkit-scrollbar-thumb {
+		@apply border-t-12 border-b-12;
 	}
 
 }
