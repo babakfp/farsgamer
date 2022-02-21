@@ -101,9 +101,9 @@ module.exports = {
 			montserrat: 'Montserrat',
 		},
 		boxShadow: {
-			sm: '0 0 10px 0 rgba(0, 0, 0, 2%)',
-			md: '0 0 20px 0 rgba(0, 0, 0, 2%)',
-			lg: '0 0 20px 0 rgba(0, 0, 0, 5%)',
+			sm: '0 0 .5rem rgba(15, 23, 42, .02)',
+			md: '0 0 1.25rem rgba(15, 23, 42, .04)',
+			lg: '0 0 1.5rem rgba(15, 23, 42, .08)',
 			none: 'none',
 		},
   },

@@ -23,7 +23,7 @@
 	}, 1000)
 </script>
 
-<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:shadow-gray-200 hover:scale-105" href="/shop/1">
+<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:scale-105" href="/shop/1">
 
 	<div class="relative rounded overflow-hidden">
 		<img src="/img/products/product-thumb (1).png" alt>
