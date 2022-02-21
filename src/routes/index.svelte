@@ -6,6 +6,7 @@
 	import SpecialDiscounts from '$lib/home/SpecialDiscounts.svelte'
 	import ContentSection from '$lib/ContentSection.svelte'
 	import NewPosts from '$lib/home/NewPosts.svelte'
+	import ImgShadowSelf from '$lib/ImgShadowSelf.svelte'
 </script>
 
 <svelte:head>
@@ -34,12 +35,8 @@
 	</a>
 
 	<div class="flex justify-center gap-4">
-		<a class="group flex" href="javascript:">
-			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/img/home/social-media-telegram.png" alt="فارسگیمر در تلگرام">
-		</a>
-		<a class="group flex" href="javascript:">
-			<img class="w-full max-w-64 rounded transition duration-200 ease-in-out group-hover:shadow-lg" src="/img/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام">
-		</a>
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-telegram.png" alt="فارسگیمر در تلگرام" href="javascript:" />
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام" href="javascript:" />
 	</div>
 
 	<NewPosts />
