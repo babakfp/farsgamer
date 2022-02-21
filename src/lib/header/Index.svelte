@@ -1,6 +1,6 @@
 <script>
 	import { isLoggedIn } from '$store/auth.js'
-	import Burger from './Burger.svelte'
+	import OpenMobileMenu from './OpenMobileMenu.svelte'
 	import Logo from './Logo.svelte'
 	import Search from './Search.svelte'
 	import PhoneNumbers from './PhoneNumbers.svelte'
@@ -12,7 +12,7 @@
   <div class="px-4 mx-auto w-full flex items-center justify-between gap-4 h-full lg:gap-0">
     
 		<div id="header__right-side" class="flex items-center lg:w-full lg:h-full">
-      <Burger />
+      <OpenMobileMenu />
       <Logo />
 			<Search />
     </div>
