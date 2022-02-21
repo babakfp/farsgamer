@@ -2,6 +2,7 @@
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
 	import ContentSection from '$lib/ContentSection.svelte'
+	import ImgShadowSelf from '$lib/ImgShadowSelf.svelte'
 
 	const images = [
 		{ src: '/img/gift-card/play-station.png' },
@@ -34,10 +35,7 @@
 	>
 		{#each images as img}
 			<SwiperSlide>
-				<a class="group relative block duration-200 ease-in-out hover:scale-105" href={img.href || 'javascript:'}>
-					<img class="absolute bottom-0 px-8 blur-md rounded duration-200 ease-in-out opacity-0 group-hover:opacity-80 group-hover:-bottom-2" src={img.src} alt />
-					<img class="relative rounded" src={img.src} alt />
-				</a>
+				<ImgShadowSelf src={img.src} href={img.href || 'javascript:'} />
 			</SwiperSlide>
 		{/each}
 	</Swiper>
