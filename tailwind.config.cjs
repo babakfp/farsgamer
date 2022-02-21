@@ -11,7 +11,6 @@ module.exports = {
 			minHeight: theme => theme('spacing'),
 			maxHeight: theme => theme('spacing'),
 			colors: {
-				gray: colors.gray,
 				brand: {
 					DEFAULT: '#7666FF',
 					deep: '#614FFF',
