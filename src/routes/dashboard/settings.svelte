@@ -1,4 +1,4 @@
-<form class="grid gap-8 md:grid-cols-2 lg:p-4" action="/" method="post">
+<form class="grid gap-6 p-4 sm:grid-cols-2 2md:grid-cols-1" action="/" method="post">
   <div>
     <label for="firstname">نام</label>
     <input class="input" type="text" name="firstname" id="firstname" placeholder="نام">
@@ -30,6 +30,6 @@
   </div>
   
   <div>
-    <button class="btn btn--brand btn--submit" type="submit">ثبت اطلاعات</button>
+    <button class="btn btn--brand btn--submit px-8" type="submit">ثبت اطلاعات</button>
   </div>
 </form>
