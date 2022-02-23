@@ -9,10 +9,10 @@
 
 <li>
 	<a class="
-		relative flex items-center gap-3 py-3 pl-6 pr-5
-		{ ( $page.url.pathname === href ) === false ? !useInDashboard ? 'hover:bg-gray-100' : 'hover:text-brand' : '' }
-		{ useInDashboard && ( $page.url.pathname === href ) && 'text-brand' }
-		{ ( $page.url.pathname === href ) && 'cursor-default' }
+		relative flex items-center gap-3 py-3 pl-6 pr-5 hover:text-brand
+		{ !useInDashboard ? 'hover:bg-gray-50' : '' }
+		{ (href === $page.url.pathname) ? 'text-brand' : '' }
+		{ (href === $page.url.pathname) ? 'cursor-default' : '' }
 		"
 		{href}
 	>
