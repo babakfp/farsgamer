@@ -35,8 +35,8 @@
 	</a>
 
 	<div class="flex justify-center gap-4">
-		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-telegram.png" alt="فارسگیمر در تلگرام" href="javascript:" />
-		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام" href="javascript:" />
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-telegram.png" alt="فارسگیمر در تلگرام" />
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام" />
 	</div>
 
 	<NewPosts />

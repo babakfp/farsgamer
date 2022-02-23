@@ -35,7 +35,7 @@
 	>
 		{#each images as img}
 			<SwiperSlide>
-				<ImgShadowSelf src={img.src} href={img.href || 'javascript:'} />
+				<ImgShadowSelf src={img.src} />
 			</SwiperSlide>
 		{/each}
 	</Swiper>
