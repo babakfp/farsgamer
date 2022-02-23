@@ -5,7 +5,7 @@
 <ol class="flex gap-1">
 	{#each [...Array(5).keys()] as i}
 		<li>
-			<label class="group relative flex items-center justify-center w-8 h-8 {value >= i + 1 ? 'bg-yellow bg-opacity-5' : 'bg-gray-50'} rounded">
+			<label class="group relative flex items-center justify-center w-8 h-8 mb-0 {value >= i + 1 ? 'bg-yellow bg-opacity-5' : 'bg-gray-50'} rounded">
 				<input class="hidden" type="radio"name="rating" bind:group={value} value={i + 1}>
 				<i class="{value >= i + 1 ? 'fi-sr-star text-yellow' : 'fi-rr-star text-gray-500' }"></i>
 
