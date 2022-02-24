@@ -15,7 +15,7 @@
 
 <OutClick on:outclick={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} excludeByQuerySelector={['.js-burger-toggle-btn']}>
 	<sidebar on:click|self={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} id="sidemenu" class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-50 inset-0 top-16 bg-gray-900 bg-opacity-60 backdrop-blur-sm lg:top-20">
-		<div id="sidemenu__wrapper" class="translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out">
+		<div id="sidemenu__wrapper" class="max-w-64 bg-white w-full h-full translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out">
 			<Logo />
 
 			<div id="sidemenu__scrollable-content" class="scrollbar max-h-full pb-6">
@@ -53,9 +53,6 @@
 		@apply lg:w-56 lg:ml-auto lg:translate-x-0 lg:bg-transparent 2xl:w-64;
 	}
 
-	#sidemenu__wrapper {
-		@apply max-w-64 bg-white w-full h-full;
-	}
 	:global(body.main-header) #sidemenu__wrapper {
 		@apply lg:translate-x-0;
 	}
