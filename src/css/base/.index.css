@@ -50,4 +50,8 @@
 		@apply w-4 h-4 inline-block;
 	}
 
+	img {
+		@apply w-full;
+	}
+
 }
