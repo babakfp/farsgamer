@@ -52,14 +52,7 @@
 	:global(body.main-header) #sidemenu {
 		@apply lg:w-56 lg:ml-auto lg:translate-x-0 lg:bg-transparent 2xl:w-64;
 	}
-	#sidemenu {
-		height: calc(100vh - 4rem);
-	}
-	@media only screen and (min-width: 1024px) {
-		#sidemenu {
-			height: calc(100vh - 5rem);
-		}
-	}
+
 	#sidemenu__wrapper {
 		@apply max-w-64 bg-white w-full h-full;
 	}
