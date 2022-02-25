@@ -31,7 +31,7 @@
   }
   
   body {
-		@apply bg-white font-normal;
+		@apply bg-gray-100 text-gray-700 font-normal;
   }
   
   main {

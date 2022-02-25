@@ -1,9 +1,9 @@
 <script>
 	import { page } from '$app/stores'
 	import { navigating } from "$app/stores"
+	import OutClick from 'svelte-outclick'
 	import { isOpen, close, dashboardClose } from '$store/mobile-menu.js'
 	import streams from '$store/streams.js'
-	import OutClick from 'svelte-outclick'
 	import Logo from './Logo.svelte'
 	import NavItem from './NavItem.svelte'
 	import StreamCard from './StreamCard.svelte'
