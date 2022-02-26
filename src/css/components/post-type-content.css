@@ -2,117 +2,65 @@
 
 	.posttype-content {
 		@apply mt-8 rounded overflow-hidden;
-	}
 
-	/* Tabs */
+		&__tabs {
+			@apply flex items-center scrollbar-x -mb-4;
+		}
 
-	.posttype-content__tabs {
-		@apply flex items-center scrollbar-x -mb-4;
-	}
+		&__tab-link {
+			@apply px-12 pt-4 pb-8 flex items-center gap-2 text-sm font-bold rounded-t duration-200 ease-in-out hover:text-brand;
+		}
 
-	.posttype-content__tab-link {
-		@apply px-12 pt-4 pb-8 flex items-center gap-2 text-sm font-bold rounded-t duration-200 ease-in-out hover:text-brand;
-	}
+		&__tab.active &__tab-link {
+			@apply bg-white text-brand;
+		}
 
-	.posttype-content__tab.active .posttype-content__tab-link {
-		@apply bg-white text-brand;
-	}
+		/*  */
 
-	/* Tab Contents */
-
-	.posttype-content__description img,
-	.posttype-content__description:not(#blah) img {
-		height: auto !important;
-	}
-
-	.posttype-content__description p {
-		@apply indent-8;
-	}
-
-	.posttype-content__description,
-	.posttype-content__comments,
-	.posttype-content__question-and-answer {
-		@apply p-4 lg:p-10 bg-white rounded-b-2xl;
-	}
-
-	.posttype-content__description {
-		@apply p-6;
-	}
-
-	.posttype-content__comments,
-	.posttype-content__question-and-answer {
-		@apply grid gap-4;
+		&__description,
+		&__comments,
+		&__question-and-answer {
+			@apply p-4 lg:p-10 bg-white rounded-b-2xl;
+		}
+	
+		&__comments,
+		&__question-and-answer {
+			@apply grid gap-4;
+		}
 	}
 
 
 	/* Description */
 
 	.posttype-content__description {
-		@apply leading-7;
-	}
+		@apply p-6 leading-7;
 
-	.posttype-content__description h2,
-	.posttype-content__description h3,
-	.posttype-content__description h4,
-	.posttype-content__description h5,
-	.posttype-content__description h6 {
-		@apply font-bold;
-	}
+		p { @apply indent-8 }
+		p:not(:last-child) { @apply mb-4 }
+	
+		h2, h3, h4, h5, h6 { @apply font-bold }
+		h6 { @apply text-xs }
+		h5 { @apply text-xs }
+		h4 { @apply text-base }
+		h3 { @apply text-lg }
+		h2 { @apply text-xl }
+	
+		img { @apply mx-auto rounded }
+	
+		img + h2, img + h3, img + h4, img + h5, img + h6 { @apply mt-8 }
+	
+		h2 + p, h3 + p, h4 + p, h5 + p, h6 + p,
+		h2 + img, h3 + img, h4 + img, h5 + img, h6 + img,
+		img + p {
+			@apply mt-4;
+		}
 
-	.posttype-content__description img {
-		@apply mx-auto;
-	}
-
-	.posttype-content__description h6 {
-		@apply text-xs;
-	}
-	.posttype-content__description h5 {
-		@apply text-xs;
-	}
-	.posttype-content__description h4 {
-		@apply text-base;
-	}
-	.posttype-content__description h3 {
-		@apply text-lg;
-	}
-	.posttype-content__description h2 {
-		@apply text-xl;
-	}
-
-	.posttype-content__description img {
-		@apply rounded;
-	}
-
-	.posttype-content__description img + h2,
-	.posttype-content__description img + h3,
-	.posttype-content__description img + h4,
-	.posttype-content__description img + h5,
-	.posttype-content__description img + h6 {
-		@apply mt-8;
-	}
-
-	.posttype-content__description h2 + p,
-	.posttype-content__description h3 + p,
-	.posttype-content__description h4 + p,
-	.posttype-content__description h5 + p,
-	.posttype-content__description h6 + p,
-
-	.posttype-content__description h2 + img,
-	.posttype-content__description h3 + img,
-	.posttype-content__description h4 + img,
-	.posttype-content__description h5 + img,
-	.posttype-content__description h6 + img,
-
-	.posttype-content__description img + p {
-		@apply mt-4;
-	}
-
-	.posttype-content__description p:not(:last-child) {
-		@apply mb-4;
-	}
-
-	.posttype-content__description a {
-		@apply text-brand hover:text-brand-deep;
+		img,
+		&:not(#blah) img {
+			@apply !h-auto;
+		}
+	
+		a { @apply text-brand hover:text-brand-deep }
 	}
 
 }

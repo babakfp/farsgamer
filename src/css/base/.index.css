@@ -23,7 +23,7 @@
 	}
 
   html, body {
-    font-family: "DanaFN", "Montserrat" !important;
+		@apply font-danafn;
   }
   
   html {
@@ -32,7 +32,15 @@
   
   body {
 		@apply bg-gray-100 text-gray-700 font-normal;
-  }
+
+		&::-webkit-scrollbar {
+			@apply !w-2 !h-2;
+		
+			&-thumb {
+				@apply bg-gray-400 hover:bg-brand;
+			}
+		}
+	}
   
   main {
     @apply min-h-screen overflow-hidden;

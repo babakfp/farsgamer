@@ -5,7 +5,7 @@
 	}
 
 	.input {
-		@apply w-full px-4 bg-white rounded border-2 border-gray-200 duration-200 ease-in-out placeholder-gray-500 hover:border-gray-300;
+		@apply w-full px-4 bg-white rounded border-2 border-gray-200 duration-200 ease-in-out placeholder:text-gray-500 hover:border-gray-300;
 	}
 
 	.input:not(textarea) {
@@ -29,7 +29,7 @@
 	}
 
 	.radiobox input {
-		cursor: pointer;
+		@apply cursor-pointer;
 	}
 
 	/* Chrome, Safari, Edge, Opera */
