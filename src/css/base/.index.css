@@ -47,7 +47,7 @@
   }
 	
   i {
-		@apply flex items-center justify-center text-inherit text-base leading-0;
+		@apply flex items-center justify-center text-inherit text-base !leading-0;
   }
 
 	[type=search] {
@@ -59,7 +59,7 @@
 	}
 
 	img {
-		@apply w-full;
+		@apply w-full max-w-full;
 	}
 
 }
