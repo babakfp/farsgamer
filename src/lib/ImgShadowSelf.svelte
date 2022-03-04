@@ -1,9 +1,9 @@
 <script>
 	export let src
-	export let alt
+	export let alt = null
 	export let href = 'javascript:'
 
-	let className
+	let className = null
 	export { className as class }
 </script>
 

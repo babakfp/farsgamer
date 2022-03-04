@@ -2,7 +2,7 @@
 	export let placeholder
 	export let btnText
 	
-	let className = ''
+	let className = null
 	export { className as class }
 
 	let value = ''

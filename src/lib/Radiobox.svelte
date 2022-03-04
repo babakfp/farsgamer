@@ -1,7 +1,7 @@
 <script>
 	import {convertToSlug} from '$utils/convert-to-slug.js'
 	
-	let className = ''
+	let className = null
 	export { className as class }
 	
 	export let name
