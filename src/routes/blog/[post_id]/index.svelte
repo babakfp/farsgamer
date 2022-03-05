@@ -5,11 +5,7 @@
 	import CommentForm from '$lib/posttype/CommentForm.svelte'
 </script>
 
-<Breadcrumb items={[
-	{ title: 'خانه', href: '/' },
-	{ title: 'محصولات', href: '/shop' },
-	{ title: 'پک فورست لجند | Forst Legends pack' },
-]} />
+<Breadcrumb items={[['خانه', '/'], ['محصولات', '/shop'], ['پک فورست لجند | Forst Legends pack']]} />
 
 <div class="grid gap-4 mt-4 p-4 pb-6 bg-white rounded-t xs:flex xs:items-center xs:pb-4">
 	<img class="w-full rounded xs:max-w-52" src="/img/post.png" alt>
