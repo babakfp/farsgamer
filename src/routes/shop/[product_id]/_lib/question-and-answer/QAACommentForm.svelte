@@ -1,4 +1,4 @@
-<form class="comment__form mt-8">
+<form class="comment__form">
         
   <!-- Head -->
   <div class="comment__form-head">
@@ -16,7 +16,7 @@
     <textarea class="input w-full mt-4 h-auto resize-y" rows="4" placeholder="سوال خود را بپرسید"></textarea>
     
     <!-- Submit Button -->
-    <button class="comment__form-submit" type="submit">ارسال پرسش</button>
+    <button class="comment__form-submit btn btn--brand" type="submit">ارسال پرسش</button>
   </div>
 
 </form>

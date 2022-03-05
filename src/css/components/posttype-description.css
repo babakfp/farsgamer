@@ -1,0 +1,30 @@
+@layer components {
+	
+	.posttype-description {
+		@apply leading-7;
+
+		*:not(:last-child):not(li) { @apply mb-4 }
+
+		p { @apply indent-4 }
+
+		a { @apply break-words text-brand hover:underline }
+
+		h2, h3, h4, h5, h6 { @apply mt-8 font-bold }
+		h2 { @apply text-xl sm:text-2xl }
+		h3 { @apply text-lg sm:text-xl }
+		h4 { @apply text-base sm:text-lg }
+		h5 { @apply text-sm sm:text-base }
+		h6 { @apply text-xs sm:text-sm }
+
+		img, video { @apply mx-auto rounded }
+
+		ul { @apply list-disc }
+		ol { @apply list-decimal }
+		ul, ol { @apply list-inside;
+			ul, ol { @apply mr-5 }
+		}
+
+		hr { @apply opacity-25 }
+	}
+
+}

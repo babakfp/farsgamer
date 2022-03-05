@@ -1,11 +1,13 @@
 <script>
 	import { onMount } from 'svelte'
-	import Tabs from './Tabs.svelte'
 	import Description from '$lib/posttype/Description.svelte'
-	import Comment from '$lib/posttype/Comment.svelte'
+	import Comments from '$lib/posttype/Comments.svelte'
 	import CommentForm from '$lib/posttype/CommentForm.svelte'
 	import QAACommentWithReply from './question-and-answer/QAACommentWithReply.svelte'
 	import QAACommentForm from './question-and-answer/QAACommentForm.svelte'
+	import Taby from '$lib/Taby.svelte'
+	import TabyTab from '$lib/TabyTab.svelte'
+	import TabyBody from '$lib/TabyBody.svelte'
 
 	onMount(_=> {
 		const posttypeContent = document.querySelector('.posttype-content')
@@ -13,32 +15,32 @@
 	})
 </script>
 
-<section class="posttype-content">
-	<Tabs />
+<Taby class="mt-8">
+	<svelte:fragment slot="tab">
+		<TabyTab>توضیحات</TabyTab>
+		<TabyTab>
+			<span>نظرات</span>
+			<div class="text-sm font-normal"><span class="opacity-25">(</span>۹۸<span class="opacity-25">)</span></div>
+		</TabyTab>
+		<TabyTab>پرسش و پاسخ</TabyTab>
+	</svelte:fragment>
 
-	<div class="rounded overflow-hidden">
-		<div easytab-content>
-			<Description />
-		</div>
-
-		<div easytab-content>
-			<div class="posttype-content__comments">
-
-				<!-- No comments. -->
-
-				<Comment />
-				<CommentForm />
+	<svelte:fragment slot="body">
+		<TabyBody class="p-8">
+			<div class="max-w-3xl mx-auto">
+				<Description />
 			</div>
-		</div>
-
-		<div easytab-content>
-			<div class="posttype-content__question-and-answer">
-
-				<!-- No questions. -->
-
-				<QAACommentWithReply />
-				<QAACommentForm />
+		</TabyBody>
+		<TabyBody class="!p-0 !bg-transparent">
+			<Comments />
+		</TabyBody>
+		<TabyBody class="!p-0 !bg-transparent">
+			<div class="p-8 bg-white rounded">
+				<h3 class="mb-3 font-bold">ارسال پرسش جدید</h3>
+				<CommentForm isForQuestion={true} />
 			</div>
-		</div>
-	</div>
-</section>
+			<div class="py-4"><hr class="border-gray-200"></div>
+			<QAACommentWithReply />
+		</TabyBody>
+	</svelte:fragment>
+</Taby>

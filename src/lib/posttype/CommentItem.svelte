@@ -10,15 +10,15 @@
 	</div>
 	
 	{#if showResponseForm}
-		<div class="mt-2">
-			<CommentForm />
+		<div class="mt-2 pb-2">
+			<CommentForm useSmall={true} />
 		</div>
 	{/if}
 
 	<hr class="border-gray-100 border-dashed -mx-4 mt-2 pt-3">
 
 	<div class="flex items-center justify-between">
-		<span>علیرضا خانی</span>
+		<span class="text-gray-500">علیرضا خانی</span>
 		<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
 			{showResponseForm ? 'صرف' : 'ارسال'} نظر
 		</button>
