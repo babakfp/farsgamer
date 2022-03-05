@@ -21,7 +21,7 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
-		<TabyBody class="p-8">
+		<TabyBody class="p-8 lg:py-20">
 			<div class="max-w-3xl mx-auto">
 				<Description />
 			</div>
