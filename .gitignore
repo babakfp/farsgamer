@@ -2,12 +2,10 @@
 node_modules
 /build
 /.svelte-kit
+.vercel_build_output
 /package
 .env
 .env.*
 !.env.example
-
 pnpm-lock.yaml
 .pnpm-debug.log
-
-.vercel_build_output
