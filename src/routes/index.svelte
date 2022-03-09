@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>فارسگیمر - اولین مرجع رسمی فروش بازی های آنلاین</title>
+	<title>فارس گیمر - اولین مرجع رسمی فروش بازی های آنلاین</title>
 </svelte:head>
 
 <div class="space-y-8 lg:space-y-12">
@@ -35,8 +35,8 @@
 	</a>
 
 	<div class="flex justify-center gap-4">
-		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-telegram.png" alt="فارسگیمر در تلگرام" />
-		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-instagram.png" alt="فارسگیمر در اینستاگرام" />
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" />
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" />
 	</div>
 
 	<NewPosts />

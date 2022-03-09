@@ -25,7 +25,7 @@
 						<NavItem title="خانه" href="/" icon="fi-rr-home" />
 						<NavItem title="فروشگاه" href="/shop" icon="fi-rr-shop" />
 						<NavItem title="بلاگ" href="/blog" icon="fi-rr-document" />
-						<NavItem title="چرا فارسگیمر" href="/why-us" icon="fi-rr-diploma" />
+						<NavItem title="چرا فارس گیمر" href="/why-us" icon="fi-rr-diploma" />
 						<NavItem title="سوالات متداول" href="/faq" icon="fi-rr-interrogation" />
 						<NavItem title="تماس با ما" href="/contact" icon="fi-rr-headset" />
 						<NavItem title="قوانین و مقررات" href="/terms" icon="fi-rr-bank" />
