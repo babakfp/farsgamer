@@ -23,23 +23,16 @@
 
 	<ul class="mt-4 list-disc list-inside space-y-1 text-sm">
 		<li>
-			<span>منطقه فعال‌سازی</span> : 
+			<span>منطقه فعال‌سازی:</span>
 			<span>همه کشورها</span>
 		</li>
 		<li>
-			<span>زمان تحویل</span> : 
+			<span>زمان تحویل:</span>
 			<span><b>1</b> الی <b>5</b> ساعت کاری</span>
 		</li>
 		<li>
-			<span>پلتفورم</span> : 
-			<ul class="inline space-x-1 font-montserrat font-medium">
-				<li class="inline underline decoration-wavy decoration-gray-300">IOS</li>
-				<li class="inline underline decoration-wavy decoration-gray-300">Android</li>
-				<li class="inline underline decoration-wavy decoration-gray-300">Nintendo</li>
-				<li class="inline underline decoration-wavy decoration-gray-300">Xbox</li>
-				<li class="inline underline decoration-wavy decoration-gray-300">PS4</li>
-				<li class="inline underline decoration-wavy decoration-gray-300">PC</li>
-			</ul>
+			<span>پلتفورم:</span>
+			<span>IOS, Android, Nintendo, Xbox, PS4, PC</span>
 		</li>
 	</ul>
 
