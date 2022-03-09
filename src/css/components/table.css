@@ -1,7 +1,7 @@
 @layer components {
 
 	.table-wrapper {
-		@apply overflow-y-hidden scrollbar scrollbar--x-lg;
+		@apply overflow-y-hidden scrollbar scrollbar-x-spacing-lg;
 	}
 
 	table {

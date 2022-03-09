@@ -86,7 +86,8 @@
 	:global(.selectContainer .listContainer) {
 		@apply !top-12 !bottom-auto;
 	}
-	/* :global(.selectContainer .multiSelectItem_clear) {
+	/*
+	:global(.selectContainer .multiSelectItem_clear) {
 		@apply flex items-center justify-center cursor-pointer -ml-3.5 !top-auto !bg-transparent !rounded;
 	}
 	:global(.selectContainer .multiSelectItem_label) {
@@ -95,5 +96,5 @@
 	:global(.selectContainer .multiSelectItem) {
 		@apply inline-flex items-center !rounded;
 	}
-	    */
+	*/
 </style>
