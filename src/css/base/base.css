@@ -1,0 +1,56 @@
+@layer base {
+	
+  * {
+		@apply select-none !outline-none;
+		-webkit-user-drag: none;
+  }
+
+	a, button, input, textarea {
+		@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
+	}
+
+	[disabled],
+	[class*=disable],
+	[class*=disabled],
+	.pointer-events-none,
+	.selectContainer * {
+    @apply !outline-none focus-visible:!outline-none;
+	}
+
+  html, body {
+		@apply h-full font-danafn;
+  }
+  
+  html {
+		@apply text-base scroll-smooth; 
+  }
+  
+  body {
+		@apply bg-gray-100 text-gray-700 font-normal overflow-x-hidden;
+
+		&::-webkit-scrollbar {
+			@apply !w-2 !h-2;
+		
+			&-thumb {
+				@apply bg-gray-400 hover:bg-brand;
+			}
+		}
+	}
+
+	img {
+		@apply w-full max-w-full;
+	}
+	
+  i {
+		@apply flex items-center justify-center text-inherit text-base !leading-0;
+  }
+
+	svg {
+		@apply w-4 h-4 inline-block;
+	}
+
+	[type=search] {
+		@apply w-full;
+	}
+
+}
