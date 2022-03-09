@@ -10,3 +10,4 @@
 [ ] Change star rater buttons style
 [ ] Password field with toggle visibility
 [ ] Fix product page radio butons
+[ ] Stop swiper from being slided if page isn't fully loaded yet.
