@@ -30,7 +30,7 @@
 
 	<SpecialDiscounts />
 
-	<a class="flex" href="javascript:">
+	<a class="flex hover:opacity-90" href="javascript:">
 		<img class="rounded" src="/img/home/poster-full-width (1).png" alt>
 	</a>
 
@@ -42,21 +42,13 @@
 	<NewPosts />
 
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/img/home/poster-1-4-width (1).png" alt>
-		</a>
-		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/img/home/poster-1-4-width (2).png" alt>
-		</a>
-		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/img/home/poster-1-4-width (3).png" alt>
-		</a>
-		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/img/home/poster-1-4-width (4).png" alt>
-		</a>
+		<ImgShadowSelf src="/img/home/poster-1-4-width (1).png" />
+		<ImgShadowSelf src="/img/home/poster-1-4-width (2).png" />
+		<ImgShadowSelf src="/img/home/poster-1-4-width (3).png" />
+		<ImgShadowSelf src="/img/home/poster-1-4-width (4).png" />
 	</section>
 
-	<a class="flex" href="javascript:">
+	<a class="flex hover:opacity-90" href="javascript:">
 		<img class="rounded" src="/img/home/poster-full-width (2).png" alt>
 	</a>
 
