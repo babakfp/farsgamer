@@ -3,7 +3,7 @@
 </script>
 
 <div class="relative p-4 pb-3 bg-white rounded text-sm">
-	<div class="quote-icon absolute left-2 -top-2 opacity-40">
+	<div class="quote-icon absolute left-2 top-2 opacity-40">
 		<i class="icon-quote text-3xl"></i>
 	</div>
 
