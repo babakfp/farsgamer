@@ -8,7 +8,7 @@
 <svelte:head>
 	<title>چرا فارسگیمر</title>
 
-	<link rel="stylesheet" href="/lib/plyr/plyr.css" />
+	<link rel="stylesheet" href="/lib/plyr/plyr.css">
   <script src="/lib/plyr/plyr.polyfilled.js"></script>
 </svelte:head>
 
@@ -20,7 +20,7 @@
 
 	<div class="mt-4 pb-4">
 		<video class="w-full" id="why-us-player" playsinline controls data-poster="https://farsgamer.com/site/videos/why-us-poster.png">
-			<source src="https://farsgamer.com/site/videos/why-us-video.mp4" type="video/mp4" />
+			<source src="https://farsgamer.com/site/videos/why-us-video.mp4" type="video/mp4">
 		</video>
 	</div>
 	

@@ -36,7 +36,7 @@
 		{#each posters as poster}
 			<SwiperSlide>
 				<a href={poster.href || 'javascript:'}>
-					<img class="rounded" src={poster.imgSrc} alt />
+					<img class="rounded" src={poster.imgSrc} alt>
 				</a>
 			</SwiperSlide>
 		{/each}
