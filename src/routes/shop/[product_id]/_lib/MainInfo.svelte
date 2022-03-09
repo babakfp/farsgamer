@@ -2,7 +2,7 @@
 	import StarRating from '$lib/StarRating.svelte'
 </script>
 
-<div class="w-full mt-4 sm:mt-6 p-6 bg-white rounded md:order-1 md:mt-0">
+<div class="relative w-full mt-5 sm:mt-6 p-6 bg-white rounded md:order-1 md:mt-0">
 
 	<h1 class="font-bold">پک فورست لجند | Forst Legends pack</h1>
 
@@ -42,5 +42,8 @@
 		<li><p class="inline">لطفا قبل از ثبت سفارش, تایید دو مرحله‌ای اکانت خود را غیرفعال کنید.</p></li>
 		<li><p class="inline">لطفا قبل از خرید, توضیحات محصول را به درستی مطالعه کنید.</p></li>
 	</ul>
+
+	<div class="-z-1 absolute w-full h-full -bottom-1 -left-1 bg-yellow bg-opacity-10 rounded md:-bottom-2 md:-left-2 xl:-bottom-3 xl:-left-3"></div>
+	<div class="-z-1 absolute w-full h-full -top-1 -right-1 bg-yellow bg-opacity-10 rounded md:-top-2 md:-right-2 xl:-top-3 xl:-right-3"></div>
 
 </div>

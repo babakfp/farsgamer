@@ -4,7 +4,7 @@
 	import Radiobox from '$lib/Radiobox.svelte'
 </script>
 
-<form class="grid gap-8 mt-4 p-6 bg-white rounded text-sm xl:mt-8">
+<form class="grid gap-8 mt-5 p-6 bg-white rounded text-sm md:mt-8">
 
   <div>
     <label class="font-bold" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
