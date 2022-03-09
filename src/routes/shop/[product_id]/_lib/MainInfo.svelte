@@ -15,10 +15,12 @@
 		</span>
 	</div>
 
-	<div class="flex items-center gap-2 mt-4 px-4 py-3 text-yellow-700 text-sm bg-yellow bg-opacity-10 rounded">
-		<img class="w-8" src="/img/gem.png" alt />
-		<b class="font-montserrat">300</b>
-		<span>امتیاز</span>
+	<div class="inline-flex items-center gap-2 mt-4 px-4 py-2 text-yellow-700 text-sm bg-yellow bg-opacity-10 rounded">
+		<img class="w-7" src="/img/gem.png" alt>
+		<div>
+			<b class="font-montserrat">300</b>
+			<span class="font-medium">امتیاز</span>
+		</div>
 	</div>
 
 	<ul class="mt-4 list-disc list-inside space-y-1 text-sm">
