@@ -1,12 +1,12 @@
 <script>
-	import {convertToSlug} from '$utils/convert-to-slug.js'
+	import { makeSlug } from '$utils/make-slug.js'
 	
 	let className = null
 	export { className as class }
 	
 	export let name
 	export let title
-	export let value = convertToSlug(title)
+	export let value = makeSlug(title)
 </script>
 
 <div class="flex {className}">
