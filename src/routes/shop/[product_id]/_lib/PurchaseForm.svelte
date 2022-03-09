@@ -44,7 +44,7 @@
       <!-- No discount -->
       <!-- <div class="flex items-center gap-1">
         <span class="font-bold text-2xl tracking-tighter">۱۵۰,000</span>
-        <span>تــمــنـــ</span>
+        <span>تـمـنـ</span>
       </div> -->
       <!-- With discount -->
       <div class="flex gap-1.5 justify-center">
@@ -57,7 +57,7 @@
     
         <div class="grid gap-1">
           <!-- Price currency -->
-          <p class="text-sm">تــمــنـــ</p>
+          <p class="text-sm">تـمـنـ</p>
           <!-- Discount precedence -->
           <div class="bg-red text-white rounded-full py-0.5 px-2 text-xs flex items-center">۲۰%</div>
         </div>

@@ -57,7 +57,7 @@
 					<td>
 						<div class="flex items-center gap-1 whitespace-nowrap">
 							<p class="text-lg font-bold">100,000</p>
-							<p class="text-sm">تــمــنـــ</p>
+							<p class="text-sm">تـمـنـ</p>
 						</div>
 					</td>
 
