@@ -98,7 +98,7 @@ module.exports = {
 		fontFamily: {
 			dana: 'Dana',
 			danafn: 'DanaFN',
-			montserrat: 'Montserrat',
+			montserrat: ['Montserrat', 'Dana'],
 		},
 		boxShadow: {
 			sm: '0 0 .5rem rgba(15, 23, 42, .02)',
