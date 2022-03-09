@@ -37,6 +37,10 @@
 		}
 	}
 
+	a {
+		@apply duration-150;
+	}
+
 	img {
 		@apply w-full max-w-full;
 	}
