@@ -1,5 +1,5 @@
 const colors = require('tailwindcss/colors')
-const dirUtilities = require('./src/utils/tailwind-utilities/dir.cjs')
+const directionUtilities = require('./src/utils/tailwind-utilities/direction.cjs')
 const overflowUtilities = require('./src/utils/tailwind-utilities/overflow.cjs')
 
 module.exports = {
@@ -109,7 +109,7 @@ module.exports = {
   },
   plugins: [
 		require('@tailwindcss/line-clamp'),
-		dirUtilities,
+		directionUtilities,
 		overflowUtilities,
 	],
 }
