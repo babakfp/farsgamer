@@ -41,6 +41,10 @@
 		@apply duration-150;
 	}
 
+	b, strong {
+		@apply font-semibold;
+	}
+
 	img {
 		@apply w-full max-w-full;
 	}
