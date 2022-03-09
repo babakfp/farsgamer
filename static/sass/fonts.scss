@@ -8,6 +8,7 @@
 		weight: ( Regular 400, Bold 700, ),
 		url: "/fonts/Dana/Dana-WEIGHT.SUFFIX",
 		suffix: woff2 woff,
+		font-display: block,
 	));
 
 	@include font-face((
@@ -16,6 +17,7 @@
 		weight: ( Regular 400, Bold 700, ),
 		url: "/fonts/Dana/FaNum/DanaFaNum-WEIGHT.SUFFIX",
 		suffix: woff2 woff,
+		font-display: block,
 	));
 
 	@include font-face((
@@ -24,6 +26,7 @@
 		weight: ( Thin 100, ExtraLight 200, Light 300, Regular 400, Medium 500, SemiBold 600, Bold 700, ExtraBold 800, "Black" 900, ),
 		url: "/fonts/Montserrat/Montserrat-WEIGHT.SUFFIX",
 		suffix: ttf,
-  ));
+		font-display: swap,
+	));
 
 }
