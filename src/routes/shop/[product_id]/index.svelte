@@ -1,5 +1,4 @@
 <script>
-	import Poster from './_lib/Poster.svelte'
 	import GalleryMainThumbs from './_lib/GalleryMainThumbs.svelte'
 	import GallerySideThumbs from './_lib/GallerySideThumbs.svelte'
 	import MainInfo from './_lib/MainInfo.svelte'
@@ -13,8 +12,6 @@
 <svelte:head>
 	<title>عنوان محصول</title>
 </svelte:head>
-
-<Poster />
 
 <section class="md:flex md:items-center">
 	<div class="mx-auto md:order-2 md:p-6 2xl:p-8 3xl:w-full">
