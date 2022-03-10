@@ -25,7 +25,7 @@
 				on:click={searchToggle}
 				class="js-header-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری"
 			>
-        <i class="fi-rr-search xl:text-xl xs:text-lg"></i>
+        <i class="fi-rr-search xs:text-lg xl:text-xl"></i>
       </button>
 
 			<Announcements />
@@ -40,7 +40,7 @@
 
       <!-- Go to dashboard page -->
       <a class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" href={$isLoggedIn ? '/dashboard' : '/login'} title="مشاهده حساب کاربری">
-        <i class="fi-rr-user xl:text-xl xs:text-lg"></i>
+        <i class="fi-rr-user xs:text-lg xl:text-xl"></i>
       </a>
     </div>
 
