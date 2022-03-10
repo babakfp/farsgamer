@@ -1,5 +1,5 @@
 <script>
-	import BtnInInput from '$lib/BtnInInput.svelte'
+	import FieldNumberWithBtnInside from '$lib/FieldNumberWithBtnInside.svelte'
 	let wallet = true
 </script>
 
@@ -16,7 +16,7 @@
 	</div>
 
 	<form class="col-span-full w-full xl:max-w-88">
-		<BtnInInput btnText="شارژ کیف پول" placeholder="مبلغ مورد نظر خود را وارد کنید" />
+		<FieldNumberWithBtnInside btnText="شارژ کیف پول" placeholder="مبلغ مورد نظر خود را وارد کنید" />
 		<!-- <small class="block mt-2 text-red-500 text-xs">مبلغ نمی‌تواند کمتر از <b class="tracking-tighter">۱۰,۰۰۰</b> تـمـنـ باشد.</small> -->
 	</form>
 

@@ -1,4 +1,5 @@
 <script>
+	import FieldNumber from '$lib/FieldNumber.svelte'
 	export let cartable = true
 </script>
 
@@ -63,7 +64,11 @@
 
 					<td>
 						{#if cartable}
-							<input class="input input-no-arrows w-10 !h-10 px-2 text-center" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
+							<FieldNumber
+								value="1" min={1} max={10} name="quantity"
+								wrapperClass="flex items-center gap-4"
+								boxedSizeField={true}
+							/>
 						{:else}
 							<span>1</span>
 						{/if}

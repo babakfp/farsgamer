@@ -27,7 +27,7 @@
 		<Form class="space-y-6 mt-4 p-6 bg-white rounded" on:submit={_=> goto('/dashboard')}>
 			<div>
 				<label for="code">کد تایید</label>
-				<input class="input text-center tracking-3 input-no-arrows" type="number" name="code" minlength="5" maxlength="5" placeholder="_ _ _ _ _">
+				<input class="input text-center tracking-3" type="number" name="code" minlength="5" maxlength="5" placeholder="_ _ _ _ _">
 				<!-- <small class="form-field__description">کد تایید ارسال شده به تلفن همراه خود را وارد کنید.</small> -->
 				<!-- <small class="form-field__error">کد تایید وارد شده, نادرست می‌باشد.</small> -->
 			</div>

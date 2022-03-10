@@ -2,6 +2,7 @@
 	import Input from '$lib/Input.svelte'
 	import Checkbox from '$lib/Checkbox.svelte'
 	import Radiobox from '$lib/Radiobox.svelte'
+	import FieldNumber from '$lib/FieldNumber.svelte'
 </script>
 
 <form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8">
@@ -32,10 +33,12 @@
   <!-- Price -->
   <div class="mb-2 flex items-center justify-between">
     
-		<div class="flex items-center gap-2">
-      <label for="quantity">تعداد</label>
-			<input class="input" type="number" name="quantity" id="quantity" min="1" max="10" value="1">
-    </div>
+		<FieldNumber
+			label="تعداد"
+			value="1" min={1} max={10} name="quantity"
+			wrapperClass="flex items-center gap-4"
+			boxedSizeField={true}
+		/>
 
     <div class="grid justify-end text-left">
       <span class="text-xs mb-1">مبلغ پرداختی</span>

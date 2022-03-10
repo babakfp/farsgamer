@@ -1,4 +1,8 @@
 @layer base {
+
+	::selection {
+		@apply bg-brand bg-opacity-75 text-white;
+	}
 	
   * {
 		@apply select-none !outline-none;

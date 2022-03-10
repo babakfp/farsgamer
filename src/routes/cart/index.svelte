@@ -1,7 +1,7 @@
 <script>
 	import { isLoggedIn, isCartEmpty } from '$store/auth.js'
+	import FieldNumberWithBtnInside from '$lib/FieldNumberWithBtnInside.svelte'
 	import Checkbox from '$lib/Checkbox.svelte'
-	import DiscountInput from '$lib/DiscountInput.svelte'
 	import CartItems from './_lib/CartItems.svelte'
 	import Layout from './_lib/Layout.svelte'
 </script>
@@ -44,9 +44,8 @@
 				</li>
 			</ul>
 	
-			<DiscountInput wrapperClass="-mt-4" />
-
-		<Checkbox name="use-wallet">استفاده از کیف پول</Checkbox>
+			<FieldNumberWithBtnInside wrapperClass="-mt-4" btnText="اعمال تخفیف" placeholder="کد تخفیف" />
+			<Checkbox class="-mt-4" name="use-wallet">استفاده از کیف پول</Checkbox>
 
 			<ol class="grid gap-2 xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">
 				<li class="block w-full choose-payment-gateway">
@@ -71,7 +70,7 @@
 				</li>
 			</ol>
 			
-			<div>
+			<div class="-mt-4">
 				<button class="btn btn--brand btn--submit w-full" disabled={!$isLoggedIn} type="submit">ادامه تسویه حساب</button>
 				{#if !$isLoggedIn}
 					<p class="text-xs mt-2 text-red-400">برای ادامه فراید خرید باید ابتدا یک حساب کاربری ایجاد کنید.</p>

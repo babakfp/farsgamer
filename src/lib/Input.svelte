@@ -51,16 +51,4 @@
 	.is-error input {
 		@apply border-red-700;
 	}
-
-	/* Remove text input angles */
-	/* Chrome, Safari, Edge, Opera */
-	input[type=number].input-no-arrows::-webkit-outer-spin-button,
-	input[type=number].input-no-arrows::-webkit-inner-spin-button {
-		-webkit-appearance: none;
-		margin: 0;
-	}
-	/* Firefox */
-	input[type=number].input-no-arrows {
-		-moz-appearance: textfield;
-	}
 </style>
