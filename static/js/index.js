@@ -18,20 +18,6 @@
 	})
 })()
 
-
-// radio button handler.
-;(_=> {
-	const radioboxList = document.querySelectorAll('.radiobox')
-	if (!radioboxList) return
-	radioboxList.forEach(box => {
-		const input = box.querySelector("input[type='radio']")
-		input.addEventListener('click', _=> {
-			radioboxList.forEach(_box => _box.classList.remove('radiobox--active'))
-			if (input.checked) box.classList.add('radiobox--active')
-		})
-	})
-})()
-
 // comments reply button and form handler.
 ;(_=> {
 	const commentBoxArray = document.querySelectorAll('.comment--reply')
