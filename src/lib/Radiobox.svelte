@@ -18,7 +18,7 @@
 			/>
 			<i class="fi-rr-check absolute text-white opacity-0 text-xs"></i>
 		</div>
-		<span class="text-sm">{title}</span>
+		<span>{title}</span>
 	</label>
 </div>
 

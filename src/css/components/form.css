@@ -1,47 +1,19 @@
 @layer components {
 
-	input {
-		@apply font-dana;
-	}
-
 	.input {
-		@apply w-full px-4 bg-white rounded border-2 border-gray-200 duration-200 ease-in-out placeholder:text-gray-500 hover:border-gray-300;
-	}
+		@apply w-full px-4 bg-white rounded border-2 border-gray-200 font-dana duration-200 ease-in-out placeholder:text-gray-500 hover:border-gray-300;
+		
+		&:not(textarea) {
+			@apply h-input;
+		}
 
-	.input:not(textarea) {
-		@apply h-input;
-	}
-
-	textarea.input {
-		@apply py-4 resize-y;
-	}
-
-	.input--error {
-		@apply border-red-200;
+		&textarea {
+			@apply py-4 resize-y;
+		}
 	}
 
 	label {
-		@apply block mb-2 text-right cursor-pointer;
-	}
-
-	.input-description {
-		@apply text-xs mt-1 leading-5;
-	}
-
-	.radiobox input {
-		@apply cursor-pointer;
-	}
-
-	/* Chrome, Safari, Edge, Opera */
-	input[type=number].input-no-arrows::-webkit-outer-spin-button,
-	input[type=number].input-no-arrows::-webkit-inner-spin-button {
-		-webkit-appearance: none;
-		margin: 0;
-	}
-
-	/* Firefox */
-	input[type=number].input-no-arrows {
-		-moz-appearance: textfield;
+		@apply block mb-1 cursor-pointer;
 	}
 
 }

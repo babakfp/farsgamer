@@ -4,10 +4,10 @@
 	import Radiobox from '$lib/Radiobox.svelte'
 </script>
 
-<form class="grid gap-8 mt-5 p-6 bg-white rounded text-sm md:mt-8">
+<form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8">
 
   <div>
-    <label class="font-bold" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
+    <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
     <div class="flex flex-wrap gap-4 lg:flex lg:justify-start">
 			<Radiobox name="category" title="Playstation" />
 			<Radiobox name="category" title="EpicGames" />
@@ -19,12 +19,10 @@
 	<div class="grid gap-4 sm:flex">
 		<Input
 			label="ایمیل اکانت"
-			labelClass="font-bold"
 			class="dir-ltr" type="email" name="email" autocomplete="email"
 		/>
 		<Input
 			label="رمز اکانت"
-			labelClass="font-bold"
 			class="dir-ltr" type="password" name="password" autocomplete="password"
 		/>
 	</div>
