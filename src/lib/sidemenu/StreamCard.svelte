@@ -6,7 +6,7 @@
 </script>
 
 <li>
-  <a class="group flex items-center justify-between gap-2 py-3 px-4 bg-gray-50 duration-200 ease-in-out rounded hover:scale-105" href={liveStreamLink} target="_blank">
+  <a class="group flex items-center justify-between gap-2 py-3 px-4 bg-gray-50 rounded duration-200 ease-in-out hover:scale-105" href={liveStreamLink} target="_blank">
     <div class="flex items-center gap-2">
       <img class="rounded-full w-10 border-2 border-white drop-shadow-lg duration-200 ease-in-out group-hover:scale-110" src={avatar} alt>
       <div>
