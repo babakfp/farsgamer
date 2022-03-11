@@ -6,10 +6,10 @@
 		&:not(textarea) {
 			@apply h-input;
 		}
+	}
 
-		&textarea {
-			@apply py-4 resize-y;
-		}
+	textarea.input {
+		@apply py-4 resize-y;
 	}
 
 	label {
