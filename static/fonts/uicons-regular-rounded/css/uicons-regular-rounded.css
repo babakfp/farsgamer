@@ -1,6 +1,5 @@
 @font-face {
 font-family: "uicons-regular-rounded";
-src: url("../webfonts/uicons-regular-rounded.eot#iefix") format("embedded-opentype"),
 url("../webfonts/uicons-regular-rounded.woff2") format("woff2"),
 url("../webfonts/uicons-regular-rounded.woff") format("woff");
 }
@@ -14,6 +13,7 @@ text-transform: none;
 line-height: 1;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
+font-display: block;
 }
 
         .fi-rr-add:before {
