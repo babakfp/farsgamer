@@ -3,6 +3,7 @@
 	import Header from '$lib/header/Index.svelte'
 	import SideMenu from '$lib/sidemenu/Index.svelte'
 	import Footer from '$lib/footer/Index.svelte'
+	import Crisp from '$lib/Crisp.svelte'
 </script>
 
 <Header />
@@ -15,6 +16,8 @@
 
 	<Footer />
 </main>
+
+<Crisp />
 
 <style lang="postcss">
 	:global(body.main-header) #main {
