@@ -43,6 +43,25 @@
 					</ul>
 				</div>
 
+				<hr class="border-gray-100 my-4">
+
+				<div class="p-4 space-y-2">
+					<div class="flex items-center gap-2 py-3 px-4 bg-gray-50 rounded">
+						<i class="fi-rr-shopping-cart-check w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
+						<div>
+							<h6 class="font-bold text-yellow">۴۰۰</h6>
+							<p class="text-xs">سفارش <span class="font-medium">موفق</span> امروز</p>
+						</div>
+					</div>
+					<div class="flex items-center gap-2 py-3 px-4 bg-gray-50 rounded">
+						<i class="fi-rr-truck-loading w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
+						<div>
+							<h6 class="font-bold text-yellow">۴۰</h6>
+							<p class="text-xs">سفارش <span class="font-medium">در حال انجام</span></p>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</sidebar>

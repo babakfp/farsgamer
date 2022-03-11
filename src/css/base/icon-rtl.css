@@ -5,7 +5,9 @@
 	html[dir=rtl] .fi-rr-interrogation,
 	html[dir=rtl] .fi-rr-headset,
 	html[dir=rtl] .fi-rr-diploma,
-	html[dir=rtl] .fi-rr-document
+	html[dir=rtl] .fi-rr-document,
+	html[dir=rtl] .fi-rr-shopping-cart-check,
+	html[dir=rtl] .fi-rr-truck-loading
 	{
 		@apply scale-x-flip;
 	}
