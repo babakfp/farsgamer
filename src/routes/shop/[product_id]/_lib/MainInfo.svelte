@@ -1,16 +1,19 @@
 <script>
 	import StarRating from '$lib/StarRating.svelte'
+	export let title
+	export let rating
+	export let ratingCount
 </script>
 
 <div class="relative w-full mt-5 sm:mt-6 p-6 bg-white rounded md:order-1 md:mt-0">
 
-	<h1 class="font-bold">پک فورست لجند | Forst Legends pack</h1>
+	<h1 class="font-bold">{title}</h1>
 
 	<div class="flex items-center gap-2 mt-2">
-		<StarRating />
+		<StarRating {rating} />
 		<span class="text-xs">
 			<span class="text-2xs text-gray-300">(</span>
-			<span>از <b>450</b> کاربر</span>
+			<span>از <b>{ratingCount}</b> کاربر</span>
 			<span class="text-2xs text-gray-300">)</span>
 		</span>
 	</div>

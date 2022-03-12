@@ -5,7 +5,9 @@
 	import PosttypeContent from './_lib/PosttypeContent.svelte'
 	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
 
-	let thumbsSwiper
+	const title = 'پک فورست لجند | Forst Legends pack'
+	const rating = 5
+	const ratingCount = 450
 	const images = [
 		'/img/products/product-thumb (1).png',
 		'/img/products/product-thumb (2).png',
@@ -21,7 +23,7 @@
 
 <section class="md:flex md:items-center">
 	<Gallery {images} />
-	<MainInfo />
+	<MainInfo {title} {rating} {ratingCount} />
 </section>
 
 <PurchaseForm />
