@@ -8,11 +8,6 @@
 	import Taby from '$lib/Taby.svelte'
 	import TabyTab from '$lib/TabyTab.svelte'
 	import TabyBody from '$lib/TabyBody.svelte'
-
-	onMount(_=> {
-		const posttypeContent = document.querySelector('.posttype-content')
-		easyTab(posttypeContent)
-	})
 </script>
 
 <Taby class="mt-8">
