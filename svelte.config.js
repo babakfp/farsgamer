@@ -12,6 +12,7 @@ const config = {
           '$layouts': path.resolve('src/layouts'),
           '$store': path.resolve('src/store'),
           '$utils': path.resolve('src/utils'),
+          '$db': path.resolve('src/store/db'),
           'accordion': path.resolve('src/lib/accordion'),
         },
       },
