@@ -1,6 +1,5 @@
 <script>
-	import MainGallery from './_lib/MainGallery.svelte'
-	import ThumbsGallery from './_lib/ThumbsGallery.svelte'
+	import Gallery from './_lib/Gallery.svelte'
 	import MainInfo from './_lib/MainInfo.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 	import PosttypeContent from './_lib/PosttypeContent.svelte'
@@ -21,16 +20,7 @@
 </svelte:head>
 
 <section class="md:flex md:items-center">
-
-	{#if images.length > 0}
-		<div class="mx-auto md:order-2 md:p-6 2xl:p-8 3xl:w-full">
-			<div class="flex gap-4 md:-ml-6 2xl:-ml-8">
-				<MainGallery {images} bind:thumbsSwiper={thumbsSwiper} />
-				<ThumbsGallery {images} bind:thumbsSwiper={thumbsSwiper} />
-			</div>
-		</div>
-	{/if}
-
+	<Gallery {images} />
 	<MainInfo />
 </section>
 
