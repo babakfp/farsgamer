@@ -9,4 +9,4 @@
 	<button class="btn btn--brand {useSmall && 'btn--sm text-xs'}">{isForQuestion ? 'ارسال پرسش' : 'ارسال نظر'}</button>
 </form>
 
-<!-- <Alert class="mt-4" type="success" content="نظر شما با موفقیت ارسال شد🎉." /> -->
+<!-- <Alert class="mt-4" type="success">نظر شما با موفقیت ارسال شد🎉.</Alert> -->

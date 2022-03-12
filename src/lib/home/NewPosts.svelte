@@ -4,6 +4,7 @@
 
 	import ContentSection from '$lib/ContentSection.svelte'
 	import PostCard from '$lib/PostCard.svelte'
+	export let posts
 </script>
 
 <ContentSection title="جدیدترین پست ها" href="javascript:">

@@ -14,6 +14,6 @@
 	{type === 'warn' && 'bg-yellow-50 text-yellow-900 border-yellow-200'}
 	{className}
 ">
-	<i class="fi-rr-check text-sm"></i>
-	{content}
+	<!-- <i class="fi-rr-check text-sm"></i> -->
+	<slot />
 </div>

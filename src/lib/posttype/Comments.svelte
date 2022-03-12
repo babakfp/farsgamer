@@ -1,6 +1,8 @@
 <script>
 	import CommentItem from './CommentItem.svelte'
 	import CommentForm from './CommentForm.svelte'
+	import Alert from '$lib/Alert.svelte'
+	export let items
 </script>
 
 <div class="p-8 bg-white rounded">
@@ -10,7 +12,12 @@
 
 <div class="py-4"><hr class="border-gray-200"></div>
 
-<div class="grid gap-4">
-	<CommentItem />
-	<CommentItem />
-</div>
+{#if items?.length > 0}
+	<div class="grid gap-4">
+		{#each items as item (item.i)}
+			<CommentItem {...item} />
+		{/each}
+	</div>
+{:else}
+	<Alert>هیچ موردی پیدا نشد.</Alert>
+{/if}

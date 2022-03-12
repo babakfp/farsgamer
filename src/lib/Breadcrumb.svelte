@@ -5,10 +5,10 @@
 <ul class="flex flex-wrap items-center text-gray-500 text-sm">
 	{#each items as item, i}
 		<li class="inline-flex items-center">
-			{#if item[1]}
-				<a class="link-transition hover:text-brand" href={item[1]}>{item[0]}</a>
+			{#if typeof item === 'string'}
+				<span class="text-gray-400">{item}</span>
 			{:else}
-				<span class="text-gray-400">{item[0]}</span>
+				<a class="link-transition hover:text-brand" href={item[1]}>{item[0]}</a>
 			{/if}
 		</li>
 	{/each}

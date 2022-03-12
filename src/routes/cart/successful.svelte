@@ -6,7 +6,7 @@
 
 <Layout>
 	<svelte:fragment slot="before-main">
-		<Alert class="mb-4" type="success" content="پرداخت شما با موفقیت انجام شد🎉." />
+		<Alert class="mb-4" type="success">پرداخت شما با موفقیت انجام شد🎉.</Alert>
 	</svelte:fragment>
 		
 	<svelte:fragment slot="main">
