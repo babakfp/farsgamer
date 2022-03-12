@@ -21,13 +21,17 @@
 	grabCursor={true}
 	pagination={{ clickable: true, dynamicBullets: true }}
 	autoplay={{ delay: 4000, disableOnInteraction: true }}
-	spaceBetween={16}
 >
 	{#each posters as poster}
-		<SwiperSlide>
+		<SwiperSlide class="main-gallery-slide">
 			<a href={poster.href || 'javascript:'}>
-				<img class="rounded" src={poster.imgSrc} alt>
+				<img src={poster.imgSrc} alt>
 			</a>
 		</SwiperSlide>
 	{/each}
 </Swiper>
+
+<style lang="postcss">
+	:global(.main-gallery-slide:first-child) img { @apply rounded-r }
+	:global(.main-gallery-slide:last-child) img { @apply rounded-l }
+</style>

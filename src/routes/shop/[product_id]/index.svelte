@@ -1,6 +1,6 @@
 <script>
-	import GalleryMainThumbs from './_lib/GalleryMainThumbs.svelte'
-	import GallerySideThumbs from './_lib/GallerySideThumbs.svelte'
+	import MainGallery from './_lib/MainGallery.svelte'
+	import ThumbsGallery from './_lib/ThumbsGallery.svelte'
 	import MainInfo from './_lib/MainInfo.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 	import PosttypeContent from './_lib/PosttypeContent.svelte'
@@ -16,8 +16,8 @@
 <section class="md:flex md:items-center">
 	<div class="mx-auto md:order-2 md:p-6 2xl:p-8 3xl:w-full">
 		<div class="flex gap-4 md:-ml-6 2xl:-ml-8">
-			<GalleryMainThumbs bind:thumbsSwiper={thumbsSwiper} />
-			<GallerySideThumbs bind:thumbsSwiper={thumbsSwiper} />
+			<MainGallery bind:thumbsSwiper={thumbsSwiper} />
+			<ThumbsGallery bind:thumbsSwiper={thumbsSwiper} />
 		</div>
 	</div>
 
