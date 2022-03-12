@@ -21,8 +21,11 @@
 	<h1 class="text-center font-bold text-4xl">{status}</h1>
 
 	{#if status === 404}
+
 		<p class="text-center">صفحه‌ای که به دنبال آن میگردید, پیدا نشد.</p>
+	
 	{:else}
+	
 		<h2 class="text-center">{error.message}</h2>
 		{#if error.stack && dev}
 			<code class="scrollbar scrollbar-x-spacing-lg block mt-8 p-4 bg-gray-200 rounded dir-ltr lg:p-8">
@@ -31,5 +34,6 @@
 				</pre>
 			</code>
 		{/if}
+	
 	{/if}
 </div>
