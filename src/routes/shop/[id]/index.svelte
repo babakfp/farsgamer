@@ -1,10 +1,10 @@
 <script>
-	import products from '$db/products.js'
 	import Gallery from './_lib/Gallery.svelte'
 	import Info from './_lib/Info.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 	import PosttypeContent from './_lib/PosttypeContent.svelte'
 	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
+	export let product
 </script>
 
 <svelte:head>
@@ -12,8 +12,8 @@
 </svelte:head>
 
 <section class="md:flex md:items-center">
-	<Gallery images={products[0].images} />
-	<Info title={products[0].title} rating={products[0].rating} ratingCount={products[0].ratingCount} coins={products[0].coins} />
+	<Gallery images={product.images} />
+	<Info title={product.title} rating={product.rating} ratingCount={product.ratingCount} coins={product.coins} />
 </section>
 
 <PurchaseForm />

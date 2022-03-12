@@ -1,5 +1,6 @@
 export default [
 	{
+		id: 1,
 		title: 'پک فورست لجند | Forst Legends pack',
 		images: [
 			'/img/products/product-thumb (1).png',
