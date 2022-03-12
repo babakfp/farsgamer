@@ -1,20 +1,10 @@
 <script>
+	import products from '$db/products.js'
 	import Gallery from './_lib/Gallery.svelte'
 	import Info from './_lib/Info.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 	import PosttypeContent from './_lib/PosttypeContent.svelte'
 	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
-
-	const title = 'پک فورست لجند | Forst Legends pack'
-	const rating = 5
-	const ratingCount = 450
-	const images = [
-		'/img/products/product-thumb (1).png',
-		'/img/products/product-thumb (2).png',
-		'/img/products/product-thumb (3).png',
-		'/img/products/product-thumb (4).png',
-		'/img/products/product-thumb (5).png',
-	]
 </script>
 
 <svelte:head>
@@ -22,8 +12,8 @@
 </svelte:head>
 
 <section class="md:flex md:items-center">
-	<Gallery {images} />
-	<Info {title} {rating} {ratingCount} />
+	<Gallery images={products[0].images} />
+	<Info title={products[0].title} rating={products[0].rating} ratingCount={products[0].ratingCount} coins={products[0].coins} />
 </section>
 
 <PurchaseForm />

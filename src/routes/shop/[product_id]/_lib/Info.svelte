@@ -3,6 +3,7 @@
 	export let title
 	export let rating
 	export let ratingCount
+	export let coins
 </script>
 
 <div class="relative w-full mt-5 sm:mt-6 p-6 bg-white rounded md:order-1 md:mt-0">
@@ -19,11 +20,9 @@
 	</div>
 
 	<div class="inline-flex items-center gap-2 mt-4 px-4 py-2 text-yellow-700 text-sm bg-yellow bg-opacity-10 rounded">
-		<img class="w-7" src="/img/gem.png" alt>
-		<div>
-			<b class="font-montserrat">300</b>
-			<span class="font-medium">امتیاز</span>
-		</div>
+		<img class="w-6 rotate-45" src="/img/coin.png" alt>
+		<b class="font-montserrat">{coins}</b>
+		<span class="-mr-0.5 font-medium leading-5 self-end">سکه</span>
 	</div>
 
 	<ul class="mt-4 list-disc list-inside space-y-1 text-sm">
