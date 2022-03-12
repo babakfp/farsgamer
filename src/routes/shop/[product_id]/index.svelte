@@ -1,6 +1,6 @@
 <script>
 	import Gallery from './_lib/Gallery.svelte'
-	import MainInfo from './_lib/MainInfo.svelte'
+	import Info from './_lib/Info.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 	import PosttypeContent from './_lib/PosttypeContent.svelte'
 	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
@@ -23,7 +23,7 @@
 
 <section class="md:flex md:items-center">
 	<Gallery {images} />
-	<MainInfo {title} {rating} {ratingCount} />
+	<Info {title} {rating} {ratingCount} />
 </section>
 
 <PurchaseForm />
