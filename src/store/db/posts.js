@@ -31,7 +31,6 @@ export default [
 	{
 		id: 4,
 		title: 'ساخت بازی GTA VI رسمی شد!',
-		releaseDate: '1400-05-23',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
 		featuredImage: '/img/post (4).png',
