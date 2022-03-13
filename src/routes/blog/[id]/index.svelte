@@ -40,7 +40,7 @@
 		<TabyTab>
 			<span>نظرات</span>
 			{#if post.comments?.length > 0}
-			<div class="text-sm font-normal"><span class="opacity-25">(</span>{post.comments.length}<span class="opacity-25">)</span></div>
+				<div class="text-sm font-normal"><span class="opacity-25">(</span>{post.comments.length}<span class="opacity-25">)</span></div>
 			{/if}
 		</TabyTab>
 	</svelte:fragment>
