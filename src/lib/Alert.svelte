@@ -1,8 +1,6 @@
 <script>
 	export let className = null
 	export { className as class }
-
-	export let content
 	export let type
 </script>
 
