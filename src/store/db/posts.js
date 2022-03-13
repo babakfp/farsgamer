@@ -2,9 +2,9 @@ export default [
 	{
 		id: 1,
 		title: 'انتشار بازی باشکوه Elden Ring با آمار فروش باور نکردنی',
+		featuredImage: '/img/post (1).png',
 		releaseDate: '۱۰ روز پیش',
 		modifyDate: '۲ روز پیش',
-		featuredImage: '/img/post (1).png',
 		comments: [
 			{
 				id: 1,
@@ -18,21 +18,21 @@ export default [
 	{
 		id: 2,
 		title: 'فروش بازی Horizon Zero Dawn از 20 میلیون نسخه عبور کرد!',
+		featuredImage: '/img/post (2).png',
 		releaseDate: '۲۳ بهمن ۱۴۰۰',
 		modifyDate: '۲۴ بهمن ۱۴۰۰',
-		featuredImage: '/img/post (2).png',
 	},
 	{
 		id: 3,
 		title: 'منتظر یک NEED FOR SPEED جهان باز موبایلی باشید!',
-		releaseDate: '۲ آبان ۱۴۰۰',
 		featuredImage: '/img/post (3).png',
+		releaseDate: '۲ آبان ۱۴۰۰',
 	},
 	{
 		id: 4,
 		title: 'ساخت بازی GTA VI رسمی شد!',
+		featuredImage: '/img/post (4).png',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		featuredImage: '/img/post (4).png',
 	},
 ]
