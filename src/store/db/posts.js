@@ -30,7 +30,7 @@ export default [
 	},
 	{
 		id: 4,
-		title: 'ساخت GTA VI رسمی شد!',
+		title: 'ساخت بازی GTA VI رسمی شد!',
 		releaseDate: '1400-05-23',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
