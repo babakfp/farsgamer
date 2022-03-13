@@ -1,10 +1,11 @@
 <script>
+	import posts from '$db/posts.js'
+	
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
 
 	import ContentSection from '$lib/ContentSection.svelte'
 	import PostCard from '$lib/PostCard.svelte'
-	export let posts
 </script>
 
 <ContentSection title="جدیدترین پست ها" href="javascript:">
@@ -26,12 +27,11 @@
 			1800: { slidesPerView: 6 },
 		}}
 	>
-		<SwiperSlide><PostCard /></SwiperSlide>
-		<SwiperSlide><PostCard /></SwiperSlide>
-		<SwiperSlide><PostCard /></SwiperSlide>
-		<SwiperSlide><PostCard /></SwiperSlide>
-		<SwiperSlide><PostCard /></SwiperSlide>
-		<SwiperSlide><PostCard /></SwiperSlide>
-		<SwiperSlide><PostCard /></SwiperSlide>
+		{#each posts as post}
+			<SwiperSlide><PostCard {...post} /></SwiperSlide>
+		{/each}
+		{#each posts as post}
+			<SwiperSlide><PostCard {...post} /></SwiperSlide>
+		{/each}
 	</Swiper>
 </ContentSection>
