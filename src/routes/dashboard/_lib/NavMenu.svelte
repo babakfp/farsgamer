@@ -37,6 +37,7 @@
 	</div>
 </div>
 
-<button class="z-20 btn btn--gray fixed bottom-8 text-sm 2md:hidden" on:click={_=> show = !show}>
+<!-- TODO: Only add `href="#body"` if menu was closed -->
+<a class="btn btn--gray z-20 fixed bottom-4 right-4 text-sm sm:bottom-6 sm:right-6 2md:hidden" href="#body" on:click={_=> show = !show}>
 	{ show ? 'بستن' : 'مشاهده' } منوی حساب
-</button>
+</a>
