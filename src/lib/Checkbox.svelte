@@ -1,5 +1,5 @@
 <script>
-	let className = null
+	export let className = null
 	export { className as class }
 	export let name
 	export let checked = false

@@ -1,6 +1,6 @@
 <script>
 	import OutClick from 'svelte-outclick'
-	let className = null
+	export let className = null
 	export { className as class }
 	export let visible = false
 </script>

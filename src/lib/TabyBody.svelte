@@ -1,5 +1,5 @@
 <script>
-	let className = null
+	export let className = null
 	export { className as class }
 </script>
 

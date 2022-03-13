@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte'
 
-	let className = null
+	export let className = null
 	export { className as class }
 
 	let tabyEl

@@ -5,7 +5,7 @@
 	export let rotateOnHover = true
 	export let scaleOnHover = true
 
-	let className = null
+	export let className = null
 	export { className as class }
 </script>
 
