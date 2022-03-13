@@ -6,6 +6,7 @@
 	import PhoneNumbers from './PhoneNumbers.svelte'
 	import Announcements from './announcements/Index.svelte'
 	import { toggle as searchToggle } from '$store/header-search.js'
+	let mobileSearchToggleEl
 </script>
 
 <header class="z-40 sticky top-0 inset-x-0 h-16 flex items-center justify-between bg-white border-b border-gray-100 lg:h-20 lg:px-4" id="header">
@@ -14,14 +15,14 @@
 		<div id="header__right-side" class="flex items-center lg:w-full lg:h-full">
       <OpenMobileMenu />
       <Logo />
-			<Search />
+			<Search bind:mobileSearchToggleEl />
     </div>
 
     <div class="flex h-full -ml-2">
 			<PhoneNumbers />
 
 			<!-- Open search bar -->
-      <button class="js-header-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری" on:click={searchToggle}>
+      <button bind:this={mobileSearchToggleEl} class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری" on:click={searchToggle}>
         <i class="fi-rr-search xs:text-lg xl:text-xl"></i>
       </button>
 
