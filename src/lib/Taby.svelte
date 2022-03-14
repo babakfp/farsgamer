@@ -19,6 +19,6 @@
 
 <style lang="postcss">
 	.tabs::-webkit-scrollbar-thumb {
-		@apply !bg-gray-200;
+		@apply bg-gray-200;
 	}
 </style>
