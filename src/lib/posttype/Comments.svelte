@@ -14,7 +14,7 @@
 
 {#if items?.length > 0}
 	<div class="grid gap-4">
-		{#each items as item (item.i)}
+		{#each items as item (item.id)}
 			<CommentItem {...item} />
 		{/each}
 	</div>
