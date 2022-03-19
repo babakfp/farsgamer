@@ -44,8 +44,8 @@
 				</li>
 			</ul>
 	
+			<Checkbox class="text-sm" name="use-wallet">استفاده از کیف پول</Checkbox>
 			<FieldNumberWithBtnInside wrapperClass="-mt-4" btnText="اعمال تخفیف" placeholder="کد تخفیف" />
-			<Checkbox class="-mt-4" name="use-wallet">استفاده از کیف پول</Checkbox>
 
 			<ol class="grid gap-2 xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">
 				<li class="block w-full choose-payment-gateway">

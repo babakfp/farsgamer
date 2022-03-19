@@ -1,25 +1,25 @@
 <script>
-	export let wrapperClass
-	export let fieldClass
+	export let wrapperClass = ''
+	export let fieldClass = ''
 
 	export let boxedSizeField = false
 
 	export let name = null
 	export let autocomplete = null
 	export let placeholder = null
-	export let label
-	export let labelClass
+	export let label = null
+	export let labelClass = ''
 
-	export let value
-	export let min
-	export let max
+	export let value = null
+	export let min = null
+	export let max = null
 
 	let isError = false
 	let errorText = ''
 
 	$: {
-		if (value < min) value = min
-		if (value > max) value = max
+		if (min && value < min) value = min
+		if (max && value > max) value = max
 	}
 </script>
 

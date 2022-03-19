@@ -27,7 +27,7 @@
 			</div>
 		</TabyBody>
 		<TabyBody class="!p-0 !bg-transparent">
-			<Comments />
+			<Comments items={[]} />
 		</TabyBody>
 		<TabyBody class="!p-0 !bg-transparent">
 			<div class="p-8 bg-white rounded">

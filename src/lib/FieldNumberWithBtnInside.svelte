@@ -1,9 +1,9 @@
 <script>
 	import FieldNumber from '$lib/FieldNumber.svelte'
-	export let placeholder
+	export let placeholder = null
 	export let btnText
-	export let value
-	export let wrapperClass
+	export let value = null
+	export let wrapperClass = null
 </script>
 
 <FieldNumber

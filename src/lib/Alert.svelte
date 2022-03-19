@@ -1,7 +1,7 @@
 <script>
 	export let className = null
 	export { className as class }
-	export let type
+	export let type = null
 </script>
 
 <div class="flex items-center gap-4 px-4 py-3 text-sm rounded border

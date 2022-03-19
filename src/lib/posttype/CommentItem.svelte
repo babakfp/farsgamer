@@ -2,6 +2,7 @@
 	import StarRating from '$lib/StarRating.svelte'
 	import CommentForm from '$lib/posttype/CommentForm.svelte'
 	
+	export let id
 	export let firstname
 	export let lastname
 	export let date
@@ -10,7 +11,7 @@
 	let showResponseForm = false
 </script>
 
-<div class="relative p-4 pb-3 bg-white rounded text-sm">
+<div class="relative p-4 pb-3 bg-white rounded text-sm" {id}>
 	<div class="p-2 leading-6">{content}</div>
 
 	{#if showResponseForm}
