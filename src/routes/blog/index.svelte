@@ -9,18 +9,18 @@
 </svelte:head>
 
 <div class="grid gap-4 grid-cols-2 sm:gap-6 sm:grid-cols-3 2md:grid-cols-4 lg:grid-cols-3 2lg:grid-cols-4 xl:grid-cols-5 3xl:grid-cols-6">
-	{#each posts as post}
-		<PostCard {...post} />
+	{#each posts as post (post.id)}
+		<PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} />
 	{/each}
-	{#each posts as post}
-		<PostCard {...post} />
+	{#each posts as post (post.id)}
+		<PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} />
 	{/each}
-	{#each posts as post}
-		<PostCard {...post} />
+	{#each posts as post (post.id)}
+		<PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} />
 	{/each}
-	<PostCard />
-	<PostCard />
-	<PostCard />
+	{#each posts.slice(0, 3) as post (post.id)}
+		<PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} />
+	{/each}
 </div>
 
 <Pagination />
