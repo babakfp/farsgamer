@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "The front-end project of the farsgamer.com website.",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "dev:host": "svelte-kit dev --host",
+    "dev": "svelte-kit dev --open --host",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
