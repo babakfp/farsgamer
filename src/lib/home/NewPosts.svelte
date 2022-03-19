@@ -28,10 +28,10 @@
 		}}
 	>
 		{#each posts as post}
-			<SwiperSlide><PostCard {...post} /></SwiperSlide>
+			<SwiperSlide><PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} /></SwiperSlide>
 		{/each}
 		{#each posts as post}
-			<SwiperSlide><PostCard {...post} /></SwiperSlide>
+			<SwiperSlide><PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} /></SwiperSlide>
 		{/each}
 	</Swiper>
 </ContentSection>
