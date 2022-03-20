@@ -5,7 +5,7 @@
 	import Search from './Search.svelte'
 	import PhoneNumbers from './PhoneNumbers.svelte'
 	import Announcements from './announcements/Index.svelte'
-	import { toggle as searchToggle } from '$store/header-search.js'
+	import { toggle } from '$store/header-search.js'
 </script>
 
 <header class="z-40 sticky top-0 inset-x-0 h-16 flex items-center justify-between bg-white border-b border-gray-100 lg:h-20 lg:px-4" id="header">
@@ -21,7 +21,7 @@
 			<PhoneNumbers />
 
 			<!-- Open search bar -->
-      <button class="js-mobile-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری" on:click={searchToggle}>
+      <button class="js-mobile-search-toggle h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری" on:click={toggle}>
         <i class="fi-rr-search xs:text-lg xl:text-xl"></i>
       </button>
 
