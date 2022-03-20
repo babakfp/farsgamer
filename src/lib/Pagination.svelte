@@ -1,45 +1,39 @@
-<ul class="flex items-center justify-center gap-2 mt-12">
-	<li class="flex items-center gap-2">
-		<button class="pg-btn pg-btn--prev-next">
+<script>
+	export let prevLink = null
+	export let nextLink = 'javascript:'
+</script>
+
+<div class="flex items-center justify-center gap-4 mt-12">
+
+	{#if prevLink}
+		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href={prevLink}>
 			<i class="fi-rr-angle-double-small-right"></i>
-		</button>
-		<hr class="h-8 border-t-0 border-r-2 border-gray-200">
-	</li>
-	<li>
-		<ul class="flex gap-2">
-			<li>
-				<a class="pg-btn pg-btn--num" href="javascript:">1</a>
-			</li>
-			<li>
-				<a class="pg-btn pg-btn--num pg-btn--num-active" href="javascript:">2</a>
-			</li>
-			<li class="pg-btn">
-				<i class="fi-rr-menu-dots"></i>
-			</li>
-			<li>
-				<a class="pg-btn pg-btn--num" href="javascript:">9</a>
-			</li>
-		</ul>
-	</li>
-	<li class="flex items-center gap-2">
-		<hr class="h-8 border-t-0 border-r-2 border-gray-200">
-		<button class="pg-btn pg-btn--prev-next">
+		</a>
+
+		<hr class="h-6 border-t-0 border-r-2 border-dashed border-gray-200">
+	{/if}
+
+	<ul class="flex items-center gap-2">
+		<li>
+			<a class="btn btn--gray btn--outline h-10 w-10 p-2 border-0 !bg-brand !bg-opacity-20 text-brand font-bold pointer-events-none" href="javascript:">2</a>
+		</li>
+		<li>
+			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">3</a>
+		</li>
+		<li class="flex items-center justify-center h-10 w-10">
+			<i class="fi-rr-menu-dots"></i>
+		</li>
+		<li>
+			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">9</a>
+		</li>
+	</ul>
+
+	{#if nextLink}
+		<hr class="h-6 border-t-0 border-r-2 border-dashed border-gray-200">
+
+		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href={nextLink}>
 			<i class="fi-rr-angle-double-small-left"></i>
-		</button>
-	</li>
-</ul>
+		</a>
+	{/if}
 
-<style lang="postcss">
-	.pg-btn {
-		@apply flex items-center justify-center w-10 h-10 text-gray-500 rounded-sm duration-300 ease-in-out;
-	}
-
-	.pg-btn--prev-next,
-	.pg-btn--num {
-		@apply hover:bg-gray-200;
-	}
-
-	.pg-btn--num-active {
-		@apply text-brand font-bold pointer-events-none;
-	}
-</style>
+</div>
