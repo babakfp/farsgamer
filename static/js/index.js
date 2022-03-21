@@ -102,3 +102,9 @@
 		getAndSetLargestWidth(itemButtonsCells, headButtonsCell)
 	})
 })()
+
+/**
+ * Activate all Easy Tabs
+ */
+const allEasytabs = document.querySelectorAll('.easytab')
+allEasytabs.forEach(el => new EasyTab(el))

@@ -1,23 +1,18 @@
 <script>
 	import Rating from '$lib/Rating.svelte'
 	import CommentWithReply from '$lib/new-folder/CommentWithReply.svelte'
-	import { onMount } from 'svelte'
-
-	onMount(_=> {
-		easyTab(document.querySelector('.dashboard-comments'))
-	})
 </script>
 
-<section class="dashboard-comments">
+<section class="easytab">
 
   <ul class="flex items-center overflow-y-auto border-b border-gray-200 mb-4">
-    <li easytab-tab class="dashboard-comments__tab border-b-2 border-transparent py-3 px-6">در انتظار ثبت نظر</li>
-    <li easytab-tab class="dashboard-comments__tab border-b-2 border-transparent py-3 px-6">نظرات تایید شده</li>
+    <li class="easytab__tab border-b-2 border-transparent py-3 px-6">در انتظار ثبت نظر</li>
+    <li class="easytab__tab border-b-2 border-transparent py-3 px-6">نظرات تایید شده</li>
   </ul>
 
   <div>
 
-    <div easytab-content>
+    <div class="easytab__panel">
       <div class="grid gap-4">
         <!-- START Item -->
           <div class="dashboard-comment-awaiting-approval bg-gray-50 rounded p-3">
@@ -62,7 +57,7 @@
       </div>
     </div>
 
-    <div easytab-content>
+    <div class="easytab__panel">
       <div class="grid gap-4">
 				<CommentWithReply />
       </div>
@@ -72,8 +67,8 @@
 
 </section>
 
-<style>
-	.dashboard-comments__tab.active {
+<style lang="postcss">
+	.easytab :global(.easytab__tab.active) {
 		@apply border-brand;
 	}
 </style>

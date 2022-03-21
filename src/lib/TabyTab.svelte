@@ -1,11 +1,11 @@
 <li>
-	<button easytab-tab class="tab flex items-center justify-center gap-2 w-full min-w-36 p-4 text-sm font-bold rounded-t duration-200 ease-in-out lg:hover:text-brand">
+	<button class="easytab__tab flex items-center justify-center gap-2 w-full min-w-36 p-4 text-sm font-bold rounded-t duration-200 ease-in-out lg:hover:text-brand">
 		<slot />
 	</button>
 </li>
 
 <style lang="postcss">
-	:global(.tab.active) {
+	:global(.easytab__tab.active) {
 		@apply relative pb-8 -mb-4 bg-white text-brand;
 
 		&::after {
