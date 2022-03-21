@@ -5,7 +5,7 @@
 </li>
 
 <style lang="postcss">
-	:global(.easytab__tab.active) {
+	li :global(.easytab__tab.active) {
 		@apply relative pb-8 -mb-4 bg-white text-brand;
 
 		&::after {
