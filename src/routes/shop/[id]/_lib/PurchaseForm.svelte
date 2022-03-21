@@ -9,11 +9,12 @@
 
   <div>
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
-    <div class="flex flex-wrap gap-4 lg:flex lg:justify-start">
-			<Radiobox name="category" title="Playstation" />
-			<Radiobox name="category" title="EpicGames" />
-			<Radiobox name="category" title="XBox" />
-			<Radiobox name="category" title="Nitendo" />
+    <div class="flex flex-wrap gap-8 lg:flex lg:justify-start">
+			<!-- TODO:FONT Remove classes after Dana font gets fixed -->
+			<Radiobox contentClass="text-sm font-poppins" name="category" value="playstation">Play Station</Radiobox>
+			<Radiobox contentClass="text-sm font-poppins" name="category" value="epicgames">Epic Games</Radiobox>
+			<Radiobox contentClass="text-sm font-poppins" name="category" value="xbox">XBox</Radiobox>
+			<Radiobox contentClass="text-sm font-poppins" name="category" value="nitendo">Nitendo</Radiobox>
     </div>
   </div>
 

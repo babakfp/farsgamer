@@ -100,6 +100,7 @@ module.exports = {
 			dana: 'Dana',
 			danafn: 'DanaFN',
 			montserrat: ['Montserrat', 'Dana'],
+			poppins: ['Poppins', 'Dana'],
 		},
 		boxShadow: {
 			sm: '0 0 .5rem rgba(15 23 42 / 2%)',
