@@ -31,7 +31,7 @@
 	<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟ <span class="text-sm">(<span class="font-bold">50</span> <span class="text-xs">هزار تومان</span>)</span></Checkbox>
 
   <!-- Price -->
-  <div class="flex items-center justify-between gap-8">
+  <div class="grid gap-8 3xs:flex 3xs:items-end 3xs:justify-between">
     
 		<FieldNumber
 			label="تعداد"
