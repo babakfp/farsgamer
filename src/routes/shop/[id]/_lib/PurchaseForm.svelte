@@ -28,10 +28,10 @@
 		/>
 	</div>
 
-	<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</Checkbox>
+	<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟ <span class="text-sm">(<span class="font-bold">50</span> <span class="text-xs">هزار تومان</span>)</span></Checkbox>
 
   <!-- Price -->
-  <div class="mb-2 flex items-center justify-between">
+  <div class="flex items-center justify-between gap-8">
     
 		<FieldNumber
 			label="تعداد"
@@ -40,31 +40,18 @@
 			boxedSizeField={true}
 		/>
 
-    <div class="grid justify-end text-left">
-      <span class="text-xs mb-1">مبلغ پرداختی</span>
-      <!-- No discount -->
-      <!-- <div class="flex items-center gap-1">
-        <span class="font-bold text-2xl tracking-tighter">۱۵۰,000</span>
-        <span>تـمـنـ</span>
-      </div> -->
-      <!-- With discount -->
-      <div class="flex gap-1.5 justify-center">
-        <div class="font-bold leading-4 grid">
-          <!-- Price before discount -->
-          <p class="font-bold text-2xl tracking-tighter">۵۰۰,۰۰۰</p>
-          <!-- Price after discount -->
-          <p class="line-through text-gray-400 flex items-center justify-end">۳۰۰,۰۰۰</p>
-        </div>
-    
-        <div class="grid gap-1">
-          <!-- Price currency -->
-          <p class="text-sm">تـمـنـ</p>
-          <!-- Discount precedence -->
-          <div class="bg-red text-white rounded-full py-0.5 px-2 text-xs flex items-center">۲۰%</div>
-        </div>
-      </div>
-    </div>
-		
+		<div>
+			<div class="flex items-center justify-between">
+				<span class="pr-2 text-gray-400 text-xs">مبلغ پرداختی</span>
+				<span class="-mb-2 pt-3 pb-4 px-6 bg-red-400 rounded-t text-white text-xs">۲۰٪</span>
+			</div>
+			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
+				<span class="font-montserrat line-through decoration-red-700 opacity-50">200</span>
+				<span class="font-montserrat font-medium">100</span>
+				<span class="mt-1 text-xs">تـمـنـ</span>
+			</div>
+		</div>
+
   </div>
 
 	<button class="btn btn--submit w-full sm:max-w-60 btn--brand font-medium text-base" type="submit">افزودن به سبد خرید</button>

@@ -102,9 +102,10 @@ module.exports = {
 			montserrat: ['Montserrat', 'Dana'],
 		},
 		boxShadow: {
-			sm: '0 0 .5rem rgba(15, 23, 42, .02)',
-			md: '0 0 1.25rem rgba(15, 23, 42, .04)',
-			lg: '0 0 1.5rem rgba(15, 23, 42, .08)',
+			sm: '0 0 .5rem rgba(15 23 42 / 2%)',
+			md: '0 0 1.25rem rgba(15 23 42 / 4%)',
+			lg: '0 0 1.5rem rgba(15 23 42 8%)',
+			'b-sm': '0 .25rem .375rem rgba(15 23 42 / 10%)',
 			none: 'none',
 		},
   },

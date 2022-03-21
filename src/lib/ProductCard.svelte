@@ -34,7 +34,7 @@
 		{/if}
 	</div>
 
-	<div class="absolute top-0 left-0 py-1 pl-3 pr-4 bg-red-400 text-white rounded rounded-bl-none text-xs">٪۲۰</div>
+	<span class="absolute top-0 left-0 pt-1 pb-0.5 px-3 bg-red-400 text-white rounded rounded-bl-none text-xs">۲۰٪</span>
 	
 	<div class="py-4 px-2">
 		<h3 class="text-sm font-bold line-clamp-1">گیف کارد 20 دلاری استیم</h3>
@@ -42,13 +42,13 @@
 
 	<hr class="-mx-2 border-gray-100">
 
-	<div class="-mb-2 h-14 flex items-center justify-center gap-1">
+	<div class="-mb-2 h-14 flex items-center justify-center gap-2">
 		{#if inStock === false}
 			<span>بدونـ قیمتــ</span>
 		{:else}
-			<span class="font-montserrat font-semibold line-through opacity-50">500</span>
-			<span class="font-montserrat font-semibold">300</span>
-			<span class="text-xs mt-1 text-gray-500">تـمـنـ</span>
+				<span class="font-montserrat line-through decoration-red-700 opacity-50">200</span>
+				<span class="font-montserrat font-medium">100</span>
+				<span class="mt-1 text-xs">تـمـنـ</span>
 			<!-- <span>قیمتــ متغیـر</span> -->
 		{/if}
 	
