@@ -10,10 +10,10 @@
   <div>
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
     <div class="flex flex-wrap gap-8 lg:flex lg:justify-start">
-			<Radiobox contentClass="text-sm font-montserrat" name="category" value="playstation">Play Station</Radiobox>
-			<Radiobox contentClass="text-sm font-montserrat" name="category" value="epicgames">Epic Games</Radiobox>
-			<Radiobox contentClass="text-sm font-montserrat" name="category" value="xbox">XBox</Radiobox>
-			<Radiobox contentClass="text-sm font-montserrat" name="category" value="nitendo">Nitendo</Radiobox>
+			<Radiobox contentClass="text-sm font-en" name="category" value="playstation">Play Station</Radiobox>
+			<Radiobox contentClass="text-sm font-en" name="category" value="epicgames">Epic Games</Radiobox>
+			<Radiobox contentClass="text-sm font-en" name="category" value="xbox">XBox</Radiobox>
+			<Radiobox contentClass="text-sm font-en" name="category" value="nitendo">Nitendo</Radiobox>
     </div>
   </div>
 
@@ -46,8 +46,8 @@
 				<span class="-mb-2 pt-3 pb-4 px-6 bg-red-400 rounded-t text-white text-xs">۲۰٪</span>
 			</div>
 			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
-				<span class="font-montserrat line-through decoration-red-700 opacity-50">200</span>
-				<span class="font-montserrat font-medium">100</span>
+				<span class="font-en line-through decoration-red-700 opacity-50">200</span>
+				<span class="font-en font-medium">100</span>
 				<span class="mt-1 text-xs">تـمـنـ</span>
 			</div>
 		</div>

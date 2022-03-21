@@ -97,10 +97,9 @@ module.exports = {
 			'3xl': '1800px',
 		},
 		fontFamily: {
-			dana: 'Dana',
-			danafn: 'DanaFN',
-			montserrat: ['Montserrat', 'Dana'],
-			poppins: ['Poppins', 'Dana'],
+			fa: ['Dana'],
+			fafn: ['DanaFN'],
+			en: ['Montserrat', 'Dana'],
 		},
 		boxShadow: {
 			sm: '0 0 .5rem rgba(15 23 42 / 2%)',

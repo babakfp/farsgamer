@@ -64,12 +64,12 @@
 			<p class="mb-2 font-bold">کدهای خریداری شده</p>
 			<ul class="space-y-2">
 				<li class="flex justify-between">
-					<span>گیفتکارت <span class="font-montserrat font-medium">50$</span> Play Station</span>
+					<span>گیفتکارت <span class="font-en font-medium">50$</span> Play Station</span>
 					<span>980317</span>
 				</li>
 				<hr class="border-gray-100">
 				<li class="flex justify-between">
-					<span>گیفتکارت <span class="font-montserrat font-medium">10$</span> Play Station</span>
+					<span>گیفتکارت <span class="font-en font-medium">10$</span> Play Station</span>
 					<span>۵۶۷۸۴</span>
 				</li>
 			</ul>
