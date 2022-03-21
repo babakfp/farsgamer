@@ -106,5 +106,7 @@
 /**
  * Activate all Easy Tabs
  */
-const allEasytabs = document.querySelectorAll('.easytab')
+window.addEventListener('load', _=> {
+	const allEasytabs = document.querySelectorAll('.easytab')
 allEasytabs.forEach(el => new EasyTab(el))
+})
