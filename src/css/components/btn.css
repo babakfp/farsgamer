@@ -57,7 +57,7 @@
 	}
 
 	.btn i {
-		@apply opacity-80;
+		@apply opacity-75;
 	}
 
 }
