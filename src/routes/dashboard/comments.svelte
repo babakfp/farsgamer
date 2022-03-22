@@ -1,9 +1,13 @@
 <script>
+	import { onMount } from 'svelte'
 	import Rating from '$lib/Rating.svelte'
 	import CommentWithReply from '$lib/new-folder/CommentWithReply.svelte'
+
+	let easytab
+	onMount(_=> new EasyTab(easytab))
 </script>
 
-<section class="easytab">
+<section bind:this={easytab} class="easytab">
 
   <ul class="flex items-center overflow-y-auto border-b border-gray-200 mb-4">
     <li class="easytab__tab border-b-2 border-transparent py-3 px-6">در انتظار ثبت نظر</li>
@@ -68,7 +72,7 @@
 </section>
 
 <style lang="postcss">
-	.easytab :global(.easytab__tab.active) {
+	:global(.easytab__tab.active) {
 		@apply border-brand;
 	}
 </style>

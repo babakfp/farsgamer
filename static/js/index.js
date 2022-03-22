@@ -102,11 +102,3 @@
 		getAndSetLargestWidth(itemButtonsCells, headButtonsCell)
 	})
 })()
-
-/**
- * Activate all Easy Tabs
- */
-window.addEventListener('load', _=> {
-	const allEasytabs = document.querySelectorAll('.easytab')
-allEasytabs.forEach(el => new EasyTab(el))
-})
