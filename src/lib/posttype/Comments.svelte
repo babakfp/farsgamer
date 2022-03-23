@@ -4,12 +4,13 @@
 	import Alert from '$lib/Alert.svelte'
 	export let items
 	export let canReply
+	export let isQuestion
 	export let headingTitle = 'ارسال نظر جدید'
 </script>
 
 <div class="p-8 bg-white rounded">
 	<h3 class="mb-3 font-bold">{headingTitle}</h3>
-	<CommentForm />
+	<CommentForm {isQuestion} />
 </div>
 
 <div class="py-4"><hr class="border-gray-200"></div>

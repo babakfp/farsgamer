@@ -46,7 +46,7 @@
 		</TabyBody>
 
 		<TabyBody class="!p-0 !bg-transparent">
-			<Comments items={product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" canReply={false} />
+			<Comments items={product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" canReply={false} isQuestion={true} />
 		</TabyBody>
 	</svelte:fragment>
 </Taby>
