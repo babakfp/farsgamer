@@ -12,8 +12,10 @@
 			"$utils/*": ["src/utils/*"],
 			"$db": ["src/store/db"],
 			"$db/*": ["src/store/db/*"],
-			"accordion": ["src/lib/accordion/index.js"],
-			"accordion/*": ["src/lib/accordion/*"]
+			"Accordion": ["src/lib/Accordion/index.js"],
+			"Accordion/*": ["src/lib/Accordion/*"],
+			"Tab": ["src/lib/Tab/index.js"],
+			"Tab/*": ["src/lib/Tab/*"]
 		}
 	},
 	"extends": "./.svelte-kit/tsconfig.json",

@@ -2,10 +2,7 @@
 	import Breadcrumb from '$lib/Breadcrumb.svelte'
 	import Description from '$lib/posttype/Description.svelte'
 	import Comments from '$lib/posttype/Comments.svelte'
-	import Taby from '$lib/Taby.svelte'
-	import TabyTab from '$lib/TabyTab.svelte'
-	import TabyBody from '$lib/TabyBody.svelte'
-
+	import { Tab, TabLabel, TabPanel } from 'Tab'
 	export let post
 </script>
 
@@ -34,20 +31,20 @@
 </section>
 <!--/ Hero section -->
 
-<Taby class="mt-8">
+<Tab class="mt-8">
 	<svelte:fragment slot="tab">
-		<TabyTab title="توضیحات" />
-		<TabyTab title="نظرات" count={post.comments?.length} />
+		<TabLabel title="توضیحات" />
+		<TabLabel title="نظرات" count={post.comments?.length} />
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
-		<TabyBody class="p-8 lg:py-20">
+		<TabPanel class="p-8 lg:py-20">
 			<div class="max-w-3xl mx-auto">
 				<Description />
 			</div>
-		</TabyBody>
-		<TabyBody class="!p-0 !bg-transparent">
+		</TabPanel>
+		<TabPanel class="!p-0 !bg-transparent">
 			<Comments items={post.comments} />
-		</TabyBody>
+		</TabPanel>
 	</svelte:fragment>
-</Taby>
+</Tab>

@@ -9,9 +9,7 @@
 	import Description from '$lib/posttype/Description.svelte'
 	import Comments from '$lib/posttype/Comments.svelte'
 	import CommentForm from '$lib/posttype/CommentForm.svelte'
-	import Taby from '$lib/Taby.svelte'
-	import TabyTab from '$lib/TabyTab.svelte'
-	import TabyBody from '$lib/TabyBody.svelte'
+	import { Tab, TabLabel, TabPanel } from 'Tab'
 
 	export let product
 </script>
@@ -28,28 +26,28 @@
 <PurchaseForm />
 
 <!-- Content -->
-<Taby class="mt-8">
+<Tab class="mt-8">
 	<svelte:fragment slot="tab">
-		<TabyTab title="توضیحات" />
-		<TabyTab title="نظرات" count={product.comments?.length} />
-		<TabyTab title="پرسش و پاسخ" count={product.questionsAndAnswers?.length} />
+		<TabLabel title="توضیحات" />
+		<TabLabel title="نظرات" count={product.comments?.length} />
+		<TabLabel title="پرسش و پاسخ" count={product.questionsAndAnswers?.length} />
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
-		<TabyBody class="p-8 lg:py-20">
+		<TabPanel class="p-8 lg:py-20">
 			<div class="max-w-3xl mx-auto">
 				<Description />
 			</div>
-		</TabyBody>
-		<TabyBody class="!p-0 !bg-transparent">
+		</TabPanel>
+		<TabPanel class="!p-0 !bg-transparent">
 			<Comments items={product.comments} />
-		</TabyBody>
+		</TabPanel>
 
-		<TabyBody class="!p-0 !bg-transparent">
+		<TabPanel class="!p-0 !bg-transparent">
 			<Comments items={product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" canReply={false} isQuestion={true} />
-		</TabyBody>
+		</TabPanel>
 	</svelte:fragment>
-</Taby>
+</Tab>
 
 <div class="mt-8 xl:mt-12">
 	<BestSellerProducts />
