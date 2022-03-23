@@ -4,7 +4,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import "css/utilities/.index.css";
-@import "css/base/.index.css";
-@import "css/components/.index.css";
-@import "css/partials/.index.css";
+@import "css/utilities/_index.css";
+@import "css/base/_index.css";
+@import "css/components/_index.css";
+@import "css/partials/_index.css";
