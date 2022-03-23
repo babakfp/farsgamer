@@ -8,13 +8,15 @@
 	onMount(_=> new EasyTab(easytab))
 </script>
 
-<nav bind:this={easytab}>
-	<ul class="{className} tabs flex items-center pb-2 -mb-2 scrollbar-x scrollbar-x-spacing-lg overflow-y-hidden">
-		<slot name="tab" />
-	</ul>
+<div class="{className}" bind:this={easytab}>
+	<nav>
+		<ul class="tabs flex items-center pb-2 -mb-2 scrollbar-x scrollbar-x-spacing-lg overflow-y-hidden">
+			<slot name="tab" />
+		</ul>
+	</nav>
 
 	<slot name="body" />
-</nav>
+</div>
 
 <style lang="postcss">
 	.tabs::-webkit-scrollbar-thumb {
