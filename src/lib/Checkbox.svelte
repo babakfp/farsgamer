@@ -14,7 +14,9 @@
 			/>
 			<i class="fi-rr-check absolute text-white opacity-0 text-xs"></i>
 		</div>
-		<span><slot /></span>
+		<div class="flex items-center min-h-6">
+			<span><slot /></span>
+		</div>
 	</label>
 </div>
 

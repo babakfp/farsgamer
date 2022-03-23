@@ -15,18 +15,18 @@
 </script>
 
 <div class="relative p-4 pb-3 bg-white rounded text-sm" {id}>
-	<div class="p-2 leading-6">{content}</div>
+	<div class="leading-6">{content}</div>
 
 	{#if showResponseForm}
-		<div class="mt-2 -mb-2 -mx-4 p-4 bg-gray-50">
+		<div class="mt-3 -mb-2 -mx-4 p-4 bg-gray-50">
 			<CommentForm sm={true} />
 		</div>
 	{/if}
 
 	<hr class="border-gray-100 border-dashed -mx-4 mt-2 pt-3">
 
-	<div class="flex items-center justify-between">
-		<div class="flex items-center gap-4">
+	<div class="flex items-center justify-between gap-2 whitespace-nowrap 4xs:gap-4">
+		<div class="flex items-center gap-2 4xs:gap-4">
 
 			<div class="flex gap-2 text-gray-500">
 				<span>{firstname} {lastname}</span>
@@ -37,16 +37,14 @@
 			</div>
 
 			{#if rating}
-				<StarRating {rating} />
+				<StarRating {rating} dirLtr={false} />
 			{/if}
 
-			<span class="w-0.5 h-0.5 bg-gray-300 rounded-full"></span>
-			
-			<span class="text-xs text-gray-400">{date}</span>
+			<span class="mr-1 text-xs text-gray-400">{date}</span>
 		</div>
 		
 		{#if canReply}
-			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
+			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs -ml-1" on:click={_=> showResponseForm = !showResponseForm}>
 				{showResponseForm ? 'صرف' : 'ارسال'} نظر
 			</button>
 		{/if}

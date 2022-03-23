@@ -9,7 +9,7 @@
 
   <div>
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
-    <div class="flex flex-wrap gap-8 lg:flex lg:justify-start">
+    <div class="flex flex-wrap gap-x-8 gap-y-2 lg:flex lg:justify-start">
 			<Radiobox contentClass="text-sm font-en" name="category" value="playstation">Play Station</Radiobox>
 			<Radiobox contentClass="text-sm font-en" name="category" value="epicgames">Epic Games</Radiobox>
 			<Radiobox contentClass="text-sm font-en" name="category" value="xbox">XBox</Radiobox>
