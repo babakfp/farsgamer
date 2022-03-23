@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte'
 	import Rating from '$lib/Rating.svelte'
-	import CommentWithReply from '$lib/new-folder/CommentWithReply.svelte'
+	import CommentWithReply from './_lib/CommentWithReply.svelte'
 
 	let easytab
 	onMount(_=> new EasyTab(easytab))
