@@ -1,12 +1,12 @@
 <script>
 	import Alert from '$lib/Alert.svelte'
-	export let useSmall = false
-	export let isForQuestion = false
+	export let sm = false
+	export let isQuestion = false
 </script>
 
-<form class="grid {useSmall ? 'gap-2' : 'gap-4'} justify-items-start">
-	<textarea class="input placeholder:text-sm" rows="4" placeholder={isForQuestion ? 'سوال خود را اینجا بنویسید...' : 'نظر خود را اینجا بنوسید...'}></textarea>
-	<button class="btn btn--brand {useSmall && 'btn--sm text-xs'}">{isForQuestion ? 'ارسال پرسش' : 'ارسال نظر'}</button>
+<form class="grid justify-items-start {sm ? 'gap-2' : 'gap-4'}">
+	<textarea class="input placeholder:text-sm" rows="4" placeholder="{isQuestion ? 'سوال' : 'نظر'} خود را اینجا بنویسید..."></textarea>
+	<button class="btn btn--brand px-12 text-sm">{isQuestion ? 'ارسال پرسش' : 'ارسال نظر'}</button>
 </form>
 
 <!-- <Alert class="mt-4" type="success">نظر شما با موفقیت ارسال شد🎉.</Alert> -->

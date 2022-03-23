@@ -7,6 +7,8 @@
 	export let lastname
 	export let date
 	export let content
+	export let rating = null
+	export let isBuyer = false
 	
 	let showResponseForm = false
 </script>
@@ -15,8 +17,8 @@
 	<div class="p-2 leading-6">{content}</div>
 
 	{#if showResponseForm}
-		<div class="mt-2 pb-2">
-			<CommentForm useSmall={true} />
+		<div class="mt-2 -mb-2 -mx-4 p-4 bg-gray-50">
+			<CommentForm sm={true} />
 		</div>
 	{/if}
 
@@ -24,8 +26,21 @@
 
 	<div class="flex items-center justify-between">
 		<div class="flex items-center gap-4">
-			<span class="text-gray-500">{firstname} {lastname}</span>
+
+			<div class="flex gap-2 text-gray-500">
+				<span>{firstname} {lastname}</span>
+			
+				{#if isBuyer}
+					<span class="py-0.5 px-2 bg-gray-100 rounded text-xs">خریدار</span>
+				{/if}
+			</div>
+
+			{#if rating}
+				<StarRating />
+			{/if}
+
 			<span class="w-0.5 h-0.5 bg-gray-300 rounded-full"></span>
+			
 			<span class="text-xs text-gray-400">{date}</span>
 		</div>
 		

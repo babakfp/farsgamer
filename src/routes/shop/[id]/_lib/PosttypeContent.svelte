@@ -29,7 +29,7 @@
 		<TabyBody class="!p-0 !bg-transparent">
 			<div class="p-8 bg-white rounded">
 				<h3 class="mb-3 font-bold">ارسال پرسش جدید</h3>
-				<CommentForm isForQuestion={true} />
+				<CommentForm isQuestion={true} />
 			</div>
 			<div class="py-4"><hr class="border-gray-200"></div>
 			<QAACommentWithReply />
