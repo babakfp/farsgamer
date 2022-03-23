@@ -3,7 +3,7 @@
 </script>
 
 <div class="relative flex items-center gap-0.5 text-gray-400 dir-ltr">
-	{#each [...Array(rating).keys()] as _}
+	{#each [...Array(5).keys()] as _}
 		<i class="fi-rr-star text-2xs"></i>
 	{/each}
 	

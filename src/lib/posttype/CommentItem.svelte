@@ -9,7 +9,8 @@
 	export let content
 	export let rating = null
 	export let isBuyer = false
-	
+	export let canReply = true
+
 	let showResponseForm = false
 </script>
 
@@ -36,7 +37,7 @@
 			</div>
 
 			{#if rating}
-				<StarRating />
+				<StarRating {rating} />
 			{/if}
 
 			<span class="w-0.5 h-0.5 bg-gray-300 rounded-full"></span>
@@ -44,8 +45,10 @@
 			<span class="text-xs text-gray-400">{date}</span>
 		</div>
 		
-		<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
-			{showResponseForm ? 'صرف' : 'ارسال'} نظر
-		</button>
+		{#if canReply}
+			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs" on:click={_=> showResponseForm = !showResponseForm}>
+				{showResponseForm ? 'صرف' : 'ارسال'} نظر
+			</button>
+		{/if}
 	</div>
 </div>
