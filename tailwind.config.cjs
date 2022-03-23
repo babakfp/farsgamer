@@ -1,6 +1,6 @@
 const colors = require('tailwindcss/colors')
-const directionUtilities = require('./src/utils/tailwind-utilities/direction.cjs')
-const overflowUtilities = require('./src/utils/tailwind-utilities/overflow.cjs')
+const directionUtilities = require('./src/utils/tailwind/utilities/direction.cjs')
+const overflowUtilities = require('./src/utils/tailwind/utilities/overflow.cjs')
 
 module.exports = {
   content: ['./src/**/*.{html,svelte}'],
