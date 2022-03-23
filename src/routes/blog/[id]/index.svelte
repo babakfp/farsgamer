@@ -36,13 +36,8 @@
 
 <Taby class="mt-8">
 	<svelte:fragment slot="tab">
-		<TabyTab>توضیحات</TabyTab>
-		<TabyTab>
-			<span>نظرات</span>
-			{#if post.comments?.length > 0}
-				<div class="text-sm font-normal"><span class="opacity-25">(</span>{post.comments.length}<span class="opacity-25">)</span></div>
-			{/if}
-		</TabyTab>
+		<TabyTab title="توضیحات" />
+		<TabyTab title="نظرات" count={post.comments?.length} />
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">

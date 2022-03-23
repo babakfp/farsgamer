@@ -12,12 +12,9 @@
 
 <Taby class="mt-8">
 	<svelte:fragment slot="tab">
-		<TabyTab>توضیحات</TabyTab>
-		<TabyTab>
-			<span>نظرات</span>
-			<div class="text-sm font-normal"><span class="opacity-25">(</span>۹۸<span class="opacity-25">)</span></div>
-		</TabyTab>
-		<TabyTab>پرسش و پاسخ</TabyTab>
+		<TabyTab title="توضیحات" />
+		<TabyTab title="نظرات" count="98" />
+		<TabyTab title="پرسش و پاسخ" />
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
