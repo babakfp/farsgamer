@@ -106,6 +106,7 @@ module.exports = {
 			sm: '0 0 .5rem rgba(15 23 42 / 2%)',
 			md: '0 0 1.25rem rgba(15 23 42 / 4%)',
 			lg: '0 0 1.5rem rgba(15 23 42 8%)',
+			'b-sm-muted': '0 .25rem .375rem rgba(15 23 42 / 5%)',
 			'b-sm': '0 .25rem .375rem rgba(15 23 42 / 10%)',
 			none: 'none',
 		},

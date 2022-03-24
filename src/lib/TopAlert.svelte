@@ -1,4 +1,17 @@
-<div class="alert tp-alert" role="alert">
-  <p class="tp-alert__message">پشتیبانی 24 ساعته از طریق چت آنلاین در خدمت شما عزیزان. جهت اطلاع از آخرین اخبار به <a href="javascript:">اینستاگرام ما</a> بپیوندید</p>
-  <button class="tp-alert__action" data-bs-dismiss="alert" aria-label="Close">بستن اعلان</button>
-</div>
+<script>
+	import { writable } from 'svelte-local-storage-store'
+	const showTopAlert = writable('showTopAlert', true)
+</script>
+
+{#if $showTopAlert}
+	<div class="z-50 sticky top-0 shadow-b-sm-muted">
+		<div class="flex p-4 bg-white bg-opacity-75 backdrop-blur-md">
+			<button class="h-full p-4 -mr-4 -my-4" on:click={_=> $showTopAlert = false}>
+				<i class="fi-rr-cross-small"></i>
+			</button>
+			<div>
+				<p class="text-sm">پشتیبانی 24 ساعته از طریق چت آنلاین در خدمت شما عزیزان. جهت اطلاع از آخرین اخبار <a class="link link--underline" href="javascript:">اینستاگرام فارس گیمر</a> را دنبال کنید.</p>
+			</div>
+		</div>
+	</div>
+{/if}

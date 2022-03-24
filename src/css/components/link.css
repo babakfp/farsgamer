@@ -14,4 +14,8 @@
     @apply text-brand hover:text-brand-deep link-transition;
   }
 
+	.link--underline {
+		@apply underline;
+	}
+
 }

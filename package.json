@@ -18,6 +18,7 @@
     "postcss": "^8.4.7",
     "postcss-import": "^14.0.2",
     "svelte": "^3.46.4",
+    "svelte-local-storage-store": "^0.2.6",
     "svelte-outclick": "^3.0.0",
     "svelte-preprocess": "^4.10.4",
     "svelte-select": "^4.4.7",
