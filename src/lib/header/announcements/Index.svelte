@@ -17,7 +17,7 @@
 	<button
 		bind:this={toggle}
 		on:click={_=> isOpen = !isOpen}
-		class="h-full flex items-center px-2 duration-100 hover:text-brand sm:px-2.5" title="مشاهده اعلانات"
+		class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5" title="مشاهده اعلانات"
 	>
 		<div class="relative">
 			<i class="fi-rr-bell xs:text-lg xl:text-xl"></i>
