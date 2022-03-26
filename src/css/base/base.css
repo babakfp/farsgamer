@@ -24,7 +24,8 @@
     @apply !outline-none focus-visible:!outline-none;
 	}
 
-  html, body {
+  html,
+	body {
 		@apply h-full font-fafn;
   }
 
