@@ -4,6 +4,9 @@
   "description": "The front-end project of the farsgamer.com website.",
   "scripts": {
     "dev": "svelte-kit dev",
+    "dev:open": "svelte-kit dev --open",
+    "dev:host": "svelte-kit dev --host",
+    "dev:host:open": "svelte-kit dev --host --open",
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
