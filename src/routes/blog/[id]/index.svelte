@@ -2,7 +2,7 @@
 	import Breadcrumb from '$lib/Breadcrumb.svelte'
 	import Description from '$lib/posttype/Description.svelte'
 	import Comments from '$lib/posttype/Comments.svelte'
-	import { Tab, TabLabel, TabPanel } from 'Tab'
+	import { Tab, TabLabel, TabPanel } from '$lib/Tab'
 	export let post
 </script>
 

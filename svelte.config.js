@@ -14,7 +14,6 @@ const config = {
           '$utils': path.resolve('src/utils'),
           '$db': path.resolve('src/store/db'),
           'Accordion': path.resolve('src/lib/Accordion'),
-          'Tab': path.resolve('src/lib/Tab'),
         },
       },
     },
