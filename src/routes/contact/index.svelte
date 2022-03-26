@@ -1,7 +1,7 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
-	import ContactInfo from '$lib/footer/ContactInfo.svelte'
+	import { ContactInfo } from '$partials/Footer'
 
 	const posters = [
 		{ imgSrc: '/img/team/team (1).jpg ' },

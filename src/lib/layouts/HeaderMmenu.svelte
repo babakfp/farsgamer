@@ -2,7 +2,7 @@
 	import { browser } from '$app/env'
 	import Header from '$lib/header/Index.svelte'
 	import SideMenu from '$lib/sidemenu/Index.svelte'
-	import Footer from '$lib/footer/Index.svelte'
+	import { Footer } from '$partials/Footer'
 	import Crisp from '$lib/Crisp.svelte'
 </script>
 

@@ -4,6 +4,8 @@
 		"paths": {
 			"$lib": ["src/lib"],
 			"$lib/*": ["src/lib/*"],
+			"$partials": ["src/lib/partials"],
+			"$partials/*": ["src/lib/partials/*"],
 			"$layouts": ["src/lib/layouts"],
 			"$layouts/*": ["src/lib/layouts/*"],
 			"$store": ["src/store"],
