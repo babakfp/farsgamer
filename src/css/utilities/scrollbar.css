@@ -4,13 +4,9 @@
 	.scrollbar-x { @apply overflow-x-overlay }
 	.scrollbar-y { @apply overflow-y-overlay }
 
-	@supports not (overflow: overlay) {
-		.scrollbar { @apply overflow-auto }
-		.scrollbar-x { @apply overflow-x-auto }
-		.scrollbar-y { @apply overflow-y-auto }
-	}
-
-	@supports (overflow: overlay) {
+	@supports (overflow: overlay) and
+	(overflow-x: overlay) and
+	(overflow-y: overlay) {
 		.scrollbar::-webkit-scrollbar { @apply w-0 h-0 }
 		.scrollbar:hover::-webkit-scrollbar { @apply w-1.5 h-1.5 }
 	}
