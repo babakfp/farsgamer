@@ -9,8 +9,4 @@
 		}
 	}
 
-	@supports not (overflow: overlay) {
-		::-webkit-scrollbar { @apply bg-gray-200 }
-	}
-
 }
