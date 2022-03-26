@@ -1,7 +1,7 @@
 <script>
 	import { browser } from '$app/env'
 	import { Header } from '$partials/Header'
-	import SideMenu from '$lib/sidemenu/Index.svelte'
+	import { SideMenu } from '$partials/SideMenu'
 	import { Footer } from '$partials/Footer'
 	import Crisp from '$lib/Crisp.svelte'
 </script>

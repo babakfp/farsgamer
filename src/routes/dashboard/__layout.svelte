@@ -1,6 +1,6 @@
 <script>
 	import { browser } from '$app/env'
-	import NavItem from '$lib/sidemenu/NavItem.svelte'
+	import { NavItem } from '$partials/SideMenu'
 	import NavMenu from './_lib/NavMenu.svelte'
 </script>
 
