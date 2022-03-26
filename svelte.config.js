@@ -13,7 +13,6 @@ const config = {
           '$store': path.resolve('src/store'),
           '$utils': path.resolve('src/utils'),
           '$db': path.resolve('src/store/db'),
-          'Accordion': path.resolve('src/lib/Accordion'),
         },
       },
     },
