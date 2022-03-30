@@ -1,7 +1,8 @@
 @layer components {
 	
 	:root {
-		--plyr-color-main: #3D42DF
+		--plyr-color-main: rgb(var(--brand));
+		--plyr-control-radius: var(--rounded-sm);
 	}
 
 	.plyr {

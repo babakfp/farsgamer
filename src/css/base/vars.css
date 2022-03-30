@@ -1,7 +1,11 @@
 @layer base {
 	:root {
+		--brand: 118, 102, 255;
+		--rounded: 12px;
+		--rounded-sm: 8px;
 		--page: theme('spacing.4');
 	}
+
 	@screen sm {
 		:root {
 			--page: theme('spacing.6');

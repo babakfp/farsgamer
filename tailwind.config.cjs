@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const { colorCssVar } = require('./src/utils/tailwind/helpers.cjs')
 const directionUtilities = require('./src/utils/tailwind/utilities/direction.cjs')
 const overflowUtilities = require('./src/utils/tailwind/utilities/overflow.cjs')
 
@@ -13,7 +14,7 @@ module.exports = {
 			colors: {
 				gray: colors.neutral,
 				brand: {
-					DEFAULT: '#7666FF',
+					DEFAULT: colorCssVar('--brand'),
 					deep: '#614FFF',
 				},
 				red: {
@@ -57,8 +58,8 @@ module.exports = {
         3: '3px',
       },
 			borderRadius: {
-				DEFAULT: '12px',
-				sm: '8px',
+				DEFAULT: 'var(--rounded)',
+				sm: 'var(--rounded-sm)',
 			},
 			borderWidth: {
 				3: '3px',

@@ -23,7 +23,7 @@
 
 	<div class="py-4"><hr></div>
 
-	<div class="relative my-4 rounded overflow-hidden">
+	<div class="relative mt-4 !mb-8 rounded overflow-hidden">
 		<video class="w-full" id="why-us-player" playsinline controls data-poster="https://farsgamer.com/site/videos/why-us-poster.png">
 			<source src="https://farsgamer.com/site/videos/why-us-video.mp4" type="video/mp4">
 		</video>
