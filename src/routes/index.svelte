@@ -1,6 +1,6 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
-	import { Pagination, Autoplay, EffectFade } from 'swiper'
+	import { Pagination, Autoplay } from 'swiper'
 	import CardsSection from '$lib/CardsSection.svelte'
 	import ImgShadowSelf from '$lib/ImgShadowSelf.svelte'
 	import ProductCardSwiper from '$lib/ProductCardSwiper.svelte'
