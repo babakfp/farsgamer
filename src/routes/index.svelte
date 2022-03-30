@@ -48,7 +48,7 @@
 				-----------
 			-->
 			<Swiper
-				class="MainPosters"
+				class="top-big-posters"
 				modules={[ Pagination, Autoplay ]}
 				loop={true}
 				speed={600}
@@ -249,11 +249,11 @@
 </div>
 
 <style lang="postcss">
-	:global(.MainPosters .swiper-pagination) {
+	:global(.top-big-posters .swiper-pagination) {
 		@apply lg:opacity-0;
 	}
 	@screen lg {
-		:global(.MainPosters:hover .swiper-pagination) {
+		:global(.top-big-posters:hover .swiper-pagination) {
 			@apply opacity-100;
 		}
 	}
