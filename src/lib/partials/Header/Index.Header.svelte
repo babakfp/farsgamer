@@ -12,7 +12,7 @@
 <TopAlert />
 <header class="z-20 sticky top-0 inset-x-0 h-16 flex items-center justify-between bg-white border-b border-gray-100 lg:h-20 lg:px-4" id="header">
   <div class="px-4 mx-auto w-full flex items-center justify-between gap-4 h-full lg:gap-0">
-    
+
 		<div id="header__right-side" class="flex items-center lg:w-full lg:h-full">
       <OpenMobileMenu />
       <Logo />
@@ -47,7 +47,8 @@
 </header>
 
 <style lang="postcss">
-	:global(body.main-header) #header {
+	:global(body.main-header) #header,
+	:global(body.main-header #TopAlert) {
 		@apply lg:mr-56 2xl:mr-64;
 	}
 	:global(body.main-header) #header__right-side {
