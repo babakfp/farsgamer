@@ -1,25 +1,37 @@
-const colorTakeRgb = value => {
+/**
+ * @param {string} rgbColor Format: 255, 255, 255
+ */
+const colorTakeRgb = rgbColor => {
 	return ({ opacityValue }) => {
 		if (opacityValue === undefined) {
-			return `rgb(${value})`
+			return `rgb(${rgbColor})`
 		}
-		return `rgba(${value}, ${opacityValue})`
+		return `rgba(${rgbColor}, ${opacityValue})`
 	}
 }
 
-const colorCssVar = value => {
+/**
+ * Uses RGB formatted ccolor as CSS-Var and returns RGB formatted color
+ * @param {string} colorAsCssVar Example: --brand. Format: 255, 255, 255
+ */
+const colorCssVar = colorAsCssVar => {
 	return ({ opacityValue }) => {
 		if (opacityValue === undefined) {
-			return `rgb(var(${value}))`
+			return `rgb(var(${colorAsCssVar}))`
 		}
-		return `rgba(var(${value}), ${opacityValue})`
+		return `rgba(var(${colorAsCssVar}), ${opacityValue})`
 	}
 }
 
-const colorObjCssVar = (name, colors) => {
+/**
+ * Takes a Tailwind's color{object} and converts the value of each color to CSS-Var
+ * @param {string} colorName Example: 'gray'
+ * @param {object} colors Example: colors.neutral
+ */
+const colorObjCssVar = (colorName, colors) => {
 	let newColors = {}
 	for (const [key, value] of Object.entries(colors)) {
-		newColors[key] = colorCssVar(`--${name}-${key}`)
+		newColors[key] = colorCssVar(`--${colorName}-${key}`)
 	}
 	return newColors
 }
