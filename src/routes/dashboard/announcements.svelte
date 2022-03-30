@@ -8,11 +8,11 @@
 		{#each $announcements as ann}
 			<li class="grid p-4 bg-white rounded">
 				<div class="flex items-center justify-between">
-					<span class="font-bold text-sm line-clamp-1">{ann.title}</span>
-					<span class="text-2xs text-gray-500">۲ روز پیش</span>
+					<span class="font-bold line-clamp-1">{ann.title}</span>
+					<span class="text-xs text-gray-500">۲ روز پیش</span>
 				</div>
 
-				<p class="mt-1 text-xs">{ann.description}</p>
+				<p class="mt-1 text-sm">{ann.description}</p>
 			</li>
 		{/each}
 	</ul>
