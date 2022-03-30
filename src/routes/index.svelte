@@ -17,22 +17,16 @@
 		{ src: '/img/gift-card/google-play.png' },
 	]
 
-	const bigMainPosters = [
+	const mainPosters = [
 		{ imgSrc: '/img/home/home-main-poster (1).png' },
 		{ imgSrc: '/img/home/home-main-poster (2).png' },
 		{ imgSrc: '/img/home/home-main-poster (3).png' },
 		{ imgSrc: '/img/home/home-main-poster (4).png' },
 	]
 
-	const topSecondPosters = [
-		[
-			{ imgSrc: '/img/home/home-second-poster (1).png' },
-			{ imgSrc: '/img/home/home-second-poster (2).png' },
-		],
-		[
-			{ imgSrc: '/img/home/home-second-poster (3).png' },
-			{ imgSrc: '/img/home/home-second-poster (4).png' },
-		],
+	const mainSecondPosters = [
+		{ imgSrc: '/img/home/home-second-poster (1).png' },
+		{ imgSrc: '/img/home/home-second-poster (2).png' },
 	]
 </script>
 
@@ -61,7 +55,7 @@
 				pagination={{ clickable: true, dynamicBullets: true }}
 				autoplay={{ delay: 4000, disableOnInteraction: false }}
 			>
-				{#each bigMainPosters as poster}
+				{#each mainPosters as poster}
 					<SwiperSlide>
 						<a href={poster.href || 'javascript:'}>
 							<img src={poster.imgSrc} alt>
@@ -75,27 +69,13 @@
 			Second Posters
 			-----------
 		-->
-		<Swiper
-			class="home-second-posters mt-4 md:w-4/12 md:mt-0"
-			modules={[ Autoplay, EffectFade ]}
-			loop={true}
-			speed={600}
-			autoplay={{ delay: 4000, disableOnInteraction: false }}
-			spaceBetween={16}
-			effect="fade"
-		>
-			{#each topSecondPosters as posters}
-				<SwiperSlide>
-					<div class="grid grid-cols-2 gap-4 md:grid-cols-1">
-						{#each posters as poster}
-							<a class="flex" href={poster.href || 'javascript:'}>
-								<img class="w-full rounded" src={poster.imgSrc} alt>
-							</a>
-						{/each}
-					</div>
-				</SwiperSlide>
+		<div class="grid grid-cols-2 gap-4 md:grid-cols-1">
+			{#each mainSecondPosters as poster}
+				<a class="flex" href={poster.href || 'javascript:'}>
+					<img class="w-full rounded" src={poster.imgSrc} alt>
+				</a>
 			{/each}
-		</Swiper>
+		</div>
 	</section>
 
 	<!-- -->
