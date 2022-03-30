@@ -28,7 +28,7 @@
 	<div class="relative rounded overflow-hidden">
 		<img src="/img/products/product-thumb (1).png" alt>
 		{#if inStock === false}
-			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 backdrop-blur-sm bg-opacity-40">
+			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-40 backdrop-blur-sm">
 				<p class="text-white font-bold drop-shadow-xl">نـامـوجـود</p>
 			</div>
 		{/if}
