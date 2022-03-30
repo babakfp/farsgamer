@@ -1,8 +1,13 @@
 <script>
 	import { onMount } from 'svelte'
-	onMount(_=> window.addEventListener('load', _=> new Plyr('#why-us-player', {
-		controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'airplay', 'fullscreen'],
-	})))
+
+	let loadingVideo = true
+	onMount(_=> {
+		new Plyr('#why-us-player', {
+			controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'airplay', 'fullscreen'],
+		})
+		loadingVideo = false
+	})
 </script>
 
 <svelte:head>
@@ -18,10 +23,18 @@
 
 	<div class="py-4"><hr></div>
 
-	<div class="mt-4 pb-4">
+	<div class="relative my-4 rounded overflow-hidden">
 		<video class="w-full" id="why-us-player" playsinline controls data-poster="https://farsgamer.com/site/videos/why-us-poster.png">
 			<source src="https://farsgamer.com/site/videos/why-us-video.mp4" type="video/mp4">
 		</video>
+		{#if loadingVideo}
+			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 backdrop-blur text-white">
+				<div class="grid gap-4">
+					<i class="fi-rr-spinner animate-spin text-4xl"></i>
+					<p class="text-sm">در حال بارگذاری ویدیو...</p>
+				</div>
+			</div>
+		{/if}
 	</div>
 	
   <h3>چگونه اعتماد کنیم؟</h3>
