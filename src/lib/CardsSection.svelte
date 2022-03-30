@@ -1,6 +1,6 @@
 <script>
 	export let title
-	export let href = null
+	export let href = ''
 </script>
 
 <section>

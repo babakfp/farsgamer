@@ -32,6 +32,7 @@ module.exports = {
 				62: '15.5rem',
 				66: '16.5rem',
 				88: '22rem',
+				page: 'var(--page)',
 				input: '3rem',
 			},
 			zIndex: { 
@@ -84,13 +85,14 @@ module.exports = {
 			},
 		},
 		screens: {
+			'5xs': '360px',
 			'4xs': '375px',
 			'3xs': '400px',
 			'2xs': '480px',
 			xs: '576px',
 			sm: '640px',
 			md: '768px',
-			'2md': '840px',
+			'2md': '860px',
 			lg: '1024px',
 			'2lg': '1140px',
 			xl: '1280px',

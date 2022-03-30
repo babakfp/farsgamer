@@ -1,4 +1,15 @@
 @layer base {
 	:root {
+		--page: theme('spacing.4');
+	}
+	@screen sm {
+		:root {
+			--page: theme('spacing.6');
+		}
+	}
+	@screen xl {
+		:root {
+			--page: theme('spacing.8');
+		}
 	}
 }

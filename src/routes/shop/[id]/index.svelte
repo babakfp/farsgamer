@@ -2,7 +2,9 @@
 	import Gallery from './_lib/Gallery.svelte'
 	import Info from './_lib/Info.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
-	import BestSellerProducts from '$lib/home/BestSellerProducts.svelte'
+
+	import CardsSection from '$lib/CardsSection.svelte'
+	import ProductCardSwiper from '$lib/ProductCardSwiper.svelte'
 	
 	// Content
 	import { onMount } from 'svelte'
@@ -50,5 +52,7 @@
 </Tab>
 
 <div class="mt-8 xl:mt-12">
-	<BestSellerProducts />
+	<CardsSection title="محصولات مرتبط">
+		<ProductCardSwiper />
+	</CardsSection>
 </div>

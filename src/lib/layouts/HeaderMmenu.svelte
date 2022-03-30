@@ -10,7 +10,7 @@
 <SideMenu />
 
 <main id="main">
-	<div id="page-content" class="relative p-4 overflow-x-hidden sm:p-6 2xl:p-8 2xl:pb-12">
+	<div id="page-content" class="relative p-page overflow-x-hidden xl:pb-12">
 		<slot />
 	</div>
 
