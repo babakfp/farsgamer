@@ -35,12 +35,14 @@
 <style lang="postcss">
 	:root {
 		--slidesPerView: 1;
-		--sidebar-w: 0;
+		--sidebar-w: 0px;
 	}
 
 	:global(.product-card-swiper .swiper-slide) {
-		/* -- | page padding | -- */
-		width: calc((100vw - var(--page) - var(--sidebar-w)) / var(--slidesPerView) - ((var(--slidesPerView) - 1) * 1rem));
+		/* (full view width) | (page padding from right and left) | (sidebar width) */
+		--slides-wrapper-width: 100vw - var(--page) - var(--page) - var(--sidebar-w);
+		--space-between-sliders: ( var(--slidesPerView) - 1 ) * 1rem;
+		width: calc( ( var(--slides-wrapper-width) - var(--space-between-sliders) ) / var(--slidesPerView) );
 	}
 
 	@screen 5xs {
