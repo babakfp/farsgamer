@@ -10,6 +10,9 @@
     "build": "svelte-kit build",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
+		"preview:open": "svelte-kit preview --open",
+    "preview:host": "svelte-kit preview --host",
+    "preview:host:open": "svelte-kit preview --host --open",
     "fonts": "sass static/sass/fonts.scss:src/css/base/fonts.css --no-source-map",
     "postcss": "postcss build static/css/index.css -o static/css/dist.css"
   },
