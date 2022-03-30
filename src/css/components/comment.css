@@ -130,26 +130,6 @@
 		@apply max-h-20 overflow-hidden;
 	}
 
-	.comment__reply-btn {
-		@apply btn btn--sm btn--brand flex mr-auto ml-0 mt-2;
-	}
-
-	.comment .comment__form {
-		@apply border-0;
-	}
-
-	.comment .comment .comment__form {
-		@apply bg-gray-50;
-	}
-
-	.comment .comment__form-title {
-		@apply text-base;
-	}
-
-	.comment--reply.comment--reply.active .comment__form {
-		@apply block;
-	}
-
 	@keyframes comment__ticker {
 		0% {
 			transform: translate3d(-20%, 0, 0);

@@ -18,26 +18,6 @@
 	})
 })()
 
-// comments reply button and form handler.
-;(_=> {
-	const commentBoxArray = document.querySelectorAll('.comment--reply')
-	if (!commentBoxArray) return
-	commentBoxArray.forEach(commentBox => {
-		const addReplyBtn = commentBox.querySelector(
-			'.comment__content .comment__reply-btn'
-		)
-		const commentForm = commentBox.querySelector(
-			'.comment__content .comment__form'
-		)
-		if (addReplyBtn && commentForm) {
-			commentForm.classList.add('hidden')
-			addReplyBtn.addEventListener('click', _=> {
-				commentForm.classList.toggle('hidden')
-			})
-		}
-	})
-})()
-
 // Dashboard orders table
 ;(_=> {
 	window.addEventListener('load', _=> {
