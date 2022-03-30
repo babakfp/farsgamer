@@ -1,6 +1,6 @@
 <script>
 	export let title
-	export let count
+	export let count = null
 </script>
 
 <li>

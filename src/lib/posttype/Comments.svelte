@@ -3,8 +3,8 @@
 	import CommentForm from './CommentForm.svelte'
 	import Alert from '$lib/Alert.svelte'
 	export let items
-	export let canReply
-	export let isQuestion
+	export let canReply = false
+	export let isQuestion = false
 	export let headingTitle = 'ارسال نظر جدید'
 </script>
 
