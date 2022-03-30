@@ -23,7 +23,8 @@
 	@include font-face((
 		font-family: "Montserrat",
 		font-style: normal,
-		weight: ( Thin 100, ExtraLight 200, Light 300, Regular 400, Medium 500, SemiBold 600, Bold 700, ExtraBold 800, "Black" 900, ),
+		weight: ( Thin 100, ExtraLight 200, Light 300, Regular 400, Medium 500, SemiBold 600, Bold 700, ),
+		// weight: ( Thin 100, ExtraLight 200, Light 300, Regular 400, Medium 500, SemiBold 600, Bold 700, ExtraBold 800, "Black" 900, ),
 		url: "/fonts/Montserrat/Montserrat-WEIGHT.SUFFIX",
 		suffix: ttf,
 		font-display: swap,

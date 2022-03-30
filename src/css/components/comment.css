@@ -21,7 +21,7 @@
 	}
 
 	.comment__date-day {
-		@apply text-xl font-extrabold;
+		@apply text-lg;
 	}
 
 	.comment__date-month {
@@ -179,7 +179,7 @@
 	}
 
 	.date-box__day {
-		@apply text-xl font-extrabold;
+		@apply text-lg;
 	}
 
 	.date-box__month {
