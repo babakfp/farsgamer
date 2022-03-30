@@ -70,7 +70,7 @@
 			Second Posters
 			-----------
 		-->
-		<div class="grid grid-cols-2 gap-4 md:grid-cols-1">
+		<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
 			{#each mainSecondPosters as poster}
 				<a class="flex" href={poster.href || 'javascript:'}>
 					<img class="w-full rounded" src={poster.imgSrc} alt>
