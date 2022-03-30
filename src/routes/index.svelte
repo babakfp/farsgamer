@@ -53,7 +53,7 @@
 				speed={600}
 				grabCursor={true}
 				pagination={{ clickable: true, dynamicBullets: true }}
-				autoplay={{ delay: 4000, disableOnInteraction: false }}
+				autoplay={{ delay: 5000, disableOnInteraction: false }}
 			>
 				{#each mainPosters as poster}
 					<SwiperSlide>
@@ -94,7 +94,7 @@
 			speed={600}
 			grabCursor={true}
 			pagination={{ clickable: true }}
-			autoplay={{ delay: 4000, disableOnInteraction: false }}
+			autoplay={{ delay: 5000, disableOnInteraction: false }}
 			spaceBetween={16}
 			slidesPerView={3}
 			breakpoints={{
@@ -125,7 +125,7 @@
 			speed={600}
 			grabCursor={true}
 			pagination={{ clickable: true }}
-			autoplay={{ delay: 4000, disableOnInteraction: false }}
+			autoplay={{ delay: 5000, disableOnInteraction: false }}
 			spaceBetween={16}
 			breakpoints={{
 				640:  { slidesPerView: 2 },
@@ -205,7 +205,7 @@
 			speed={600}
 			grabCursor={true}
 			pagination={{ clickable: true }}
-			autoplay={{ delay: 4000, disableOnInteraction: false }}
+			autoplay={{ delay: 5000, disableOnInteraction: false }}
 			spaceBetween={16}
 			slidesPerView={2}
 			breakpoints={{

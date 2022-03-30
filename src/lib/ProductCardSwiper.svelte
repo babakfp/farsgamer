@@ -13,7 +13,7 @@
 	speed={600}
 	grabCursor={true}
 	pagination={{ clickable: true }}
-	autoplay={{ delay: 4000, disableOnInteraction: false }}
+	autoplay={{ delay: 5000, disableOnInteraction: false }}
 	spaceBetween={16}
 	slidesPerView={1}
 	breakpoints={{

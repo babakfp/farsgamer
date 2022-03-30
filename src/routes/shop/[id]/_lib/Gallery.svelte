@@ -25,7 +25,7 @@
 				speed={600}
 				grabCursor={true}
 				pagination={{ clickable: true, dynamicBullets: true }}
-				autoplay={{ delay: 4000, disableOnInteraction: true }}
+				autoplay={{ delay: 5000, disableOnInteraction: true }}
 			>
 				{#each images as src}
 					<SwiperSlide class="main-gallery-slide">
@@ -44,7 +44,7 @@
 					on:swiper={setThumbsSwiper}
 					speed={600}
 					grabCursor={true}
-					autoplay={{ delay: 4000, disableOnInteraction: true }}
+					autoplay={{ delay: 5000, disableOnInteraction: true }}
 					direction="vertical"
 					spaceBetween={16}
 					slidesPerView={3}
