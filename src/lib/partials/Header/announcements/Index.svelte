@@ -28,7 +28,7 @@
 	</button>
 
 	<OutClick on:outclick={_=> isOpen = false} excludeByDOMNode={[toggle]}>
-		<div class:hidden={!isOpen} class="z-40 absolute inset-x-4 top-full -mt-2 overflow-hidden bg-white border border-gray-100 rounded-sm 3xs:left-0 3xs:right-auto 3xs:w-80 xs:w-88" style="box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%)">
+		<div class:hidden={!isOpen} class="z-20 absolute inset-x-4 top-full -mt-2 overflow-hidden bg-white border border-gray-100 rounded-sm 3xs:left-0 3xs:right-auto 3xs:w-80 xs:w-88" style="box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%)">
 
 			<div class="flex items-center justify-between p-3 border-b border-gray-100 text-sm">
 				<span>اعلانات</span>
