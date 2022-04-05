@@ -1,42 +1,23 @@
 <script>
-	import { onMount } from 'svelte'
-
-	let loadingVideo = true
-	onMount(_=> {
-		new Plyr('#why-us-player', {
-			controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'airplay', 'fullscreen'],
-		})
-		loadingVideo = false
-	})
+	import Plyr from '$lib/Plyr.svelte'
 </script>
 
 <svelte:head>
 	<title>چرا فارس گیمر</title>
-
-	<link rel="stylesheet" href="/lib/plyr/plyr.css">
-  <script src="/lib/plyr/plyr.polyfilled.js"></script>
 </svelte:head>
 
 <div class="content">
-
 	<h1 class="text-2xl font-bold">چرا فارس گیمر</h1>
 
 	<div class="py-4"><hr></div>
 
-	<div class="relative mt-4 !mb-8 rounded overflow-hidden">
-		<video class="w-full" id="why-us-player" playsinline controls data-poster="https://farsgamer.com/site/videos/why-us-poster.png">
-			<source src="https://farsgamer.com/site/videos/why-us-video.mp4" type="video/mp4">
-		</video>
-		{#if loadingVideo}
-			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 backdrop-blur text-white">
-				<div class="grid gap-4">
-					<i class="fi-rr-spinner animate-spin text-4xl"></i>
-					<p class="text-sm">در حال بارگذاری ویدیو...</p>
-				</div>
-			</div>
-		{/if}
-	</div>
-	
+	<Plyr
+		class="mt-4 !mb-8"
+		options={{ controls: ['play', 'progress', 'current-time', 'mute', 'volume', 'airplay', 'fullscreen'], }}
+		videoUrl="https://farsgamer.com/site/videos/why-us-video.mp4"
+		videoPosterUrl="https://farsgamer.com/site/videos/why-us-poster.png"
+	/>
+
   <h3>چگونه اعتماد کنیم؟</h3>
   <p>فروشگاه فارس گیمر در وب‌سایت نماد اعتماد الکترونیک به آدرس enamad.ir، ساماندهی به آدرس samandehi.ir، زرین پال به آدرس zarinpal.com و پی Pay.ir ثبت شده است. ثبت وبسایت در این سامانه ها و وب سایت ها به این معنی است که هویت صاحب وب‌سایت احراز، و ثبت شده می‌باشد. شما کاربران محترم میتوانید با کلیک بر روی لوگوی ساماندهی و نماد اعتماد در قسمت فوتر ( انتهای وب سایت ) از صحت این موضوع اطمینان حاصل و با خیالی آسوده خرید خود را انجام دهید.</p>
 	
@@ -46,7 +27,6 @@
   <h3>فرمول E=mc^2 در فارس گیمر</h3>
 	<p>سرعت، کیفیت و پشتیبانی</p>
 	<p>فارس گیمر سعی بر ایجاد یک مرجع تخصصی برای تمامی گیمر های ایران کرده است، ما در فارس گیمر تمامی سعی و تلاش خود را خواهیم کرد تا با حداکثر سرعت سفارش شما را تحویل، نهایت کیفیت محصول را به شما ارائه و همچنین با بهره گیری از پشتیبانی ۲۴ ساعته بهترین پشتیبانی بعد و قبل از خرید را در اختیار شما عزیزان قرار دهیم تا بتوانیم علاوه بر به ارمقان آوردن یک فروشگاه تخصصی در حوزه گیم تمامی نیاز های یک گیمر را برطرف سازیم. با توجه به وجود وب سایت های مشابه زیاد تیم فارس گیمر همواره سعی بر این داشته تا با کار و تلاش های روز افزون و هچنین قیمت های عالی جهت در هم شکستن قیمت های نجومی بازار رضایت شما عزیزان را جلب نماید و در این راه سخت با کمک شما عزیزان در این 4 سال موق عمل کرده است.</p>
-	
 </div>
 
 <style lang="postcss">

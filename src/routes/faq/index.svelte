@@ -7,7 +7,6 @@
 </svelte:head>
 
 <div class="content">
-
 	<h1 class="text-2xl font-bold">سوالات متداول</h1>
 
 	<div class="py-4"><hr></div>
@@ -25,7 +24,6 @@
 			</AccordionGroup>
 		{/each}
 	</ol>
-
 </div>
 
 <style lang="postcss">

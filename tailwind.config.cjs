@@ -1,7 +1,30 @@
 const colors = require('tailwindcss/colors')
-const { colorCssVar } = require('./src/utils/tailwind/helpers.cjs')
-const directionUtilities = require('./src/utils/tailwind/utilities/direction.cjs')
-const overflowUtilities = require('./src/utils/tailwind/utilities/overflow.cjs')
+
+/**
+	* Uses RGB formatted color as CSS-Var and returns RGB formatted color
+	* @param {string} cssVar Example: --white. Format: 255, 255, 255
+*/
+const cssVarColor = (cssVar) => {
+	return ({ opacityValue }) => {
+		if (opacityValue === undefined) {
+			return `rgb(var(${cssVar}))`
+		}
+		return `rgba(var(${cssVar}), ${opacityValue})`
+	}
+}
+
+/**
+	* Takes a Tailwind's color{object} and converts the value of each color to CSS-Var
+	* @param {string} colorName Example: 'gray'
+	* @param {object} colors Example: colors.neutral. { '50': '#fafafa' }
+*/
+const cssVarColorObj = (colorName, colors) => {
+	let newColors = {}
+	for (const lvl in colors) {
+		newColors[lvl] = cssVarColor(`--${colorName}-${lvl}`)
+	}
+	return newColors
+}
 
 module.exports = {
   content: ['./src/**/*.{html,svelte}'],
@@ -14,7 +37,7 @@ module.exports = {
 			colors: {
 				gray: colors.neutral,
 				brand: {
-					DEFAULT: colorCssVar('--brand'),
+					DEFAULT: cssVarColor('--brand'),
 					deep: '#614FFF',
 				},
 				red: {
@@ -116,7 +139,5 @@ module.exports = {
   },
   plugins: [
 		require('@tailwindcss/line-clamp'),
-		directionUtilities,
-		overflowUtilities,
 	],
 }

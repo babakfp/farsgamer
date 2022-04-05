@@ -1,0 +1,24 @@
+@layer utilities {
+	.overflow-overlay {
+		overflow: auto; /* In case the browser doesn't support overlay */
+		overflow: overlay;
+	}
+	.overflow-y-overlay {
+		overflow-y: auto; /* In case the browser doesn't support overlay */
+		overflow-y: overlay;
+	}
+	.overflow-x-overlay {
+		overflow-x: auto; /* In case the browser doesn't support overlay */
+		overflow-x: overlay;
+	}
+
+	.overflow-unset {
+		overflow: unset;
+	}
+	.overflow-y-unset {
+		overflow-y: unset;
+	}
+	.overflow-x-unset {
+		overflow-x: unset;
+	}
+}

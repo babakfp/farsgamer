@@ -1,5 +1,5 @@
 <script>
-	import { browser, dev, mode } from '$app/env'
+	import { browser } from '$app/env'
 	import { writable } from 'svelte-local-storage-store'
 	import { isOpen as isSideMenuOpen } from '$store/mobile-menu.js'
 
