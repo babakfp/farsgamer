@@ -58,7 +58,7 @@
 			>
 				{#each mainPosters as poster}
 					<SwiperSlide>
-						<a href={poster.href || 'javascript:'}>
+						<a class="img-link flex" href={poster.href || 'javascript:'}>
 							<img src={poster.imgSrc} alt>
 						</a>
 					</SwiperSlide>
@@ -72,7 +72,7 @@
 		-->
 		<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
 			{#each mainSecondPosters as poster}
-				<a class="flex" href={poster.href || 'javascript:'}>
+				<a class="img-link flex" href={poster.href || 'javascript:'}>
 					<img class="w-full rounded" src={poster.imgSrc} alt>
 				</a>
 			{/each}
@@ -242,7 +242,7 @@
 		1 Poster
 		--------
 	-->
-	<a class="flex hover:opacity-90" href="javascript:">
+	<a class="img-link flex" href="javascript:">
 		<img class="rounded" src="/img/home/poster-full-width (2).png" alt>
 	</a>
 
