@@ -14,8 +14,8 @@
 </script>
 
 <OutClick on:outclick={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} excludeByQuerySelector={['.js-burger-toggle-btn']}>
-	<sidebar on:click|self={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} id="sidemenu" class="fixed translate-x-full {$isOpen && '!translate-x-0'} z-30 inset-0 top-16 bg-gray-900 bg-opacity-60 backdrop-blur-sm lg:top-20">
-		<div id="sidemenu__wrapper" class="max-w-64 bg-white w-full h-full translate-x-full {$isOpen && '!translate-x-0'} duration-300 ease-in-out">
+	<sidebar on:click|self={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} id="sidemenu" class="z-30 [ fixed inset-0 top-16 ] [ opacity-0 pointer-events-none ] {$isOpen && '[ opacity-100 pointer-events-auto ]'} [ bg-gray-900 bg-opacity-25 backdrop-blur-xs ] [ duration-300 ] [ lg:top-20 ]">
+		<div id="sidemenu__wrapper" class="[ w-full max-w-64 h-full ] bg-white translate-x-full {$isOpen && '!translate-x-0'} [ duration-300 ease-in-out ]">
 			<Logo />
 
 			<div id="sidemenu__scrollable-content" class="scrollbar max-h-full pb-6">
@@ -69,7 +69,7 @@
 
 <style lang="postcss">
 	:global(body.main-header) #sidemenu {
-		@apply lg:w-56 lg:ml-auto lg:translate-x-0 lg:bg-transparent 2xl:w-64;
+		@apply lg:w-56 lg:ml-auto lg:translate-x-0 lg:bg-transparent lg:opacity-100 lg:pointer-events-auto 2xl:w-64;
 	}
 
 	:global(body.main-header) #sidemenu__wrapper {
