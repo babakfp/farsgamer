@@ -22,13 +22,13 @@
 				
 				<nav class="pt-4">
 					<ul>
-						<NavItem title="خانه" href="/" icon="fi-rr-home" />
-						<NavItem title="فروشگاه" href="/shop" icon="fi-rr-shop" />
-						<NavItem title="بلاگ" href="/blog" icon="fi-rr-document" />
-						<NavItem title="چرا فارس گیمر" href="/why-us" icon="fi-rr-diploma" />
-						<NavItem title="سوالات متداول" href="/faq" icon="fi-rr-interrogation" />
-						<NavItem title="تماس با ما" href="/contact" icon="fi-rr-headset" />
-						<NavItem title="قوانین و مقررات" href="/terms" icon="fi-rr-bank" />
+						<NavItem title="خانه" href="/" icon="fg-home" />
+						<NavItem title="فروشگاه" href="/shop" icon="fg-shop" />
+						<NavItem title="بلاگ" href="/blog" icon="fg-document" />
+						<NavItem title="چرا فارس گیمر" href="/why-us" icon="fg-diploma" />
+						<NavItem title="سوالات متداول" href="/faq" icon="fg-interrogation" />
+						<NavItem title="تماس با ما" href="/contact" icon="fg-headset" />
+						<NavItem title="قوانین و مقررات" href="/terms" icon="fg-bank" />
 					</ul>
 				</nav>
 
@@ -47,14 +47,14 @@
 
 				<div class="p-4 space-y-2">
 					<div class="flex items-center gap-2 py-3 px-4 bg-gray-50 rounded">
-						<i class="fi-rr-shopping-cart-check w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
+						<i class="fg-shopping-cart-check w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
 						<div>
 							<h6 class="font-bold text-yellow animate-pulse">۴۰۰</h6>
 							<p class="text-xs">سفارش <span class="font-medium">موفق</span> امروز</p>
 						</div>
 					</div>
 					<div class="flex items-center gap-2 py-3 px-4 bg-gray-50 rounded">
-						<i class="fi-rr-truck-loading w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
+						<i class="fg-truck-loading w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
 						<div>
 							<h6 class="font-bold text-yellow animate-pulse">۴۰</h6>
 							<p class="text-xs">سفارش <span class="font-medium">در حال انجام</span></p>

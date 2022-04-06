@@ -1,5 +1,5 @@
 <button class="z-10 fixed left-4 bottom-4 w-14 h-14 bg-crisp rounded-full text-white duration-150 ease-in-out active:scale-95 sm:left-6 sm:bottom-6 2xl:left-8 2xl:bottom-8">
-	<svg class="w-8 h-8"><use xlink:href="#svg-crisp"></use></svg>
+	<i class="fg-crisp text-2xl"></i>
 </button>
 
 <style lang="postcss">

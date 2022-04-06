@@ -29,7 +29,7 @@
 				<!-- comment item depth 2 -->
 				<div class="comment comment--ligth gap-y-2 gap-x-4 grid xs:flex">
 					<div class="flex items-center xs:justify-items-center gap-2 w-12 xs:gap-1 xs:grid xs:items-start xs:content-start xs:justify-center">
-						<i class="icon-user min-w-12 min-h-12 max-w-12 max-h-12 bg-yellow rounded flex items-center justify-center text-white"></i>
+						<i class="fg-user min-w-12 min-h-12 max-w-12 max-h-12 bg-yellow rounded flex items-center justify-center text-white"></i>
 						<p class="font-bold xs:font-normal xs:text-xs">پشتیبانی</p>
 					</div>
 					<div class="comment__body mt-0">

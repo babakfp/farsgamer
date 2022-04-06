@@ -7,7 +7,7 @@
 
 	{#if prevLink}
 		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href={prevLink}>
-			<i class="fi-rr-angle-double-small-right"></i>
+			<i class="fg-angle-double-small-right"></i>
 		</a>
 
 		<hr class="h-6 border-t-0 border-r-2 border-dashed border-gray-200">
@@ -21,7 +21,7 @@
 			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">3</a>
 		</li>
 		<li class="flex items-center justify-center h-10 w-10">
-			<i class="fi-rr-menu-dots"></i>
+			<i class="fg-menu-dots"></i>
 		</li>
 		<li>
 			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">9</a>
@@ -32,7 +32,7 @@
 		<hr class="h-6 border-t-0 border-r-2 border-dashed border-gray-200">
 
 		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href={nextLink}>
-			<i class="fi-rr-angle-double-small-left"></i>
+			<i class="fg-angle-double-small-left"></i>
 		</a>
 	{/if}
 

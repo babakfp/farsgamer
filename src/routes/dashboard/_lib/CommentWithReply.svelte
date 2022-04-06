@@ -31,7 +31,7 @@
   <div class="comment__body">
     <div class="comment__content">
       <div class="comment__content-icon">
-        <i class="icon-quote"></i>
+        <i class="fg-quote"></i>
       </div>
 
       <!-- actual content of the comment -->
@@ -73,7 +73,7 @@
   <div class="comment__body">
     <div class="comment__content">
       <div class="comment__content-icon">
-        <i class="icon-quote"></i>
+        <i class="fg-quote"></i>
       </div>
 
       <!-- actual content of the comment -->
@@ -109,7 +109,7 @@
       <div class="comment__body">
         <div class="comment__content">
           <div class="comment__content-icon">
-            <i class="icon-quote"></i>
+            <i class="fg-quote"></i>
           </div>
     
           <!-- actual content of the comment -->

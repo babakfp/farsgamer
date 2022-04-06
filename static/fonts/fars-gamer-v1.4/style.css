@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'fars-gamer';
+  src:
+    url('fonts/fars-gamer.ttf?viq9rf') format('truetype'),
+    url('fonts/fars-gamer.woff?viq9rf') format('woff'),
+    url('fonts/fars-gamer.svg?viq9rf#fars-gamer') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="fg-"], [class*=" fg-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'fars-gamer' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fg-instagram:before {
+  content: "\e900";
+}
+.fg-telegram:before {
+  content: "\e901";
+}
+.fg-discord:before {
+  content: "\e902";
+}
+.fg-crisp:before {
+  content: "\e903";
+}
+.fg-angle-double-small-left:before {
+  content: "\e904";
+}
+.fg-angle-double-small-right:before {
+  content: "\e905";
+}
+.fg-bank:before {
+  content: "\e906";
+}
+.fg-bell:before {
+  content: "\e907";
+}
+.fg-caret-down:before {
+  content: "\e908";
+}
+.fg-check:before {
+  content: "\e909";
+}
+.fg-comment:before {
+  content: "\e90a";
+}
+.fg-cross-circle:before {
+  content: "\e90b";
+}
+.fg-cross-small:before {
+  content: "\e90c";
+}
+.fg-cube:before {
+  content: "\e90d";
+}
+.fg-diploma:before {
+  content: "\e90e";
+}
+.fg-document:before {
+  content: "\e90f";
+}
+.fg-gamepad:before {
+  content: "\e910";
+}
+.fg-grid:before {
+  content: "\e911";
+}
+.fg-headset:before {
+  content: "\e912";
+}
+.fg-home:before {
+  content: "\e913";
+}
+.fg-interrogation:before {
+  content: "\e914";
+}
+.fg-menu-dots:before {
+  content: "\e915";
+}
+.fg-minus:before {
+  content: "\e916";
+}
+.fg-plus-small:before {
+  content: "\e917";
+}
+.fg-power:before {
+  content: "\e918";
+}
+.fg-search:before {
+  content: "\e919";
+}
+.fg-settings:before {
+  content: "\e91a";
+}
+.fg-shop:before {
+  content: "\e91b";
+}
+.fg-shopping-cart:before {
+  content: "\e91c";
+}
+.fg-spinner:before {
+  content: "\e91d";
+}
+.fg-star:before {
+  content: "\e91e";
+}
+.fg-star-solid:before {
+  content: "\e91f";
+}
+.fg-user:before {
+  content: "\e920";
+}
+.fg-heart:before {
+  content: "\e921";
+}
+.fg-heart-solid:before {
+  content: "\e922";
+}
+.fg-wallet:before {
+  content: "\e923";
+}
+.fg-quote:before {
+  content: "\e924";
+}
+.fg-shopping-cart-check:before {
+  content: "\e925";
+}
+.fg-truck-loading:before {
+  content: "\e926";
+}

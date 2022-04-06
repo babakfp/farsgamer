@@ -12,7 +12,7 @@
 				class="inline-flex w-6 min-w-6 h-6 border-2 border-gray-200 rounded-sm duration-200 ease-in-out cursor-pointer appearance-none hover:border-gray-300"
 				type="checkbox" bind:checked {name}
 			/>
-			<i class="fi-rr-check absolute text-white opacity-0 text-xs"></i>
+			<i class="fg-check absolute text-white opacity-0 text-xs"></i>
 		</div>
 		<div class="flex items-center min-h-6">
 			<span><slot /></span>

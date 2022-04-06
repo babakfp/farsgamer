@@ -142,7 +142,7 @@
 	
 					<div class="relative p-4 pb-3 bg-white rounded text-sm">
 						<div class="absolute left-2 -top-2 opacity-40">
-							<i class="icon-quote !leading-none text-3xl opacity-50 after:absolute after:inset-0 after:h-full after:bg-gradient-to-b after:from-transparent after:to-white"></i>
+							<i class="fg-quote text-3xl opacity-50 after:absolute after:inset-0 after:h-full after:bg-gradient-to-b after:from-transparent after:to-white"></i>
 						</div>
 					
 						<p class="line-clamp-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.<p>

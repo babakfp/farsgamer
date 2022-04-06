@@ -22,13 +22,13 @@
 	
 		<nav class="mt-2">
 			<ul>
-				<NavItem useInDashboard={true} title="داشبورد" href="/dashboard" icon="fi-rr-cube" />
-				<NavItem useInDashboard={true} title="سفارشات من" href="/dashboard/orders" icon="fi-rr-gamepad" />
-				<NavItem useInDashboard={true} title="نظرات من" href="/dashboard/comments" icon="fi-rr-comment" />
-				<NavItem useInDashboard={true} title="اعلانات" href="/dashboard/announcements" icon="fi-rr-bell" />
-				<NavItem useInDashboard={true} title="تنظیمات حساب" href="/dashboard/settings" icon="fi-rr-settings" />
+				<NavItem useInDashboard={true} title="داشبورد" href="/dashboard" icon="fg-cube" />
+				<NavItem useInDashboard={true} title="سفارشات من" href="/dashboard/orders" icon="fg-gamepad" />
+				<NavItem useInDashboard={true} title="نظرات من" href="/dashboard/comments" icon="fg-comment" />
+				<NavItem useInDashboard={true} title="اعلانات" href="/dashboard/announcements" icon="fg-bell" />
+				<NavItem useInDashboard={true} title="تنظیمات حساب" href="/dashboard/settings" icon="fg-settings" />
 				<hr class="border-gray-100">
-				<NavItem useInDashboard={true} title="خروج از حساب" href="/dashboard/logout" icon="fi-rr-power" />
+				<NavItem useInDashboard={true} title="خروج از حساب" href="/dashboard/logout" icon="fg-power" />
 			</ul>
 		</nav>
 		

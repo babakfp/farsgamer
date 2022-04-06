@@ -59,8 +59,21 @@
 	}
 
   i {
-		@apply flex items-center justify-center text-inherit text-base !leading-0;
+		@apply !flex !items-center !justify-center text-inherit text-base !leading-none;
   }
+
+	/* Make Icons RTL */
+	.fg-search,
+	.fg-shopping-cart,
+	.fg-document,
+	.fg-diploma ,
+	.fg-interrogation,
+	.fg-headset,
+	.fg-comment,
+	.fg-wallet
+	{
+		@apply scale-x-flip;
+	}
 
 	svg {
 		@apply w-4 h-4 inline-block;
