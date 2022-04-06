@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'fars-gamer';
   src:
-    url('fonts/fars-gamer.ttf?viq9rf') format('truetype'),
-    url('fonts/fars-gamer.woff?viq9rf') format('woff'),
-    url('fonts/fars-gamer.svg?viq9rf#fars-gamer') format('svg');
+    url('fonts/fars-gamer.ttf?1r0liu') format('truetype'),
+    url('fonts/fars-gamer.woff?1r0liu') format('woff'),
+    url('fonts/fars-gamer.svg?1r0liu#fars-gamer') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -56,9 +56,6 @@
 }
 .fg-comment:before {
   content: "\e90a";
-}
-.fg-cross-circle:before {
-  content: "\e90b";
 }
 .fg-cross-small:before {
   content: "\e90c";
@@ -140,4 +137,7 @@
 }
 .fg-truck-loading:before {
   content: "\e926";
+}
+.fg-trash:before {
+  content: "\e927";
 }
