@@ -17,6 +17,6 @@
 		{href}
 	>
 		<i class="{icon} w-8 h-8 flex justify-center items-center text-lg opacity-75"></i>
-		<span class="font-medium">{ title }</span>
+		<span class="font-medium">{title}</span>
 	</a>
 </li>

@@ -5,7 +5,7 @@
 <li class="grid Accordion">
 	
 	<button class="Accordion-Toggle flex items-center justify-between w-full p-4 bg-white border-2 border-gray-200 rounded duration-150 hover:text-brand">
-		<span class="line-clamp-1 text-sm lg:text-base">{ title }</span>
+		<span class="line-clamp-1 text-sm lg:text-base">{title}</span>
 		<i class="fg-caret-down text-gray-300"></i>
 	</button>
 

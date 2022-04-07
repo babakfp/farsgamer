@@ -9,7 +9,7 @@
 				<input class="hidden" type="radio"name="rating" bind:group={value} value={i + 1}>
 				<i class="{value >= i + 1 ? 'fg-star-solid text-yellow' : 'fg-star text-gray-500' }"></i>
 
-				<span class="absolute opacity-0 w-12 h-6 flex items-center justify-center bg-gray-50 rounded-sm -top-7 translate-x-1/2 right-1/2 text-2xs duration-200 ease-in-out group-hover:opacity-100">{ i + 1 } ستاره</span>
+				<span class="absolute opacity-0 w-12 h-6 flex items-center justify-center bg-gray-50 rounded-sm -top-7 translate-x-1/2 right-1/2 text-2xs duration-200 ease-in-out group-hover:opacity-100">{i + 1} ستاره</span>
 			</label>
 		</li>
 	{/each}
