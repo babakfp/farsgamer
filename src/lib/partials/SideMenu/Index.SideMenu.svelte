@@ -14,7 +14,7 @@
 </script>
 
 <OutClick on:outclick={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} excludeByQuerySelector={['.js-burger-toggle-btn']}>
-	<sidebar on:click|self={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} id="sidemenu" class="z-30 [ fixed inset-0 top-16 ] [ opacity-0 pointer-events-none ] {$isOpen && '[ opacity-100 pointer-events-auto ]'} [ bg-gray-900 bg-opacity-25 backdrop-blur-xs ] [ duration-300 ] [ lg:top-20 ]">
+	<sidebar on:click|self={_=> $page.url.pathname.includes('/dashboard') ? dashboardClose() : close()} id="sidemenu" class="z-30 [ fixed inset-0 top-header ] [ opacity-0 pointer-events-none ] {$isOpen && '[ opacity-100 pointer-events-auto ]'} [ bg-gray-900 bg-opacity-25 backdrop-blur-xs ] [ duration-300 ]">
 		<div id="sidemenu__wrapper" class="[ w-full max-w-64 h-full ] bg-white translate-x-full {$isOpen && '!translate-x-0'} [ duration-300 ease-in-out ]">
 			<Logo />
 

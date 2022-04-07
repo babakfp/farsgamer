@@ -1,31 +1,5 @@
 const colors = require('tailwindcss/colors')
 
-/**
-	* Uses RGB formatted color as CSS-Var and returns RGB formatted color
-	* @param {string} cssVar Example: --white. Format: 255, 255, 255
-*/
-const cssVarColor = (cssVar) => {
-	return ({ opacityValue }) => {
-		if (opacityValue === undefined) {
-			return `rgb(var(${cssVar}))`
-		}
-		return `rgba(var(${cssVar}), ${opacityValue})`
-	}
-}
-
-/**
-	* Takes a Tailwind's color{object} and converts the value of each color to CSS-Var
-	* @param {string} colorName Example: 'gray'
-	* @param {object} colors Example: colors.neutral. { '50': '#fafafa' }
-*/
-const cssVarColorObj = (colorName, colors) => {
-	let newColors = {}
-	for (const lvl in colors) {
-		newColors[lvl] = cssVarColor(`--${colorName}-${lvl}`)
-	}
-	return newColors
-}
-
 module.exports = {
   content: ['./src/**/*.{html,svelte}'],
 	theme: {
@@ -37,7 +11,7 @@ module.exports = {
 			colors: {
 				gray: colors.neutral,
 				brand: {
-					DEFAULT: cssVarColor('--brand'),
+					DEFAULT: '#7666ff',
 					deep: '#614FFF',
 				},
 				red: {
@@ -56,6 +30,7 @@ module.exports = {
 				62: '15.5rem',
 				66: '16.5rem',
 				88: '22rem',
+				header: 'var(--header)',
 				page: 'var(--page)',
 				input: '3rem',
 			},
@@ -63,12 +38,6 @@ module.exports = {
 				1: '1',
 				2: '2',
 				3: '3',
-				4: '4',
-				5: '5',
-				6: '6',
-				7: '7',
-				8: '8',
-				9: '9',
 			},
 			scale: {
 				flip: '-1',
@@ -81,8 +50,8 @@ module.exports = {
         3: '3px',
       },
 			borderRadius: {
-				DEFAULT: 'var(--rounded)',
-				sm: 'var(--rounded-sm)',
+				DEFAULT: '12px',
+				sm: '8px',
 			},
 			borderWidth: {
 				3: '3px',
