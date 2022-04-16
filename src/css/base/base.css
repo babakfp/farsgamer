@@ -59,7 +59,10 @@
 	}
 
   i {
-		@apply !flex !items-center !justify-center text-inherit text-base !leading-none;
+		@apply flex items-center justify-center text-inherit text-base !leading-none;
+		&:not(.hidden):not([class$=hidden]) {
+			@apply !flex;
+		}
   }
 
 	/* Make Icons RTL */
