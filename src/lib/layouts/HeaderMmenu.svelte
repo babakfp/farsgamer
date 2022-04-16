@@ -9,7 +9,7 @@
 <Header />
 <SideMenu />
 
-<main id="main">
+<main>
 	<div id="page-content" class="relative p-page overflow-x-hidden xl:pb-12">
 		<slot />
 	</div>
@@ -20,7 +20,7 @@
 <Crisp />
 
 <style lang="postcss">
-	:global(body.main-header) #main {
+	:global(body.main-header) main {
 		@apply lg:pr-56 2xl:pr-64;
 	}
 </style>
