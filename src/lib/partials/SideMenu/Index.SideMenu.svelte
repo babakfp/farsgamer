@@ -40,17 +40,6 @@
 
 			<hr class="border-gray-100 my-4">
 
-			<div class="p-4">
-				<span class="block mb-4 font-bold">استریم ها</span>
-				<ul class="grid gap-2">
-					{#each $streams as stream}
-						<StreamCard {...stream} />
-					{/each}
-				</ul>
-			</div>
-
-			<hr class="border-gray-100 my-4">
-
 			<div class="p-4 space-y-2">
 				<div class="flex items-center gap-2 py-3 px-4 bg-gray-50 rounded">
 					<i class="fg-shopping-cart-check w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
@@ -66,6 +55,17 @@
 						<p class="text-xs">سفارش <span class="font-medium">در حال انجام</span></p>
 					</div>
 				</div>
+			</div>
+
+			<hr class="border-gray-100 my-4">
+
+			<div class="p-4">
+				<span class="block mb-4 font-bold">استریم ها</span>
+				<ul class="grid gap-2">
+					{#each $streams as stream}
+						<StreamCard {...stream} />
+					{/each}
+				</ul>
 			</div>
 
 		</div>
