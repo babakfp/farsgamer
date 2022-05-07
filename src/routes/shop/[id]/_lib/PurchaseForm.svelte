@@ -46,8 +46,8 @@
 				<span class="-mb-2 pt-3 pb-4 px-6 bg-red-400 rounded-t text-white text-xs">۲۰٪</span>
 			</div>
 			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
-				<span class="line-through decoration-red-700 opacity-50">200</span>
-				<span>100</span>
+				<span class="font-medium line-through decoration-red-700 opacity-50">200</span>
+				<span class="font-medium">100</span>
 				<span class="mt-1 text-xs">تـمـنـ</span>
 			</div>
 		</div>
