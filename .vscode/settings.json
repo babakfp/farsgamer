@@ -1,5 +1,6 @@
 {
 	"search.exclude": {
 		"static/lib/easy-tab": true,
+		"static/fonts/fars-gamer-v1.5": true,
 	}
 }

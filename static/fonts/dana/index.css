@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
 	font-family: dana;
 	font-weight: 50;
 	src: url('./woff2/Dana-Hairline.woff2') format('woff2'), url('./woff/Dana-Hairline.woff') format('woff');
@@ -25,7 +25,7 @@
 	src: url('./woff2/Dana-Light.woff2') format('woff2'), url('./woff/Dana-Light.woff') format('woff');
 	font-style: normal;
   font-display: block,
-}
+} */
 @font-face {
 	font-family: dana;
 	font-weight: 400;
@@ -54,7 +54,7 @@
 	font-style: normal;
   font-display: block,
 }
-@font-face {
+/* @font-face {
 	font-family: dana;
 	font-weight: 800;
 	src: url('./woff2/Dana-ExtraBold.woff2') format('woff2'), url('./woff/Dana-ExtraBold.woff') format('woff');
@@ -88,4 +88,4 @@
 	src: url('./woff2/Dana-Fat.woff2') format('woff2'), url('./woff/Dana-Fat.woff') format('woff');
 	font-style: normal;
   font-display: block,
-}
+} */
