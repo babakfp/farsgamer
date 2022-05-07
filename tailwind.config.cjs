@@ -93,8 +93,7 @@ module.exports = {
 			'3xl': '1800px',
 		},
 		fontFamily: {
-			fa: ['Dana'],
-			fafn: ['DanaFN'],
+      dana: [ 'dana' ],
 		},
 		boxShadow: {
 			sm: '0 0 .5rem rgba(15 23 42 / 2%)',

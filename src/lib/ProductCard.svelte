@@ -46,8 +46,8 @@
 		{#if inStock === false}
 			<span>بدونـ قیمتــ</span>
 		{:else}
-				<span class="font-en line-through decoration-red-700 opacity-50">200</span>
-				<span class="font-en">100</span>
+				<span class="line-through decoration-red-700 opacity-50">200</span>
+				<span class="">100</span>
 				<span class="mt-1 text-xs">تـمـنـ</span>
 			<!-- <span>قیمتــ متغیـر</span> -->
 		{/if}

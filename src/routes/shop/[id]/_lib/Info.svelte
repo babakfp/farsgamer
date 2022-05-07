@@ -21,7 +21,7 @@
 
 	<div class="inline-flex items-center gap-2 mt-4 px-4 py-2 text-yellow-700 text-sm bg-yellow bg-opacity-10 rounded">
 		<img class="w-6 rotate-45" src="/img/coin.png" alt>
-		<b class="font-en">{coins}</b>
+		<b>{coins}</b>
 		<span class="-mr-0.5 font-medium leading-5 self-end">سکه</span>
 	</div>
 
