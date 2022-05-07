@@ -47,7 +47,7 @@
 			</div>
 			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
 				<span class="font-en line-through decoration-red-700 opacity-50">200</span>
-				<span class="font-en font-medium">100</span>
+				<span class="font-en">100</span>
 				<span class="mt-1 text-xs">تـمـنـ</span>
 			</div>
 		</div>
