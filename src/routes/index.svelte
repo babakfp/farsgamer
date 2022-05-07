@@ -119,7 +119,7 @@
 		User Reviews
 		------------
 	-->
-	<CardsSection title="نظــراتـــ اخیر کــاربــران">
+	<CardsSection title="نظــرات اخیـر کـاربران">
 		<Swiper
 			class="box-carousel"
 			modules={[ Pagination, Autoplay ]}
@@ -174,7 +174,7 @@
 	</section>
 
 	<!-- -->
-	<CardsSection title="تخفیفـــ های ویــژه" href="javascript:">
+	<CardsSection title="تـخـفیف ویــژه" href="javascript:">
 		<ProductCardSwiper specialDiscount={true} />
 	</CardsSection>
 
@@ -199,7 +199,7 @@
 		Recent Blog Posts
 		-----------------
 	-->
-	<CardsSection title="جدیدترین پست ها" href="javascript:">
+	<CardsSection title="جدیدترین پست‌ها" href="javascript:">
 		<Swiper
 			class="box-carousel"
 			modules={[ Pagination, Autoplay ]}
