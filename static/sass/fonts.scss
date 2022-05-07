@@ -20,13 +20,4 @@
 		font-display: block,
 	));
 
-	@include font-face((
-		font-family: "Montserrat",
-		font-style: normal,
-		weight: ( Medium 500, ),
-		url: "/fonts/Montserrat/Montserrat-WEIGHT.SUFFIX",
-		suffix: ttf,
-		font-display: swap,
-	));
-
 }

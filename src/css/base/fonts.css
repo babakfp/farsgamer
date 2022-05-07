@@ -31,12 +31,4 @@
     font-display: block;
     src: url("/fonts/Dana/FaNum/DanaFaNum-Bold.woff2") format("woff2"), url("/fonts/Dana/FaNum/DanaFaNum-Bold.woff") format("woff");
   }
-  @font-face {
-    font-family: "Montserrat";
-    font-weight: 500;
-    font-style: normal;
-    font-style: normal;
-    font-display: swap;
-    src: url("/fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
-  }
 }

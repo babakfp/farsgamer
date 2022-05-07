@@ -86,9 +86,4 @@
 		@apply w-full;
 	}
 
-  /* Only if you are using M font */
-  .font-en {
-    @apply font-medium;
-  }
-
 }
