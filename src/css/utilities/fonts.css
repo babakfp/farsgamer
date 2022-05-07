@@ -1,0 +1,15 @@
+@layer utilities {
+
+  .font-dana-fn {
+    -moz-font-feature-settings: "ss02";
+    -webkit-font-feature-settings: "ss02";
+    font-feature-settings: "ss02";
+  }
+
+  .font-dana-mono {
+    -moz-font-feature-settings: "ss03";
+    -webkit-font-feature-settings: "ss03";
+    font-feature-settings: "ss03";
+  }
+
+}
