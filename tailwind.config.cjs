@@ -95,6 +95,21 @@ module.exports = {
 		fontFamily: {
       dana: [ 'dana' ],
 		},
+    fontWeight: {
+      hairline: 50,
+      thin: 100,
+      extralight: 200,
+      light: 300,
+      regular: 400,
+      medium: 500,
+      semibold: 600,
+      bold: 700,
+      extrabold: 800,
+      black: 900,
+      extrablack: 950,
+      heavy: 980,
+      fat: 990,
+    },
 		boxShadow: {
 			sm: '0 0 .5rem rgba(15 23 42 / 2%)',
 			md: '0 0 1.25rem rgba(15 23 42 / 4%)',

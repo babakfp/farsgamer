@@ -62,7 +62,7 @@
 
 <style lang="postcss">
 	th {
-		@apply font-normal;
+		@apply font-regular;
 	}
 	/* Not using :first-of-type because of tr divider element */
 	tbody tr:nth-of-type(2) td {

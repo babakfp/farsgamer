@@ -80,7 +80,7 @@
 	</section>
 
 	<!-- -->
-	<CardsSection title="پرفروشـترین های هـفته" href="javascript:">
+	<CardsSection title="پرفروشـترین هـفته" href="javascript:">
 		<ProductCardSwiper />
 	</CardsSection>
 
