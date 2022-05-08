@@ -15,8 +15,6 @@ export const close =_=> {
 	}
 }
 
-browser && isOpen && window.addEventListener('scroll', _=> close())
-
 if (browser) {
 	if (mode !== 'development') {
 		window.addEventListener('resize', _=> {

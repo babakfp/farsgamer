@@ -4,10 +4,23 @@
 </script>
 
 <OutClick on:outclick={close} excludeByQuerySelector={['.js-mobile-search-toggle']}>
-	<form class="hidden {$isOpen && '!block'} absolute h-16 top-full -mt-2 inset-x-4 rounded-sm bg-white border-y border-gray-100 sm:w-full sm:max-w-md sm:right-auto lg:max-w-full lg:block lg:w-full lg:h-full lg:mt-0 lg:border-l lg:border-t-0 lg:border-b-0 lg:static lg:top-auto lg:inset-x-auto lg:bg-transparent lg:!shadow-none" style="box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%)">
+	<form class="
+    -translate-y-full {$isOpen && 'translate-y-0'} duration-300 ease-out
+    z-10 absolute h-full inset-0 bg-white
+    lg:static lg:inset-auto lg:w-full lg:max-w-full lg:translate-y-0
+  ">
 		<label class="relative flex items-center gap-4 h-full m-0 cursor-text">
-			<i class="icon-search text-xl text-gray-400 absolute top-1/2 w-16 -translate-y-1/2 lg:right-8 lg:w-auto"></i>
-			<input class="h-full text-sm p-0 pr-16 pl-5 bg-transparent capitalize lg:pr-18 lg:pl-8 lg:text-base" type="search" id="search" name="search" placeholder="جستجو در محصولات فارس گیمر" autocomplete="off">
-		</label>
+			
+      <!-- Icon -->
+      <div class="absolute flex items-center justify-center w-16 h-full">
+        <i class="icon-search text-lg text-gray-400"></i>
+      </div>
+
+			<input class="h-full p-0 pl-18 pr-16 text-sm capitalize bg-transparent lg:pl-4 lg:border-l lg:border-gray-100 lg:text-base" type="search" id="search" name="search" placeholder="جستجو در محصولات فارس گیمر" autocomplete="off">
+      
+      <button class="absolute left-0 flex items-center justify-center w-14 h-full | p-0 border-0 rounded-none | border-r border-gray-100 lg:hidden" on:click|preventDefault={close}>
+        <i class="icon-arrow-small-up text-xl text-gray-400"></i>
+      </button>
+    </label>
 	</form>
 </OutClick>

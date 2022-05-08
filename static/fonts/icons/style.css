@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'icons';
   src:
-    url('fonts/icons.ttf?x8jkmf') format('truetype'),
-    url('fonts/icons.woff?x8jkmf') format('woff'),
-    url('fonts/icons.svg?x8jkmf#icons') format('svg');
+    url('fonts/icons.ttf?n6dzkn') format('truetype'),
+    url('fonts/icons.woff?n6dzkn') format('woff'),
+    url('fonts/icons.svg?n6dzkn#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow-small-up:before {
+  content: "\e90b";
+}
 .icon-instagram:before {
   content: "\e900";
 }
