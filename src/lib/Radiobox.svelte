@@ -16,7 +16,7 @@
 				class="inline-flex w-6 min-w-6 h-6 border-2 border-gray-200 rounded-full duration-200 ease-in-out cursor-pointer appearance-none hover:border-gray-300"
 				type="radio" {name} value={makeSlug(value)}
 			/>
-			<i class="fg-check absolute text-white opacity-0 text-xs"></i>
+			<i class="icon-check absolute text-white opacity-0 text-xs"></i>
 		</div>
 		<span class={contentClass}><slot /></span>
 	</label>

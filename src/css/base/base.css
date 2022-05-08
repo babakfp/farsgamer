@@ -66,14 +66,14 @@
   }
 
 	/* Make Icons RTL */
-	.fg-search,
-	.fg-shopping-cart,
-	.fg-document,
-	.fg-diploma ,
-	.fg-interrogation,
-	.fg-headset,
-	.fg-comment,
-	.fg-wallet
+	.icon-search,
+	.icon-shopping-cart,
+	.icon-document,
+	.icon-diploma ,
+	.icon-interrogation,
+	.icon-headset,
+	.icon-comment,
+	.icon-wallet
 	{
 		@apply scale-x-flip;
 	}

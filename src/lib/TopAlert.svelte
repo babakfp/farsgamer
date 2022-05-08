@@ -11,7 +11,7 @@
 		<button class="p-4 -mr-4 -my-4 duration-150 hover:text-brand hover:scale-110"
 			on:click={_=> $showTopAlert = false}
 		>
-			<i class="fg-cross-small"></i>
+			<i class="icon-cross-small"></i>
 		</button>
 		<div class="text-sm">
 			<p>پشتیبانی 24 ساعته از طریق چت آنلاین در خدمت شما عزیزان. جهت اطلاع از آخرین اخبار <a class="link link--underline" href="javascript:">اینستاگرام فارس گیمر</a> را دنبال کنید.</p>

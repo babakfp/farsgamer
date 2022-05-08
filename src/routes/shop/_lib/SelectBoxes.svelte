@@ -32,7 +32,7 @@
 			items={categoryItems} {groupBy}
 			placeholder="دسته‌بندی محصولات" noOptionsMessage="گذینه‌ای موجود نیست"
 		/>
-		<i class="fg-caret-down absolute top-1/2 -translate-y-1/2 left-4 text-gray-300"></i>
+		<i class="icon-caret-down absolute top-1/2 -translate-y-1/2 left-4 text-gray-300"></i>
 	</div>
 	
 	<div class="relative w-full">
@@ -40,7 +40,7 @@
 			items={sortItems} {groupBy}
 			placeholder="مرتب سازی" noOptionsMessage="گذینه‌ای موجود نیست"
 		/>
-		<i class="fg-caret-down absolute top-1/2 -translate-y-1/2 left-4 text-gray-300"></i>
+		<i class="icon-caret-down absolute top-1/2 -translate-y-1/2 left-4 text-gray-300"></i>
 	</div>
 </div>
 

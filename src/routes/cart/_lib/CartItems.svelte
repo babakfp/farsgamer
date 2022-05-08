@@ -77,7 +77,7 @@
 					{#if cartable}
 						<td class="delete">
 							<button class="btn btn--light w-10 duration-200">
-								<i class="fg-trash"></i>
+								<i class="icon-trash"></i>
 							</button>
 						</td>
 					{/if}

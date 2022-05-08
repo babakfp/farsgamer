@@ -29,7 +29,7 @@
 							<!-- TOOD  btn--xs-->
 							<!-- TODO icon + or - -->
               <button class="btn btn--brand btn--xs gap-1" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
-                <i class="fg-plus-small text-sm leading-0"></i>
+                <i class="icon-plus-small text-sm leading-0"></i>
                 <span>ثبت نظر</span>
               </button>
             
