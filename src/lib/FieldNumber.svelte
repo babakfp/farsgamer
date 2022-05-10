@@ -23,7 +23,7 @@
 	}
 </script>
 
-<div class="{wrapperClass} {isError ? 'is-error' : ''}">
+<div class="{wrapperClass} {isError && 'is-error'}">
 
 	{#if label}
 		<label
@@ -36,7 +36,7 @@
 
 	<div>
 		<input
-			class="input {boxedSizeField ? 'w-18 text-center' : ''} {fieldClass}"
+			class="input {boxedSizeField && 'w-18 text-center'} {fieldClass}"
 			bind:value {name} {autocomplete} {placeholder}
 			id={name ? `input[type:number]=${name}` : null}
 			type="number"

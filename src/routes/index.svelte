@@ -97,8 +97,9 @@
 			pagination={{ clickable: true }}
 			autoplay={{ delay: 5000, disableOnInteraction: false }}
 			spaceBetween={16}
-			slidesPerView={3}
+			slidesPerView={2}
 			breakpoints={{
+				360:  { slidesPerView: 3 },
 				640:  { slidesPerView: 4 },
 				840: 	{ slidesPerView: 5 },
 				1024: { slidesPerView: 4 },
