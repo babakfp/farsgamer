@@ -9,7 +9,7 @@ const config = {
       resolve: {
         alias: {
           '$lib': path.resolve('src/lib'),
-          '$partials': path.resolve('src/lib/partials'),
+          '$partials': path.resolve('src/partials'),
           '$layouts': path.resolve('src/lib/layouts'),
           '$store': path.resolve('src/store'),
           '$utils': path.resolve('src/utils'),
