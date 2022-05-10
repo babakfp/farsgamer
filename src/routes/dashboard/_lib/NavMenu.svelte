@@ -10,7 +10,9 @@
 	<div class=" bg-white rounded 2md:min-w-80">
 
 		<div class="flex items-center gap-4 p-4 rounded bg-gray-50 text-sm">
-			<div class="bg-gray-200 rounded-full min-w-18 w-18 h-18"></div>
+			<div class="bg-gray-200 rounded-full min-w-18 w-18 h-18">
+        <img class="w-full h-full" src="/img/avatar.png" alt="عکس پروفایل شما">
+      </div>
 			<div class="w-full mt-2">
 				<span class="font-bold">بابک فرخوپاک</span>
 				<div class="flex items-center justify-between text-xs">
