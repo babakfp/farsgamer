@@ -6,12 +6,8 @@
 	import LoadingBar from '$lib/LoadingBar.svelte'
 
 	// Layouts
+	import LayoutManager from '$layouts/LayoutManager.svelte'
 	import HeaderMmenu from '$layouts/HeaderMmenu.svelte'
-
-	const layouts = {
-		// '<route>': <Layout Component>,
-	}
-	$: layout = layouts[$page.url.pathname] ?? HeaderMmenu
 
 	$: {
 		// Because of the dashboard layout we need to add a class to dashboard pages so we be able to control the style of some elemetns.
@@ -27,6 +23,6 @@
 
 <LoadingBar />
 
-<svelte:component this={layout}>
-	<slot />
-</svelte:component>
+<LayoutManager defaultLayout={HeaderMmenu}>
+  <slot />
+</LayoutManager>
