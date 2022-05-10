@@ -53,7 +53,7 @@
 		{/if}
 	
 		{#if specialDiscount && inStock}
-			<ol class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-60 backdrop-blur-xs rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
+			<ol class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-75 backdrop-blur-xs rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
 				<li>
 					<div>ثانیه</div>
 					<div class="font-bold">{distance > 0 ? seconds : 0}</div>
