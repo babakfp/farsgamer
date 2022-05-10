@@ -28,7 +28,7 @@
 	<div class="relative rounded overflow-hidden">
 		<img src="/img/products/product-thumb (1).png" alt>
 		{#if inStock === false}
-			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-40 backdrop-blur-sm">
+			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
 				<p class="text-white font-bold drop-shadow-xl">نـامـوجـود</p>
 			</div>
 		{/if}
@@ -53,7 +53,7 @@
 		{/if}
 	
 		{#if specialDiscount && inStock}
-			<ol class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-60 backdrop-blur-sm rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
+			<ol class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-60 backdrop-blur-xs rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
 				<li>
 					<div>روز</div>
 					<div class="font-bold">{distance > 0 ? days : 0}</div>

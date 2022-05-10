@@ -26,7 +26,7 @@
 		<track kind="captions">
 	</video>
 	{#if isVideoLoading}
-		<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50 backdrop-blur text-white">
+		<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 text-white">
 			<div class="grid gap-4">
 				<i class="icon-spinner animate-spin text-4xl"></i>
 				<p class="text-sm">در حال بارگذاری ویدیو...</p>

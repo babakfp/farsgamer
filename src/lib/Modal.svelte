@@ -6,7 +6,7 @@
 </script>
 
 {#if visible}
-	<div class="{className} z-20 fixed inset-0 flex items-center justify-center backdrop-blur-xs">
+	<div class="{className} z-20 fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
 	
 		<OutClick on:outclick={_=> visible = false} excludeByQuerySelector={['js-modal__open']}>
 			<div class="w-full max-w-md p-6 bg-white rounded drop-shadow-2xl">
