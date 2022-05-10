@@ -1,8 +1,8 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
-
 	import ProductCard from '$lib/ProductCard.svelte'
+	export let lazyLoading = false
 
 	export let specialDiscount = false
 </script>
@@ -23,13 +23,27 @@
 		1280: { slidesPerView: 5 },
 	}}
 	>
-	<SwiperSlide><ProductCard {specialDiscount} /></SwiperSlide>
-	<SwiperSlide><ProductCard {specialDiscount} /></SwiperSlide>
-	<SwiperSlide><ProductCard {specialDiscount} /></SwiperSlide>
-	<SwiperSlide><ProductCard {specialDiscount} /></SwiperSlide>
-	<SwiperSlide><ProductCard {specialDiscount} /></SwiperSlide>
-	<SwiperSlide><ProductCard {specialDiscount} /></SwiperSlide>
-	<SwiperSlide><ProductCard {specialDiscount} /></SwiperSlide>
+	<SwiperSlide>
+    <ProductCard {specialDiscount} {lazyLoading} />
+  </SwiperSlide>
+	<SwiperSlide>
+    <ProductCard {specialDiscount} {lazyLoading} />
+  </SwiperSlide>
+	<SwiperSlide>
+    <ProductCard {specialDiscount} {lazyLoading} />
+  </SwiperSlide>
+	<SwiperSlide>
+    <ProductCard {specialDiscount} {lazyLoading} />
+  </SwiperSlide>
+	<SwiperSlide>
+    <ProductCard {specialDiscount} {lazyLoading} />
+  </SwiperSlide>
+	<SwiperSlide>
+    <ProductCard {specialDiscount} {lazyLoading} />
+  </SwiperSlide>
+	<SwiperSlide>
+    <ProductCard {specialDiscount} {lazyLoading} />
+  </SwiperSlide>
 </Swiper>
 
 <style lang="postcss">

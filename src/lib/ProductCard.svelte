@@ -1,6 +1,7 @@
 <script>
 	export let inStock = true
 	export let specialDiscount = false
+	export let lazyLoading = false
 
 	const countDownDate = new Date('Jun 28, 2022 15:37:0').getTime()
 	
@@ -26,7 +27,7 @@
 <a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:scale-105" href="/shop/1">
 
 	<div class="relative rounded overflow-hidden">
-		<img src="/img/products/product-thumb (1).png" alt>
+		<img src="/img/products/product-thumb (1).png" alt loading={lazyLoading ? 'lazy' : ''}>
 		{#if inStock === false}
 			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
 				<p class="text-white font-bold drop-shadow-xl">نـامـوجـود</p>

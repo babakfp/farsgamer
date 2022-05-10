@@ -109,7 +109,7 @@
 		>
 			{#each giftCardImages as img}
 				<SwiperSlide>
-					<ImgShadowSelf src={img.src} />
+					<ImgShadowSelf src={img.src} lazyLoading={true} />
 				</SwiperSlide>
 			{/each}
 		</Swiper>
@@ -166,16 +166,16 @@
 	-->
 	<section class="grid gap-4 sm:grid-cols-2">
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/img/home/poster-half-width (1).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-half-width (1).png" alt loading="lazy">
 		</a>
 		<a class="flex" href="javascript:">
-			<img class="w-full rounded" src="/img/home/poster-half-width (2).png" alt>
+			<img class="w-full rounded" src="/img/home/poster-half-width (2).png" alt loading="lazy">
 		</a>
 	</section>
 
 	<!-- -->
 	<CardsSection title="تـخـفیف ویــژه" href="javascript:">
-		<ProductCardSwiper specialDiscount={true} />
+		<ProductCardSwiper specialDiscount={true} lazyLoading={true} />
 	</CardsSection>
 
 	<!--
@@ -183,7 +183,7 @@
 		--------
 	-->
 	<a class="flex hover:opacity-90" href="javascript:">
-		<img class="rounded" src="/img/home/poster-full-width (1).png" alt>
+		<img class="rounded" src="/img/home/poster-full-width (1).png" alt loading="lazy">
 	</a>
 
 	<!--
@@ -191,8 +191,8 @@
 		--------------------
 	-->
 	<div class="flex justify-center gap-4">
-		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" />
-		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" />
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" lazyLoading={true} />
+		<ImgShadowSelf class="max-w-64" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" lazyLoading={true} />
 	</div>
 
 	<!--
@@ -219,10 +219,14 @@
 			}}
 		>
 			{#each posts as post}
-				<SwiperSlide><PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} /></SwiperSlide>
+				<SwiperSlide>
+          <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} lazyLoading={true} />
+        </SwiperSlide>
 			{/each}
 			{#each posts as post}
-				<SwiperSlide><PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} /></SwiperSlide>
+				<SwiperSlide>
+          <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} lazyLoading={true} />
+        </SwiperSlide>
 			{/each}
 		</Swiper>
 	</CardsSection>
@@ -232,10 +236,10 @@
 		---------
 	-->
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-		<ImgShadowSelf src="/img/home/poster-1-4-width (1).png" />
-		<ImgShadowSelf src="/img/home/poster-1-4-width (2).png" />
-		<ImgShadowSelf src="/img/home/poster-1-4-width (3).png" />
-		<ImgShadowSelf src="/img/home/poster-1-4-width (4).png" />
+		<ImgShadowSelf src="/img/home/poster-1-4-width (1).png" lazyLoading={true} />
+		<ImgShadowSelf src="/img/home/poster-1-4-width (2).png" lazyLoading={true} />
+		<ImgShadowSelf src="/img/home/poster-1-4-width (3).png" lazyLoading={true} />
+		<ImgShadowSelf src="/img/home/poster-1-4-width (4).png" lazyLoading={true} />
 	</section>
 
 	<!--
@@ -243,7 +247,7 @@
 		--------
 	-->
 	<a class="img-link flex" href="javascript:">
-		<img class="rounded" src="/img/home/poster-full-width (2).png" alt>
+		<img class="rounded" src="/img/home/poster-full-width (2).png" alt loading="lazy">
 	</a>
 
 </div>
