@@ -55,20 +55,20 @@
 		{#if specialDiscount && inStock}
 			<ol class="absolute bottom-3 right-2 left-2 flex justify-evenly gap-2 bg-white bg-opacity-60 backdrop-blur-xs rounded text-xs duration-200 ease-in-out group-hover:opacity-0">
 				<li>
-					<div>روز</div>
-					<div class="font-bold">{distance > 0 ? days : 0}</div>
-				</li>
-				<li>
-					<div>ساعت</div>
-					<div class="font-bold">{distance > 0 ? hours : 0}</div>
+					<div>ثانیه</div>
+					<div class="font-bold">{distance > 0 ? seconds : 0}</div>
 				</li>
 				<li>
 					<div>دقیقه</div>
 					<div class="font-bold">{distance > 0 ? minutes : 0}</div>
 				</li>
 				<li>
-					<div>ثانیه</div>
-					<div class="font-bold">{distance > 0 ? seconds : 0}</div>
+					<div>ساعت</div>
+					<div class="font-bold">{distance > 0 ? hours : 0}</div>
+				</li>
+				<li>
+					<div>روز</div>
+					<div class="font-bold">{distance > 0 ? days : 0}</div>
 				</li>
 			</ol>
 		{/if}
