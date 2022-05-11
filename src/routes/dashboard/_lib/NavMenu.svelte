@@ -46,7 +46,4 @@
   nav :global(li:first-child a) {
     @apply pt-5;
   }
-  nav :global(li:last-child a) {
-    @apply pb-5;
-  }
 </style>
