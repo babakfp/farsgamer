@@ -6,7 +6,7 @@
 
 	.do__head {
 		@apply border-b-2 border-gray-100;
-		@apply text-sm text-gray-400 font-bold;
+		@apply text-sm text-gray-500 font-semibold;
 		@apply mb-4 pb-2 pt-1 px-6;
 	}
 
@@ -15,7 +15,7 @@
 	}
 
 	.do__item {
-		@apply bg-gray-50 py-4 px-6 rounded text-sm;
+		@apply bg-white py-4 px-6 rounded text-sm;
 	}
 
 	.do__head,

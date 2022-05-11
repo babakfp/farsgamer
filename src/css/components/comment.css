@@ -1,7 +1,7 @@
 @layer components {
 
 	.comment {
-		@apply p-4 rounded bg-gray-50;
+		@apply p-4 rounded bg-gray-800 bg-opacity-5;
 	}
 
 	.comment__head {
@@ -103,19 +103,10 @@
 		@apply scale-y-flip;
 	}
 
-	.comment--ligth,
-	.comment .comment {
-		@apply bg-white;
-	}
-
-	.comment--ligth .comment__content-icon::after,
+	/* .comment--ligth .comment__content-icon::after,
 	.comment .comment .comment__content-icon::after,
 	.swiper-slide .comment {
 		@apply to-white;
-	}
-
-	.comment--ligth .comment {
-		@apply bg-gray-50;
 	}
 
 	.comment--ligth .comment .comment__content-icon::after {
@@ -124,7 +115,7 @@
 
 	.swiper-slide .comment .comment__content-icon::after {
 		@apply to-white;
-	}
+	} */
 
 	.swiper-slide .comment .comment__message {
 		@apply max-h-20 overflow-hidden;

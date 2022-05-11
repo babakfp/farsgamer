@@ -1,10 +1,11 @@
 @layer base {
 
 	::selection {
-		@apply bg-brand bg-opacity-75 text-white;
+		@apply bg-brand  bg-opacity-10;
 	}
 
   * {
+    /* Can't use select-none because then it's impossible the deselect a select-all element */
 		@apply select-none !outline-none;
 		-webkit-user-drag: none;
   }

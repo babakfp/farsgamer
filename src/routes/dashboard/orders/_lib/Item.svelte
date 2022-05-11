@@ -11,7 +11,7 @@
     <!-- code -->
     <div class="do__item-cell do__item-cell__code">
       <div class="font-bold text-sm flex">
-        <p class="font-isans-ed select-all">FFA-980317</p>
+        <p class="font-isans-ed">FFA-980317</p>
         <p class="text-gray-400">#</p>
       </div>
     </div>
@@ -42,9 +42,7 @@
 
     <!-- delivered -->
     <div class="do__item-cell do__item-cell__delivered">
-      <button class="btn px-8 btn--brand btn--xs btn--outline js-modal__open" on:click={_=> showModal = true}>
-        سفارش انجام نشده؟
-      </button>
+      <button class="btn px-8 btn--brand btn--xs btn--outline js-modal__open" on:click={_=> showModal = true}>سفارش انجام نشد!</button>
 			
 			{#if showModal}
 				<Modal bind:visible={showModal} class="whitespace-normal">
