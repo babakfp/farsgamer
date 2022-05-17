@@ -29,7 +29,7 @@
 			>
 				{#each images as src}
 					<SwiperSlide class="main-gallery-slide">
-						<img {src} alt />
+						<img {src} alt loading="lazy" />
 					</SwiperSlide>
 				{/each}
 			</Swiper>
@@ -51,7 +51,7 @@
 				>
 					{#each images as src}
 						<SwiperSlide>
-							<img class="rounded" {src} alt />
+							<img class="rounded" {src} alt loading="lazy" />
 						</SwiperSlide>
 					{/each}
 				</Swiper>

@@ -27,7 +27,7 @@
 		{#each posters as poster}
 			<SwiperSlide>
 				<a href={poster.href || 'javascript:'}>
-					<img src={poster.imgSrc} alt>
+					<img src={poster.imgSrc} alt loading="lazy">
 				</a>
 			</SwiperSlide>
 		{/each}

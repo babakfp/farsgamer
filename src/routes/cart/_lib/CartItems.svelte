@@ -27,7 +27,7 @@
 				<tr class="border-0">
 					<td class="w-28 h-28 py-4">
 						<a href="javascript:">
-							<img class="rounded min-w-28 min-h-28" src="/img/products/product-thumb (1).png" alt>
+							<img class="rounded min-w-28 min-h-28" src="/img/products/product-thumb (1).png" alt loading="lazy">
 						</a>
 					</td>
 

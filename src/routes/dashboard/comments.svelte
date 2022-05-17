@@ -22,7 +22,7 @@
           <div class="dashboard-comment-awaiting-approval bg-gray-50 rounded p-3">
             <div class="flex items-center justify-between">
               <div class="flex items-center gap-4">
-                <img class="w-20 h-20 rounded" src="/img/products/product-thumb (1).png" alt>
+                <img class="w-20 h-20 rounded" src="/img/products/product-thumb (1).png" alt loading="lazy">
                 <h3 class="font-bold leading-4">گیف کارد steam</h3>
               </div>
 

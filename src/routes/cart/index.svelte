@@ -51,7 +51,7 @@
 				<li class="block w-full choose-payment-gateway">
 					<input class="hidden" type="radio" id="zarinpal" name="payment-gateway" value="zarinpal" checked>
 					<label class="flex items-center gap-2 mb-0 p-2 border-2 border-gray-200 rounded duration-100 ease-in-out cursor-pointer hover:border-brand hover:border-opacity-80" for="zarinpal">
-						<img class="rounded w-12" src="/img/payments/ZarinPal.png" alt>
+						<img class="rounded w-12" src="/img/payments/ZarinPal.png" alt loading="lazy">
 						<div class="text-sm text-gray-600">
 							<h6 class="font-bold">ZarinPal</h6>
 							<p class="mt-1 leading-3 text-2xs text-gray-500">پرداخت به وسیله کلیه کارت‌های عضو شبکه شتاب</p>
@@ -61,7 +61,7 @@
 				<li class="block w-full choose-payment-gateway">
 					<input class="hidden" type="radio" id="payir" name="payment-gateway" value="payir">
 					<label class="flex items-center gap-2 mb-0 p-2 border-2 border-gray-200 rounded duration-100 ease-in-out cursor-pointer hover:border-brand hover:border-opacity-80" for="payir">
-						<img class="rounded w-12" src="/img/payments/PayIR.png" alt>
+						<img class="rounded w-12" src="/img/payments/PayIR.png" alt loading="lazy">
 						<div class="text-sm text-gray-600">
 							<h6 class="font-bold">PayIR</h6>
 							<p class="mt-1 leading-3 text-2xs text-gray-500">پرداخت به وسیله کلیه کارت‌های عضو شبکه شتاب</p>
