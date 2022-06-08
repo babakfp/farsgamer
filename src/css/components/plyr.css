@@ -17,4 +17,8 @@
 		@apply rounded overflow-hidden;
 	}
 
+  .plyr__poster {
+    background-size: cover !important;
+  }
+
 }

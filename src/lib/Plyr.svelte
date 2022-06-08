@@ -1,7 +1,5 @@
 <script>
 	import { onMount } from 'svelte'
-	import '../../static/lib/plyr/plyr.polyfilled.js'
-	import '../../static/lib/plyr/plyr.css'
 
 	export let className = null
 	export { className as class }
