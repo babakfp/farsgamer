@@ -4,6 +4,15 @@
 
 	let show = false
 	$: $navigating && (show = false)
+
+  const menuItems = [
+    { title: 'داشبورد', href: '/dashboard', icon: 'icon-cube' },
+    { title: 'سفارشات من', href: '/dashboard/orders', icon: 'icon-gamepad' },
+    { title: 'نظرات من', href: '/dashboard/comments', icon: 'icon-comment' },
+    { title: 'اعلانات', href: '/dashboard/announcements', icon: 'icon-bell' },
+    { title: 'تنظیمات حساب', href: '/dashboard/settings', icon: 'icon-settings' },
+    { title: 'خروج از حساب', href: '/dashboard/logout', icon: 'icon-power' },
+  ]
 </script>
 
 <div class="mb-4 bg-white rounded 2md:mb-0 2md:min-w-80">
@@ -24,13 +33,12 @@
   <nav>
     <div class="h-0 overflow-hidden duration-300 ease-in-out {show && 'h-auto'} 2md:h-auto">
       <ul>
-        <NavItem useInDashboard={true} title="داشبورد" href="/dashboard" icon="icon-cube" />
-        <NavItem useInDashboard={true} title="سفارشات من" href="/dashboard/orders" icon="icon-gamepad" />
-        <NavItem useInDashboard={true} title="نظرات من" href="/dashboard/comments" icon="icon-comment" />
-        <NavItem useInDashboard={true} title="اعلانات" href="/dashboard/announcements" icon="icon-bell" />
-        <NavItem useInDashboard={true} title="تنظیمات حساب" href="/dashboard/settings" icon="icon-settings" />
-        <hr class="hidden 2md:block 2md:border-gray-100">
-        <NavItem useInDashboard={true} title="خروج از حساب" href="/dashboard/logout" icon="icon-power" />
+        {#each menuItems as item, i}
+          <NavItem {...item} />
+          {#if i + 1 === menuItems.length}
+            <hr class="hidden 2md:block 2md:border-gray-100">
+          {/if}
+        {/each}
       </ul>
     </div>
 
