@@ -1,6 +1,5 @@
 <script>
-	import { page } from '$app/stores'
-	import { navigating } from "$app/stores"
+	import { navigating, page } from "$app/stores"
 	import OutClick from 'svelte-outclick'
 	import { isOpen, close, dashboardClose } from '$store/mobile-menu.js'
 	import streams from '$store/streams.js'
@@ -13,6 +12,16 @@
 	const onOutClick =_=> {
 		$page.url.pathname.includes('/dashboard') ? dashboardClose() : close()
 	}
+
+  const menuItems = [
+    { title: 'خانه', href:'/', icon:'icon-home' },
+    { title: 'فروشگاه', href:'/shop', icon:'icon-shop' },
+    { title: 'بلاگ', href:'/blog', icon:'icon-document' },
+    { title: 'چرا فارس گیمر', href:'/why-us', icon:'icon-diploma' },
+    { title: 'سوالات متداول', href:'/faq', icon:'icon-interrogation' },
+    { title: 'تماس با ما', href:'/contact', icon:'icon-headset' },
+    { title: 'قوانین و مقررات', href:'/terms', icon:'icon-bank' },
+  ]
 </script>
 
 <!-- UnderLay -->
@@ -26,13 +35,11 @@
 			
 			<nav class="pt-4">
 				<ul>
-					<NavItem title="خانه" href="/" icon="icon-home" />
-					<NavItem title="فروشگاه" href="/shop" icon="icon-shop" />
-					<NavItem title="بلاگ" href="/blog" icon="icon-document" />
-					<NavItem title="چرا فارس گیمر" href="/why-us" icon="icon-diploma" />
-					<NavItem title="سوالات متداول" href="/faq" icon="icon-interrogation" />
-					<NavItem title="تماس با ما" href="/contact" icon="icon-headset" />
-					<NavItem title="قوانین و مقررات" href="/terms" icon="icon-bank" />
+          {#each menuItems as item}
+            {#if $page.url.pathname !== item.href}
+              <NavItem {...item} />
+            {/if}
+          {/each}
 				</ul>
 			</nav>
 
