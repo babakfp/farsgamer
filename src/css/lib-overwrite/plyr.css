@@ -1,0 +1,16 @@
+:root {
+  --plyr-color-main: theme('colors.brand.DEFAULT');
+  --plyr-control-radius: theme('borderRadius.sm');
+}
+
+.plyr {
+  @apply max-w-3xl mx-auto;
+}
+
+.plyr {
+  @apply rounded overflow-hidden;
+}
+
+.plyr__poster {
+  @apply bg-cover;
+}
