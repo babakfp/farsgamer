@@ -36,9 +36,9 @@
 			<nav class="pt-4">
 				<ul>
           {#each menuItems as item}
-            {#if $page.url.pathname !== item.href}
+            <!-- {#if $page.url.pathname !== item.href} -->
               <NavItem {...item} />
-            {/if}
+            <!-- {/if} -->
           {/each}
 				</ul>
 			</nav>

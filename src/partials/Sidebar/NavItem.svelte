@@ -11,7 +11,8 @@
 	<a class="
 		relative flex items-center gap-3 py-3 pl-6 pr-5 hover:text-brand
 		{ !useInDashboard ? 'hover:bg-gray-50' : '' }
-		{ useInDashboard && (href === $page.url.pathname) ? 'text-brand' : '' }
+		{ !useInDashboard && (href === $page.url.pathname) ? 'bg-gray-50' : '' }
+		{ useInDashboard || (href === $page.url.pathname) ? 'text-brand' : '' }
 		{ (href === $page.url.pathname) ? 'cursor-default' : '' }
 		"
 		{href}
