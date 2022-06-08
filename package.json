@@ -12,8 +12,7 @@
     "preview": "svelte-kit preview",
     "preview:open": "svelte-kit preview --open",
     "preview:host": "svelte-kit preview --host",
-    "preview:host:open": "svelte-kit preview --host --open",
-    "postcss": "postcss build static/css/index.css -o static/css/dist.css"
+    "preview:host:open": "svelte-kit preview --host --open"
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "1.0.0-next.47",
