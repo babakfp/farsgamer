@@ -1,7 +1,11 @@
 @layer components {
 
 	.btn {
-		@apply inline-flex items-center justify-center gap-3 h-10 py-2 px-4 !leading-0 border-2 border-transparent border-opacity-80 rounded duration-150 ease-in-out select-none whitespace-nowrap active:scale-95 hover:border-opacity-100 focus:border-opacity-100;
+		@apply inline-flex items-center justify-center gap-3;
+    @apply h-10 px-4 py-2;
+    @apply border-2 border-transparent border-opacity-80 rounded;
+    @apply duration-150 ease-in-out whitespace-nowrap select-none;
+    @apply active:scale-95 hover:border-opacity-100 focus:border-opacity-100;
 	}
 
 	/* Light */
