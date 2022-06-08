@@ -1,6 +1,6 @@
 <script>
 	import { navigating } from "$app/stores"
-	import { NavItem } from '$partials/SideMenu'
+	import NavItem from '$partials/Sidebar/NavItem.svelte'
 
 	let show = false
 	$: $navigating && (show = false)
