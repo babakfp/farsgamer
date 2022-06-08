@@ -5,17 +5,13 @@ import adapter from '@sveltejs/adapter-vercel'
 export default {
   kit: {
     adapter: adapter(),
-    vite: {
-      resolve: {
-        alias: {
-          '$lib': path.resolve('src/lib'),
-          '$layouts': path.resolve('src/layouts'),
-          '$partials': path.resolve('src/partials'),
-          '$store': path.resolve('src/store'),
-          '$utils': path.resolve('src/utils'),
-          '$db': path.resolve('src/store/db'),
-        },
-      },
+    alias: {
+      '$lib': 'src/lib',
+      '$layouts': 'src/layouts',
+      '$partials': 'src/partials',
+      '$store': 'src/store',
+      '$utils': 'src/utils',
+      '$db': 'src/store/db',
     },
   },
   preprocess: [
