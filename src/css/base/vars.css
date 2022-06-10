@@ -42,8 +42,8 @@
       var(--swiper-slidesPerView)
     );
 
-    @screen xl {
-      --swiper-sidebar-w: 16rem;
+    @screen lg {
+      --swiper-sidebar-w: 14rem;
     }
 
     .swiper-slide {
