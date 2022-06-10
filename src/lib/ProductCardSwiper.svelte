@@ -7,8 +7,7 @@
 	export let specialDiscount = false
 </script>
 
-<Swiper
-	class="box-carousel product-card-swiper"
+<Swiper class="box-carousel product-card-swiper"
 	modules={[ Pagination, Autoplay ]}
 	speed={600}
 	grabCursor={true}
@@ -23,27 +22,13 @@
 		1280: { slidesPerView: 5 },
 	}}
 	>
-	<SwiperSlide>
-    <ProductCard {specialDiscount} {lazyLoading} />
-  </SwiperSlide>
-	<SwiperSlide>
-    <ProductCard {specialDiscount} {lazyLoading} />
-  </SwiperSlide>
-	<SwiperSlide>
-    <ProductCard {specialDiscount} {lazyLoading} />
-  </SwiperSlide>
-	<SwiperSlide>
-    <ProductCard {specialDiscount} {lazyLoading} />
-  </SwiperSlide>
-	<SwiperSlide>
-    <ProductCard {specialDiscount} {lazyLoading} />
-  </SwiperSlide>
-	<SwiperSlide>
-    <ProductCard {specialDiscount} {lazyLoading} />
-  </SwiperSlide>
-	<SwiperSlide>
-    <ProductCard {specialDiscount} {lazyLoading} />
-  </SwiperSlide>
+
+	{#each [...Array(7).keys()] as _}
+    <SwiperSlide>
+      <ProductCard {specialDiscount} {lazyLoading} />
+    </SwiperSlide>
+	{/each}
+
 </Swiper>
 
 <style lang="postcss">
