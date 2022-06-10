@@ -19,6 +19,8 @@
 			browser && document.body.classList.remove('dashboard-header')
 		}
 	}
+
+  browser && document.body.classList.add('fully-loaded')
 </script>
 
 <LoadingBar />
