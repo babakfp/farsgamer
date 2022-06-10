@@ -4,8 +4,8 @@
 	import CardsSection from '$lib/CardsSection.svelte'
 	import ImgShadowSelf from '$lib/ImgShadowSelf.svelte'
 	import ProductCardSwiper from '$lib/ProductCardSwiper.svelte'
+	import PostCardSwiper from '$lib/PostCardSwiper.svelte'
 	import posts from '$db/posts.js'
-	import PostCard from '$lib/PostCard.svelte'
 	import StarRating from '$lib/StarRating.svelte'
 
 	const giftCardImages = [
@@ -41,7 +41,7 @@
 		----------------
 	-->
 	<section class="md:flex md:gap-4">
-		<div class="md:w-8/12">
+		<div class="md:w-8/12 md:min-w-8/12 md:max-w-8/12">
 
 			<!--
 				Main Posters
@@ -90,7 +90,7 @@
 	-->
 	<CardsSection title="گـیفتــکارد ها">
 		<Swiper
-			class="box-carousel"
+			class="box-carousel GiftCardSwiper swiper-prevent-content-shift"
 			modules={[ Pagination, Autoplay ]}
 			speed={600}
 			grabCursor={true}
@@ -101,7 +101,7 @@
 			breakpoints={{
 				360:  { slidesPerView: 3 },
 				640:  { slidesPerView: 4 },
-				840: 	{ slidesPerView: 5 },
+				860: 	{ slidesPerView: 5 },
 				1024: { slidesPerView: 4 },
 				1140: { slidesPerView: 5 },
 				1280: { slidesPerView: 6 },
@@ -122,7 +122,7 @@
 	-->
 	<CardsSection title="نظــرات اخیـر کـاربران">
 		<Swiper
-			class="box-carousel"
+			class="box-carousel ReviewCardSwiper swiper-prevent-content-shift"
 			modules={[ Pagination, Autoplay ]}
 			speed={600}
 			grabCursor={true}
@@ -131,11 +131,11 @@
 			spaceBetween={16}
 			breakpoints={{
 				640:  { slidesPerView: 2 },
-				840: 	{ slidesPerView: 3 },
+				860: 	{ slidesPerView: 3 },
 				1024: { slidesPerView: 2 },
 				1140: { slidesPerView: 3 },
-				1400: { slidesPerView: 4 },
-				1600: { slidesPerView: 5 },
+				1536: { slidesPerView: 4 },
+				1800: { slidesPerView: 5 },
 			}}
 		>
 			{#each [1,2,3,4,5,6] as comment}
@@ -201,35 +201,7 @@
 		-----------------
 	-->
 	<CardsSection title="جدیدترین پست‌ها" href="javascript:">
-		<Swiper
-			class="box-carousel"
-			modules={[ Pagination, Autoplay ]}
-			speed={600}
-			grabCursor={true}
-			pagination={{ clickable: true }}
-			autoplay={{ delay: 5000, disableOnInteraction: false }}
-			spaceBetween={16}
-			slidesPerView={2}
-			breakpoints={{
-				640:  { slidesPerView: 3 },
-				840: 	{ slidesPerView: 4 },
-				1024: { slidesPerView: 3 },
-				1140: { slidesPerView: 4 },
-				1280: { slidesPerView: 5 },
-				1800: { slidesPerView: 6 },
-			}}
-		>
-			{#each posts as post}
-				<SwiperSlide>
-          <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} lazyLoading={true} />
-        </SwiperSlide>
-			{/each}
-			{#each posts as post}
-				<SwiperSlide>
-          <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} lazyLoading={true} />
-        </SwiperSlide>
-			{/each}
-		</Swiper>
+    <PostCardSwiper {posts} />
 	</CardsSection>
 
 	<!--
@@ -262,4 +234,31 @@
 			@apply opacity-100;
 		}
 	}
+
+  /*
+  ---
+  Fix Swiper content shift
+  ---
+  */
+
+  :global(.GiftCardSwiper.swiper-prevent-content-shift) {
+    --swiper-slidesPerView: 2;
+
+    @screen 5xs { --swiper-slidesPerView: 3 }
+    @screen sm  { --swiper-slidesPerView: 4 }
+    @screen 2md { --swiper-slidesPerView: 5 }
+    @screen lg  { --swiper-slidesPerView: 4 }
+    @screen 2lg { --swiper-slidesPerView: 5 }
+    @screen xl  { --swiper-slidesPerView: 6 }
+    @screen 3xl { --swiper-slidesPerView: 7 }
+  }
+
+  :global(.ReviewCardSwiper.swiper-prevent-content-shift) {
+    @screen sm  { --swiper-slidesPerView: 2 }
+    @screen 2md { --swiper-slidesPerView: 3 }
+    @screen lg  { --swiper-slidesPerView: 2 }
+    @screen 2lg { --swiper-slidesPerView: 3 }
+    @screen 2xl { --swiper-slidesPerView: 4 }
+    @screen 3xl { --swiper-slidesPerView: 5 }
+  }
 </style>

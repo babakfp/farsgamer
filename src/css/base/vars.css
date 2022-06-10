@@ -1,4 +1,5 @@
 @layer base {
+
 	:root {
 		--header: theme('spacing.16');
 		--page: theme('spacing.4');
@@ -19,4 +20,37 @@
 			--page: theme('spacing.8');
 		}
 	}
+
+  /*
+  ---
+  Fixing Swiper content shift
+  ---
+  */
+
+  .swiper-prevent-content-shift {
+    --swiper-sidebar-w: 0px;
+    --swiper-slidesPerView: 1;
+    --swiper-spaceBetween: 16px;
+    --swiper-available-width: 100vw - ( var(--page) * 2 ) - var(--swiper-sidebar-w);
+    --swiper-SwiperSlide-width: calc(
+      (
+        var(--swiper-available-width)
+        -
+        ( ( var(--swiper-slidesPerView) - 1 ) * var(--swiper-spaceBetween) )
+      )
+      /
+      var(--swiper-slidesPerView)
+    );
+
+    @screen xl {
+      --swiper-sidebar-w: 16rem;
+    }
+
+    .swiper-slide {
+      width: var(--swiper-SwiperSlide-width) !important;
+      /* Only for horizontal swipers (only horizontal swipers need preventing content shift because vertical ones need fixed width and height) */
+      margin-left: var(--swiper-spaceBetween);
+    }
+  }
+
 }

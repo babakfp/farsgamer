@@ -4,8 +4,20 @@ module.exports = {
   content: ['./src/**/*.{html,svelte}'],
 	theme: {
 		extend: {
-			maxWidth: theme => theme('spacing'),
-			minWidth: theme => theme('spacing'),
+			minWidth: theme => {
+        return {
+          ...theme('spacing'),
+          '4/12': '33.333333%',
+          '8/12': '66.666667%',
+        }
+      },
+			maxWidth: theme => {
+        return {
+          ...theme('spacing'),
+          '4/12': '33.333333%',
+          '8/12': '66.666667%',
+        }
+      },
 			minHeight: theme => theme('spacing'),
 			maxHeight: theme => theme('spacing'),
 			colors: {
