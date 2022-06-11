@@ -27,7 +27,7 @@
 <a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:scale-105" href="/shop/1">
 
 	<div class="relative rounded overflow-hidden">
-		<img src="/img/products/product-thumb (1).png" alt loading={lazyLoading && 'lazy'}>
+		<img class="aspect-square bg-gray-100" src="/img/products/product-thumb (1).png" alt loading={lazyLoading && 'lazy'}>
 
 		{#if inStock === false}
 			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
