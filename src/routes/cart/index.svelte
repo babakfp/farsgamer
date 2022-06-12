@@ -71,7 +71,7 @@
 			</ol>
 			
 			<div class="-mt-4">
-				<button class="btn btn--brand btn--submit w-full" disabled={!$isLoggedIn} type="submit">ادامه تسویه حساب</button>
+				<button class="btn btn--brand btn--submit w-full {!$isLoggedIn && 'cursor-not-allowed'}" disabled={!$isLoggedIn} type="submit">ادامه تسویه حساب</button>
 				{#if !$isLoggedIn}
 					<p class="text-xs mt-2 text-red-400">برای ادامه فراید خرید باید ابتدا یک حساب کاربری ایجاد کنید.</p>
 				{/if}

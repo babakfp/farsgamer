@@ -31,11 +31,11 @@
 	}
 
 	/* Brand */
-	.btn--brand:not([disabled]) {}
-	.btn--brand:not(.btn--outline):not([disabled]) {
+	.btn--brand {}
+	.btn--brand:not(.btn--outline) {
 		@apply bg-brand text-white hover:bg-brand-deep focus:bg-brand-deep;
 	}
-	.btn--brand.btn--outline:not([disabled]) {
+	.btn--brand.btn--outline {
 		@apply text-brand border-brand hover:text-white hover:bg-brand focus:text-white focus:bg-brand;
 	}
 
@@ -56,12 +56,12 @@
 		@apply h-input;
 	}
 
-	.btn[disabled] {
-		@apply bg-gray-100 text-gray-500 cursor-not-allowed;
-	}
-
 	.btn i {
 		@apply opacity-75;
 	}
+
+  [disabled].btn {
+    @apply !pointer-events-none !opacity-50;
+  }
 
 }
