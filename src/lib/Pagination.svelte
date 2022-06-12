@@ -1,5 +1,5 @@
 <script>
-	export let prevLink = null
+	export let prevLink = 'javascript:'
 	export let nextLink = 'javascript:'
 </script>
 
@@ -14,13 +14,16 @@
 	{/if}
 
 	<ul class="flex items-center gap-2">
+    <li>
+			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">1</a>
+		</li>
 		<li>
-			<a class="btn btn--gray btn--outline h-10 w-10 p-2 border-0 !bg-brand !bg-opacity-20 text-brand font-bold pointer-events-none" href="javascript:">2</a>
+			<a class="btn btn--gray btn--outline h-10 w-10 p-2 border-0 text-brand font-bold pointer-events-none" href="javascript:">2</a>
 		</li>
 		<li>
 			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">3</a>
 		</li>
-		<li class="flex items-center justify-center h-10 w-10">
+		<li class="flex items-center justify-center h-10 w-10 text-gray-400">
 			<i class="icon-menu-dots"></i>
 		</li>
 		<li>

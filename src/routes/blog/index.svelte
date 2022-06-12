@@ -12,9 +12,6 @@
 	{#each posts as post (post.id)}
 		<PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} />
 	{/each}
-	{#each posts.slice(0, 6) as post (post.id)}
-		<PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} />
-	{/each}
 </div>
 
 <Pagination />
