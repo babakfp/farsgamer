@@ -29,11 +29,6 @@
       <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} lazyLoading={true} />
     </SwiperSlide>
   {/each}
-  {#each posts as post}
-    <SwiperSlide>
-      <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} lazyLoading={true} />
-    </SwiperSlide>
-  {/each}
 </Swiper>
 
 <style lang="postcss">
