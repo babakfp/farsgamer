@@ -45,6 +45,9 @@
     @screen lg {
       --swiper-sidebar-w: 14rem;
     }
+    @screen 2xl {
+      --swiper-sidebar-w: 16rem;
+    }
 
     .swiper-slide {
       width: var(--swiper-SwiperSlide-width) !important;
