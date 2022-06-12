@@ -1,6 +1,6 @@
 <script>
 	import { navigating } from "$app/stores"
-	import NavItem from '$partials/Sidebar/NavItem.svelte'
+	import NavItem from './NavItem.svelte'
 
 	let show = false
 	$: $navigating && (show = false)
@@ -51,7 +51,11 @@
 </div>
 
 <style lang="postcss">
-  nav :global(li:first-child a) {
+  nav ul :global(li:first-of-type a) {
     @apply pt-5;
+  }
+
+  nav ul :global(li:last-of-type a) {
+    @apply pb-5;
   }
 </style>
