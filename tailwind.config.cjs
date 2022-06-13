@@ -53,6 +53,7 @@ module.exports = {
 			},
 			scale: {
 				flip: '-1',
+        25: '.25',
 			},
 			blur: {
 				xs: '2px',

@@ -3,6 +3,7 @@
   import { writable } from 'svelte/store'
   import CarouselArrowNext from './CarouselArrowNext.svelte'
   import CarouselArrowPrev from './CarouselArrowPrev.svelte'
+  import CarouselDots from './CarouselDots.svelte'
 
   export let className = null
 	export { className as class }
@@ -75,6 +76,8 @@
       <CarouselArrowPrev />
     </carousel-arrows>
   </slot>
+
+  <CarouselDots />
 
 </carousel>
 
