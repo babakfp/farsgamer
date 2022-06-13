@@ -12,7 +12,8 @@
   .carousel-arrow {
     @apply btn btn--gray w-10 px-0;
   }
-  :global(body.rtl .carousel-arrow) {
+  /* TODO: We shouldn't use global styles. I'm waiting for a better CSS scope feature. What if the developer uses the slot to remove the SVG? */
+  :global(body.rtl .carousel-arrow svg) {
     @apply scale-x-flip;
   }
 </style>

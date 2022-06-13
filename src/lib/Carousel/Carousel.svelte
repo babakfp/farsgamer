@@ -8,17 +8,18 @@
 	export { className as class }
   export let classWrapper = null
 
-  export let activeCardIndex = 0
   export let gap
 
-  let itemsLen = writable()
-  setContext('itemsLen', $itemsLen)
-  
   let wrapper
   let cards
-  let lengthOfItems
   let translateX = '0px'
   let direction
+
+  const cardsLen = writable(69)
+  setContext('cardsLen', cardsLen)
+
+  const activeCardIndex = writable(0)
+  setContext('activeCardIndex', activeCardIndex)
   
   // const printTranslateXBasedOnWrapperDirection = translateX => {
   //   if (!wrapper) return
@@ -28,7 +29,7 @@
   
   $: if (wrapper) {
     cards = wrapper.querySelectorAll('carousel-card')
-    lengthOfItems = cards.length
+    cardsLen.set(cards.length)
     direction = getComputedStyle(wrapper).direction
     
     cards.forEach((card, i) => {
@@ -42,21 +43,21 @@
     })
   }
 
-  $: activeCardIndex, (_=>{
+  $: $activeCardIndex, (_=>{
     if (wrapper) {
-      if (activeCardIndex === 0) {
+      if ($activeCardIndex === 0) {
         translateX = 0
       } else {
         if (direction === 'rtl') {
-          translateX = `calc( (${cards[activeCardIndex].offsetWidth}px * ${activeCardIndex}) + (${gap} * ${activeCardIndex}) )`
+          translateX = `calc( (${cards[$activeCardIndex].offsetWidth}px * ${$activeCardIndex}) + (${gap} * ${$activeCardIndex}) )`
         } else {
-          translateX = `calc( (-${cards[activeCardIndex].offsetWidth}px * ${activeCardIndex}) + (-${gap} * ${activeCardIndex}) )`
+          translateX = `calc( (-${cards[$activeCardIndex].offsetWidth}px * ${$activeCardIndex}) + (-${gap} * ${$activeCardIndex}) )`
         }
       }
     }
   })();
 </script>
-{$itemsLen}
+
 <carousel class={className}>
 
   <carousel-wrapper bind:this={wrapper} class={classWrapper}
@@ -70,16 +71,16 @@
 
   <slot name="arrows">
     <carousel-arrows class="block mt-8">
-      <CarouselArrowNext bind:activeCardIndex {lengthOfItems} />
-      <CarouselArrowPrev bind:activeCardIndex {lengthOfItems} />
+      <CarouselArrowNext />
+      <CarouselArrowPrev />
     </carousel-arrows>
   </slot>
 
 </carousel>
 
 <ul class="mt-8 list-inside list-disc">
-  <li>activeCardIndex: {activeCardIndex}</li>
-  <li>lengthOfItems: {lengthOfItems}</li>
+  <li>activeCardIndex: {$activeCardIndex}</li>
+  <li>cardsLen: {$cardsLen}</li>
 </ul>
 
 <style>
