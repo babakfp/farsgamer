@@ -83,8 +83,12 @@
 		@apply w-4 h-4 inline-block;
 	}
 
-	[type=search] {
+	[type="search"] {
 		@apply w-full;
 	}
+
+  [type="button"] {
+    @apply cursor-pointer;
+  }
 
 }
