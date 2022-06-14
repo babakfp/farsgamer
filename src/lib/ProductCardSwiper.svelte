@@ -3,8 +3,8 @@
 	import { Pagination, Autoplay } from 'swiper'
 	import ProductCard from '$lib/ProductCard.svelte'
 
-  export let lazyLoading
-	export let specialDiscount
+  export let lazyLoading = false
+	export let specialDiscount = false
 	// export let products = []
 </script>
 
