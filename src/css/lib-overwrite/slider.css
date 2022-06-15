@@ -38,8 +38,37 @@
 /*  */
 
 .box-carousel.swiper {
-	padding-bottom: calc(16px + 24px - 8px);
-	overflow: unset;
+  /* X | X | X | (for transform scale and overflow problem) */
+	padding-bottom: calc(16px + 24px - 8px + 1rem);
+  @apply pt-4 -my-4 lg:px-page lg:-mx-page;
+
+  @media (min-width: 1790px) {
+    @apply px-0 mx-0;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    @apply lg:absolute lg:top-0 lg:bottom-0 lg:w-page lg:h-full lg:backdrop-blur-sm lg:bg-gray-100/40 lg:z-2;
+    @media (min-width: 1790px) {
+      content: unset;
+    }
+  }
+
+  &::before { @apply lg:right-0 }
+  &::after { @apply lg:left-0 }
+
+  .swiper-slide {
+    @apply relative z-40;
+    /* TODO: */
+    &:hover {
+      @apply !z-40;
+    }
+  }
+
+  .swiper-pagination {
+    @apply !bottom-4 lg:ml-page;
+  }
 }
 
 .box-carousel .swiper-pagination-bullets {

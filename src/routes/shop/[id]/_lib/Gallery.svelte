@@ -14,7 +14,7 @@
 
 
 {#if images.length > 0}
-	<div class="mx-auto md:order-2 md:p-6 2xl:p-8 3xl:w-full">
+	<div class="mx-auto md:order-2 md:p-6 2xl:p-8 2xl:w-full">
 		<div class="flex gap-4 md:-ml-6 2xl:-ml-8">
 			
 			<!-- Main Gallery -->

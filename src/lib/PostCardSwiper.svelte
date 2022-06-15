@@ -21,7 +21,6 @@
     1024: { slidesPerView: 3 },
     1140: { slidesPerView: 4 },
     1280: { slidesPerView: 5 },
-    1800: { slidesPerView: 6 },
   }}
 >
   {#each posts as post}
@@ -40,6 +39,5 @@
     @screen lg  { --swiper-slidesPerView: 3 }
     @screen 2lg { --swiper-slidesPerView: 4 }
     @screen xl  { --swiper-slidesPerView: 5 }
-    @screen 3xl { --swiper-slidesPerView: 6 }
   }
 </style>

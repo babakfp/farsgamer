@@ -96,7 +96,6 @@
 				1024: { slidesPerView: 4 },
 				1140: { slidesPerView: 5 },
 				1280: { slidesPerView: 6 },
-				1800: { slidesPerView: 7 },
 			}}
 		>
 			{#each giftCardImages as img}
@@ -124,7 +123,6 @@
 				1024: { slidesPerView: 2 },
 				1140: { slidesPerView: 3 },
 				1536: { slidesPerView: 4 },
-				1800: { slidesPerView: 5 },
 			}}
 		>
 			{#each [1,2,3,4,5,6] as comment}
@@ -229,7 +227,6 @@
     @screen lg  { --swiper-slidesPerView: 4 }
     @screen 2lg { --swiper-slidesPerView: 5 }
     @screen xl  { --swiper-slidesPerView: 6 }
-    @screen 3xl { --swiper-slidesPerView: 7 }
   }
 
   :global(.ReviewCardSwiper.swiper-prevent-content-shift) {
@@ -238,6 +235,5 @@
     @screen lg  { --swiper-slidesPerView: 2 }
     @screen 2lg { --swiper-slidesPerView: 3 }
     @screen 2xl { --swiper-slidesPerView: 4 }
-    @screen 3xl { --swiper-slidesPerView: 5 }
   }
 </style>

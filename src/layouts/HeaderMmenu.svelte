@@ -10,10 +10,11 @@
 <Sidebar />
 
 <main>
-	<div id="page-content" class="relative p-page overflow-x-hidden xl:pb-12">
+	<div id="page-content" class="container relative py-page overflow-x-hidden xl:pb-12">
 		<slot />
 	</div>
 
+  <!-- TODO: Put it outside of the main tag -->
 	<Footer />
 </main>
 

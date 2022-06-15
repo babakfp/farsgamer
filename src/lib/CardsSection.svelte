@@ -5,7 +5,7 @@
 
 <section>
   <div class="flex items-center justify-between mb-4">
-		<h2 class="font-bold text-lg">{title}</h2>
+		<h2 class="font-semibold sm:font-bold sm:text-lg">{title}</h2>
 		{#if href}
 			<a class="btn btn--sm btn--gray btn--outline gap-2" {href}>
 				<span>مشاهده همه</span>

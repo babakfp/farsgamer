@@ -97,14 +97,17 @@ module.exports = {
 			'2xs': '480px',
 			xs: '576px',
 			sm: '640px',
-			md: '768px',
+			md: '764px',
 			'2md': '860px',
 			lg: '1024px',
 			'2lg': '1140px',
 			xl: '1280px',
 			'2xl': '1536px',
-			'3xl': '1800px',
 		},
+    container: {
+      center: true,
+      padding: 'var(--page)'
+    },
 		fontFamily: {
       dana: [ 'dana' ],
 		},

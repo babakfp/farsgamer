@@ -28,30 +28,18 @@
   */
 
   .swiper-prevent-content-shift {
-    --swiper-sidebar-w: 0px;
     --swiper-slidesPerView: 1;
     --swiper-spaceBetween: 16px;
-    --swiper-available-width: 100vw - ( var(--page) * 2 ) - var(--swiper-sidebar-w);
     --swiper-SwiperSlide-width: calc(
-      (
-        var(--swiper-available-width)
-        -
-        ( ( var(--swiper-slidesPerView) - 1 ) * var(--swiper-spaceBetween) )
-      )
-      /
-      var(--swiper-slidesPerView)
+      (100%
+      - ( var(--swiper-slidesPerView) - 1 )
+      * var(--swiper-spaceBetween))
+      / var(--swiper-slidesPerView)
     );
 
-    @screen lg {
-      --swiper-sidebar-w: 14rem;
-    }
-    @screen 2xl {
-      --swiper-sidebar-w: 16rem;
-    }
-
     .swiper-slide {
-      width: var(--swiper-SwiperSlide-width) !important;
-      /* Only for horizontal swipers (only horizontal swipers need preventing content shift because vertical ones need fixed width and height) */
+      width: var(--swiper-SwiperSlide-width);
+      /* Only horizontal swipers need this because vertical ones have fixed width and height */
       margin-left: var(--swiper-spaceBetween);
     }
   }
