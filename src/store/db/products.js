@@ -1,3 +1,16 @@
+import { comments as postComments } from './posts.js'
+
+const comments = postComments.filter((post, i) => {
+  if (i % 2) {
+    post.isBuyer = false
+    post.rating = 4
+  } else {
+    post.isBuyer = true
+    post.rating = 5
+  }
+  return post
+})
+
 export default [
 	{
 		id: 1,
@@ -12,41 +25,7 @@ export default [
 		rating: 5,
 		ratingCount: 450,
 		coins: 300,
-		comments: [
-			{
-				id: 1,
-				firstname: 'رضا',
-				lastname: 'پاک',
-				content: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.',
-				date: '1400-12-1',
-				isBuyer: true,
-				rating: 5,
-			},
-			{
-				id: 2,
-				firstname: 'رضا',
-				lastname: 'پاک',
-				content: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.',
-				date: '1400-12-1',
-				isBuyer: true,
-				rating: 4,
-			},
-		],
-		questionsAndAnswers: [
-			{
-				id: 1,
-				firstname: 'رضا',
-				lastname: 'پاک',
-				content: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.',
-				date: '1400-12-1',
-			},
-			{
-				id: 2,
-				firstname: 'رضا',
-				lastname: 'پاک',
-				content: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.',
-				date: '1400-12-1',
-			},
-		],
+		comments: comments,
+		questionsAndAnswers: postComments,
 	}
 ]
