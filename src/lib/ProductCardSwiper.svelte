@@ -21,7 +21,8 @@
 		860: 	{ slidesPerView: 4 },
 		1280: { slidesPerView: 5 },
 	}}
-	>
+  touchEventsTarget="container"
+>
 
 	{#each [...Array(7).keys()] as _}
     <SwiperSlide>

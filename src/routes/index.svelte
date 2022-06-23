@@ -50,7 +50,8 @@
 				grabCursor={true}
 				pagination={{ clickable: true, dynamicBullets: true }}
 				autoplay={{ delay: 5000, disableOnInteraction: false }}
-			>
+        touchEventsTarget="container"
+      >
 				{#each mainPosters as poster}
 					<SwiperSlide>
 						<a class="img-link flex" href={poster.href || 'javascript:'}>
@@ -97,7 +98,8 @@
 				1140: { slidesPerView: 5 },
 				1280: { slidesPerView: 6 },
 			}}
-		>
+      touchEventsTarget="container"
+    >
 			{#each giftCardImages as img}
 				<SwiperSlide>
 					<ImgShadowSelf classImg="aspect-square bg-gray-100" src={img.src} lazyLoading={true} />
@@ -124,7 +126,8 @@
 				1140: { slidesPerView: 3 },
 				1536: { slidesPerView: 4 },
 			}}
-		>
+      touchEventsTarget="container"
+    >
 			{#each [1,2,3,4,5,6] as comment}
 				<SwiperSlide>
 	

@@ -26,7 +26,8 @@
 				grabCursor={true}
 				pagination={{ clickable: true, dynamicBullets: true }}
 				autoplay={{ delay: 5000, disableOnInteraction: true }}
-			>
+        touchEventsTarget="container"
+      >
 				{#each images as src}
 					<SwiperSlide class="main-gallery-slide">
 						<img {src} alt loading="lazy" />
@@ -48,7 +49,8 @@
 					direction="vertical"
 					spaceBetween={16}
 					slidesPerView={3}
-				>
+          touchEventsTarget="container"
+        >
 					{#each images as src}
 						<SwiperSlide>
 							<img class="rounded" {src} alt loading="lazy" />

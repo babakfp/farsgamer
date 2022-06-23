@@ -23,7 +23,8 @@
 		grabCursor={true}
 		pagination={{ clickable: true, dynamicBullets: true }}
 		autoplay={{ delay: 5000, disableOnInteraction: false }}
-	>
+    touchEventsTarget="container"
+  >
 		{#each posters as poster}
 			<SwiperSlide>
 				<a href={poster.href || 'javascript:'}>

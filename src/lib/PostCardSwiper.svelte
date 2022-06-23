@@ -22,6 +22,7 @@
     1140: { slidesPerView: 4 },
     1280: { slidesPerView: 5 },
   }}
+  touchEventsTarget="container"
 >
   {#each posts as post}
     <SwiperSlide>
