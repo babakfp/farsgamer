@@ -24,7 +24,7 @@
 			<PhoneNumbers />
 
 			<!-- Open search bar -->
-      <button class="js-mobile-search-toggle h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری" on:click={toggle}>
+      <button class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5 lg:hidden" href="javascript:" title="مشاهده حساب کاربری" on:click={toggle}>
         <i class="icon-search xs:text-lg xl:text-xl"></i>
       </button>
 
