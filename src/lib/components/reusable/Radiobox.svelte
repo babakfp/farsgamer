@@ -10,6 +10,7 @@
 </script>
 
 <div class="flex {className}">
+  <!-- svelte-ignore a11y-label-has-associated-control -->
 	<label class="inline-flex items-center justify-start gap-2 mb-0">
 		<div class="relative inline-flex items-center justify-center">
 			<input
