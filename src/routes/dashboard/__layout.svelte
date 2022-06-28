@@ -5,7 +5,7 @@
 
 <div class="lg:flex lg:items-start lg:gap-4 xl:gap-8">
 	<NavMenu />
-	<div class="w-full">
+	<div class="grid w-full">
 		<slot />
 	</div>
 </div>
