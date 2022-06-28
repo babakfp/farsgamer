@@ -1,5 +1,6 @@
 {
 	"search.exclude": {
 		"static/fonts": true,
+    "static/lib": true,
 	}
 }
