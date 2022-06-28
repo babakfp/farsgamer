@@ -3,6 +3,7 @@
 	export let cartable = true
 </script>
 
+<!-- svelte-ignore a11y-invalid-attribute -->
 <div class="table-wrapper">
 	<table>
 

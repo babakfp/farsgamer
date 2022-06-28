@@ -25,6 +25,7 @@
       <span class="font-bold">بابک فرخوپاک</span>
       <div class="flex items-center justify-between text-xs">
         <span>امتیاز: ۳۲۰</span>
+        <!-- svelte-ignore a11y-invalid-attribute -->
         <a class="btn btn--gray btn--outline btn--xs text-xs" href="javascript:">تبدیل به پول</a>
       </div>
     </div>

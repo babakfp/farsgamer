@@ -13,6 +13,7 @@
 		<hr class="h-6 border-t-0 border-r-2 border-dashed border-gray-200">
 	{/if}
 
+  <!-- svelte-ignore a11y-invalid-attribute -->
 	<ul class="flex items-center gap-2">
     <li>
 			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">1</a>

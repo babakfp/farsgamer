@@ -54,9 +54,10 @@
     <!-- buttons -->
     <div class="do__item-cell do__item-cell__buttons">
       <div class="grid gap-1">
-							<!-- TOOD  btn--xs-->
+        <!-- svelte-ignore a11y-invalid-attribute -->
+        <!-- TOOD btn--xs -->
         <a href="javascript:" class="btn px-8 btn--brand btn--xs btn--outline w-full">نمایش</a>
-							<!-- TOOD  btn--xs-->
+        <!-- TOOD btn--xs -->
         <button class="btn btn--brand btn--outline btn--xs w-full px-8 gap-1" data-bs-toggle="collapse" data-bs-target="#collapseDoItem1" aria-expanded="false" aria-controls="collapseExample">
           پیگیری <span class="text-2xs">(2 پیام جدید)</span>
         </button>

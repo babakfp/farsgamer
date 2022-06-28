@@ -34,6 +34,7 @@
 	<title>فارس گیمر - اولین مرجع رسمی فروش بازی های آنلاین</title>
 </svelte:head>
 
+<!-- svelte-ignore a11y-invalid-attribute -->
 <div class="space-y-8 lg:space-y-12">
 
 
@@ -154,10 +155,10 @@
 
   <!-- 2 posters -->
 	<section class="grid gap-4 sm:grid-cols-2">
-		<a class="flex" href="javascript:">
+    <a class="flex" href="javascript:">
 			<img class="w-full rounded aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (1).png" alt loading="lazy">
 		</a>
-		<a class="flex" href="javascript:">
+    <a class="flex" href="javascript:">
 			<img class="w-full rounded aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (2).png" alt loading="lazy">
 		</a>
 	</section>

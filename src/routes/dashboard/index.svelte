@@ -50,6 +50,7 @@
 						<td class="whitespace-nowrap">تکمیل شده</td>
 						<td class="min-w-32">اعتبار کیف پول از طریق خرید #FFA-982530</td>
 						<td class="min-w-32">
+              <!-- svelte-ignore a11y-invalid-attribute -->
 							<a class="btn btn--xs btn--light rounded-full" href="javascript:">پرداخت</a>
 						</td>
 					</tr>
