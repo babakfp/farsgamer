@@ -17,9 +17,9 @@
 	slidesPerView={1}
 	breakpoints={{
 		360:  { slidesPerView: 2 },
-		576:  { slidesPerView: 3 },
-		860: 	{ slidesPerView: 4 },
-		1280: { slidesPerView: 5 },
+		576:  { slidesPerView: 3, slidesPerGroup: 2 },
+		860: 	{ slidesPerView: 4, slidesPerGroup: 3 },
+		1280: { slidesPerView: 5, slidesPerGroup: 4 },
 	}}
   touchEventsTarget="container"
 >

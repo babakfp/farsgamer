@@ -16,11 +16,11 @@
   spaceBetween={16}
   slidesPerView={2}
   breakpoints={{
-    640:  { slidesPerView: 3 },
-    860: 	{ slidesPerView: 4 },
-    1024: { slidesPerView: 3 },
-    1140: { slidesPerView: 4 },
-    1280: { slidesPerView: 5 },
+    640:  { slidesPerView: 3, slidesPerGroup: 2 },
+    860: 	{ slidesPerView: 4, slidesPerGroup: 3 },
+    1024: { slidesPerView: 3, slidesPerGroup: 2 },
+    1140: { slidesPerView: 4, slidesPerGroup: 3 },
+    1280: { slidesPerView: 5, slidesPerGroup: 4 },
   }}
   touchEventsTarget="container"
 >

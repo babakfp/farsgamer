@@ -49,6 +49,7 @@
 					direction="vertical"
 					spaceBetween={16}
 					slidesPerView={3}
+          slidesPerGroup={2}
           touchEventsTarget="container"
         >
 					{#each images as src}

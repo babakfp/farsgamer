@@ -92,12 +92,12 @@
 			spaceBetween={16}
 			slidesPerView={2}
 			breakpoints={{
-				360:  { slidesPerView: 3 },
-				640:  { slidesPerView: 4 },
-				860: 	{ slidesPerView: 5 },
-				1024: { slidesPerView: 4 },
-				1140: { slidesPerView: 5 },
-				1280: { slidesPerView: 6 },
+				360:  { slidesPerView: 3, slidesPerGroup: 2 },
+				640:  { slidesPerView: 4, slidesPerGroup: 3 },
+				860: 	{ slidesPerView: 5, slidesPerGroup: 4 },
+				1024: { slidesPerView: 4, slidesPerGroup: 3 },
+				1140: { slidesPerView: 5, slidesPerGroup: 4 },
+				1280: { slidesPerView: 6, slidesPerGroup: 5 },
 			}}
       touchEventsTarget="container"
     >
@@ -120,12 +120,13 @@
 			pagination={{ clickable: true }}
 			autoplay={{ delay: 5000, disableOnInteraction: false }}
 			spaceBetween={16}
+      slidesPerGroup={1}
 			breakpoints={{
-				640:  { slidesPerView: 2 },
-				860: 	{ slidesPerView: 3 },
-				1024: { slidesPerView: 2 },
-				1140: { slidesPerView: 3 },
-				1536: { slidesPerView: 4 },
+				640:  { slidesPerView: 2, slidesPerGroup: 2 },
+				860: 	{ slidesPerView: 3, slidesPerGroup: 3 },
+				1024: { slidesPerView: 2, slidesPerGroup: 2 },
+				1140: { slidesPerView: 3, slidesPerGroup: 3 },
+				1536: { slidesPerView: 4, slidesPerGroup: 4 },
 			}}
       touchEventsTarget="container"
     >
