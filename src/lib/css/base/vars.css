@@ -12,7 +12,7 @@
 	}
 	@screen lg {
 		:root {
-			--header: theme('spacing.20');
+			--header: theme('spacing.18');
 		}
 	}
 	@screen xl {

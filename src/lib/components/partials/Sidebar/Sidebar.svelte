@@ -28,7 +28,7 @@
 <div id="sidemenu__underlay" class="z-30 fixed inset-0 top-header bg-gray-200/50 duration-300 ease-in-out opacity-0 invisible pointer-events-none {$isOpen && '!opacity-100 !visible !pointer-events-auto'}" />
 
 <OutClick on:outclick={onOutClick} excludeByQuerySelector={['.js-burger-toggle-btn']}>
-	<sidebar class="z-30 fixed inset-0 top-header w-64 bg-white border-t border-gray-100 translate-x-full duration-300 ease-in-out {$isOpen && '!translate-x-0'}">
+	<sidebar class="z-30 fixed inset-0 top-header w-64 bg-white translate-x-full duration-300 ease-in-out {$isOpen && '!translate-x-0'}">
 		<Logo />
 
 		<div class="scrollbar max-h-full pb-6 border-l border-gray-100">
@@ -76,10 +76,12 @@
 </OutClick>
 
 <style lang="postcss">
-	:global(body.main-header) #sidemenu__underlay {
-		@apply lg:hidden;
-	}
-	:global(body.main-header) sidebar {
-		@apply lg:w-56 lg:z-0 lg:translate-x-0 lg:transition-none lg:border-t-0 2xl:w-64;
-	}
+	:global(body.main-header) {
+    #sidemenu__underlay {
+      @apply lg:hidden;
+    }
+    sidebar {
+      @apply lg:w-56 lg:z-0 lg:translate-x-0 lg:transition-none lg:border-t-0 2xl:w-64;
+    }
+  }
 </style>

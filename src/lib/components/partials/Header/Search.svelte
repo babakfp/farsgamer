@@ -18,7 +18,7 @@
 ">
   <label class="relative flex items-center gap-4 h-full m-0 cursor-text">
     
-    <div class="absolute flex items-center justify-center w-16 h-full">
+    <div class="absolute flex items-center justify-center w-header h-header">
       <i class="icon-search text-lg text-gray-400"></i>
     </div>
 
@@ -29,3 +29,17 @@
     </button>
   </label>
 </form>
+
+<style lang="postcss">
+	:global(body.dashboard-header) {
+    form {
+      @apply border-r border-gray-100;
+    }
+    .w-header {
+      @apply lg:!w-auto px-4;
+    }
+    input {
+      @apply lg:!pr-14;
+    }
+  }
+</style>
