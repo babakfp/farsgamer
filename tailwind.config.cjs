@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors')
+const tailwindCustomPlugins = require('./src/lib/utilities/tailwindCustomPlugins/index.cjs')
 
 module.exports = {
   content: ['./src/**/*.{html,svelte}'],
@@ -137,5 +138,6 @@ module.exports = {
   },
   plugins: [
 		require('@tailwindcss/line-clamp'),
+    ...tailwindCustomPlugins,
 	],
 }
