@@ -3,7 +3,7 @@
 	import Header from '$partials/Header/Header.svelte'
 	import Sidebar from '$partials/Sidebar/Sidebar.svelte'
 	import Footer from '$partials/Footer/Footer.svelte'
-	import Crisp from '$lib/Crisp.svelte'
+	import Crisp from '$components/Crisp.svelte'
 </script>
 
 <Header />

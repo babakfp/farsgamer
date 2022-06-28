@@ -1,6 +1,6 @@
 <script>
 	import { announcements } from '$store/announcements.js'
-	import Alert from '$lib/Alert.svelte'
+	import Alert from '$components/Alert.svelte'
 </script>
 
 {#if $announcements && $announcements.length > 0}

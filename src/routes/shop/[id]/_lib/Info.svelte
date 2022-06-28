@@ -1,5 +1,5 @@
 <script>
-	import StarRating from '$lib/StarRating.svelte'
+	import StarRating from '$components/StarRating.svelte'
 	export let title
 	export let rating
 	export let ratingCount

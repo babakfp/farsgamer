@@ -1,7 +1,7 @@
 <script>
   import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
-	import PostCard from '$lib/PostCard.svelte'
+	import PostCard from '$components/PostCard.svelte'
 	
   export let posts = []
 </script>

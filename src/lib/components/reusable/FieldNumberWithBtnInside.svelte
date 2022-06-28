@@ -1,5 +1,5 @@
 <script>
-	import FieldNumber from '$lib/FieldNumber.svelte'
+	import FieldNumber from '$components/FieldNumber.svelte'
 	export let placeholder = null
 	export let btnText
 	export let value = null

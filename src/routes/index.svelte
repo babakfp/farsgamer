@@ -1,12 +1,12 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
-	import CardsSection from '$lib/CardsSection.svelte'
-	import ImgShadowSelf from '$lib/ImgShadowSelf.svelte'
-	import ProductCardSwiper from '$lib/ProductCardSwiper.svelte'
-	import PostCardSwiper from '$lib/PostCardSwiper.svelte'
-	import posts from '$db/posts.js'
-	import StarRating from '$lib/StarRating.svelte'
+	import CardsSection from '$components/CardsSection.svelte'
+	import ImgShadowSelf from '$components/ImgShadowSelf.svelte'
+	import ProductCardSwiper from '$components/ProductCardSwiper.svelte'
+	import PostCardSwiper from '$components/PostCardSwiper.svelte'
+	import posts from '$database/posts.js'
+	import StarRating from '$components/StarRating.svelte'
 
 	const giftCardImages = [
 		{ src: '/img/gift-card/play-station.png' },

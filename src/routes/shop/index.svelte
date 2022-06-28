@@ -1,7 +1,7 @@
 <script>
 	import SelectBoxes from './_lib/SelectBoxes.svelte'
-	import ProductCard from '$lib/ProductCard.svelte'
-	import Pagination from '$lib/Pagination.svelte'
+	import ProductCard from '$components/ProductCard.svelte'
+	import Pagination from '$components/Pagination.svelte'
 </script>
 
 <svelte:head>

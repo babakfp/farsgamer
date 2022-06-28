@@ -6,7 +6,7 @@
 	import PhoneNumbers from './PhoneNumbers.svelte'
 	import Announcements from './announcements/Index.svelte'
 	import { toggle } from '$store/header-search.js'
-	import TopAlert from '$lib/TopAlert.svelte'
+	import TopAlert from '$components/TopAlert.svelte'
 </script>
 
 <TopAlert />

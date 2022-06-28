@@ -1,5 +1,5 @@
 <script>
-	import Alert from '$lib/Alert.svelte'
+	import Alert from '$components/Alert.svelte'
 	export let sm = false
 	export let isQuestion = false
 </script>

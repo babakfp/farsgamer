@@ -1,7 +1,7 @@
 <script>
 	import CommentItem from './CommentItem.svelte'
 	import CommentForm from './CommentForm.svelte'
-	import Alert from '$lib/Alert.svelte'
+	import Alert from '$components/Alert.svelte'
 	export let items
 	export let canReply = false
 	export let isQuestion = false

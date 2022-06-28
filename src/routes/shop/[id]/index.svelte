@@ -3,15 +3,15 @@
 	import Info from './_lib/Info.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 
-	import CardsSection from '$lib/CardsSection.svelte'
-	import ProductCardSwiper from '$lib/ProductCardSwiper.svelte'
+	import CardsSection from '$components/CardsSection.svelte'
+	import ProductCardSwiper from '$components/ProductCardSwiper.svelte'
 	
 	// Content
 	import { onMount } from 'svelte'
-	import Description from '$lib/posttype/Description.svelte'
-	import Comments from '$lib/posttype/Comments.svelte'
-	import CommentForm from '$lib/posttype/CommentForm.svelte'
-	import { Tab, TabLabel, TabPanel } from '$lib/Tab'
+	import Description from '$components/posttype/Description.svelte'
+	import Comments from '$components/posttype/Comments.svelte'
+	import CommentForm from '$components/posttype/CommentForm.svelte'
+	import { Tab, TabLabel, TabPanel } from '$components/Tab'
 
 	export let product
 </script>

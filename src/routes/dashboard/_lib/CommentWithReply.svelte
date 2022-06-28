@@ -1,5 +1,5 @@
 <script>
-	import StarRating from '$lib/StarRating.svelte'
+	import StarRating from '$components/StarRating.svelte'
 </script>
 
 <div class="comment">

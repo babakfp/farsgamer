@@ -1,7 +1,7 @@
 <script>
-	import posts from '$db/posts.js'
-	import PostCard from '$lib/PostCard.svelte'
-	import Pagination from '$lib/Pagination.svelte'
+	import posts from '$database/posts.js'
+	import PostCard from '$components/PostCard.svelte'
+	import Pagination from '$components/Pagination.svelte'
 </script>
 
 <svelte:head>

@@ -1,5 +1,5 @@
 <script>
-	import Plyr from '$lib/Plyr.svelte'
+	import Plyr from '$components/Plyr.svelte'
 </script>
 
 <svelte:head>

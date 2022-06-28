@@ -1,5 +1,5 @@
 <script>
-	import FieldNumberWithBtnInside from '$lib/FieldNumberWithBtnInside.svelte'
+	import FieldNumberWithBtnInside from '$components/FieldNumberWithBtnInside.svelte'
 	let wallet = true
 </script>
 

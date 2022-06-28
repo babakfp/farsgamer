@@ -1,9 +1,9 @@
 <script>
 	import { goto } from '$app/navigation'
 
-	import Form from '$lib/form/Form.svelte'
-	import Input from '$lib/Input.svelte'
-	import Checkbox from '$lib/Checkbox.svelte'
+	import Form from '$components/form/Form.svelte'
+	import Input from '$components/Input.svelte'
+	import Checkbox from '$components/Checkbox.svelte'
 
 	let state = 'first'
 </script>

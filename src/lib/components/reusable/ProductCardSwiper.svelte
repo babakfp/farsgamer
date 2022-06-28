@@ -1,7 +1,7 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
-	import ProductCard from '$lib/ProductCard.svelte'
+	import ProductCard from '$components/ProductCard.svelte'
 
   export let lazyLoading = false
 	export let specialDiscount = false

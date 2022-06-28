@@ -1,8 +1,8 @@
 <script>
-	import Input from '$lib/Input.svelte'
-	import Checkbox from '$lib/Checkbox.svelte'
-	import Radiobox from '$lib/Radiobox.svelte'
-	import FieldNumber from '$lib/FieldNumber.svelte'
+	import Input from '$components/Input.svelte'
+	import Checkbox from '$components/Checkbox.svelte'
+	import Radiobox from '$components/Radiobox.svelte'
+	import FieldNumber from '$components/FieldNumber.svelte'
 </script>
 
 <form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8">

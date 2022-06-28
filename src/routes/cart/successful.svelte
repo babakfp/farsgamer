@@ -1,6 +1,6 @@
 <script>
 	import Layout from './_lib/Layout.svelte'
-	import Alert from '$lib/Alert.svelte'
+	import Alert from '$components/Alert.svelte'
 	import CartItems from './_lib/CartItems.svelte'
 </script>
 

@@ -7,12 +7,12 @@ export default {
   kit: {
     adapter: adapter(),
     alias: {
-      '$lib': 'src/lib',
-      '$layouts': 'src/layouts',
-      '$partials': 'src/partials',
-      '$store': 'src/store',
-      '$utils': 'src/utils',
-      '$db': 'src/store/db',
+      $layouts: 'src/lib/components/layouts',
+      $components: 'src/lib/components/reusable',
+      $partials: 'src/lib/components/partials',
+      $store: 'src/lib/store',
+      $database: 'src/lib/store/database',
+      $utilities: 'src/lib/utilities',
     },
   },
   preprocess: [

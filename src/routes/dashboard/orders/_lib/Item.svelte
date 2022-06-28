@@ -1,5 +1,5 @@
 <script>
-	import Modal from '$lib/Modal.svelte'
+	import Modal from '$components/Modal.svelte'
 	import TrackContent from './TrackContent.svelte'
 
 	let showModal = false

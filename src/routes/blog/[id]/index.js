@@ -1,4 +1,4 @@
-import posts from '$db/posts.js'
+import posts from '$database/posts.js'
 
 export async function get({ params }) {
 	const post = posts.find(item => item.id === Number(params.id))

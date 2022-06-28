@@ -3,7 +3,7 @@
 	import { page } from '$app/stores'
 	import '../app.css'
 
-	import LoadingBar from '$lib/LoadingBar.svelte'
+	import LoadingBar from '$components/LoadingBar.svelte'
 
 	// Layouts
 	import LayoutManager from '$layouts/LayoutManager.svelte'

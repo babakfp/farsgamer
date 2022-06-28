@@ -1,6 +1,6 @@
 <script>
-	import StarRating from '$lib/StarRating.svelte'
-	import CommentForm from '$lib/posttype/CommentForm.svelte'
+	import StarRating from '$components/StarRating.svelte'
+	import CommentForm from '$components/posttype/CommentForm.svelte'
 	
 	export let id
 	export let firstname

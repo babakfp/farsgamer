@@ -1,5 +1,5 @@
 <script>
-	import { makeSlug } from '$utils/make-slug.js'
+	import { makeSlug } from '$utilities/make-slug.js'
 	
 	export let className = null
 	export { className as class }

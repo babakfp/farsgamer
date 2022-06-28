@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte'
-	import Rating from '$lib/Rating.svelte'
+	import Rating from '$components/Rating.svelte'
 	import CommentWithReply from './_lib/CommentWithReply.svelte'
 
 	let easytab
