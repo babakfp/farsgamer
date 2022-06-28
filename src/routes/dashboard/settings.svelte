@@ -1,35 +1,11 @@
-<form class="grid gap-8 p-4 sm:grid-cols-2 lg:grid-cols-2" action="/" method="post">
-  <div>
-    <label for="firstname">نام</label>
-    <input class="input" type="text" name="firstname" id="firstname" placeholder="نام">
-  </div>
+<form class="grid gap-8 p-4 sm:grid-cols-2">
+  <input class="input" type="text" name="firstname" id="firstname" placeholder="نام">
+  <input class="input" type="text" name="lastname" id="lastname" placeholder="نام خانوادگی">
+  <input class="input" type="text" name="username" id="username" placeholder="نام کاربری">
+  <input class="input" type="tel" name="phone-number" id="phone-number" placeholder="شماره همراه">
+  <input class="input" type="email" name="email" id="email" placeholder="ایمیل">
   
-  <div>
-    <label for="lastname">نام خانوادگی</label>
-    <input class="input" type="text" name="lastname" id="lastname" placeholder="نام خانوادگی">
-  </div>
-  
-  <div>
-    <label for="username">نام کاربری</label>
-    <input class="input" type="text" name="username" id="username" placeholder="نام کاربری">
-  </div>
-  
-  <div>
-    <label for="phone-number">شماره همراه</label>
-    <input class="input" type="tel" name="phone-number" id="phone-number" placeholder="شماره همراه">
-  </div>
-  
-  <div>
-    <label for="email">ایمیل</label>
-    <input class="input" type="email" name="email" id="email" placeholder="ایمیل">
-  </div>
-  
-  <div>
-    <label for="address">آدرس</label>
-    <input class="input" type="text" name="address" id="address" placeholder="آدرس">
-  </div>
-  
-  <div>
+  <div class="col-span-full">
     <button class="btn btn--brand btn--submit px-8" type="submit">ثبت اطلاعات</button>
   </div>
 </form>
