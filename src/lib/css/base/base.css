@@ -15,8 +15,11 @@
 	input,
 	textarea {
 		@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
-    outline-offset: -2px !important;
 	}
+
+  a {
+    outline-offset: -2px !important;
+  }
 
 	[disabled],
 	[class*=disable],
