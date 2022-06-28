@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte'
 
-	export let className = null
+	export let className = ''
 	export { className as class }
 
 	export let options = {}

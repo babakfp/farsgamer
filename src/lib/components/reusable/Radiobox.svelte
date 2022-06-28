@@ -1,7 +1,7 @@
 <script>
 	import { makeSlug } from '$utilities/make-slug.js'
 	
-	export let className = null
+	export let className = ''
 	export { className as class }
 	
 	export let name

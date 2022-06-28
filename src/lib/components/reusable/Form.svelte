@@ -2,7 +2,7 @@
 	import { setContext } from 'svelte'
 	import { writable } from 'svelte/store'
 
-	export let className = null
+	export let className = ''
 	export { className as class }
 
 	export let isValid = writable(true)
