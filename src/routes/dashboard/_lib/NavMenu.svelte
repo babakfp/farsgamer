@@ -15,7 +15,7 @@
   ]
 </script>
 
-<div class="mb-4 bg-white rounded 2md:mb-0 2md:min-w-80">
+<div class="mb-8 bg-white rounded 2md:mb-0 2md:min-w-80">
 
   <div class="flex items-center gap-4 p-4 rounded bg-gray-50 text-sm">
     <div class="bg-gray-200 rounded-full min-w-18 w-18 h-18">
