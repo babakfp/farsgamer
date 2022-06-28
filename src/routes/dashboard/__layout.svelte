@@ -3,7 +3,7 @@
 	import NavMenu from './_lib/NavMenu.svelte'
 </script>
 
-<div class="2md:flex 2md:items-start 2md:gap-4 xl:gap-8">
+<div class="lg:flex lg:items-start lg:gap-4 xl:gap-8">
 	<NavMenu />
 	<div class="w-full">
 		<slot />
