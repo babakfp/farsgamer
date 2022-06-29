@@ -12,7 +12,7 @@
 
 	a,
 	button,
-	input,
+	input:not(.FormText),
 	textarea {
 		@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
 	}
