@@ -11,7 +11,6 @@
 	export let name = ''
 	export let label = ''
 	export let placeholder = ''
-	export let autocomplete = ''
 
 	export let value = ''
 	export let minLen = null
@@ -83,7 +82,7 @@
     id={name}
     {label}
     {placeholder}
-    {autocomplete}
+    autocomplete="tel"
     bind:value={value}
     maxlength=11
     on:focus={onFocus}
