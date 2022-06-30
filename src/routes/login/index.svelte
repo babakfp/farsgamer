@@ -1,8 +1,7 @@
 <script>
 	import { goto } from '$app/navigation'
 
-	import { Form } from '$components/Form'
-	import Input from '$components/Input.svelte'
+	import { Form, FormPhone } from '$components/Form'
 	import Checkbox from '$components/Checkbox.svelte'
 
 	let state = 'first'
@@ -17,7 +16,7 @@
 	
 	{#if state === 'first'}
 		<Form class="space-y-6 mt-4 p-6 bg-white rounded" on:submit={_=> state = 'second'}>
-			<Input label="شماره موبایل" class="dir-ltr" type="tel" name="phone" autocomplete="tel" placeholder="09..." />
+      <FormPhone name="phone" placeholder="شماره همراه" />
 			<Checkbox name="rememberme">مرا به خاطر داشته باش</Checkbox>
 			<button class="btn btn--submit btn--brand w-full">ادامه فرایند ثبت‌نام</button>
 		</Form>
