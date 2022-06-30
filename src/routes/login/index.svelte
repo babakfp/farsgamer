@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation'
 
-	import Form from '$components/Form.svelte'
+	import { Form } from '$components/Form'
 	import Input from '$components/Input.svelte'
 	import Checkbox from '$components/Checkbox.svelte'
 
