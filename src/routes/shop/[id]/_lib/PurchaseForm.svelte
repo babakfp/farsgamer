@@ -1,6 +1,6 @@
 <script>
 	import Input from '$components/Input.svelte'
-	import Checkbox from '$components/Checkbox.svelte'
+	import { Checkbox } from '$components/Form'
 	import Radiobox from '$components/Radiobox.svelte'
 	import FieldNumber from '$components/FieldNumber.svelte'
 </script>

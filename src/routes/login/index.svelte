@@ -2,7 +2,7 @@
 	import { goto } from '$app/navigation'
 
 	import { Form, FormPhone } from '$components/Form'
-	import Checkbox from '$components/Checkbox.svelte'
+	import { Checkbox } from '$components/Form'
 
 	let state = 'first'
 </script>

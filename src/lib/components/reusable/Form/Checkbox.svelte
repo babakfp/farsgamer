@@ -6,16 +6,17 @@
 </script>
 
 <div class="flex {className}">
+  <!-- svelte-ignore a11y-label-has-associated-control -->
 	<label class="inline-flex items-start justify-start gap-2 mb-0">
 		<div class="relative inline-flex items-center justify-center">
 			<input
 				class="inline-flex w-6 min-w-6 h-6 border-2 border-gray-200 rounded-sm duration-200 ease-in-out cursor-pointer appearance-none hover:border-gray-300"
 				type="checkbox" bind:checked {name}
 			/>
-			<i class="icon-check absolute text-white opacity-0 text-xs"></i>
+			<i class="icon-check absolute mt-0.5 text-white opacity-0 text-xs"></i>
 		</div>
 		<div class="flex items-center min-h-6">
-			<span><slot /></span>
+			<slot />
 		</div>
 	</label>
 </div>

@@ -1,7 +1,7 @@
 <script>
 	import { isLoggedIn, isCartEmpty } from '$store/auth.js'
 	import FieldNumberWithBtnInside from '$components/FieldNumberWithBtnInside.svelte'
-	import Checkbox from '$components/Checkbox.svelte'
+	import { Checkbox } from '$components/Form'
 	import CartItems from './_lib/CartItems.svelte'
 	import Layout from './_lib/Layout.svelte'
 </script>
