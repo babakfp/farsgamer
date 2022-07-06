@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation'
 
-	import { Form, FormPhone } from '$components/Form'
+	import { Form, FormInput } from '$components/Form'
 	import { Checkbox } from '$components/Form'
 
 	let state = 'first'
@@ -16,7 +16,7 @@
 	
 	{#if state === 'first'}
 		<Form class="space-y-6 mt-4 p-6 bg-white rounded" on:submit={_=> state = 'second'}>
-      <FormPhone name="phone" placeholder="شماره همراه" />
+      <FormInput type="phone" />
 			<Checkbox name="rememberme">مرا به خاطر داشته باش</Checkbox>
 			<button class="btn btn--submit btn--brand w-full">ادامه فرایند ثبت‌نام</button>
 		</Form>
