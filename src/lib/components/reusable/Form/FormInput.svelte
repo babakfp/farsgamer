@@ -72,11 +72,9 @@
     if (!maxLen) maxLen = 64
   }
 
-  // Min and Max
-  // $: {
-  //   if (minLen && value < minLen) value = minLen
-  //   if (maxLen && value > maxLen) value = maxLen
-  // }
+  let minmaxErrors = []
+  const minErrorText = `حداقل ${minLen} کاراکتر مورد نیاز است.`
+  const maxErrorText = `حداکثر ${minLen} کاراکتر مجاز است.`
 
   let errors = {
     onlyFarsiLetters: {
@@ -129,6 +127,15 @@
       } else {
         isValid = true
       }
+    }
+
+    minmaxErrors = []
+
+    if (minLen && value.length < minLen) {
+      minmaxErrors = [...minmaxErrors, minErrorText]
+    }
+    if (maxLen && value.length > maxLen) {
+      minmaxErrors = [...minmaxErrors, maxErrorText]
     }
 
   }
@@ -209,6 +216,9 @@
         {#if values.isTriggered}
           <li>{values.errorMessage}</li>
         {/if}
+      {/each}
+      {#each minmaxErrors as text}
+        <li>{text}</li>
       {/each}
     </ul>
   {/if}
