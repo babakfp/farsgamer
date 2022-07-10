@@ -6,15 +6,29 @@
 	export let className = ''
 	export { className as class }
 
+	export let isFormValid = true
+  
   // Send it to child components
-	export const isFormValid = writable(true)
-	setContext('isFormValid', isFormValid)
+  export const allFormValidations = writable({
+  })
+	setContext('allFormValidations', allFormValidations)
+
+  $: {
+    for (const key in $allFormValidations) {
+      const validationValue = $allFormValidations[key]
+      if (validationValue === false) {
+        isFormValid = false
+        break
+      }
+      isFormValid = true
+    }
+  }
 </script>
 
 <form
 	class="
     {className}
-    {$isFormValid ? 'valid' : 'invalid'}
+    {isFormValid ? 'valid' : 'invalid'}
   "
 	on:submit|preventDefault
 >

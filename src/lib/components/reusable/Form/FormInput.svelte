@@ -1,7 +1,22 @@
 <script>
   // Geting it from the parent components
-	import { getContext } from 'svelte'
-  const isFormValid = getContext('isFormValid')
+	import { getContext, onMount } from 'svelte'
+  const allFormValidations = getContext('allFormValidations')
+  
+  const ref = Math.random()
+  onMount(_=> {
+    allFormValidations.update(currentValue => {
+      currentValue[ref] = true
+      return currentValue
+    })
+  })
+
+  $: {
+    allFormValidations.update(currentValue => {
+      currentValue[ref] = isValid
+      return currentValue
+    })
+  }
 
   // Custom classes
 	export let classField = ''
@@ -129,13 +144,10 @@
       }
     }
 
-    minmaxErrors = []
-
-    if (minLen && value.length < minLen) {
-      minmaxErrors = [...minmaxErrors, minErrorText]
-    }
-    if (maxLen && value.length > maxLen) {
-      minmaxErrors = [...minmaxErrors, maxErrorText]
+    if (isValid === true) {
+      if (minmaxErrors.length > 0) {
+        isValid = false
+      }
     }
 
   }
@@ -145,6 +157,17 @@
     value = type.match(/^(number|range)$/)
       ? +e.target.value
       : e.target.value
+
+    // ---
+
+    minmaxErrors = []
+
+    if (minLen && value.length < minLen) {
+      minmaxErrors = [...minmaxErrors, minErrorText]
+    }
+    if (maxLen && value.length > maxLen) {
+      minmaxErrors = [...minmaxErrors, maxErrorText]
+    }
   };
 
   const remove_first_and_last_empty_space =_=> {
@@ -210,7 +233,7 @@
   />
 
   <!-- Errors list -->
-  {#if !isValid}
+  {#if !isValid || minmaxErrors.length > 0}
     <ul class="mt-2 mr-1 list-inside list-disc text-xs text-red-700">
       {#each Object.entries(errors) as [_, values]}
         {#if values.isTriggered}
