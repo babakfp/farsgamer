@@ -43,7 +43,7 @@
 		<div>
 			<div class="flex items-center justify-between">
 				<span class="pr-2 text-gray-400 text-xs">مبلغ پرداختی</span>
-				<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">۲۰٪</span>
+				<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">٪۲۰</span>
 			</div>
 			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
 				<span class="font-medium line-through decoration-red-700 opacity-50">200</span>

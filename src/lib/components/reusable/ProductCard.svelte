@@ -36,7 +36,7 @@
 		{/if}
 	</div>
 
-	<span class="absolute top-0 left-0 py-1 px-3 bg-red-400 text-white rounded rounded-bl-none text-xs">۲۰٪</span>
+	<span class="absolute top-0 left-0 py-1 px-3 bg-red-400 text-white rounded rounded-bl-none text-xs">٪۲۰</span>
 	
 	<div class="py-4 px-2">
 		<h3 class="text-sm font-bold line-clamp-1">گیف کارد 20 دلاری استیم</h3>
