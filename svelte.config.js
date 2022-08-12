@@ -1,6 +1,5 @@
-import path from 'path'
-import sveltePreprocess from 'svelte-preprocess'
 import adapter from '@sveltejs/adapter-vercel'
+import sveltePreprocess from 'svelte-preprocess'
 
 /** @type {import('@sveltejs/kit').Config} */
 export default {
@@ -16,8 +15,6 @@ export default {
     },
   },
   preprocess: [
-		sveltePreprocess({
-			postcss: true,
-		}),
+		sveltePreprocess({ postcss: true }),
 	],
 }

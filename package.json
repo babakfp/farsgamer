@@ -1,25 +1,21 @@
 {
   "name": "farsgamer-svelte",
-  "version": "1.0.0",
   "description": "The front-end project of the farsgamer.com website.",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
-    "dev:open": "vite dev --open",
     "dev:host": "vite dev --host",
-    "dev:host:open": "vite dev --host --open",
     "build": "vite build",
     "preview": "vite preview",
-    "preview:open": "vite preview --open",
-    "preview:host": "vite preview --host",
-    "preview:host:open": "vite preview --host --open"
+    "preview:host": "vite preview --host"
   },
   "devDependencies": {
-    "@sveltejs/adapter-vercel": "1.0.0-next.60",
-    "@sveltejs/kit": "1.0.0-next.367",
+    "@sveltejs/adapter-vercel": "1.0.0-next.66",
+    "@sveltejs/kit": "1.0.0-next.405",
     "@tailwindcss/line-clamp": "0.4.0",
-    "autoprefixer": "10.4.7",
-    "postcss": "8.4.14",
+    "autoprefixer": "10.4.8",
+    "postcss": "8.4.16",
     "postcss-import": "14.1.0",
     "postcss-load-config": "4.0.1",
     "svelte": "3.49.0",
@@ -27,8 +23,8 @@
     "svelte-outclick": "3.1.0",
     "svelte-preprocess": "4.10.7",
     "svelte-select": "4.4.7",
-    "swiper": "8.3.0",
-    "tailwindcss": "3.1.5",
-    "vite": "2.9.14"
+    "swiper": "8.3.2",
+    "tailwindcss": "3.1.8",
+    "vite": "3.0.6"
   }
 }

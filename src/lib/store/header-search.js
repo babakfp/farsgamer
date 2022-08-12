@@ -1,5 +1,5 @@
 import { writable } from 'svelte/store'
-import { browser, mode } from '$app/env'
+import { browser, dev } from '$app/env'
 
 export let isOpen = writable(false)
 
@@ -16,7 +16,7 @@ export const close =_=> {
 }
 
 if (browser) {
-	if (mode !== 'development') {
+	if (dev) {
 		window.addEventListener('resize', _=> {
 			isOpen.set(false)
 		})
