@@ -13,7 +13,6 @@
 				<th>محصول</th>
 				<th />
 				<th>قیمت</th>
-				<th>تعداد</th>
 				{#if isPurchaseProcessedSuccessfullyPage}
 					<th class="delete">حذف</th>
 				{/if}
@@ -62,18 +61,6 @@
 							<p class="text-lg font-semibold">{item.price}</p>
 							<p class="text-sm">تومان</p>
 						</div>
-					</td>
-
-					<td>
-						{#if isPurchaseProcessedSuccessfullyPage}
-							<FieldNumber
-								value="1" min={1} max={10} name="quantity"
-								wrapperClass="flex items-center gap-4"
-								boxedSizeField={true}
-							/>
-						{:else}
-							<span>{item.unitInCart}</span>
-						{/if}
 					</td>
 
 					{#if isPurchaseProcessedSuccessfullyPage}

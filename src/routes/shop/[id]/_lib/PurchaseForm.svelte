@@ -6,7 +6,6 @@
 	import FieldNumber from '$components/FieldNumber.svelte'
 	export let product
 	let fastDelivery
-	let unitInCart
 	let accountCategory = product.accountCategories[0].title
 	let accountEmail = ''
 	let accountPassword = ''
@@ -17,7 +16,6 @@
 		src: product.images[0],
 		price: product.price,
 		fastDelivery,
-		unitInCart,
 		account: {
 			category: accountCategory,
 			email: accountEmail,
@@ -60,28 +58,17 @@
 	</Checkbox>
 
   <!-- Price -->
-  <div class="grid gap-8 3xs:flex 3xs:justify-between">
-    
-		<FieldNumber
-			label="تعداد"
-			bind:value={unitInCart} min={1} max={10} name="quantity"
-			wrapperClass="flex items-center gap-4"
-			boxedSizeField={true}
-		/>
-
-		<div>
-			<div class="flex items-center justify-between">
-				<span class="pr-2 text-gray-400 text-xs">مبلغ پرداختی</span>
-				<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">٪۲۰</span>
-			</div>
-			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
-				<span class="font-medium line-through decoration-red-700 opacity-50">200</span>
-				<span class="font-medium">100</span>
-				<span class="mt-1 text-xs">تومان</span>
-			</div>
+	<div>
+		<div class="flex items-center justify-between">
+			<span class="pr-2 text-gray-400 text-sm">مبلغ پرداختی</span>
+			<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">٪۲۰</span>
 		</div>
-
-  </div>
+		<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
+			<span class="font-medium line-through decoration-red-700 opacity-50">200</span>
+			<span class="font-medium">100</span>
+			<span class="mt-1 text-xs">تومان</span>
+		</div>
+	</div>
 
 	{#if itemAlreadyInCart}
 		<a class="btn btn--submit w-full sm:max-w-60 btn--brand font-medium text-base" href="/cart">

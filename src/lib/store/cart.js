@@ -12,6 +12,5 @@ export const cartItems = writable('cartItems', [
 	// 		password: 14011400,
 	// 	},
 	// 	fastDelivery: true,
-	// 	unitInCart: 1,
 	// },
 ])
