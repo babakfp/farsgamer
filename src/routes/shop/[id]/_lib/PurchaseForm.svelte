@@ -15,12 +15,12 @@
 		title: product.title,
 		src: product.images[0],
 		price: product.price,
-		fastDelivery,
 		account: {
 			category: accountCategory,
 			email: accountEmail,
 			password: accountPassword,
 		},
+		fastDelivery,
 	}
 
 	$: itemAlreadyInCart = $cartItems.filter(item => item.id === product.id).length > 0
