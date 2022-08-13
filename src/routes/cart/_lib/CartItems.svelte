@@ -96,7 +96,7 @@
 		@apply pl-8 text-left;
 	}
 	tbody td:last-of-type > * {
-		@apply justify-end;
+		@apply float-left;
 	}
 	th:nth-of-type(2),
 	td:nth-of-type(2) {
