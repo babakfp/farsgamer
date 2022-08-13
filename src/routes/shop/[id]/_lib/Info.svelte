@@ -45,7 +45,6 @@
 		<li><p class="inline">لطفا قبل از خرید, توضیحات محصول را به درستی مطالعه کنید.</p></li>
 	</ul>
 
-	<div class="-z-1 absolute w-full h-full -bottom-1 -left-1 bg-yellow bg-opacity-10 rounded md:-bottom-2 md:-left-2 xl:-bottom-3 xl:-left-3"></div>
-	<div class="-z-1 absolute w-full h-full -top-1 -right-1 bg-yellow bg-opacity-10 rounded md:-top-2 md:-right-2 xl:-top-3 xl:-right-3"></div>
+	<div class="-z-1 absolute w-full h-full -bottom-2 -left-2 bg-gray-200 rounded 2xl:-bottom-4 2xl:-left-4"></div>
 
 </div>
