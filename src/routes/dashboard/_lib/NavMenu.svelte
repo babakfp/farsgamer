@@ -18,8 +18,8 @@
 <div class="mb-8 bg-white rounded lg:mb-0 lg:min-w-80">
 
   <div class="flex items-center gap-4 p-4 rounded bg-gray-50 text-sm">
-    <div class="bg-gray-200 rounded-full min-w-18 w-18 h-18">
-      <img class="w-full h-full" src="/img/avatar.png" alt="عکس پروفایل شما">
+    <div class="w-18 min-w-18 h-18 rounded-full overflow-hidden bg-gray-200">
+      <img class="w-full h-full " src="/img/avatar.png" alt="عکس پروفایل شما">
     </div>
     <div class="w-full mt-2">
       <span class="font-bold">بابک فرخوپاک</span>
