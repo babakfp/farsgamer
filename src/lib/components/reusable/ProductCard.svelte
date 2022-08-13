@@ -50,7 +50,7 @@
 		{:else}
 				<span class="font-medium line-through decoration-red-700 opacity-50">200</span>
 				<span class="font-medium">100</span>
-				<span class="mt-1 text-xs">تـمـنـ</span>
+				<span class="mt-1 text-xs">تومان</span>
 			<!-- <span>قیمتــ متغیـر</span> -->
 		{/if}
 	

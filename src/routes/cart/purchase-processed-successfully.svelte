@@ -10,7 +10,7 @@
 	</svelte:fragment>
 		
 	<svelte:fragment slot="main">
-		<CartItems cartable={false} />
+		<CartItems isPurchaseProcessedSuccessfullyPage={false} />
 	</svelte:fragment>
 
 	<svelte:fragment slot="get-a-gift">
@@ -64,12 +64,12 @@
 			<p class="mb-2 font-bold">کدهای خریداری شده</p>
 			<ul class="space-y-2">
 				<li class="flex justify-between">
-					<p>گیفتکارت <span class="inline-block dir-ltr font-dana-en">$50</span> Play Station</p>
+					<p>گیفتکارت <span class="inline-block dir-ltr font-dana-en">$50</span> PlayStation</p>
 					<span>980317</span>
 				</li>
 				<hr class="border-gray-100">
 				<li class="flex justify-between">
-					<p>گیفتکارت <span class="inline-block dir-ltr font-dana-en">$10</span> Play Station</p>
+					<p>گیفتکارت <span class="inline-block dir-ltr font-dana-en">$10</span> PlayStation</p>
 					<span>۵۶۷۸۴</span>
 				</li>
 			</ul>

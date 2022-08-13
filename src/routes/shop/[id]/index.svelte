@@ -25,7 +25,7 @@
 	<Info title={product.title} rating={product.rating} ratingCount={product.ratingCount} coins={product.coins} />
 </section>
 
-<PurchaseForm />
+<PurchaseForm {product} />
 
 <!-- Content -->
 <Tab class="mt-8">

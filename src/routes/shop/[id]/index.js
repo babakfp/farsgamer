@@ -1,6 +1,6 @@
 import products from '$database/products.js'
 
-export async function get({ params }) {
+export async function GET({ params }) {
 	const item = products.find(product => product.id === Number(params.id))
 
 	if (item) {

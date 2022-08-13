@@ -8,9 +8,9 @@ module.exports = plugin(function ({ addUtilities }) {
       'font-feature-settings': '"ss02"',
     },
     '.font-dana-en': {
-      '-moz-font-feature-settings': 'unset',
-      '-webkit-font-feature-settings': 'unset',
-      'font-feature-settings': 'unset',
+      '-moz-font-feature-settings': 'normal',
+      '-webkit-font-feature-settings': 'normal',
+      'font-feature-settings': 'normal',
     },
     '.font-dana-mono': {
       '-moz-font-feature-settings': '"ss03"',

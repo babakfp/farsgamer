@@ -6,7 +6,7 @@
 		{ group: 'فورتنایت | Fortnite', label: 'باندل‌ها', value: 'bundles' },
 		{ group: 'فورتنایت | Fortnite', label: 'آیتم‌های بازی', value: 'game-items' },
 
-		{ group: 'گیفت کارد | Gift Card', label: 'Play Station', value: 'gift-card[play-station]' },
+		{ group: 'گیفت کارد | Gift Card', label: 'PlayStation', value: 'gift-card[play-station]' },
 		{ group: 'گیفت کارد | Gift Card', label: 'Steam', value: 'gift-card[steam]' },
 		{ group: 'گیفت کارد | Gift Card', label: 'Xbox', value: 'gift-card[xbox]' },
 		{ group: 'گیفت کارد | Gift Card', label: 'Google Play', value: 'gift-card[google-play]' },

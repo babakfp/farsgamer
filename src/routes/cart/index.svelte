@@ -1,12 +1,14 @@
 <script>
-	import { isLoggedIn, isCartEmpty } from '$store/auth.js'
+	import { isLoggedIn } from '$store/auth.js'
+	import { cartItems } from '$store/cart.js'
 	import FieldNumberWithBtnInside from '$components/FieldNumberWithBtnInside.svelte'
 	import { Checkbox } from '$components/Form'
 	import CartItems from './_lib/CartItems.svelte'
 	import Layout from './_lib/Layout.svelte'
+	import CartEmpty from './_lib/CartEmpty.svelte'
 </script>
 
-{#if !$isCartEmpty}
+{#if $cartItems.length > 0}
 
 	<Layout>
 		<svelte:fragment slot="main">
@@ -23,7 +25,7 @@
 					<span>جمع جزء</span>
 					<div class="flex items-center gap-1">
 						<span class="font-bold">200,000</span>
-						<span class="mt-0.5 text-2xs text-gray-500">تـمـنـ</span>
+						<span class="mt-0.5 text-2xs text-gray-500">تومان</span>
 					</div>
 				</li>
 				<hr class="border-gray-100">
@@ -31,7 +33,7 @@
 					<span>تخفیف</span>
 					<div class="flex items-center gap-1">
 						<span class="font-bold">200,000</span>
-						<span class="mt-0.5 text-2xs text-gray-500">تـمـنـ</span>
+						<span class="mt-0.5 text-2xs text-gray-500">تومان</span>
 					</div>
 				</li>
 				<hr class="border-gray-100">
@@ -39,7 +41,7 @@
 					<span>جمع کل</span>
 					<div class="flex items-center gap-1">
 						<span class="font-bold">200,000</span>
-						<span class="mt-0.5 text-2xs text-gray-500">تـمـنـ</span>
+						<span class="mt-0.5 text-2xs text-gray-500">تومان</span>
 					</div>
 				</li>
 			</ul>
@@ -82,7 +84,7 @@
 
 {:else}
 
-	<h1>سبد خرید خالی است.</h1>
+	<CartEmpty />
 
 {/if}
 

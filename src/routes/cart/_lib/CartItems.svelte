@@ -1,6 +1,7 @@
 <script>
+	import { cartItems } from '$store/cart.js'
 	import FieldNumber from '$components/FieldNumber.svelte'
-	export let cartable = true
+	export let isPurchaseProcessedSuccessfullyPage = true
 </script>
 
 <!-- svelte-ignore a11y-invalid-attribute -->
@@ -10,74 +11,74 @@
 		<thead class="text-sm text-gray-500">
 			<tr>
 				<th>محصول</th>
-				<th></th>
+				<th />
 				<th>قیمت</th>
 				<th>تعداد</th>
-				{#if cartable}
-					<th class="delete">حذف از سبد خرید</th>
+				{#if isPurchaseProcessedSuccessfullyPage}
+					<th class="delete">حذف</th>
 				{/if}
 			</tr>
 		</thead>
 		
 		<tbody class="p-4">
-			{#each [...Array(3).keys()] as _}
+			{#each $cartItems as item (item.id)}
 
 				<!-- Just a divider -->
 				<tr class="h-px bg-gray-100 first:h-0"></tr>
 				
 				<tr class="border-0">
-					<td class="w-28 h-28 py-4">
-						<a href="javascript:">
-							<img class="rounded min-w-28 min-h-28" src="/img/products/product-thumb (1).png" alt loading="lazy">
+					<td class="w-40">
+						<a class="flex p-4 -m-4 duration-150 ease-in-out hover:grayscale" href="/shop/1">
+							<img class="rounded" src={item.src} alt loading="lazy">
 						</a>
 					</td>
 
 					<td>
-						<a href="javascript:">
-							<h3 class="text-sm font-bold line-clamp-1">بتل پس چپتر 2 سیزن 5</h3>
+						<a href="/shop/1">
+							<h3 class="text-sm font-medium">{item.title}</h3>
 						</a>
-						<ul class="mt-2 space-y-1 text-gray-500 text-xs">
+						<ul class="mt-1 leading-5 text-xs text-gray-500">
 							<li class="flex gap-1 line-clamp-1">
-								<span>نوع اکانت:</span>
-								<span class="font-medium">اپیک گیمز</span>
+								<span class="text-gray-500">نوع:</span>
+								<span class="font-medium">{item.account.category}</span>
 							</li>
 							<li class="flex gap-1 line-clamp-1">
-								<span>ایمیل:</span>
-								<span class="font-medium">mostafa.021g@gmail.com</span>
+								<span class="text-gray-500">ایمیل:</span>
+								<span class="font-medium font-dana-en">{item.account.email}</span>
 							</li>
 							<li class="flex gap-1 line-clamp-1">
-								<span>رمز:</span>
-								<span class="font-medium">583258</span>
+								<span class="text-gray-500">رمز:</span>
+								<span class="font-medium font-dana-en">{item.account.password}</span>
 							</li>
 							<li class="flex gap-1 line-clamp-1">
-								<span>مایل به دریافت سریع تر:</span>
-								<span class="font-medium">بلی</span>
+								<span class="text-gray-500">تحویل سریع:</span>
+								<span class="font-medium">{item.account.fastDelivery ? 'بله' : 'خیر'}</span>
 							</li>
 						</ul>
 					</td>
 
 					<td>
 						<div class="flex items-center gap-1 whitespace-nowrap">
-							<p class="text-lg font-bold">100,000</p>
-							<p class="text-sm">تـمـنـ</p>
+							<p class="text-lg font-semibold">{item.price}</p>
+							<p class="text-sm">تومان</p>
 						</div>
 					</td>
 
 					<td>
-						{#if cartable}
+						{#if isPurchaseProcessedSuccessfullyPage}
 							<FieldNumber
 								value="1" min={1} max={10} name="quantity"
 								wrapperClass="flex items-center gap-4"
 								boxedSizeField={true}
 							/>
 						{:else}
-							<span>1</span>
+							<span>{item.unitInCart}</span>
 						{/if}
 					</td>
 
-					{#if cartable}
+					{#if isPurchaseProcessedSuccessfullyPage}
 						<td class="delete">
-							<button class="btn btn--light w-10 duration-200">
+							<button class="btn btn--light w-10 duration-200" on:click={() => cartItems.update(currentValue => currentValue.filter(product => product.id !== item.id))}>
 								<i class="icon-trash"></i>
 							</button>
 						</td>
@@ -106,5 +107,9 @@
 	thead th.delete,
 	tbody td.delete {
 		@apply pl-8 text-left;
+	}
+	th:nth-of-type(2),
+	td:nth-of-type(2) {
+		@apply !pr-0 !pl-8;
 	}
 </style>

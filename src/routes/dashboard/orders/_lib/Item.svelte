@@ -29,7 +29,7 @@
       <div class="grid gap-1">
         <div class="flex items-center gap-1 whitespace-nowrap">
           <p class="font-bold">100,000</p>
-          <p class="text-sm">تـمـنـ</p>
+          <p class="text-sm">تومان</p>
         </div>
         <p class="text-2xs">(برای ۲ عدد)</p>
       </div>

@@ -1,19 +1,43 @@
 <script>
+	import { cartItems } from '$store/cart.js'
 	import Input from '$components/Input.svelte'
 	import { Checkbox } from '$components/Form'
 	import Radiobox from '$components/Radiobox.svelte'
 	import FieldNumber from '$components/FieldNumber.svelte'
+	export let product
+	let fastDelivery
+	let unitInCart
+	let accountCategory = product.accountCategories[0].title
+	let accountEmail = ''
+	let accountPassword = ''
+
+	$: cartData = {
+		id: product.id,
+		title: product.title,
+		src: product.images[0],
+		price: product.price,
+		fastDelivery,
+		unitInCart,
+		account: {
+			category: accountCategory,
+			email: accountEmail,
+			password: accountPassword,
+		},
+	}
+
+	$: itemAlreadyInCart = $cartItems.filter(item => item.id === product.id).length > 0
 </script>
 
-<form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8">
+<form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8" on:submit|preventDefault>
 
   <div>
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
     <div class="flex flex-wrap gap-x-8 gap-y-2 lg:flex lg:justify-start">
-			<Radiobox contentClass="text-sm" name="category" value="playstation">Play Station</Radiobox>
-			<Radiobox contentClass="text-sm" name="category" value="epicgames">Epic Games</Radiobox>
-			<Radiobox contentClass="text-sm" name="category" value="xbox">XBox</Radiobox>
-			<Radiobox contentClass="text-sm" name="category" value="nitendo">Nitendo</Radiobox>
+			{#each product.accountCategories as category (category.id)}
+				<Radiobox contentClass="text-sm" name="account-categories" bind:selectedValue={accountCategory} value={category.title}>
+					{category.title}
+				</Radiobox>
+			{/each}
     </div>
   </div>
 
@@ -21,21 +45,26 @@
 		<Input
 			label="ایمیل اکانت"
 			class="dir-ltr" type="email" name="email" autocomplete="email"
+			bind:value={accountEmail}
 		/>
 		<Input
 			label="رمز اکانت"
 			class="dir-ltr" type="password" name="password" autocomplete="password"
+			bind:value={accountPassword}
 		/>
 	</div>
 
-	<Checkbox name="fast-delivery">آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟ <span class="text-sm">(<span class="font-bold">50</span> <span class="text-xs">هزار تومان</span>)</span></Checkbox>
+	<Checkbox name="fast-delivery" bind:checked={fastDelivery}>
+		<span>آیا میخواهید سفارش شما زیر یک ساعت انجام شود؟</span>
+		<span class="text-sm mr-1">(<span class="font-bold">50,000</span> <span class="text-xs">تومان</span>)</span>
+	</Checkbox>
 
   <!-- Price -->
   <div class="grid gap-8 3xs:flex 3xs:justify-between">
     
 		<FieldNumber
 			label="تعداد"
-			value="1" min={1} max={10} name="quantity"
+			bind:value={unitInCart} min={1} max={10} name="quantity"
 			wrapperClass="flex items-center gap-4"
 			boxedSizeField={true}
 		/>
@@ -48,12 +77,20 @@
 			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
 				<span class="font-medium line-through decoration-red-700 opacity-50">200</span>
 				<span class="font-medium">100</span>
-				<span class="mt-1 text-xs">تـمـنـ</span>
+				<span class="mt-1 text-xs">تومان</span>
 			</div>
 		</div>
 
   </div>
 
-	<button class="btn btn--submit w-full sm:max-w-60 btn--brand font-medium text-base" type="submit">افزودن به سبد خرید</button>
+	{#if itemAlreadyInCart}
+		<a class="btn btn--submit w-full sm:max-w-60 btn--brand font-medium text-base" href="/cart">
+			مشاهده سبد خرید
+		</a>
+	{:else}
+		<button class="btn btn--submit w-full sm:max-w-60 btn--brand font-medium text-base" type="submit"
+			on:click={() => cartItems.update(currentValue => [...currentValue, cartData])}
+		>افزودن به سبد خرید</button>
+	{/if}
 
 </form>

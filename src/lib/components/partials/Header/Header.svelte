@@ -1,5 +1,6 @@
 <script>
 	import { isLoggedIn } from '$store/auth.js'
+	import { cartItems } from '$store/cart.js'
 	import OpenMobileMenu from './OpenMobileMenu.svelte'
 	import Logo from './Logo.svelte'
 	import Search from './Search.svelte'
@@ -34,7 +35,9 @@
       <a class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5" href="/cart" title="مشاهده سبد خرید">
         <div class="relative">
 					<i class="icon-shopping-cart xs:text-lg xl:text-xl"></i>
-					<div class="absolute flex items-center justify-center -right-1 -top-1 w-3.5 h-3.5 text-2xs bg-red-400 text-white rounded-full">2</div>
+					<div class="absolute flex items-center justify-center -right-1 -top-1 w-3.5 h-3.5 text-2xs bg-red-400 text-white rounded-full">
+						{$cartItems.length}
+					</div>
 				</div>
       </a>
 

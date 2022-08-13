@@ -1,6 +1,6 @@
 import posts from '$database/posts.js'
 
-export async function get({ params }) {
+export async function GET({ params }) {
 	const post = posts.find(item => item.id === Number(params.id))
 
 	if (post) {
