@@ -14,7 +14,7 @@
 				<th />
 				<th>قیمت</th>
 				{#if isPurchaseProcessedSuccessfullyPage}
-					<th class="delete">حذف</th>
+					<th>حذف</th>
 				{/if}
 			</tr>
 		</thead>
@@ -64,7 +64,7 @@
 					</td>
 
 					{#if isPurchaseProcessedSuccessfullyPage}
-						<td class="delete">
+						<td>
 							<button class="btn btn--light w-10 duration-200" on:click={() => cartItems.update(currentValue => currentValue.filter(product => product.id !== item.id))}>
 								<i class="icon-trash"></i>
 							</button>
@@ -91,9 +91,12 @@
 	tbody td {
 		@apply p-4 bg-white;
 	}
-	thead th.delete,
-	tbody td.delete {
+	thead th:last-of-type,
+	tbody td:last-of-type {
 		@apply pl-8 text-left;
+	}
+	tbody td:last-of-type > * {
+		@apply justify-end;
 	}
 	th:nth-of-type(2),
 	td:nth-of-type(2) {
