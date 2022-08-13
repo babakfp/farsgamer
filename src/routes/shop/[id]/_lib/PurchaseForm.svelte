@@ -2,7 +2,7 @@
 	import { cartItems } from '$store/cart.js'
 	import Input from '$components/Input.svelte'
 	import { Checkbox } from '$components/Form'
-	import Radiobox from '$components/Radiobox.svelte'
+	import { Radiobox } from '$components/Form'
 	import FieldNumber from '$components/FieldNumber.svelte'
 	export let product
 	let fastDelivery
@@ -34,7 +34,7 @@
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
     <div class="flex flex-wrap gap-x-8 gap-y-2 lg:flex lg:justify-start">
 			{#each product.accountCategories as category (category.id)}
-				<Radiobox contentClass="text-sm" name="account-categories" bind:selectedValue={accountCategory} value={category.title}>
+				<Radiobox contentClass="text-sm" name="account-categories" value={category.title} bind:selectedValue={accountCategory}>
 					{category.title}
 				</Radiobox>
 			{/each}
