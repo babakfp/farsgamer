@@ -67,9 +67,9 @@ module.exports = {
 				3: '3px',
 				12: '12px',
 			},
-			outline: {
-				gray: ['2px dotted ' + colors.gray['500'], '2px'],
-				dark: ['2px dotted ' + colors.gray['400'], '2px'],
+			outlineOffset: {
+				'-2': '-2px',
+				'-4': '-4px',
 			},
 			fontSize: {
 				'2xs': ['0.625rem', { lineHeight: '1' }],

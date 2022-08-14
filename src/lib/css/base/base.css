@@ -5,29 +5,10 @@
 	}
 
   * {
-    /* Can't use select-none because then it's impossible the deselect a select-all element */
+    /* It's not good to use select-none because then it's impossible the deselect a select-all element */
 		@apply select-none !outline-none;
 		-webkit-user-drag: none;
   }
-
-	a,
-	button,
-	input:not(.FormInput),
-	textarea {
-		@apply focus-visible:!outline-2 focus-visible:!outline-dashed focus-visible:!outline-gray-400;
-	}
-
-  a {
-    outline-offset: -2px !important;
-  }
-
-	[disabled],
-	[class*=disable],
-	[class*=disabled],
-	.pointer-events-none,
-	.selectContainer * {
-    @apply !outline-none focus-visible:!outline-none;
-	}
 
   html,
 	body {
