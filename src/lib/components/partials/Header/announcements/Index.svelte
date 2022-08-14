@@ -21,8 +21,11 @@
 	>
 		<div class="relative">
 			<i class="icon-bell xs:text-lg xl:text-xl"></i>
+			
 			{#if $announcements.length > 0}
-				<div class="absolute flex items-center justify-center -right-1 -top-1 w-3.5 h-3.5 text-2xs bg-red-400 text-white rounded-full">2</div>
+				<div class="absolute flex items-center justify-center -right-1 -top-1 w-3.5 h-3.5 text-2xs bg-red-400 text-white rounded-full">
+					{$announcements.length}
+				</div>
 			{/if}
 		</div>
 	</button>
