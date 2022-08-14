@@ -12,7 +12,7 @@
 <div class="flex flex-wrap justify-center gap-4">
 	{#each images as img}
     <!-- svelte-ignore a11y-invalid-attribute -->
-		<a class="flex w-20 border border-gray-100 rounded overflow-hidden duration-300 ease-out transition-transform hover:scale-150 hover:z-1 hover:shadow-lg lg:hover:scale-125" href="javascript:">
+		<a class="flex w-20 border border-gray-100 rounded overflow-hidden duration-300 ease-out transition-transform transform-scale-fix hover:scale-150 hover:z-1 hover:shadow-lg lg:hover:scale-125" href="javascript:">
 			<img src={img.src} alt loading="lazy">
 		</a>
 	{/each}

@@ -5,8 +5,7 @@
     @apply h-10 px-4 py-2;
     @apply border-2 border-transparent border-opacity-80 rounded;
     @apply duration-150 ease-in-out whitespace-nowrap select-none;
-    @apply active:scale-95 hover:border-opacity-100 focus:border-opacity-100;
-		transform: perspective(100px) translateZ(0) translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    @apply transform-scale-fix active:scale-95 hover:border-opacity-100 focus:border-opacity-100;
 	}
 
 	/* Light */

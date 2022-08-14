@@ -8,7 +8,7 @@
 
 {#if browser && $showTopAlert && !$isSideMenuOpen}
 	<div id="TopAlert" class="z-30 relative flex items-center bg-white border-b border-gray-100">
-		<button class="p-4 duration-150 hover:text-brand hover:scale-110"
+		<button class="p-4 duration-150 hover:text-brand transform-scale-fix hover:scale-110"
 			on:click={_=> $showTopAlert = false}
 		>
 			<i class="icon-cross-small"></i>
