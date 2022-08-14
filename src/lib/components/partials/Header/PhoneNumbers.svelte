@@ -1,5 +1,5 @@
 <script>
-	import phoneNumbers from '$store/phone-numbers.js'
+	import { phoneNumbers } from '$store/global.js'
 </script>
 
 <div class="hidden 2xs:grid sm:flex sm:gap-2 h-full justify-items-end text-left text-sm tracking-wider px-4 ml-4 border-l border-gray-100">

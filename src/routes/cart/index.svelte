@@ -1,5 +1,5 @@
 <script>
-	import { isLoggedIn } from '$store/auth.js'
+	import { isLoggedIn } from '$store/global.js'
 	import { cartItems } from '$store/cart.js'
 	import FieldNumberWithBtnInside from '$components/FieldNumberWithBtnInside.svelte'
 	import { Checkbox } from '$components/Form'

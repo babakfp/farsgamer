@@ -1,5 +1,5 @@
 <script>
-	import phoneNumbers from '$store/phone-numbers.js'
+	import { phoneNumbers } from '$store/global.js'
 </script>
 
 <section class="grid gap-4">

@@ -1,5 +1,5 @@
 <script>
-	import { isLoggedIn } from '$store/auth.js'
+	import { isLoggedIn } from '$store/global.js'
 	import { cartItems } from '$store/cart.js'
 	import OpenMobileMenu from './OpenMobileMenu.svelte'
 	import Logo from './Logo.svelte'
