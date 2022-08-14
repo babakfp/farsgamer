@@ -3,13 +3,14 @@
 	export let specialDiscount = false
 	export let lazyLoading = false
 
-	const countDownDate = new Date('Jun 28, 2022 15:37:0').getTime()
-	
-	// Today's date and time
-	let now = new Date().getTime()
+	const currentDate = new Date()
+	const nowDate = new Date().getTime()
 
-	// Find the distance between now and the count down date
-	$: distance = countDownDate - now
+	// Milliseconds until the next weekend
+	const countdownDate = currentDate.setDate(currentDate.getDate() + (7 - currentDate.getDay()))
+
+	// Milliseconds between dates. Used 1000ms to prevent the 1 second jump.
+	$: distance = countdownDate - nowDate - 1000
 
 	// Time calculations for days, hours, minutes and seconds
 	$: days = Math.floor(distance / (1000 * 60 * 60 * 24))
@@ -17,11 +18,13 @@
 	$: minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
 	$: seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
-	setInterval(_=> {
-		if ( distance > 0 ) {
-			distance -= 1000
-		}
-	}, 1000)
+	if (specialDiscount) {
+		setInterval(_=> {
+			if ( distance > 0 ) {
+				distance -= 1000
+			}
+		}, 1000)
+	}
 </script>
 
 <a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out hover:shadow-sm hover:scale-105" href="/shop/1">
