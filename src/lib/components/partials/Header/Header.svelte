@@ -45,7 +45,7 @@
       </a>
 
       <!-- Go to dashboard page -->
-      <a class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5" href={$isLoggedIn ? '/dashboard' : '/login'} title="مشاهده حساب کاربری">
+      <a class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5" href={$isLoggedIn ? '/dashboard' : '/login'} title={$isLoggedIn ? 'مشاهده حساب کاربری' : 'ورود به حساب کاربری'}>
         <i class="icon-user xs:text-lg xl:text-xl"></i>
       </a>
     </div>

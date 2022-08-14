@@ -1,9 +1,8 @@
 <script>
-	export let title
-	export let icon
-	export let href
-  
 	import { page } from '$app/stores'
+	export let title
+	export let href
+	export let icon
 </script>
 
 <li>

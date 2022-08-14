@@ -1,10 +1,15 @@
 <script>
 	import { goto } from '$app/navigation'
-
+	import { isLoggedIn } from '$store/global.js'
 	import { Form, FormInput } from '$components/Form'
 	import { Checkbox } from '$components/Form'
 
 	let state = 'first'
+
+	const onLogin = () => {
+		isLoggedIn.set(true)
+		goto('/dashboard')
+	}
 </script>
 
 <svelte:head>
@@ -23,7 +28,7 @@
 	{/if}
 
 	{#if state === 'second'}
-		<Form class="space-y-6 mt-4 p-6 bg-white rounded" on:submit={_=> goto('/dashboard')}>
+		<Form class="space-y-6 mt-4 p-6 bg-white rounded" on:submit={onLogin}>
 			<div>
 				<label for="code">کد تایید</label>
 				<input class="input text-center tracking-3" type="number" name="code" minlength="5" maxlength="5" placeholder="_ _ _ _ _">
