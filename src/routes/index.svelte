@@ -1,6 +1,6 @@
 <script>
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
-	import { Pagination, Autoplay } from 'swiper'
+	import { Pagination, Autoplay, EffectFade } from 'swiper'
 	import CardsSection from '$components/CardsSection.svelte'
 	import ImgShadowSelf from '$components/ImgShadowSelf.svelte'
 	import ProductCardSwiper from '$components/ProductCardSwiper.svelte'
@@ -45,7 +45,8 @@
       <!-- Right posters -->
 			<Swiper
 				class="top-big-posters"
-				modules={[ Pagination, Autoplay ]}
+				modules={[ Pagination, Autoplay, EffectFade ]}
+				effect="fade"
 				loop={true}
 				speed={600}
 				grabCursor={true}
@@ -55,7 +56,7 @@
       >
 				{#each mainPosters as poster}
 					<SwiperSlide>
-						<a class="img-link flex" href={poster.href || 'javascript:'}>
+						<a class="flex" href={poster.href || 'javascript:'}>
 							<img class="aspect-[2/1] bg-gray-100" src={poster.imgSrc} alt>
 						</a>
 					</SwiperSlide>
