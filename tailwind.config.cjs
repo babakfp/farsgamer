@@ -107,8 +107,8 @@ module.exports = {
     },
 		borderRadius: {
 			none: '0',
-			DEFAULT: '.75rem',
-			sm: '.5rem',
+			DEFAULT: '10px',
+			sm: '8px',
 			full: '9999px',
 		},
 		fontFamily: {
