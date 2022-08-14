@@ -63,10 +63,6 @@ module.exports = {
 			ringWidth: {
         3: '3px',
       },
-			borderRadius: {
-				DEFAULT: '12px',
-				sm: '8px',
-			},
 			borderWidth: {
 				3: '3px',
 				12: '12px',
@@ -109,6 +105,12 @@ module.exports = {
       center: true,
       padding: 'var(--page)'
     },
+		borderRadius: {
+			none: '0',
+			DEFAULT: '.75rem',
+			sm: '.5rem',
+			full: '9999px',
+		},
 		fontFamily: {
       dana: [ 'dana' ],
 		},
