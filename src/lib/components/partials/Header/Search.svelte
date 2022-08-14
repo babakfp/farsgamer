@@ -4,7 +4,7 @@
 
 <div
   class="
-    z-10 fixed inset-0 bg-gray-200/50 duration-300 ease-out
+    z-10 fixed inset-0 bg-gray-400/50 duration-300 ease-out
     {!$isOpen && 'opacity-0 pointer-events-none invisible'}
     lg:hidden
   "
