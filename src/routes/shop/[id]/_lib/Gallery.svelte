@@ -19,7 +19,7 @@
 			
 			<!-- Main Gallery -->
 			<Swiper
-				class="w-56 h-56 mr-auto ml-0 4xs:w-62 4xs:h-62 2xl:w-72 2xl:h-72"
+				class="main-gallery swiper--gallery swiper--dynamic-bullets-as-thin w-56 h-56 mr-auto ml-0 4xs:w-62 4xs:h-62 2xl:w-72 2xl:h-72"
 				modules={[ Pagination, Autoplay, Thumbs ]}
 				thumbs={{ swiper: thumbsSwiper }}
 				speed={600}
@@ -66,6 +66,6 @@
 {/if}
 
 <style lang="postcss">
-	:global(.main-gallery-slide:first-child) img { @apply rounded-r }
-	:global(.main-gallery-slide:last-child) img { @apply rounded-l }
+	:global(.main-gallery .swiper-slide:first-child) img { @apply rounded-r }
+	:global(.main-gallery .swiper-slide:last-child) img { @apply rounded-l }
 </style>
