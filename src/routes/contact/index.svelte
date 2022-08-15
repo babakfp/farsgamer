@@ -16,12 +16,12 @@
 
 <div class="max-w-3xl mx-auto mt-4 p-2 bg-white rounded">
 	<Swiper
-		class="max-w-3xl"
+		class="swiper--gallery max-w-3xl"
 		modules={[ Pagination, Autoplay ]}
 		loop={true}
 		speed={600}
 		grabCursor={true}
-		pagination={{ clickable: true, dynamicBullets: true }}
+		pagination={{ clickable: true }}
 		autoplay={{ delay: 5000, disableOnInteraction: false }}
     touchEventsTarget="container"
   >
