@@ -26,7 +26,7 @@
 				<tr class="h-px bg-gray-100 first:h-0"></tr>
 				
 				<tr class="border-0">
-					<td class="w-40">
+					<td class="min-w-40 w-40">
 						<a class="flex p-4 -m-4 duration-150 ease-in-out hover:grayscale" href="/shop/1">
 							<img class="rounded" src={item.src} alt loading="lazy">
 						</a>
