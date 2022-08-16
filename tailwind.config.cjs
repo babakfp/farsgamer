@@ -33,7 +33,6 @@ module.exports = {
 				yellow: {
 					DEFAULT: '#FFBC00'
 				},
-				crisp: '#087EA4',
 			},
 			spacing: {
 				16: '4rem',
