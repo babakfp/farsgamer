@@ -118,6 +118,7 @@
 			modules={[ Pagination, Autoplay ]}
 			speed={600}
 			grabCursor={true}
+			loop={true}
 			pagination={{ clickable: true }}
 			autoplay={{ delay: 5000, disableOnInteraction: false }}
 			spaceBetween={16}
