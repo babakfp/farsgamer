@@ -26,12 +26,6 @@
 	@apply w-2 h-2 bg-white opacity-50 transition-colors duration-100 ease-in hover:bg-brand hover:opacity-100;
 }
 
-.swiper-pagination-bullets-dynamic {
-	.swiper-pagination-bullet {
-		@apply w-2 h-2;
-	}
-}
-
 .swiper-pagination-bullet-active {
 	@apply bg-brand;
 }
