@@ -8,7 +8,7 @@
 	export let activeIndex = 0
 
 	let Tab
-	onMount(() => {
+	onMount(_=> {
 
 		const TabLabels = Tab.querySelectorAll('.Tab__TabLabel')
 		const TabPanels = Tab.querySelectorAll('.Tab__TabPanel')
@@ -23,7 +23,7 @@
 		TabLabels[activeIndex].classList.add('Tab--active')
     TabPanels[activeIndex].classList.add('Tab--active')
 
-		const inactivateAllItems = () => {
+		const inactivateAllItems =_=> {
 			for (let i = 0; i < TabItemsLength; i++) {
 					TabLabels[i].classList.remove('Tab--active')
 					TabPanels[i].classList.remove('Tab--active')
@@ -44,7 +44,7 @@
 				TabPanels[i].scrollIntoView()
 			}
 
-			TabLabels[i].addEventListener('click', () => {
+			TabLabels[i].addEventListener('click', _=> {
 				if (TabLabels[i].classList.contains('active') && TabPanels[i].classList.contains('Tab--active')) return
 				activateItem(i)
 				activeIndex = i

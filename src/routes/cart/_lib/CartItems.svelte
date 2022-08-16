@@ -65,7 +65,7 @@
 
 					{#if isPurchaseProcessedSuccessfullyPage}
 						<td>
-							<button class="btn btn--light w-10 duration-200" on:click={() => cartItems.update(currentValue => currentValue.filter(product => product.id !== item.id))}>
+							<button class="btn btn--light w-10 duration-200" on:click={_=> cartItems.update(currentValue => currentValue.filter(product => product.id !== item.id))}>
 								<i class="icon-trash"></i>
 							</button>
 						</td>

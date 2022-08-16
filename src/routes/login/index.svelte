@@ -6,7 +6,7 @@
 
 	let state = 'first'
 
-	const onLogin = () => {
+	const onLogin =_=> {
 		isLoggedIn.set(true)
 		goto('/dashboard')
 	}
