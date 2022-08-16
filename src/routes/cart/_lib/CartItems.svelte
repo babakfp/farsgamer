@@ -1,6 +1,5 @@
 <script>
 	import { cartItems } from '$store/cart.js'
-	import FieldNumber from '$components/FieldNumber.svelte'
 	export let isPurchaseProcessedSuccessfullyPage = true
 </script>
 

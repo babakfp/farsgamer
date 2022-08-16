@@ -3,7 +3,6 @@
 	import Input from '$components/Input.svelte'
 	import { Checkbox } from '$components/Form'
 	import { Radiobox } from '$components/Form'
-	import FieldNumber from '$components/FieldNumber.svelte'
 	export let product
 	let fastDelivery
 	let accountCategory = product.accountCategories[0].title
