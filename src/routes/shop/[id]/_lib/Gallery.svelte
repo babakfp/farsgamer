@@ -19,12 +19,12 @@
 			
 			<!-- Main Gallery -->
 			<Swiper
-				class="main-gallery swiper--gallery swiper--dynamic-bullets-as-thin w-56 h-56 mr-auto ml-0 4xs:w-62 4xs:h-62 2xl:w-72 2xl:h-72"
+				class="main-gallery swiper--gallery w-56 h-56 mr-auto ml-0 4xs:w-62 4xs:h-62 2xl:w-72 2xl:h-72"
 				modules={[ Pagination, Autoplay, Thumbs ]}
 				thumbs={{ swiper: thumbsSwiper }}
 				speed={600}
 				grabCursor={true}
-				pagination={{ clickable: true, dynamicBullets: true }}
+				pagination={{ clickable: true }}
 				autoplay={{ delay: 5000, disableOnInteraction: true }}
         touchEventsTarget="container"
       >

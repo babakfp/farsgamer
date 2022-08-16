@@ -8,7 +8,7 @@
 	// export let products = []
 </script>
 
-<Swiper class="box-carousel ProductCardSwiper swiper-prevent-content-shift"
+<Swiper class="swiper--card ProductCardSwiper swiper-prevent-content-shift"
 	modules={[ Pagination, Autoplay ]}
 	speed={600}
 	grabCursor={true}

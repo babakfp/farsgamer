@@ -84,7 +84,7 @@
   <!-- Gift Cards -->
 	<CardsSection title="گـیفتــکارد ها">
 		<Swiper
-			class="box-carousel GiftCardSwiper swiper-prevent-content-shift"
+			class="swiper--card GiftCardSwiper swiper-prevent-content-shift"
 			modules={[ Pagination, Autoplay ]}
 			speed={600}
 			grabCursor={true}
@@ -114,7 +114,7 @@
   <!-- User reviews -->
 	<CardsSection title="نظــرات اخیـر کـاربران">
 		<Swiper
-			class="box-carousel ReviewCardSwiper swiper-prevent-content-shift"
+			class="swiper--card ReviewCardSwiper swiper-prevent-content-shift"
 			modules={[ Pagination, Autoplay ]}
 			speed={600}
 			grabCursor={true}

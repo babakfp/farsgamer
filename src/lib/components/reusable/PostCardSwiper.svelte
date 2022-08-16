@@ -7,7 +7,7 @@
 </script>
 
 <Swiper
-  class="box-carousel PostCardSwiper swiper-prevent-content-shift"
+  class="swiper--card PostCardSwiper swiper-prevent-content-shift"
   modules={[ Pagination, Autoplay ]}
   speed={600}
   grabCursor={true}

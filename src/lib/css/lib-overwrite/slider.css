@@ -1,33 +1,24 @@
-.swiper {
-	@apply rounded;
-}
-
 .swiper--gallery {
+	@apply rounded;
+
 	.swiper-pagination {
-		@apply !bottom-2;
+		@apply !bottom-2 left-4;
 	}
 }
 
-.swiper--dynamic-bullets-as-thin {
-	.swiper-pagination {
-		@apply !bottom-0;
-	}
-	.swiper-pagination-bullet {
-		@apply !h-0.5 rounded-full;
-	}
-}
-
+/* Fix */
 .swiper-wrapper {
 	@apply box-border;
 }
 
 .swiper-pagination {
-	@apply !bottom-2 sm:!bottom-4;
+	@apply !bottom-2 text-left sm:!bottom-4;
 
-	&:not(.swiper-pagination-bullets-dynamic) {
-		.swiper-pagination-bullet {
-			@apply w-3 h-0.5 rounded-full;
-		}
+	.swiper-pagination-bullet {
+		@apply !w-1 !h-1 rounded-full;
+	}
+	.swiper-pagination-bullet-active {
+		@apply !w-4;
 	}
 }
 
@@ -36,8 +27,6 @@
 }
 
 .swiper-pagination-bullets-dynamic {
-	@apply h-3;
-	
 	.swiper-pagination-bullet {
 		@apply w-2 h-2;
 	}
@@ -54,50 +43,30 @@
 
 /*  */
 
-.box-carousel {
-	&.swiper {
-		/* X | X | X | (for transform scale and overflow problem) */
-		padding-bottom: calc(16px + 24px - 8px + 1rem);
-		@apply pt-4 -my-4 lg:px-page lg:-mx-page;
-	
-		@media (min-width: 1790px) {
-			@apply px-0 mx-0;
-		}
-	
-		&::before,
-		&::after {
-			content: "";
-			@apply lg:absolute lg:top-0 lg:bottom-0 lg:w-page lg:h-full lg:bg-gray-100/50 lg:z-2;
-			@media (min-width: 1790px) {
-				content: unset;
-			}
-		}
-	
-		&::before { @apply lg:right-0 }
-		&::after { @apply lg:left-0 }
-	
-		.swiper-slide {
-			@apply relative z-40;
-			/* TODO: */
-			&:hover {
-				@apply !z-40;
-			}
-		}
-	
-		.swiper-pagination {
-			@apply !bottom-4 lg:ml-page;
+.swiper--card {
+	@apply pt-4 -my-4 lg:px-page lg:-mx-page;
+	padding-bottom: calc(16px + 24px - 8px + 1rem);
+
+	@media (min-width: 1790px) { @apply px-0 mx-0; }
+	&::before,
+	&::after {
+		content: "";
+		@apply lg:absolute lg:top-0 lg:bottom-0 lg:w-page lg:h-full lg:bg-gray-100/50 lg:z-2;
+		@media (min-width: 1790px) { content: unset; }
+	}
+	&::before { @apply lg:right-0 }
+	&::after { @apply lg:left-0 }
+
+	.swiper-slide {
+		@apply relative z-40;
+		/* TODO */
+		&:hover {
+			@apply !z-40;
 		}
 	}
 
-	.swiper-pagination-bullets {
-		@apply !bottom-0;
-		/* for normal bullets */
-		text-align: left;
-	
-		/* for dynamic bullets */
-		left: 0 !important;
-		transform: unset !important;
-		right: unset !important;
+	.swiper-pagination {
+		@apply !bottom-4 lg:ml-page;
 	}
 
 	.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
