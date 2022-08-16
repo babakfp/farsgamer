@@ -15,7 +15,7 @@
 			/>
 			<i class="icon-check absolute mt-0.5 text-white opacity-0 text-xs"></i>
 		</div>
-		<div>
+		<div class="text-sm">
 			<slot />
 		</div>
 	</label>
