@@ -47,12 +47,14 @@
 
 	<hr class="-mx-2 border-gray-100">
 
-	<div class="-mb-2 h-14 flex items-center justify-center gap-2">
+	<div class="flex items-center justify-center gap-2 h-14 -mb-2">
 		{#if inStock === false}
 			<span>بدونـ قیمتــ</span>
 		{:else}
-				<span class="font-medium line-through decoration-red-700 opacity-50">200</span>
-				<span class="font-medium">100</span>
+				<div class="flex items-center gap-1">
+					<span class="line-through text-gray-400 text-xs">200,000</span>
+					<span class="font-medium">100,000</span>
+				</div>
 				<span class="mt-1 text-xs">تومان</span>
 			<!-- <span>قیمتــ متغیـر</span> -->
 		{/if}

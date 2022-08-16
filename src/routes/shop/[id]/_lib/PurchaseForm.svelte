@@ -64,8 +64,10 @@
 				<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">٪۲۰</span>
 			</div>
 			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
-				<span class="font-medium line-through decoration-red-700 opacity-50">200</span>
-				<span class="font-medium">100</span>
+				<div class="flex items-center gap-1">
+					<span class="line-through text-gray-400 text-xs">200,000</span>
+					<span class="font-medium">100,000</span>
+				</div>
 				<span class="mt-1 text-xs">تومان</span>
 			</div>
 		</div>
