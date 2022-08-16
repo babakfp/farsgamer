@@ -30,22 +30,21 @@
 <!-- Content -->
 <Tab class="mt-8">
 	<svelte:fragment slot="tab">
-		<TabLabel title="توضیحات" />
-		<TabLabel title="نظرات" count={product.comments?.length} />
-		<TabLabel title="پرسش و پاسخ" count={product.questionsAndAnswers?.length} />
+		<TabLabel title="توضیحات" hash="description" />
+		<TabLabel title="نظرات" hash="comments" count={product.comments?.length} />
+		<TabLabel title="پرسش و پاسخ" hash="question-and-answer" count={product.questionsAndAnswers?.length} />
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
-		<TabPanel class="p-8 lg:py-20">
+		<TabPanel class="p-8 lg:py-20" hash="description">
 			<div class="max-w-3xl mx-auto">
 				<Description />
 			</div>
 		</TabPanel>
-		<TabPanel class="!p-0 !bg-transparent">
+		<TabPanel class="!p-0 !bg-transparent" hash="comments">
 			<Comments items={product.comments} />
 		</TabPanel>
-
-		<TabPanel class="!p-0 !bg-transparent">
+		<TabPanel class="!p-0 !bg-transparent" hash="question-and-answer">
 			<Comments items={product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" canReply={false} isQuestion={true} />
 		</TabPanel>
 	</svelte:fragment>

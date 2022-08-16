@@ -33,17 +33,17 @@
 
 <Tab class="mt-8">
 	<svelte:fragment slot="tab">
-		<TabLabel title="توضیحات" />
-		<TabLabel title="نظرات" count={post.comments?.length} />
+		<TabLabel title="توضیحات" hash="description" />
+		<TabLabel title="نظرات" hash="comments" count={post.comments?.length} />
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
-		<TabPanel class="p-8 lg:py-20">
+		<TabPanel class="p-8 lg:py-20" hash="description">
 			<div class="max-w-3xl mx-auto">
 				<Description />
 			</div>
 		</TabPanel>
-		<TabPanel class="!p-0 !bg-transparent">
+		<TabPanel class="!p-0 !bg-transparent" hash="comments">
 			<Comments items={post.comments} />
 		</TabPanel>
 	</svelte:fragment>
