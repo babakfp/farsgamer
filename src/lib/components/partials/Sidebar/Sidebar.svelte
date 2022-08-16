@@ -31,7 +31,7 @@
 	<sidebar class="z-30 fixed inset-0 top-header w-64 bg-white translate-x-full duration-300 ease-in-out {$isOpen && '!translate-x-0'}">
 		<Logo />
 
-		<div class="scrollbar max-h-full pb-6 border-l border-gray-100">
+		<div class="scrollbar max-h-full pb-12 border-l border-gray-100">
 			
 			<nav class="pt-4">
 				<ul>

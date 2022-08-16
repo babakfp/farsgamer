@@ -167,7 +167,7 @@
 		@apply leading-none;
 	}
 
-	.comment .comment .comment__content-icon i{
+	.comment .comment .comment__content-icon i {
 		transform: scaleY(-1);
 	}
 

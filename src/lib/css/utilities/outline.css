@@ -1,0 +1,5 @@
+@layer utilities {
+	.outline-card {
+		@apply hover:!outline-2 hover:!outline-brand/50 hover:!-outline-offset-2;
+	}
+}

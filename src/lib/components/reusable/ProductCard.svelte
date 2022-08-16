@@ -27,7 +27,7 @@
 	}
 </script>
 
-<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out transform-scale-fix hover:shadow-sm hover:scale-105" href="/shop/1">
+<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out outline-card" href="/shop/1">
 
 	<div class="relative rounded overflow-hidden">
 		<img class="aspect-square bg-gray-100" src="/img/products/product-thumb (1).png" alt loading={lazyLoading && 'lazy'}>

@@ -4,7 +4,7 @@
 </script>
 
 <div class="h-full border-l border-gray-100">
-  <button on:click={$page.url.pathname.includes('/dashboard') ? dashboardToggle() : toggle()} class="js-burger-toggle-btn flex items-center justify-center w-header h-header -mr-4 transform-scale-fix active:scale-95">
+  <button on:click={$page.url.pathname.includes('/dashboard') ? dashboardToggle() : toggle()} class="js-burger-toggle-btn flex items-center justify-center w-header h-header -mr-4 active:scale-95">
     <i class="icon-grid text-gray-600 duration-300 ease-in-out {$isOpen && 'rotate-45'} sm:text-lg"></i>
   </button>
 </div>
