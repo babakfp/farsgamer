@@ -1,7 +1,7 @@
 @layer components {
 
 	.input {
-		@apply w-full px-4 bg-white rounded border-2 border-gray-200 font-dana-en duration-200 ease-in-out placeholder:text-gray-400 hover:border-gray-300 focus:border-brand;
+		@apply w-full px-4 bg-white rounded border-2 border-gray-200 font-dana-en text-sm duration-200 ease-in-out placeholder:text-gray-400 hover:border-brand focus:border-brand;
 		
 		&:not(textarea) {
 			@apply h-input;

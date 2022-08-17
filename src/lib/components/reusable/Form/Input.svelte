@@ -229,7 +229,7 @@
 
 		<input
 			class="
-				[ Input ]
+				[ input ]
 				{classField ? `[ ${classField} ]` : ''}
 				{alignLTR && value ? 'dir-ltr' : ''}
 				{(type === 'coupon') && value && 'dir-ltr'}
@@ -266,18 +266,3 @@
   {/if}
 
 </div>
-
-<style lang="postcss">
-  .Input {
-    @apply
-      w-full h-input px-4
-      bg-white
-      rounded border-2 border-gray-200
-      ring-3 ring-gray-200 ring-opacity-0
-      font-dana-en
-      duration-150 ease-in
-      placeholder:text-gray-400 placeholder:text-sm
-      focus:ring-opacity-100
-    ;
-  }
-</style>
