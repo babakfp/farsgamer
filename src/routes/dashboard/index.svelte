@@ -1,5 +1,5 @@
 <script>
-	import FieldNumberWithBtnInside from '$components/FieldNumberWithBtnInside.svelte'
+	import { Coupon } from '$components/Form'
 	let wallet = true
 </script>
 
@@ -16,7 +16,7 @@
 	</div>
 
 	<form class="col-span-full w-full xl:max-w-88">
-		<FieldNumberWithBtnInside btnText="شارژ کیف پول" placeholder="مبلغ مورد نظر خود را وارد کنید" />
+		<Coupon btnText="شارژ کیف پول" placeholder="مبلغ مورد نظر خود را وارد کنید" />
 		<!-- <small class="block mt-2 text-red-500 text-xs">مبلغ نمی‌تواند کمتر از <b class="tracking-tighter">۱۰,۰۰۰</b> تومان باشد.</small> -->
 	</form>
 

@@ -21,6 +21,7 @@
   // Custom classes
 	export let classField = ''
 	export let classLabel = ''
+	export let classContainer = ''
 	export let classWrapper = ''
 
   // text | username
@@ -45,11 +46,17 @@
   let onlyNumbers = false
   let isEmailRegexActivated = false
 
+	if (type === 'coupon') {
+    if (placeholder === '') placeholder = 'کد تخفیف'
+		minLen = 6
+		maxLen = 7
+		name === 'coupon'
+	}
+
   if (type === 'phone') {
     tagType = 'tel'
     if (name === '') name = 'phone'
     if (placeholder === '') placeholder = 'شماره همراه'
-    if (!onlyNumbers) onlyNumbers = true
     onlyNumbers = true
     if (!minLen) minLen = 11
     maxLen = 11
@@ -101,8 +108,14 @@
     onlyUsername: {
       isActivated: type === 'username' ? true : false,
       isTriggered: false,
-      errorMessage: 'فقط حروف(کوچک و پزرگ) انگلیسی مجاز است.',
+      errorMessage: 'فقط حروف(کوچک و بزرگ) انگلیسی مجاز است.',
       regex: /^[a-zA-Z]+$/,
+    },
+		onlyCoupon: {
+      isActivated: type === 'coupon' ? true : false,
+      isTriggered: false,
+      errorMessage: 'فقط حروف بزرگ انگلیسی و اعداد مجاز است.',
+      regex: /^[A-Z0-9]+$/,
     },
     onlyNumbers: {
       isActivated: onlyNumbers,
@@ -193,7 +206,7 @@
 
 <div
   class="
-    {classWrapper ? `[ ${classWrapper} ]` : ''}
+    {classContainer ? `[ ${classContainer} ]` : ''}
     {isValid ? '[ valid ]' : '[ invalid ]'}
     [ w-full ]
     "
@@ -212,25 +225,31 @@
     </label>
   {/if}
 
-  <input
-    class="
-      [ FormInput ]
-      {classField ? `[ ${classField} ]` : ''}
-      {alignLTR && value ? 'dir-ltr' : ''}
-    "
-    type={tagType}
-    name={tagName}
-    id={tagName}
-    {label}
-    {placeholder}
-    {autocomplete}
-    {value}
-    on:input={handleInput}
-    on:blur={onBlur}
-    on:focus={onFocus}
-    minlength={minLen}
-    maxlength={maxLen}
-  />
+  <div class="relative {classWrapper}">
+
+		<input
+			class="
+				[ Input ]
+				{classField ? `[ ${classField} ]` : ''}
+				{alignLTR && value ? 'dir-ltr' : ''}
+				{(type === 'coupon') && value && 'dir-ltr'}
+			"
+			type={tagType}
+			name={tagName}
+			id={tagName}
+			{label}
+			{placeholder}
+			{autocomplete}
+			{value}
+			on:input={handleInput}
+			on:blur={onBlur}
+			on:focus={onFocus}
+			minlength={minLen}
+			maxlength={maxLen}
+		/>
+
+		<slot />
+	</div>
 
   <!-- Errors list -->
   {#if !isValid || minmaxErrors.length > 0}
@@ -249,7 +268,7 @@
 </div>
 
 <style lang="postcss">
-  .FormInput {
+  .Input {
     @apply
       w-full h-input px-4
       bg-white

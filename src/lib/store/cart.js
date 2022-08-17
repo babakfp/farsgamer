@@ -14,3 +14,26 @@ export const cartItems = writable('cartItems', [
 	// 	fastDelivery: true,
 	// },
 ])
+
+export const discounts = writable('discounts', [
+	{
+		code: '100POFF',
+		type: 'percent',
+		value: 100,
+	},
+	{
+		code: '50POFF',
+		type: 'percent',
+		value: 50,
+	},
+	{
+		code: '100BOFF',
+		type: 'bucks',
+		value: 100,
+	},
+	{
+		code: '50BOFF',
+		type: 'bucks',
+		value: 50,
+	},
+])

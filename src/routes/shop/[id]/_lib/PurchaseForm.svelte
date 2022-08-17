@@ -1,8 +1,6 @@
 <script>
 	import { cartItems } from '$store/cart.js'
-	import Input from '$components/Input.svelte'
-	import { Checkbox } from '$components/Form'
-	import { Radiobox } from '$components/Form'
+	import { Input, Checkbox, Radiobox } from '$components/Form'
 	export let product
 	let fastDelivery
 	let accountCategory = product.accountCategories[0].title

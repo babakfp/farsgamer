@@ -1,8 +1,7 @@
 <script>
 	import { isLoggedIn } from '$store/global.js'
+	import { Checkbox, Coupon } from '$components/Form'
 	import { cartItems } from '$store/cart.js'
-	import FieldNumberWithBtnInside from '$components/FieldNumberWithBtnInside.svelte'
-	import { Checkbox } from '$components/Form'
 	import CartItems from './_lib/CartItems.svelte'
 	import Layout from './_lib/Layout.svelte'
 	import CartEmpty from './_lib/CartEmpty.svelte'
@@ -47,7 +46,7 @@
 			</ul>
 	
 			<Checkbox class="text-sm" name="use-wallet">استفاده از کیف پول</Checkbox>
-			<FieldNumberWithBtnInside wrapperClass="-mt-4" btnText="اعمال تخفیف" placeholder="کد تخفیف" />
+			<Coupon wrapperClass="-mt-4" btnText="اعمال تخفیف" placeholder="کد تخفیف" />
 
 			<ol class="grid gap-2 xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">
 				<li class="block w-full choose-payment-gateway">

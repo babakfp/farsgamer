@@ -9,8 +9,7 @@
 	export let isFormValid = true
   
   // Send it to child components
-  export const allFormValidations = writable({
-  })
+  export const allFormValidations = writable({})
 	setContext('allFormValidations', allFormValidations)
 
   $: {
