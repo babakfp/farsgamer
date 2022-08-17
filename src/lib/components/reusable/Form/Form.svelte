@@ -3,8 +3,7 @@
 	import { writable } from 'svelte/store'
 
   // Custom class
-	export let className = ''
-	export { className as class }
+	export let className = ''; export { className as class }
 
 	export let isFormValid = true
   

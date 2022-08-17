@@ -1,6 +1,5 @@
 <script>
-	export let className = ''
-	export { className as class }
+	export let className = ''; export { className as class }
 
 	export let name = null
 	export let autocomplete = null

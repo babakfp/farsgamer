@@ -1,8 +1,7 @@
 <script>
 	import { onMount } from 'svelte'
 
-	export let className = ''
-	export { className as class }
+	export let className = ''; export { className as class }
 
 	export let options = {}
 	export let videoUrl = ''

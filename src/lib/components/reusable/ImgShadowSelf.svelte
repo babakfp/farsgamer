@@ -5,8 +5,7 @@
 	export let rotateOnHover = true
 	export let scaleOnHover = true
 	export let lazyLoading = false
-	export let className = ''
-	export { className as class }
+	export let className = ''; export { className as class }
 	export let classImg = null
 </script>
 
