@@ -1,8 +1,5 @@
 <script>
-	import { setContext } from 'svelte'
-	import { writable } from 'svelte/store'
 	import { Form, Input } from '$components/Form'
-
 	export let btnText
 	export let value
 	export let classContainer
