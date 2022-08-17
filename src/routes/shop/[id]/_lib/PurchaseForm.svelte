@@ -1,6 +1,6 @@
 <script>
 	import { cartItems } from '$store/cart.js'
-	import { Input, Checkbox, Radiobox } from '$components/Form'
+	import { Form, Input, Checkbox, Radiobox } from '$components/Form'
 	export let product
 	let fastDelivery
 	let accountCategory = product.accountCategories[0].title
@@ -23,7 +23,7 @@
 	$: itemAlreadyInCart = $cartItems.filter(item => item.id === product.id).length > 0
 </script>
 
-<form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8" on:submit|preventDefault>
+<Form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8">
 
   <div>
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
@@ -80,4 +80,4 @@
 		{/if}
 	</div>
 
-</form>
+</Form>
