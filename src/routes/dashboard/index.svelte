@@ -26,7 +26,7 @@
 	<div class="table-wrapper mt-8 text-sm">
 		<table>
 			
-			<thead class="text-gray-500">
+			<thead>
 				<tr>
 					<th>تاریخ</th>
 					<th>شناسه</th>

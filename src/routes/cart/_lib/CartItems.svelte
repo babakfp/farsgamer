@@ -7,7 +7,7 @@
 <div class="table-wrapper">
 	<table>
 
-		<thead class="text-sm text-gray-500">
+		<thead>
 			<tr>
 				<th>محصول</th>
 				<th />
