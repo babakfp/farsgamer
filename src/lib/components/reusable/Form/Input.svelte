@@ -73,7 +73,7 @@
   }
   
   if (name === 'firstname') {
-    if (placeholder === '') placeholder = 'نام کاربری'
+    if (placeholder === '') placeholder = 'نام'
     if (autocomplete === '') autocomplete = 'given-name'
   }
   if (name === 'lastname') {
