@@ -37,7 +37,7 @@
 	export let minLen = null
 	export let maxLen = 64
 	export let isValid = true
-	export let isRequired = false
+	export let required = false
 
 	export let alignLTR = false
 
@@ -142,7 +142,7 @@
           errors[key].isTriggered = true
         }
 
-        if ((value === '') && (isRequired === false)) {
+        if ((value === '') && (required === false)) {
           errors[key].isTriggered = false
         }
       }

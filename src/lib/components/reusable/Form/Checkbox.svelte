@@ -2,6 +2,7 @@
 	export let className = ''; export { className as class }
 	export let name
 	export let checked = false
+	export let required = false
 </script>
 
 <div class="flex {className}">
@@ -11,6 +12,7 @@
 			<input
 				class="inline-flex w-6 min-w-6 h-6 border-2 border-gray-200 rounded-sm duration-200 ease-in-out cursor-pointer appearance-none hover:border-brand focus:border-brand group-hover:border-brand checked:bg-brand checked:border-brand [&:checked~i]:opacity-100"
 				type="checkbox" bind:checked {name}
+				{required}
 			/>
 			<i class="icon-check absolute text-white opacity-0 text-xs"></i>
 		</div>
