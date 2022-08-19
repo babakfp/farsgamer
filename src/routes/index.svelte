@@ -104,7 +104,7 @@
     >
 			{#each giftCardImages as img}
 				<SwiperSlide>
-					<ImgShadowSelf classImg="aspect-square bg-gray-100" src={img.src} lazyLoading={true} />
+					<ImgShadowSelf classImg="aspect-square bg-gray-100" src={img.src} />
 				</SwiperSlide>
 			{/each}
 		</Swiper>
@@ -181,8 +181,8 @@
 
 	<!-- Telegram and Instagram -->
 	<div class="flex justify-center gap-4">
-		<ImgShadowSelf class="max-w-64" classImg="aspect-[2/1] bg-gray-100" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" lazyLoading={true} />
-		<ImgShadowSelf class="max-w-64" classImg="aspect-[2/1] bg-gray-100" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" lazyLoading={true} />
+		<ImgShadowSelf class="max-w-64" classImg="aspect-[2/1] bg-gray-100" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" />
+		<ImgShadowSelf class="max-w-64" classImg="aspect-[2/1] bg-gray-100" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" />
 	</div>
 
 
@@ -194,10 +194,10 @@
 
   <!-- 4 posters -->
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (1).png" lazyLoading={true} />
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (2).png" lazyLoading={true} />
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (3).png" lazyLoading={true} />
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (4).png" lazyLoading={true} />
+		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (1).png" />
+		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (2).png" />
+		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (3).png" />
+		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (4).png" />
 	</section>
 
 
