@@ -1,6 +1,6 @@
 @layer components {
 
-	.img-link {
+	.link-img {
 		@apply hover:opacity-90;
 	}
 

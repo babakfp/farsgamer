@@ -56,8 +56,8 @@
       >
 				{#each mainPosters as poster}
 					<SwiperSlide>
-						<a class="img-link flex" href={poster.href || 'javascript:'}>
-							<img class="aspect-[2/1] bg-gray-100" src={poster.imgSrc} alt>
+						<a class="link-img flex" href={poster.href || 'javascript:'}>
+							<img class="aspect-[2/1]" src={poster.imgSrc} alt>
 						</a>
 					</SwiperSlide>
 				{/each}
@@ -67,8 +67,8 @@
     <!-- Left posters -->
 		<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
 			{#each mainSecondPosters as poster}
-				<a class="img-link flex" href={poster.href || 'javascript:'}>
-					<img class="w-full rounded aspect-[2/1] bg-gray-100" src={poster.imgSrc} alt>
+				<a class="link-img flex" href={poster.href || 'javascript:'}>
+					<img class="w-full rounded aspect-[2/1]" src={poster.imgSrc} alt>
 				</a>
 			{/each}
 		</div>
@@ -160,8 +160,12 @@
 
   <!-- 2 posters -->
 	<section class="grid gap-4 sm:grid-cols-2">
-		<ImgShadowSelf classImg="aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (1).png" />
-		<ImgShadowSelf classImg="aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (2).png" />
+    <a class="block link-img" href="javascript:">
+			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (1).png" alt loading="lazy">
+		</a>
+    <a class="block link-img" href="javascript:">
+			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (2).png" alt loading="lazy">
+		</a>
 	</section>
 
 
@@ -173,7 +177,7 @@
 
   <!-- Single poster -->
 	<a class="flex hover:opacity-90" href="javascript:">
-		<img class="rounded aspect-[200/41] bg-gray-100" src="/img/home/poster-full-width (1).png" alt loading="lazy">
+		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (1).png" alt loading="lazy">
 	</a>
 
 
@@ -200,8 +204,8 @@
 
 
   <!-- Single poster -->
-	<a class="img-link flex" href="javascript:">
-		<img class="rounded aspect-[200/41] bg-gray-100" src="/img/home/poster-full-width (2).png" alt loading="lazy">
+	<a class="link-img flex" href="javascript:">
+		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (2).png" alt loading="lazy">
 	</a>
 
 
