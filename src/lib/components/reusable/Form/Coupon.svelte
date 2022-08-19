@@ -1,9 +1,9 @@
 <script>
 	import { Form, Input } from '$components/Form'
 	export let btnText
-	export let value
-	export let classContainer
-	export let placeholder
+	export let value = ''
+	export let classContainer = ''
+	export let placeholder = ''
 </script>
 
 <Form>
