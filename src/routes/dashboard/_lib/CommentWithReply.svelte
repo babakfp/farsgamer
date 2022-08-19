@@ -30,13 +30,8 @@
   </div>
   <div class="comment__body">
     <div class="comment__content">
-      <div class="comment__content-icon">
-        <i class="icon-quote"></i>
-      </div>
-
       <!-- actual content of the comment -->
       <p class="comment__message">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-
     </div>
     <!--
       This component itselfs goes here as a reply ;)
@@ -72,13 +67,8 @@
   </div>
   <div class="comment__body">
     <div class="comment__content">
-      <div class="comment__content-icon">
-        <i class="icon-quote"></i>
-      </div>
-
       <!-- actual content of the comment -->
       <p class="comment__message">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-
     </div>
     <div class="comment">
       <div class="comment__head">
@@ -108,13 +98,8 @@
       </div>
       <div class="comment__body">
         <div class="comment__content">
-          <div class="comment__content-icon">
-            <i class="icon-quote"></i>
-          </div>
-    
           <!-- actual content of the comment -->
           <p class="comment__message">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم لورلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ</p>
-    
         </div>
         <!--
           This component itselfs goes here as a reply ;)

@@ -67,7 +67,7 @@
 	}
 
 	.comment__tag {
-		@apply flex items-center justify-center bg-gray-100 text-gray-500 rounded-full px-1 py-0.5 text-xs;
+		@apply flex items-center justify-center bg-gray-200 text-gray-500 rounded-full px-1 py-0.5 text-xs;
 	}
 
 	.comment__body {
@@ -78,19 +78,6 @@
 		@apply relative;
 	}
 
-	.comment__content-icon {
-		@apply absolute left-0 -top-6 z-0 flex opacity-40;
-	}
-
-	.comment__content-icon::after {
-		content: "";
-		@apply w-full h-full absolute inset-0 bg-gradient-to-b from-transparent to-gray-50;
-	}
-
-	.comment__content-icon i {
-		@apply relative text-4xl text-brand leading-none;
-	}
-
 	.comment__message {
 		@apply relative z-1 text-sm leading-6;
 	}
@@ -98,24 +85,6 @@
 	.comment .comment {
 		@apply mt-4;
 	}
-
-	.comment .comment .comment__content-icon i {
-		@apply scale-y-flip;
-	}
-
-	/* .comment--ligth .comment__content-icon::after,
-	.comment .comment .comment__content-icon::after,
-	.swiper-slide .comment {
-		@apply to-white;
-	}
-
-	.comment--ligth .comment .comment__content-icon::after {
-		@apply to-gray-50;
-	}
-
-	.swiper-slide .comment .comment__content-icon::after {
-		@apply to-white;
-	} */
 
 	.swiper-slide .comment .comment__message {
 		@apply max-h-20 overflow-hidden;
@@ -165,10 +134,6 @@
 	.date-box__day,
 	.date-box__month {
 		@apply leading-none;
-	}
-
-	.comment .comment .comment__content-icon i {
-		transform: scaleY(-1);
 	}
 
 	@keyframes date-box-animation {
