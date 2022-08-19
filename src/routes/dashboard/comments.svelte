@@ -1,7 +1,24 @@
 <script>
+	import { onMount } from 'svelte'
 	import { Tab, TabLabel, TabPanel } from '$components/Tab'
-	import Rating from '$components/Rating.svelte'
+	import CommentItem from './_lib/CommentItem.svelte'
 	import CommentWithReply from './_lib/CommentWithReply.svelte'
+
+	onMount(_=> {
+		const accordions = document.querySelectorAll('.accordion')
+		accordions.forEach(item => {
+			const btn = item.querySelector('.accordion-btn')
+			const body = item.querySelector('.accordion-body')
+			btn.addEventListener('click', _=> {
+				accordions.forEach(_item => {
+					if (item !== _item) {
+						_item.querySelector('.accordion-body').classList.add('hidden')
+					}
+				})
+				body.classList.toggle('hidden')
+			})
+		})
+	})
 </script>
 
 <Tab>
@@ -13,44 +30,8 @@
 	<svelte:fragment slot="body">
 		<TabPanel hash="waiting-for-comments">
 			<div class="grid gap-4">
-				<div class="dashboard-comment-awaiting-approval bg-gray-50 rounded p-3">
-					<div class="flex items-center justify-between">
-						<div class="flex items-center gap-4">
-							<img class="w-20 h-20 rounded" src="/img/products/product-thumb (1).png" alt loading="lazy">
-							<h3 class="font-bold leading-4">گیف کارد steam</h3>
-						</div>
-
-						<!-- TOOD  btn--xs-->
-						<!-- TODO icon + or - -->
-						<button class="btn btn--brand btn--xs gap-1" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false">
-							<i class="icon-plus-small text-sm leading-0"></i>
-							<span>ثبت نظر</span>
-						</button>
-					
-					</div>
-					<div id="collapseExample" class="mt-4 collapse">
-						<form class="bg-white rounded p-4 md:p-6" action="">
-							<h4 class="font-bold">ثبت نظر</h4>
-							<p class="text-sm">اگر در سفارش شما تاخیر یا مشکلی پیش اومده باشه, لطفا با پشتیبانی تماس بگیرید. همکاران ما ۲۴ ساعته آماده کمک به شما هستند.</p>
-							<textarea class="input mt-4" rows="4" placeholder="نظر خود را وارد نمایید"></textarea>
-							
-							<div class="flex flex-wrap items-center justify-between mt-4 gap-2">
-
-								<!-- Rating -->
-								<div class="flex items-center gap-4">
-									<p class="text-sm">میزان رضایت شما از این سفارش چه مقدار است؟</p>
-									<Rating />
-								</div>
-
-								<!-- Submit the review -->
-						<!-- TOOD  btn--xs-->
-								<button type="submit" class="btn btn--brand btn--xs">ثبت نظر</button>
-
-							</div>
-
-						</form>
-					</div>
-				</div>
+				<CommentItem />
+				<CommentItem />
       </div>
 		</TabPanel>
 		<TabPanel hash="verified-comments">
