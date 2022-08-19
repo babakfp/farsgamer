@@ -20,15 +20,9 @@ export const walletBalance = writable('walletBalance', '100,000')
 export const discounts = writable('discounts', [
 	{
 		id: 1,
-		code: '25BOFF',
+		code: '2MLBmu',
 		type: 'bucks',
-		value: 25,
-	},
-	{
-		id: 2,
-		code: '25POFF',
-		type: 'percent',
-		value: 25,
+		value: 25_000,
 	},
 ])
 

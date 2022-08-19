@@ -51,7 +51,7 @@
 	if (type === 'coupon') {
     if (placeholder === '') placeholder = 'کد تخفیف'
 		minLen = 6
-		maxLen = 7
+		maxLen = 6
 		name === 'coupon'
 	}
 
@@ -116,8 +116,8 @@
 		onlyCoupon: {
       isActivated: type === 'coupon' ? true : false,
       isTriggered: false,
-      errorMessage: 'فقط حروف بزرگ انگلیسی و اعداد مجاز است.',
-      regex: /^[A-Z0-9]+$/,
+      errorMessage: 'فقط حروف و اعداد انگلیسی مجاز است.',
+      regex: /^[a-zA-Z0-9]+$/,
     },
     onlyNumbers: {
       isActivated: onlyNumbers,

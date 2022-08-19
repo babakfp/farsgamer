@@ -11,15 +11,23 @@
 
 	let useWallet = false
 	let subtotal = 0
+	
 	$cartItems.forEach(item => {
 		subtotal += priceToNumber(item.price)
 	})
+	
 	let total = subtotal
-	$: if (useWallet) {
-		if (subtotal - priceToNumber($walletBalance) <= 0) {
-			total = 0
-		} else {
+
+	$: {
+		total = subtotal
+		if ($cartDiscountInUse) {
+			total = subtotal - $cartDiscountInUse.value
+		}
+		if (useWallet) {
 			total = subtotal - priceToNumber($walletBalance)
+		}
+		if (total < 0) {
+			total = 0
 		}
 	}
 	
@@ -31,6 +39,7 @@
 		if (discount) {
 			discountSuccessMessage = 'کد تخفیف با موفقیت اعمال شد.'
 			discountErrorMessage = ''
+			cartDiscountInUse.set(discount)
 		} else {
 			discountErrorMessage = 'کد تخفیف معتبر نمی‌باشد!'
 			discountSuccessMessage = ''
@@ -57,7 +66,13 @@
 		
 			<ul>
 				<PriceItem title="جمع جزء" price="200,000" />
-				<PriceItem title="تخفیف" price="200,000" negative={true} />
+				{#if $cartDiscountInUse}
+					<PriceItem title="تخفیف" price={numberToPrice($cartDiscountInUse.value)} negative={true}>
+						<button class="btn p-0 h-6 w-6 hover:text-red-500" slot="after-price" on:click={_=> cartDiscountInUse.set(null)}>
+							<i class="icon-cross-small"></i>
+						</button>
+					</PriceItem>
+				{/if}
 				{#if useWallet}
 					<PriceItem title="استفاده از کیف پول" price={$walletBalance} negative={true} />
 				{/if}
@@ -67,7 +82,7 @@
 			<Checkbox class="text-sm" name="use-wallet" bind:checked={useWallet}>استفاده از کیف پول <span class="text-xs">({$walletBalance} تومان)</span></Checkbox>
 			<Coupon classContainer="-mt-4" btnText="اعمال تخفیف" placeholder="کد تخفیف" bind:value={discountFieldValue} on:submit={applyCoupon} errorMessage={discountErrorMessage} successMessage={discountSuccessMessage}>
 				<svelte:fragment slot="description">
-					کد تخفیف <code>25BOFF</code> به مناسبت اولین کد تخفیف خود وارد کنید.
+					کد تخفیف <code>{$discounts[0].code}</code> به مناسبت اولین کد تخفیف خود وارد کنید.
 				</svelte:fragment>
 			</Coupon>
 
