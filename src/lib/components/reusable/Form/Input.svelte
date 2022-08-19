@@ -38,7 +38,9 @@
 	export let maxLen = 64
 	export let isValid = true
 	export let required = false
-
+	export let errorMessage = false
+	export let successMessage = false
+	
 	export let alignLTR = false
 
 	export let onlyFarsiLetters = false
@@ -251,17 +253,27 @@
 		<slot />
 	</div>
 
+	<p class="text-xs text-gray-500 mt-1">
+		<slot name="description" />
+	</p>
+
   <!-- Errors list -->
-  {#if !isValid || minmaxErrors.length > 0}
-    <ul class="mt-2 mr-1 list-inside list-disc text-xs text-red-700">
+  {#if !isValid || minmaxErrors.length > 0 || errorMessage || successMessage}
+    <ul class="mt-1 mr-1 list-inside list-disc text-xs">
       {#each Object.entries(errors) as [_, values]}
         {#if values.isTriggered}
-          <li>{values.errorMessage}</li>
+          <li class="text-red-500">{values.errorMessage}</li>
         {/if}
       {/each}
       {#each minmaxErrors as text}
-        <li>{text}</li>
+        <li class="text-red-500">{text}</li>
       {/each}
+			{#if errorMessage}
+				<li class="text-red-500">{errorMessage}</li>
+			{/if}
+			{#if successMessage}
+				<li class="text-green-500">{successMessage}</li>
+			{/if}
     </ul>
   {/if}
 

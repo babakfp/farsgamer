@@ -54,6 +54,10 @@
 		}
   }
 
+	code {
+		@apply font-dana-en select-all;
+	}
+
 	/* Make Icons RTL */
 	.icon-search,
 	.icon-shopping-cart,
