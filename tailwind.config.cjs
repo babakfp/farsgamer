@@ -85,6 +85,9 @@ module.exports = {
 			cursor: {
 				grab: 'grab',
 			},
+			contrast: {
+				105: '1.05',
+			},
 		},
 		screens: {
 			'5xs': '360px',

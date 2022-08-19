@@ -104,7 +104,9 @@
     >
 			{#each giftCardImages as img}
 				<SwiperSlide>
-					<ImgShadowSelf classImg="aspect-square bg-gray-100" src={img.src} />
+					<a class="block transform-scale-fix hover:scale-95" href="javascript:">
+						<img class="rounded" src={img.src} alt />
+					</a>
 				</SwiperSlide>
 			{/each}
 		</Swiper>
@@ -158,12 +160,8 @@
 
   <!-- 2 posters -->
 	<section class="grid gap-4 sm:grid-cols-2">
-    <a class="flex" href="javascript:">
-			<img class="w-full rounded aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (1).png" alt loading="lazy">
-		</a>
-    <a class="flex" href="javascript:">
-			<img class="w-full rounded aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (2).png" alt loading="lazy">
-		</a>
+		<ImgShadowSelf classImg="aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (1).png" />
+		<ImgShadowSelf classImg="aspect-[601/251] bg-gray-100" src="/img/home/poster-half-width (2).png" />
 	</section>
 
 

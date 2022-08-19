@@ -7,6 +7,6 @@
 </script>
 
 <a class="{className} group relative block" {href}>
-	<img class="{classImg} absolute bottom-0 px-8 blur-md rounded duration-300 ease-in-out opacity-0 group-hover:opacity-80 group-hover:-bottom-2" {src} {alt} loading="lazy">
-	<img class="{classImg} relative rounded" {src} loading="lazy" {alt}>
+	<img class="{classImg} rounded duration-200 ease-in absolute -bottom-2 -left-2 blur opacity-0 group-hover:opacity-50" {src} {alt} loading="lazy">
+	<img class="{classImg} rounded duration-200 ease-in relative group-hover:contrast-105" {src} loading="lazy" {alt}>
 </a>
