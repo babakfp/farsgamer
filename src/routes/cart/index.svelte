@@ -1,10 +1,28 @@
 <script>
 	import { isLoggedIn } from '$store/global.js'
 	import { Checkbox, Coupon } from '$components/Form'
-	import { cartItems } from '$store/cart.js'
+	import { cartItems, walletBalance } from '$store/cart.js'
 	import CartItems from './_lib/CartItems.svelte'
 	import Layout from './_lib/Layout.svelte'
 	import CartEmpty from './_lib/CartEmpty.svelte'
+	import PriceItem from './_lib/PriceItem.svelte'
+	import { numberToPrice, priceToNumber } from '$utilities/helpers-price.js'
+
+	let useWallet = false
+	let subtotal = 0
+	$cartItems.forEach(item => {
+		subtotal += priceToNumber(item.price)
+	})
+	let total = subtotal
+	$: if (useWallet) {
+		if (subtotal - priceToNumber($walletBalance) <= 0) {
+			total = 0
+		} else {
+			total = subtotal - priceToNumber($walletBalance)
+		}
+	}
+	
+	console.log(subtotal - priceToNumber($walletBalance));
 </script>
 
 {#if $cartItems.length > 0}
@@ -19,33 +37,16 @@
 				<a class="btn btn--brand btn--submit w-full" href="/login">ورود به حساب</a>
 			{/if}
 		
-			<ul class="space-y-2 text-sm">
-				<li class="flex items-center justify-between">
-					<span>جمع جزء</span>
-					<div class="flex items-center gap-1">
-						<span class="font-bold">200,000</span>
-						<span class="mt-0.5 text-2xs text-gray-500">تومان</span>
-					</div>
-				</li>
-				<hr class="border-gray-100">
-				<li class="flex items-center justify-between">
-					<span>تخفیف</span>
-					<div class="flex items-center gap-1">
-						<span class="font-bold">200,000</span>
-						<span class="mt-0.5 text-2xs text-gray-500">تومان</span>
-					</div>
-				</li>
-				<hr class="border-gray-100">
-				<li class="flex items-center justify-between">
-					<span>جمع کل</span>
-					<div class="flex items-center gap-1">
-						<span class="font-bold">200,000</span>
-						<span class="mt-0.5 text-2xs text-gray-500">تومان</span>
-					</div>
-				</li>
+			<ul>
+				<PriceItem title="جمع جزء" price="200,000" />
+				<PriceItem title="تخفیف" price="200,000" negative={true} />
+				{#if useWallet}
+					<PriceItem title="استفاده از کیف پول" price={$walletBalance} negative={true} />
+				{/if}
+				<PriceItem title="جمع کل" price={total} />
 			</ul>
 	
-			<Checkbox class="text-sm" name="use-wallet">استفاده از کیف پول</Checkbox>
+			<Checkbox class="text-sm" name="use-wallet" bind:checked={useWallet}>استفاده از کیف پول <span class="text-xs">({$walletBalance} تومان)</span></Checkbox>
 			<Coupon classContainer="-mt-4" btnText="اعمال تخفیف" placeholder="کد تخفیف" />
 
 			<ol class="grid gap-2 xs:grid-cols-2 xs:gap-4 xl:grid-cols-1 xl:gap-2">

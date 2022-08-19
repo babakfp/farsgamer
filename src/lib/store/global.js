@@ -1,5 +1,6 @@
-import { writable as writableLocalStorage } from 'svelte-local-storage-store'
-import { readable } from 'svelte/store'
+import { writable as localStorage } from 'svelte-local-storage-store'
+import { writable, readable } from 'svelte/store'
 
-export const isLoggedIn = writableLocalStorage(true)
+export const isLoggedIn = localStorage(true)
 export const phoneNumbers = readable([ '05891010109', '05891011832' ])
+

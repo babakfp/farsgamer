@@ -15,6 +15,8 @@ export const cartItems = writable('cartItems', [
 	// },
 ])
 
+export const walletBalance = writable('walletBalance', '100,000')
+
 export const discounts = writable('discounts', [
 	{
 		code: '100POFF',
