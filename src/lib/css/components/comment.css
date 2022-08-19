@@ -34,7 +34,7 @@
 	}
 
 	.comment__user {
-		@apply grid gap-1;
+		@apply grid gap-1 justify-items-start;
 	}
 
 	.comment__author {
