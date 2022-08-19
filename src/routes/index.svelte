@@ -104,7 +104,7 @@
     >
 			{#each giftCardImages as img}
 				<SwiperSlide>
-					<a class="block transform-scale-fix hover:scale-95" href="javascript:">
+					<a class="block hover:brightness-105 hover:opacity-95" href="javascript:">
 						<img class="rounded" src={img.src} alt />
 					</a>
 				</SwiperSlide>
