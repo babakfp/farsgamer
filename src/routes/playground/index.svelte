@@ -2,7 +2,7 @@
 	import { Form, Checkbox, RadioboxWrapper, Radiobox } from './_lib'
 </script>
 
-<Form>
+<Form let:isFormValid>
 	<Checkbox name="terms-and-conditions">
 		قوانین و مقررات
 	</Checkbox>
@@ -13,5 +13,5 @@
 		<Radiobox value="hey3">سلام</Radiobox>
 	</RadioboxWrapper>
 
-	<button type="submit">submit</button>
+	<button class="btn btn--brand" type="submit">Submit ({isFormValid})</button>
 </Form>

@@ -18,9 +18,10 @@
 		} else {
 			isFormValid = true
 		}
+		console.log(isFormValid)
 	}
 </script>
 
-<form class={className} {isFormValid} on:submit|preventDefault>
-	<slot />
+<form class={className} on:submit|preventDefault>
+	<slot {isFormValid} />
 </form>
