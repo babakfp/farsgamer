@@ -1,21 +1,5 @@
 <script>
-  // Geting it from the parent components
 	import { getContext, onMount } from 'svelte'
-  const fieldsValidations = getContext('fieldsValidations')
-  
-  onMount(_=> {
-    fieldsValidations.update(currentValue => {
-      currentValue[name] = true
-      return currentValue
-    })
-  })
-
-  $: {
-    fieldsValidations.update(currentValue => {
-      currentValue[name] = isValid
-      return currentValue
-    })
-  }
 
   // Custom classes
 	export let classField = ''
@@ -47,6 +31,15 @@
 	let field
   let onlyNumbers = false
   let isEmailRegexActivated = false
+
+	const fieldsValidations = getContext('fieldsValidations')
+
+	$: {
+		fieldsValidations.update(currentValue => {
+			currentValue[name] = isValid
+			return currentValue
+		})
+	}
 
 	if (type === 'coupon') {
     if (placeholder === '') placeholder = 'کد تخفیف'
