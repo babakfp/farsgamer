@@ -48,7 +48,7 @@
 						<td>30250</td>
 						<td class="whitespace-nowrap"><span class="flex items-center gap-1"><span class="font-bold">۱۰۰,۰۰۰</span><span class="text-sm">تومان</span></span></td>
 						<td class="whitespace-nowrap">تکمیل شده</td>
-						<td class="min-w-32">اعتبار کیف پول از طریق خرید #FFA-982530</td>
+						<td class="min-w-32">اعتبار کیف پول از طریق خرید <code class="inline-block">#FFA-982530</code></td>
 						<td class="min-w-32">
               <!-- svelte-ignore a11y-invalid-attribute -->
 							<a class="btn btn--xs btn--light rounded-full" href="javascript:">پرداخت</a>

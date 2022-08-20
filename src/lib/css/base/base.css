@@ -55,7 +55,7 @@
   }
 
 	code {
-		@apply font-dana-en select-all;
+		@apply dir-ltr font-dana-en select-all;
 	}
 
 	/* Make Icons RTL */

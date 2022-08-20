@@ -1,7 +1,7 @@
 @layer components {
 
 	.comment {
-		@apply p-4 rounded bg-gray-800 bg-opacity-5;
+		@apply p-4 rounded bg-gray-50;
 	}
 
 	.comment__head {
@@ -9,7 +9,7 @@
 	}
 
 	.comment__user-name {
-		@apply font-bold;
+		@apply font-medium;
 	}
 
 	.comment__info {
@@ -34,7 +34,7 @@
 	}
 
 	.comment__user {
-		@apply grid gap-1 justify-items-start;
+		@apply grid gap-1.5 justify-items-start;
 	}
 
 	.comment__author {
@@ -67,7 +67,7 @@
 	}
 
 	.comment__tag {
-		@apply flex items-center justify-center bg-gray-200 text-gray-500 rounded-full px-1 py-0.5 text-xs;
+		@apply flex items-center justify-center bg-white text-gray-500 border border-gray-100 rounded-full px-2 py-1 text-2xs;
 	}
 
 	.comment__body {
@@ -83,7 +83,7 @@
 	}
 
 	.comment .comment {
-		@apply mt-4;
+		@apply mt-4 bg-gray-100;
 	}
 
 	.swiper-slide .comment .comment__message {

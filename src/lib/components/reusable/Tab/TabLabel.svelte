@@ -5,7 +5,7 @@
 </script>
 
 <li class="Tab__TabLabel">
-	<svelte:element this={hash ? 'a' : 'button'} href={hash ? `#${hash}` : null} class="flex items-center justify-center gap-2 w-full min-w-36 p-4 text-sm font-bold rounded-t duration-200 ease-in-out lg:hover:text-brand">
+	<svelte:element this={hash ? 'a' : 'button'} href={hash ? `#${hash}` : null} class="flex items-center justify-center gap-2 w-full min-w-36 p-4 text-sm font-semibold text-gray-600 rounded-t | duration-200 ease-in-out | lg:hover:text-brand">
 		{#if count && count > 0}
 			<span>{title}</span>
 			<div class="text-sm font-regular">

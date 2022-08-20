@@ -52,7 +52,7 @@
 	}
 
 	.btn--xs {
-		@apply text-xs h-8 px-2;
+		@apply text-2xs h-8 px-3;
 	}
 
 	.btn--submit,

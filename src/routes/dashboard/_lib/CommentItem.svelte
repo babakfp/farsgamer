@@ -2,24 +2,25 @@
 	import Rating from '$components/Rating.svelte'
 </script>
 
-<div class="bg-gray-100 rounded p-3 accordion">
+<div class="bg-gray-50 rounded p-3 accordion">
 	<div class="flex items-center justify-between">
-		<div class="flex items-center gap-4">
-			<img class="w-24 h-24 rounded" src="/img/products/product-thumb (1).png" alt loading="lazy">
-			<h3 class="font-medium leading-4">گیف کارد steam</h3>
+		<div class="flex items-center gap-4 sm:w-full">
+			<img class="w-20 h-20 rounded" src="/img/products/product-thumb (1).png" alt loading="lazy">
+			
+			<div class="grid gap-4 justify-items-start sm:flex sm:items-center sm:justify-between sm:w-full">
+				<h3 class="font-medium text-sm sm:text-base">گیف کارد steam</h3>
+				
+				<button class="btn btn--brand btn--xs gap-1 accordion-btn sm:ml-2">
+					<span>ثبت نظر</span>
+				</button>
+			</div>
 		</div>
-
-		<button class="btn btn--brand btn--xs gap-1 accordion-btn">
-			<i class="icon-plus-small text-sm leading-0"></i>
-			<span>ثبت نظر</span>
-		</button>
-	
 	</div>
 
 	<div class="mt-4 accordion-body hidden">
 		<form class="bg-white rounded p-4 md:p-6" action="">
 			<h4 class="font-bold">ثبت نظر</h4>
-			<p class="text-sm">اگر در سفارش شما تاخیر یا مشکلی پیش اومده باشه, لطفا با پشتیبانی تماس بگیرید. همکاران ما ۲۴ ساعته آماده کمک به شما هستند.</p>
+			<p class="mt-1 text-sm">اگر در سفارش شما تاخیر یا مشکلی پیش اومده باشه, لطفا با پشتیبانی تماس بگیرید. همکاران ما ۲۴ ساعته آماده کمک به شما هستند.</p>
 			<textarea class="input mt-4" rows="4" placeholder="نظر خود را وارد نمایید"></textarea>
 			
 			<div class="flex flex-wrap items-center justify-between mt-4 gap-4">

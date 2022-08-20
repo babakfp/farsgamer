@@ -245,14 +245,14 @@
 	</div>
 
 	{#if $$slots.description}
-		<p class="text-xs text-gray-500 mt-1">
+		<p class="text-xs text-gray-500 mt-1 mr-1">
 			<slot name="description" />
 		</p>
 	{/if}
 
   <!-- Errors list -->
   {#if !isValid || minmaxErrors.length > 0 || errorMessage || successMessage}
-    <ul class="mt-2 mr-1 space-y-1 list-inside list-disc">
+    <ul class="mt-1 mr-1 space-y-1 list-inside list-disc">
       {#each Object.entries(errors) as [_, values]}
         {#if values.isTriggered}
           <li class="block">
