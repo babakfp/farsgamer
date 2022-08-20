@@ -44,7 +44,7 @@ module.exports = {
 				88: '22rem',
 				header: 'var(--header)',
 				page: 'var(--page)',
-				input: '3rem',
+				input: '2.75rem',
 			},
 			zIndex: { 
 				1: '1',
