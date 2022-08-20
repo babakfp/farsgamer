@@ -1,9 +1,8 @@
 <script>
   import { Form, Input } from '$components/Form'
-  let isFormValid
 </script>
 
-<Form class="grid gap-8 p-4 sm:grid-cols-2" bind:isFormValid>
+<Form class="grid gap-8 p-4 sm:grid-cols-2" let:isFormValid>
   <Input name="firstname" />
   <Input name="lastname" />
   <Input type="username" />
