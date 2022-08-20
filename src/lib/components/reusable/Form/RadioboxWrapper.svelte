@@ -2,6 +2,9 @@
 	import { setContext, getContext } from 'svelte'
 	import { writable } from 'svelte/store'
 
+	export let className = ''
+	export { className as class }
+
 	export let name
 	export let required = false
 	export let selected = writable(null)
@@ -19,6 +22,6 @@
 	}
 </script>
 
-<div>
+<div class={className}>
 	<slot />
 </div>

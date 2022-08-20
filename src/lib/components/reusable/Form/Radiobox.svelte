@@ -1,27 +1,30 @@
 <script>
-	import { makeSlug } from '$utilities/make-slug.js'
-	export let name
-	export let value = ''
-	export let contentClass = ''
-	export let className = ''; export { className as class }
-	export let selectedValue
+	import { getContext } from 'svelte'
+	export let value
+	export let className = ''
+	export { className as class }
+	export let classContent = ''
+	
+	const name = getContext('name')
+	const required = getContext('required')
+	const selected = getContext('selected')
 </script>
 
 <div class="flex {className}">
 
-  <!-- svelte-ignore a11y-label-has-associated-control -->
-	<label class="group inline-flex items-center justify-start gap-2 mb-0">
-		<div class="relative inline-flex items-center justify-center">
+	<label class="group | inline-flex items-center justify-start gap-2 | mb-0" for="{name}-{value}">
+		<div class="relative | inline-flex items-center justify-center">
 
 			<input
-				class="inline-flex w-6 min-w-6 h-6 border-2 border-gray-200 rounded-full duration-200 ease-in-out cursor-pointer appearance-none hover:border-brand focus:border-brand group-hover:border-brand checked:bg-brand checked:border-brand [&:checked~i]:opacity-100"
-				type="radio" {name} value={makeSlug(value)}
-				bind:group={selectedValue}
+				class="inline-flex | w-[22px] min-w-[22px] h-[22px] | bg-white | border-2 border-gray-200 rounded-full | duration-150 ease-in-out | cursor-pointer appearance-none | group-hover:border-brand hover:border-brand focus:border-brand | checked:bg-brand checked:border-brand [&:checked~i]:opacity-100 [&:checked~i]:scale-100 [&:checked~i]:translate-y-0 [&:checked~i]:translate-x-0"
+				type="radio" bind:group={$selected} {name} id="{name}-{value}" {value} {required}
 			/>
-			<i class="icon-check absolute text-white opacity-0 text-xs"></i>
+			<i class="icon-check | absolute mt-0.5 | text-2xs text-white | duration-150 ease-in | opacity-0 scale-0 translate-y-2 -translate-x-2"></i>
 		</div>
 
-		<span class={contentClass}><slot /></span>
+		<span class="text-sm {classContent}">
+			<slot />
+		</span>
 	</label>
 
 </div>

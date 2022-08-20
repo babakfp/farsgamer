@@ -2,33 +2,24 @@
 	import { setContext } from 'svelte'
 	import { writable } from 'svelte/store'
 
-  // Custom class
-	export let className = ''; export { className as class }
+	export let className = ''
+	export { className as class }
 
-	export let isFormValid = true
-  
-  // Send it to child components
-  export const allFormValidations = writable({})
-	setContext('allFormValidations', allFormValidations)
+	export const fieldsValidations = writable({})
+	setContext('fieldsValidations', fieldsValidations)
 
-  $: {
-    for (const key in $allFormValidations) {
-      const validationValue = $allFormValidations[key]
-      if (validationValue === false) {
-        isFormValid = false
-        break
-      }
-      isFormValid = true
-    }
-  }
+	let isFormValid
+
+	$: if ( Object.keys( $fieldsValidations ).length ) {
+		const validations = Object.values( $fieldsValidations )
+		if ( validations.includes(false) ) {
+			isFormValid = false
+		} else {
+			isFormValid = true
+		}
+	}
 </script>
 
-<form
-	class="
-    {className}
-    {isFormValid ? 'valid' : 'invalid'}
-  "
-	on:submit|preventDefault
->
-	<slot />
+<form class={className} on:submit|preventDefault>
+	<slot {isFormValid} />
 </form>

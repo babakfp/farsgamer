@@ -1,19 +1,18 @@
 <script>
   // Geting it from the parent components
 	import { getContext, onMount } from 'svelte'
-  const allFormValidations = getContext('allFormValidations')
+  const fieldsValidations = getContext('fieldsValidations')
   
-  const ref = Math.random()
   onMount(_=> {
-    allFormValidations.update(currentValue => {
-      currentValue[ref] = true
+    fieldsValidations.update(currentValue => {
+      currentValue[name] = true
       return currentValue
     })
   })
 
   $: {
-    allFormValidations.update(currentValue => {
-      currentValue[ref] = isValid
+    fieldsValidations.update(currentValue => {
+      currentValue[name] = isValid
       return currentValue
     })
   }
@@ -45,6 +44,7 @@
 
 	export let onlyFarsiLetters = false
 
+	let field
   let onlyNumbers = false
   let isEmailRegexActivated = false
 
@@ -52,7 +52,6 @@
     if (placeholder === '') placeholder = 'کد تخفیف'
 		minLen = 6
 		maxLen = 6
-		name === 'coupon'
 	}
 
   if (type === 'phone') {
@@ -95,6 +94,11 @@
     if (!minLen) minLen = 2
     if (!maxLen) maxLen = 64
   }
+
+	if (type === 'password') {
+    if (placeholder === '') placeholder = 'رمز عبور'
+    if (autocomplete === '') autocomplete = 'password'
+	}
 
   let minmaxErrors = []
   const minErrorText = `حداقل ${minLen} کاراکتر مورد نیاز است.`
@@ -204,6 +208,14 @@
       value = '09'
     }
   }
+
+	const handleKeydown = e => {
+		if (type === 'password') {
+			if (e.ctrlKey && e.code === 'KeyX') {
+				value = value.slice(0, field.selectionStart) + value.slice(field.selectionEnd)
+			}
+		}
+	}
 </script>
 
 <div
@@ -248,6 +260,8 @@
 			on:focus={onFocus}
 			minlength={minLen}
 			maxlength={maxLen}
+			on:keydown={handleKeydown}
+			bind:this={field}
 		/>
 
 		<slot />

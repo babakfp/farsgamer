@@ -1,9 +1,10 @@
 <script>
+	import { writable } from 'svelte/store'
 	import { cartItems } from '$store/cart.js'
-	import { Form, Input, Checkbox, Radiobox } from '$components/Form'
+	import { Form, Input, Checkbox, RadioboxWrapper, Radiobox } from '$components/Form'
 	export let product
 	let fastDelivery
-	let accountCategory = product.accountCategories[0].title
+	let accountCategory = writable(product.accountCategories[0].title)
 	let accountEmail = ''
 	let accountPassword = ''
 
@@ -27,26 +28,20 @@
 
   <div>
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
-    <div class="flex flex-wrap gap-x-8 gap-y-2 lg:flex lg:justify-start">
+		<RadioboxWrapper class="flex flex-wrap gap-x-8 gap-y-2 lg:flex lg:justify-start"
+			name="account-categories" bind:selected={accountCategory}
+		>
 			{#each product.accountCategories as category (category.id)}
-				<Radiobox contentClass="text-sm" name="account-categories" value={category.title} bind:selectedValue={accountCategory}>
+				<Radiobox value={category.title}>
 					{category.title}
 				</Radiobox>
 			{/each}
-    </div>
+		</RadioboxWrapper>
   </div>
 
 	<div class="grid gap-4 sm:flex">
-		<Input
-			label="ایمیل اکانت"
-			class="dir-ltr" type="email" name="email" autocomplete="email"
-			bind:value={accountEmail}
-		/>
-		<Input
-			label="رمز اکانت"
-			class="dir-ltr" type="password" name="password" autocomplete="password"
-			bind:value={accountPassword}
-		/>
+		<Input bind:value={accountEmail} type="email" name="account-email" label="ایمیل اکانت" />
+		<Input bind:value={accountPassword} type="password" name="account-password" label="رمز اکانت" />
 	</div>
 
 	<Checkbox name="fast-delivery" bind:checked={fastDelivery}>
