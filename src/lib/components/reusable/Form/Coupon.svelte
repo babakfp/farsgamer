@@ -1,5 +1,6 @@
 <script>
 	import { Form, Input } from '$components/Form'
+	export let name
 	export let btnText
 	export let value = ''
 	export let classContainer = ''
@@ -13,6 +14,7 @@
 		type="coupon"
 		bind:value
 		{classContainer}
+		{name}
 		{placeholder}
 		{errorMessage}
 		{successMessage}
