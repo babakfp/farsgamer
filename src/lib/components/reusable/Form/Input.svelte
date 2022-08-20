@@ -11,15 +11,14 @@
 	export let placeholder = ''
 	export let autocomplete = ''
 
-	export let minLen = null
-	export let maxLen = 64
+	export let minLength = null
+	export let maxLength = 64
 	export let isValid = true
 	export let required = false
 	export let errorMessage = false
 	export let successMessage = false
 	
 	export let alignLTR = false
-
 	export let onlyFarsiLetters = false
 
 	let field
@@ -37,16 +36,16 @@
 
 	if (type === 'coupon') {
     if (placeholder === '') placeholder = 'کد تخفیف'
-		minLen = 6
-		maxLen = 6
+		minLength = 6
+		maxLength = 6
 	}
 
   if (type === 'tel') {
     if (name === '') name = 'tel'
     if (placeholder === '') placeholder = 'شماره همراه'
     onlyNumbers = true
-    if (!minLen) minLen = 11
-    maxLen = 11
+    if (!minLength) minLength = 11
+    maxLength = 11
   }
 
   if ( ['tel', 'username', 'password', 'email', 'coupon'].includes(type) ) alignLTR = true
@@ -55,8 +54,8 @@
     tagName = 'username'
     if (placeholder === '') placeholder = 'نام کاربری'
     if (autocomplete === '') autocomplete = 'username'
-    if (!minLen) minLen = 2
-    if (!maxLen) maxLen = 12
+    if (!minLength) minLength = 2
+    if (!maxLength) maxLength = 12
   }
   
   if (name === 'firstname') {
@@ -69,16 +68,16 @@
   }
   if (name === 'firstname' || name === 'lastname') {
     if (!onlyFarsiLetters) onlyFarsiLetters = true
-    if (!minLen) minLen = 2
-    if (!maxLen) maxLen = 32
+    if (!minLength) minLength = 2
+    if (!maxLength) maxLength = 32
   }
 
   if (type === 'email') {
     if (placeholder === '') placeholder = 'آدرس ایمیل'
     if (autocomplete === '') autocomplete = 'email'
     isEmailRegexActivated = true
-    if (!minLen) minLen = 2
-    if (!maxLen) maxLen = 64
+    if (!minLength) minLength = 2
+    if (!maxLength) maxLength = 64
   }
 
 	if (type === 'password') {
@@ -87,8 +86,8 @@
 	}
 
   let minmaxErrors = []
-  const minErrorText = `حداقل ${minLen} کاراکتر مورد نیاز است.`
-  const maxErrorText = `حداکثر ${minLen} کاراکتر مجاز است.`
+  const minErrorText = `حداقل ${minLength} کاراکتر مورد نیاز است.`
+  const maxErrorText = `حداکثر ${minLength} کاراکتر مجاز است.`
 
   let errors = {
     onlyFarsiLetters: {
@@ -167,10 +166,10 @@
 
     minmaxErrors = []
 
-    if (minLen && value.length < minLen) {
+    if (minLength && value.length < minLength) {
       minmaxErrors = [...minmaxErrors, minErrorText]
     }
-    if (maxLen && value.length > maxLen) {
+    if (maxLength && value.length > maxLength) {
       minmaxErrors = [...minmaxErrors, maxErrorText]
     }
   };
@@ -235,8 +234,8 @@
 			on:input={handleInput}
 			on:blur={onBlur}
 			on:focus={onFocus}
-			minlength={minLen}
-			maxlength={maxLen}
+			minlength={minLength}
+			maxlength={maxLength}
 			on:keydown={handleKeydown}
 			bind:this={field}
 		/>
