@@ -4,6 +4,7 @@
 </script>
 
 {#if $announcements && $announcements.length > 0}
+
 	<ul class="grid gap-4">
 		{#each $announcements as announcement}
 			<li class="grid p-4 bg-white rounded scroll-mt-[calc(var(--header)_+_1rem)]" id={announcement.id}>
@@ -16,6 +17,9 @@
 			</li>
 		{/each}
 	</ul>
+
 {:else}
+
 	<Alert>اعلان‌ای پیدا نشد!</Alert>
+
 {/if}
