@@ -1,13 +1,8 @@
 <script>
 	import { getContext, onMount } from 'svelte'
 
-  // Custom classes
 	export let classField = ''
-	export let classLabel = ''
 	export let classContainer = ''
-	export let classWrapper = ''
-
-  // text | username
 	export let type = 'text'
   let tagType = type
 	export let name = ''
@@ -56,7 +51,7 @@
     maxLen = 11
   }
 
-  if (type === 'phone' || type === 'username') alignLTR = true
+  if ( ['phone', 'username', 'password', 'email', 'coupon'].includes(type) ) alignLTR = true
 
   if (type === 'username') {
     tagName = 'username'
@@ -212,8 +207,7 @@
 </script>
 
 <div
-  class="
-    {classContainer ? `[ ${classContainer} ]` : ''}
+  class="{classContainer}
     {isValid ? '[ valid ]' : '[ invalid ]'}
     [ w-full ]
     "
@@ -222,25 +216,18 @@
   {#if label}
     <!-- svelte-ignore a11y-label-has-associated-control -->
     <label
-      class="
-        {classLabel ? `[ ${classLabel} ]` : ''}
-        [ text-sm ]
-      "
+      class="text-sm"
       for={tagName}
     >
       {label}
     </label>
   {/if}
 
-  <div class="relative {classWrapper}">
+  <div class="relative">
 
 		<input
-			class="
-				[ input ]
-				{classField ? `[ ${classField} ]` : ''}
-				{alignLTR && value ? 'dir-ltr' : ''}
-				{(type === 'coupon') && value && 'dir-ltr'}
-			"
+			class="input {classField}"
+			class:dir-ltr={alignLTR && value}
 			type={tagType}
 			name={tagName}
 			id={tagName}
