@@ -1,5 +1,6 @@
 <script>
 	import { getContext, onMount } from 'svelte'
+	import Message from './Message.svelte'
 
 	export let classField = ''
 	export let classContainer = ''
@@ -243,26 +244,44 @@
 		<slot />
 	</div>
 
-	<p class="text-xs text-gray-500 mt-1">
-		<slot name="description" />
-	</p>
+	{#if $$slots.description}
+		<p class="text-xs text-gray-500 mt-1">
+			<slot name="description" />
+		</p>
+	{/if}
 
   <!-- Errors list -->
   {#if !isValid || minmaxErrors.length > 0 || errorMessage || successMessage}
-    <ul class="mt-1 mr-1 list-inside list-disc text-xs">
+    <ul class="mt-2 mr-1 space-y-1 list-inside list-disc">
       {#each Object.entries(errors) as [_, values]}
         {#if values.isTriggered}
-          <li class="text-red-500">{values.errorMessage}</li>
+          <li class="block">
+						<Message type="error">
+							{values.errorMessage}
+						</Message>
+					</li>
         {/if}
       {/each}
       {#each minmaxErrors as text}
-        <li class="text-red-500">{text}</li>
+        <li class="block">
+					<Message type="error">
+						{text}
+					</Message>
+				</li>
       {/each}
 			{#if errorMessage}
-				<li class="text-red-500">{errorMessage}</li>
+				<li class="block">
+					<Message type="error">
+						{errorMessage}
+					</Message>
+				</li>
 			{/if}
 			{#if successMessage}
-				<li class="text-green-500">{successMessage}</li>
+				<li class="block">
+					<Message type="success">
+						{successMessage}
+					</Message>
+				</li>
 			{/if}
     </ul>
   {/if}
