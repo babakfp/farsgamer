@@ -6,7 +6,7 @@
   <Input name="firstname" />
   <Input name="lastname" />
   <Input type="username" />
-  <Input type="phone" />
+  <Input type="tel" />
   <Input type="email" />
 
   <div class="col-span-full">

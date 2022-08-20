@@ -4,7 +4,6 @@
 	export let classField = ''
 	export let classContainer = ''
 	export let type = 'text'
-  let tagType = type
 	export let name = ''
   let tagName = name
 	export let value = ''
@@ -42,16 +41,15 @@
 		maxLen = 6
 	}
 
-  if (type === 'phone') {
-    tagType = 'tel'
-    if (name === '') name = 'phone'
+  if (type === 'tel') {
+    if (name === '') name = 'tel'
     if (placeholder === '') placeholder = 'شماره همراه'
     onlyNumbers = true
     if (!minLen) minLen = 11
     maxLen = 11
   }
 
-  if ( ['phone', 'username', 'password', 'email', 'coupon'].includes(type) ) alignLTR = true
+  if ( ['tel', 'username', 'password', 'email', 'coupon'].includes(type) ) alignLTR = true
 
   if (type === 'username') {
     tagName = 'username'
@@ -192,7 +190,7 @@
   }
 
   const onFocus =_=> {
-    if (type === 'phone' && value === '') {
+    if (type === 'tel' && value === '') {
       value = '09'
     }
   }
@@ -228,7 +226,6 @@
 		<input
 			class="input {classField}"
 			class:dir-ltr={alignLTR && value}
-			type={tagType}
 			name={tagName}
 			id={tagName}
 			{label}

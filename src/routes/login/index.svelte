@@ -20,7 +20,7 @@
 	
 	{#if state === 'first'}
 		<Form class="space-y-6 mt-4 p-6 bg-white rounded" on:submit={_=> state = 'second'}>
-      <Input type="phone" />
+      <Input type="tel" />
 			<Checkbox name="rememberme">مرا به خاطر داشته باش</Checkbox>
 			<button class="btn btn--submit btn--brand w-full">ادامه فرایند ثبت‌نام</button>
 		</Form>
