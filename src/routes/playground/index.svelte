@@ -2,7 +2,7 @@
 	import { Form, Checkbox, RadioboxWrapper, Radiobox } from './_lib'
 </script>
 
-<Form let:isFormValid>
+<Form let:isFormValid on:submit={()=> console.log('Used Component')}>
 	<Checkbox name="terms-and-conditions">
 		قوانین و مقررات
 	</Checkbox>

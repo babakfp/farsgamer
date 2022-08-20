@@ -22,6 +22,6 @@
 	}
 </script>
 
-<form class={className} on:submit|preventDefault>
+<form class={className} on:submit|preventDefault={()=> console.log('In Component')}>
 	<slot {isFormValid} />
 </form>
