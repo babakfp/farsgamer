@@ -41,8 +41,8 @@
 			<div class="py-2">
 				{#if $announcements.length > 0}
 					<ul class="max-h-66 scrollbar">
-						{#each $announcements as item}
-							<Item {...item} />
+						{#each $announcements as announcement}
+							<Item {...announcement} />
 						{/each}
 					</ul>
 				{:else}
