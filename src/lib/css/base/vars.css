@@ -3,6 +3,7 @@
 	:root {
 		--header: theme('spacing.16');
 		--page: theme('spacing.4');
+		--input: theme('spacing.11');
 	}
 
 	@screen sm {

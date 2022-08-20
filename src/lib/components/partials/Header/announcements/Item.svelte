@@ -8,7 +8,7 @@
 <li class="border-b border-gray-100 last:border-0">
 	<a class="grid p-4 duration-100 ease-in-out hover:bg-gray-100" href="/dashboard/announcements#{id}">
 		
-		<div class="flex items-center justify-between">
+		<div class="flex items-start justify-between">
 			<span class="font-bold text-sm line-clamp-1">{title}</span>
 			<span class="text-2xs text-gray-500">{date}</span>
 		</div>

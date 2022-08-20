@@ -20,7 +20,7 @@
 		{successMessage}
 		classField="!pl-32"
 	>
-		<button class="btn btn--light absolute top-1/2 -translate-y-1/2 left-1 w-28 origin-left text-sm active:scale-y-100 bg-white">{btnText}</button>
+		<button class="btn btn--light h-[calc(var(--input)-.5rem)] absolute top-1/2 -translate-y-1/2 left-1 w-28 origin-left text-sm active:scale-y-100 bg-white">{btnText}</button>
 		<svelte:fragment slot="description">
 			<slot name="description" />
 		</svelte:fragment>

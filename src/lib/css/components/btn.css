@@ -8,6 +8,10 @@
     @apply transform-scale-fix active:scale-95 hover:border-opacity-100 focus:border-opacity-100;
 	}
 
+	.btn--outline {
+		@apply bg-white;
+	}
+
 	/* Light */
 	.btn--light {
 		@apply text-gray-600;
