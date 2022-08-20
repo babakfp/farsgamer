@@ -6,6 +6,17 @@
 		&:not(textarea) {
 			@apply h-input;
 		}
+
+		/* Firefox */
+		&[type=number] {
+			-moz-appearance: textfield;
+		}
+		/* Chrome, Safari, Edge, Opera */
+		&[type=number]::-webkit-outer-spin-button,
+		&[type=number]::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
 	}
 
 	textarea.input {
