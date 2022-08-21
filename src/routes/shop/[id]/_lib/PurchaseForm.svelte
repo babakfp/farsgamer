@@ -55,12 +55,10 @@
 				<span class="pr-2 text-gray-400 text-sm">مبلغ پرداختی</span>
 				<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">٪۲۰</span>
 			</div>
-			<div class="relative flex items-center justify-end gap-2 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
-				<div class="flex items-center gap-1">
-					<span class="line-through text-gray-400 text-xs">200,000</span>
-					<span class="font-medium">100,000</span>
-				</div>
-				<span class="mt-1 text-xs">تومان</span>
+			<div class="relative flex items-center justify-end gap-1 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
+				<span class="line-through text-gray-400 text-xs">200,000</span>
+				<span class="font-medium">100,000</span>
+				<span class="text-xs">تومان</span>
 			</div>
 		</div>
 	
