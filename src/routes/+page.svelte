@@ -7,27 +7,7 @@
 	import PostCardSwiper from '$components/PostCardSwiper.svelte'
 	import posts from '$database/posts.js'
 	import StarRating from '$components/StarRating.svelte'
-
-	const giftCardImages = [
-		{ src: '/img/gift-card/play-station.png' },
-		{ src: '/img/gift-card/apple.png' },
-		{ src: '/img/gift-card/steam.png' },
-		{ src: '/img/gift-card/amazon.png' },
-		{ src: '/img/gift-card/xbox.png' },
-		{ src: '/img/gift-card/google-play.png' },
-	]
-
-	const mainPosters = [
-		{ imgSrc: '/img/home/home-main-poster (1).png' },
-		{ imgSrc: '/img/home/home-main-poster (2).png' },
-		{ imgSrc: '/img/home/home-main-poster (3).png' },
-		{ imgSrc: '/img/home/home-main-poster (4).png' },
-	]
-
-	const mainSecondPosters = [
-		{ imgSrc: '/img/home/home-second-poster (1).png' },
-		{ imgSrc: '/img/home/home-second-poster (2).png' },
-	]
+	import { giftCards, mainPosters, mainSecondPosters } from '$store/home.js'
 </script>
 
 <svelte:head>
@@ -39,40 +19,42 @@
 
 
   <!-- Main Posters -->
-	<section class="md:flex md:gap-4">
-		<div class="md:w-8/12 md:min-w-8/12 md:max-w-8/12">
+	{#if $mainPosters.length > 0 && $mainSecondPosters.length > 0}
+		<section class="md:flex md:gap-4">
+			<div class="md:w-8/12 md:min-w-8/12 md:max-w-8/12">
 
-      <!-- Right posters -->
-			<Swiper
-				class="swiper--gallery top-big-posters"
-				modules={[ Pagination, Autoplay ]}
-				effect="fade"
-				loop={true}
-				speed={600}
-				grabCursor={true}
-				pagination={{ clickable: true }}
-				autoplay={{ delay: 5000, disableOnInteraction: false }}
-        touchEventsTarget="container"
-      >
-				{#each mainPosters as poster}
-					<SwiperSlide>
-						<a class="link-img flex" href={poster.href || 'javascript:'}>
-							<img class="aspect-[2/1]" src={poster.imgSrc} alt>
-						</a>
-					</SwiperSlide>
+				<!-- Right posters -->
+				<Swiper
+					class="swiper--gallery top-big-posters"
+					modules={[ Pagination, Autoplay ]}
+					effect="fade"
+					loop={true}
+					speed={600}
+					grabCursor={true}
+					pagination={{ clickable: true }}
+					autoplay={{ delay: 5000, disableOnInteraction: false }}
+					touchEventsTarget="container"
+				>
+					{#each $mainPosters as poster}
+						<SwiperSlide>
+							<a class="link-img flex" href={poster.href}>
+								<img class="aspect-[2/1]" src={poster.src} alt>
+							</a>
+						</SwiperSlide>
+					{/each}
+				</Swiper>
+			</div>
+
+			<!-- Left posters -->
+			<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
+				{#each $mainSecondPosters as poster}
+					<a class="link-img flex" href={poster.href}>
+						<img class="w-full rounded aspect-[2/1]" src={poster.src} alt>
+					</a>
 				{/each}
-			</Swiper>
-		</div>
-
-    <!-- Left posters -->
-		<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
-			{#each mainSecondPosters as poster}
-				<a class="link-img flex" href={poster.href || 'javascript:'}>
-					<img class="w-full rounded aspect-[2/1]" src={poster.imgSrc} alt>
-				</a>
-			{/each}
-		</div>
-	</section>
+			</div>
+		</section>
+	{/if}
 
 
 	<!-- Best sale -->
@@ -81,36 +63,37 @@
 	</CardsSection>
 
 
-  <!-- Gift Cards -->
-	<CardsSection title="گـیفتــکارد ها">
-		<Swiper
-			class="swiper--card GiftCardSwiper swiper-prevent-content-shift"
-			modules={[ Pagination, Autoplay ]}
-			speed={600}
-			grabCursor={true}
-			pagination={{ clickable: true }}
-			autoplay={{ delay: 5000, disableOnInteraction: false }}
-			spaceBetween={16}
-			slidesPerView={2}
-			breakpoints={{
-				360:  { slidesPerView: 3, slidesPerGroup: 2 },
-				640:  { slidesPerView: 4, slidesPerGroup: 3 },
-				860: 	{ slidesPerView: 5, slidesPerGroup: 4 },
-				1024: { slidesPerView: 4, slidesPerGroup: 3 },
-				1140: { slidesPerView: 5, slidesPerGroup: 4 },
-				1280: { slidesPerView: 6, slidesPerGroup: 5 },
-			}}
-      touchEventsTarget="container"
-    >
-			{#each giftCardImages as img}
-				<SwiperSlide>
-					<a class="block hover:brightness-105 hover:opacity-95" href="javascript:">
-						<img class="rounded" src={img.src} alt />
-					</a>
-				</SwiperSlide>
-			{/each}
-		</Swiper>
-	</CardsSection>
+	{#if $giftCards.length > 0}
+		<CardsSection title="گـیفتــکارد ها">
+			<Swiper
+				class="swiper--card GiftCardSwiper swiper-prevent-content-shift"
+				modules={[ Pagination, Autoplay ]}
+				speed={600}
+				grabCursor={true}
+				pagination={{ clickable: true }}
+				autoplay={{ delay: 5000, disableOnInteraction: false }}
+				spaceBetween={16}
+				slidesPerView={2}
+				breakpoints={{
+					360:  { slidesPerView: 3, slidesPerGroup: 2 },
+					640:  { slidesPerView: 4, slidesPerGroup: 3 },
+					860: 	{ slidesPerView: 5, slidesPerGroup: 4 },
+					1024: { slidesPerView: 4, slidesPerGroup: 3 },
+					1140: { slidesPerView: 5, slidesPerGroup: 4 },
+					1280: { slidesPerView: 6, slidesPerGroup: 5 },
+				}}
+				touchEventsTarget="container"
+			>
+				{#each $giftCards as giftCard}
+					<SwiperSlide>
+						<a class="block hover:brightness-105 hover:opacity-95" href={giftCard.href}>
+							<img class="rounded" src={giftCard.src} alt />
+						</a>
+					</SwiperSlide>
+				{/each}
+			</Swiper>
+		</CardsSection>
+	{/if}
 
 
   <!-- User reviews -->

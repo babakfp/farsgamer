@@ -3,27 +3,27 @@
 	import Description from '$components/posttype/Description.svelte'
 	import Comments from '$components/posttype/Comments.svelte'
 	import { Tab, TabLabel, TabPanel } from '$components/Tab'
-	export let post
+	export let data
 </script>
 
-<Breadcrumb items={[['خانه', '/'], ['بلاگ', '/blog'], post.title]} />
+<Breadcrumb items={[['خانه', '/'], ['بلاگ', '/blog'], data.post.title]} />
 
 <!-- Hero section -->
 <section class="grid gap-4 mt-4 p-4 pb-6 bg-white rounded xs:flex xs:items-center xs:pb-4 md:rounded">
-	<img class="w-full rounded xs:max-w-52" src={post.featuredImage} alt>
+	<img class="w-full rounded xs:max-w-52" src={data.post.featuredImage} alt>
 
 	<div class="grid gap-4 w-full px-4 lg:py-4">
-		<h1 class="text-lg font-bold lg:text-2xl">{post.title}</h1>
+		<h1 class="text-lg font-bold lg:text-2xl">{data.post.title}</h1>
 
 		<ul class="list-inside list-disc space-y-1 text-gray-500 text-sm">
 			<li>
 				<span>تاریخ انتشار:</span>
-				<span>{post.releaseDate}</span>
+				<span>{data.post.releaseDate}</span>
 			</li>
-			{#if post.modifyDate}
+			{#if data.post.modifyDate}
 				<li>
 					<span>تاریخ بروزرسانی:</span>
-					<span>{post.modifyDate}</span>
+					<span>{data.post.modifyDate}</span>
 				</li>
 			{/if}
 		</ul>
@@ -34,7 +34,7 @@
 <Tab class="mt-8">
 	<svelte:fragment slot="tab">
 		<TabLabel title="توضیحات" hash="description" />
-		<TabLabel title="نظرات" hash="comments" count={post.comments?.length} />
+		<TabLabel title="نظرات" hash="comments" count={data.post.comments?.length} />
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
@@ -44,7 +44,7 @@
 			</div>
 		</TabPanel>
 		<TabPanel class="!p-0 !bg-transparent" hash="comments">
-			<Comments items={post.comments} />
+			<Comments items={data.post.comments} />
 		</TabPanel>
 	</svelte:fragment>
 </Tab>

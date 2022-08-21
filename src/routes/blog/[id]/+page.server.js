@@ -1,13 +1,11 @@
 import posts from '$database/posts.js'
 
-export async function GET({ params }) {
+export async function load({ params }) {
 	const post = posts.find(item => item.id === Number(params.id))
 
 	if (post) {
-    return {
-      body: { post }
-    }
+    return { post }
   }
 
-  return { status: 404 }
+  throw error (404, 'Not found')
 }

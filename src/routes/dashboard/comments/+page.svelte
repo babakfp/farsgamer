@@ -1,8 +1,8 @@
 <script>
 	import { onMount } from 'svelte'
 	import { Tab, TabLabel, TabPanel } from '$components/Tab'
-	import CommentItem from './_lib/CommentItem.svelte'
-	import CommentWithReply from './_lib/CommentWithReply.svelte'
+	import CommentItem from '../_lib/CommentItem.svelte'
+	import CommentWithReply from '../_lib/CommentWithReply.svelte'
 
 	onMount(_=> {
 		const accordions = document.querySelectorAll('.accordion')

@@ -1,15 +1,11 @@
 import products from '$database/products.js'
 
-export async function GET({ params }) {
+export async function load({ params }) {
 	const item = products.find(product => product.id === Number(params.id))
 
 	if (item) {
-    return {
-      body: { product: item }
-    }
+    return { product: item }
   }
 
-  return {
-    status: 404
-  }
+  throw error (404, 'Not found')
 }

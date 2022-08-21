@@ -2,17 +2,17 @@
 	import { writable } from 'svelte/store'
 	import { cartItems } from '$store/cart.js'
 	import { Form, Input, Checkbox, RadioboxWrapper, Radiobox } from '$components/Form'
-	export let product
+	export let data
 	let fastDelivery
-	let accountCategory = writable(product.accountCategories[0].title)
+	let accountCategory = writable(data.product.accountCategories[0].title)
 	let accountEmail = ''
 	let accountPassword = ''
 
 	$: cartData = {
-		id: product.id,
-		title: product.title,
-		src: product.images[0],
-		price: product.price,
+		id: data.product.id,
+		title: data.product.title,
+		src: data.product.images[0],
+		price: data.product.price,
 		account: {
 			category: accountCategory,
 			email: accountEmail,
@@ -21,7 +21,7 @@
 		fastDelivery,
 	}
 
-	$: itemAlreadyInCart = $cartItems.filter(item => item.id === product.id).length > 0
+	$: itemAlreadyInCart = $cartItems.filter(item => item.id === data.product.id).length > 0
 </script>
 
 <Form class="grid gap-8 mt-5 p-6 bg-white rounded md:mt-8">
@@ -31,7 +31,7 @@
 		<RadioboxWrapper class="flex flex-wrap gap-x-8 gap-y-2 lg:flex lg:justify-start"
 			name="account-categories" bind:selected={accountCategory}
 		>
-			{#each product.accountCategories as category (category.id)}
+			{#each data.product.accountCategories as category (category.id)}
 				<Radiobox value={category.title}>
 					{category.title}
 				</Radiobox>
