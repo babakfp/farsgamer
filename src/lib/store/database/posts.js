@@ -1,24 +1,24 @@
 export const comments = [
   {
-    id: 1,
+    id: 3,
     firstname: 'محمد',
     lastname: 'حسینی',
     content: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.',
-    date: '1401-03-20',
+    date: '1401/03/20',
   },
   {
     id: 2,
     firstname: 'رضا',
     lastname: 'پاک زاده',
     content: 'چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.',
-    date: '1401-03-22',
+    date: '1401/03/22',
   },
   {
-    id: 3,
+    id: 1,
     firstname: 'محسن',
     lastname: 'حسین زاده',
     content: 'در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.',
-    date: '1401-03-24',
+    date: '1401/03/24',
   },
 ]
 
@@ -29,7 +29,7 @@ export default [
 		featuredImage: '/img/post (11).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 12,
@@ -37,7 +37,7 @@ export default [
 		featuredImage: '/img/post (12).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 1,
@@ -45,7 +45,7 @@ export default [
 		featuredImage: '/img/post (1).png',
 		releaseDate: '۱۰ روز پیش',
 		modifyDate: '۲ روز پیش',
-		comments: comments,
+		comments,
 	},
 	{
 		id: 2,
@@ -53,7 +53,7 @@ export default [
 		featuredImage: '/img/post (2).png',
 		releaseDate: '۲۳ بهمن ۱۴۰۰',
 		modifyDate: '۲۴ بهمن ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
 	{
 		id: 3,
@@ -67,7 +67,7 @@ export default [
 		featuredImage: '/img/post (4).png',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 5,
@@ -75,7 +75,7 @@ export default [
 		featuredImage: '/img/post (5).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 8,
@@ -83,7 +83,7 @@ export default [
 		featuredImage: '/img/post (8).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 9,
@@ -91,7 +91,7 @@ export default [
 		featuredImage: '/img/post (9).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 6,
@@ -99,7 +99,7 @@ export default [
 		featuredImage: '/img/post (6).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 14,
@@ -107,7 +107,7 @@ export default [
 		featuredImage: '/img/post (14).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 10,
@@ -115,7 +115,7 @@ export default [
 		featuredImage: '/img/post (10).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 15,
@@ -123,7 +123,7 @@ export default [
 		featuredImage: '/img/post (15).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 7,
@@ -131,7 +131,7 @@ export default [
 		featuredImage: '/img/post (7).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
   {
 		id: 13,
@@ -139,6 +139,6 @@ export default [
 		featuredImage: '/img/post (13).jpg',
 		releaseDate: '۱۷ مرداد ۱۴۰۰',
 		modifyDate: '۲۰ مرداد ۱۴۰۰',
-		comments: comments,
+		comments,
 	},
 ]
