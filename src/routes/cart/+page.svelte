@@ -7,7 +7,7 @@
 	import CartEmpty from './_lib/CartEmpty.svelte'
 	import PriceItem from './_lib/PriceItem.svelte'
 	import PaymentGateway from './_lib/PaymentGateway.svelte'
-	import { numberToPrice, priceToNumber } from '$utilities/helpers-price.js'
+	import { numberToPrice, priceToNumber } from '$utilities/helpers'
 
 	let useWallet = false
 	let subtotal = 0
