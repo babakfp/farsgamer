@@ -11,7 +11,7 @@ const comments = postComments.filter((post, i) => {
   return post
 })
 
-export default [
+export const products = [
 	{
 		id: 1,
 		title: 'پک فورست لجند | Forst Legends pack',

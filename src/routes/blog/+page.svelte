@@ -1,5 +1,5 @@
 <script>
-	import posts from '$database/posts.js'
+	import { posts } from '$database/posts.js'
 	import PostCard from '$components/PostCard.svelte'
 	import Pagination from '$components/Pagination.svelte'
 </script>

@@ -1,4 +1,4 @@
-import products from '$database/products.js'
+import { products } from '$database/products.js'
 
 export async function load({ params }) {
 	const item = products.find(product => product.id === Number(params.id))

@@ -22,7 +22,7 @@ export const comments = [
   },
 ]
 
-export default [
+export const posts = [
   {
 		id: 11,
 		title: 'تاریخ برگزاری رویداد PC GAME SHOW 2022 اعلام شد',

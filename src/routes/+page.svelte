@@ -5,7 +5,7 @@
 	import ImgShadowSelf from '$components/ImgShadowSelf.svelte'
 	import ProductCardSwiper from '$components/ProductCardSwiper.svelte'
 	import PostCardSwiper from '$components/PostCardSwiper.svelte'
-	import posts from '$database/posts.js'
+	import { posts } from '$database/posts.js'
 	import StarRating from '$components/StarRating.svelte'
 	import { giftCards, mainPosters, mainSecondPosters } from '$store/home.js'
 </script>
