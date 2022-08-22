@@ -1,7 +1,6 @@
 <script>
 	import { page } from '$app/stores'
 	import { dev } from '$app/env'
-	console.log($page);
 </script>
 
 <svelte:head>

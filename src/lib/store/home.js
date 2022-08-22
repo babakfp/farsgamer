@@ -9,14 +9,13 @@ export const giftCards = readable([
 	{ src: '/img/gift-card/google-play.png', 	href: 'javascript:' },
 ])
 
-export const mainPosters = readable([
-	{ src: '/img/home/home-main-poster (1).png', href: 'javascript:' },
-	{ src: '/img/home/home-main-poster (2).png', href: 'javascript:' },
-	{ src: '/img/home/home-main-poster (3).png', href: 'javascript:' },
-	{ src: '/img/home/home-main-poster (4).png', href: 'javascript:' },
+export const bigPosterImages = readable([
+	{ src: '/img/home/posters/big (1).jpg', href: 'javascript:' },
+	{ src: '/img/home/posters/big (2).jpg', href: 'javascript:' },
+	{ src: '/img/home/posters/big (3).jpg', href: 'javascript:' },
 ])
 
-export const mainSecondPosters = readable([
-	{ src: '/img/home/home-second-poster (1).png', href: 'javascript:' },
-	{ src: '/img/home/home-second-poster (2).png', href: 'javascript:' },
+export const smallPosterImages = readable([
+	{ src: '/img/home/posters/small (1).jpg', href: 'javascript:' },
+	{ src: '/img/home/posters/small (2).jpg', href: 'javascript:' },
 ])

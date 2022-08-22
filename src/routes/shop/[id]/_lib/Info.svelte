@@ -6,9 +6,9 @@
 	export let coins
 </script>
 
-<div class="relative w-full mt-5 sm:mt-6 p-6 bg-white rounded md:order-1 md:mt-0">
+<div class="relative h-full p-6 bg-white rounded">
 
-	<h1 class="font-bold">{title}</h1>
+	<h1 class="font-bold font-dana-en">{title}</h1>
 
 	<div class="flex items-center gap-2 mt-2">
 		<StarRating {rating} />
@@ -44,7 +44,5 @@
 		<li><p class="inline">لطفا قبل از ثبت سفارش, تایید دو مرحله‌ای اکانت خود را غیرفعال کنید.</p></li>
 		<li><p class="inline">لطفا قبل از خرید, توضیحات محصول را به درستی مطالعه کنید.</p></li>
 	</ul>
-
-	<div class="-z-1 absolute w-full h-full -bottom-2 -left-2 bg-gray-200 rounded 2xl:-bottom-4 2xl:-left-4"></div>
 
 </div>

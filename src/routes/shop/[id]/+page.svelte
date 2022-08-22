@@ -1,5 +1,4 @@
 <script>
-	import Gallery from './_lib/Gallery.svelte'
 	import Info from './_lib/Info.svelte'
 	import PurchaseForm from './_lib/PurchaseForm.svelte'
 
@@ -12,6 +11,7 @@
 	import Comments from '$components/posttype/Comments.svelte'
 	import CommentForm from '$components/posttype/CommentForm.svelte'
 	import { Tab, TabLabel, TabPanel } from '$components/Tab'
+	import { products } from '$database/products.js'
 
 	export let data
 </script>
@@ -20,8 +20,9 @@
 	<title>عنوان محصول</title>
 </svelte:head>
 
-<section class="md:flex md:items-center">
-	<Gallery images={data.product.images} />
+<section class="grid gap-page md:grid-cols-[auto_1fr] md:items-center md:gap-page">
+	<img class="mx-auto aspect-[16/9] rounded md:hidden xl:block xl:max-w-xl" src={data.product.poster} alt />
+	<img class="mx-auto aspect-[3/4] rounded hidden md:block md:max-w-60 xl:hidden" src={data.product.thumb} alt />
 	<Info title={data.product.title} rating={data.product.rating} ratingCount={data.product.ratingCount} coins={data.product.coins} />
 </section>
 
@@ -50,8 +51,10 @@
 	</svelte:fragment>
 </Tab>
 
-<div class="mt-8 xl:mt-12">
-	<CardsSection title="محصولات مرتبط">
-		<ProductCardSwiper />
-	</CardsSection>
-</div>
+{#if data.relatedProducts}
+	<div class="mt-8 xl:mt-12">
+		<CardsSection title="محصولات مرتبط">
+			<ProductCardSwiper products={data.relatedProducts} />
+		</CardsSection>
+	</div>
+{/if}

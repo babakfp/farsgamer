@@ -1,41 +1,31 @@
 <script>
-	export let prevLink = 'javascript:'
-	export let nextLink = 'javascript:'
+	import { range } from '$utilities/helpers'
+	export let maxNumberOfPage
+	export let currentPageNumber
+	export let baseUrl
 </script>
 
 <div class="flex items-center justify-center gap-4 mt-12">
 
-	{#if prevLink}
-		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href={prevLink}>
+	{#if currentPageNumber !== 1}
+		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="{baseUrl}?page={currentPageNumber - 1}">
 			<i class="icon-angle-double-small-right"></i>
 		</a>
-
-		<hr class="h-6 border-t-0 border-r-2 border-dashed border-gray-200">
 	{/if}
 
-  <!-- svelte-ignore a11y-invalid-attribute -->
 	<ul class="flex items-center gap-2">
-    <li>
-			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">1</a>
-		</li>
-		<li>
-			<a class="btn btn--gray btn--outline h-10 w-10 p-2 border-0 text-brand font-bold pointer-events-none" href="javascript:">2</a>
-		</li>
-		<li>
-			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">3</a>
-		</li>
-		<li class="flex items-center justify-center h-10 w-10 text-gray-400">
-			<i class="icon-menu-dots"></i>
-		</li>
-		<li>
-			<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="javascript:">9</a>
-		</li>
+		{#each range(1, maxNumberOfPage) as pageNumber}
+			{@const isCurrentPage = currentPageNumber === pageNumber}
+			<li>
+				<a class="btn btn--outline h-10 w-10 p-2 {isCurrentPage && 'bg-brand text-white font-bold pointer-events-none'}" href="{baseUrl}?page={pageNumber}">
+					{pageNumber}
+				</a>
+			</li>
+		{/each}
 	</ul>
 
-	{#if nextLink}
-		<hr class="h-6 border-t-0 border-r-2 border-dashed border-gray-200">
-
-		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href={nextLink}>
+	{#if currentPageNumber !== maxNumberOfPage && currentPageNumber < maxNumberOfPage}
+		<a class="btn btn--gray btn--outline h-10 w-10 p-2" href="{baseUrl}?page={currentPageNumber + 1}">
 			<i class="icon-angle-double-small-left"></i>
 		</a>
 	{/if}

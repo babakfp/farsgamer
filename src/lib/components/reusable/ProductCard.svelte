@@ -1,4 +1,9 @@
 <script>
+	export let id
+	export let thumb
+	export let title
+	export let price
+	
 	export let inStock = true
 	export let specialDiscount = false
 	export let lazyLoading = false
@@ -27,10 +32,10 @@
 	}
 </script>
 
-<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out outline-card" href="/shop/1">
+<a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out outline-card" href="/shop/{id}">
 
 	<div class="relative rounded overflow-hidden">
-		<img class="aspect-square" src="/img/products/product-thumb (1).png" alt loading={lazyLoading && 'lazy'}>
+		<img class="aspect-[3/4]" src={thumb} alt loading={lazyLoading && 'lazy'}>
 
 		{#if inStock === false}
 			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
@@ -42,7 +47,9 @@
 	<span class="absolute top-0 left-0 py-1 px-3 bg-red-400 text-white rounded-r-sm rounded-bl-[2px] rounded-tl text-xs">٪۲۰</span>
 	
 	<div class="py-4 px-2">
-		<h3 class="text-sm font-bold line-clamp-1">گیف کارد 20 دلاری استیم</h3>
+		<h3 class="text-sm font-bold line-clamp-1">
+			{title}
+		</h3>
 	</div>
 
 	<hr class="-mx-2 border-gray-100">
@@ -51,8 +58,14 @@
 		{#if inStock === false}
 			<span>بدونـ قیمتــ</span>
 		{:else}
-			<span class="line-through text-gray-400 text-xs">200,000</span>
-			<span class="font-medium">100,000</span>
+			{#if price.afterDiscount}
+				<span class="line-through text-gray-400 text-xs">
+					{price.beforeDiscount}
+				</span>
+			{/if}
+			<span class="font-medium">
+				{price.afterDiscount || price.beforeDiscount}
+			</span>
 			<span class="text-xs">تومان</span>
 			<!-- <span>قیمتــ متغیـر</span> -->
 		{/if}

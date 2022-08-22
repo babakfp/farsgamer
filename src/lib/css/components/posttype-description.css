@@ -1,28 +1,30 @@
 @layer components {
 	
 	.posttype-description {
-		@apply leading-7;
+		@apply leading-6 text-sm xl:text-base xl:leading-7;
 
-		*:not(:last-child):not(li) { @apply mb-4 }
+		*:not(:first-child) {
+			@apply mt-4;
+		}
 
 		p { @apply indent-4 }
 
-		a { @apply break-words text-brand hover:underline }
+		a { @apply break-words text-brand }
 
-		h2, h3, h4, h5, h6 { @apply mt-8 font-semibold }
-		h2 { @apply text-xl sm:text-2xl }
-		h3 { @apply text-lg sm:text-xl }
-		h4 { @apply text-base sm:text-lg }
-		h5 { @apply text-sm sm:text-base }
-		h6 { @apply text-xs sm:text-sm }
+		h2, h3, h4, h5, h6 { &:not(:first-child) { @apply mt-8 } }
+		h2 { @apply text-xl }
+		h3 { @apply text-lg }
+		h4 { @apply text-base }
+		h5 { @apply text-sm }
+		h6 { @apply text-xs }
 
 		img, video { @apply mx-auto rounded }
 
 		ul { @apply list-disc }
 		ol { @apply list-decimal }
-		ul, ol { @apply list-inside;
-			ul, ol { @apply mr-5 }
-		}
+		ul, ol { @apply list-inside marker:text-gray-400 marker:text-xs;
+			ul, ol { @apply mr-5 !mt-0 } }
+		li { @apply !m-0 }
 
 		hr { @apply opacity-25 }
 	}

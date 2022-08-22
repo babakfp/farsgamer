@@ -11,8 +11,8 @@
 	$: cartData = {
 		id: data.product.id,
 		title: data.product.title,
-		src: data.product.images[0],
-		price: data.product.price,
+		src: data.product.thumb,
+		price: data.product.price.afterDiscount || data.product.price.beforeDiscount,
 		account: {
 			category: accountCategory,
 			email: accountEmail,
@@ -56,8 +56,14 @@
 				<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">٪۲۰</span>
 			</div>
 			<div class="relative flex items-center justify-end gap-1 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
-				<span class="line-through text-gray-400 text-xs">200,000</span>
-				<span class="font-medium">100,000</span>
+				{#if data.product.price.afterDiscount}
+					<span class="line-through text-gray-400 text-xs">
+						{data.product.price.beforeDiscount}
+					</span>
+				{/if}
+				<span class="font-medium">
+					{data.product.price.afterDiscount || data.product.price.beforeDiscount}
+				</span>
 				<span class="text-xs">تومان</span>
 			</div>
 		</div>

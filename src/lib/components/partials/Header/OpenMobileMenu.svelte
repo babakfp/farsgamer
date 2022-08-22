@@ -10,7 +10,7 @@
 </div>
 
 <style lang="postcss">
-	:global(body.main-header) button {
+	:global(body.main-header) div {
 		@apply lg:hidden !important;
 	}
 </style>

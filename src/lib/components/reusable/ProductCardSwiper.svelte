@@ -3,9 +3,9 @@
 	import { Pagination, Autoplay } from 'swiper'
 	import ProductCard from '$components/ProductCard.svelte'
 
+	export let products
   export let lazyLoading = false
 	export let specialDiscount = false
-	// export let products = []
 </script>
 
 <Swiper class="swiper--card ProductCardSwiper swiper-prevent-content-shift"
@@ -24,9 +24,15 @@
   touchEventsTarget="container"
 >
 
-	{#each [...Array(7).keys()] as _}
+	{#each products as product}
     <SwiperSlide>
-      <ProductCard {specialDiscount} {lazyLoading} />
+      <ProductCard
+				id={product.id}
+				thumb={product.thumb}
+				title={product.title}
+				price={product.price}
+				{specialDiscount} {lazyLoading}
+			/>
     </SwiperSlide>
 	{/each}
 

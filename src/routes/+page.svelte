@@ -6,8 +6,12 @@
 	import ProductCardSwiper from '$components/ProductCardSwiper.svelte'
 	import PostCardSwiper from '$components/PostCardSwiper.svelte'
 	import { posts } from '$database/posts.js'
+	import { products } from '$database/products.js'
 	import StarRating from '$components/StarRating.svelte'
-	import { giftCards, mainPosters, mainSecondPosters } from '$store/home.js'
+	import { giftCards, bigPosterImages, smallPosterImages } from '$store/home.js'
+
+	const bestSellingProducts = products.filter(product => product.price.afterDiscount === undefined)
+	const discountedProducts = products.filter(product => product.price.afterDiscount !== undefined)
 </script>
 
 <svelte:head>
@@ -19,7 +23,7 @@
 
 
   <!-- Main Posters -->
-	{#if $mainPosters.length > 0 && $mainSecondPosters.length > 0}
+	{#if $bigPosterImages.length > 0 && $smallPosterImages.length > 0}
 		<section class="md:flex md:gap-4">
 			<div class="md:w-8/12 md:min-w-8/12 md:max-w-8/12">
 
@@ -35,10 +39,10 @@
 					autoplay={{ delay: 5000, disableOnInteraction: false }}
 					touchEventsTarget="container"
 				>
-					{#each $mainPosters as poster}
+					{#each $bigPosterImages as poster}
 						<SwiperSlide>
 							<a class="link-img flex" href={poster.href}>
-								<img class="aspect-[2/1]" src={poster.src} alt>
+								<img class="aspect-[16/9]" src={poster.src} alt>
 							</a>
 						</SwiperSlide>
 					{/each}
@@ -47,9 +51,9 @@
 
 			<!-- Left posters -->
 			<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
-				{#each $mainSecondPosters as poster}
+				{#each $smallPosterImages as poster}
 					<a class="link-img flex" href={poster.href}>
-						<img class="w-full rounded aspect-[2/1]" src={poster.src} alt>
+						<img class="w-full rounded aspect-[16/9]" src={poster.src} alt>
 					</a>
 				{/each}
 			</div>
@@ -59,7 +63,7 @@
 
 	<!-- Best sale -->
 	<CardsSection title="پرفروشـترین هـفته" href="javascript:">
-		<ProductCardSwiper />
+		<ProductCardSwiper products={bestSellingProducts} />
 	</CardsSection>
 
 
@@ -86,7 +90,7 @@
 			>
 				{#each $giftCards as giftCard}
 					<SwiperSlide>
-						<a class="block hover:brightness-105 hover:opacity-95" href={giftCard.href}>
+						<a class="link-img" href={giftCard.href}>
 							<img class="rounded" src={giftCard.src} alt />
 						</a>
 					</SwiperSlide>
@@ -152,9 +156,9 @@
 	</section>
 
 
-	<!-- Discounted products -->
+	<!-- Discounted -->
 	<CardsSection title="تـخـفیف ویــژه" href="javascript:">
-		<ProductCardSwiper specialDiscount={true} lazyLoading={true} />
+		<ProductCardSwiper products={discountedProducts} specialDiscount={true} lazyLoading={true} />
 	</CardsSection>
 
 
