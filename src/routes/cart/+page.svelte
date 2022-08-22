@@ -66,7 +66,7 @@
 				{/if}
 			
 				<ul>
-					<PriceItem title="جمع جزء" price="200,000" />
+					<PriceItem title="جمع جزء" price={numberToPrice(subtotal)} />
 					{#if $cartDiscountInUse}
 						<PriceItem title="تخفیف" price={numberToPrice($cartDiscountInUse.value)} negative={true}>
 							<button class="btn p-0 h-6 w-6 hover:text-red-500" slot="after-price" on:click={_=> cartDiscountInUse.set(null)}>
@@ -77,7 +77,7 @@
 					{#if useWallet}
 						<PriceItem title="استفاده از کیف پول" price={$walletBalance} negative={true} />
 					{/if}
-					<PriceItem title="جمع کل" price={total} />
+					<PriceItem title="جمع کل" price={numberToPrice(total)} />
 				</ul>
 		
 				<Checkbox class="text-sm" name="use-wallet" bind:checked={useWallet}>استفاده از کیف پول <span class="text-xs">({$walletBalance} تومان)</span></Checkbox>

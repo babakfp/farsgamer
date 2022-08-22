@@ -11,10 +11,10 @@
 	$: cartData = {
 		id: data.product.id,
 		title: data.product.title,
-		src: data.product.thumb,
+		thumb: data.product.thumb,
 		price: data.product.price.afterDiscount || data.product.price.beforeDiscount,
 		account: {
-			category: accountCategory,
+			category: $accountCategory,
 			email: accountEmail,
 			password: accountPassword,
 		},

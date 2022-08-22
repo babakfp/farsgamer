@@ -5,8 +5,8 @@
 <div class="bg-gray-50 rounded p-3 accordion">
 	<div class="flex items-center justify-between">
 		<div class="flex items-center gap-4 sm:w-full">
-			<img class="w-20 h-20 rounded" src="/img/products/product-thumb (1).png" alt loading="lazy">
-			
+			<img class="w-20 rounded" src="/img/products/fortnite/1-thumb.jpg" alt loading="lazy">
+
 			<div class="grid gap-4 justify-items-start sm:flex sm:items-center sm:justify-between sm:w-full">
 				<h3 class="font-medium text-sm sm:text-base">گیف کارد steam</h3>
 				

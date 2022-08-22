@@ -4,7 +4,7 @@ export const cartItems = writable('cartItems', [
 	// {
 	// 	id: 1,
 	// 	title: 'گیف کارد 20 دلاری استیم',
-	// 	src: '/img/products/product-thumb (1).png',
+	// 	thumb: '/img/products/fortnite/thumb-1.jpg',
 	// 	price: '100,000',
 	// 	account: {
 	// 		category: 'PlayStation',
