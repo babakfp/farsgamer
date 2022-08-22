@@ -1,7 +1,7 @@
 <script>
 	import { writable } from 'svelte/store'
 	import { cartItems } from '$store/cart.js'
-	import { Form, Input, Checkbox, RadioboxWrapper, Radiobox } from '$components/Form'
+	import { Form, Input, Checkbox, RadioboxWrapper, RadioButton } from '$components/Form'
 	export let data
 	let fastDelivery
 	let accountCategory = writable(data.product.accountCategories[0].title)
@@ -28,13 +28,13 @@
 
   <div>
     <label class="mb-3" for="category">اکانتی که وارد میکنید کدام دسته می‌باشد؟</label>
-		<RadioboxWrapper class="flex flex-wrap gap-x-8 gap-y-2 lg:flex lg:justify-start"
+		<RadioboxWrapper class="flex flex-wrap gap-2 lg:flex lg:justify-start"
 			name="account-categories" bind:selected={accountCategory}
 		>
 			{#each data.product.accountCategories as category (category.id)}
-				<Radiobox value={category.title}>
+				<RadioButton value={category.title}>
 					{category.title}
-				</Radiobox>
+				</RadioButton>
 			{/each}
 		</RadioboxWrapper>
   </div>
