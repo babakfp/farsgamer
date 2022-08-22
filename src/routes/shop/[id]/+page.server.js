@@ -1,3 +1,4 @@
+import { error } from '@sveltejs/kit'
 import { products } from '$database/products.js'
 
 export async function load({ params }) {
@@ -7,5 +8,5 @@ export async function load({ params }) {
     return { product: item }
   }
 
-  throw error (404, 'Not found')
+  throw error(404, 'Not found')
 }

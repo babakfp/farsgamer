@@ -8,7 +8,7 @@
 	<title>{$page.status}</title>
 </svelte:head>
 
-<div class="py-32 -mb-4">
+<div class="py-20 -mb-4">
 	<h1 class="text-center font-bold text-4xl">{$page.status}</h1>
 
 	{#if $page.status === 404}

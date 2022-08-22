@@ -30,5 +30,5 @@ export const dateSince = date =>
 	return `${Math.floor(seconds)} ثانیه پیش`
 }
 
-// const aDay = 24 * 60 * 60 * 1000
-// dateSince( new Date(Date.now()-aDay) )
+// const oneDay = 24 * 60 * 60 * 1000
+// dateSince( new Date(Date.now()-oneDay) )
