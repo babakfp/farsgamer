@@ -7,11 +7,9 @@
 	
 	// Content
 	import { onMount } from 'svelte'
-	import Description from '$components/posttype/Description.svelte'
-	import Comments from '$components/posttype/Comments.svelte'
-	import CommentForm from '$components/posttype/CommentForm.svelte'
-	import { Tab, TabLabel, TabPanel } from '$components/Tab'
 	import { products } from '$database/products.js'
+	import { Tab, TabLabel, TabPanel } from '$components/Tab'
+	import { Description, Comments, CommentForm } from '$components/PostType'
 
 	export let data
 </script>

@@ -1,7 +1,6 @@
 <script>
 	import Breadcrumb from '$components/Breadcrumb.svelte'
-	import Description from '$components/posttype/Description.svelte'
-	import Comments from '$components/posttype/Comments.svelte'
+	import { Description, Comments } from '$components/PostType'
 	import { Tab, TabLabel, TabPanel } from '$components/Tab'
 	export let data
 </script>
