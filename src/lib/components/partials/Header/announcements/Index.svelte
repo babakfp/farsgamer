@@ -1,5 +1,5 @@
 <script>
-	import { browser } from '$app/env'
+	import { browser } from '$app/environment'
 	import { navigating } from '$app/stores'
 	import OutClick from 'svelte-outclick'
 	import Item from './Item.svelte'
