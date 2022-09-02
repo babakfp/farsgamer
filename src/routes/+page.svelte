@@ -2,7 +2,6 @@
 	import { Swiper, SwiperSlide } from 'swiper/svelte'
 	import { Pagination, Autoplay } from 'swiper'
 	import CardsSection from '$components/CardsSection.svelte'
-	import ImgShadowSelf from '$components/ImgShadowSelf.svelte'
 	import ProductCardSwiper from '$components/ProductCardSwiper.svelte'
 	import PostCardSwiper from '$components/PostCardSwiper.svelte'
 	import { posts } from '$database/posts.js'
@@ -170,8 +169,12 @@
 
 	<!-- Telegram and Instagram -->
 	<div class="flex justify-center gap-4">
-		<ImgShadowSelf class="max-w-64" classImg="aspect-[2/1] bg-gray-100" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" />
-		<ImgShadowSelf class="max-w-64" classImg="aspect-[2/1] bg-gray-100" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" />
+		<a class="block link-img" href="javascript:">
+			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" />
+		</a>
+		<a class="block link-img" href="javascript:">
+			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" />
+		</a>
 	</div>
 
 
@@ -183,10 +186,18 @@
 
   <!-- 4 posters -->
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (1).png" />
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (2).png" />
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (3).png" />
-		<ImgShadowSelf classImg="aspect-[142/125] bg-gray-100" src="/img/home/poster-1-4-width (4).png" />
+		<a class="block link-img" href="javascript:">
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (1).png" alt />
+		</a>
+		<a class="block link-img" href="javascript:">
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (2).png" alt />
+		</a>
+		<a class="block link-img" href="javascript:">
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (3).png" alt />
+		</a>
+		<a class="block link-img" href="javascript:">
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (4).png" alt />
+		</a>
 	</section>
 
 
