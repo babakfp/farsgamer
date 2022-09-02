@@ -6,6 +6,7 @@
 	export let canReply = false
 	export let isQuestion = false
 	export let headingTitle = 'ارسال نظر جدید'
+	export let isBuyer = false
 </script>
 
 <div class="p-8 bg-white rounded">

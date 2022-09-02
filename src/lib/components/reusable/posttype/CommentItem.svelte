@@ -26,19 +26,19 @@
 	<hr class="border-gray-100 border-dashed -mx-4 mt-2 pt-3">
 
 	<div class="flex items-center justify-between gap-2 whitespace-nowrap 4xs:gap-4">
-		<div class="flex flex-wrap items-center gap-2 text-gray-500 text-xs 4xs:gap-4">
-
+		<div class="flex flex-wrap items-center gap-2 w-full text-gray-500 text-xs">
       <span>{firstname} {lastname}</span>
-
-      {#if isBuyer}
-        <span class="py-0.5 px-2 bg-gray-100 rounded text-gray-600">خریدار</span>
-      {/if}
-
+			
+			{#if isBuyer}
+				<span class="py-1 px-2 bg-gray-50 rounded text-gray-600 text-2xs">خریدار</span>
+			{/if}
 			{#if rating}
-				<StarRating {rating} dirLtr={false} />
+				<div class="{canReply && 'absolute -left-0.5 -top-0.5'}">
+					<StarRating {rating} vertical={true} />
+				</div>
 			{/if}
 
-			<span class="mr-1">{date}</span>
+			<span class="mr-auto">{date}</span>
 		</div>
 		
 		{#if canReply}
@@ -47,4 +47,5 @@
 			</button>
 		{/if}
 	</div>
+
 </div>

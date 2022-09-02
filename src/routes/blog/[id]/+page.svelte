@@ -44,7 +44,7 @@
 			</div>
 		</TabPanel>
 		<TabPanel class="!p-0 !bg-transparent" hash="comments">
-			<Comments items={data.post.comments} />
+			<Comments items={data.post.comments} canReply={true} />
 		</TabPanel>
 	</svelte:fragment>
 </Tab>

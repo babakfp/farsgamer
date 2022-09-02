@@ -43,10 +43,10 @@
 			</div>
 		</TabPanel>
 		<TabPanel class="!p-0 !bg-transparent" hash="comments">
-			<Comments items={data.product.comments} />
+			<Comments items={data.product.comments} canReply={true} />
 		</TabPanel>
 		<TabPanel class="!p-0 !bg-transparent" hash="question-and-answer">
-			<Comments items={data.product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" canReply={false} isQuestion={true} />
+			<Comments items={data.product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" isQuestion={true} />
 		</TabPanel>
 	</svelte:fragment>
 </Tab>
