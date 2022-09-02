@@ -8,11 +8,10 @@
 <Breadcrumb items={[['خانه', '/'], ['بلاگ', '/blog'], data.post.title]} />
 
 <!-- Hero section -->
-<section class="grid gap-4 mt-4 p-4 pb-6 bg-white rounded xs:flex xs:items-center xs:pb-4 md:rounded">
-	<img class="w-full rounded xs:max-w-52" src={data.post.featuredImage} alt>
-
-	<div class="grid gap-4 w-full px-4 lg:py-4">
-		<h1 class="text-lg font-bold lg:text-2xl">{data.post.title}</h1>
+<section class="grid gap-4 mt-4 p-4 pb-6 bg-white rounded md:rounded">
+	<img class="w-full rounded max-w-lg mx-auto" src={data.post.featuredImage} alt>
+	<div class="grid gap-4 w-full px-4 max-w-lg mx-auto">
+		<h1 class="text-md font-bold dir-ltr lg:text-2xl">{data.post.title}</h1>
 
 		<ul class="list-inside list-disc space-y-1 text-gray-500 text-sm">
 			<li>
