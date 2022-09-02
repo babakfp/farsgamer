@@ -50,9 +50,9 @@
 	</Checkbox>
 
 	<div class="grid gap-8 xs:flex xs:flex-row-reverse xs:items-end xs:justify-between">
-		<div>
-			<div class="flex items-center justify-between">
-				<span class="pr-2 text-gray-400 text-sm">مبلغ پرداختی</span>
+		<div class="min-w-50">
+			<div class="flex items-center justify-between gap-8">
+				<span class="pr-2 pb-1 text-gray-400 text-xs">مبلغ پرداختی</span>
 				<span class="-mb-2 pt-2 pb-4 px-6 bg-red-400 rounded-t text-white text-xs font-bold">٪۲۰</span>
 			</div>
 			<div class="relative flex items-center justify-end gap-1 py-3 px-8 bg-gray-50 rounded shadow-b-sm text-lg">
