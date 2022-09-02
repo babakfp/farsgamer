@@ -33,7 +33,7 @@
 				<span class="py-1 px-2 bg-gray-50 rounded text-gray-600 text-2xs">خریدار</span>
 			{/if}
 			{#if rating}
-				<div class="{canReply && 'absolute -left-0.5 -top-0.5'}">
+				<div class="{canReply && 'absolute -right-1.5 top-4 sm:-right-4 sm:top-2'}">
 					<StarRating {rating} vertical={true} />
 				</div>
 			{/if}
