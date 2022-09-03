@@ -59,7 +59,7 @@ const generateProductData = ({ id, title, belongsTo, price, imgIndex }) => {
 		ratingCount: 450,
 		coins: Math.trunc( priceToNumber(price.afterDiscount || price.beforeDiscount) / 100 ),
 		comments,
-		questionsAndAnswers: postComments,
+		questionsAndAnswers: postComments.reverse(),
 		accountCategories: [
 			{
 				id: 1,
