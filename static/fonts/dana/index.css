@@ -1,89 +1,89 @@
 /* @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 50;
 	src: url('./woff2/Dana-Hairline.woff2') format('woff2'), url('./woff/Dana-Hairline.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 100;
 	src: url('./woff2/Dana-Thin.woff2') format('woff2'), url('./woff/Dana-Thin.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 200;
 	src: url('./woff2/Dana-ExtraLight.woff2') format('woff2'), url('./woff/Dana-UltraLight.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 300;
 	src: url('./woff2/Dana-Light.woff2') format('woff2'), url('./woff/Dana-Light.woff') format('woff');
 	font-style: normal;
   font-display: block;
 } */
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 400;
 	src: url('./woff2/Dana-Regular.woff2') format('woff2'), url('./woff/Dana-Regular.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 500;
 	src: url('./woff2/Dana-Medium.woff2') format('woff2'), url('./woff/Dana-Medium.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 600;
 	src: url('./woff2/Dana-SemiBold.woff2') format('woff2'), url('./woff/Dana-DemiBold.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 700;
 	src: url('./woff2/Dana-Bold.woff2') format('woff2'), url('./woff/Dana-Bold.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 /* @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 800;
 	src: url('./woff2/Dana-ExtraBold.woff2') format('woff2'), url('./woff/Dana-ExtraBold.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 900;
 	src: url('./woff2/Dana-Black.woff2') format('woff2'), url('./woff/Dana-Black.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 950;
 	src: url('./woff2/Dana-ExtraBlack.woff2') format('woff2'), url('./woff/Dana-ExtraBlack.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 980;
 	src: url('./woff2/Dana-Heavy.woff2') format('woff2'), url('./woff/Dana-Heavy.woff') format('woff');
 	font-style: normal;
   font-display: block;
 }
 @font-face {
-	font-family: dana;
+	font-family: "Dana";
 	font-weight: 990;
 	src: url('./woff2/Dana-Fat.woff2') format('woff2'), url('./woff/Dana-Fat.woff') format('woff');
 	font-style: normal;

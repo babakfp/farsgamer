@@ -1,7 +1,0 @@
-@layer components {
-
-	.link-img {
-		@apply hover:opacity-95 hover:brightness-105;
-	}
-
-}

@@ -1,89 +1,45 @@
 const colors = require('tailwindcss/colors')
 const tailwindCustomPlugins = require('./src/lib/utilities/tailwindCustomPlugins/index.cjs')
+const addons = require('tailwindcss-addons')
+
+const minMaxWidth = {
+	'4/12': '33.333333%',
+	'8/12': '66.666667%',
+}
 
 module.exports = {
+	presets: [ addons.presets ],
   content: ['./src/**/*.{html,svelte}'],
 	theme: {
 		extend: {
-			minWidth: theme => {
-        return {
-          ...theme('spacing'),
-          '4/12': '33.333333%',
-          '8/12': '66.666667%',
-        }
-      },
-			maxWidth: theme => {
-        return {
-          ...theme('spacing'),
-          '4/12': '33.333333%',
-          '8/12': '66.666667%',
-        }
-      },
-			minHeight: theme => theme('spacing'),
-			maxHeight: theme => theme('spacing'),
 			colors: {
 				gray: colors.neutral,
 				brand: {
 					DEFAULT: '#7666ff',
 					deep: '#614FFF',
 				},
-				red: {
-					DEFAULT: '#FF3838',
-				},
 				yellow: {
-					DEFAULT: '#FFBC00'
+					DEFAULT: '#FFBC00',
 				},
 			},
 			spacing: {
-				16: '4rem',
-				18: '4.5rem',
-				22: '5.5rem',
 				50: '12.5rem',
-				62: '15.5rem',
 				66: '16.5rem',
 				88: '22rem',
 				header: 'var(--header)',
 				page: 'var(--page)',
 				input: 'var(--input)',
 			},
-			zIndex: { 
-				1: '1',
-				2: '2',
-				3: '3',
-			},
-			scale: {
-				flip: '-1',
-        25: '.25',
-			},
-			blur: {
-				xs: '2px',
-				sm: '4px',
-			},
-			ringWidth: {
-        3: '3px',
-      },
+			minWidth: minMaxWidth,
+			maxWidth: minMaxWidth,
 			borderWidth: {
-				3: '3px',
 				12: '12px',
-			},
-			outlineOffset: {
-				'-2': '-2px',
-				'-4': '-4px',
-			},
-			fontSize: {
-				'2xs': ['0.625rem', { lineHeight: '1' }],
-			},
-			lineHeight: {
-				0: '0',
 			},
 			letterSpacing: {
 				1: '.25em',
 				2: '.5em',
 				3: '.75em',
 				4: '1em',
-			},
-			cursor: {
-				grab: 'grab',
 			},
 			contrast: {
 				105: '1.05',
@@ -114,22 +70,22 @@ module.exports = {
 			full: '9999px',
 		},
 		fontFamily: {
-      dana: [ 'dana' ],
+      dana: [ '"Dana"' ],
 		},
     fontWeight: {
-      hairline: 50,
-      thin: 100,
-      extralight: 200,
-      light: 300,
+      // hairline: 50,
+      // thin: 100,
+      // extralight: 200,
+      // light: 300,
       regular: 400,
       medium: 500,
       semibold: 600,
       bold: 700,
-      extrabold: 800,
-      black: 900,
-      extrablack: 950,
-      heavy: 980,
-      fat: 990,
+      // extrabold: 800,
+      // black: 900,
+      // extrablack: 950,
+      // heavy: 980,
+      // fat: 990,
     },
 		boxShadow: {
 			sm: '0 0 .5rem rgba(15 23 42 / 2%)',
@@ -143,5 +99,13 @@ module.exports = {
   plugins: [
 		require('@tailwindcss/line-clamp'),
     ...tailwindCustomPlugins,
+		addons.base,
+		addons.utilities.dir,
+		addons.utilities.drag,
+		addons.utilities.flip,
+		addons.utilities.hideShow,
+		addons.utilities.insetCenter,
+		addons.utilities.overflowUnset,
+		addons.components.linkImg,
 	],
 }

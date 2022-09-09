@@ -4,19 +4,13 @@
 		@apply bg-brand bg-opacity-10;
 	}
 
+	/* It's not good to use select-none because then it's impossible the deselect a select-all element */
   * {
-    /* It's not good to use select-none because then it's impossible the deselect a select-all element */
-		@apply select-none !outline-none;
-		-webkit-user-drag: none;
+		@apply select-none !outline-none drag-none;
   }
 
-  html,
 	body {
-		@apply h-full font-dana font-dana-fn;
-  }
-
-  html {
-		@apply scroll-smooth; 
+		@apply font-dana font-dana-fn;
   }
 
   body {
@@ -68,7 +62,7 @@
 	.icon-comment,
 	.icon-wallet
 	{
-		@apply scale-x-flip;
+		@apply flip-x;
 	}
 
 	svg {
