@@ -47,7 +47,7 @@
 				>
 					{#each $bigPosterImages as poster}
 						<SwiperSlide>
-							<a class="link-img flex" href={poster.href}>
+							<a class="img-hover flex" href={poster.href}>
 								<img class="aspect-[16/9]" src={poster.src} alt />
 							</a>
 						</SwiperSlide>
@@ -58,7 +58,7 @@
 			<!-- Left posters -->
 			<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
 				{#each $smallPosterImages as poster}
-					<a class="link-img flex" href={poster.href}>
+					<a class="img-hover flex" href={poster.href}>
 						<img class="w-full rounded aspect-[16/9]" src={poster.src} alt />
 					</a>
 				{/each}
@@ -96,7 +96,7 @@
 			>
 				{#each $giftCards as giftCard}
 					<SwiperSlide>
-						<a class="link-img" href={giftCard.href}>
+						<a class="img-hover" href={giftCard.href}>
 							<img class="rounded aspect-square" src={giftCard.src} alt loading="lazy" />
 						</a>
 					</SwiperSlide>
@@ -153,10 +153,10 @@
 
   <!-- 2 posters -->
 	<section class="grid gap-4 sm:grid-cols-2">
-    <a class="block link-img" href="javascript:">
+    <a class="block img-hover" href="javascript:">
 			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (1).png" alt loading="lazy">
 		</a>
-    <a class="block link-img" href="javascript:">
+    <a class="block img-hover" href="javascript:">
 			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (2).png" alt loading="lazy">
 		</a>
 	</section>
@@ -176,10 +176,10 @@
 
 	<!-- Telegram and Instagram -->
 	<div class="flex justify-center gap-4">
-		<a class="block link-img" href="javascript:">
+		<a class="block img-hover" href="javascript:">
 			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" loading="lazy" />
 		</a>
-		<a class="block link-img" href="javascript:">
+		<a class="block img-hover" href="javascript:">
 			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" loading="lazy" />
 		</a>
 	</div>
@@ -194,7 +194,7 @@
   <!-- 4 posters -->
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4 2xl:gap-8">
 		{#each posters4 as posterSrc}
-			<a class="group | relative block link-img" href="javascript:">
+			<a class="group | relative block img-hover" href="javascript:">
 				<img class="aspect-[142/125] rounded-[1.5rem] 2xl:blur 2xl:brightness-90" src={posterSrc} alt loading="lazy" />
 				<img class="aspect-[142/125] rounded-[1.5rem] | hidden absolute inset-center w-2/3 2xl:block | duration-200 group-hover:w-3/4 group-focus:w-3/4" src={posterSrc} alt loading="lazy" />
 			</a>
@@ -203,7 +203,7 @@
 
 
   <!-- Single poster -->
-	<a class="link-img flex" href="javascript:">
+	<a class="img-hover flex" href="javascript:">
 		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (2).png" alt loading="lazy">
 	</a>
 

@@ -106,6 +106,5 @@ module.exports = {
 		addons.utilities.hideShow,
 		addons.utilities.insetCenter,
 		addons.utilities.overflowUnset,
-		addons.components.linkImg,
 	],
 }
