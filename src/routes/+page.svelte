@@ -9,6 +9,13 @@
 	import StarRating from '$components/StarRating.svelte'
 	import { giftCards, bigPosterImages, smallPosterImages } from '$store/home.js'
 
+	const posters4 = [
+		'/img/home/poster-1-4-width (1).png',
+		'/img/home/poster-1-4-width (2).png',
+		'/img/home/poster-1-4-width (3).png',
+		'/img/home/poster-1-4-width (4).png',
+	]
+
 	const bestSellingProducts = products.filter(product => product.price.afterDiscount === undefined)
 	const discountedProducts = products.filter(product => product.price.afterDiscount !== undefined)
 </script>
@@ -186,18 +193,12 @@
 
   <!-- 4 posters -->
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
-		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (1).png" alt loading="lazy" />
-		</a>
-		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (2).png" alt loading="lazy" />
-		</a>
-		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (3).png" alt loading="lazy" />
-		</a>
-		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (4).png" alt loading="lazy" />
-		</a>
+		{#each posters4 as posterSrc}
+			<a class="group | relative block link-img" href="javascript:">
+				<img class="aspect-[142/125] rounded-[1.5rem] 2xl:blur 2xl:brightness-90" src={posterSrc} alt loading="lazy" />
+				<img class="aspect-[142/125] rounded-[1.5rem] | hidden absolute inset-center w-2/3 2xl:block | duration-200 group-hover:w-3/4 group-focus:w-3/4" src={posterSrc} alt loading="lazy" />
+			</a>
+		{/each}
 	</section>
 
 
