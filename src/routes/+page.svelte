@@ -192,7 +192,7 @@
 
 
   <!-- 4 posters -->
-	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4 2xl:gap-8">
 		{#each posters4 as posterSrc}
 			<a class="group | relative block link-img" href="javascript:">
 				<img class="aspect-[142/125] rounded-[1.5rem] 2xl:blur 2xl:brightness-90" src={posterSrc} alt loading="lazy" />
