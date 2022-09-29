@@ -90,7 +90,7 @@
 				{#each $giftCards as giftCard}
 					<SwiperSlide>
 						<a class="link-img" href={giftCard.href}>
-							<img class="rounded" src={giftCard.src} alt />
+							<img class="rounded aspect-square" src={giftCard.src} alt />
 						</a>
 					</SwiperSlide>
 				{/each}
