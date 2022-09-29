@@ -41,7 +41,7 @@
 					{#each $bigPosterImages as poster}
 						<SwiperSlide>
 							<a class="link-img flex" href={poster.href}>
-								<img class="aspect-[16/9]" src={poster.src} alt>
+								<img class="aspect-[16/9]" src={poster.src} alt />
 							</a>
 						</SwiperSlide>
 					{/each}
@@ -52,7 +52,7 @@
 			<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
 				{#each $smallPosterImages as poster}
 					<a class="link-img flex" href={poster.href}>
-						<img class="w-full rounded aspect-[16/9]" src={poster.src} alt>
+						<img class="w-full rounded aspect-[16/9]" src={poster.src} alt />
 					</a>
 				{/each}
 			</div>

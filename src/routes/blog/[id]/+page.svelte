@@ -9,7 +9,7 @@
 
 <!-- Hero section -->
 <section class="grid gap-4 mt-4 p-4 pb-6 bg-white rounded md:rounded">
-	<img class="w-full rounded max-w-lg mx-auto" src={data.post.featuredImage} alt>
+	<img class="w-full rounded max-w-lg mx-auto" src={data.post.featuredImage} alt />
 	<div class="grid gap-4 w-full px-4 max-w-lg mx-auto">
 		<h1 class="text-md font-bold dir-ltr lg:text-2xl">{data.post.title}</h1>
 
