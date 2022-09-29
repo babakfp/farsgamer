@@ -35,7 +35,7 @@
 <a class="group relative grid p-2 text-center rounded bg-white duration-200 ease-in-out outline-card" href="/shop/{id}">
 
 	<div class="relative rounded overflow-hidden">
-		<img class="aspect-[3/4]" src={thumb} alt loading={lazyLoading && 'lazy'}>
+		<img class="aspect-[3/4]" src={thumb} alt={title} loading={lazyLoading && 'lazy'}>
 
 		{#if inStock === false}
 			<div class="absolute inset-0 flex items-center justify-center bg-gray-900 bg-opacity-50">
