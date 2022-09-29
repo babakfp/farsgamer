@@ -71,6 +71,7 @@ module.exports = {
 		},
 		fontFamily: {
       dana: [ '"Dana"' ],
+      code: [ '"Dank Mono", "MonoLisa", "Dana"' ],
 		},
     fontWeight: {
       // hairline: 50,
