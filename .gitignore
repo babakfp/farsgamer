@@ -2,8 +2,9 @@
 node_modules
 /build
 /.svelte-kit
-.vercel_build_output
 /package
+/.vercel_build_output
+/.vercel
 .env
 .env.*
 !.env.example
