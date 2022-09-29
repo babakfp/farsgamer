@@ -4,6 +4,7 @@
 	import PostCard from '$components/PostCard.svelte'
 	
   export let posts = []
+  export let lazyLoading = false
 </script>
 
 <Swiper
@@ -26,7 +27,7 @@
 >
   {#each posts as post}
     <SwiperSlide>
-      <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} lazyLoading={true} />
+      <PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} {lazyLoading} />
     </SwiperSlide>
   {/each}
 </Swiper>

@@ -90,7 +90,7 @@
 				{#each $giftCards as giftCard}
 					<SwiperSlide>
 						<a class="link-img" href={giftCard.href}>
-							<img class="rounded aspect-square" src={giftCard.src} alt />
+							<img class="rounded aspect-square" src={giftCard.src} alt loading="lazy" />
 						</a>
 					</SwiperSlide>
 				{/each}
@@ -170,33 +170,33 @@
 	<!-- Telegram and Instagram -->
 	<div class="flex justify-center gap-4">
 		<a class="block link-img" href="javascript:">
-			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" />
+			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-telegram.png" alt="فارس گیمر در تلگرام" loading="lazy" />
 		</a>
 		<a class="block link-img" href="javascript:">
-			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" />
+			<img class="max-w-64 aspect-[2/1] rounded" src="/img/home/social-media-instagram.png" alt="فارس گیمر در اینستاگرام" loading="lazy" />
 		</a>
 	</div>
 
 
   <!-- New blog posts -->
 	<CardsSection title="جدیدترین پست‌ها" href="javascript:">
-    <PostCardSwiper {posts} />
+    <PostCardSwiper {posts} lazyLoading={true} />
 	</CardsSection>
 
 
   <!-- 4 posters -->
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4">
 		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (1).png" alt />
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (1).png" alt loading="lazy" />
 		</a>
 		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (2).png" alt />
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (2).png" alt loading="lazy" />
 		</a>
 		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (3).png" alt />
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (3).png" alt loading="lazy" />
 		</a>
 		<a class="block link-img" href="javascript:">
-			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (4).png" alt />
+			<img class="aspect-[142/125] rounded" src="/img/home/poster-1-4-width (4).png" alt loading="lazy" />
 		</a>
 	</section>
 
