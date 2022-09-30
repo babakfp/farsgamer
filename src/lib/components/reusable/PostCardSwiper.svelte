@@ -5,10 +5,11 @@
 	
   export let posts = []
   export let lazyLoading = false
+	let isSwiperGettingTouched = false
 </script>
 
 <Swiper
-  class="swiper--card PostCardSwiper swiper-prevent-content-shift"
+  class="swiper--card {isSwiperGettingTouched && 'swiper--moving'} PostCardSwiper swiper-prevent-content-shift"
   modules={[ Pagination, Autoplay ]}
   speed={600}
   grabCursor={true}
@@ -21,6 +22,8 @@
     1280: { slidesPerView: 4, slidesPerGroup: 3 },
   }}
   touchEventsTarget="container"
+	on:touchMove={_=> isSwiperGettingTouched = true}
+	on:transitionEnd={_=> isSwiperGettingTouched = false}
 >
   {#each posts as post}
     <SwiperSlide>

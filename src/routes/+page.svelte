@@ -18,6 +18,9 @@
 
 	const bestSellingProducts = products.filter(product => product.price.afterDiscount === undefined)
 	const discountedProducts = products.filter(product => product.price.afterDiscount !== undefined)
+
+	let isGiftCardsSwiperGettingTouched = false
+	let isReviewsSwiperGettingTouched = false
 </script>
 
 <svelte:head>
@@ -76,7 +79,7 @@
 	{#if $giftCards.length > 0}
 		<CardsSection title="گـیفتــکارد ها">
 			<Swiper
-				class="swiper--card GiftCardSwiper swiper-prevent-content-shift"
+				class="swiper--card {isGiftCardsSwiperGettingTouched && 'swiper--moving'} GiftCardSwiper swiper-prevent-content-shift"
 				modules={[ Pagination, Autoplay ]}
 				speed={600}
 				grabCursor={true}
@@ -93,6 +96,8 @@
 					1280: { slidesPerView: 6, slidesPerGroup: 5 },
 				}}
 				touchEventsTarget="container"
+				on:touchMove={_=> isGiftCardsSwiperGettingTouched = true}
+				on:transitionEnd={_=> isGiftCardsSwiperGettingTouched = false}
 			>
 				{#each $giftCards as giftCard}
 					<SwiperSlide>
@@ -109,7 +114,7 @@
   <!-- User reviews -->
 	<CardsSection title="نظــرات اخیـر کـاربران">
 		<Swiper
-			class="swiper--card ReviewCardSwiper swiper-prevent-content-shift"
+			class="swiper--card {isReviewsSwiperGettingTouched && 'swiper--moving'} ReviewCardSwiper swiper-prevent-content-shift"
 			modules={[ Pagination, Autoplay ]}
 			speed={600}
 			grabCursor={true}
@@ -126,6 +131,8 @@
 				1536: { slidesPerView: 4, slidesPerGroup: 4 },
 			}}
       touchEventsTarget="container"
+			on:touchMove={_=> isReviewsSwiperGettingTouched = true}
+			on:transitionEnd={_=> isReviewsSwiperGettingTouched = false}
     >
 			{#each [1,2,3,4,5,6] as comment}
 				<SwiperSlide>

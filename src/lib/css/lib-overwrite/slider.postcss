@@ -38,29 +38,24 @@
 /*  */
 
 .swiper--card {
-	@apply pt-4 -my-4 lg:px-page lg:-mx-page;
+	@apply pt-4 -my-4 px-page -mx-page;
 	padding-bottom: calc(16px + 24px - 8px + 1rem);
 
-	@media (min-width: 1790px) { @apply px-0 mx-0; }
+	@media (min-width: 1790px) { @apply px-0 mx-0 }
 	&::before,
 	&::after {
 		content: "";
-		@apply lg:absolute lg:top-0 lg:bottom-0 lg:w-page lg:h-full lg:bg-gray-100/50 lg:z-2;
-		@media (min-width: 1790px) { content: unset; }
+		@apply absolute top-0 bottom-0 w-page h-full bg-gray-100/50 backdrop-blur-sm z-2 duration-100 ease-in-out;
+		@media (min-width: 1790px) { content: unset }
 	}
-	&::before { @apply lg:right-0 }
-	&::after { @apply lg:left-0 }
+	&::before { @apply right-0 }
+	&::after { @apply left-0 }
 
-	.swiper-slide {
-		@apply relative z-40;
-		/* TODO */
-		&:hover {
-			@apply !z-40;
-		}
-	}
+	&.swiper--moving::before,
+	&.swiper--moving::after { @apply opacity-0 }
 
 	.swiper-pagination {
-		@apply !bottom-4 lg:ml-page;
+		@apply !bottom-4 ml-page;
 	}
 
 	.swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
