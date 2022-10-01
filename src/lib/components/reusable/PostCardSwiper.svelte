@@ -13,7 +13,7 @@
   modules={[ Pagination, Autoplay ]}
   speed={600}
   grabCursor={true}
-  pagination={{ clickable: true }}
+  pagination={{}}
   autoplay={{ delay: 5000, disableOnInteraction: false }}
   spaceBetween={16}
   slidesPerView={2}

@@ -21,7 +21,7 @@
 		loop={true}
 		speed={600}
 		grabCursor={true}
-		pagination={{ clickable: true }}
+		pagination={{}}
 		autoplay={{ delay: 5000, disableOnInteraction: false }}
     touchEventsTarget="container"
   >

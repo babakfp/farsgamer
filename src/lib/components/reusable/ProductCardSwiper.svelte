@@ -13,7 +13,7 @@
 	modules={[ Pagination, Autoplay ]}
 	speed={600}
 	grabCursor={true}
-	pagination={{ clickable: true }}
+	pagination={{}}
 	spaceBetween={16}
 	slidesPerView={1}
 	breakpoints={{
