@@ -43,16 +43,15 @@ comments.filter((post, i) => {
 /**
  * Create the data for a product.
 */
-const generateProductData = ({ id, title, belongsTo, price, imgIndex }) => {
+const generateProductData = ({ id, title, belongsTo, price = {
+	beforeDiscount: null,
+	afterDiscount: null,
+}, imgIndex }) => {
 	return {
 		id,
 		title,
 		belongsTo,
 		price,
-		// price: {
-		// 	beforeDiscount: null,
-		// 	afterDiscount: null,
-		// },
 		thumb: `/img/products/${belongsTo}/${imgIndex}-thumb.jpg`,
 		poster: `/img/products/${belongsTo}/${imgIndex}-poster.jpg`,
 		rating: 5,
@@ -61,22 +60,10 @@ const generateProductData = ({ id, title, belongsTo, price, imgIndex }) => {
 		comments,
 		questionsAndAnswers: postComments.reverse(),
 		accountCategories: [
-			{
-				id: 1,
-				title: 'PlayStation',
-			},
-			{
-				id: 2,
-				title: 'EpicGames',
-			},
-			{
-				id: 3,
-				title: 'XBox',
-			},
-			{
-				id: 4,
-				title: 'Nitendo',
-			},
+			{ id: 1, title: 'PlayStation' },
+			{ id: 2, title: 'EpicGames' },
+			{ id: 3, title: 'XBox' },
+			{ id: 4, title: 'Nitendo' },
 		],
 	}
 }
