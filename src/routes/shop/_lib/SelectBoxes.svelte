@@ -17,10 +17,10 @@
 	]
 
 	const sortItems = [
-		{ label: 'مـحـبـوب تـریـن', value: 'most-popular' },
-		{ label: 'پـرفـروش تـریـن', value: 'best-seller' },
-		{ label: 'ارزان تـریـن', 		value: 'cheapest' },
-		{ label: 'گـران تـریـن', 		value: 'most-expensive' },
+		{ label: 'محبوب ترین', value: 'most-popular' },
+		{ label: 'پرفروش ترین', value: 'best-seller' },
+		{ label: 'ارزان ترین', value: 'cheapest' },
+		{ label: 'گران ترین', value: 'most-expensive' },
 	]
 
 	const groupBy = item => item.group
@@ -53,18 +53,10 @@
 		--selectedItemPadding: 0 0 0 1rem;
 		--clearSelectWidth: 2rem;
 		--itemHoverBG: rgb(61 66 223 / 10%);
-		
-		/* --multiLabelMargin: 0 0 0 4px; */
-		/* --multiClearFill: theme('colors.gray.400');
-		--multiClearHeight: 100%;
-		--multiClearWidth: theme('width.6');
+	}
 
-		--multiItemBG: theme('colors.gray.100');
-		--multiItemActiveBG: theme('colors.gray.100');
-		--multiItemActiveColor: theme('colors.gray.700');
-
-		--multiItemMargin: 5px 0 0 5px;
-		--multiSelectPadding: 0 .5rem 0 2rem; */
+	:global(.selectContainer) {
+		@apply text-sm;
 	}
 
 	:global(.selectContainer input),
@@ -86,15 +78,4 @@
 	:global(.selectContainer .listContainer) {
 		@apply !top-12 !bottom-auto;
 	}
-	/*
-	:global(.selectContainer .multiSelectItem_clear) {
-		@apply flex items-center justify-center cursor-pointer -ml-3.5 !top-auto !bg-transparent !rounded;
-	}
-	:global(.selectContainer .multiSelectItem_label) {
-		@apply text-sm;
-	}
-	:global(.selectContainer .multiSelectItem) {
-		@apply inline-flex items-center !rounded;
-	}
-	*/
 </style>
