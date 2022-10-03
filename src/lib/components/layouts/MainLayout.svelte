@@ -14,7 +14,6 @@
 		<slot />
 	</div>
 
-  <!-- TODO: Put it outside of the main tag -->
 	<Footer />
 </main>
 
