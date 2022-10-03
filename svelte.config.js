@@ -6,9 +6,9 @@ export default {
   kit: {
     adapter: adapter(),
     alias: {
-      $layouts: 'src/lib/components/layouts',
-      $components: 'src/lib/components/reusable',
-      $partials: 'src/lib/components/partials',
+      $layouts: 'src/lib/layouts',
+      $components: 'src/lib/components',
+      $partials: 'src/lib/partials',
       $store: 'src/lib/store',
       $database: 'src/lib/store/database',
       $utilities: 'src/lib/utilities',
