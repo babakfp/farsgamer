@@ -1,8 +1,8 @@
 <script>
 	import Select from 'svelte-select'
 	
-	export let value = null
 	export let items
+	export let value = null
 	export let placeholder = null
 	export let groupBy = null
 	export let noOptionsMessage = 'چیزی پیدا نشد!'
@@ -23,6 +23,7 @@
 		--clearSelectWidth: 2rem;
 		--itemHoverBG: theme(colors.gray.100);
 		--clearSelectColor: theme(colors.gray.300);
+		--borderFocusColor: theme(colors.brand.DEFAULT)
 	}
 	.selectContainer {
 		@apply text-sm;
@@ -48,5 +49,11 @@
 	}
 	.selectContainer .listContainer {
 		@apply !top-12 !bottom-auto;
+	}
+	.listItem:first-of-type .item {
+		@apply h-12 pt-2;
+	}
+	.listItem:last-of-type .item {
+		@apply h-12 pb-2;
 	}
 </style>
