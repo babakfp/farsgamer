@@ -18,7 +18,7 @@
 		{/if}
 	</ul>
 	
-	<div class="relative mt-4 mb-6 mr-1.5">
+	<div class="relative mt-4 mb-5.5 mr-1.5">
 		<img class="absolute w-full h-full top-1.5 left-1.5 rounded backdrop-blur opacity-50"
 			src={data.post.featuredImage} alt />
 		<img class="relative rounded"
