@@ -30,7 +30,7 @@
 <Tab class="mt-8">
 	<svelte:fragment slot="tab">
 		<TabLabel title="توضیحات" hash="description" />
-		<TabLabel title="نظرات" hash="comments" count={data.product.comments?.length} />
+		<TabLabel title="نظرات" hash="reviews" count={data.product.reviews?.length} />
 		<TabLabel title="پرسش و پاسخ" hash="question-and-answer" count={data.product.questionsAndAnswers?.length} />
 	</svelte:fragment>
 
@@ -40,8 +40,8 @@
 				<Description />
 			</div>
 		</TabPanel>
-		<TabPanel class="!p-0 !bg-transparent" hash="comments">
-			<Comments items={data.product.comments} canReply={true} />
+		<TabPanel class="!p-0 !bg-transparent" hash="reviews">
+			<Comments items={data.product.reviews} canReply={true} />
 		</TabPanel>
 		<TabPanel class="!p-0 !bg-transparent" hash="question-and-answer">
 			<Comments items={data.product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" isQuestion={true} />

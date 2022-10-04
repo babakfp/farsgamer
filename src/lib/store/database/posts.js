@@ -1,38 +1,12 @@
-const comment = {
-	id: 1,
-	firstname: 'محسن',
-	lastname: 'حسین‌زاده',
-	content: 'در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.',
-	date: '1401/03/24',
-}
+import { createPostComments } from './helpers.js'
 
-export const comments = [
-	comment,
-	{
-		...comment,
-		id: 2,
-    firstname: 'رضا',
-    lastname: 'پاک‌زاده',
-    content: 'چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.',
-    date: '1401/03/22',
-  },
-  {
-		...comment,
-    id: 3,
-    firstname: 'محمد',
-    lastname: 'حسینی',
-    content: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.',
-    date: '1401/03/20',
-  },
-].reverse()
-
-export const post = {
+const post = {
 	id: 1,
 	title: 'Wield Corrupt Sorceries in Conan Exile’s 3.0 Age of Sorcery Update',
 	featuredImage: '/img/posts/(1).jpg',
 	releaseDate: '1401/01/01',
 	modifyDate: '1401/02/07',
-	comments,
+	comments: createPostComments(),
 }
 
 export const posts = [

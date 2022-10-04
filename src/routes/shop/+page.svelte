@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores'
-	import SelectBoxes from './_lib/SelectBoxes.svelte'
 	import ProductCard from '$components/ProductCard.svelte'
 	import Pagination from '$components/Pagination.svelte'
 	import { products } from '$database/products.js'

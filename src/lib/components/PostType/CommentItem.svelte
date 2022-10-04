@@ -18,7 +18,7 @@
 	<div class="leading-6">{content}</div>
 
 	{#if showResponseForm}
-		<div class="mt-3 -mb-2 -mx-4 p-4 bg-gray-50">
+		<div class="mt-4 -mb-2 -mx-4 p-4 bg-gray-50">
 			<CommentForm sm={true} />
 		</div>
 	{/if}
