@@ -4,7 +4,7 @@
 	export let items
 	export let placeholder
 	export let groupBy
-	export let noOptionsMessage = 'گذینه‌ای وجود نیست!'
+	export let noOptionsMessage = 'چیزی پیدا نشد!'
 </script>
 
 <div class="relative w-full">
