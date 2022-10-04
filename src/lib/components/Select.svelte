@@ -1,15 +1,16 @@
 <script>
 	import Select from 'svelte-select'
 	
+	export let value = null
 	export let items
-	export let placeholder
-	export let groupBy
+	export let placeholder = null
+	export let groupBy = null
 	export let noOptionsMessage = 'چیزی پیدا نشد!'
 </script>
 
 <div class="relative w-full">
-	<Select {items} {groupBy} {placeholder} {noOptionsMessage} />
-	<i class="icon-caret-down absolute top-1/2 -translate-y-1/2 left-4 text-gray-300 pointer-events-none"></i>
+	<Select on:clear bind:value {items} {groupBy} {placeholder} {noOptionsMessage} />
+	<i class="icon-caret-down absolute top-0.5 bottom-0.5 left-0.5 pl-3 bg-white rounded text-gray-300 pointer-events-none"></i>
 </div>
 
 <style lang="postcss" global>
@@ -39,7 +40,7 @@
 	.selectContainer .clearSelect {
 		@apply flex items-center justify-center !right-auto !text-gray-300 cursor-pointer duration-100 ease-in-out hover:!text-brand hover:text-opacity-80;
 		height: calc(100% + 4px);
-		left: 2rem;
+		left: 1.5rem;
 		top: -2px !important;
 	}
 	.selectContainer .clearSelect svg {
