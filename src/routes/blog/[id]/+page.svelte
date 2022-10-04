@@ -1,33 +1,29 @@
 <script>
-	import Breadcrumb from '$components/Breadcrumb.svelte'
 	import { Description, Comments } from '$components/PostType'
 	import { Tab, TabLabel, TabPanel } from '$components/Tab'
 	export let data
 </script>
 
-<Breadcrumb items={[['خانه', '/'], ['بلاگ', '/blog'], data.post.title]} />
-
-<!-- Hero section -->
-<section class="grid gap-4 mt-4 p-4 pb-6 bg-white rounded md:rounded">
-	<img class="w-full rounded max-w-lg mx-auto" src={data.post.featuredImage} alt />
-	<div class="grid gap-4 w-full px-4 max-w-lg mx-auto">
-		<h1 class="text-md font-bold dir-ltr lg:text-2xl">{data.post.title}</h1>
-
-		<ul class="list-inside list-disc space-y-1 text-gray-500 text-sm">
+<div class="max-w-2xl pt-4 mx-auto">
+	<ul class="flex justify-end gap-4 text-gray-400 text-2xs">
+		<li>
+			<span>تاریخ انتشار:</span>
+			<span class="text-gray-500">{data.post.releaseDate}</span>
+		</li>
+		{#if data.post.modifyDate}
 			<li>
-				<span>تاریخ انتشار:</span>
-				<span>{data.post.releaseDate}</span>
+				<span>تاریخ بروزرسانی:</span>
+				<span class="text-gray-500">{data.post.modifyDate}</span>
 			</li>
-			{#if data.post.modifyDate}
-				<li>
-					<span>تاریخ بروزرسانی:</span>
-					<span>{data.post.modifyDate}</span>
-				</li>
-			{/if}
-		</ul>
-	</div>
-</section>
-<!--/ Hero section -->
+		{/if}
+	</ul>
+	
+	<img class="w-full mt-4 rounded"
+		src={data.post.featuredImage} alt />
+	
+	<h1 class="px-4 mt-4 text-sm font-semibold dir-ltr text-gray-600 sm:text-base">
+		{data.post.title}</h1>
+</div>
 
 <Tab class="mt-8">
 	<svelte:fragment slot="tab">
@@ -36,7 +32,7 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
-		<TabPanel class="p-8 lg:py-20" hash="description">
+		<TabPanel class="py-8 px-6 sm:px-8 lg:py-20" hash="description">
 			<div class="max-w-3xl mx-auto">
 				<Description />
 			</div>

@@ -35,7 +35,7 @@
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
-		<TabPanel class="p-8 lg:py-20" hash="description">
+		<TabPanel class="py-8 px-6 sm:px-8" hash="description">
 			<div class="max-w-3xl mx-auto">
 				<Description />
 			</div>

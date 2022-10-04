@@ -7,7 +7,7 @@
 	export let headingTitle = 'ارسال نظر جدید'
 </script>
 
-<div class="p-8 bg-white rounded">
+<div class="p-6 bg-white rounded">
 	<h3 class="mb-3 font-bold">{headingTitle}</h3>
 	<CommentForm {isQuestion} />
 </div>
