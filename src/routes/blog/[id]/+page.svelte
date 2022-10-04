@@ -4,7 +4,7 @@
 	export let data
 </script>
 
-<div class="max-w-2xl pt-4 mx-auto">
+<section class="max-w-2xl pt-4 mx-auto">
 	<ul class="flex justify-end gap-4 text-gray-400 text-2xs">
 		<li>
 			<span>تاریخ انتشار:</span>
@@ -18,12 +18,16 @@
 		{/if}
 	</ul>
 	
-	<img class="w-full mt-4 rounded"
-		src={data.post.featuredImage} alt />
+	<div class="relative mt-4 mb-6 mr-1.5">
+		<img class="absolute w-full h-full top-1.5 left-1.5 rounded backdrop-blur opacity-50"
+			src={data.post.featuredImage} alt />
+		<img class="relative rounded"
+			src={data.post.featuredImage} alt />
+	</div>
 	
 	<h1 class="px-4 mt-4 text-sm font-semibold dir-ltr text-gray-600 sm:text-base">
 		{data.post.title}</h1>
-</div>
+</section>
 
 <Tab class="mt-8">
 	<svelte:fragment slot="tab">
