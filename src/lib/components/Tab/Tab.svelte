@@ -66,9 +66,7 @@
 </div>
 
 <style lang="postcss">
-	.tabs::-webkit-scrollbar-thumb {
-		@apply bg-gray-200;
-	}
+	.tabs::-webkit-scrollbar-thumb { @apply bg-gray-200 }
 	.Tab :global(.Tab__TabLabel) { @apply whitespace-nowrap }
 	.Tab :global(.Tab__TabPanel) { @apply hidden }
 	.Tab :global(.Tab__TabPanel.Tab--active) { @apply block }
