@@ -18,7 +18,7 @@
 			<input class="inline-flex | w-[22px] min-w-[22px] h-[22px] | bg-white | border-2 border-gray-200 rounded-full | duration-150 ease-in-out | cursor-pointer appearance-none | group-hover:border-brand hover:border-brand focus:border-brand | checked:bg-brand checked:border-brand [&:checked~i]:opacity-100 [&:checked~i]:scale-100 [&:checked~i]:translate-y-0 [&:checked~i]:translate-x-0"
 				type="radio" bind:group={$selected} {name} id="{name}-{value}" {value} {required}
 			/>
-			<i class="icon-check | absolute mt-0.5 | text-2xs text-white | duration-150 ease-in | opacity-0 scale-0 translate-y-2 -translate-x-2"></i>
+			<i class="icon-check | absolute mt-0.5 | text-2xs text-white | duration-150 ease-in | opacity-0 scale-0 translate-y-2 -translate-x-2" />
 		</div>
 
 		<span class="text-sm {classContent}">

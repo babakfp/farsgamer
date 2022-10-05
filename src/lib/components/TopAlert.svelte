@@ -9,10 +9,10 @@
 
 {#if browser && $topAlertVisible && !$isSideMenuOpen && !$isOpen}
 	<div id="TopAlert" class="z-30 relative flex items-center bg-white border-b border-gray-100">
-		<button class="p-4 duration-150 hover:text-brand transform-scale-fix hover:scale-110"
+		<button class="p-4 duration-150 hover:text-brand transform-fix hover:scale-110"
 			on:click={_=> $topAlertVisible = false}
 		>
-			<i class="icon-cross-small"></i>
+			<i class="icon-cross-small" />
 		</button>
 		<div class="p-4 pr-0 text-sm">
       <!-- svelte-ignore a11y-invalid-attribute -->

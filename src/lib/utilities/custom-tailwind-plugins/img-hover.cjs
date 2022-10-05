@@ -1,6 +1,6 @@
 const plugin = require('tailwindcss/plugin')
 
-module.exports = plugin(function({ addComponents }) {
+module.exports = plugin(({ addComponents }) => {
 	addComponents({
 		'.img-hover': {
 			'> img': {

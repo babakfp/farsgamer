@@ -1,6 +1,6 @@
 const colors = require('tailwindcss/colors')
-const tailwindCustomPlugins = require('./src/lib/utilities/tailwindCustomPlugins/index.cjs')
 const addons = require('tailwindcss-addons')
+const customTailwindPlugins = require('./src/lib/utilities/custom-tailwind-plugins/index.cjs')
 
 const minMaxWidth = {
 	'4/12': '33.333333%',
@@ -90,7 +90,6 @@ module.exports = {
   },
   plugins: [
 		require('@tailwindcss/line-clamp'),
-    ...tailwindCustomPlugins,
 		addons.base,
 		addons.utilities.dir,
 		addons.utilities.drag,
@@ -98,5 +97,6 @@ module.exports = {
 		addons.utilities.hideShow,
 		addons.utilities.insetCenter,
 		addons.utilities.overflowUnset,
+		...customTailwindPlugins,
 	],
 }

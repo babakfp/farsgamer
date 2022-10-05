@@ -70,7 +70,7 @@
 					{#if $cartDiscountInUse}
 						<PriceItem title="تخفیف" price={numberToPrice($cartDiscountInUse.value)} negative={true}>
 							<button class="btn p-0 h-6 w-6 hover:text-red-500" slot="after-price" on:click={_=> cartDiscountInUse.set(null)}>
-								<i class="icon-cross-small"></i>
+								<i class="icon-cross-small" />
 							</button>
 						</PriceItem>
 					{/if}

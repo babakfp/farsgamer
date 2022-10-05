@@ -45,14 +45,14 @@
 
 			<div class="p-4 space-y-2">
 				<div class="flex items-center gap-2 py-3 px-4 bg-gray-50 rounded">
-					<i class="icon-shopping-cart-check w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
+					<i class="icon-shopping-cart-check w-10 h-10 border-2 border-white rounded-full drop-shadow-lg" />
 					<div>
 						<h6 class="font-bold text-yellow animate-pulse">۴۰۰</h6>
 						<p class="text-xs">سفارش <span class="font-medium">موفق</span> امروز</p>
 					</div>
 				</div>
 				<div class="flex items-center gap-2 py-3 px-4 bg-gray-50 rounded">
-					<i class="icon-truck-loading w-10 h-10 border-2 border-white rounded-full drop-shadow-lg"></i>
+					<i class="icon-truck-loading w-10 h-10 border-2 border-white rounded-full drop-shadow-lg" />
 					<div>
 						<h6 class="font-bold text-yellow animate-pulse">۴۰</h6>
 						<p class="text-xs">سفارش <span class="font-medium">در حال انجام</span></p>

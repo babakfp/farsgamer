@@ -6,7 +6,7 @@
 <div class="grid grid-cols-2 gap-4 p-4 rounded bg-white xl:flex xl:justify-between xl:items-center xl:border-0">
 
 	<div class="flex items-center gap-2 text-sm">
-		<i class="icon-wallet text-lg text-gray-400"></i>
+		<i class="icon-wallet text-lg text-gray-400" />
 		<span>موجودی کیف پول</span>
 	</div>
 

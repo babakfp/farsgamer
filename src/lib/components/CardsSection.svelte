@@ -9,7 +9,7 @@
 		{#if href}
 			<a class="btn btn--sm btn--gray btn--outline gap-2 h-8 px-2.5" {href}>
 				<span class="text-xs">مشاهده همه</span>
-				<i class="icon-angle-double-small-left !text-xs"></i>
+				<i class="icon-angle-double-small-left !text-xs" />
 			</a>
 		{/if}
   </div>

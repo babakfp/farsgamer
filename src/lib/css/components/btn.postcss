@@ -1,11 +1,16 @@
 @layer components {
 
-	.btn {
-		@apply inline-flex items-center justify-center gap-3;
-    @apply h-10 px-4;
+	.btn-base {
+		@apply h-10 inline-flex items-center justify-center gap-3;
     @apply border-2 border-transparent border-opacity-80 rounded;
-    @apply duration-150 ease-in-out whitespace-nowrap select-none;
-    @apply transform-scale-fix active:scale-x-95 hover:border-opacity-100 focus:border-opacity-100;
+    @apply duration-150 ease-in-out;
+		@apply whitespace-nowrap select-none;
+	}
+
+	.btn {
+    @apply btn-base px-4;
+    @apply duration-150 ease-in-out;
+    @apply transform-fix active:scale-x-95 hover:border-opacity-100 focus:border-opacity-100;
 	}
 
 	.btn--outline {

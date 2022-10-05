@@ -10,7 +10,7 @@
 
 <div class="relative w-full">
 	<Select on:clear bind:value {items} {groupBy} {placeholder} {noOptionsMessage} />
-	<i class="icon-caret-down absolute top-0.5 bottom-0.5 left-0.5 pl-3 bg-white rounded text-gray-300 pointer-events-none"></i>
+	<i class="icon-caret-down absolute top-0.5 bottom-0.5 left-0.5 pl-3 bg-white rounded text-gray-300 pointer-events-none" />
 </div>
 
 <style lang="postcss" global>

@@ -44,7 +44,7 @@
     </div>
 
     <button class="flex items-center gap-3 w-full py-3 pb-4 pl-6 pr-5 {show && 'border-t border-gray-100'} hover:text-brand lg:hidden" on:click={_=> show = !show}>
-      <i class="icon-caret-down w-8 h-8 flex items-center justify-center text-lg opacity-75 duration-300 ease-in-out rotate-0 {show && '!rotate-180'}"></i>
+      <i class="icon-caret-down w-8 h-8 flex items-center justify-center text-lg opacity-75 duration-300 ease-in-out rotate-0 {show && '!rotate-180'}" />
       <span class="font-medium">{show ? 'بـسـتـن' : 'مـشـاهـده'} مـنـو</span>
     </button>
   </nav>

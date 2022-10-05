@@ -1,5 +1,5 @@
-<button class="z-10 fixed left-4 bottom-4 w-14 h-14 bg-brand rounded-full text-white duration-150 ease-in-out transform-scale-fix active:scale-95 sm:left-6 sm:bottom-6 2xl:left-8 2xl:bottom-8">
-	<i class="icon-crisp text-2xl"></i>
+<button class="z-10 fixed left-4 bottom-4 w-14 h-14 bg-brand rounded-full text-white duration-150 ease-in-out transform-fix active:scale-95 sm:left-6 sm:bottom-6 2xl:left-8 2xl:bottom-8">
+	<i class="icon-crisp text-2xl" />
 </button>
 
 <style lang="postcss">
