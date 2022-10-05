@@ -2,7 +2,7 @@ import { createPostComments } from './helpers.js'
 
 const post = {
 	id: 1,
-	title: 'Wield Corrupt Sorceries in Conan Exile’s 3.0 Age of Sorcery Update',
+	title: 'Discover Open World Fishing in Call of the Wild: The Angler, Out Now',
 	featuredImage: '/img/posts/(1).jpg',
 	releaseDate: '1401/01/01',
 	modifyDate: '1401/02/07',
@@ -11,82 +11,58 @@ const post = {
 
 export const posts = [
 	post,
-	{
+  {
 		...post,
 		id: 2,
-		title: 'Discover Open World Fishing in Call of the Wild: The Angler, Out Now',
+		title: 'Albert Wesker Comes to Dead by Daylight: How To Survive',
 		featuredImage: '/img/posts/(2).jpg',
 	},
 	{
 		...post,
 		id: 3,
-		title: 'Blast Your Way Out of Bullet Hell with the Official Launch of Scathe',
+		title: 'New Tales from the Borderlands coming October 21, 2022!',
 		featuredImage: '/img/posts/(3).jpg',
 	},
 	{
 		...post,
 		id: 4,
-		title: 'Fallen Legion: Rise to Glory / Fallen Legion Revenants is Available Now!',
+		title: 'Tortuga – A Pirate’s Tale sets sail as an exclusive in Q1 2023',
 		featuredImage: '/img/posts/(4).jpg',
 	},
   {
 		...post,
 		id: 5,
-		title: 'Albert Wesker Comes to Dead by Daylight: How To Survive',
+		title: 'Smarmy James Bond meets Darks Souls PVP in social stealth game DECEIVE INC.',
 		featuredImage: '/img/posts/(5).jpg',
 	},
 	{
 		...post,
 		id: 6,
-		title: 'New Tales from the Borderlands coming October 21, 2022!',
+		title: 'Genshin Impact Version 3.0: Heading Westward to Sumeru',
 		featuredImage: '/img/posts/(6).jpg',
 	},
-	{
+  {
 		...post,
 		id: 7,
-		title: 'F1® Manager 2022 Available Now on Epic Games Store via Early Access!',
+		title: 'Goat Simulator 3 releases first gameplay trailer',
 		featuredImage: '/img/posts/(7).jpg',
 	},
-	{
+  {
 		...post,
 		id: 8,
-		title: 'Tortuga – A Pirate’s Tale sets sail as an exclusive in Q1 2023',
+		title: 'Dead Island 2 hits February 3',
 		featuredImage: '/img/posts/(8).jpg',
 	},
-  {
+	{
 		...post,
 		id: 9,
-		title: 'Smarmy James Bond meets Darks Souls PVP in social stealth game DECEIVE INC.',
+		title: 'Be your own boss. Saints Row is out now on the Epic Games Store.',
 		featuredImage: '/img/posts/(9).jpg',
 	},
-	{
+  {
 		...post,
 		id: 10,
-		title: 'Genshin Impact Version 3.0: Heading Westward to Sumeru',
-		featuredImage: '/img/posts/(10).jpg',
-	},
-  {
-		...post,
-		id: 11,
-		title: 'Goat Simulator 3 releases first gameplay trailer',
-		featuredImage: '/img/posts/(11).jpg',
-	},
-  {
-		...post,
-		id: 12,
-		title: 'Dead Island 2 hits February 3',
-		featuredImage: '/img/posts/(12).jpg',
-	},
-	{
-		...post,
-		id: 13,
-		title: 'Be your own boss. Saints Row is out now on the Epic Games Store.',
-		featuredImage: '/img/posts/(13).jpg',
-	},
-  {
-		...post,
-		id: 14,
 		title: 'The Epic Games Store August Event Sale',
-		featuredImage: '/img/posts/(14).jpg',
+		featuredImage: '/img/posts/(10).jpg',
 	},
 ].reverse()
