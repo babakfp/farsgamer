@@ -52,7 +52,7 @@
 {#if data.relatedProducts}
 	<div class="mt-8 xl:mt-12">
 		<CardsSection title="محصولات مرتبط">
-			<ProductCardSwiper products={data.relatedProducts} />
+			<ProductCardSwiper products={data.relatedProducts} lazyLoading={true} />
 		</CardsSection>
 	</div>
 {/if}
