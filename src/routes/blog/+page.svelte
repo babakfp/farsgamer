@@ -11,7 +11,7 @@
 	<title>بلاگ</title>
 </svelte:head>
 
-<div class="grid gap-4 grid-cols-2 sm:gap-6 sm:grid-cols-3 2md:grid-cols-4 lg:grid-cols-3 2lg:grid-cols-4 xl:grid-cols-5">
+<div class="grid gap-4 grid-cols-2 md:gap-6 md:grid-cols-3 2lg:grid-cols-4">
 	{#each getPaginationItems(posts, currentPageNumber) as post (post.id)}
 		<PostCard id={post.id} title={post.title} featuredImage={post.featuredImage} />
 	{/each}

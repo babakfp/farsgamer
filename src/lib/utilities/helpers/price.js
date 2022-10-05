@@ -1,8 +1,10 @@
 export const numberToPrice = number => {
 	number = number.toString()
 	let result = ''
-	
-	if ( number.length % 3 === 0 ) {
+
+	if (number.length <= 3) {
+		return number
+	} else if ( number.length % 3 === 0 ) {
 		
 		for (let i = 0; i < number.length; i++) {
 			result += number[i]
