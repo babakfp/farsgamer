@@ -10,12 +10,23 @@
 	export let rating = null
 	export let isBuyer = false
 	export let canReply = true
+	export let answer = null
 
 	let showResponseForm = false
 </script>
 
 <div class="relative p-4 pb-3 bg-white rounded text-sm" {id}>
 	<div class="leading-6">{content}</div>
+
+	{#if answer}
+		<div class="mt-4 -mb-2 -mx-4 p-4 bg-gray-100">
+			<div class="flex justify-between text-xs text-gray-500">
+				<span>جواب از طرف پشتیبانی</span>
+				<span>{answer.date}</span>
+			</div>
+			<p class="mt-4">{answer.content}</p>
+		</div>
+	{/if}
 
 	{#if showResponseForm}
 		<div class="mt-4 -mb-2 -mx-4 p-4 bg-gray-50">
