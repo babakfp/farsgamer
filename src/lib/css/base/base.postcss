@@ -1,5 +1,13 @@
-@layer base {
+@font-face {
+	font-family: "Dana";
+	font-weight: 1 1000;
+	src: url("/fonts/dana/DanaVF.woff2") format("woff2"), url("/fonts/dana/DanaVF.woff") format("woff"), url("/fonts/dana/DanaVF.ttf") format("truetype");
+	font-style: normal;
+	font-display: block;
+}
 
+@layer base {
+	
 	::selection {
 		@apply bg-brand bg-opacity-10;
 	}
