@@ -1,5 +1,6 @@
 <script>
-	import { browser } from '$app/environment'
+	import { fly } from 'svelte/transition'
+	import { page } from '$app/stores'
 	import Header from '$partials/Header/Header.svelte'
 	import Sidebar from '$partials/Sidebar/Sidebar.svelte'
 	import Footer from '$partials/Footer/Footer.svelte'
@@ -9,13 +10,15 @@
 <Header />
 <Sidebar />
 
-<main>
-	<div id="page-content" class="container relative py-page overflow-x-hidden xl:pb-12">
-		<slot />
-	</div>
+{#key $page.url.href}			
+	<main in:fly={{ delay: 100, duration: 500, y: -32 }}>
+		<div id="page-content" class="container relative py-page overflow-x-hidden xl:pb-12">
+			<slot />
+		</div>
 
-	<Footer />
-</main>
+		<Footer />
+	</main>
+{/key}
 
 <Crisp />
 
