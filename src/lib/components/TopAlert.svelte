@@ -2,12 +2,11 @@
 	import { browser } from '$app/environment'
 	import { writable } from 'svelte-local-storage-store'
 	import { isOpen } from '$store/mobile-menu.js'
-	import { isOpen as isSideMenuOpen } from '$store/mobile-menu.js'
 
 	const topAlertVisible = writable('topAlertVisible', true)
 </script>
 
-{#if browser && $topAlertVisible && !$isSideMenuOpen && !$isOpen}
+{#if browser && $topAlertVisible && !$isOpen}
 	<div id="TopAlert" class="z-30 relative flex items-center bg-white border-b border-gray-100">
 		<button class="p-4 duration-150 hover:text-brand transform-fix hover:scale-110"
 			on:click={_=> $topAlertVisible = false}

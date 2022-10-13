@@ -1,17 +1,13 @@
 <script>
 	import { navigating, page } from "$app/stores"
 	import OutClick from 'svelte-outclick'
-	import { isOpen, close, dashboardClose } from '$store/mobile-menu.js'
+	import { isOpen } from '$store/mobile-menu.js'
 	import streams from '$store/streams.js'
 	import Logo from './Logo.svelte'
 	import NavItem from './NavItem.svelte'
 	import StreamCard from './StreamCard.svelte'
 
-	$: $navigating && close()
-
-	const onOutClick =_=> {
-		$page.url.pathname.includes('/dashboard') ? dashboardClose() : close()
-	}
+	$: $navigating && ($isOpen = false)
 
   const menuItems = [
     { title: 'خانه', href:'/', icon:'icon-home' },
@@ -27,7 +23,7 @@
 <!-- UnderLay -->
 <div id="sidemenu__underlay" class="z-30 fixed inset-0 top-header bg-gray-400/50 duration-300 ease-in-out hide {$isOpen && 'show'}" />
 
-<OutClick on:outclick={onOutClick} excludeByQuerySelector={['.js-burger-toggle-btn']}>
+<OutClick on:outclick={()=> $isOpen = false} excludeByQuerySelector={['.js-burger-toggle-btn']}>
 	<sidebar class="z-30 fixed inset-0 top-header w-64 bg-white translate-x-full duration-300 ease-in-out {$isOpen && '!translate-x-0'}">
 		<Logo />
 

@@ -6,7 +6,7 @@
 	import Search from './Search.svelte'
 	import PhoneNumbers from './PhoneNumbers.svelte'
 	import Announcements from './announcements/Index.svelte'
-	import { toggle } from '$store/header-search.js'
+	import { isOpen } from '$store/header-search.js'
 	import TopAlert from '$components/TopAlert.svelte'
 </script>
 
@@ -25,7 +25,7 @@
 			<PhoneNumbers />
 
 			<!-- Open search bar -->
-      <button class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5 lg:hidden" title="مشاهده حساب کاربری" on:click={toggle}>
+      <button class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5 lg:hidden" title="مشاهده حساب کاربری" on:click={()=> $isOpen = !$isOpen}>
         <i class="icon-search xs:text-lg xl:text-xl" />
       </button>
 
