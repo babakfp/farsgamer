@@ -2,19 +2,14 @@
 	import { isOpen, close } from '$store/header-search.js'
 </script>
 
-<div
-  class="
-    z-10 fixed inset-0 bg-gray-400/50 duration-300 ease-out
-    {!$isOpen && 'opacity-0 pointer-events-none invisible'}
-    lg:hidden
-  "
+<div class="z-10 | fixed inset-0 | bg-gray-400/90 | lg:hidden
+	duration-300 ease-out | hide {$isOpen && 'show'}"
   on:click={close}
 />
 
-<form class="
-  -translate-y-full {$isOpen && 'translate-y-0'} duration-300 ease-out
-  z-10 absolute h-full inset-0 bg-white
-  lg:static lg:inset-auto lg:w-full lg:max-w-full lg:translate-y-0
+<form class="z-10 | absolute top-0 inset-x-0 | h-full | bg-white
+	hide -translate-y-full {$isOpen && 'show translate-y-0'} duration-300 ease-out
+  lg:static lg:inset-auto lg:w-full lg:translate-y-0 lg:show
 ">
   <label class="relative flex items-center gap-4 h-full m-0 cursor-text">
     
