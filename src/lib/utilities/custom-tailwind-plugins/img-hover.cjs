@@ -9,6 +9,9 @@ module.exports = plugin(({ addComponents }) => {
 			'&:hover > img': {
 				'@apply opacity-90': {},
 			},
+			'&:focus-visible > img': {
+				'@apply ring-3 ring-brand/75': {},
+			},
 		},
 	})
 })
