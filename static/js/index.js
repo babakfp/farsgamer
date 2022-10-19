@@ -1,6 +1,6 @@
 // Stop slider autoplay and hide pagination if (slides < 2)
-;(_=> {
-	window.addEventListener('load', _=>
+;(()=> {
+	window.addEventListener('load', ()=>
 	{
 		const sliders = document.querySelectorAll('.swiper-container')
 		if (!sliders) return
@@ -19,8 +19,8 @@
 })()
 
 // Dashboard orders table
-;(_=> {
-	window.addEventListener('load', _=> {
+;(()=> {
+	window.addEventListener('load', ()=> {
 		const headCodeCell = document.querySelector('.do__item-cell__code')
 		const headDateCell = document.querySelector('.do__item-cell__date')
 		const headPriceCell = document.querySelector('.do__item-cell__price')

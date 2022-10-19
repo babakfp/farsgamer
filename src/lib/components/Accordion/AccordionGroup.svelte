@@ -4,7 +4,7 @@
 
 	let AccordionGroup
 
-	onMount(_=> {
+	onMount(()=> {
 		const Accordions = AccordionGroup.querySelectorAll('.Accordion')
 
 		Accordions.forEach(Accordion => {

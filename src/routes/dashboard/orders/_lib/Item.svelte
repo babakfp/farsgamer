@@ -42,7 +42,7 @@
 
     <!-- delivered -->
     <div class="do__item-cell do__item-cell__delivered">
-      <button class="btn px-8 btn--brand btn--xs btn--outline js-modal__open" on:click={_=> showModal = true}>سفارش انجام نشد!</button>
+      <button class="btn px-8 btn--brand btn--xs btn--outline js-modal__open" on:click={()=> showModal = true}>سفارش انجام نشد!</button>
 			
 			{#if showModal}
 				<Modal bind:visible={showModal} class="whitespace-normal">

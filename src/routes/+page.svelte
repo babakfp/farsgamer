@@ -96,8 +96,8 @@
 					1280: { slidesPerView: 6, slidesPerGroup: 5 },
 				}}
 				touchEventsTarget="container"
-				on:touchMove={_=> isGiftCardsSwiperGettingTouched = true}
-				on:transitionEnd={_=> isGiftCardsSwiperGettingTouched = false}
+				on:touchMove={()=> isGiftCardsSwiperGettingTouched = true}
+				on:transitionEnd={()=> isGiftCardsSwiperGettingTouched = false}
 			>
 				{#each $giftCards as giftCard}
 					<SwiperSlide>
@@ -131,8 +131,8 @@
 				1536: { slidesPerView: 4, slidesPerGroup: 4 },
 			}}
       touchEventsTarget="container"
-			on:touchMove={_=> isReviewsSwiperGettingTouched = true}
-			on:transitionEnd={_=> isReviewsSwiperGettingTouched = false}
+			on:touchMove={()=> isReviewsSwiperGettingTouched = true}
+			on:transitionEnd={()=> isReviewsSwiperGettingTouched = false}
     >
 			{#each [1,2,3,4,5,6] as comment}
 				<SwiperSlide>

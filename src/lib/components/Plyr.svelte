@@ -10,7 +10,7 @@
 	let id
 
 	let isVideoLoading = true
-	onMount(_=> {
+	onMount(()=> {
 		new Plyr(id, options)
 		isVideoLoading = false
 	})

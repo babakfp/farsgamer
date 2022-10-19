@@ -34,7 +34,7 @@
 	let discountFieldValue = ''
 	let discountErrorMessage = ''
 	let discountSuccessMessage = ''
-	const applyCoupon =_=> {
+	const applyCoupon =()=> {
 		const discount = $discounts.filter(dis => dis.code === discountFieldValue)[0]
 		if (discount) {
 			discountSuccessMessage = 'کد تخفیف با موفقیت اعمال شد.'
@@ -69,7 +69,7 @@
 					<PriceItem title="جمع جزء" price={numberToPrice(subtotal)} />
 					{#if $cartDiscountInUse}
 						<PriceItem title="تخفیف" price={numberToPrice($cartDiscountInUse.value)} negative={true}>
-							<button class="btn p-0 h-6 w-6 hover:text-red-500" slot="after-price" on:click={_=> cartDiscountInUse.set(null)}>
+							<button class="btn p-0 h-6 w-6 hover:text-red-500" slot="after-price" on:click={()=> cartDiscountInUse.set(null)}>
 								<i class="icon-cross-small" />
 							</button>
 						</PriceItem>

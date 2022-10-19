@@ -175,7 +175,7 @@
     }
   };
 
-  const remove_first_and_last_empty_space =_=> {
+  const remove_first_and_last_empty_space =()=> {
     if ( value.charAt(value.length - 1) === ' ' ) {
       value = value.slice(0, -1)
     }
@@ -185,11 +185,11 @@
     }
   }
 
-  const onBlur =_=> {
+  const onBlur =()=> {
     remove_first_and_last_empty_space()
   }
 
-  const onFocus =_=> {
+  const onFocus =()=> {
     if (type === 'tel' && value === '') {
       value = '09'
     }

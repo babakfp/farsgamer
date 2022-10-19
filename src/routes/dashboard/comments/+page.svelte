@@ -4,12 +4,12 @@
 	import CommentItem from '../_lib/CommentItem.svelte'
 	import CommentWithReply from '../_lib/CommentWithReply.svelte'
 
-	onMount(_=> {
+	onMount(()=> {
 		const accordions = document.querySelectorAll('.accordion')
 		accordions.forEach(item => {
 			const btn = item.querySelector('.accordion-btn')
 			const body = item.querySelector('.accordion-body')
-			btn.addEventListener('click', _=> {
+			btn.addEventListener('click', ()=> {
 				accordions.forEach(_item => {
 					if (item !== _item) {
 						_item.querySelector('.accordion-body').classList.add('hidden')

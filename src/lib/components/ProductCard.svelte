@@ -24,7 +24,7 @@
 	$: seconds = Math.floor((distance % (1000 * 60)) / 1000)
 
 	if (specialDiscount) {
-		setInterval(_=> {
+		setInterval(()=> {
 			if ( distance > 0 ) {
 				distance -= 1000
 			}

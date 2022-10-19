@@ -23,8 +23,8 @@
 		1280: { slidesPerView: 5, slidesPerGroup: 4 },
 	}}
   touchEventsTarget="container"
-	on:touchMove={_=> isSwiperGettingTouched = true}
-	on:transitionEnd={_=> isSwiperGettingTouched = false}
+	on:touchMove={()=> isSwiperGettingTouched = true}
+	on:transitionEnd={()=> isSwiperGettingTouched = false}
 >
 
 	{#each products as product}

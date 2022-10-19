@@ -9,7 +9,7 @@
 {#if browser && $topAlertVisible && !$isOpen}
 	<div id="TopAlert" class="z-30 relative flex items-center bg-white border-b border-gray-100">
 		<button class="p-4 duration-150 hover:text-brand transform-fix hover:scale-110"
-			on:click={_=> $topAlertVisible = false}
+			on:click={()=> $topAlertVisible = false}
 		>
 			<i class="icon-cross-small" />
 		</button>

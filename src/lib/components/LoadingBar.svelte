@@ -2,7 +2,7 @@
 	import { navigating } from '$app/stores'
 	export let delay = 250
 	let delayedPreloading = false
-	$: setTimeout(_=> (delayedPreloading = $navigating), delay)
+	$: setTimeout(()=> (delayedPreloading = $navigating), delay)
 </script>
 
 {#if delayedPreloading}

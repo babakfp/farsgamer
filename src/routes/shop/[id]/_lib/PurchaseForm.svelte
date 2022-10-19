@@ -74,7 +74,7 @@
 			</a>
 		{:else}
 			<button class="btn btn--submit w-full sm:max-w-60 btn--brand font-medium text-base" type="submit"
-				on:click={_=> cartItems.update(currentValue => [...currentValue, cartData])}
+				on:click={()=> cartItems.update(currentValue => [...currentValue, cartData])}
 			>افزودن به سبد خرید</button>
 		{/if}
 	</div>

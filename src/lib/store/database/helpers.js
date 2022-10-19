@@ -1,6 +1,6 @@
 import { getRandomNumber } from '$utilities/helpers'
 
-export const getRandomName =_=> {
+export const getRandomName =()=> {
 	const names = [
 		'محسن',
 		'حسن',
@@ -15,7 +15,7 @@ export const getRandomName =_=> {
 	return names[getRandomNumber(0, names.length - 1)]
 }
 
-export const getRandomLastname =_=> {
+export const getRandomLastname =()=> {
 	const lastnames = [
 		'محسنی',
 		'حسنی',
@@ -30,7 +30,7 @@ export const getRandomLastname =_=> {
 	return lastnames[getRandomNumber(0, lastnames.length - 1)]
 }
 
-export const getRandomContent =_=> {
+export const getRandomContent =()=> {
 	const contents = [
 		'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.',
 		'چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.',

@@ -22,8 +22,8 @@
     1280: { slidesPerView: 4, slidesPerGroup: 3 },
   }}
   touchEventsTarget="container"
-	on:touchMove={_=> isSwiperGettingTouched = true}
-	on:transitionEnd={_=> isSwiperGettingTouched = false}
+	on:touchMove={()=> isSwiperGettingTouched = true}
+	on:transitionEnd={()=> isSwiperGettingTouched = false}
 >
   {#each posts as post}
     <SwiperSlide>

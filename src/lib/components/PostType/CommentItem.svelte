@@ -53,7 +53,7 @@
 		</div>
 		
 		{#if canReply}
-			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs -ml-1" on:click={_=> showResponseForm = !showResponseForm}>
+			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs -ml-1" on:click={()=> showResponseForm = !showResponseForm}>
 				{showResponseForm ? 'صرف' : 'ارسال'} نظر
 			</button>
 		{/if}
