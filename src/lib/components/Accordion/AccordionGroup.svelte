@@ -8,15 +8,8 @@
 		const Accordions = AccordionGroup.querySelectorAll('.Accordion')
 
 		Accordions.forEach(Accordion => {
-			Accordion.querySelector('.Accordion-Toggle').addEventListener('click', e => {
+			Accordion.querySelector('.Accordion-Toggle').addEventListener('click', ()=> {
 				Accordion.classList.toggle('Accordion--Active')
-
-				// Remove the active class from the previous active Accordion
-				Accordions.forEach(AccordionScoped => {
-					if (e.currentTarget !== AccordionScoped.querySelector('.Accordion-Toggle') && AccordionScoped.className.includes('Accordion--Active')) {
-						AccordionScoped.classList.remove('Accordion--Active')
-					}
-				})
 			})
 		})
 	})
