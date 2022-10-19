@@ -22,7 +22,7 @@
 	<TrustSymbols />
 	<Social />
 
-	<a class="btn btn--gray btn--outline hover:!bg-transparent focus:!bg-transparent hover:border-brand focus:border-brand | justify-self-center | text-sm font-code dir-ltr" href="https://t.me/babakfp" target="_blank">
+	<a class="btn btn--gray btn--outline hover:!bg-transparent focus:!bg-transparent hover:border-brand focus:border-brand | justify-self-center | text-sm font-code dir-ltr" href="https://t.me/babakfp" target="_blank" rel="noreferrer">
 		👨‍💻 Developer: @babakfp
 	</a>
 
