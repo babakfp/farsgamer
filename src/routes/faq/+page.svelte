@@ -1,5 +1,6 @@
 <script>
 	import {Accordion, AccordionGroup} from '$components/Accordion'
+	const faqItems = [{ title: 'پـیگیـری سـفارشـات' }, { title: 'درگـاه پـرداخـت' }, { title: 'ســایـــر' }]
 </script>
 
 <svelte:head>
@@ -12,8 +13,8 @@
 	<div class="py-4"><hr></div>
 
 	<ol class="relative grid gap-12">
-		{#each [...Array(3).keys()] as _}
-			<AccordionGroup title="پیگیری سفارشات">
+		{#each faqItems as { title }}
+			<AccordionGroup {title}>
 	
 				{#each [...Array(3).keys()] as _}
 					<Accordion title="جوابگوی سوالات پیوسته اهل دنیای موجود">
