@@ -1,4 +1,4 @@
-export const getRandomInt = (min, max) => {
+export const getRandomNumber = (min, max) => {
 	min = Math.ceil(min);
 	max = Math.floor(max);
 	return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -16,7 +16,7 @@ export const getRandomName =_=> {
 		'امیر',
 		'امیرحسین',
 	]
-	return names[getRandomInt(0, names.length - 1)]
+	return names[getRandomNumber(0, names.length - 1)]
 }
 
 export const getRandomLastname =_=> {
@@ -31,7 +31,7 @@ export const getRandomLastname =_=> {
 		'امیر‌زاده',
 		'امیرحسینی',
 	]
-	return lastnames[getRandomInt(0, lastnames.length - 1)]
+	return lastnames[getRandomNumber(0, lastnames.length - 1)]
 }
 
 export const getRandomContent =_=> {
@@ -46,7 +46,7 @@ export const getRandomContent =_=> {
 		'طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد.',
 		'اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.',
 	]
-	return contents[getRandomInt(0, contents.length - 1)]
+	return contents[getRandomNumber(0, contents.length - 1)]
 }
 
 export const createPostComment = (id) => {
@@ -65,7 +65,7 @@ export const createPostComment = (id) => {
 	}
 }
 
-export const createPostComments = (howMany = getRandomInt(4, 8)) => {
+export const createPostComments = (howMany = getRandomNumber(4, 8)) => {
 	let comments = []
 	for (let i = 1; i <= howMany; i++) {
 		comments.push(createPostComment(i))
