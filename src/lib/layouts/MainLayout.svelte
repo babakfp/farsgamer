@@ -7,11 +7,13 @@
 	import Crisp from '$components/Crisp.svelte'
 </script>
 
+<a href="#main" class="sr-only">رد شدن به محتوای اصلی</a>
+
 <Header />
 <Sidebar />
 
 {#key $page.url.origin + $page.url.pathname}
-	<main in:fly={{ delay: 100, duration: 500, y: -32 }}>
+	<main id="main" in:fly={{ delay: 100, duration: 500, y: -32 }}>
 		<div id="page-content" class="container relative py-page overflow-x-hidden xl:pb-12">
 			<slot />
 		</div>

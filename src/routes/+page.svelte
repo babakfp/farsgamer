@@ -10,10 +10,10 @@
 	import { giftCards, bigPosterImages, smallPosterImages } from '$store/home.js'
 
 	const posters4 = [
-		'/img/home/poster-1-4-width (1).png',
-		'/img/home/poster-1-4-width (2).png',
-		'/img/home/poster-1-4-width (3).png',
-		'/img/home/poster-1-4-width (4).png',
+		{ alt: 'پشتیبانی ۲۴ ساعته', src: '/img/home/poster-1-4-width (1).png' },
+		{ alt: 'تجهیزات گیمینگ', src: '/img/home/poster-1-4-width (2).png' },
+		{ alt: 'محصولات استیم', src: '/img/home/poster-1-4-width (3).png' },
+		{ alt: 'محصولات ای‌پکس لجندز', src: '/img/home/poster-1-4-width (4).png' },
 	]
 
 	const bestSellingProducts = products.filter(product => product.price.afterDiscount === undefined)
@@ -51,7 +51,7 @@
 					{#each $bigPosterImages as poster}
 						<SwiperSlide>
 							<a class="img-hover flex" href={poster.href}>
-								<img class="aspect-[16/9]" src={poster.src} alt />
+								<img class="aspect-[16/9]" src={poster.src} alt={poster.alt} />
 							</a>
 						</SwiperSlide>
 					{/each}
@@ -62,7 +62,7 @@
 			<div class="grid grid-cols-2 gap-4 mt-4 md:grid-cols-1 md:w-4/12 md:mt-0">
 				{#each $smallPosterImages as poster}
 					<a class="img-hover flex" href={poster.href}>
-						<img class="w-full rounded aspect-[16/9]" src={poster.src} alt />
+						<img class="w-full rounded aspect-[16/9]" src={poster.src} alt={poster.alt} />
 					</a>
 				{/each}
 			</div>
@@ -102,7 +102,7 @@
 				{#each $giftCards as giftCard}
 					<SwiperSlide>
 						<a class="img-hover" href={giftCard.href}>
-							<img class="rounded aspect-square" src={giftCard.src} alt loading="lazy" />
+							<img class="rounded aspect-square" src={giftCard.src} alt={giftCard.alt} loading="lazy" />
 						</a>
 					</SwiperSlide>
 				{/each}
@@ -161,10 +161,10 @@
   <!-- 2 posters -->
 	<section class="grid gap-4 sm:grid-cols-2">
     <a class="block img-hover" href="javascript:">
-			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (1).png" alt loading="lazy">
+			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (1).png" alt="محصولات کالاف دیوتی موبایل" loading="lazy">
 		</a>
     <a class="block img-hover" href="javascript:">
-			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (2).png" alt loading="lazy">
+			<img class="w-full rounded aspect-[601/251]" src="/img/home/poster-half-width (2).png" alt="محصولات پابجی موبایل" loading="lazy">
 		</a>
 	</section>
 
@@ -177,7 +177,7 @@
 
   <!-- Single poster -->
 	<a class="flex hover:opacity-90" href="javascript:">
-		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (1).png" alt loading="lazy">
+		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (1).png" alt="باندل‌های داغ برای فورتنایت باز ها" loading="lazy">
 	</a>
 
 
@@ -200,10 +200,10 @@
 
   <!-- 4 posters -->
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4 2xl:gap-8">
-		{#each posters4 as posterSrc}
+		{#each posters4 as poster}
 			<a class="group | relative block img-hover" href="javascript:">
-				<img class="aspect-[142/125] rounded-[1.5rem] 2xl:blur 2xl:brightness-90" src={posterSrc} alt loading="lazy" />
-				<img class="aspect-[142/125] rounded-[1.5rem] | hidden absolute inset-center w-2/3 2xl:block | duration-200 group-hover:w-3/4 group-focus:w-3/4" src={posterSrc} alt loading="lazy" />
+				<img class="aspect-[142/125] rounded-[1.5rem] 2xl:blur 2xl:brightness-90" src={poster.src} alt={poster.alt} loading="lazy" />
+				<img class="aspect-[142/125] rounded-[1.5rem] | hidden absolute inset-center w-2/3 2xl:block | duration-200 group-hover:w-3/4 group-focus:w-3/4" src={poster.src} loading="lazy" aria-hidden="true" />
 			</a>
 		{/each}
 	</section>
@@ -211,7 +211,7 @@
 
   <!-- Single poster -->
 	<a class="img-hover flex" href="javascript:">
-		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (2).png" alt loading="lazy">
+		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (2).png" alt="خرید ولورانت پوینت" loading="lazy">
 	</a>
 
 

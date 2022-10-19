@@ -3,7 +3,7 @@ import { writable } from 'svelte-local-storage-store'
 export const cartItems = writable('cartItems', [
 	// {
 	// 	id: 1,
-	// 	title: 'گیف کارد 20 دلاری استیم',
+	// 	title: 'گیفت‌کارد 20 دلاری استیم',
 	// 	thumb: '/img/products/fortnite/thumb-1.jpg',
 	// 	price: '100,000',
 	// 	account: {
