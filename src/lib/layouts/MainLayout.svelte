@@ -5,7 +5,6 @@
 	import Sidebar from '$partials/Sidebar/Sidebar.svelte'
 	import Footer from '$partials/Footer/Footer.svelte'
 	import Crisp from '$components/Crisp.svelte'
-	console.log($page.url);
 </script>
 
 <Header />
