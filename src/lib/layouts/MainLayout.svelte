@@ -5,12 +5,13 @@
 	import Sidebar from '$partials/Sidebar/Sidebar.svelte'
 	import Footer from '$partials/Footer/Footer.svelte'
 	import Crisp from '$components/Crisp.svelte'
+	console.log($page.url);
 </script>
 
 <Header />
 <Sidebar />
 
-{#key $page.url.href}			
+{#key $page.url.origin + $page.url.pathname}
 	<main in:fly={{ delay: 100, duration: 500, y: -32 }}>
 		<div id="page-content" class="container relative py-page overflow-x-hidden xl:pb-12">
 			<slot />
