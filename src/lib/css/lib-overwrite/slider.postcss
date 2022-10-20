@@ -1,6 +1,11 @@
 .swiper--gallery {
 	@apply rounded;
 
+	.swiper-slide > a.img-hover {
+		&:focus-visible > img { @apply opacity-75 }
+		img { @apply ring-0 }
+	}
+
 	.swiper-pagination {
 		@apply !bottom-2 left-4 w-auto;
 	}

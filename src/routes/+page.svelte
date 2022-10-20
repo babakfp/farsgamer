@@ -50,7 +50,7 @@
 				>
 					{#each $bigPosterImages as poster}
 						<SwiperSlide>
-							<a class="img-hover flex" href={poster.href}>
+							<a class="img-hover flex" href={poster.href} tabindex="-1">
 								<img class="aspect-[16/9]" src={poster.src} alt={poster.alt} />
 							</a>
 						</SwiperSlide>
