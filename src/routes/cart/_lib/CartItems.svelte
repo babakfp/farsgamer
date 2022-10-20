@@ -26,8 +26,8 @@
 				
 				<tr class="border-0">
 					<td class="min-w-40 w-40">
-						<a class="flex p-4 -m-4 duration-150 ease-in-out hover:grayscale" href="/shop/1">
-							<img class="rounded" src={item.thumb} alt loading="lazy">
+						<a class="group flex p-4 -m-4" href="/shop/1">
+							<img class="rounded duration-150 ease-in-out group-hover:grayscale" src={item.thumb} alt loading="lazy">
 						</a>
 					</td>
 
