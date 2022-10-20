@@ -26,7 +26,7 @@
 				
 				<tr class="border-0">
 					<td class="min-w-40 w-40">
-						<a class="group flex p-4 -m-4" href="/shop/1">
+						<a class="group flex p-4 -m-4" href="/shop/{item.id}">
 							<img class="rounded duration-150 ease-in-out group-hover:grayscale" src={item.thumb} alt loading="lazy">
 						</a>
 					</td>
