@@ -9,7 +9,7 @@ const minMaxWidth = {
 
 module.exports = {
 	presets: [ addons.presets ],
-  content: ['./src/**/*.{html,svelte}'],
+	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
 			colors: {
