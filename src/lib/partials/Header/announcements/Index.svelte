@@ -4,6 +4,7 @@
 	import OutClick from 'svelte-outclick'
 	import Item from './Item.svelte'
 	import { announcements } from '$store/announcements.js'
+	import LeftItem from '../LeftItem.svelte'
 
 	let isOpen = false
 	let toggle
@@ -13,23 +14,9 @@
 </script>
 
 <div class="3xs:relative">
-	<!-- Header btn -->
-	<button
-		bind:this={toggle}
-		on:click={()=> isOpen = !isOpen}
-		class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5" title="مشاهده اعلانات"
-	>
-		<div class="relative">
-			<i class="icon-bell xs:text-lg xl:text-xl" />
-			
-			{#if $announcements.length > 0}
-				<div class="absolute flex items-center justify-center -right-1 -top-1 w-3.5 h-3.5 text-2xs bg-red-400 text-white rounded-full">
-					{$announcements.length}
-				</div>
-			{/if}
-		</div>
-	</button>
-
+	
+	<LeftItem bind:ref={toggle} tag="button" class="lg:hidden" icon="icon-bell" title="مشاهده اعلانات" count={$announcements.length} on:click={()=> isOpen = !isOpen} />
+	
 	<OutClick on:outclick={()=> isOpen = false} excludeByDomNode={[toggle]}>
 		<div class="z-20 absolute inset-x-4 top-full -mt-2 overflow-hidden bg-white border border-gray-100 rounded-sm duration-150 hide -translate-y-8 {isOpen && 'show !translate-y-0'} 3xs:left-0 3xs:right-auto 3xs:w-80 xs:w-88" style="box-shadow: 0 1rem 3rem rgb(0 0 0 / 18%)">
 

@@ -8,6 +8,7 @@
 	import Announcements from './announcements/Index.svelte'
 	import { isOpen } from '$store/header-search.js'
 	import TopAlert from '$components/TopAlert.svelte'
+	import LeftItem from './LeftItem.svelte'
 </script>
 
 <TopAlert />
@@ -24,30 +25,16 @@
     <div class="flex h-full -ml-2">
 			<PhoneNumbers />
 
-			<!-- Open search bar -->
-      <button class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5 lg:hidden" title="مشاهده حساب کاربری" on:click={()=> $isOpen = !$isOpen}>
-        <i class="icon-search xs:text-lg xl:text-xl" />
-      </button>
+			<!-- SEARCH -->
+			<LeftItem tag="button" class="lg:hidden" icon="icon-search" title="مشاهده حساب کاربری" on:click={()=> $isOpen = !$isOpen} />
 
 			<Announcements />
 
-      <!-- Go to cart page -->
-      <a class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5" href="/cart" title="مشاهده سبد خرید">
-        <div class="relative">
-					<i class="icon-shopping-cart xs:text-lg xl:text-xl" />
-					
-					{#if $cartItems.length > 0}
-						<div class="absolute flex items-center justify-center -right-1 -top-1 w-3.5 h-3.5 text-2xs bg-red-400 text-white rounded-full">
-							{$cartItems.length}
-						</div>
-					{/if}
-				</div>
-      </a>
+      <!-- CART -->
+			<LeftItem tag="a" class="lg:hidden" icon="icon-shopping-cart" href="/cart" title="مشاهده سبد خرید" count={$cartItems.length} />
 
-      <!-- Go to dashboard page -->
-      <a class="h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand sm:px-2.5" href={$isLoggedIn ? '/dashboard' : '/login'} title={$isLoggedIn ? 'مشاهده حساب کاربری' : 'ورود به حساب کاربری'}>
-        <i class="icon-user xs:text-lg xl:text-xl" />
-      </a>
+      <!-- DASHBOARD -->
+			<LeftItem tag="a" class="lg:hidden" icon="icon-user" href={$isLoggedIn ? '/dashboard' : '/login'} title={$isLoggedIn ? 'مشاهده حساب کاربری' : 'ورود به حساب کاربری'} />
     </div>
 
   </div>
