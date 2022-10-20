@@ -26,15 +26,15 @@
 		<span class="font-semibold">شماره تماس</span>
 		<div class="flex gap-2 justify-items-end tracking-wider">
 			<!-- main call line -->
-			<a class="duration-100 hover:text-brand focus:text-brand" href="tel:{$phoneNumbers[0]}" title="تماس تلفنی مستقیم">{$phoneNumbers[0]}</a>
+			<a class="link" href="tel:{$phoneNumbers[0]}" title="تماس تلفنی مستقیم">{$phoneNumbers[0]}</a>
 		
 			<i class="icon-minus opacity-50" />
-			<a class="duration-100 hover:text-brand focus:text-brand" href="tel:{$phoneNumbers[1]}" title="تماس تلفنی مستقیم">{$phoneNumbers[1]}</a>
+			<a class="link" href="tel:{$phoneNumbers[1]}" title="تماس تلفنی مستقیم">{$phoneNumbers[1]}</a>
 		</div>
 	</div>
 	
 	<div class="space-y-2">
 		<div class="font-semibold">آدرس ایمیل</div>
-		<a class="inline-block duration-100 font-code hover:text-brand focus:text-brand" href="mail:farsgamer@gmail.com" title="ارسال ایمیل">FarsGamer@gmail.com</a>
+		<a class="link inline-block font-code" href="mail:farsgamer@gmail.com" title="ارسال ایمیل">FarsGamer@gmail.com</a>
 	</div>
 </section>
