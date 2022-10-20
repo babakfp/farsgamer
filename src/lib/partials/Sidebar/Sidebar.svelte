@@ -24,7 +24,7 @@
 <div id="sidemenu__underlay" class="z-30 fixed inset-0 top-header bg-gray-400/50 duration-300 ease-in-out hide {$isOpen && 'show'}" />
 
 <OutClick on:outclick={()=> $isOpen = false} excludeByQuerySelector={['.js-burger-toggle-btn']}>
-	<sidebar class="z-30 fixed inset-0 top-header w-64 bg-white translate-x-full duration-300 ease-in-out {$isOpen && '!translate-x-0'}">
+	<sidebar class="z-30 fixed inset-0 top-header w-64 bg-white translate-x-full duration-300 ease-in-out hide {$isOpen && '!translate-x-0 show'}">
 		<Logo />
 
 		<div class="scrollbar max-h-full pb-12 border-l border-gray-100">
@@ -77,7 +77,7 @@
       @apply lg:hidden;
     }
     sidebar {
-      @apply lg:w-56 lg:z-0 lg:translate-x-0 lg:transition-none lg:border-t-0 2xl:w-64;
+      @apply lg:show lg:w-56 lg:z-0 lg:translate-x-0 lg:transition-none lg:border-t-0 2xl:w-64;
     }
   }
 </style>
