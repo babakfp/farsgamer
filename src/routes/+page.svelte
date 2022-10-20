@@ -202,8 +202,8 @@
 	<section class="grid grid-cols-2 gap-4 sm:grid-cols-4 2xl:gap-8">
 		{#each posters4 as poster}
 			<a class="group | relative block img-hover" href="javascript:">
-				<img class="aspect-[142/125] rounded-[1.5rem] 2xl:blur 2xl:brightness-90" src={poster.src} alt={poster.alt} loading="lazy" />
-				<img class="aspect-[142/125] rounded-[1.5rem] | hidden absolute inset-center w-2/3 2xl:block | duration-200 group-hover:w-3/4 group-focus-visible:w-3/4" src={poster.src} loading="lazy" aria-hidden="true" />
+				<img class="aspect-[142/125] rounded 2xl:blur 2xl:brightness-90" src={poster.src} alt={poster.alt} loading="lazy" />
+				<img class="aspect-[142/125] rounded | hidden absolute inset-center w-2/3 2xl:block | duration-200 group-hover:w-3/4 group-focus-visible:w-3/4" src={poster.src} loading="lazy" aria-hidden="true" />
 			</a>
 		{/each}
 	</section>
