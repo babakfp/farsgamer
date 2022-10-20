@@ -176,7 +176,7 @@
 
 
   <!-- Single poster -->
-	<a class="flex hover:opacity-90" href="javascript:">
+	<a class="flex img-hover" href="javascript:">
 		<img class="rounded aspect-[200/41]" src="/img/home/poster-full-width (1).png" alt="باندل‌های داغ برای فورتنایت باز ها" loading="lazy">
 	</a>
 
