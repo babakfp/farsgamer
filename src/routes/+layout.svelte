@@ -1,7 +1,7 @@
 <script>
 	import { browser } from '$app/environment'
 	import { page } from '$app/stores'
-  import '$lib/css/app.postcss'
+  import '$lib/styles/app.postcss'
 
 	import LoadingBar from '$components/LoadingBar.svelte'
 
