@@ -31,10 +31,10 @@
 			<Announcements />
 
       <!-- CART -->
-			<LeftItem tag="a" class="lg:hidden" icon="icon-shopping-cart" href="/cart" title="مشاهده سبد خرید" count={$cartItems.length} />
+			<LeftItem tag="a" icon="icon-shopping-cart" href="/cart" title="مشاهده سبد خرید" count={$cartItems.length} />
 
       <!-- DASHBOARD -->
-			<LeftItem tag="a" class="lg:hidden" icon="icon-user" href={$isLoggedIn ? '/dashboard' : '/login'} title={$isLoggedIn ? 'مشاهده حساب کاربری' : 'ورود به حساب کاربری'} />
+			<LeftItem tag="a" icon="icon-user" href={$isLoggedIn ? '/dashboard' : '/login'} title={$isLoggedIn ? 'مشاهده حساب کاربری' : 'ورود به حساب کاربری'} />
     </div>
 
   </div>
