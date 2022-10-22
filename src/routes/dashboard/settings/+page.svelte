@@ -2,6 +2,10 @@
   import { Form, Input } from '$components/Form'
 </script>
 
+<svelte:head>
+	<title>تنظیمات حساب</title>
+</svelte:head>
+
 <Form class="grid gap-8 p-4 sm:grid-cols-2" let:isFormValid>
   <Input name="firstname" />
   <Input name="lastname" />

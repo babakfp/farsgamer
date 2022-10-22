@@ -4,3 +4,7 @@
 	isLoggedIn.set(false)
 	goto('/')
 </script>
+
+<svelte:head>
+	<title>خروج از حساب</title>
+</svelte:head>

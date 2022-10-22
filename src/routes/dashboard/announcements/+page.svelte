@@ -3,6 +3,10 @@
 	import Alert from '$components/Alert.svelte'
 </script>
 
+<svelte:head>
+	<title>اعلان‌ها</title>
+</svelte:head>
+
 {#if $announcements && $announcements.length > 0}
 
 	<ul class="grid gap-4">

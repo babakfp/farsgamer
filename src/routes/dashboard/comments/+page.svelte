@@ -21,6 +21,10 @@
 	})
 </script>
 
+<svelte:head>
+	<title>نظرات من</title>
+</svelte:head>
+
 <Tab>
 	<svelte:fragment slot="tab">
 		<TabLabel title="در انتظار ثبت نظر" hash="waiting-for-comments" />

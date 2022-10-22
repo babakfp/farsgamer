@@ -9,7 +9,7 @@
     { title: 'داشبورد', href: '/dashboard', icon: 'icon-cube' },
     { title: 'سفارشات من', href: '/dashboard/orders', icon: 'icon-gamepad' },
     { title: 'نظرات من', href: '/dashboard/comments', icon: 'icon-comment' },
-    { title: 'اعلانات', href: '/dashboard/announcements', icon: 'icon-bell' },
+    { title: 'اعلان‌ها', href: '/dashboard/announcements', icon: 'icon-bell' },
     { title: 'تنظیمات حساب', href: '/dashboard/settings', icon: 'icon-settings' },
     { title: 'خروج از حساب', href: '/dashboard/logout', icon: 'icon-power' },
   ]

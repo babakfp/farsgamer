@@ -2,6 +2,10 @@
 	import Item from './_lib/Item.svelte'
 </script>
 
+<svelte:head>
+	<title>سفارشات من</title>
+</svelte:head>
+
 <div class="do">
   <div class="do__head">
     <div class="do__head-cell do__item-cell__code">کد سفارش</div>
