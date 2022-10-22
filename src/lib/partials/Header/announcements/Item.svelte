@@ -6,7 +6,7 @@
 </script>
 
 <li class="border-b border-gray-100 last:border-0">
-	<a class="grid p-4 duration-100 ease-in-out hover:bg-gray-100 focus-visible:bg-gray-100" href="/dashboard/announcements#{id}">
+	<a class="grid p-4 duration-150 ease-in-out hover:bg-gray-100 focus-visible:bg-gray-100" href="/dashboard/announcements#{id}">
 		
 		<div class="flex items-start justify-between">
 			<span class="font-bold text-sm line-clamp-1">{title}</span>

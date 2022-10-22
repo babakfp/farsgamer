@@ -28,7 +28,7 @@
 }
 
 .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) {
-	@apply w-2 h-2 bg-white opacity-50 transition-colors duration-100 ease-in hover:bg-brand hover:opacity-100;
+	@apply w-2 h-2 bg-white opacity-50 transition-colors duration-150 ease-in hover:bg-brand hover:opacity-100;
 }
 
 .swiper-pagination-bullet-active {
@@ -50,7 +50,7 @@
 	&::before,
 	&::after {
 		content: "";
-		@apply absolute top-0 bottom-0 w-page h-full bg-gray-100/50 backdrop-blur-sm z-2 duration-100 ease-in-out;
+		@apply absolute top-0 bottom-0 w-page h-full bg-gray-100/50 backdrop-blur-sm z-2 duration-150 ease-in-out;
 		@media (min-width: 1790px) { content: unset }
 	}
 	&::before { @apply right-0 }

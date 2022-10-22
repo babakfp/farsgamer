@@ -39,7 +39,7 @@
 		@apply pr-10;
 	}
 	.selectContainer .clearSelect {
-		@apply flex items-center justify-center !right-auto !text-gray-300 cursor-pointer duration-100 ease-in-out hover:!text-brand hover:text-opacity-80;
+		@apply flex items-center justify-center !right-auto !text-gray-300 cursor-pointer duration-150 ease-in-out hover:!text-brand hover:text-opacity-80;
 		height: calc(100% + 4px);
 		left: 1.5rem;
 		top: -2px !important;

@@ -13,7 +13,7 @@
 	bind:this={ref}
 	this={tag}
 	class="
-		h-full flex items-center px-2 text-gray-600 duration-100 hover:text-brand focus-visible:text-brand sm:px-2.5
+		h-full flex items-center px-2 text-gray-600 duration-150 hover:text-brand focus-visible:text-brand sm:px-2.5
 		{className}
 	"
 	{title}
