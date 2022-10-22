@@ -9,16 +9,9 @@
 	export { className as class }
 </script>
 
-<svelte:element
-	bind:this={ref}
-	this={tag}
-	class="
-		h-full flex items-center px-2 text-gray-600 duration-150 hover:text-brand focus-visible:text-brand sm:px-2.5
-		{className}
-	"
-	{title}
-	{href}
-	on:click
+<svelte:element class="h-full flex items-center px-2 text-gray-600 duration-150 hover:text-brand focus-visible:text-brand sm:px-2.5 | {className}"
+	bind:this={ref} this={tag}
+	{href} {title} on:click
 >
 	{#if count}
 		<div class="relative">
