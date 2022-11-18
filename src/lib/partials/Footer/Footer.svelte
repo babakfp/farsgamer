@@ -22,8 +22,14 @@
 	<TrustSymbols />
 	<Social />
 
-	<a class="btn btn--gray btn--outline hover:!bg-transparent focus:!bg-transparent hover:border-brand focus:border-brand | justify-self-center | text-sm font-code dir-ltr" href="https://t.me/babakfp" target="_blank" rel="noreferrer noopener">
-		👨‍💻 Developer: @babakfp
-	</a>
+	<div class="flex flex-wrap justify-center gap-4">
+		<a class="btn btn--gray btn--outline | text-sm font-code"
+			href="https://github.com/babakfp/farsgamer" target="_blank" rel="noreferrer noopener"
+		>GitHub</a>
+		
+		<a class="btn btn--gray btn--outline | text-sm font-code"
+			href="https://babakfp.ir" target="_blank" rel="noreferrer noopener"
+		>Developer</a>
+	</div>
 
 </footer>
