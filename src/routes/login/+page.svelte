@@ -15,7 +15,7 @@
 	<title>ورود به حساب</title>
 </svelte:head>
 
-<div class="max-w-sm mx-auto">
+<div class="max-w-sm mx-auto pt-4">
 	<h2 class="text-lg font-bold">ورود به حساب</h2>
 	
 	{#if state === 'first'}

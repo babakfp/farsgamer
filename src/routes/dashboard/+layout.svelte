@@ -10,7 +10,7 @@
 {#if $isLoggedIn}
 	<div class="lg:flex lg:items-start lg:gap-4 xl:gap-8">
 		<NavMenu />
-		<div class="grid w-full">
+		<div class="grid w-full pb-4">
 			<slot />
 		</div>
 	</div>
