@@ -17,4 +17,11 @@ export default {
   preprocess: [
 		sveltePreprocess({ postcss: true }),
 	],
+	// Disable Svelte A11Y warnings in the console
+	onwarn: (warning, handler) => {
+		if (warning.code.startsWith("a11y-")) {
+			return
+		}
+		handler(warning)
+	},
 }
