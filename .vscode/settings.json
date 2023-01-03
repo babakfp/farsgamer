@@ -1,8 +1,8 @@
 {
 	"editor.formatOnSave": true,
 	"search.exclude": {
-		"tailwind.config.full.cjs": true,
-		"static/fonts": true,
-    "static/lib": true,
+		"./tailwind.config.full.cjs": true,
+		"./static/fonts/*": true,
+    "./static/lib/*": true,
 	}
 }
