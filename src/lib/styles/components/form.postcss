@@ -1,19 +1,18 @@
 @layer components {
-
 	.input {
 		@apply w-full px-4 bg-white rounded border-2 border-gray-200 font-dana-en text-sm duration-200 ease-in-out placeholder:text-gray-400 hover:border-brand focus:border-brand;
-		
+
 		&:not(textarea) {
 			@apply h-input;
 		}
 
 		/* Firefox */
-		&[type=number] {
+		&[type="number"] {
 			-moz-appearance: textfield;
 		}
 		/* Chrome, Safari, Edge, Opera */
-		&[type=number]::-webkit-outer-spin-button,
-		&[type=number]::-webkit-inner-spin-button {
+		&[type="number"]::-webkit-outer-spin-button,
+		&[type="number"]::-webkit-inner-spin-button {
 			-webkit-appearance: none;
 			margin: 0;
 		}
@@ -26,5 +25,4 @@
 	label {
 		@apply inline-block mb-1 cursor-pointer;
 	}
-
 }

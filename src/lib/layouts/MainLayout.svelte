@@ -1,10 +1,10 @@
 <script>
-	import { fly } from 'svelte/transition'
-	import { page } from '$app/stores'
-	import Header from '$partials/Header/Header.svelte'
-	import Sidebar from '$partials/Sidebar/Sidebar.svelte'
-	import Footer from '$partials/Footer/Footer.svelte'
-	import Crisp from '$components/Crisp.svelte'
+	import { fly } from "svelte/transition"
+	import { page } from "$app/stores"
+	import Header from "$partials/Header/Header.svelte"
+	import Sidebar from "$partials/Sidebar/Sidebar.svelte"
+	import Footer from "$partials/Footer/Footer.svelte"
+	import Crisp from "$components/Crisp.svelte"
 </script>
 
 <a href="#main" class="sr-only">رد شدن به محتوای اصلی</a>

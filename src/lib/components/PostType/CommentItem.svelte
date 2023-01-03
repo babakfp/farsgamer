@@ -1,7 +1,7 @@
 <script>
-	import StarRating from '$components/StarRating.svelte'
-	import { CommentForm } from './index.js'
-	
+	import StarRating from "$components/StarRating.svelte"
+	import { CommentForm } from "./index.js"
+
 	export let id
 	export let firstname
 	export let lastname
@@ -34,29 +34,31 @@
 		</div>
 	{/if}
 
-	<hr class="border-gray-100 border-dashed -mx-4 mt-2 pt-3">
+	<hr class="border-gray-100 border-dashed -mx-4 mt-2 pt-3" />
 
 	<div class="flex items-center justify-between gap-2 whitespace-nowrap 4xs:gap-4">
 		<div class="flex flex-wrap items-center gap-2 w-full text-gray-500 text-xs">
-      <span>{firstname} {lastname}</span>
-			
+			<span>{firstname} {lastname}</span>
+
 			{#if isBuyer}
 				<span class="py-1 px-2 bg-gray-50 rounded text-gray-600 text-2xs">خریدار</span>
 			{/if}
 			{#if rating}
-				<div class="{canReply && 'absolute -right-1.5 top-4 sm:-right-4 sm:top-2'}">
+				<div class={canReply && "absolute -right-1.5 top-4 sm:-right-4 sm:top-2"}>
 					<StarRating {rating} vertical={true} />
 				</div>
 			{/if}
 
 			<span class="mr-auto">{date}</span>
 		</div>
-		
+
 		{#if canReply}
-			<button class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs -ml-1" on:click={()=> showResponseForm = !showResponseForm}>
-				{showResponseForm ? 'صرف' : 'ارسال'} نظر
+			<button
+				class="btn btn--light {showResponseForm && 'btn--outline'} btn--xs -ml-1"
+				on:click={() => (showResponseForm = !showResponseForm)}
+			>
+				{showResponseForm ? "صرف" : "ارسال"} نظر
 			</button>
 		{/if}
 	</div>
-
 </div>

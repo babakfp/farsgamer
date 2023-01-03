@@ -1,10 +1,10 @@
 <script>
-	import { browser } from '$app/environment'
-	import { goto } from '$app/navigation'
-	import NavMenu from './_lib/NavMenu.svelte'
-	import { isLoggedIn } from '$store/global.js'
+	import { browser } from "$app/environment"
+	import { goto } from "$app/navigation"
+	import NavMenu from "./_lib/NavMenu.svelte"
+	import { isLoggedIn } from "$store/global.js"
 
-	if (browser && !$isLoggedIn) goto('/login')
+	if (browser && !$isLoggedIn) goto("/login")
 </script>
 
 {#if $isLoggedIn}

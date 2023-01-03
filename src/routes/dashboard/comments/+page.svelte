@@ -1,21 +1,21 @@
 <script>
-	import { onMount } from 'svelte'
-	import { Tab, TabLabel, TabPanel } from '$components/Tab'
-	import CommentItem from '../_lib/CommentItem.svelte'
-	import CommentWithReply from '../_lib/CommentWithReply.svelte'
+	import { onMount } from "svelte"
+	import { Tab, TabLabel, TabPanel } from "$components/Tab"
+	import CommentItem from "../_lib/CommentItem.svelte"
+	import CommentWithReply from "../_lib/CommentWithReply.svelte"
 
-	onMount(()=> {
-		const accordions = document.querySelectorAll('.accordion')
+	onMount(() => {
+		const accordions = document.querySelectorAll(".accordion")
 		accordions.forEach(item => {
-			const btn = item.querySelector('.accordion-btn')
-			const body = item.querySelector('.accordion-body')
-			btn.addEventListener('click', ()=> {
+			const btn = item.querySelector(".accordion-btn")
+			const body = item.querySelector(".accordion-body")
+			btn.addEventListener("click", () => {
 				accordions.forEach(_item => {
 					if (item !== _item) {
-						_item.querySelector('.accordion-body').classList.add('hidden')
+						_item.querySelector(".accordion-body").classList.add("hidden")
 					}
 				})
-				body.classList.toggle('hidden')
+				body.classList.toggle("hidden")
 			})
 		})
 	})
@@ -36,12 +36,12 @@
 			<div class="grid gap-4">
 				<CommentItem />
 				<CommentItem />
-      </div>
+			</div>
 		</TabPanel>
 		<TabPanel hash="verified-comments">
-      <div class="grid gap-4">
+			<div class="grid gap-4">
 				<CommentWithReply />
-      </div>
+			</div>
 		</TabPanel>
 	</svelte:fragment>
 </Tab>

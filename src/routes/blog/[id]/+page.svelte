@@ -1,6 +1,6 @@
 <script>
-	import { Description, Comments } from '$components/PostType'
-	import { Tab, TabLabel, TabPanel } from '$components/Tab'
+	import { Description, Comments } from "$components/PostType"
+	import { Tab, TabLabel, TabPanel } from "$components/Tab"
 	export let data
 </script>
 
@@ -17,16 +17,20 @@
 			</li>
 		{/if}
 	</ul>
-	
+
 	<div class="relative mt-4 mb-5.5 mr-1.5">
-		<img class="absolute rounded blur opacity-50" aria-hidden="true"
-			src={data.post.featuredImage} alt={data.post.title} />
-		<img class="relative rounded"
-			src={data.post.featuredImage} alt={data.post.title} />
+		<img
+			class="absolute rounded blur opacity-50"
+			aria-hidden="true"
+			src={data.post.featuredImage}
+			alt={data.post.title}
+		/>
+		<img class="relative rounded" src={data.post.featuredImage} alt={data.post.title} />
 	</div>
-	
+
 	<h1 class="px-4 mt-4 text-sm font-semibold dir-ltr text-gray-600 sm:text-base 2xl:text-lg">
-		{data.post.title}</h1>
+		{data.post.title}
+	</h1>
 </section>
 
 <Tab class="mt-8">

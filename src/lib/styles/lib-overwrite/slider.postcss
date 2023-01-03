@@ -2,8 +2,12 @@
 	@apply rounded;
 
 	.swiper-slide > a.img-hover {
-		&:focus-visible > img { @apply opacity-75 }
-		img { @apply ring-0 }
+		&:focus-visible > img {
+			@apply opacity-75;
+		}
+		img {
+			@apply ring-0;
+		}
 	}
 
 	.swiper-pagination {
@@ -44,20 +48,30 @@
 
 .swiper--card {
 	@apply pt-4 -my-4 px-page -mx-page;
-	padding-bottom: calc(16px + 24px - 8px + .5rem);
+	padding-bottom: calc(16px + 24px - 8px + 0.5rem);
 
-	@media (min-width: 1790px) { @apply px-0 mx-0 }
+	@media (min-width: 1790px) {
+		@apply px-0 mx-0;
+	}
 	&::before,
 	&::after {
 		content: "";
 		@apply absolute top-0 bottom-0 w-page h-full bg-gray-100/50 backdrop-blur-sm z-2 duration-150 ease-in-out;
-		@media (min-width: 1790px) { content: unset }
+		@media (min-width: 1790px) {
+			content: unset;
+		}
 	}
-	&::before { @apply right-0 }
-	&::after { @apply left-0 }
+	&::before {
+		@apply right-0;
+	}
+	&::after {
+		@apply left-0;
+	}
 
 	&.swiper--moving::before,
-	&.swiper--moving::after { @apply opacity-0 }
+	&.swiper--moving::after {
+		@apply opacity-0;
+	}
 
 	.swiper-pagination {
 		@apply !bottom-4 ml-page;

@@ -1,12 +1,12 @@
 @layer components {
-
-  .link,
+	.link,
 	.content-link a {
 		@apply transition-colors duration-150 ease-in-out;
-    @apply text-brand hover:!text-brand/75;
+		@apply text-brand hover:!text-brand/75;
 		@apply focus-visible:!outline-1 focus-visible:!outline-dashed focus-visible:!outline-brand;
-  }
+	}
 
-	.link--underline { @apply underline }
-
+	.link--underline {
+		@apply underline;
+	}
 }

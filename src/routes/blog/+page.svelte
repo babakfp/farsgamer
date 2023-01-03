@@ -1,10 +1,12 @@
 <script>
-	import { page } from '$app/stores'
-	import { posts } from '$database/posts.js'
-	import PostCard from '$components/PostCard.svelte'
-	import Pagination from '$components/Pagination.svelte'
-	import { getPaginationItems, getPaginationMaxNumberOfPages } from '$utilities/pagination.js'
-	$: currentPageNumber = $page.url.searchParams.get('page') ? Number( $page.url.searchParams.get('page') ) : 1
+	import { page } from "$app/stores"
+	import { posts } from "$database/posts.js"
+	import PostCard from "$components/PostCard.svelte"
+	import Pagination from "$components/Pagination.svelte"
+	import { getPaginationItems, getPaginationMaxNumberOfPages } from "$utilities/pagination.js"
+	$: currentPageNumber = $page.url.searchParams.get("page")
+		? Number($page.url.searchParams.get("page"))
+		: 1
 </script>
 
 <svelte:head>
@@ -17,4 +19,8 @@
 	{/each}
 </div>
 
-<Pagination {currentPageNumber} maxNumberOfPage={getPaginationMaxNumberOfPages(posts, 8)} baseUrl={'/blog'} />
+<Pagination
+	{currentPageNumber}
+	maxNumberOfPage={getPaginationMaxNumberOfPages(posts, 8)}
+	baseUrl={"/blog"}
+/>

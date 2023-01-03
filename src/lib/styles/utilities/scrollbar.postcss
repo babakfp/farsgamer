@@ -1,17 +1,33 @@
 @layer utilities {
-
-	.scrollbar { @apply overflow-overlay }
-	.scrollbar-x { @apply overflow-x-overlay }
-	.scrollbar-y { @apply overflow-y-overlay }
-
-	@supports (overflow: overlay) {
-		.scrollbar::-webkit-scrollbar { @apply w-0 h-0 }
-		.scrollbar:hover::-webkit-scrollbar { @apply w-1.5 h-1.5 }
+	.scrollbar {
+		@apply overflow-overlay;
+	}
+	.scrollbar-x {
+		@apply overflow-x-overlay;
+	}
+	.scrollbar-y {
+		@apply overflow-y-overlay;
 	}
 
-	.scrollbar-x-spacing-sm::-webkit-scrollbar-thumb { @apply border-r-8 border-l-8 }
-	.scrollbar-y-spacing-sm::-webkit-scrollbar-thumb { @apply border-t-8 border-b-8 }
-	.scrollbar-x-spacing-lg::-webkit-scrollbar-thumb { @apply border-r-12 border-l-12 }
-	.scrollbar-y-spacing-lg::-webkit-scrollbar-thumb { @apply border-t-12 border-b-12 }
+	@supports (overflow: overlay) {
+		.scrollbar::-webkit-scrollbar {
+			@apply w-0 h-0;
+		}
+		.scrollbar:hover::-webkit-scrollbar {
+			@apply w-1.5 h-1.5;
+		}
+	}
 
+	.scrollbar-x-spacing-sm::-webkit-scrollbar-thumb {
+		@apply border-r-8 border-l-8;
+	}
+	.scrollbar-y-spacing-sm::-webkit-scrollbar-thumb {
+		@apply border-t-8 border-b-8;
+	}
+	.scrollbar-x-spacing-lg::-webkit-scrollbar-thumb {
+		@apply border-r-12 border-l-12;
+	}
+	.scrollbar-y-spacing-lg::-webkit-scrollbar-thumb {
+		@apply border-t-12 border-b-12;
+	}
 }

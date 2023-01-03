@@ -1,16 +1,15 @@
 @layer components {
-
 	.btn-base {
 		@apply h-10 inline-flex items-center justify-center gap-3;
-    @apply border-2 border-transparent border-opacity-80 rounded;
-    @apply duration-150 ease-in-out;
+		@apply border-2 border-transparent border-opacity-80 rounded;
+		@apply duration-150 ease-in-out;
 		@apply whitespace-nowrap select-none;
 	}
 
 	.btn {
-    @apply btn-base px-4;
-    @apply duration-150 ease-in-out;
-    @apply active:scale-x-95 hover:border-opacity-100 focus:border-opacity-100;
+		@apply btn-base px-4;
+		@apply duration-150 ease-in-out;
+		@apply active:scale-x-95 hover:border-opacity-100 focus:border-opacity-100;
 		@apply ring-brand/75 focus-visible:ring-1 focus-visible:!border-brand/75;
 	}
 
@@ -41,7 +40,8 @@
 	}
 
 	/* Brand */
-	.btn--brand {}
+	.btn--brand {
+	}
 	.btn--brand:not(.btn--outline) {
 		@apply bg-brand text-white hover:bg-brand-deep focus:bg-brand-deep;
 	}
@@ -52,7 +52,7 @@
 	.btn--sm {
 		@apply text-sm h-9 px-3;
 	}
-	
+
 	.btn--sm i {
 		@apply text-lg;
 	}
@@ -70,8 +70,7 @@
 		@apply opacity-75;
 	}
 
-  [disabled].btn {
-    @apply !pointer-events-none !opacity-50;
-  }
-
+	[disabled].btn {
+		@apply !pointer-events-none !opacity-50;
+	}
 }

@@ -1,48 +1,44 @@
 @layer base {
-
 	:root {
-		--header: theme('spacing.16');
-		--page: theme('spacing.4');
-		--input: theme('spacing.11');
+		--header: theme("spacing.16");
+		--page: theme("spacing.4");
+		--input: theme("spacing.11");
 	}
 
 	@screen sm {
 		:root {
-			--page: theme('spacing.6');
+			--page: theme("spacing.6");
 		}
 	}
 	@screen lg {
 		:root {
-			--header: theme('spacing.18');
+			--header: theme("spacing.18");
 		}
 	}
 	@screen xl {
 		:root {
-			--page: theme('spacing.8');
+			--page: theme("spacing.8");
 		}
 	}
 
-  /*
+	/*
   ---
   Fixing Swiper content shift
   ---
   */
 
-  .swiper-prevent-content-shift {
-    --swiper-slidesPerView: 1;
-    --swiper-spaceBetween: 16px;
-    --swiper-SwiperSlide-width: calc(
-      (100%
-      - ( var(--swiper-slidesPerView) - 1 )
-      * var(--swiper-spaceBetween))
-      / var(--swiper-slidesPerView)
-    );
+	.swiper-prevent-content-shift {
+		--swiper-slidesPerView: 1;
+		--swiper-spaceBetween: 16px;
+		--swiper-SwiperSlide-width: calc(
+			(100% - (var(--swiper-slidesPerView) - 1) * var(--swiper-spaceBetween)) /
+				var(--swiper-slidesPerView)
+		);
 
-    .swiper-slide {
-      width: var(--swiper-SwiperSlide-width);
-      /* Only horizontal swipers need this because vertical ones have fixed width and height */
-      margin-left: var(--swiper-spaceBetween);
-    }
-  }
-
+		.swiper-slide {
+			width: var(--swiper-SwiperSlide-width);
+			/* Only horizontal swipers need this because vertical ones have fixed width and height */
+			margin-left: var(--swiper-spaceBetween);
+		}
+	}
 }

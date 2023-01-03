@@ -1,18 +1,18 @@
 <script>
-	import { setContext, getContext } from 'svelte'
-	import { writable } from 'svelte/store'
+	import { setContext, getContext } from "svelte"
+	import { writable } from "svelte/store"
 
-	export let className = ''
+	export let className = ""
 	export { className as class }
 
 	export let name
 	export let required = false
 	export let selected = writable(null)
-	setContext('name', name)
-	setContext('required', required)
-	setContext('selected', selected)
+	setContext("name", name)
+	setContext("required", required)
+	setContext("selected", selected)
 
-	const fieldsValidations = getContext('fieldsValidations')
+	const fieldsValidations = getContext("fieldsValidations")
 
 	$: {
 		fieldsValidations.update(currentValue => {

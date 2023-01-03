@@ -1,5 +1,5 @@
 <a class="hidden" href="/">
-	<img class="lg:w-32" src="/svg/brand/logo.svg" alt="لوگو">
+	<img class="lg:w-32" src="/svg/brand/logo.svg" alt="لوگو" />
 </a>
 
 <style lang="postcss">

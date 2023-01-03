@@ -1,8 +1,8 @@
 <script>
-	import { goto } from '$app/navigation'
-	import { isLoggedIn } from '$store/global.js'
+	import { goto } from "$app/navigation"
+	import { isLoggedIn } from "$store/global.js"
 	isLoggedIn.set(false)
-	goto('/')
+	goto("/")
 </script>
 
 <svelte:head>

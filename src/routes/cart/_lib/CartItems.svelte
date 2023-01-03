@@ -1,12 +1,11 @@
 <script>
-	import { cartItems } from '$store/cart.js'
+	import { cartItems } from "$store/cart.js"
 	export let isPurchaseProcessedSuccessfullyPage = true
 </script>
 
 <!-- svelte-ignore a11y-invalid-attribute -->
 <div class="table-wrapper">
 	<table>
-
 		<thead>
 			<tr>
 				<th>محصول</th>
@@ -17,17 +16,21 @@
 				{/if}
 			</tr>
 		</thead>
-		
+
 		<tbody class="p-4">
 			{#each $cartItems as item (item.id)}
-
 				<!-- Just a divider -->
-				<tr class="h-px bg-gray-100 first:h-0"></tr>
-				
+				<tr class="h-px bg-gray-100 first:h-0" />
+
 				<tr class="border-0">
 					<td class="min-w-40 w-40">
 						<a class="group flex p-4 -m-4" href="/shop/{item.id}">
-							<img class="rounded duration-150 ease-in-out group-hover:grayscale" src={item.thumb} alt loading="lazy">
+							<img
+								class="rounded duration-150 ease-in-out group-hover:grayscale"
+								src={item.thumb}
+								alt
+								loading="lazy"
+							/>
 						</a>
 					</td>
 
@@ -50,7 +53,7 @@
 							</li>
 							<li class="flex gap-1 line-clamp-1">
 								<span class="text-gray-500">تحویل سریع:</span>
-								<span class="font-medium">{item.account.fastDelivery ? 'بله' : 'خیر'}</span>
+								<span class="font-medium">{item.account.fastDelivery ? "بله" : "خیر"}</span>
 							</li>
 						</ul>
 					</td>
@@ -64,7 +67,13 @@
 
 					{#if isPurchaseProcessedSuccessfullyPage}
 						<td>
-							<button class="btn btn--light w-10 duration-200" on:click={()=> cartItems.update(currentValue => currentValue.filter(product => product.id !== item.id))}>
+							<button
+								class="btn btn--light w-10 duration-200"
+								on:click={() =>
+									cartItems.update(currentValue =>
+										currentValue.filter(product => product.id !== item.id)
+									)}
+							>
 								<i class="icon-trash" />
 							</button>
 						</td>
@@ -72,7 +81,6 @@
 				</tr>
 			{/each}
 		</tbody>
-		
 	</table>
 </div>
 
@@ -82,10 +90,10 @@
 	}
 	/* Not using :first-of-type because of tr divider element */
 	tbody tr:nth-of-type(2) td {
-		@apply first:rounded-tr last:rounded-tl
+		@apply first:rounded-tr last:rounded-tl;
 	}
 	tbody tr:last-of-type td {
-		@apply first:rounded-br last:rounded-bl
+		@apply first:rounded-br last:rounded-bl;
 	}
 	tbody td {
 		@apply p-4 bg-white;

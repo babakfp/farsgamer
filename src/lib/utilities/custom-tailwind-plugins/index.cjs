@@ -1,4 +1,1 @@
-module.exports = [
-	require('./dana-font.cjs'),
-	require('./img-hover.cjs'),
-]
+module.exports = [require("./dana-font.cjs"), require("./img-hover.cjs")]

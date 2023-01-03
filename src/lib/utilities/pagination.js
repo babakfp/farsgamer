@@ -5,7 +5,7 @@
  * @param {number} pageSize - Number of items on each page.
 */
 export const getPaginationItems = (items, currentPageNumber, pageSize = 10) => {
-  return items.slice( (currentPageNumber - 1) * pageSize, currentPageNumber * pageSize )
+	return items.slice((currentPageNumber - 1) * pageSize, currentPageNumber * pageSize)
 }
 
 /**
@@ -14,5 +14,5 @@ export const getPaginationItems = (items, currentPageNumber, pageSize = 10) => {
  * @param {number} pageSize - Number of items on each page.
 */
 export const getPaginationMaxNumberOfPages = (items, pageSize = 10) => {
-	return Math.ceil( items.length / pageSize )
+	return Math.ceil(items.length / pageSize)
 }

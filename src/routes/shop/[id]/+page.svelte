@@ -1,15 +1,15 @@
 <script>
-	import Info from './_lib/Info.svelte'
-	import PurchaseForm from './_lib/PurchaseForm.svelte'
+	import Info from "./_lib/Info.svelte"
+	import PurchaseForm from "./_lib/PurchaseForm.svelte"
 
-	import CardsSection from '$components/CardsSection.svelte'
-	import ProductCardSwiper from '$components/ProductCardSwiper.svelte'
-	
+	import CardsSection from "$components/CardsSection.svelte"
+	import ProductCardSwiper from "$components/ProductCardSwiper.svelte"
+
 	// Content
-	import { onMount } from 'svelte'
-	import { products } from '$database/products.js'
-	import { Tab, TabLabel, TabPanel } from '$components/Tab'
-	import { Description, Comments, CommentForm } from '$components/PostType'
+	import { onMount } from "svelte"
+	import { products } from "$database/products.js"
+	import { Tab, TabLabel, TabPanel } from "$components/Tab"
+	import { Description, Comments, CommentForm } from "$components/PostType"
 
 	export let data
 </script>
@@ -19,9 +19,22 @@
 </svelte:head>
 
 <section class="grid gap-page md:grid-cols-[auto_1fr] md:items-center md:gap-page">
-	<img class="mx-auto aspect-[16/9] rounded md:hidden xl:block xl:max-w-xl" src={data.product.poster} alt />
-	<img class="mx-auto aspect-[3/4] rounded hidden md:block md:max-w-60 xl:hidden" src={data.product.thumb} alt />
-	<Info title={data.product.title} rating={data.product.rating} ratingCount={data.product.ratingCount} coins={data.product.coins} />
+	<img
+		class="mx-auto aspect-[16/9] rounded md:hidden xl:block xl:max-w-xl"
+		src={data.product.poster}
+		alt
+	/>
+	<img
+		class="mx-auto aspect-[3/4] rounded hidden md:block md:max-w-60 xl:hidden"
+		src={data.product.thumb}
+		alt
+	/>
+	<Info
+		title={data.product.title}
+		rating={data.product.rating}
+		ratingCount={data.product.ratingCount}
+		coins={data.product.coins}
+	/>
 </section>
 
 <PurchaseForm {data} />
@@ -31,7 +44,11 @@
 	<svelte:fragment slot="tab">
 		<TabLabel title="توضیحات" hash="description" />
 		<TabLabel title="نظرات" hash="reviews" count={data.product.reviews?.length} />
-		<TabLabel title="پرسش و پاسخ" hash="question-and-answer" count={data.product.questionsAndAnswers?.length} />
+		<TabLabel
+			title="پرسش و پاسخ"
+			hash="question-and-answer"
+			count={data.product.questionsAndAnswers?.length}
+		/>
 	</svelte:fragment>
 
 	<svelte:fragment slot="body">
@@ -44,7 +61,11 @@
 			<Comments items={data.product.reviews} canReply={true} />
 		</TabPanel>
 		<TabPanel class="!p-0 !bg-transparent" hash="question-and-answer">
-			<Comments items={data.product.questionsAndAnswers} headingTitle="ارسال پرسش جدید" isQuestion={true} />
+			<Comments
+				items={data.product.questionsAndAnswers}
+				headingTitle="ارسال پرسش جدید"
+				isQuestion={true}
+			/>
 		</TabPanel>
 	</svelte:fragment>
 </Tab>

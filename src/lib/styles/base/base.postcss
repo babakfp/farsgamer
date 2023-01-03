@@ -1,28 +1,28 @@
 @font-face {
 	font-family: "Dana";
 	font-weight: 1 1000;
-	src: url("/fonts/dana/DanaVF.woff2") format("woff2"), url("/fonts/dana/DanaVF.woff") format("woff"), url("/fonts/dana/DanaVF.ttf") format("truetype");
+	src: url("/fonts/dana/DanaVF.woff2") format("woff2"),
+		url("/fonts/dana/DanaVF.woff") format("woff"), url("/fonts/dana/DanaVF.ttf") format("truetype");
 	font-style: normal;
 	font-display: block;
 }
 
 @layer base {
-	
 	::selection {
 		@apply bg-brand bg-opacity-10;
 	}
 
 	/* It's not good to use select-none because then it's impossible the deselect a select-all element */
-  * {
+	* {
 		@apply select-none !outline-none drag-none;
-  }
+	}
 
 	html {
 		@apply font-dana font-dana-fn;
 		-webkit-tap-highlight-color: theme(colors.brand.DEFAULT/5%);
-  }
+	}
 
-  body {
+	body {
 		@apply bg-gray-100 text-gray-700 overflow-x-hidden;
 
 		&::-webkit-scrollbar {
@@ -45,17 +45,17 @@
 
 	img {
 		@apply w-full max-w-full text-[0];
-    &:not([src$=".svg"]) {
-      box-shadow: inset 0 0 theme('spacing.12') theme('colors.gray.200');
-    }
+		&:not([src$=".svg"]) {
+			box-shadow: inset 0 0 theme("spacing.12") theme("colors.gray.200");
+		}
 	}
 
-  i {
+	i {
 		@apply flex items-center justify-center text-inherit text-base !leading-none;
-		&:not(.hidden):not([class$=hidden]) {
+		&:not(.hidden):not([class$="hidden"]) {
 			@apply !flex;
 		}
-  }
+	}
 
 	code {
 		@apply dir-ltr font-dana-en select-all;
@@ -65,12 +65,11 @@
 	.icon-search,
 	.icon-shopping-cart,
 	.icon-document,
-	.icon-diploma ,
+	.icon-diploma,
 	.icon-interrogation,
 	.icon-headset,
 	.icon-comment,
-	.icon-wallet
-	{
+	.icon-wallet {
 		@apply flip-x;
 	}
 
@@ -82,8 +81,7 @@
 		@apply w-full;
 	}
 
-  [type="button"] {
-    @apply cursor-pointer;
-  }
-
+	[type="button"] {
+		@apply cursor-pointer;
+	}
 }

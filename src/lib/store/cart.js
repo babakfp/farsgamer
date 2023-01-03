@@ -1,6 +1,6 @@
-import { writable } from 'svelte-local-storage-store'
+import { writable } from "svelte-local-storage-store"
 
-export const cartItems = writable('cartItems', [
+export const cartItems = writable("cartItems", [
 	// {
 	// 	id: 1,
 	// 	title: 'گیفت‌کارد 20 دلاری استیم',
@@ -15,13 +15,13 @@ export const cartItems = writable('cartItems', [
 	// },
 ])
 
-export const walletBalance = writable('walletBalance', '100,000')
+export const walletBalance = writable("walletBalance", "100,000")
 
-export const discounts = writable('discounts', [
+export const discounts = writable("discounts", [
 	{
 		id: 1,
-		code: '2MLBmu',
-		type: 'bucks',
+		code: "2MLBmu",
+		type: "bucks",
 		value: 25_000,
 	},
 ])
